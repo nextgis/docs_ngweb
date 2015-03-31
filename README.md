@@ -1,2 +1,2 @@
 # docs_ngweb
-User documentstion for NextGIS Web
+User documentation for NextGIS Web
