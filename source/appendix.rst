@@ -1,4 +1,4 @@
-.. sectionauthor:: Артём Светлов <dmitry.baryshnikov@nextgis.ru>
+.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
 .. _gplv2:
 

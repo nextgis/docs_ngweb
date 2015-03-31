@@ -13,6 +13,7 @@ Contents:
 
    intro
    general
+   installation
 
 
 Indices and tables
