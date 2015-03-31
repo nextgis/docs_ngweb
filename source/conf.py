@@ -35,6 +35,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.pngmath',
     'sphinx.ext.ifconfig',
+    'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Документация NextGIS Web'
-copyright = u'2015, Артём Светлов'
+copyright = u'2015, NextGIS'
 author = u'Артём Светлов'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -76,7 +77,7 @@ language = 'ru'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%d-%m-%Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -109,6 +110,14 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
+numfig = True
+
+numfig_format = {'figure': u'Рис. %s', 'table': u'Таблица %s', 'code-block': u'Листинг %s'}
+
+illufig_format = {'illustrate': u'Рис. %s (%s)'}
+
+locale_dirs = ['locale/']
+gettext_compact = False
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -195,7 +204,7 @@ html_static_path = ['_static']
 # Sphinx supports the following languages:
 #   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
 #   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr'
-#html_search_language = 'en'
+html_search_language = 'ru'
 
 # A dictionary with options for the search language support, empty by default.
 # Now only 'ja' uses this config value
@@ -206,48 +215,53 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'NextGISWebdoc'
+htmlhelp_basename = 'nextgiswebdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '11pt',
 
+'classoptions': ',openany,oneside', 
+
+'babel' : '\\usepackage[russian]{babel}',
+
+'fontpkg': '\\usepackage{dejavu}',
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+#'preamble': 'latex_preamble'
 
 # Latex figure (float) alignment
-#'figure_align': 'htbp',
+'figure_align': 'htbp'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'NextGISWeb.tex', u'Документация NextGIS Web Documentation',
-   u'Артём Светлов', 'manual'),
+  (master_doc, 'NextGISWeb.tex', u'Документация NextGIS Web',
+   u'Артём Светлов', 'manual', 'true'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = '_static/ngwIcon.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
 
 # If true, show page references after internal links.
-#latex_show_pagerefs = False
+latex_show_pagerefs = True
 
 # If true, show URL addresses after external links.
-#latex_show_urls = False
+latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
-#latex_appendices = []
+latex_appendices = ['appendix']
 
 # If false, no module index is generated.
 #latex_domain_indices = True
@@ -258,7 +272,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'nextgisweb', u'Документация NextGIS Web Documentation',
+    (master_doc, 'nextgisweb', u'Документация NextGIS Web',
      [author], 1)
 ]
 
@@ -272,7 +286,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'NextGISWeb', u'Документация NextGIS Web Documentation',
+  (master_doc, 'NextGISWeb', u'Документация NextGIS Web',
    author, 'NextGISWeb', 'One line description of project.',
    'Miscellaneous'),
 ]
