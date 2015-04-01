@@ -180,14 +180,111 @@ https://github.com/settings/ssh):
 
     env/bin/pip install -e ./nextgisweb
 
+
+
 Установка NextGIS Web MapServer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Установка nextgisweb\_mapserver подробно описана
-`тут <https://github.com/nextgis/nextgisweb_mapserver>`__.
+Для работы модуля нужен MapScript, который в виртуальное окружение
+стандартным способом не ставится, поэтому установим его вручную.
 
-Конфигурационный файл
-~~~~~~~~~~~~~~~~~~~~~
+Устанавливаем необходимый пакет в систему:
+
+.. code:: bash
+
+    sudo apt-get install python-mapscript
+
+После чего копируем необходимые файлы в директорию виртуального
+окружения, используемого для работы NextGIS Web. На этом шаге возможны
+как минимум 2 варианта в зависимости от того, в каком виде
+устанвливается пакет python-mapscript в систему. Это зависит от
+используемого дистрибутива.
+
+Если вы используете FreeBSD, то для копирования системного MapScript в
+виртуальное окружение (директория ``env``) можно воспользоваться
+следующими командами:
+
+.. code:: bash
+
+    cp -r `python -c "import mapscript, os.path; print os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
+    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+
+Если вы используете Ubuntu, то процесс будет несколько отличаться:
+
+.. code:: bash
+
+    mkdir env/lib/python2.7/site-packages/mapscript.egg
+    cp /usr/lib/python2.7/dist-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
+    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+
+Если вы используете Fedora/CentOS, то:
+
+.. code:: bash
+
+    mkdir env/lib/python2.7/site-packages/mapscript.egg
+    cp /usr/lib/python2.7/site-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
+    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+
+Если сейчас выполнить команду:
+
+.. code:: bash
+
+    env/bin/pip freeze
+
+то вы получите сообщение об ошибке:
+
+::
+
+    "Missing 'Version:' header and/or PKG-INFO file", mapscript [unknown version]
+
+Для её исправления создаем файл ``PKG0-INFO``:
+
+.. code:: bash
+
+    mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
+    touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+
+И указываем в нём используемую версию MapScript:
+
+.. code:: bash
+
+    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+
+Установка mapserver
+~~~~~~~~~~~~~~~~~~~~~~
+
+Клонируем репозиторий: с запросом пароля для github
+
+.. code:: bash
+
+    git clone https://github.com/nextgis/nextgisweb_mapserver.git
+
+альтернативно с использованием публичного ключа для github
+
+.. code:: bash
+
+    git clone git@github.com:nextgis/nextgisweb_mapserver.git
+
+Устанавливаем пакет в режиме разработки:
+
+.. code:: bash
+
+    env/bin/pip install -e ./nextgisweb_mapserver
+
+Еще раз выполните команду:
+
+.. code:: bash
+
+    env/bin/pip freeze
+
+чтобы убедиться, что ошибок нет.
+
+
+
+
+
+Конфигурационный файл mapserver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Конфигурационный с параметрами по-умолчанию может быть создан при помощи
 команды ``nextgisweb-config``:
@@ -307,11 +404,20 @@ https://github.com/settings/ssh):
 Другое
 ------
 
-Авторизация
-~~~~~~~~~~~
+Ошибки и предупреждения
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+В ходе работы ПО могут выдаваться диагностические сообщения в окно консоли где запущен pserve или в лог:
+
+.. code:: bash
+
+    ault.py:471: SAWarning: Unicode type received non-unicode bind param value.
+    processors[key](compiled_params[key])
+
+Данное сообщение является несущественным.
 
 Имя и пароль по умолчанию
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 -  Имя: administrator
 -  Пароль: admin
