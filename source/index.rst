@@ -14,6 +14,7 @@ Contents:
    intro
    general
    installation
+   uwsgi
 
 
 Indices and tables
