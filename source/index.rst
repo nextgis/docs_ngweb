@@ -15,6 +15,7 @@ Contents:
    general
    installation
    uwsgi
+   admin
 
 
 Indices and tables
