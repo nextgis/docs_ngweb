@@ -16,6 +16,7 @@ Contents:
    installation
    uwsgi
    admin
+   tldr
 
 
 Indices and tables
