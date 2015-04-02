@@ -3,29 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Документация NextGIS Web's!
-====================================================
+.. include:: toc.rst
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-   intro
-   tldr
-   general
-   installation
-   uwsgi
-   admin_interface
-   user_tasks
-
-
-Indices and tables
-==================
+Индекс и таблицы
+================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+* :ref:`glossary`
 
 
 
