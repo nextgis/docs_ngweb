@@ -15,6 +15,6 @@ Cодержание:
    installation
    uwsgi
    admin_interface
-   user_tasks
-      
+   layers
+   mapstyles      
    
