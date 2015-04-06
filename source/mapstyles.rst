@@ -17,39 +17,7 @@
 ----------------------------------
 
 
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-| ТЕГ	                 | Пример                                              | Header 3                           | Картинки            |
-+========================+=====================================================+====================================+=====================+
-| map                    |                                                     | Поле, из которого берётся подпись  |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-| layer                  |                                                     | Поле, из которого берётся подпись  |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-| labelitem              | <labelitem>a_hsnmbr</labelitem>                     | Поле, из которого берётся подпись  |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
-|                        |                                                     |                                    |                     |
-+------------------------+-----------------------------------------------------+------------------------------------+---------------------+
+
 
 
 Примеры картостилей
@@ -68,7 +36,7 @@
 		<color red="255" green="170" blue="127"/>
 		<outlinecolor red="106" green="106" blue="106"/>
 		<width>0.425196850394</width>
-		<maxscaledenom>10000</maxscaledenom>
+		<maxscaledenom>10000</maxscaledenom> <!-- Ограничение по масштабу -->
 	      </style>
 	      <label>
 		<type>truetype</type>
@@ -114,3 +82,142 @@
      </style>
 
 
+Выборка
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: xml
+
+	<map>
+	  <layer>
+	    <labelitem>NAME</labelitem>
+	    <classitem>PLACE</classitem>
+	    <class>
+	      <expression>"city"</expression>
+	      <style>
+		<color red="255" green="170" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>11.3385826772</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <style>
+		<color red="255" green="170" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>5.66929133858</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>18</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		 <position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"town"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>11.3385826772</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>5.66929133858</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>14</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		 <position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"village"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>6.8031496063</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"hamlet"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>4.25196850394</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"locality"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>2.83464566929</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>6.5</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>''</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>2.83464566929</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+	      </label>
+	    </class>
+	  </layer>
+	</map>
