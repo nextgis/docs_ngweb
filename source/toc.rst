@@ -16,5 +16,7 @@ Cодержание:
    uwsgi
    admin_interface
    layers
-   mapstyles      
-   webmap       
+   mapstyles    
+   layers_settings 
+   webmaps_admin       
+   webmaps_client
