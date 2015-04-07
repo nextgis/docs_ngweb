@@ -67,12 +67,23 @@
 Файл config.ini в резервную копию не включаются, их надо переносить отдельно.
 
 Для запуска процедуры миграции необходимо выполнять следующие команды:
-$ env/bin/nextgisweb --config config.ini backup file.ngwbackup
-$ env/bin/nextgisweb --config config.ini restore file.ngwbackup
+
+.. code:: bash
+
+	$ env/bin/nextgisweb --config config.ini backup file.ngwbackup
+	$ env/bin/nextgisweb --config config.ini restore file.ngwbackup
+
 Резервная копия – это ZIP-архив. Для отключения архивации резервной копии необходимо указать ключ —no-zip. При это будет создан новый каталог, с указанным именем.
-$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+
+.. code:: bash
+
+	$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+
 В ОС FreeBSD есть ошибка: поддержка sqlite не переносится virtualenv. Нужно вручную скопировать файл:
-$ cp /usr/local/lib/python2.7/site-packages/_sqlite3.so  env/lib/python2.7/site-packages/
+
+.. code:: bash
+
+	$ cp /usr/local/lib/python2.7/site-packages/_sqlite3.so  env/lib/python2.7/site-packages/
 
 
 
