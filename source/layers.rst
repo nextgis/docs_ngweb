@@ -118,8 +118,6 @@
 
 
 
-:menuselection:`Добавить --> Cоединение с PostGIS`
-
 
 
 

@@ -20,3 +20,4 @@ Cодержание:
    layers_settings 
    webmaps_admin       
    webmaps_client
+   admin_tasks
