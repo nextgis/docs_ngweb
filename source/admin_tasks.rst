@@ -127,9 +127,27 @@
 Если появляется ошибка "No module named pysqlite2" - значит при установке вы забыли перенести sqlite. Выполните нужную команду из инструкции по установке.
 
 
+Обновление ПО
+----------------------------------
 
+Для обновления ПО NextGIS Web необходимо выполнить команду:
 
+.. code:: bash
 
+	$ cd ngw/nextgisweb
+	$ git pull
+	$ sudo pip install -e ~/ngw/nextgisweb (это если в файле setup.py добавились какие-то зависимости)
+	$ cd ../
+	$ env/bin/nextgisweb --config config.ini initialize_db (переинициализируем БД в случае необходимости)
+
+Кроме того, при необходимости обновляется пакет nextgisweb_mapserver:
+
+.. code:: bash
+
+	cd ./nextgisweb_mapserver
+	git pull
+
+После выполнения команд необходимо перезапустить ПО NextGIS Web либо перезапуском pserve либо веб-сервера с модулем uWSGI.
 
 
 
