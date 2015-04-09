@@ -51,7 +51,7 @@
 #. В блоке данные вызвать таблицу объектов.
 #. В таблице объектов выбрать запись к которой необходимо прикрепить фотографию и нажать :guilabel:`Открыть`
 
-.. figure:: _static/admin_layers_photos_1.png
+.. figure:: _static/webmap_identification.png
    :name: admin_layers_photos_1
    :align: center
 
@@ -60,7 +60,7 @@
 4. В открывшемся окне добавить фотографии
 
 
-.. figure:: _static/admin_layers_photos_2.png
+.. figure:: _static/webmap_identification.png
    :name: admin_layers_photos_2
    :align: center
 
