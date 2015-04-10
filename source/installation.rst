@@ -283,7 +283,7 @@ https://github.com/settings/ssh):
 
 
 
-Конфигурационный файл mapserver
+Конфигурационный файл nextgisweb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Конфигурационный с параметрами по-умолчанию может быть создан при помощи
@@ -300,12 +300,96 @@ https://github.com/settings/ssh):
 из команд выше. Необходимо убедиться, что правильно указаны следующие
 параметры (значения приведены из примерах выше):
 
--  database.name = db\_ngw
--  database.user = ngw\_admin
--  database.password =
--  secret =
--  path = /home/sim/ngw/data/upload (секция [file\_upload])
--  path = /home/sim/ngw/data\_storage (секция [file\_storage])
+
+Пример конфигурационного файла nextgisweb
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code:: 
+
+	[file_upload]
+	
+	# Директория для временного хранения загруженных файлов (обязательно) 
+	path = /home/trolleway/ngw/data/upload 
+
+	[pyramid]
+
+	# Ключ, используемый для шифрования cookies (обязательно) 
+	secret =  
+	# HTML-справка 
+	help_page = /home/trolleway/ngw/help.htm
+	# Логотип системы 
+	# logo = 
+	# Значок для избранного 
+	# favicon = 
+	# Ссылка для редиректа, при заходе на / 
+	# home_url = 
+
+	[core]
+
+	# Название системы 
+	system.name = NextGIS Web
+	# Полное название системы 
+	system.full_name = 新しいコンピュータのOS 98
+	# Имя сервера БД 
+	database.host = localhost
+	# Имя БД на сервере 
+	database.name = db_ngw
+	# Имя пользователя БД 
+	database.user = ngw_admin
+	# Пароль пользователя БД 
+	database.password =  
+	# Проверять подключение при запуске 
+	# database.check_at_startup = 
+	# Не загружать перечисленные пакеты 
+	# packages.ignore = 
+	# Не загружать перечисленные компоненты 
+	# components.ignore = 
+	# Директория для хранения данных 
+	# sdir = 
+
+	[file_storage]
+
+	# Директория для хранения файлов (обязательно) 
+	path = /home/trolleway/ngw/data_storage
+
+	[feature_layer]
+
+	# Показывать атрибуты в идентификации 
+	# identify.attributes = 
+
+	[webmap]
+
+	# Файл с описанием базовых слоёв 
+	# basemaps = 
+	# Bing Maps API-ключ 
+	# bing_apikey = 
+	# Чувствительность идентификации 
+	# identify_radius = 
+	# Ширина всплывающего окна 
+	# popup_width = 
+	# Высота всплывающего окна 
+	# popup_height = 
+
+	[wmsclient]
+
+
+	[mapserver]
+
+	# Список шрифтов в формате MAPFILE FONTSET 
+	# fontset = 
+
+
+
+Для генерации ключа для конфигурационного файла ``config.ini`` можно воспользоваться коммандой
+
+.. code:: bash
+	
+	openssl rand -base64 16 | xclip -selection clipboard
+
+
+
+
+
 
 Необходимо указывать абсолютные пути к папкам, %(here)s на данный момент
 не действует.
