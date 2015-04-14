@@ -52,13 +52,7 @@
 
 1. Щёлкните инструментом идентификации по объекту
 
-2. Нажмите на кнопку редактирования (см. :numref:`webmap_identification_photos`).
-
-.. figure:: _static/webmap_identification_photos.png
-   :name: webmap_identification_photos
-   :align: center
-
-   Окно идентификации. 
+2. Нажмите на кнопку редактирования.
 
 3. В окне редактирования откройте вкладку :guilabel:`Прикреплённые файлы` (см. :numref:`admin_object_edit_attr`).
 
@@ -94,7 +88,7 @@
 
    Окно идентификации с загруженными фотографиями. 
 
-По нажатию на фотографию открывается лайтбокс (всплывающее окно в браузере, работающее на JavaScript). Размер фотографии вписывается в окно. Можно переходить вправо-влево, фотографии подписываются(см. :numref:`webmap_identification_photo_lightbox`).
+По нажатию на фотографию открывается лайтбокс (всплывающее окно в браузере, работающее на JavaScript). Размер фотографии вписывается в окно. Фотографии подписываются, пользователю можно переходить между фотографиями используя клавиши вправо-влево на клавиатуре (см. :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox.png
    :name: webmap_identification_photo_lightbox
