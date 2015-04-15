@@ -303,11 +303,20 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSS
 
 
 
+WMS-сервис
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Программное обеспечение NextGIS Web может работать как WMS-сервер. 
+Для развёртывания WMS-сервиса необходимо добавить ресурс.  В блоке операций выберите :menuselection:`Добавить → WMS-сервис`. Откроется окно представленное на :numref:`admin_layers_create_wms_serv_description`.
+
+.. figure:: _static/admin_layers_create_wms_serv_description.png
+   :name: admin_layers_create_wms_serv_description
+   :align: center
+
+   Окно создания WMS-сервиса
 
 
-
-
-
+Дальнейшие операции выполняются так же, как при создании веб-карты. Вы выбираете один или несколько стилей слоёв, которые потом отдаются единой картинкой. 
 
 
 
