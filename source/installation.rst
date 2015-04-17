@@ -329,7 +329,7 @@ https://github.com/settings/ssh):
 	# Название системы 
 	system.name = NextGIS Web
 	# Полное название системы 
-	system.full_name = 新しいコンピュータのOS 98
+	system.full_name = Демонстрационная веб-гис
 	# Имя сервера БД 
 	database.host = localhost
 	# Имя БД на сервере 
