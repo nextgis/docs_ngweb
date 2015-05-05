@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 .. include:: toc.rst
+   
+   glossary
 
 Индекс и таблицы
 ================

@@ -2,19 +2,17 @@
 
 .. _installation:
 
-Эта инструкция проверена и работает в Ubuntu Server 13.10, Ubuntu Server
-12.04 LTS, Ubuntu Desktop 13.04, Ubuntu Server 14.04 LTS, 14.10
-
 Установка
-===========
+=========
 
+Данная инструкция проверена и работает в Ubuntu Server 12.04 LTS и выше.
 Для установки системы необходим Python 2.7:
 
 Подготовка базы данных
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Подключить репозиторий ubuntugis (`поддерживаемые
-дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`__):
+дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
 .. code:: bash
 
@@ -43,7 +41,7 @@ config.ini (см. далее):
 .. code:: bash
 
     sudo su postgres -c "createdb -O ngw_admin --encoding=UTF8 db_ngw"
-    sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+    sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
 Отредактируем строку ``local   all   all   peer`` и приведём её к виду:
 ``local   all   all   md5``
@@ -66,15 +64,18 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-    sudo apt-get install postgresql-9.1-postgis-2.0
+    sudo apt-get install postgresql-9.3-postgis-2.1
     sudo su - postgres -c "psql -d db_ngw -c 'CREATE EXTENSION postgis;'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER TO ngw_admin'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER TO ngw_admin'"
+    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geometry_columns \ 
+    OWNER TO ngw_admin'"
+    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys \ 
+    OWNER TO ngw_admin'"
+    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geography_columns \
+    OWNER TO ngw_admin'"
 
 После этих операций будут созданы БД PostgreSQL с установленным в ней
-PostGIS и пользователь БД, который будет владельцем БД и таблиц
-``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys``.
+:term:`PostGIS` и пользователь :abbr:`БД`, который станет ее владельцем, а также 
+таблиц ``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys``.
 
 Убедитесь, что функции PostGIS появились в базе:
 
@@ -99,7 +100,7 @@ PostGIS и пользователь БД, который будет владел
     sudo service postgresql restart
 
 Подготовка базового ПО
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Установить pip:
 
@@ -117,14 +118,14 @@ PostGIS и пользователь БД, который будет владел
 
 .. code:: bash
 
-    sudo apt-get install python-mapscript git libgdal-dev python-dev g++ libxml2-dev libxslt1-dev gdal-bin
+    sudo apt-get install python-mapscript git libgdal-dev python-dev g++ \
+    libxml2-dev libxslt1-dev gdal-bin
 
 Для большинства случаев ключи генерировать не нужно! Это необходимо при
 разработке.
 
 Генерируем ключи для работы с GitHub (копируем и вставляем ключ в
-настройки пользователя GitHub в разделе SSH keys,
-https://github.com/settings/ssh):
+настройки пользователя GitHub в `разделе SSH keys <https://github.com/settings/ssh>`_):
 
 .. code:: bash
 
@@ -137,14 +138,12 @@ https://github.com/settings/ssh):
 
 Если включена двух-факторная авторизация, понадобится еще:
 
--  `Закэшировать
-   пароль <https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux>`__
--  `Сгенерировать access
-   token <https://github.com/settings/applications#personal-access-tokens>`__
-   и использовать его вместо пароля
+* `Закэшировать пароль <https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux>`_
+* `Сгенерировать access token <https://github.com/settings/applications#personal-access-tokens>`_
+  и использовать его вместо пароля
 
 Подготовка к установке NextGIS Web
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 Создаем рабочую папку ``~/ngw``:
 
@@ -171,7 +170,7 @@ https://github.com/settings/ssh):
     virtualenv --no-site-packages env
 
 Установка NextGIS Web
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Устанавливаем пакет NextGIS Web в режиме разработки, при этом будут
 установлены все необходимые пакеты:
@@ -183,7 +182,7 @@ https://github.com/settings/ssh):
 
 
 Установка NextGIS Web MapServer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Для работы модуля нужен MapScript, который в виртуальное окружение
 стандартным способом не ставится, поэтому установим его вручную.
@@ -206,7 +205,8 @@ https://github.com/settings/ssh):
 
 .. code:: bash
 
-    cp -r `python -c "import mapscript, os.path; print os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
+    cp -r `python -c "import mapscript, os.path; print \ 
+    os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 Если вы используете Ubuntu, то процесс будет несколько отличаться:
@@ -214,7 +214,8 @@ https://github.com/settings/ssh):
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
-    cp /usr/lib/python2.7/dist-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
+    cp /usr/lib/python2.7/dist-packages/*mapscript* \ 
+    env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 Если вы используете Fedora/CentOS, то:
@@ -222,7 +223,8 @@ https://github.com/settings/ssh):
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
-    cp /usr/lib/python2.7/site-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
+    cp /usr/lib/python2.7/site-packages/*mapscript* \ 
+    env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 Если сейчас выполнить команду:
@@ -248,10 +250,11 @@ https://github.com/settings/ssh):
 
 .. code:: bash
 
-    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
+    > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-Установка mapserver
-~~~~~~~~~~~~~~~~~~~~~~
+Установка MapServer
+-------------------
 
 Клонируем репозиторий: с запросом пароля для github
 
@@ -280,11 +283,8 @@ https://github.com/settings/ssh):
 чтобы убедиться, что ошибок нет.
 
 
-
-
-
-Конфигурационный файл nextgisweb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Конфигурационный файл NextGIS Web
+---------------------------------
 
 Конфигурационный с параметрами по-умолчанию может быть создан при помощи
 команды ``nextgisweb-config``:
@@ -294,15 +294,15 @@ https://github.com/settings/ssh):
     env/bin/nextgisweb-config > config.ini
 
 В результате будет создан конфигурационный файл ``config.ini``. В этот
-текcтовый файл нужно внести изменения в соответствии со своим
+текстовый файл нужно внести изменения в соответствии со своим
 окружением. Назначение параметров указано в комментариях. Имя и пароль
 пользователя, а так же пути к папкам хранения и загрузки файлов берутся
 из команд выше. Необходимо убедиться, что правильно указаны следующие
 параметры (значения приведены из примерах выше):
 
 
-Пример конфигурационного файла nextgisweb
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Пример конфигурационного файла NextGIS Web
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: 
 
@@ -380,26 +380,23 @@ https://github.com/settings/ssh):
 
 
 
-Для генерации ключа для конфигурационного файла ``config.ini`` можно воспользоваться коммандой
+Для генерации ключа для конфигурационного файла ``config.ini`` можно 
+воспользоваться коммандой
 
 .. code:: bash
 	
 	openssl rand -base64 16 | xclip -selection clipboard
 
-
-
-
-
-
-Необходимо указывать абсолютные пути к папкам, %(here)s на данный момент
-не действует.
+.. note:
+   В некоторых случаях необходимо указывать абсолютные пути к папкам, 
+   параметр python %(here)s не во всех случаях действует.
 
 Так же для работы команд pserve или pshell потребуется конфигурационный
 файл paster, например ``development.ini``.
 
 .. code:: bash
 
-    gedit development.ini
+    nano development.ini
 
 Содержание:
 
@@ -428,7 +425,7 @@ https://github.com/settings/ssh):
 подложки Google.
 
 Инициализация БД
-~~~~~~~~~~~~~~~~
+----------------
 
 Инициализация БД выполняется следующим образом:
 
@@ -443,30 +440,31 @@ https://github.com/settings/ssh):
 
     env/bin/nextgisweb --config config.ini initialize_db --drop
 
-Запуск веб-сервера pserve:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Запуск веб-сервера через Pserve
+-------------------------------
+
+Для запуска NextGIS Web через Pserve необходимо выполнить команду:
 
 .. code:: bash
 
     env/bin/pserve development.ini
 
-Автозапуск
+Для автоматического запуска NextGIS Web при загрузке операционной системы 
+необходимо отредактировать пользовательский скрипт автозапуска:
 
 .. code:: bash
 
     sudo nano /etc/rc.local
 
-Добавить строку:
+и добавить в него строку:
 
 .. code:: bash
 
     /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
 
-В промышленной эксплуатации нужно использовать не pserve, а uWSGI. Далее
-смотри
-`DEPLOY.md <https://github.com/nextgis/nextgisweb/blob/2/DEPLOY.md>`__
+В промышленной эксплуатации нужно использовать не pserve, а :ref:`uWSGI <uwsgi>`.
 
-Для проверки работоспособности наберите тут же в браузере:
+Для проверки работоспособности необходимо в веб-браузере набрать:
 
 ::
 
@@ -476,60 +474,65 @@ https://github.com/settings/ssh):
 
 
 Имя и пароль по умолчанию
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
-
--  Имя: administrator
--  Пароль: admin
-
+* Имя: administrator
+* Пароль: admin
 
 Миграция
-----------------------------------
+--------
 
-Основные сведения
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Миграция – это процедура по переносу данных и настроенной NextGIS Web между 
+серверами. В ходе процедуры миграции создается резервная копия, в которую 
+записывается:
 
-Миграция – это процедура по переносу данных и настроенной NextGIS Web между серверами. В ходе процедуры миграции создается резервная копия, в которую записывается:
-
-* Всё содержимое базы данных NextGIS Web: информация о слоях, стили, аккаунты пользователей, то есть всё, что настраивается в интерфейсе администратора
+* Всё содержимое базы данных NextGIS Web: информация о слоях, стили, аккаунты 
+  пользователей, то есть всё, что настраивается в интерфейсе администратора.
 * Векторные данные, которые были загружены через интерфейс администратора.
 * Растровые данные, которые были загружены через интерфейс администратора. 
 
-Файл config.ini в резервную копию не включаются, их надо переносить отдельно.
+Файл config.ini в резервную копию не включаются, его надо переносить отдельно.
 
 Для запуска процедуры миграции необходимо выполнять следующие команды:
 
 .. code:: bash
 
-	$ env/bin/nextgisweb --config config.ini backup file.ngwbackup
-	$ env/bin/nextgisweb --config config.ini restore file.ngwbackup
+	env/bin/nextgisweb --config config.ini backup file.ngwbackup
+	env/bin/nextgisweb --config config.ini restore file.ngwbackup
 
-Резервная копия – это ZIP-архив. Для отключения архивации резервной копии необходимо указать ключ —no-zip. При это будет создан новый каталог, с указанным именем.
-
-.. code:: bash
-
-	$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
-
-В ОС FreeBSD есть ошибка: поддержка sqlite не переносится virtualenv. Нужно вручную скопировать файл:
+Резервная копия – это ZIP-архив. Для отключения архивации резервной копии 
+необходимо указать ключ —no-zip. При это будет создан новый каталог, с указанным 
+именем.
 
 .. code:: bash
 
-	$ cp /usr/local/lib/python2.7/site-packages/_sqlite3.so  env/lib/python2.7/site-packages/
+	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+
+В ОС FreeBSD есть ошибка: поддержка sqlite не переносится virtualenv. Нужно 
+вручную скопировать файл:
+
+.. code:: bash
+
+	cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
+	env/lib/python2.7/site-packages/
 
 
 Порядок миграции
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 1. На старом сервере запускается процедура резервного копирования.
 
 .. code:: bash
 
-	$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
-2. Если необходимо перенести базу PostGIS с геоданными, то со старого сервера делаем ее резервная копия программой pgAdminIII в формате tar.
+2. Если необходимо перенести базу PostGIS с геоданными, то со старого сервера 
+   делаем ее резервная копия программой pgAdminIII в формате tar.
 3. На новом сервере устанавливаем NextGIS Web согласно инструкции (см. разд. 2).
-4. На новом сервере создается база данных для NextGIS Web, и настраиваются  права доступа программой pgAdminIII.
-5. На новом сервере в файле config.ini необходимо указать подключение к базе NextGIS Web.
+4. На новом сервере создается база данных для NextGIS Web, и настраиваются  
+   права доступа программой pgAdminIII.
+5. На новом сервере в файле config.ini необходимо указать подключение к базе 
+   NextGIS Web.
 
  
 .. code::
@@ -548,51 +551,53 @@ https://github.com/settings/ssh):
 
 .. code:: bash
 
-	$ env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
+	env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
 
-7. Запустите NextGIS Web. Должно работать всё, кроме слоёв PostGIS (при их наличии)
-
-8. Если необходимо перенести базу PostGIS с геоданными, то создается новая база данных, в нее разворачивается резервная копия со старого сервера
+7. Запустите NextGIS Web. Должно работать всё, кроме слоёв PostGIS (при их  
+   наличии)
+8. Если необходимо перенести базу PostGIS с геоданными, то создается новая база 
+   данных, в нее разворачивается резервная копия со старого сервера
 9. В настройках подключений PostGIS указывается новый адрес сервера. 
 
-Если появляется ошибка "No module named pysqlite2" - значит при установке вы забыли перенести sqlite. Выполните нужную команду из инструкции по установке.
+Если появляется ошибка "No module named pysqlite2" - значит при установке вы 
+забыли перенести sqlite. Выполните нужную команду из инструкции по установке.
 
 
 Обновление ПО
-----------------------------------
+-------------
 
 Для обновления ПО NextGIS Web необходимо выполнить команду:
 
 .. code:: bash
-
-	$ cd ~/ngw/nextgisweb
-	$ git pull
-	$ sudo pip install -e ~/ngw/nextgisweb (это если в файле setup.py добавились какие-то зависимости)
-	$ cd ../
-	$ env/bin/nextgisweb --config config.ini initialize_db (переинициализируем БД в случае необходимости)
-
-Кроме того, при необходимости обновляется пакет nextgisweb_mapserver:
+	cd ~/ngw/nextgisweb
+	git pull
+	
+Если в файле setup.py добавились какие-то зависимости, то следует выполнить:	
 
 .. code:: bash
+	sudo pip install -e ~/ngw/nextgisweb 
+	
+Если изменилась структура БД то следует выполнить:	
 
+.. code:: bash
+	cd ../
+	env/bin/nextgisweb --config config.ini initialize_db
+
+Кроме того, следует обновить пакет nextgisweb_mapserver:
+
+.. code:: bash
 	cd ./nextgisweb_mapserver
 	git pull
 
-После выполнения команд необходимо перезапустить ПО NextGIS Web либо перезапуском pserve либо веб-сервера с модулем uWSGI.
+После выполнения команд необходимо перезапустить ПО NextGIS Web либо перезапуском 
+pserve либо веб-сервера с модулем uWSGI.
 
-
-
-
-
-
-
-
-Другое
-------
 
 Ошибки и предупреждения
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-В ходе работы ПО могут выдаваться диагностические сообщения в окно консоли где запущен pserve или в лог:
+-----------------------
+
+В ходе работы ПО могут выдаваться диагностические сообщения в окно консоли, где 
+запущен pserve или в лог:
 
 .. code:: bash
 
@@ -600,6 +605,4 @@ https://github.com/settings/ssh):
     processors[key](compiled_params[key])
 
 Данное сообщение является несущественным.
-
-
 
