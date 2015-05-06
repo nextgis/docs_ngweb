@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _webmap:
+.. _change_layers:
 
 Настройки слоёв
 ================================
@@ -23,6 +23,7 @@
 .. figure:: _static/admin_layers_attr.png
    :name: admin_layers_attr
    :align: center
+   :scale: 55%
 
    Окно редактирования слоя, вкладка :guilabel:`Атрибуты`
 
@@ -33,6 +34,7 @@
 .. figure:: _static/webmap_identification.png
    :name: webmap_identification
    :align: center
+   :scale: 75%
 
    Окно идентификации
 
@@ -66,13 +68,14 @@
 .. figure:: _static/webmap_identification_photos.png
    :name: webmap_identification_photos
    :align: center
+   :scale: 75%
 
    Всплывающее окно результатов идентификации с фотографиями.
 
 
 Добавление фотографий осуществляется в режиме просмотра карты. 
 
-.. note:: По умолчанию добавлять фотографии могут все пользователи, но можно настроить так, что бы добавлять могли только отдельные пользователи. См. ###LINK###
+.. note:: По умолчанию добавлять фотографии могут все пользователи, но можно настроить так, что бы добавлять могли только отдельные пользователи (см. :ref:`access_rights`).
 
 1. Щёлкните инструментом идентификации по объекту
 
@@ -83,6 +86,7 @@
 .. figure:: _static/admin_object_edit_attr.png
    :name: admin_object_edit_attr
    :align: center
+   :scale: 75%
 
    Окно редактирования атрибутов.
 
@@ -92,6 +96,7 @@
 .. figure:: _static/admin_object_edit_photos1.png
    :name: admin_object_edit_photos1
    :align: center
+   :scale: 75%
 
    Окно загрузки фотографий к объекту.
 
@@ -101,6 +106,7 @@
 .. figure:: _static/admin_object_edit_photos2.png
    :name: admin_object_edit_photos2
    :align: center
+   :scale: 75%
 
    Окно загрузки фотографий к объекту с введёными подписями.
 
@@ -109,6 +115,7 @@
 .. figure:: _static/webmap_identification_photos.png
    :name: webmap_identification_photos
    :align: center
+   :scale: 75%
 
    Окно идентификации с загруженными фотографиями. 
 
@@ -117,6 +124,7 @@
 .. figure:: _static/webmap_identification_photo_lightbox.png
    :name: webmap_identification_photo_lightbox
    :align: center
+   :scale: 75%
 
    Окно идентификации с загруженными фотографиями.  
 

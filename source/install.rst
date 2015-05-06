@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _installation:
+.. _install:
 
 Установка
 =========
@@ -11,7 +11,7 @@
 Подготовка базы данных
 ----------------------
 
-Подключить репозиторий ubuntugis (`поддерживаемые
+Подключить репозиторий ubuntugis (см. `поддерживаемые
 дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
 .. code:: bash
@@ -440,44 +440,6 @@ postgresql-{version}-postgis-{version} и установите его:
 
     env/bin/nextgisweb --config config.ini initialize_db --drop
 
-Запуск веб-сервера через Pserve
--------------------------------
-
-Для запуска NextGIS Web через Pserve необходимо выполнить команду:
-
-.. code:: bash
-
-    env/bin/pserve development.ini
-
-Для автоматического запуска NextGIS Web при загрузке операционной системы 
-необходимо отредактировать пользовательский скрипт автозапуска:
-
-.. code:: bash
-
-    sudo nano /etc/rc.local
-
-и добавить в него строку:
-
-.. code:: bash
-
-    /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
-
-В промышленной эксплуатации нужно использовать не pserve, а :ref:`uWSGI <uwsgi>`.
-
-Для проверки работоспособности необходимо в веб-браузере набрать:
-
-::
-
-    http://0.0.0.0:6543
-
-Должно открыться окно авторизации.
-
-
-Имя и пароль по умолчанию
--------------------------
-
-* Имя: administrator
-* Пароль: admin
 
 Миграция
 --------

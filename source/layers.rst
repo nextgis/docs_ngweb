@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _layers:
+.. _create_layers:
 
 Добавление слоёв
 ================================
@@ -19,6 +19,7 @@
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
    :name: admin_layers_create_raster_layer_resourse_description
    :align: center
+   :scale: 75%
 
    Окно создания растрового слоя
 
@@ -31,6 +32,7 @@
 .. figure:: _static/admin_layers_create_raster_layer_upload.png
    :name: admin_layers_create_raster_layer_upload
    :align: center
+   :scale: 75%
 
    Окно загрузки растрового файла
 
@@ -84,6 +86,7 @@
 .. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
    :name: admin_layers_create_vector_layer_resourse_description
    :align: center
+   :scale: 75%
 
    Окно добавления векторного слоя
 
@@ -97,6 +100,7 @@
 .. figure:: _static/admin_layers_create_vector_layer_upload.png
    :name: admin_layers_create_vector_layer_upload
    :align: center
+   :scale: 75%
 
    Окно загрузки векторного слоя
 
@@ -129,6 +133,7 @@
    :name: admin_layers_create_postgis_connection_resourse_description
    :align: center
    :alt: map to buried treasure
+   :scale: 75%
 
    Окно добавления соединения PostGIS
 
@@ -144,6 +149,7 @@
 .. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
+   :scale: 75%
 
    Окно параметров соединения с PostGIS
 
@@ -153,6 +159,7 @@
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
    :name: admin_layers_create_postgis_layer_resourse_description
    :align: center
+   :scale: 75%
 
    Окно добавления слоя PostGIS
 
@@ -163,6 +170,7 @@
 .. figure:: _static/admin_layers_create_postgis_layer_tablename.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
+   :scale: 75%
 
    Окно параметров слоя PostGIS
 
@@ -201,6 +209,7 @@
 .. figure:: _static/pgadmin3.png
    :name: pgadmin3
    :align: center
+   :scale: 75%
 
    Главное окно ПО :program:`pgAdminIII`
 
@@ -249,6 +258,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_description.png
    :name: admin_layers_create_wms_connection_description
    :align: center
+   :scale: 75%
 
    Окно добавления подключения WMS
 
@@ -263,6 +273,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_url.png
    :name: admin_layers_create_wms_connection_url
    :align: center
+   :scale: 75%
 
    Окно параметров соединения с WMS
 
@@ -272,6 +283,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_layer_name.png
    :name: admin_layers_create_wms_layer_name
    :align: center
+   :scale: 75%
 
    Окно параметров слоя WMS
 
@@ -283,6 +295,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_layer_parameters.png
    :name: admin_layers_create_wms_layer_parameters
    :align: center
+   :scale: 75%
 
    Окно настройки параметров слоя WMS
 
@@ -314,6 +327,7 @@ WMS-сервис
 .. figure:: _static/admin_layers_create_wms_service_layers.png
    :name: admin_layers_create_wms_service_layers.png
    :align: center
+   :scale: 75%
 
    Пример настроек WMS-сервиса для раздачи отдельных листов топокарт. 
 
@@ -327,7 +341,7 @@ WMS-сервис
 WFS-сервис
 ----------
 
- **TODO**
+.. todo:: Написать раздел
 
 
 
@@ -343,6 +357,7 @@ WFS-сервис
 .. figure:: _static/admin_layers_create_group.png
    :name: admin_layers_create_group
    :align: center
+   :scale: 75%
 
    Окно создания группы ресурсов
 

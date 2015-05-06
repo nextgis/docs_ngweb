@@ -13,12 +13,13 @@ Cодержание:
    intro
    quick_tutorial
    general
-   installation
-   uwsgi
+   install
+   launch
    admin_interface
    layers
    mapstyles    
    layers_settings 
+   access_rights
    webmaps_admin       
    webmaps_client
    admin_tasks
