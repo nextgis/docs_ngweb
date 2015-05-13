@@ -221,3 +221,73 @@
 	    </class>
 	  </layer>
 	</map>
+
+
+Площадной слой с классификацией по значению поля и подписями
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: xml
+
+	<map>
+	<layer>
+	  <labelitem>NAME</labelitem>
+	    <class>
+	      <expression>(([num] gt 18) and ([num] le 26.1))</expression>
+	      <style>
+		<color red="255" green="255" blue="212"/>
+		<outlinecolor blue="64" green="64" red="64"/>
+
+	      </style>
+	       <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>7000000</maxscaledenom>
+	      </label>
+	    </class>
+	  
+	      <class>
+	      <expression>(([num] gt 26.1) and ([num] le 28.1))</expression>
+	      <style>
+	       <color red="254" green="217" blue="142"/>
+		<outlinecolor blue="64" green="64" red="64"/>
+
+	      </style>
+		 <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>7000000</maxscaledenom>
+	      </label>
+	    </class>
+	  
+	  
+	    <class>
+	      <expression>(([num] gt 28.1) and ([num] le 30))</expression>
+	      <style>
+	       <color red="254" green="153" blue="41"/>
+		<outlinecolor blue="64" green="64" red="64"/>
+
+	      </style>
+	       <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>7000000</maxscaledenom>
+	      </label>
+	    </class>
+	  
+	  </layer>
+	</map>
