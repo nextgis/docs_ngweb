@@ -531,23 +531,27 @@ postgresql-{version}-postgis-{version} и установите его:
 Для обновления ПО NextGIS Web необходимо выполнить команду:
 
 .. code:: bash
+
 	cd ~/ngw/nextgisweb
 	git pull
 	
 Если в файле setup.py добавились какие-то зависимости, то следует выполнить:	
 
 .. code:: bash
+
 	sudo pip install -e ~/ngw/nextgisweb 
 	
 Если изменилась структура БД то следует выполнить:	
 
 .. code:: bash
+
 	cd ../
 	env/bin/nextgisweb --config config.ini initialize_db
 
 Кроме того, следует обновить пакет nextgisweb_mapserver:
 
 .. code:: bash
+
 	cd ./nextgisweb_mapserver
 	git pull
 
