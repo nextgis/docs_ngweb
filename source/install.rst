@@ -74,7 +74,7 @@ postgresql-{version}-postgis-{version} и установите его:
     OWNER TO ngw_admin'"
 
 После этих операций будут созданы БД PostgreSQL с установленным в ней
-:term:`PostGIS` и пользователь :abbr:`БД`, который станет ее владельцем, а также 
+:term:`PostGIS` и пользователь :abbr:`БД (база данных)`, который станет ее владельцем, а также 
 таблиц ``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys``.
 
 Убедитесь, что функции PostGIS появились в базе:
