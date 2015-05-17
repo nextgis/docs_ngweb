@@ -19,7 +19,6 @@ Cодержание:
    layers
    mapstyles    
    layers_settings 
-   access_rights
    webmaps_admin       
    webmaps_client
    admin_tasks
