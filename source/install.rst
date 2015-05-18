@@ -40,7 +40,7 @@ config.ini (см. далее):
 
 .. code:: bash
 
-    sudo su postgres -c "createdb -O ngw_admin --encoding=UTF8 db_ngw"
+    sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
     sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
 Отредактируем строку ``local   all   all   peer`` и приведём её к виду:
