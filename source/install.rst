@@ -142,15 +142,11 @@ postgresql-{version}-postgis-{version} и установите его:
 Подготовка к установке NextGIS Web
 ----------------------------------
 
-Создаем рабочую папку ``~/ngw``:
+Создаём необходимые директории:
 
 .. code:: bash
 
-    mkdir ~/ngw
-    mkdir ~/ngw/data
-    mkdir ~/ngw/data/upload
-    mkdir ~/ngw/backup   
-    mkdir ~/ngw/data_storage
+    mkdir -p ~/ngw/data
     cd ~/ngw
 
 Клонируем репозиторий:
