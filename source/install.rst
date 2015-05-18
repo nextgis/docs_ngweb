@@ -31,7 +31,7 @@ config.ini (см. далее):
 
 .. code:: bash
 
-    sudo su postgres -c "createuser ngw_admin -P -e"
+    sudo -u postgres createuser ngw_admin -P -e
 
 после ввода пароля три раза говорим 'n'.
 
