@@ -65,13 +65,10 @@ postgresql-{version}-postgis-{version} и установите его:
 .. code:: bash
 
     sudo apt-get install postgresql-9.3-postgis-2.1
-    sudo su - postgres -c "psql -d db_ngw -c 'CREATE EXTENSION postgis;'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geometry_columns \ 
-    OWNER TO ngw_admin'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys \ 
-    OWNER TO ngw_admin'"
-    sudo su - postgres -c "psql -d db_ngw -c 'ALTER TABLE geography_columns \
-    OWNER TO ngw_admin'"
+    sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
+    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER TO ngw_admin;'
+    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin;'
+    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER TO ngw_admin;'
 
 После этих операций будут созданы БД PostgreSQL с установленным в ней
 :term:`PostGIS` и пользователь :abbr:`БД (база данных)`, который станет ее владельцем, а также 
