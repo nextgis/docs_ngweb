@@ -13,6 +13,6 @@
 .. only:: latex
 
    Данная документация распространяется по лицензии Creative Commons 
-   **"Attribution-NoDerivs» («Атрибуция — Без производных произведений») СC BY-ND**
+   **"Attribution-NoDerivs" ("Атрибуция — Без производных произведений") СC BY-ND**
    
    .. image:: _static/cc_by.png 
