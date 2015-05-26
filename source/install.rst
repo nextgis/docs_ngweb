@@ -16,7 +16,10 @@
 
 .. code:: bash
 
+    #Для ubuntu server 12.04    
     sudo apt-add-repository ppa:ubuntugis/ppa
+    #Для ubuntu server 14.04.2      
+    sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
     sudo apt-get update
     sudo apt-get upgrade
 
