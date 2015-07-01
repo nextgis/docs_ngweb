@@ -356,15 +356,15 @@ WFS-сервис
 На вкладке Сервис WFS добавьте в список ссылки на нужные вам слои. Для каждого добавленого слоя вам нужно указать уникальный ключ - можно скопировать его из названия. 
 
 
-.. figure:: _static/admin_layers_create_wms_service_layers.png
-   :name: admin_layers_create_wms_service_layers.png
+.. figure:: _static/admin_layers_create_wfs_service_layers.png
+   :name: admin_layers_create_wfs_service_layers.png
    :align: center
    :scale: 75%
 
    Пример настроек WFS-сервиса для раздачи отдельных листов топокарт. 
 
 
-После создания ресурса вам выведется сообщение с URL WFS-сервиса, который вы можете использовать в других программах, например NextGIS QGIS. 
+После создания ресурса вам нужно перезайти в этот ресурс в админке. После этого выведется сообщение с URL WFS-сервиса, который вы можете использовать в других программах, например NextGIS QGIS. 
 Далее необходимо настроить права доступа к WFS-сервису. См. главу :ref:`access_rights`.
 
 
