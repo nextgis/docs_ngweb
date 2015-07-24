@@ -299,149 +299,150 @@ OSM settlement-point
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
-<!-- Стиль с разделением по масштабам-->
-<!-- Версия 2015-07-24 -->
-<map>
-  <layer>
-    <labelitem>NAME</labelitem>
-    <classitem>PLACE</classitem>
-    <class>
-      <expression>"city"</expression> <!-- Большой город -->
-      <style>
-        <color red="255" green="170" blue="0"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>11.3385826772</size>
-        <symbol>std:circle</symbol>
 
-      </style>
-      <style>
-        <color red="255" green="170" blue="0"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>5.66929133858</size>
-        <symbol>std:circle</symbol>
+	<!-- Стиль с разделением по масштабам-->
+	<!-- Версия 2015-07-24 -->
+	<map>
+	  <layer>
+	    <labelitem>NAME</labelitem>
+	    <classitem>PLACE</classitem>
+	    <class>
+	      <expression>"city"</expression> <!-- Большой город -->
+	      <style>
+		<color red="255" green="170" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>11.3385826772</size>
+		<symbol>std:circle</symbol>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>18</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-         <position>ur</position>
-      </label>
-    </class>
-    <class>
-      <expression>"town"</expression> <!-- Средний или малый город -->
-      <style>
-        <color red="255" green="255" blue="255"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>11.3385826772</size>
-        <symbol>std:circle</symbol>
-        <maxscaledenom>6000000</maxscaledenom>
+	      </style>
+	      <style>
+		<color red="255" green="170" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>5.66929133858</size>
+		<symbol>std:circle</symbol>
 
-      </style>
-      <style>
-        <color red="0" green="0" blue="0"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>5.66929133858</size>
-        <symbol>std:circle</symbol>
-        <maxscaledenom>6000000</maxscaledenom>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>18</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		 <position>ur</position>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"town"</expression> <!-- Средний или малый город -->
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>11.3385826772</size>
+		<symbol>std:circle</symbol>
+		<maxscaledenom>6000000</maxscaledenom>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>14</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-         <position>ur</position>
-        <maxscaledenom>6000000</maxscaledenom>
-      </label>
-    </class>
-    <class>
-      <expression>"village"</expression> <!-- Посёлок  -->
-      <style>
-        <color red="255" green="255" blue="255"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>6.8031496063</size>
-        <symbol>std:circle</symbol>
-        <maxscaledenom>1000000</maxscaledenom>
+	      </style>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>5.66929133858</size>
+		<symbol>std:circle</symbol>
+		<maxscaledenom>6000000</maxscaledenom>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>8.25</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-        <position>ur</position>
-        <maxscaledenom>1000000</maxscaledenom>
-      </label>
-    </class>
-    <class>
-      <expression>"hamlet"</expression> <!-- Деревня -->
-      <style>
-        <color red="255" green="255" blue="255"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>4.25196850394</size>
-        <symbol>std:circle</symbol>
-        <maxscaledenom>500000</maxscaledenom>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>14</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		 <position>ur</position>
+		<maxscaledenom>6000000</maxscaledenom>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"village"</expression> <!-- Посёлок  -->
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>6.8031496063</size>
+		<symbol>std:circle</symbol>
+		<maxscaledenom>1000000</maxscaledenom>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>8.25</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-        <position>ur</position>
-        <maxscaledenom>500000</maxscaledenom>
-      </label>
-    </class>
-    <class>
-      <expression>"locality"</expression> <!-- Необитаемая местность -->
-      <style>
-        <color red="255" green="255" blue="255"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>2.83464566929</size>
-        <symbol>std:circle</symbol>
-        <maxscaledenom>500000</maxscaledenom>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>1000000</maxscaledenom>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"hamlet"</expression> <!-- Деревня -->
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>4.25196850394</size>
+		<symbol>std:circle</symbol>
+		<maxscaledenom>500000</maxscaledenom>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>6.5</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-        <position>ur</position>
-        <maxscaledenom>500000</maxscaledenom>
-      </label>
-    </class>
-    <class>
-      <expression>''</expression>
-      <style>
-        <color red="255" green="255" blue="255"/>
-        <outlinecolor red="0" green="0" blue="0"/>
-        <size>2.83464566929</size>
-        <symbol>std:circle</symbol>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>500000</maxscaledenom>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"locality"</expression> <!-- Необитаемая местность -->
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>2.83464566929</size>
+		<symbol>std:circle</symbol>
+		<maxscaledenom>500000</maxscaledenom>
 
-      </style>
-      <label>
-        <type>truetype</type>
-        <font>regular</font>
-        <size>8.25</size>
-        <color blue="0" green="0" red="0"/>
-        <outlinewidth>3</outlinewidth>
-        <outlinecolor blue="255" green="255" red="255"/>
-        <position>ur</position>
-      </label>
-    </class>
-  </layer>
-</map>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>6.5</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+		<maxscaledenom>500000</maxscaledenom>
+	      </label>
+	    </class>
+	    <class>
+	      <expression>''</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>2.83464566929</size>
+		<symbol>std:circle</symbol>
+
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>8.25</size>
+		<color blue="0" green="0" red="0"/>
+		<outlinewidth>3</outlinewidth>
+		<outlinecolor blue="255" green="255" red="255"/>
+		<position>ur</position>
+	      </label>
+	    </class>
+	  </layer>
+	</map>
 
