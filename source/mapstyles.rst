@@ -446,3 +446,154 @@ OSM settlement-point
 	  </layer>
 	</map>
 
+
+railway-line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: xml
+
+	<!-- Стиль railway-line с разделением по масштабам 
+	version 2015-07-24 -->
+	<map>
+	  <layer>
+	    <classitem>RAILWAY</classitem>
+	    <class>
+	      <expression>"abandoned"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<linejoin>round</linejoin>
+		<width>2.83464566929</width>
+		<linecap>round</linecap>
+	      </style>
+	      <style>
+		<pattern>2.35275590551 4.70551181102</pattern>
+		<color red="165" green="165" blue="165"/>
+		<linejoin>round</linejoin>
+		<width>2.35275590551</width>
+		<linecap>round</linecap>   
+	      </style>
+	    </class>
+		<class>
+	      <expression>"razed"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<linejoin>round</linejoin>
+		<width>2.83464566929</width>
+		<linecap>round</linecap>
+	      </style>
+	      <style>
+		<pattern>2.35275590551 4.70551181102</pattern>
+		<color red="255" green="165" blue="210"/>
+		<linejoin>round</linejoin>
+		<width>2.35275590551</width>
+		<linecap>round</linecap>   
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"construction"</expression>
+	      <style>
+		<color red="255" green="255" blue="255"/>
+		<linejoin>round</linejoin>
+		<width>2.83464566929</width>
+		<linecap>round</linecap>     
+	      </style>
+	      <style>
+		<pattern>2.35275590551 4.70551181102</pattern>
+		<color red="255" green="0" blue="127"/>
+		<linejoin>round</linejoin>
+		<width>2.35275590551</width>
+		<linecap>round</linecap>    
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"crossing"</expression>
+	      <style>
+		<color red="37" green="37" blue="255"/>
+		<linejoin>bevel</linejoin>
+		<width>0.737007874016</width>
+		<linecap>square</linecap>
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"light_rail"</expression>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<linejoin>bevel</linejoin>
+		<width>1.41732283465</width>
+		<linecap>square</linecap>
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"narrow_gauge"</expression>
+	      <style>
+		<color red="150" green="150" blue="150"/>
+		<linejoin>bevel</linejoin>
+		<width>1.41732283465</width>
+		<linecap>square</linecap> 
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"platform"</expression>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<linejoin>bevel</linejoin>
+		<width>4.25196850394</width>
+		<linecap>square</linecap>   
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"rail"</expression>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<linejoin>bevel</linejoin>
+		<width>2.83464566929</width>
+		<linecap>square</linecap> 
+		<maxscaledenom>25000</maxscaledenom> <!-- Чёрно-белая линия на крупном масштабе -->
+	      </style>
+	      <style>
+		<pattern>9.41102362205 14.1165354331</pattern>
+		<color red="255" green="255" blue="255"/>
+		<linejoin>bevel</linejoin>
+		<width>2.35275590551</width>
+		<linecap>square</linecap>
+		<maxscaledenom>25000</maxscaledenom> <!-- Чёрно-белая линия на крупном масштабе -->
+	      </style>
+	       <style>
+		
+		<color red="0" green="0" blue="0"/>
+		<linejoin>bevel</linejoin>
+		<width>2</width>
+		<linecap>square</linecap>
+		<minscaledenom>25000</minscaledenom> <!-- Чёрная линия на среднем масштабе -->
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"siding"</expression>
+	      <style>
+		<color red="145" green="145" blue="145"/>
+		<linejoin>bevel</linejoin>
+		<width>1.41732283465</width>
+		<linecap>square</linecap>  
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"subway"</expression>
+	      <style>
+		<pattern>1.41732283465 2.83464566929</pattern>
+		<color red="155" green="155" blue="155"/>
+		<linejoin>round</linejoin>
+		<width>1.41732283465</width>
+		<linecap>round</linecap>
+	      </style>
+	    </class>
+	    <class>
+	      <expression>"tram"</expression>
+	      <style>
+		<color red="0" green="0" blue="0"/>
+		<linejoin>bevel</linejoin>
+		<width>1.41732283465</width>
+		<linecap>square</linecap>
+	      </style>
+	    </class>
+	  </layer>
+	</map>
