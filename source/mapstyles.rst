@@ -597,3 +597,97 @@ railway-line
 	    </class>
 	  </layer>
 	</map>
+
+
+OSM water-line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: xml
+
+	<!-- Стиль water-line с разделением по масштабам-->
+	<!-- Версия 2015-07-24 -->
+	<map>
+	  <layer>
+	    <classitem>Waterway</classitem>
+	    <labelitem>name</labelitem>
+	    <class>
+	      <expression>"river"</expression>
+	      <style>
+		<color red="102" green="153" blue="204"/>
+		<linejoin>round</linejoin>
+		<width>3</width>
+		<linecap>round</linecap>
+		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+	      </style>
+	      <label>
+		<type>truetype</type> <!-- Подпись -->
+		<font>bold</font>
+		<size>7</size>
+		<color blue="255" green="255" red="255"/>
+		<outlinewidth>1</outlinewidth>
+		<outlinecolor red="102" green="153" blue="204"/>
+		<angle>auto</angle>
+		<repeatdistance>300</repeatdistance>
+		<maxoverlapangle>90.0</maxoverlapangle>
+		<maxscaledenom>1000000</maxscaledenom>
+	      </label>
+	      </class> 
+	    
+	      <class>
+	      <expression>"canal"</expression>  
+	      <style><!-- вертикальные линии -->
+		<angle>auto</angle>
+		<gap>-8.50393700787</gap>
+		<!-- Остались необработанные атрибуты: interval_unit, placement, offset_unit, offset -->
+		<color red="102" green="153" blue="204"/>
+		<outlinecolor red="0" green="0" blue="0"/>
+		<size>15.66929133858</size>
+		<symbol>std:line</symbol>
+		<!-- Остались необработанные атрибуты: outline_width, offset_unit, outline_width_unit, size_unit -->
+	      </style>
+	      <style>
+		<color red="102" green="153" blue="204"/>
+		<linejoin>round</linejoin>
+		<width>3</width>
+		<linecap>round</linecap>
+		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+	      </style>
+	      <label>
+		<type>truetype</type> <!-- Подпись -->
+		<font>bold</font>
+		<size>7</size>
+		<color blue="255" green="255" red="255"/>
+		<outlinewidth>1</outlinewidth>
+		<outlinecolor red="102" green="153" blue="204"/>
+		<angle>auto</angle>
+		<repeatdistance>300</repeatdistance>
+		<maxoverlapangle>90.0</maxoverlapangle>
+		<maxscaledenom>1000000</maxscaledenom>
+	      </label>
+	      </class> 
+	    
+	      <class>
+	      <expression>"stream"</expression>
+	      <style>
+		<color red="102" green="153" blue="204"/>
+		<linejoin>round</linejoin>
+		<width>1.5</width>
+		<linecap>round</linecap>
+		<maxscaledenom>250000</maxscaledenom>
+		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+	      </style>
+	      </class> 
+	    
+	      <class>
+	      <expression>"drain"</expression>
+	      <style>
+		<color red="102" green="153" blue="204"/>
+		<linejoin>round</linejoin>
+		<width>1</width>
+		<linecap>round</linecap>
+		<maxscaledenom>250000</maxscaledenom>
+		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+	      </style>
+	      </class> 
+	  </layer>
+	</map>
