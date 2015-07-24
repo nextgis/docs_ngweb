@@ -629,7 +629,7 @@ OSM water-line
 		<angle>auto</angle>
 		<repeatdistance>300</repeatdistance>
 		<maxoverlapangle>90.0</maxoverlapangle>
-		<maxscaledenom>1000000</maxscaledenom>
+		<maxscaledenom>500000</maxscaledenom>
 	      </label>
 	      </class> 
 	    
@@ -662,7 +662,7 @@ OSM water-line
 		<angle>auto</angle>
 		<repeatdistance>300</repeatdistance>
 		<maxoverlapangle>90.0</maxoverlapangle>
-		<maxscaledenom>1000000</maxscaledenom>
+		<maxscaledenom>500000</maxscaledenom>
 	      </label>
 	      </class> 
 	    
