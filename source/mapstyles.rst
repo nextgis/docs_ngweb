@@ -691,3 +691,57 @@ OSM water-line
 	      </class> 
 	  </layer>
 	</map>
+
+OSM water-polygon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: xml
+
+	<!-- стиль water-polygon
+	Версия 2015-07-24 
+	Нужно добавить 
+	-водохранилища
+	-штриховку для болот
+	-->
+	<map>
+	  <layer>
+	    <labelitem>NAME</labelitem>
+	    <classitem>NATURAL</classitem>
+	    <class>
+	      <expression>"water"</expression> <!-- Вода -->
+	      <style>
+		<color red="102" green="153" blue="204"/>
+		<outlinecolor red="102" green="153" blue="204"/>
+	      </style>
+		 <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>7</size>
+		<color red="102" green="153" blue="204"/>
+		<outlinewidth>2</outlinewidth>
+		<outlinecolor red="255" green="255" blue="222"/>
+		<!-- Ограничение подписи по масштабу -->
+		<minscaledenom>1</minscaledenom>
+		<maxscaledenom>100000</maxscaledenom>    
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"wetland"</expression> <!-- Болото -->
+		  <style>
+		<color red="102" green="153" blue="204"/>
+		<outlinecolor red="102" green="153" blue="204"/>
+	      </style>
+		 <label>
+		<type>truetype</type>
+		<font>regular</font>
+		<size>7</size>
+		<color red="102" green="153" blue="204"/>
+		<outlinewidth>2</outlinewidth>
+		<outlinecolor red="255" green="255" blue="222"/>
+		<!-- Ограничение подписи по масштабу -->
+		<minscaledenom>1</minscaledenom>
+		<maxscaledenom>100000</maxscaledenom>    
+	      </label>
+	    </class>
+	  </layer>
+	</map>
