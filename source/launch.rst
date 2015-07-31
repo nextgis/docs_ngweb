@@ -252,5 +252,66 @@ nginx + uwsgi
     }
 
 
+nginx + uwsgi (вариант 2)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Создаем файл с настройками:  
+
+::
+
+	sudo touch /etc/nginx/sites-available/ngw.conf
+
+содержание:  
+
+::
+
+     server {
+          listen                 6555;
+          location / {
+            uwsgi_read_timeout 600;
+            uwsgi_send_timeout 600;
+
+            include            uwsgi_params;
+            uwsgi_pass         unix:/tmp/ngw.socket;
+
+            proxy_redirect     off;
+            proxy_set_header   Host $host;
+            proxy_set_header   X-Real-IP $remote_addr;
+            proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header   X-Forwarded-Host $server_name;
+        }
+    }
 
 
+Setup uWSGI
+
+::
+
+	[app:main]
+	use = egg:nextgisweb
+	
+	# путь к основному конфигурационному файлу
+	config = /opt/ngw/config.ini
+	
+	# путь к конфигурационному файлу библиотеки logging
+	# logging = %(here)s/logging.ini
+	
+	# полезные для отладки параметры
+	# pyramid.reload_templates = true
+	# pyramid.includes = pyramid_debugtoolbar
+	
+	[server:main]
+	use = egg:waitress#main
+	host = 0.0.0.0
+	port = 6543
+	
+	[uwsgi]
+	plugins = python
+	home = /opt/ngw/env
+	module = nextgisweb.uwsgiapp
+	env = PASTE_CONFIG=%p
+	socket = /tmp/ngw.socket
+	protocol = uwsgi
+	chmod-socket=777
+	paste-logger = %p
+	workers = 8
