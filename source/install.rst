@@ -377,11 +377,11 @@ postgresql-{version}-postgis-{version} и установите его:
 
 
 Для генерации ключа для конфигурационного файла ``config.ini`` можно 
-воспользоваться коммандой
+воспользоваться командой
 
 .. code:: bash
 	
-	openssl rand -base64 16 | xclip -selection clipboard
+	openssl rand -base64 16
 
 .. note:
    В некоторых случаях необходимо указывать абсолютные пути к папкам, 
