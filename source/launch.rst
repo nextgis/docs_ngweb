@@ -71,6 +71,25 @@ wrapper, так как он иногда работает некорректно
 ::
 
     env = WSGI_FILE_WRAPPER=no
+    
+Для запуска uWSGI через unix socet секция должна иметь следующий вид:
+    
+::
+    
+    [uwsgi]
+    home = /home/ngw_admin/ngw/env
+    socket = /home/ngw_admin/uwsgi/ngw
+    protocol=uwsgi
+    chmod-socket=777
+    master = true
+    processes = 8
+    threads = 4
+    logto = /home/ngw_admin/logs/ngw.log
+    log-slow = 1000
+    paste = config:%p
+    paste-logger = %p
+
+.. note:: Соответсвующие папки должны быть созданы
 
 Далее, в зависимости от того, какой интерфейс требуется на выходе от
 uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi это
@@ -131,6 +150,35 @@ FastCGI:
 
     [program:nextgisweb]
     command = /path/to/uwsgi /path/to/file.ini
+    
+supervisor + uwsgi
+~~~~~~~~~~~~~~~~~~
+
+Для запуска через supervisor + uWSGI без использования веб-сервера конфигурация 
+должна иметь следующий вид:
+    
+::    
+
+   [uwsgi]
+   module = nextgisweb.uwsgiapp
+   lazy = yes
+   env = PASTE_CONFIG=%p
+   env = PATH=/home/ngw_admin/ngw/env/bin:/bin:/usr/sbin:/usr/bin
+   env = LANG=ru_RU.UTF-8
+   virtualenv = /home/ngw_admin/ngw/env
+   protocol = http
+   socket = :8080
+   workers = 4 # количество потоков обработки подключений
+   limit-post = 4831838208 # максимальный размер файла
+
+Конфигурация supervisor может иметь следующий вид:
+    
+::
+    
+    [program:ngw]
+    command = /home/ngw_admin/ngw/env/bin/uwsgi /home/ngw_admin/ngw/production.ini
+    user = ngw_admin
+
 
 apache + mod\_uwsgi
 ~~~~~~~~~~~~~~~~~~~
@@ -177,4 +225,32 @@ apache + mod\_proxy\_uwsgi
 
     socket = localhost:10001
     protocol = uwsgi
+    
+nginx + uwsgi
+~~~~~~~~~~~~~
+
+Для запуска при помощи nginx в файл конфигурации сервера необходимо добавить 
+следующие строки.
+
+В случае запуска uWSGI на TCP порту:    
+
+:: 
+
+    location /path_to_ngw_instance/ {
+        include uwsgi_params;
+	    uwsgi_pass 127.0.0.1:6543;
+    }
+    
+    
+В случае запуска uWSGI на unix порту:    
+
+:: 
+
+    location /path_to_ngw_instance/ {
+        include uwsgi_params;
+        uwsgi_pass unix:///home/ngw_admin/uwsgi/ngw;
+    }
+
+
+
 
