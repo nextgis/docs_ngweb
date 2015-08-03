@@ -27,7 +27,9 @@
 * LABELMAXSCALEDENOM  .. todo: проверить пример
 * LABELMINSCALEDENOM  .. todo: проверить пример
 * LABELCACHE [on|off] - не проверял, нашел в исходниках
-* position
+* <position>ur</position> - направление сдвига подписи.
+  * ur - вверх вправо (в книгах по картографии рекомендуют так делать по умолчанию.
+  * lr - ↖
 
 
 * <color red="255" green="170" blue="127"/> - цвет заливки или линии
@@ -45,38 +47,11 @@
 
 * <gap>10</gap> - шаг пунктира (используется вместе с <symbol>std:circle</symbol>)
 
-* <classitem>PLACE</classitem> - выборка по атрибуту с названием PLACE
- Конструкция для раскраски по значениям:
+* <classitem>PLACE</classitem> - выборка по атрибуту с названием PLACE. Так же смотрите пример в  #Выборка.
+  Поддерживаются следующие операторы
+  * имя атрибута
+  * gt - больша
  
- .. code-block:: xml
-
-	<map>
-	  <layer>
-	    <labelitem>NAME</labelitem>
-	    <classitem>PLACE</classitem>
-	    <class>
-	      <expression>"city"</expression>
-	      <style>
-	      </style>
-	      <label>
-	      </label>
-	    </class>
-	    <class>
-	      <expression>"town"</expression>
-	      <style>
-	      </style>
-	      <label>
-	      </label>
-	    </class>
-	    <class>
-	      <expression>''</expression>
-	      <style>
-	      </style>
-	      <label>
-	      </label>
-	    </class>
-	  </layer>
-	</map>
 
 * MAXGEOWIDTH - не проверял, нашел в исходниках
 * MINGEOWIDTH - не проверял, нашел в исходниках
