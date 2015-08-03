@@ -31,10 +31,13 @@ LABELCACHE [on|off] - не проверял, нашел в исходниках
 
 * <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем)  .. todo: проверить пример
 * <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
-MAXGEOWIDTH - не проверял, нашел в исходниках
-MINGEOWIDTH - не проверял, нашел в исходниках
-OFFSITE - не проверял, нашел в исходниках
-OPACITY [integer|alpha] - не проверял, нашел в исходниках
+* MAXGEOWIDTH - не проверял, нашел в исходниках
+* MINGEOWIDTH - не проверял, нашел в исходниках
+* OFFSITE - не проверял, нашел в исходниках
+* OPACITY [integer|alpha] - не проверял, нашел в исходниках
+*  SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
+SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
+* TYPE [chart|circle|line|point|polygon|raster|query] - не проверял, нашел в исходниках
 
 
 
