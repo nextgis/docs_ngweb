@@ -26,11 +26,20 @@
 * <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
 * LABELMAXSCALEDENOM  .. todo: проверить пример
 * LABELMINSCALEDENOM  .. todo: проверить пример
-LABELCACHE [on|off] - не проверял, нашел в исходниках
+* LABELCACHE [on|off] - не проверял, нашел в исходниках
 
 
+* <color red="255" green="170" blue="127"/> - цвет заливки или линии
+* <outlinecolor red="106" green="106" blue="106"/> - цвет обводки
+* <width>0.5</width> - толщина линии или границы полигона в пикселях.
 * <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем)  .. todo: проверить пример
 * <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
+
+Точечные объекты
+
+* <symbol>std:circle</symbol> - символ
+
+
 * MAXGEOWIDTH - не проверял, нашел в исходниках
 * MINGEOWIDTH - не проверял, нашел в исходниках
 * OFFSITE - не проверял, нашел в исходниках
