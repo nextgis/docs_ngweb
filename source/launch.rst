@@ -88,6 +88,7 @@ wrapper, так как он иногда работает некорректно
     log-slow = 1000
     paste = config:%p
     paste-logger = %p
+    env=LANG=ru_RU.UTF-8
 
 .. note:: Соответсвующие папки должны быть созданы
 
@@ -178,6 +179,7 @@ supervisor + uwsgi
     [program:ngw]
     command = /home/ngw_admin/ngw/env/bin/uwsgi /home/ngw_admin/ngw/production.ini
     user = ngw_admin
+    environment=LANG=ru_RU.UTF-8
 
 
 apache + mod\_uwsgi
