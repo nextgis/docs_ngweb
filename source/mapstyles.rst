@@ -50,6 +50,14 @@
   
 * <linejoin>round</linejoin> - рисование линии в углах поворота
 * <linecap>round</linecap> - рисование начала и конца линии
+
+.. figure:: _static/admin_mapstyles_linecap.png
+   :name: admin_mapstyles_linecap.png
+   :align: center
+   :scale: 75%
+
+   <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
+
 * <pattern> - ?
 * <angle> - ?
 
