@@ -42,20 +42,19 @@
 
 * <gap>10</gap> - шаг пунктира (используется вместе с <symbol>std:circle</symbol>)
 * <width>8</width> - ширина линии в пикселах
-
 * <classitem>PLACE</classitem> - выборка по атрибуту с названием PLACE. Так же смотрите пример в  #Выборка.
   Поддерживаются следующие операторы
   
   * имя атрибута
   * gt - больше
   
- * <linejoin>round</linejoin> - рисование линии в углах поворота
- * <linecap>round</linecap> - рисование начала и конца линии
- * <pattern> - ?
- * <angle> - ?
- 
- Подписи
- ~~~~~~~~
+* <linejoin>round</linejoin> - рисование линии в углах поворота
+* <linecap>round</linecap> - рисование начала и конца линии
+* <pattern> - ?
+* <angle> - ?
+
+Подписи
+~~~~~~~~
 
 * <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
 * LABELMAXSCALEDENOM  .. todo: проверить пример
@@ -74,6 +73,7 @@
    * lc - ↓
    * lr - ↘
    * auto
+
 * <Maxoverlapangle> - ?  
 
 Неизвестные атрибуты
@@ -85,8 +85,8 @@
 * MINGEOWIDTH - не проверял, нашел в исходниках
 * OFFSITE - не проверял, нашел в исходниках
 * OPACITY [integer|alpha] - не проверял, нашел в исходниках
-*  SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
-SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
+* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
+* SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
 * TYPE [chart|circle|line|point|polygon|raster|query] - не проверял, нашел в исходниках
 
 
