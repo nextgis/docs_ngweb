@@ -232,7 +232,23 @@ latex_elements = {
 
 'fontpkg': '\\usepackage{dejavu}',
 # Additional stuff for the LaTeX preamble.
-#'preamble': 'latex_preamble'
+
+#'preamble': '''
+#\DeclareUnicodeCharacter{2199}{\uparrow}
+#
+#''',
+
+'utf8extra': r'''
+\DeclareUnicodeCharacter{00A0}{\nobreakspace}
+\DeclareUnicodeCharacter{2196}{\ensuremath{\nwarrow}}
+\DeclareUnicodeCharacter{2197}{\ensuremath{\nearrow}}
+\DeclareUnicodeCharacter{2198}{\ensuremath{\searrow}}
+\DeclareUnicodeCharacter{2199}{\ensuremath{\swarrow}}
+\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}
+\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}
+''',
 
 # Latex figure (float) alignment
 'figure_align': 'htbp'
