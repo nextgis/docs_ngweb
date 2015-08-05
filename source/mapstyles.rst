@@ -36,18 +36,18 @@
 
 * <symbol>std:circle</symbol> - тип значка
 
-   * std:rectangle
-   * std:circle
+   * std:rectangle - квадратик
+   * std:circle - кружок
    * std:diamond
    * std:triangle
    * std:triangle-equilateral
    * std:star
-   * std:pentagon
+   * std:pentagon - пятиугольник
    * std:arrow
    * std:cross
-   * std:xcross
-   * std:line
-   * std:hatch
+   * std:xcross - +
+   * std:line - коротенькая линия
+   * std:hatch - длинная линия, стыкующаяся в текстуру
 
 Эти значки можно использовать для заливки площадных объектов, комбинируя в такую конструкцию:
 
@@ -78,8 +78,9 @@
             </style>
  </class>
 
+Эти значки можно использовать для рисования линии
 
-Проверить, все ли эти значки из парсера рисуются?
+.. todo:: Проверить, все ли эти значки из парсера рисуются?
 
 * <size>2</size> - размер значка в пикселях
 
