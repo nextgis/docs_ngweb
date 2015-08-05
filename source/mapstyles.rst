@@ -31,7 +31,7 @@
 * <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем)  .. todo: проверить пример
 * <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
 
-Точечные объекты
+Значки
 ~~~~~~~~~~~~~~~~~
 
 * <symbol>std:circle</symbol> - тип значка
@@ -49,8 +49,36 @@
    * std:line
    * std:hatch
 
-.. todo:: можно ли сделать arrow с углом?
-.. todo:: Проверить, можно ли заливать значками площади?
+Эти значки можно использовать для заливки площадных объектов, комбинируя в такую конструкцию:
+
+.. code-block:: xml
+
+        <class>
+            <expression>"industrial"</expression>
+            <!-- Промзоны -->
+            <style> <!-- штриховка направо -->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>45</angle>
+            </style>
+            <style> <!-- штриховка налево-->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>-45</angle>
+            </style>
+            <style> <!-- Обводка -->
+                <outlinecolor red="255" green="50" blue="50"/>
+                <width>0.5</width>
+            </style>
+ </class>
+
+
 Проверить, все ли эти значки из парсера рисуются?
 
 * <size>2</size> - размер значка в пикселях
@@ -64,7 +92,8 @@
   Поддерживаются следующие операторы
   
   * имя атрибута
-  * gt - больше
+  * (!=)|(>=)|(<=)|(<)|(>)|(=\*)|(=)|(lt)|(gt)|(ge)|(le)|(eq)|(ne)
+  * and,or,&&,|
   
 * <linejoin>round</linejoin> - рисование линии в углах поворота
 * <linecap>round</linecap> - рисование начала и конца линии
