@@ -35,6 +35,24 @@
 ~~~~~~~~~~~~~~~~~
 
 * <symbol>std:circle</symbol> - тип значка
+
+   * std:rectangle
+   * std:circle
+   * std:diamond
+   * std:triangle
+   * std:triangle-equilateral
+   * std:star
+   * std:pentagon
+   * std:arrow
+   * std:cross
+   * std:xcross
+   * std:line
+   * std:hatch
+
+.. todo:: можно ли сделать arrow с углом?
+.. todo:: Проверить, можно ли заливать значками площади?
+Проверить, все ли эти значки из парсера рисуются?
+
 * <size>2</size> - размер значка в пикселях
 
 Линейные объекты
@@ -58,15 +76,24 @@
 
    <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
 
-* <pattern> - ?
+* <pattern>2.5 4.5</pattern> - шаблон штриховки 
+
+.. todo:: узнать про цифры
+
 * <angle> - ?
 
 Подписи
 ~~~~~~~~
 
 * <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
-* LABELMAXSCALEDENOM  .. todo: проверить пример
-* LABELMINSCALEDENOM  .. todo: проверить пример
+* LABELMAXSCALEDENOM  
+
+.. todo:: проверить пример
+
+* LABELMINSCALEDENOM  
+
+.. todo:: проверить пример
+
 * LABELCACHE [on|off] - не проверял, нашел в исходниках
 * <position>ur</position> - направление сдвига подписи.
 
