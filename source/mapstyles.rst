@@ -34,6 +34,15 @@
 Значки
 ~~~~~~~~~~~~~~~~~
 
+.. figure:: _static/mapstyle_hatch_demo.png
+   :name: mapstyle_hatch_demo.png
+   :align: center
+   :scale: 100%
+
+   Демонстрация различных видов штриховок.
+
+
+
 * <symbol>std:circle</symbol> - тип значка
 
    * std:rectangle - квадратик
@@ -125,7 +134,7 @@
 
 .. todo:: узнать про цифры
 
-* <angle> - ?
+* <angle> - угол поворота значка. Так же можно поворачивать штриховку.
 
 Подписи
 ~~~~~~~~
@@ -171,6 +180,9 @@
 
 
 Примеры картостилей
+----------------------------------
+
+OSM-default
 ----------------------------------
 
 Полигональный слой с ограничением по масштабу и подписями
@@ -898,9 +910,17 @@ OSM water-polygon
 
 
 
+
+OSM-black
+----------------------------------
+
 OSM landuse-polygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: _static/mapstyle_hatch_demo.png
+   :name: mapstyle_hatch_demo.png
+   :align: center
+   :scale: 75%
 
 .. code-block:: xml
 
