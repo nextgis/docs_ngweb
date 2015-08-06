@@ -895,3 +895,137 @@ OSM water-polygon
 	    </class>
 	  </layer>
 	</map>
+
+
+
+OSM landuse-polygon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. code-block:: xml
+
+
+	<map> <!-- Демонстрация штриховок, предполагается что под этим слоем будет чёрный фон-->
+	    <layer>
+		<labelitem>OSM_ID</labelitem>
+		<classitem>LANDUSE</classitem>
+		<class>
+		    <expression>"residential"</expression>
+		    <!-- Жилые зоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="255" green="185" blue="33"/>
+		        <width>1.4</width>
+		        <symbol>std:line</symbol>
+		        <gap>3</gap>
+		        <size>1</size>
+		        <angle>90</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="255" green="185" blue="33"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"grass"</expression>
+		    <!-- Газоны зоны -->
+		    <style>
+		        <!-- Линии -->
+		        <color red="20" green="255" blue="33"/>
+		        <width>1</width>
+		        <symbol>std:line</symbol>
+		        <gap>6</gap>
+		        <size>4</size>
+		        <angle>0</angle>
+		        <pattern>2.5 4.5</pattern>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="20" green="255" blue="33"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"commercial"</expression>
+		    <!-- Жилые зоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="133" green="33" blue="25"/>
+		        <width>1.4</width>
+		        <symbol>std:line</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>45</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="133" green="33" blue="25"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"industrial"</expression>
+		    <!-- Промзоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="255" green="50" blue="50"/>
+		        <width>0.4</width>
+		        <symbol>std:hatch</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>45</angle>
+		    </style>
+		    <style>
+		        <!-- штриховка налево-->
+		        <color red="255" green="50" blue="50"/>
+		        <width>0.4</width>
+		        <symbol>std:hatch</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>-45</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="255" green="50" blue="50"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"cemetery"</expression>
+		    <!-- Кладбоны -->
+		    <style>
+		        <!-- оградки -->
+		        <color red="14" green="166" blue="0"/>
+		        <width>1.4</width>
+		        <symbol>std:rectangle</symbol>
+		        <gap>20</gap>
+		        <size>11</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- оградки -->
+		        <color red="0" green="0" blue="0"/>
+		        <width>1.2</width>
+		        <symbol>std:rectangle</symbol>
+		        <gap>20</gap>
+		        <size>10</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- кресты -->
+		        <color red="14" green="166" blue="0"/>
+		        <width>1.4</width>
+		        <symbol>std:cross</symbol>
+		        <gap>20</gap>
+		        <size>9</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="14" green="166" blue="0"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+	    </layer>
+	</map>
