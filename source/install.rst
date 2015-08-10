@@ -90,7 +90,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
     sudo su - postgres
     nano /etc/postgresql/9.3/main/pg_hba.conf
-    делаем строку host    all     all     md5
+    делаем строку host    all    all    127.0.0.1/32    md5
 
     nano /etc/postgresql/9.3/main/postgresql.conf
     делаем строку listen_addresses='*', и расскоментируем её.
