@@ -93,7 +93,7 @@ postgresql-{version}-postgis-{version} и установите его:
     делаем строку host    all     all     md5
 
     nano /etc/postgresql/9.3/main/postgresql.conf
-    делаем строку listen_adress="*", и расскоментируем её.
+    делаем строку listen_addresses='*', и расскоментируем её.
 
 .. code:: bash
 
