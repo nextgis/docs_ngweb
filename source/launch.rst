@@ -63,7 +63,7 @@
 
 .. code:: bash
 
-   apt-get install uwsgi-plugin-python uwsgi-emperor
+   apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
 К существующему конфигурационном ini-файлу paste добавляем секцию
 ``uwsgi``
