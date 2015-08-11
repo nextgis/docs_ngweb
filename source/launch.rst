@@ -52,11 +52,19 @@
 Запуск через uWSGI
 ------------------
 
+Для начал необходимо установить uWSGI:
+
 .. code:: bash
 
-    user@ubuntu:~/ngw$ source env/bin/activate
-    (env)user@ubuntu:~/ngw$ pip install uwsgi
+   user@ubuntu:~/ngw$ source env/bin/activate
+   (env)user@ubuntu:~/ngw$ pip install uwsgi
+    
+или через системный сервис:
 
+.. code:: bash
+
+   apt-get install uwsgi-plugin-python uwsgi-emperor
+ 
 К существующему конфигурационном ini-файлу paste добавляем секцию
 ``uwsgi``
 
