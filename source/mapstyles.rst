@@ -20,10 +20,170 @@
 Теги языка картостилей
 ----------------------------------
 
-.. todo: Написать подраздел
+Для правки стиля, или написания нового рекомендуется взять код какого-нибудь существующего стиля из примера, и потом дополнять его, а не писать с нуля.
+  
+Общие теги
+~~~~~~~~~~~~~~~~~ 
+  
+* <color red="255" green="170" blue="127"/> - цвет заливки или линии
+* <outlinecolor red="106" green="106" blue="106"/> - цвет обводки
+* <width>0.5</width> - толщина линии или границы полигона в пикселях.
+* <outlinewidth>3</outlinewidth> - ширина обводки
+* <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем)  .. todo: проверить пример
+* <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
+
+Значки
+~~~~~~~~~~~~~~~~~
+
+.. figure:: _static/mapstyle_hatch_demo.png
+   :name: mapstyle_hatch_demo.png
+   :align: center
+   :scale: 100%
+
+   Демонстрация различных видов штриховок.
+
+
+
+* <symbol>std:circle</symbol> - тип значка
+
+   * std:rectangle - квадратик
+   * std:circle - кружок
+   * std:diamond - ромбик
+   * std:triangle - треугольник острием вверх
+   * std:triangle-equilateral - треугольник острием вниз
+   * std:star - пятиконечная звёздочка
+   * std:pentagon - пятиугольник
+   * std:arrow - стрелка (по умолчанию вверх, можно поворачивать тегом <angle>45</angle>)
+   * std:cross - +
+   * std:xcross - x
+   * std:line - коротенькая линия
+   * std:hatch - длинная линия, стыкующаяся в текстуру
+
+Эти значки можно использовать для рисования линии, заливки полигонов, или обозначения точек. Так же их можно комбинировать в такую конструкцию:
+
+.. code-block:: xml
+
+        <class>
+            <expression>"industrial"</expression>
+            <!-- Промзоны -->
+            <style> <!-- штриховка направо -->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>45</angle>
+            </style>
+            <style> <!-- штриховка налево-->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>-45</angle>
+            </style>
+            <style> <!-- Обводка -->
+                <outlinecolor red="255" green="50" blue="50"/>
+                <width>0.5</width>
+            </style>
+ </class>
+
+
+
+
+* <size>2</size> - размер значка в пикселях
+
+Линейные объекты
+~~~~~~~~~~~~~~~~
+
+* <gap>10</gap> - шаг пунктира (используется вместе с <symbol>std:circle</symbol>)
+* <width>8</width> - ширина линии в пикселах
+* <classitem>PLACE</classitem> - выборка по атрибуту с названием PLACE. Так же смотрите пример в  #Выборка.
+  Поддерживаются следующие операторы
+  
+  * имя атрибута
+  * !=
+  * >=
+  * <=
+  * <
+  * >
+  * =* - сравнение строк без учёта раскладки.
+
+  * =
+  * lt - меньше
+  * gt - больше
+  * ge - больше или равно
+  * le - меньше или равно
+  * eq - равно
+  * ne - не равно
+  * and - И
+  * && - И
+  * or - ИЛИ
+  * || - ИЛИ
+  
+* <linejoin>round</linejoin> - рисование линии в углах поворота
+* <linecap>round</linecap> - рисование начала и конца линии
+
+.. figure:: _static/admin_mapstyles_linecap.png
+   :name: admin_mapstyles_linecap.png
+   :align: center
+   :scale: 75%
+
+   <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
+
+* <pattern>2.5 4.5</pattern> - шаблон пунктира 
+
+.. todo:: узнать про цифры
+
+* <angle> - угол поворота значка. Так же можно поворачивать штриховку.
+
+Подписи
+~~~~~~~~
+
+* <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
+* LABELMAXSCALEDENOM  
+
+.. todo:: проверить пример
+
+* LABELMINSCALEDENOM  
+
+.. todo:: проверить пример
+
+* LABELCACHE [on|off] - не проверял, нашел в исходниках
+* <position>ur</position> - направление сдвига подписи.
+
+   * ur - ↗ вверх вправо (в книгах по картографии рекомендуют так делать по умолчанию.
+   * ul - ↖
+   * uc - ↑
+   * cl - ←
+   * cc - строго по центру
+   * cr - →
+   * ll - ↙
+   * lc - ↓
+   * lr - ↘
+   * auto
+
+* <Maxoverlapangle> - ?  
+
+Неизвестные атрибуты
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. todo:: узнать, реализованы ли они
+
+* MAXGEOWIDTH - не проверял, нашел в исходниках
+* MINGEOWIDTH - не проверял, нашел в исходниках
+* OFFSITE - не проверял, нашел в исходниках
+* OPACITY [integer|alpha] - не проверял, нашел в исходниках
+* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
+* SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
+* TYPE [chart|circle|line|point|polygon|raster|query] - не проверял, нашел в исходниках
+
 
 
 Примеры картостилей
+----------------------------------
+
+OSM-default
 ----------------------------------
 
 Полигональный слой с ограничением по масштабу и подписями
@@ -747,4 +907,146 @@ OSM water-polygon
 	      </label>
 	    </class>
 	  </layer>
+	</map>
+
+
+
+
+OSM-black
+----------------------------------
+
+OSM landuse-polygon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: _static/mapstyle_hatch_demo.png
+   :name: mapstyle_hatch_demo.png
+   :align: center
+   :scale: 75%
+
+.. code-block:: xml
+
+
+	<map> <!-- Демонстрация штриховок, предполагается что под этим слоем будет чёрный фон-->
+	    <layer>
+		<labelitem>OSM_ID</labelitem>
+		<classitem>LANDUSE</classitem>
+		<class>
+		    <expression>"residential"</expression>
+		    <!-- Жилые зоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="255" green="185" blue="33"/>
+		        <width>1.4</width>
+		        <symbol>std:line</symbol>
+		        <gap>3</gap>
+		        <size>1</size>
+		        <angle>90</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="255" green="185" blue="33"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"grass"</expression>
+		    <!-- Газоны зоны -->
+		    <style>
+		        <!-- Линии -->
+		        <color red="20" green="255" blue="33"/>
+		        <width>1</width>
+		        <symbol>std:line</symbol>
+		        <gap>6</gap>
+		        <size>4</size>
+		        <angle>0</angle>
+		        <pattern>2.5 4.5</pattern>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="20" green="255" blue="33"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"commercial"</expression>
+		    <!-- Жилые зоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="133" green="33" blue="25"/>
+		        <width>1.4</width>
+		        <symbol>std:line</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>45</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="133" green="33" blue="25"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"industrial"</expression>
+		    <!-- Промзоны -->
+		    <style>
+		        <!-- штриховка направо -->
+		        <color red="255" green="50" blue="50"/>
+		        <width>0.4</width>
+		        <symbol>std:hatch</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>45</angle>
+		    </style>
+		    <style>
+		        <!-- штриховка налево-->
+		        <color red="255" green="50" blue="50"/>
+		        <width>0.4</width>
+		        <symbol>std:hatch</symbol>
+		        <gap>10</gap>
+		        <size>5</size>
+		        <angle>-45</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="255" green="50" blue="50"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+		<class>
+		    <expression>"cemetery"</expression>
+		    <!-- Кладбоны -->
+		    <style>
+		        <!-- оградки -->
+		        <color red="14" green="166" blue="0"/>
+		        <width>1.4</width>
+		        <symbol>std:rectangle</symbol>
+		        <gap>20</gap>
+		        <size>11</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- оградки -->
+		        <color red="0" green="0" blue="0"/>
+		        <width>1.2</width>
+		        <symbol>std:rectangle</symbol>
+		        <gap>20</gap>
+		        <size>10</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- кресты -->
+		        <color red="14" green="166" blue="0"/>
+		        <width>1.4</width>
+		        <symbol>std:cross</symbol>
+		        <gap>20</gap>
+		        <size>9</size>
+		        <angle>0</angle>
+		    </style>
+		    <style>
+		        <!-- Обводка -->
+		        <outlinecolor red="14" green="166" blue="0"/>
+		        <width>0.5</width>
+		    </style>
+		</class>
+	    </layer>
 	</map>

@@ -90,10 +90,10 @@ postgresql-{version}-postgis-{version} и установите его:
 
     sudo su - postgres
     nano /etc/postgresql/9.3/main/pg_hba.conf
-    делаем строку host    all     all     md5
+    делаем строку host    all    all    127.0.0.1/32    md5
 
     nano /etc/postgresql/9.3/main/postgresql.conf
-    делаем строку listen_adress="*", и расскоментируем её.
+    делаем строку listen_addresses='*', и расскоментируем её.
 
 .. code:: bash
 
@@ -377,11 +377,11 @@ postgresql-{version}-postgis-{version} и установите его:
 
 
 Для генерации ключа для конфигурационного файла ``config.ini`` можно 
-воспользоваться коммандой
+воспользоваться командой
 
 .. code:: bash
 	
-	openssl rand -base64 16 | xclip -selection clipboard
+	openssl rand -base64 16
 
 .. note:
    В некоторых случаях необходимо указывать абсолютные пути к папкам, 
