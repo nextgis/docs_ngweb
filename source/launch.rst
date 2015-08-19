@@ -279,9 +279,13 @@ nginx + uwsgi (вариант 2)
 
      server {
           listen                 6555;
+          client_max_body_size 6G;   # для больших файлов увеличиваем размер POST запроса
+          large_client_header_buffers 8 32k; # для больших файлов увеличиваем буфер
+
+          
           location / {
-            uwsgi_read_timeout 600;
-            uwsgi_send_timeout 600;
+            uwsgi_read_timeout 600s; #для больших файлов необходимо поставить большее время
+            uwsgi_send_timeout 600s;
 
             include            uwsgi_params;
             uwsgi_pass         unix:/tmp/ngw.socket;
@@ -291,6 +295,9 @@ nginx + uwsgi (вариант 2)
             proxy_set_header   X-Real-IP $remote_addr;
             proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header   X-Forwarded-Host $server_name;
+            
+            proxy_buffer_size 64k; # для больших файлов увеличиваем буфер
+	    proxy_buffers 8 32k;
         }
     }
 
