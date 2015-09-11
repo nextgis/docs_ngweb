@@ -229,6 +229,36 @@ NextGIS Web строится на ресурсном подходе - кажды
 Примеры настроек прав доступа
 -----------------------------
 
+Дать гостю права на просмотр карты
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: 
+	Гости будут иметь возможность видеть админку и ходить по всем папкам, кроме специально закрытых.
+
+.. figure:: _static/access_rights_group_for_quest_0.png
+   :name: access_rights_tab
+   :align: center
+   :scale: 100 %
+
+   Задать в свойствах корневой группы ресурсов.
+
+
+.. figure:: _static/access_rights_group_for_quest_webmaps.png
+   :name: access_rights_tab
+   :align: center
+   :scale: 100 %
+
+   Задать в свойствах группы ресурсов с веб-картами.
+
+
+.. figure:: _static/access_rights_group_for_quest_geodata.png
+   :name: access_rights_tab
+   :align: center
+   :scale: 100 %
+
+   Задать в свойствах группы ресурсов с геоданными.
+
+
 Дать одному пользователю права на одну группу ресурсов
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
