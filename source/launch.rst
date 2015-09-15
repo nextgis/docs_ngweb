@@ -52,11 +52,19 @@
 Запуск через uWSGI
 ------------------
 
+Для начал необходимо установить uWSGI:
+
 .. code:: bash
 
-    user@ubuntu:~/ngw$ source env/bin/activate
-    (env)user@ubuntu:~/ngw$ pip install uwsgi
+   user@ubuntu:~/ngw$ source env/bin/activate
+   (env)user@ubuntu:~/ngw$ pip install uwsgi
+    
+или через системный сервис:
 
+.. code:: bash
+
+   apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
+ 
 К существующему конфигурационном ini-файлу paste добавляем секцию
 ``uwsgi``
 
@@ -94,8 +102,8 @@ wrapper, так как он иногда работает некорректно
 
 .. note:: Соответсвующие папки должны быть созданы
 
-Далее, в зависимости от того, какой интерфейс требуется на выходе от
-uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi это
+Далее в зависимости от того, какой интерфейс требуется на выходе от
+uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi - это
 одновременно и протокол и программа. Ниже речь идет именно о протоколе.
 
 HTTP:
@@ -271,9 +279,13 @@ nginx + uwsgi (вариант 2)
 
      server {
           listen                 6555;
+          client_max_body_size 6G;   # для больших файлов увеличиваем размер POST запроса
+          large_client_header_buffers 8 32k; # для больших файлов увеличиваем буфер
+
+          
           location / {
-            uwsgi_read_timeout 600;
-            uwsgi_send_timeout 600;
+            uwsgi_read_timeout 600s; #для больших файлов необходимо поставить большее время
+            uwsgi_send_timeout 600s;
 
             include            uwsgi_params;
             uwsgi_pass         unix:/tmp/ngw.socket;
@@ -283,6 +295,9 @@ nginx + uwsgi (вариант 2)
             proxy_set_header   X-Real-IP $remote_addr;
             proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header   X-Forwarded-Host $server_name;
+            
+            proxy_buffer_size 64k; # для больших файлов увеличиваем буфер
+	    proxy_buffers 8 32k;
         }
     }
 
