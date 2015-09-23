@@ -1,7 +1,7 @@
-
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
 .. _ngweb_style_create:
+    
 Стили слоёв
 ===========
 
