@@ -42,7 +42,7 @@ NextGIS Web обеспечивает следующие возможности:
 .. only:: latex
 
    Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение :ref:`NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
+   специализированное настольное приложение `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
 
 Данное :abbr:`ПО (программное обеспечение)` позволяет более просто выполнять 
 пакетные операции над данными в NextGIS Web.
@@ -54,7 +54,7 @@ NextGIS Web обеспечивает следующие возможности:
 
 .. only:: latex
 
-   Мобильное приложение :ref:`NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ng-mobile-intro>`_ позволяет загружать 
+   Мобильное приложение `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ng-mobile-intro>`_ позволяет загружать 
    собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
    
    
