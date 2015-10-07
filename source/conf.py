@@ -62,7 +62,7 @@ author = u'Артём Светлов'
 # built documents.
 #
 # The short X.Y version.
-version = '2.2.2'
+version = '2.2.3'
 # The full version, including alpha/beta/rc tags.
 release = '2.2'
 
@@ -259,7 +259,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'NextGISWeb.tex', u'Документация NextGIS Web',
-   u'Артём Светлов', 'manual', 'true'),
+   u'Артём Светлов \\and Дмитрий Барышников', 'manual', 'true'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
