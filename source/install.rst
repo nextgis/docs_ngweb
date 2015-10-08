@@ -21,11 +21,17 @@
 Подключить репозиторий ubuntugis (см. `поддерживаемые
 дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
+**Для ubuntu server 12.04**    
+
 .. code:: bash
 
-    #Для ubuntu server 12.04    
+    sudo apt-get install software-properties-common python-software-properties
     sudo apt-add-repository ppa:ubuntugis/ppa
-    #Для ubuntu server 14.04.2      
+
+**Для ubuntu server 14.04**
+
+.. code:: bash
+    
     sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
     sudo apt-get update
     sudo apt-get upgrade
@@ -128,7 +134,8 @@ postgresql-{version}-postgis-{version} и установите его:
     sudo apt-get install python-mapscript git libgdal-dev python-dev g++ \
     libxml2-dev libxslt1-dev gdal-bin
 
-Для большинства случаев ключи генерировать не нужно! Это необходимо при
+В случае доработки NextGIS Web может понадобится регистрация ключей. 
+**Для большинства случаев ключи генерировать не нужно!** Это необходимо при
 разработке.
 
 Генерируем ключи для работы с GitHub (копируем и вставляем ключ в
