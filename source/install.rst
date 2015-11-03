@@ -448,6 +448,14 @@ postgresql-{version}-postgis-{version} и установите его:
 
     env/bin/nextgisweb-i18n --package nextgisweb compile
     env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
+    
+Для установки локализации по-умолчанию для русского языка необходимо в конфигурационный файл (например, **config.ini**) добавить в секцию **core** следующую строку:
+
+.. code:: ini
+
+   locale.default = ru
+   
+Тогда при первом входе интерфейс будет на русском.   
 
 Инициализация БД
 ----------------
