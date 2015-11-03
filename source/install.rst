@@ -356,7 +356,7 @@ postgresql-{version}-postgis-{version} и установите его:
 	# components.ignore = 
 	# Директория для хранения данных 
 	sdir = /home/trolleway/ngw/data
-	# Язык, используемый по умолчанию
+	# Локаль, используемая по-умолчанию
 	locale.default = ru
 
 	[file_storage]
