@@ -53,7 +53,7 @@
 .. figure:: _static/admin_controlpanel_user_create.png
    :name: admin_controlpanel_user_create
    :align: center
-   :scale: 75 %
+   :width: 15cm
 
    Окно создания пользователя
 
@@ -75,7 +75,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_tab.png
    :name: access_rights_tab
    :align: center
-   :scale: 45 %
+   :width: 15cm
    
    Вкладка настроек прав доступа
 
@@ -86,7 +86,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_dialog.png
    :name: access_rights_dialog
    :align: center
-   :scale: 45 %
+   :width: 15cm
    
    Диалог настроек правил доступа
 
@@ -238,7 +238,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_0.png
    :name: access_rights_tab
    :align: center
-   :scale: 100 %
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов.
 
@@ -246,7 +246,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_webmaps.png
    :name: access_rights_tab
    :align: center
-   :scale: 100 %
+    :width: 20cm
 
    Задать в свойствах группы ресурсов с веб-картами.
 
@@ -254,7 +254,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_geodata.png
    :name: access_rights_tab
    :align: center
-   :scale: 100 %
+   :width: 20cm
 
    Задать в свойствах группы ресурсов с геоданными.
 
@@ -266,7 +266,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_user_1.png
    :name: access_rights_tab
    :align: center
-   :scale: 100 %
+   :width: 20cm
 
    Задать в свойствах группы ресурсов.
 
@@ -275,9 +275,35 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_user_2.png
    :name: access_rights_tab
    :align: center
-   :scale: 100 %
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов.
+
+
+Дать группе пользователей право на ввод данных через мобильное приложение
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Создайте отдельную группу пользователей (в примере - "Openstreetmap users"), и отдельную группу ресурсов.  
+
+
+.. figure:: _static/access_rights_group_for_mobile_import_1.png
+   :name: access_rights_tab
+   :align: center
+   :width: 20cm
+
+   Задать в свойствах группы ресурсов.
+
+
+
+.. figure:: _static/access_rights_group_for_mobile_import_2.png
+   :name: access_rights_tab
+   :align: center
+   :width: 20cm
+
+   Задать в свойствах корневой группы ресурсов.
+
+
+
 
 
 .. _change_password:
