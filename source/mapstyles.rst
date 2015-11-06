@@ -28,7 +28,7 @@
 * <outlinecolor red="106" green="106" blue="106"/> - цвет обводки
 * <width>0.5</width> - толщина линии или границы полигона в пикселях.
 * <outlinewidth>3</outlinewidth> - ширина обводки
-* <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем)  .. todo: проверить пример
+* <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем) \
 * <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
 
 Значки
@@ -140,15 +140,12 @@
 ~~~~~~~~
 
 * <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
-* LABELMAXSCALEDENOM  
+* <minscaledenom>100</minscaledenom> - не выводить подпись на масштабе крупнее 1:1000
+* <maxscaledenom>100000</maxscaledenom> - не выводить подпись на масштабе мельче 1:100000
+                
+                        
 
-.. todo:: проверить пример
-
-* LABELMINSCALEDENOM  
-
-.. todo:: проверить пример
-
-* LABELCACHE [on|off] - не проверял, нашел в исходниках
+* LABELCACHE [on|off] - не проверял, нашел в исхониках
 * <position>ur</position> - направление сдвига подписи.
 
    * ur - ↗ вверх вправо (в книгах по картографии рекомендуют так делать по умолчанию.
@@ -608,6 +605,435 @@ OSM settlement-point
 	  </layer>
 	</map>
 
+
+OSM highway-lowzoom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Дороги общего пользования (мелкие вынесены в отдельный стиль дальше, чтоб можно было отдельно включать-выключать). Цветовая схема - с openstreetmap.de
+
+.. figure:: _static/mastyles_osm-highway-lowzoom.png
+   :name: mastyles_osm-highway-lowzoom
+   :align: center
+
+
+
+.. code-block:: xml
+
+
+    <map>
+    <!-- Highways for low-zoom from openstreetmap (from motorway to residential) version 2015-11-06 -->
+        <layer>
+            <classitem>Highway</classitem>
+            <labelitem>Name</labelitem>
+            <class>
+                <expression>"motorway"</expression>
+                <style>
+                    <color red="185" green="49" blue="49" />
+                    <linejoin>round</linejoin>
+                    <width>8</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="255" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"motorway_link"</expression>
+                <style>
+                    <color red="185" green="49" blue="49" />
+                    <linejoin>round</linejoin>
+                    <width>8</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="255" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"trunk"</expression>
+                <style>
+                    <color red="185" green="49" blue="49" />
+                    <linejoin>round</linejoin>
+                    <width>8</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="255" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"trunk_link"</expression>
+                <style>
+                    <color red="185" green="49" blue="49" />
+                    <linejoin>round</linejoin>
+                    <width>8</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="255" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"primary"</expression>
+                <style>
+                    <color red="141" green="67" blue="70" />
+                    <linejoin>round</linejoin>
+                    <width>6.4062992126</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>3.57165354331</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"primary_link"</expression>
+                <style>
+                    <color red="141" green="67" blue="70" />
+                    <linejoin>round</linejoin>
+                    <width>6.4062992126</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="226" green="114" blue="114" />
+                    <linejoin>round</linejoin>
+                    <width>3.57165354331</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"secondary"</expression>
+                <style>
+                    <color red="163" green="123" blue="72" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="246" green="232" blue="86" />
+                    <linejoin>round</linejoin>
+                    <width>3</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"secondary_link"</expression>
+                <style>
+                    <color red="163" green="123" blue="72" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="246" green="232" blue="86" />
+                    <linejoin>round</linejoin>
+                    <width>3</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"tertiary"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="179" />
+                    <linejoin>round</linejoin>
+                    <width>3</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"tertiary_link"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="179" />
+                    <linejoin>round</linejoin>
+                    <width>3</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"unclassified"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>4</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="179" />
+                    <linejoin>round</linejoin>
+                    <width>3</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                    <minscaledenom>1</minscaledenom>
+		            <maxscaledenom>40000</maxscaledenom> 
+                </label>
+            </class>
+            <class>
+                <expression>"residential"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>2</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="179" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                    <minscaledenom>1</minscaledenom>
+		            <maxscaledenom>40000</maxscaledenom> 
+                </label>
+            </class>
+            <class>
+                <expression>"living_street"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>2</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="179" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                    <minscaledenom>1</minscaledenom>
+		            <maxscaledenom>40000</maxscaledenom> 
+                </label>
+            </class>
+        </layer>
+    </map>
+
+
+OSM highway-maxzoom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Дороги подъездные, технологические, грунтовые, пешеходные
+
+
+.. figure:: _static/mastyles_osm-highway-highzoom.png
+   :name: mastyles_osm-highway-highzoom
+   :align: center
+
+.. code-block:: xml
+
+    <map>
+     <!-- Highways for high-zoom from openstreetmap (from service to track) version 2015-11-06 -->
+        <layer>
+            <classitem>Highway</classitem>
+            <labelitem>Name</labelitem>
+            <class>
+                <expression>"service"</expression>
+                <style>
+                    <color red="187" green="187" blue="187" />
+                    <linejoin>round</linejoin>
+                    <width>2</width>
+                    <linecap>round</linecap>
+                </style>
+                <style>
+                    <color red="255" green="255" blue="255" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"footway"</expression>
+                <style>
+                    <color red="255" green="0" blue="0" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                </style>
+                <label>
+                    <type>truetype</type>
+                    <font>regular</font>
+                    <size>7</size>
+                    <color blue="0" green="0" red="0" />
+                    <outlinewidth>1</outlinewidth>
+                    <outlinecolor blue="255" green="255" red="255" />
+                    <angle>follow</angle>
+                    <antialias>true</antialias>
+                    <repeatdistance>300</repeatdistance>
+                    <maxoverlapangle>20.0</maxoverlapangle>
+                </label>
+            </class>
+            <class>
+                <expression>"pedestrian"</expression>
+                <style>
+                    <color red="255" green="0" blue="0" />
+                    <linejoin>round</linejoin>
+                    <width>2</width>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+            <class>
+                <expression>"path"</expression>
+                <style>
+                    <color red="255" green="0" blue="0" />
+                    <linejoin>round</linejoin>
+                    <width>1</width>
+                    <linecap>round</linecap>
+                    <pattern>5 5</pattern>
+                </style>
+            </class>
+            <class>
+                <expression>"track"</expression>
+                <style>
+                    <color red="153" green="116" blue="43" />
+                    <linejoin>round</linejoin>
+                    <width>2</width>
+                    <pattern>16 8</pattern>
+                    <linecap>round</linecap>
+                </style>
+            </class>
+        </layer>
+    </map>
 
 railway-line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
