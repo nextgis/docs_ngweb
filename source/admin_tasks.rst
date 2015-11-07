@@ -11,15 +11,15 @@
 Создание групп пользователей
 ----------------------------
 
-Диалог создания новой группы представлен на :numref:`admin_controlpanel_usergroup_create`. 
+Диалог создания новой группы представлен на :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
 Для открытия этого окна необходимо открыть панель управления 
 (см. :numref:`admin_control_panel`) и выбрать там: 
 :menuselection:`Группы пользователей --> Создать`.
 
 .. figure:: _static/admin_controlpanel_usergroup_create.png
-   :name: admin_controlpanel_usergroup_create
+   :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
-   :scale: 75 %
+   :width: 18 cm
 
    Окно создания новой группы
 
@@ -70,21 +70,21 @@ NextGIS Web строится на ресурсном подходе - кажды
 Права доступа можно назначить как при создании ресурса (см. :ref:`create_layers`), 
 так и при его изменении (см. :ref:`change_layers`). Для этого в диалоге 
 создания/изменения ресурс необходимо перейти на вкладку 
-"Права доступа" (см. :numref:`access_rights_tab`).
+"Права доступа" (см. :numref:`ngweb_access_rights_tab`).
 
 .. figure:: _static/access_rights_tab.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab
    :align: center
-   :width: 15cm
+   :width: 15 cm
    
    Вкладка настроек прав доступа
 
 В данной вкладке можно назначать, отменять или изменять права доступа. Для одного
 ресурса могут быть назначены различные права доступа пользователей и/или групп.
-Диалог настроек правил доступа представлен на рис. :numref:`access_rights_dialog`.
+Диалог настроек правил доступа представлен на рис. :numref:`ngweb_access_rights_dialog`.
 
 .. figure:: _static/access_rights_dialog.png
-   :name: access_rights_dialog
+   :name: ngweb_access_rights_dialog
    :align: center
    :width: 15cm
    
@@ -236,7 +236,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 	Гости будут иметь возможность видеть админку и ходить по всем папкам, кроме специально закрытых.
 
 .. figure:: _static/access_rights_group_for_quest_0.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_0_pic
    :align: center
    :width: 20cm
 
@@ -244,15 +244,15 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 
 .. figure:: _static/access_rights_group_for_quest_webmaps.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_1_pic
    :align: center
-    :width: 20cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов с веб-картами.
 
 
 .. figure:: _static/access_rights_group_for_quest_geodata.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_2_pic
    :align: center
    :width: 20cm
 
@@ -264,7 +264,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 
 .. figure:: _static/access_rights_group_for_user_1.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_3_pic
    :align: center
    :width: 20cm
 
@@ -273,7 +273,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 
 .. figure:: _static/access_rights_group_for_user_2.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_4_pic
    :align: center
    :width: 20cm
 
@@ -287,7 +287,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_mobile_import_1_pic
    :align: center
    :width: 20cm
 
@@ -296,7 +296,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 
 .. figure:: _static/access_rights_group_for_mobile_import_2.png
-   :name: access_rights_tab
+   :name: ngweb_access_rights_tab_mobile_import_2_pic
    :align: center
    :width: 20cm
 

@@ -35,9 +35,9 @@
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: _static/mapstyle_hatch_demo.png
-   :name: mapstyle_hatch_demo.png
+   :name: ngweb_mapstyle_hatch_demo_pic
    :align: center
-   :scale: 100%
+   :width: 18 cm
 
    Демонстрация различных видов штриховок.
 
@@ -1343,10 +1343,7 @@ OSM-black
 OSM landuse-polygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: _static/mapstyle_hatch_demo.png
-   :name: mapstyle_hatch_demo.png
-   :align: center
-   :scale: 75%
+Стили NextGIS Web поддерживают различные штриховки (см. :numref:`ngweb_mapstyle_hatch_demo_pic`).
 
 .. code-block:: xml
 

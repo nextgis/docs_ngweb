@@ -49,12 +49,12 @@ NextGIS Web обеспечивает следующие возможности:
 
 .. only:: html
 
-   Мобильное приложение :ref:`NextGIS Mobile <ng_mobile_intro>` позволяет загружать 
+   Мобильное приложение :ref:`NextGIS Mobile <ngmobile_intro>` позволяет загружать 
    собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
 
 .. only:: latex
 
-   Мобильное приложение `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ng-mobile-intro>`_ позволяет загружать 
+   Мобильное приложение `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro>`_ позволяет загружать 
    собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
    
    
