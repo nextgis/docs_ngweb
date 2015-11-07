@@ -316,7 +316,7 @@ NextGIS Web может работать как сервер WFS. По этому
 .. figure:: _static/admin_layers_create_wfs_service_layers.png
    :name: ngweb_admin_layers_create_wfs_service_layers_pic
    :align: center
-   :width: 18 cm
+   :width: 18cm
    
    Пример настроек WFS-сервиса для раздачи отдельных листов топокарт. 
 
