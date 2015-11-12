@@ -60,6 +60,40 @@
    В NextGIS Manager эту операцию можно сделать проще. В програме есть функционал загрузки растра в NextGIS Web и
    обрезки по альфа-каналу. 
 
+Растровый слой NextGIS Web можно добавлять в настольные, мобильные и веб ГИС несколькими способами.
+
+**WMS**
+
+NextGIS Web является сервером WMS. Соответственно подключить его слои как WMS можно в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать адрес сервера и номер ресурса соответствующего серверу WMS. Например:
+
+.. code:: html
+
+   http://demo.nextgis.ru/resource/60/wms?
+
+**TMS**
+
+Конкретные слои NextGIS Web можно подключать как TMS. Для этого нужно создать для необходимого слоя файл XML. Для создания такого файла нужно знать адрес где развернут NGW и номер нужного слоя (в примере: адрес - http://demo.nextgis.ru/ngw_kl, номер слоя - 5). Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное остается неизменным.
+
+<GDAL_WMS>
+    <Service name="TMS">
+        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?z=${z}&x=${x}&y=${y}&resource=5</ServerUrl>
+    </Service>
+    <DataWindow>
+        <UpperLeftX>-20037508.34</UpperLeftX>
+        <UpperLeftY>20037508.34</UpperLeftY>
+        <LowerRightX>20037508.34</LowerRightX>
+        <LowerRightY>-20037508.34</LowerRightY>
+        <TileLevel>18</TileLevel>
+        <TileCountX>1</TileCountX>
+        <TileCountY>1</TileCountY>
+        <YOrigin>top</YOrigin>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BlockSizeX>256</BlockSizeX>
+    <BlockSizeY>256</BlockSizeY>
+    <BandsCount>4</BandsCount>
+    <Cache />
+</GDAL_WMS> 
 
 Векторный слой из файла
 -----------------------
