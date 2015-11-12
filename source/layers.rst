@@ -74,7 +74,9 @@ NextGIS Web является сервером WMS. Соответственно 
 
 Конкретные слои NextGIS Web можно подключать как TMS. Для этого нужно создать для необходимого слоя файл XML. Для создания такого файла нужно знать адрес где развернут NGW и номер нужного слоя (в примере: адрес - http://demo.nextgis.ru/ngw_kl, номер слоя - 5). Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное остается неизменным.
 
-<GDAL_WMS>
+.. code: xml
+
+   <GDAL_WMS>
     <Service name="TMS">
         <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?z=${z}&x=${x}&y=${y}&resource=5</ServerUrl>
     </Service>
@@ -93,7 +95,7 @@ NextGIS Web является сервером WMS. Соответственно 
     <BlockSizeY>256</BlockSizeY>
     <BandsCount>4</BandsCount>
     <Cache />
-</GDAL_WMS> 
+   </GDAL_WMS> 
 
 Векторный слой из файла
 -----------------------
