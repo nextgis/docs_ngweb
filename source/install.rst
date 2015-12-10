@@ -1,7 +1,7 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.com>
 
-.. _ngw_install:
+.. _ngw_install:    
 
 Установка
 =========
