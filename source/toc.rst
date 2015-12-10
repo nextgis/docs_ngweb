@@ -12,14 +12,12 @@ Cодержание:
 
    intro
    quick_tutorial
-   general
-   install
-   launch
+   general   
    admin_interface
    layers
    mapstyles    
    layers_settings 
    webmaps_admin       
    webmaps_client
-   admin_tasks
-   
+   admin_tasks 
+   sysadmin     
