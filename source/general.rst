@@ -47,6 +47,8 @@ NextGIS Web работает во всех современных браузер
    :name: webmap_sample
    :align: center
    :width: 18 cm
+   
+   Пользовательский интерфейс с опубликованной веб-картой 
 
 .. _ngweb_keyfeatures:
 

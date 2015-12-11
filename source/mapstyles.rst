@@ -615,7 +615,7 @@ OSM highway-lowzoom
    :name: mastyles_osm-highway-lowzoom
    :align: center
 
-
+   Фрагмент цветовой схемы дорог общего пользования 
 
 .. code-block:: xml
 
@@ -959,6 +959,8 @@ OSM highway-maxzoom
 .. figure:: _static/mastyles_osm-highway-highzoom.png
    :name: mastyles_osm-highway-highzoom
    :align: center
+
+   Фрагмент изображения карты дорог
 
 .. code-block:: xml
 
