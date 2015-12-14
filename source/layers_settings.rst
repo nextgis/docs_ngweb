@@ -6,7 +6,7 @@
 ================================
 
 Введение
---------------------------------
+---------
 
 Настройки слоёв, которые становятся доступными после их создания.
 
@@ -15,7 +15,7 @@
 .. _attributes:
 
 Атрибуты слоёв
--------------------------------------
+---------------
 
 Дополнительно к параметрам, которые вводились при создании слоя, в окне присутствует вкладка :guilabel:`Атрибуты` (см. :numref:`admin_layers_attr`)
 
@@ -23,7 +23,7 @@
 .. figure:: _static/admin_layers_attr.png
    :name: admin_layers_attr
    :align: center
-   :scale: 55%
+   :width: 18cm
 
    Окно редактирования слоя, вкладка :guilabel:`Атрибуты`
 
@@ -34,14 +34,14 @@
 .. figure:: _static/webmap_identification.png
    :name: webmap_identification
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Окно идентификации
 
 .. _attributes-edit:
 
 Редактирование значений атрибутов
--------------------------------------
+----------------------------------
 
 Программное обеспечение NextGIS Web позволяет редактировать атрибуты географических объектов. Редактирование атрибутов можно вызывать из админки и из просмотра карты. 
 
@@ -61,14 +61,14 @@
 .. _add-photos:
 
 Добавлений фотографий к геоданным
--------------------------------------
+----------------------------------
 
 Программное обеспечение NextGIS Web позволяет прикреплять к записям фотографии. При этом, при идентификации объекта на карте во всплывающем окне будет отображены как атрибуты идентифицируемого объекта, так и фотографии, которые были ему сопоставлены (см. :numref:`webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos.png
    :name: webmap_identification_photos
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Всплывающее окно результатов идентификации с фотографиями.
 
@@ -86,7 +86,7 @@
 .. figure:: _static/admin_object_edit_attr.png
    :name: admin_object_edit_attr
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Окно редактирования атрибутов.
 
@@ -96,7 +96,7 @@
 .. figure:: _static/admin_object_edit_photos1.png
    :name: admin_object_edit_photos1
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Окно загрузки фотографий к объекту.
 
@@ -106,7 +106,7 @@
 .. figure:: _static/admin_object_edit_photos2.png
    :name: admin_object_edit_photos2
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Окно загрузки фотографий к объекту с введёными подписями.
 
@@ -118,7 +118,7 @@
 .. figure:: _static/webmap_identification_photo_lightbox.png
    :name: webmap_identification_photo_lightbox
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    Окно идентификации с загруженными фотографиями.  
 
