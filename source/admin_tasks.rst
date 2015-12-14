@@ -53,7 +53,7 @@
 .. figure:: _static/admin_controlpanel_user_create.png
    :name: admin_controlpanel_user_create
    :align: center
-   :width: 15cm
+   :width: 18cm
 
    Окно создания пользователя
 
@@ -75,7 +75,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_tab.png
    :name: ngweb_access_rights_tab
    :align: center
-   :width: 15 cm
+   :width: 10cm
    
    Вкладка настроек прав доступа
 
@@ -86,7 +86,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_dialog.png
    :name: ngweb_access_rights_dialog
    :align: center
-   :width: 15cm
+   :width: 10cm
    
    Диалог настроек правил доступа
 
@@ -238,7 +238,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_0.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах корневой группы ресурсов.
 
@@ -246,7 +246,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_webmaps.png
    :name: ngweb_access_rights_tab_1_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах группы ресурсов с веб-картами.
 
@@ -254,7 +254,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_geodata.png
    :name: ngweb_access_rights_tab_2_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах группы ресурсов с геоданными.
 
@@ -266,7 +266,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_user_1.png
    :name: ngweb_access_rights_tab_3_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах группы ресурсов.
 
@@ -275,7 +275,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_user_2.png
    :name: ngweb_access_rights_tab_4_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах корневой группы ресурсов.
 
@@ -289,7 +289,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
    :name: ngweb_access_rights_tab_mobile_import_1_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах группы ресурсов.
 
@@ -298,7 +298,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_mobile_import_2.png
    :name: ngweb_access_rights_tab_mobile_import_2_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Задать в свойствах корневой группы ресурсов.
 
