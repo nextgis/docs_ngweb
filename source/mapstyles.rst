@@ -37,7 +37,7 @@
 .. figure:: _static/mapstyle_hatch_demo.png
    :name: ngweb_mapstyle_hatch_demo_pic
    :align: center
-   :width: 18 cm
+   :width: 18cm
 
    Демонстрация различных видов штриховок.
 
@@ -126,7 +126,7 @@
 .. figure:: _static/admin_mapstyles_linecap.png
    :name: admin_mapstyles_linecap.png
    :align: center
-   :scale: 75%
+   :width: 18cm
 
    <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
 
