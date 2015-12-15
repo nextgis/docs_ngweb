@@ -961,6 +961,7 @@ OSM highway-maxzoom
 .. figure:: _static/mastyles_osm-highway-highzoom.png
    :name: mastyles_osm-highway-highzoom
    :align: center
+   :width: 10cm
 
    Фрагмент изображения карты дорог
 
