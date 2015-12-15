@@ -128,7 +128,7 @@
 .. figure:: _static/admin_mapstyles_linecap.png
    :name: admin_mapstyles_linecap.png
    :align: center
-   :width: 16cm
+   :width: 10cm
 
    <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
 
