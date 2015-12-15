@@ -12,7 +12,7 @@
 .. figure:: _static/webmap_client.png
    :name: webmap_client
    :align: center
-   :width: 18cm
+   :width: 16cm
    
    Внешний вид веб-клиента
 

@@ -24,7 +24,7 @@
 .. figure:: _static/admin_layers_attr.png
    :name: admin_layers_attr
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно редактирования слоя, вкладка :guilabel:`Атрибуты`
 
@@ -39,7 +39,7 @@
 .. figure:: _static/webmap_identification.png
    :name: webmap_identification
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно идентификации
 
@@ -80,7 +80,7 @@
 .. figure:: _static/webmap_identification_photos.png
    :name: webmap_identification_photos
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Всплывающее окно результатов идентификации с фотографиями.
 
@@ -98,7 +98,7 @@
 .. figure:: _static/admin_object_edit_attr.png
    :name: admin_object_edit_attr
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно редактирования атрибутов.
 
@@ -108,7 +108,7 @@
 .. figure:: _static/admin_object_edit_photos1.png
    :name: admin_object_edit_photos1
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно загрузки фотографий к объекту.
 
@@ -118,7 +118,7 @@
 .. figure:: _static/admin_object_edit_photos2.png
    :name: admin_object_edit_photos2
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно загрузки фотографий к объекту с введёными подписями.
 
@@ -134,7 +134,7 @@
 .. figure:: _static/webmap_identification_photo_lightbox.png
    :name: webmap_identification_photo_lightbox
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно идентификации с загруженными фотографиями.  
 

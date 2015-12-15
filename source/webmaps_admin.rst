@@ -29,7 +29,7 @@
 .. figure:: _static/admin_webmap_name.png
    :name: admin_webmap_name
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно создания веб-карты
 
@@ -44,7 +44,7 @@
 .. figure:: _static/admin_webmap_bbox.png
    :name: admin_webmap_bbox
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно ввода охвата
 
@@ -66,7 +66,7 @@
 .. figure:: _static/admin_webmap_layers.png
    :name: admin_webmap_layers
    :align: center
-   :width: 18cm
+   :width: 16cm
    
    Настройки слоев на веб-карте
  

@@ -16,7 +16,7 @@
 .. figure:: _static/admin_index.png
    :name: admin_index_pic
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Главная страница административного интерфейса
 
@@ -87,7 +87,7 @@
 .. figure:: _static/admin_control_panel.png
    :name: admin_control_panel
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Панель управления
 
