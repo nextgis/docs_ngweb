@@ -24,7 +24,7 @@
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
    :name: admin_layers_create_raster_layer_resourse_description
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно создания растрового слоя
 
@@ -39,7 +39,7 @@
 .. figure:: _static/admin_layers_create_raster_layer_upload.png
    :name: admin_layers_create_raster_layer_upload
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно загрузки растрового файла
 
@@ -64,8 +64,8 @@
 .. code:: shell
 
     gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
-     "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG d:\temp\o\ast_20010730_010043_rgb.tif \ 
-     d:\temp\o\ast_20010730_010043_rgba.tif
+    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
+    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
 
 .. note:: 
    В NextGIS Manager эту операцию можно сделать проще. В програме есть функционал 
@@ -95,7 +95,9 @@ NGW и номер нужного слоя (в примере: адрес - http:
 
    <GDAL_WMS>
     <Service name="TMS">
-        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?z=${z}&x=${x}&y=${y}&resource=5</ServerUrl>
+        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?
+                   z=${z}&x=${x}&y=${y}&resource=5
+        </ServerUrl>
     </Service>
     <DataWindow>
         <UpperLeftX>-20037508.34</UpperLeftX>
@@ -127,7 +129,7 @@ NGW и номер нужного слоя (в примере: адрес - http:
 .. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
    :name: admin_layers_create_vector_layer_resourse_description
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно добавления векторного слоя
 
@@ -157,7 +159,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_vector_layer_upload.png
    :name: admin_layers_create_vector_layer_upload
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно загрузки векторного слоя
 
@@ -187,7 +189,7 @@ Cистема координат геометрий должна распозн�
    :name: admin_layers_create_postgis_connection_resourse_description
    :align: center
    :alt: map to buried treasure
-   :width: 18cm
+   :width: 16cm
 
    Окно добавления соединения PostGIS
 
@@ -206,7 +208,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно параметров соединения с PostGIS
 
@@ -218,7 +220,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
    :name: admin_layers_create_postgis_layer_resourse_description
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно добавления слоя PostGIS
 
@@ -231,7 +233,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_tablename.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно параметров слоя PostGIS
 
@@ -281,7 +283,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/pgadmin3.png
    :name: pgadmin3
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Главное окно ПО :program:`pgAdminIII`
 
@@ -309,7 +311,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_description.png
    :name: admin_layers_create_wms_connection_description
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно добавления подключения WMS
 
@@ -326,7 +328,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_url.png
    :name: admin_layers_create_wms_connection_url
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно параметров соединения с WMS
 
@@ -336,7 +338,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_layer_name.png
    :name: admin_layers_create_wms_layer_name
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно параметров слоя WMS
 
@@ -350,7 +352,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_layer_parameters.png
    :name: admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно настройки параметров слоя WMS
 
@@ -385,7 +387,7 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSS
 .. figure:: _static/admin_layers_create_wms_service_layers.png
    :name: admin_layers_create_wms_service_layers.png
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Пример настроек WMS-сервиса для раздачи отдельных листов топокарт. 
 
@@ -414,7 +416,7 @@ NextGIS Web может работать как сервер WFS. По этому
 .. figure:: _static/admin_layers_create_wfs_service_layers.png
    :name: ngweb_admin_layers_create_wfs_service_layers_pic
    :align: center
-   :width: 18cm
+   :width: 16cm
    
    Пример настроек WFS-сервиса для раздачи отдельных листов топокарт. 
 
@@ -442,7 +444,7 @@ NextGIS Web может работать как сервер WFS. По этому
 .. figure:: _static/admin_layers_create_group.png
    :name: admin_layers_create_group
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Окно создания группы ресурсов
 
