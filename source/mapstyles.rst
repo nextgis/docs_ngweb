@@ -617,7 +617,7 @@ OSM highway-lowzoom
    :name: mastyles_osm-highway-lowzoom
    :align: center
 
-   Фрагмент цветовой схемы дорог общего пользования 
+   Фрагмент цветовой схемы дорог общего пользования. 
 
 .. code-block:: xml
 
@@ -963,7 +963,7 @@ OSM highway-maxzoom
    :align: center
    :width: 10cm
 
-   Фрагмент изображения карты дорог
+   Фрагмент изображения карты дорог.
 
 .. code-block:: xml
 
