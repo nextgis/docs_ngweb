@@ -97,13 +97,14 @@ postgresql-{version}-postgis-{version} и установите его:
     psql -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
 Если вы разворачиваете систему на чистом сервере, и вам надо сделать ещё
-одну базу PostGIS для хранения данных, то включаем доступ к ней из сети
+одну базу PostGIS для хранения данных, то можно включить доступ к ней из сети
 
 .. code:: bash
 
     sudo su - postgres
     nano /etc/postgresql/9.3/main/pg_hba.conf
-    делаем строку host    all    all    127.0.0.1/32    md5
+    добавляем в конец строку: host    all    all    192.168.0.0/16    md5
+    маска 192.168.0.0/16 разрешает доступ к БД со всех IP адресов начинающихся с "192.168"
 
     nano /etc/postgresql/9.3/main/postgresql.conf
     делаем строку listen_addresses='*', и расскоментируем её.
