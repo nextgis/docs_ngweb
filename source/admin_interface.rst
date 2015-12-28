@@ -115,3 +115,11 @@
 
    Группы ресурсов. 
 
+Далее переходим к группе дочерних ресурсов, в которых обозначены типы слоев этих ресурсов.
+Выбираем из таблицы тип ресурса - векторный слой (см. :numref:`resource_group1`).
+
+.. figure:: _static/resource_group1.png
+   :name: resource_group1
+   :align: center
+   :width: 16cm
+
