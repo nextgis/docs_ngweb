@@ -40,7 +40,7 @@
 
 .. code:: bash
 
-    sudo apt-get install postgresql
+    sudo apt-get install postgresql-<version>
 
 Создаем пользователя, который будет упомянут в качестве database.user в
 config.ini (см. далее):
