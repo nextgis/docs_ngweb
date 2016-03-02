@@ -22,6 +22,7 @@
 дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
 .. code:: bash
+
    apt-get update
    sudo apt-get install software-properties-common python-software-properties
 
