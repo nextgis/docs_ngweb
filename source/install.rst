@@ -21,11 +21,14 @@
 Подключить репозиторий ubuntugis (см. `поддерживаемые
 дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
+.. code:: bash
+   apt-get update
+   sudo apt-get install software-properties-common python-software-properties
+
 **Для ubuntu server 12.04**    
 
 .. code:: bash
 
-    sudo apt-get install software-properties-common python-software-properties
     sudo apt-add-repository ppa:ubuntugis/ppa
 
 **Для ubuntu server 14.04**
