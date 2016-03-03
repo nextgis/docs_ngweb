@@ -6,7 +6,7 @@
 Установка
 =========
 
-Данная инструкция проверена и работает в Ubuntu Server 12.04 LTS и выше.
+Данная инструкция проверена и работает в Ubuntu Server 14.04 LTS и выше.
 Для установки системы необходим Python 2.7. 
 
 .. warning:: 
@@ -25,12 +25,6 @@
 
    apt-get update
    sudo apt-get install software-properties-common python-software-properties
-
-**Для ubuntu server 12.04**    
-
-.. code:: bash
-
-    sudo apt-add-repository ppa:ubuntugis/ppa
 
 **Для ubuntu server 14.04**
 
@@ -214,23 +208,23 @@ postgresql-{version}-postgis-{version} и установите его:
 устанавливается пакет python-mapscript в систему. Это зависит от
 используемого дистрибутива.
 
-Если вы используете FreeBSD, то для копирования системного MapScript в
+Если вы используете Ubuntu, то для копирования системного MapScript в
 виртуальное окружение (директория ``env``) можно воспользоваться
 следующими командами:
-
-.. code:: bash
-
-    cp -r `python -c "import mapscript, os.path; print \ 
-    os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
-    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
-
-Если вы используете Ubuntu, то процесс будет несколько отличаться:
 
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
     cp /usr/lib/python2.7/dist-packages/*mapscript* \ 
     env/lib/python2.7/site-packages/mapscript.egg
+    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+
+Если вы используете FreeBSD, то процесс будет несколько отличаться:
+    
+.. code:: bash
+
+    cp -r `python -c "import mapscript, os.path; print \ 
+    os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 Если вы используете Fedora/CentOS, то:
@@ -271,17 +265,11 @@ postgresql-{version}-postgis-{version} и установите его:
 Установка MapServer
 -------------------
 
-Клонируем репозиторий: с запросом пароля для github
+Клонируем репозиторий: 
 
 .. code:: bash
 
     git clone https://github.com/nextgis/nextgisweb_mapserver.git
-
-альтернативно с использованием публичного ключа для github
-
-.. code:: bash
-
-    git clone git@github.com:nextgis/nextgisweb_mapserver.git
 
 Устанавливаем пакет в режиме разработки:
 
