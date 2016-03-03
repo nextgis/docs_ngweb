@@ -379,9 +379,11 @@ nginx + uwsgi (вариант 3)
 /etc/uwsgi/apps-enabled/ngw.ini
 
 ::
+
 	service uwsgi restart
 	
 Посмотреть лог на отсутствие ошибок:
 
 ::
+
 	cat /var/log/uwsgi/app/ngw.log
