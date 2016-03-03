@@ -340,3 +340,48 @@ Setup uWSGI
 	harakiri = 6000	# таймаут на операцию 6000 с.
 	socket-timeout = 6000 # таймаут на сокет 6000 с.
 
+
+nginx + uwsgi (вариант 3)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+	[app:main]
+	use = egg:nextgisweb
+	config = /opt/ngw/config.ini
+
+	[server:main]
+	use = egg:waitress#main
+	host = 0.0.0.0
+	port = 6543
+
+	[uwsgi]
+	plugins = python
+	home = /opt/ngw/env
+	module = nextgisweb.uwsgiapp
+	env = PASTE_CONFIG=%p
+	env = LANG=ru_RU.UTF-8
+	socket = :6543
+	protocol = uwsgi
+	chmod-socket=777
+	paste-logger = %p
+	workers = 2
+	threads = 4
+	limit-post = 7516192768
+	harakiri = 6000
+	socket-timeout = 6000
+	max-requests = 5000
+	buffer-size = 32768
+
+Сделать symlink на development.ini в папки:
+
+/etc/uwsgi/apps-available/ngw.ini
+/etc/uwsgi/apps-enabled/ngw.ini
+
+::
+	service uwsgi restart
+	
+Посмотреть лог на отсутствие ошибок:
+
+::
+	cat /var/log/uwsgi/app/ngw.log
