@@ -163,6 +163,7 @@ postgresql-{version}-postgis-{version} и установите его:
 .. code:: bash
 
     mkdir -p ~/ngw/data
+    mkdir -p ~/ngw/upload
     cd ~/ngw
 
 Клонируем репозиторий:
