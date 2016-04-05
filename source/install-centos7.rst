@@ -44,7 +44,7 @@ PostgreSQL и установите его. Для версии PostgreSQL 9.5 э
 Инициализируем базу данных и включаем автоматический запуск PostgreSQL
 при старте системы:
 
-..code:: bash
+.. code:: bash
 
     sudo /usr/pgsql-9.5/bin/postgresql95-setup initdb
     sudo systemctl start postgresql-9.5.service
@@ -94,7 +94,7 @@ config.ini (см. далее):
 
 Устанавливаем PostGIS:
 
-..code:: bash
+.. code:: bash
 
     sudo yum install postgis2_95
     sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
