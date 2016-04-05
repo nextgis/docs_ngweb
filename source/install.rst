@@ -198,8 +198,8 @@ postgresql-{version}-postgis-{version} и установите его:
 
 
 
-Установка NextGIS Web MapServer
--------------------------------
+Установка MapServer
+-------------------
 
 Для работы модуля нужен MapScript, который в виртуальное окружение
 стандартным способом не ставится, поэтому установим его вручную.
@@ -270,8 +270,8 @@ postgresql-{version}-postgis-{version} и установите его:
     echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-Установка MapServer
--------------------
+Установка NextGIS Web MapServer
+-------------------------------
 
 Клонируем репозиторий: 
 
