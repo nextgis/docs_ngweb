@@ -57,8 +57,16 @@ config.ini (см. далее):
     sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
     sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
-Отредактируем строку ``local   all   all   peer`` и приведём её к виду:
-``local   all   all   md5``
+Отредактируем файл таким образом, чтобы в нём присутствовали следующие
+строки (исправим метод аутентификации на ``md5``, если указан иной):
+
+.. code:: bash
+
+    # IPv4 local connections:
+    host    all             all             127.0.0.1/32            md5
+    # IPv6 local connections:
+    host    all             all             ::1/128                 md5
+
 
 Не забудьте перезапустить сервис базы:
 
