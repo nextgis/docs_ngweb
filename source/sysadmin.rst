@@ -11,5 +11,6 @@
 .. toctree::
    :maxdepth: 2
    
-   install
+   install-ubuntu
+   install-centos7
    launch

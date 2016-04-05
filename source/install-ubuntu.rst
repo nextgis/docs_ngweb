@@ -1,10 +1,10 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.com>
 
-.. _ngw_install:    
+.. _ngw_install_ubuntu:    
 
-Установка
-=========
+Установка в Ubuntu
+==================
 
 Данная инструкция проверена и работает в Ubuntu Server 14.04 LTS и выше.
 Для установки системы необходим Python 2.7. 
@@ -100,7 +100,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-    psql -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
+    psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
 Если вы разворачиваете систему на чистом сервере, и вам надо сделать ещё
 одну базу PostGIS для хранения данных, то можно включить доступ к ней из сети
@@ -163,6 +163,9 @@ postgresql-{version}-postgis-{version} и установите его:
 * `Сгенерировать access token <https://github.com/settings/applications#personal-access-tokens>`_
   и использовать его вместо пароля
 
+
+.. _nextgisweb-install-prepare:
+
 Подготовка к установке NextGIS Web
 ----------------------------------
 
@@ -186,6 +189,9 @@ postgresql-{version}-postgis-{version} и установите его:
 
     virtualenv --no-site-packages env
 
+
+.. _nextgisweb-install:
+
 Установка NextGIS Web
 ---------------------
 
@@ -195,8 +201,6 @@ postgresql-{version}-postgis-{version} и установите его:
 .. code:: bash
 
     env/bin/pip install -e ./nextgisweb
-
-
 
 Установка MapServer
 -------------------
@@ -269,6 +273,9 @@ postgresql-{version}-postgis-{version} и установите его:
 
     echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+
+
+.. _nextgisweb-mapserver-install:
 
 Установка NextGIS Web MapServer
 -------------------------------
