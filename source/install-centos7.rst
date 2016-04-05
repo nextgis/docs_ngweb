@@ -170,6 +170,7 @@ config.ini (см. далее):
 
 .. code:: bash
 
+    sudo yum install fribidi cairo fcgi harfbuzz httpd librsvg2
     sudo rpm -ivh mapserver-7.0.0-1.el7.centos.x86_64.rpm
     sudo rpm -ivh mapserver-python-7.0.0-1.el7.centos.x86_64.rpm
 
