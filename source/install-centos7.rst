@@ -115,19 +115,19 @@ config.ini (см. далее):
 Подготовка базового ПО
 ----------------------
 
-Установить pip:
+Устанавливаем pip:
 
 .. code:: bash
 
     sudo yum install python-pip
 
-Установить virtualenv:
+Устанавливаем virtualenv:
 
 .. code:: bash
 
     sudo yum install python-virtualenv
 
-Установить дополнительные инструменты:
+Установливаем дополнительные инструменты:
 
 .. code:: bash
 
@@ -141,7 +141,17 @@ config.ini (см. далее):
 Установка NextGIS Web
 ---------------------
 
-См. :ref:`nextgisweb-install`.
+Устанавливаем переменную окружения ``PATH``:
+
+.. code:: bash
+
+    export PATH=/usr/pgsql-9.5/bin:$PATH
+
+Устанавливаем пакет NextGIS Web в режиме разработки, при этом будут установлены все необходимые пакеты:
+
+.. code:: bash
+
+    env/bin/pip install -e ./nextgisweb
 
 Установка MapServer
 -------------------
