@@ -260,7 +260,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
     "Missing 'Version:' header and/or PKG-INFO file", mapscript [unknown version]
 
-Для её исправления создаем файл ``PKG0-INFO``:
+Для её исправления создаем файл ``PKG-INFO``:
 
 .. code:: bash
 

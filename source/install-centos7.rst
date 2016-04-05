@@ -184,6 +184,8 @@ config.ini (см. далее):
     cp /usr/lib64/python2.7/site-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
+Создаем файл ``PKG-INFO``:
+
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
