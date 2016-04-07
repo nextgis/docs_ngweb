@@ -67,7 +67,7 @@
 
    apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
-К существующему конфигурационном ini-файлу paste добавляем секцию
+К существующему конфигурационном ini-файлу (development, production...) paste добавляем секцию
 ``uwsgi``
 
 ::
