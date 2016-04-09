@@ -1,5 +1,6 @@
 .. sectionauthor:: Дмитрий Барышников <dmitry.baryshnikov@nextgis.ru>
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+
 .. NextGIS Web TOC
 
 Документация NextGIS Web
