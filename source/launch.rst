@@ -195,6 +195,8 @@ supervisor + uwsgi
     command = /home/ngw_admin/ngw/env/bin/uwsgi /home/ngw_admin/ngw/production.ini
     user = ngw_admin
     environment=LANG=ru_RU.UTF-8
+    stderr_logfile=/var/log/supervisor/%(program_name)s_stderr.log
+    stdout_logfile=/var/log/supervisor/%(program_name)s_stdout.log
 
 
 apache + mod\_uwsgi
