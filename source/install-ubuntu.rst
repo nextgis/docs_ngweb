@@ -138,8 +138,8 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-    sudo apt-get install python-mapscript git libgdal-dev python-dev g++ \
-    libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
+    sudo apt-get install python-mapscript python-dev git libgdal-dev python-dev \
+    g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
 
 В случае доработки NextGIS Web может понадобится регистрация ключей. 
 **Для большинства случаев ключи генерировать не нужно!** Это необходимо при
