@@ -53,9 +53,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Документация NextGIS Web'
+project = u'NextGIS Web'
 copyright = u'2015-2016, NextGIS'
-author = u'Команда NextGIS'
+author = u'NextGIS team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -112,9 +112,9 @@ todo_include_todos = True
 
 numfig = True
 
-numfig_format = {'figure': u'Рис. %s', 'table': u'Таблица %s', 'code-block': u'Listing %s'}
+numfig_format = {'figure': u'Fig. %s', 'table': u'Table %s', 'code-block': u'Listing %s'}
 
-illufig_format = {'illustrate': u'Рис. %s (%s)'}
+illufig_format = {'illustrate': u'Pic. %s (%s)'}
 
 locale_dirs = ['locale/']
 gettext_compact = False
@@ -258,8 +258,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'NextGISWeb.tex', u'Документация NextGIS Web',
-   u'Команда NextGIS', 'manual', 'true'),
+  (master_doc, 'NextGISWeb.tex', u'NextGIS Web documentation',
+   author, 'manual', 'true'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -288,7 +288,7 @@ latex_appendices = ['appendix']
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'nextgisweb', u'Документация NextGIS Web',
+    (master_doc, 'nextgisweb', u'NextGIS Web documentation',
      [author], 1)
 ]
 
@@ -302,7 +302,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'NextGISWeb', u'Документация NextGIS Web',
+  (master_doc, 'NextGISWeb', u'NextGIS Web documentation',
    author, 'NextGISWeb', 'One line description of project.',
    'Miscellaneous'),
 ]
