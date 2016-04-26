@@ -53,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Документация NextGIS Web'
+project = u'NextGIS Web'
 copyright = u'2015-2016, NextGIS'
 author = u'Команда NextGIS'
 
@@ -259,7 +259,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'NextGISWeb.tex', u'Документация NextGIS Web',
-   u'Команда NextGIS', 'manual', 'true'),
+   author, 'manual', 'true'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
