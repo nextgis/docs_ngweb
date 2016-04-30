@@ -76,12 +76,45 @@
 **WMS**
 
 NextGIS Web является сервером WMS. Соответственно подключить его слои как WMS можно 
-в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать адрес сервера 
-и номер ресурса соответствующего серверу WMS. Например:
+в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать URL WMS-сервиса, который высвечивается на странице его настроек. Например:
 
 .. code:: html
 
    http://demo.nextgis.ru/resource/60/wms?
+   
+Конкретные слои NextGIS Web можно подключать как WMS. Для использования их через утилиты GDAL нужно создать для 
+необходимого слоя файл XML. Для создания такого файла нужно URL WMS-сервиса.
+Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
+остается неизменным.
+
+.. code:: xml
+
+
+<GDAL_WMS>
+    <Service name="WMS">
+        <Version>1.1.1</Version>
+        <ServerUrl>http://demo.nextgis.ru/ngw_kl/api/resource/5/wms?</ServerUrl>
+        <SRS>EPSG:3857</SRS>
+        <ImageFormat>image/png</ImageFormat>
+        <Layers>tram_lines</Layers>
+        <Styles></Styles>
+    </Service>
+    <DataWindow>
+      <UpperLeftX>-20037508.34</UpperLeftX>
+      <UpperLeftY>20037508.34</UpperLeftY>
+      <LowerRightX>20037508.34</LowerRightX>
+      <LowerRightY>-20037508.34</LowerRightY>
+      <SizeY>40075016</SizeY>
+      <SizeX>40075016.857</SizeX>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BandsCount>3</BandsCount>
+</GDAL_WMS>
+
+Пример вызова утилиты gdal. Она получает картинку из NGW по WMS, и сохраняет её в GeoTIFF
+
+gdal_translate -of "GTIFF" -outsize 1000 1000  -projwin  4143247 7497160 4190083 7468902   ngw.xml test.tiff
+
 
 **TMS**
 
