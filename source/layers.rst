@@ -93,10 +93,10 @@ NextGIS Web является сервером WMS. Соответственно 
 <GDAL_WMS>
     <Service name="WMS">
         <Version>1.1.1</Version>
-        <ServerUrl>http://demo.nextgis.ru/ngw_kl/api/resource/5/wms?</ServerUrl>
+        <ServerUrl>http://176.9.38.120/practice2/api/resource/85/wms?</ServerUrl>
         <SRS>EPSG:3857</SRS>
         <ImageFormat>image/png</ImageFormat>
-        <Layers>tram_lines</Layers>
+        <Layers>moscow_boundary_multipolygon</Layers>
         <Styles></Styles>
     </Service>
     <DataWindow>
