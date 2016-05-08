@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _launch:
+.. _ngw_launch:
     
 Запуск
 ======
@@ -27,7 +27,7 @@
 
     /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
 
-В промышленной эксплуатации нужно использовать не pserve, а :ref:`uWSGI <uwsgi>`.
+В промышленной эксплуатации нужно использовать не pserve, а :ref:`uWSGI <ngw_uwsgi>`.
 
 Для проверки работоспособности необходимо в веб-браузере набрать:
 
@@ -49,7 +49,7 @@
 * Пароль: admin
 
 
-.. _uwsgi:
+.. _ngw_uwsgi:
 
 Запуск через uWSGI
 ------------------

@@ -1,6 +1,6 @@
 .. sectionauthor:: Наталья Барышникова <nshelekhova@gmail.com>
 
-.. _ngweb_extension:
+.. _ngw_extension:
 
 Модули расширения
 ================================

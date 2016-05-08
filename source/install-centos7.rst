@@ -136,7 +136,7 @@ config.ini (см. далее):
 Подготовка к установке NextGIS Web
 ----------------------------------
 
-См. :ref:`nextgisweb-install-prepare`.
+См. :ref:`ngw_install_prepare`.
 
 Установка NextGIS Web
 ---------------------
@@ -198,4 +198,4 @@ config.ini (см. далее):
     echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 Для дальнейшей установки следуйте инструкциям раздела
-:ref:`nextgisweb-mapserver-install` и далее.
+:ref:`ngw_mapserver_install` и далее.

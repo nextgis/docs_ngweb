@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _webmaps_client:
+.. _ngw_webmaps_client:
 
 Веб-клиент для просмотра карт
 =============================

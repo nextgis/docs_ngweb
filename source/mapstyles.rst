@@ -1,6 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 
-.. _ngweb_style_create:
+.. _ngw_style_create:
     
 Стили векторных слоёв
 =====================

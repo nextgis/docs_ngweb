@@ -164,7 +164,7 @@ postgresql-{version}-postgis-{version} и установите его:
   и использовать его вместо пароля
 
 
-.. _nextgisweb-install-prepare:
+.. _ngw_install_prepare:
 
 Подготовка к установке NextGIS Web
 ----------------------------------
@@ -190,7 +190,7 @@ postgresql-{version}-postgis-{version} и установите его:
     virtualenv --no-site-packages env
 
 
-.. _nextgisweb-install:
+.. _ngw_install:
 
 Установка NextGIS Web
 ---------------------
@@ -275,7 +275,7 @@ postgresql-{version}-postgis-{version} и установите его:
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 
-.. _nextgisweb-mapserver-install:
+.. _ngw_mapserver_install:
 
 Установка NextGIS Web MapServer
 -------------------------------
