@@ -591,7 +591,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 	sudo pip install -e ~/ngw/nextgisweb 
 	
-Если изменилась структура БД то следует выполнить:	
+Обновление структуры БД:	
 
 .. code:: bash
 
