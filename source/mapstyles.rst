@@ -28,8 +28,14 @@
    Если этого пакета нет, установка произведена не корректно, проверьте выполненные шаги: 
    http://docs.nextgis.ru/docs_ngweb/source/install.html
 
+Форматы
+----------------------------------
 
-Теги языка картостилей
+Сейчас NextGIS WEB поддерживает две библиотеки рендеринга: Mapserver и QGIS. Обе они ставятся по желанию при установке. 
+
+Исторически первым был Mapserver, позднее добавился рендеринг QGIS. Стиль Mapserver можно импортировать из стилей QGIS, у него мало возможностей рендеринга. Стиль QGIS можно только загружать из стилей QGIS, у него больше возможностей. 
+
+Теги языка картостилей Mapserver
 ----------------------------------
 
 Для правки стиля, или написания нового рекомендуется взять код какого-нибудь 
@@ -146,9 +152,6 @@
    <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
 
 * <pattern>2.5 4.5</pattern> - шаблон пунктира 
-
-.. todo:: узнать про цифры
-
 * <angle> - угол поворота значка. Так же можно поворачивать штриховку.
 
 Подписи
@@ -179,19 +182,19 @@
 Неизвестные атрибуты
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: узнать, реализованы ли они
-
-* MAXGEOWIDTH - не проверял, нашел в исходниках
-* MINGEOWIDTH - не проверял, нашел в исходниках
-* OFFSITE - не проверял, нашел в исходниках
-* OPACITY [integer|alpha] - не проверял, нашел в исходниках
-* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
-* SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
-* TYPE [chart|circle|line|point|polygon|raster|query] - не проверял, нашел в исходниках
 
 
+* MAXGEOWIDTH
+* MINGEOWIDTH
+* OFFSITE
+* OPACITY [integer|alpha]
+* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels]
+* SYMBOLSCALEDENOM [double]
+* TYPE [chart|circle|line|point|polygon|raster|query]
 
-Примеры картостилей
+
+
+Примеры картостилей Mapserver
 ----------------------------------
 
 OSM-default
