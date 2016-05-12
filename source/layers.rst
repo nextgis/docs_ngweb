@@ -71,82 +71,6 @@
    В NextGIS Manager эту операцию можно сделать проще. В программе есть функционал 
    загрузки растра в NextGIS Web и обрезки по альфа-каналу. 
 
-Растровый слой NextGIS Web можно добавлять в настольные, мобильные и веб ГИС несколькими способами.
-
-**WMS**
-
-NextGIS Web является сервером WMS. Соответственно подключить его слои как WMS можно 
-в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать URL WMS-сервиса, который высвечивается на странице его настроек. Например:
-
-.. code:: html
-
-   http://demo.nextgis.ru/resource/60/wms?
-   
-Конкретные слои NextGIS Web можно подключать как WMS. Для использования их через утилиты GDAL нужно создать для 
-необходимого слоя файл XML. Для создания такого файла нужно URL WMS-сервиса.
-Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
-остается неизменным.
-
-.. code:: xml
-
-   <GDAL_WMS>
-    <Service name="WMS">
-        <Version>1.1.1</Version>
-        <ServerUrl>http://176.9.38.120/practice2/api/resource/85/wms?</ServerUrl>
-        <SRS>EPSG:3857</SRS>
-        <ImageFormat>image/png</ImageFormat>
-        <Layers>moscow_boundary_multipolygon</Layers>
-        <Styles></Styles>
-    </Service>
-    <DataWindow>
-      <UpperLeftX>-20037508.34</UpperLeftX>
-      <UpperLeftY>20037508.34</UpperLeftY>
-      <LowerRightX>20037508.34</LowerRightX>
-      <LowerRightY>-20037508.34</LowerRightY>
-      <SizeY>40075016</SizeY>
-      <SizeX>40075016.857</SizeX>
-    </DataWindow>
-    <Projection>EPSG:3857</Projection>
-    <BandsCount>3</BandsCount>
-   </GDAL_WMS>
-
-Пример вызова утилиты gdal. Она получает картинку из NGW по WMS, и сохраняет её в GeoTIFF
-
-gdal_translate -of "GTIFF" -outsize 1000 1000  -projwin  4143247 7497160 4190083 7468902   ngw.xml test.tiff
-
-
-**TMS**
-
-Конкретные слои NextGIS Web можно подключать как TMS. Для этого нужно создать для 
-необходимого слоя файл XML. Для создания такого файла нужно знать адрес где развернут 
-NGW и номер нужного слоя (в примере: адрес - http://demo.nextgis.ru/ngw_kl, номер слоя - 5). 
-Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
-остается неизменным.
-
-.. code:: xml
-
-   <GDAL_WMS>
-    <Service name="TMS">
-        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?
-                   z=${z}&x=${x}&y=${y}&resource=5
-        </ServerUrl>
-    </Service>
-    <DataWindow>
-        <UpperLeftX>-20037508.34</UpperLeftX>
-        <UpperLeftY>20037508.34</UpperLeftY>
-        <LowerRightX>20037508.34</LowerRightX>
-        <LowerRightY>-20037508.34</LowerRightY>
-        <TileLevel>18</TileLevel>
-        <TileCountX>1</TileCountX>
-        <TileCountY>1</TileCountY>
-        <YOrigin>top</YOrigin>
-    </DataWindow>
-    <Projection>EPSG:3857</Projection>
-    <BlockSizeX>256</BlockSizeX>
-    <BlockSizeY>256</BlockSizeY>
-    <BandsCount>4</BandsCount>
-    <Cache />
-   </GDAL_WMS> 
 
 Векторный слой из файла
 -----------------------
@@ -410,11 +334,13 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSS
 ----------
 
 Программное обеспечение NextGIS Web может работать как сервер WMS. По этому протоколу 
-клиенты запрашивают картинку карты по заданному охвату. 
-Для развёртывания WMS-сервиса необходимо добавить ресурс. В блоке операций выберите :menuselection:`Добавить --> WMS-сервис`. Откроется типовое окно.
+клиенты запрашивают картинку карты по заданному охвату. Для развёртывания WMS-сервиса необходимо добавить ресурс. 
+
+В блоке операций выберите :menuselection:`Добавить --> WMS-сервис`. Откроется типовое окно.
 Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
 а также в дереве слоев карты. 
-На вкладке Сервис WMS добавьте в список ссылки на стили нужных вам слоёв. Для каждого 
+
+На вкладке Сервис WMS добавьте в список ссылки на стили нужных вам слоёв. (см. :numref:`admin_layers_create_wms_service_layers.png`.)  Для каждого 
 добавленого стиля вам нужно указать уникальный ключ. Можно скопировать его из названия. 
 
 .. figure:: _static/admin_layers_create_wms_service_layers.png
@@ -428,7 +354,100 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSS
 использовать в других программах, например NextGIS QGIS, или JOSM. 
 Далее необходимо настроить права доступа к WMS-сервису. См. главу :ref:`ngw_access_rights`.
 
+Cлой NextGIS Web можно добавлять в настольные, мобильные и веб ГИС несколькими способами.
+
+
+Подключение к WMS
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NextGIS Web является сервером WMS. Соответственно подключить его слои как WMS можно 
+в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать URL WMS-сервиса, который высвечивается на странице его настроек. Например:
+
+.. code:: html
+
+   http://demo.nextgis.ru/resource/60/wms?
+
+Подключение к WMS в GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Конкретные слои NextGIS Web можно подключать как WMS. Для использования их через утилиты GDAL нужно создать для 
+необходимого слоя файл XML. Для создания такого файла нужно URL WMS-сервиса.
+Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
+остается неизменным.
+
+.. code:: xml
+
+   <GDAL_WMS>
+    <Service name="WMS">
+        <Version>1.1.1</Version>
+        <ServerUrl>http://176.9.38.120/practice2/api/resource/85/wms?</ServerUrl>
+        <SRS>EPSG:3857</SRS>
+        <ImageFormat>image/png</ImageFormat>
+        <Layers>moscow_boundary_multipolygon</Layers>
+        <Styles></Styles>
+    </Service>
+    <DataWindow>
+      <UpperLeftX>-20037508.34</UpperLeftX>
+      <UpperLeftY>20037508.34</UpperLeftY>
+      <LowerRightX>20037508.34</LowerRightX>
+      <LowerRightY>-20037508.34</LowerRightY>
+      <SizeY>40075016</SizeY>
+      <SizeX>40075016.857</SizeX>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BandsCount>3</BandsCount>
+   </GDAL_WMS>
+
+Если вам нужна картинка с прозрачностью (альфа-каналом) - то укажите <BandsCount>4</BandsCount>
+
+Пример вызова утилиты gdal. Она получает картинку из NGW по WMS, и сохраняет её в GeoTIFF
+
+.. code:: bash
+
+   gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 4190083 7468902   ngw.xml test.tiff
+
+
+
+Подключение к TMS в GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Конкретные слои NextGIS Web можно подключать как TMS. Для этого нужно создать для 
+необходимого слоя файл XML. Для создания такого файла нужно знать адрес где развернут 
+NGW и номер нужного слоя (в примере: адрес - http://demo.nextgis.ru/ngw_kl, номер слоя - 5). 
+Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
+остается неизменным.
+
+.. code:: xml
+
+   <GDAL_WMS>
+    <Service name="TMS">
+        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?
+                   z=${z}&x=${x}&y=${y}&resource=5
+        </ServerUrl>
+    </Service>
+    <DataWindow>
+        <UpperLeftX>-20037508.34</UpperLeftX>
+        <UpperLeftY>20037508.34</UpperLeftY>
+        <LowerRightX>20037508.34</LowerRightX>
+        <LowerRightY>-20037508.34</LowerRightY>
+        <TileLevel>18</TileLevel>
+        <TileCountX>1</TileCountX>
+        <TileCountY>1</TileCountY>
+        <YOrigin>top</YOrigin>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BlockSizeX>256</BlockSizeX>
+    <BlockSizeY>256</BlockSizeY>
+    <BandsCount>4</BandsCount>
+    <Cache />
+   </GDAL_WMS> 
+
+
+
+
 .. _ngw_wfs_service:
+
 
 Cервис WFS
 ----------
