@@ -1,16 +1,15 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
 .. _admin_interface:
 
-Административный интерфейс
+Administrator interface
 ================================
 
-Главная страница
+Home page
 --------------------------------
 
 
-После входа в административный интерфейс, пользователь попадает на главную 
-страницу, представленную на :numref:`admin_index_pic`.
+After login to administrative interface the user is taken to the home page shown on  :numref:`admin_index_pic`.
 
 
 .. figure:: _static/admin_index.png
@@ -18,180 +17,158 @@
    :align: center
    :width: 16cm
 
-   Главная страница административного интерфейса.
+   Administrator interface home page.
 
-   Цифрами обозначено: 
-   1 – основное меню с кнопкой входа/выхода пользователя; 
-   2 – блок основной группы слоев; 
-   3 – блок с перечнем слоев в основной группе; 
-   4 – права пользователя на основную группу; 
-   5 – описание основной группы; 
-   6 – типы объектов, которые можно добавлять в основную группу; 
-   7 – операции которые можно проводить с основной группой.	
+   The numbers indicate: 
+   1 – main menu with login/logout button; 
+   2 – main resource group pane; 
+   3 – child resources pane with a list of items in main group; 
+   4 – user permissions for main resource group; 
+   5 – main resource group description; 
+   6 – types of items that could be added to the main resource group; 
+   7 – actions that could be performed with main resource group.	
 
-Главная страница включает в себя блок основного меню, 
-(см. :numref:`admin_index_pic` п. 1) в котором размещены следующие пункты:
+Home page includes a main menu pane, 
+(see  :numref:`admin_index_pic` index. 1) which has the following links:
 
-* Ресурсы
-* Панель управления
-* Кнопка входа/выхода пользователя с индикацией текущего пользователя, 
-  выполнившего вход.
+* Resources
+* Control Panel
+* Login/logout button with current user indication 
+  .
 
-Блок "дочерние ресурсы" (см. :numref:`admin_index_pic` п. 2) включает в себя 
-перечень всех ресурсов, которые размещены в корневой группе. В блоке дается 
-название ресурса, владелец ресурса, а также кнопка редактирования ресурса.
+Child resources pane (see  :numref:`admin_index_pic` index. 3) contains a list of all resources placed in a root group. Pane displays information about display name, owner and an edit resource button.
 
-В блоке "Описание" (см. :numref:`admin_index_pic` п. 4) размещается описание 
-корневого слоя (при наличии описания).
+Description pane (see  :numref:`admin_index_pic` index. 4) displays root group description (if available).
 
-Блок "Права пользователя" (см. :numref:`admin_index_pic` п. 5) включает в себя 
-перечень прав текущего пользователя на корневую группу. Зелёная отметка 
-идентифицирует наличие соответствующего права. 
+User permissions pane (see  :numref:`admin_index_pic` index. 5) displays list of permissions the current user granted for the root group. Green mark indicates that user has corresponding permission. 
 
-Права имеют следующий состав:
+Possible permissions are the following:
 
-* Все права
-* Чтение
-* Просмотр прав доступа
-* Создание
-* Изменение
-* Изменение прав доступа
-* Удаление
+* All
+* Read
+* View permissions
+* Create
+* Update
+* Manage permissions
+* Delete
 
 
-В блоке операций (см. :numref:`admin_index_pic`. 6 и 7) имеются инструменты для 
-добавления данных и выполнения операций над корневой группой.
+Actions pane (see  :numref:`admin_index_pic`. 6 and 7) contains tools for adding data and executing operations with root group.
 
-В текущей версии возможно добавить следующие виды данных:
+In current version it is possible to add the following types of data:
 
-* Соединение PostGIS
-* Слой PostGIS
-* Растровый слой
-* Группа ресурсов
-* Векторный слой
-* Веб-карта
-* Соединение WMS
-* Cлой WMS
-* Сервис WMS
+* PostGIS connection
+* PostGIS layer
+* Raster layer
+* Resource group
+* Vector layer
+* Web Map
+* WMS connection
+* WMS layer
+* WMS service
 
-Операции имеют следующий состав: 
+Possible operations are:: 
 
-* Удалить
-* Изменить 
+* Delete
+* Update 
 
-Панель управления
+Control panel
 --------------------------------
 
-Панель управления NextGIS Web представлена на :numref:`admin_control_panel`.
+NextGIS Web Control panel presented on  :numref:`admin_control_panel`.
 
 .. figure:: _static/admin_control_panel.png
    :name: admin_control_panel
    :align: center
    :width: 16cm
 
-   Панель управления.
+   Control panel.
 
-Панель управления позволяет выполнять следующие действия:
+Control panel allows to execute the following actions:
 
-* Просмотр групп пользователей
-* Создание групп пользователей
-* Просмотр списка пользователей
-* Создание пользователя
-* Назначение прав доступа группам слоев и веб-картам.
+* View user groups
+* Create user groups
+* View user list
+* Create user
+* Grant permissions to resource groups and web maps.
 
-Вопросы создания групп пользователей и пользователей, назначение прав доступа 
-рассмотрены в разделе :ref:`admin_tasks`.
+For more information about creation of user groups and users and granting permissions see topic :ref:`admin_tasks`.
 
-Просмотр ресурсов
+Resource view
 ------------------
 
-После входа в административный интерфейс, пользователь попадает на главную 
-страницу, представленную на :numref:`resource_group`.
+After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
 
 .. figure:: _static/resource_group.png
    :name: resource_group
    :align: center
    :width: 16cm
 
-   Группы ресурсов. 
+   Resource groups. 
 
-Далее переходим к группе дочерних ресурсов, где обозначены типы слоев этих ресурсов.
-Выбираем из таблицы тип ресурса - векторный слой (см. :numref:`resource_group1`).
+The content of resource group is displayed after a click on resource name in a child resources pane of main resource group. On resource group page there is a pane with a list of resources in root group and user permissions pane.
+Layer properties are displayed after a click on a name of a layer in child resources pane. E.g. user can click on a resource of type vector layer (see  :numref:`resource_group1`).
 
 .. figure:: _static/resource_group1.png
    :name: resource_group1
    :align: center
    :width: 16cm
 
-   Группа дочерних ресурсов
+   Child resource group
 
 
-В результате выбора векторного ресурса откроется окно с параметрами/атрибутами 
-векторного слоя (см. :numref:`options_resource_group`).
+After a click on layer in child resources pane user is taken to a vector layer properties and attributes page (see  :numref:`options_resource_group`).
 
 .. figure:: _static/options_resource_group.png
    :name: options_resource_group
    :align: center
    :width: 16cm
  
-   Параметры векторного слоя ресурса.
+   Vector layer parameters.
 
-Таблица объектов
+Feature table
 -----------------
 
-После входа в административный интерфейс необходимо перейти к группе дочерних ресурсов, 
-где обозначены типы слоев этих ресурсов. Выбирать из группы дочерних ресурсов необходимое 
-именование ресурса, где тип такого ресурса - векторный слой. В блоке операций выбирать 
-действие над слоем - "Таблица объектов". Cформируется таблица атрибутов объектов, 
-имеющая следующий вид :numref:`admin_table_objects_upload`.
+To view feature table after login navigate to a child resource group, where would be displayed resource types. Then select from child resources a resource with type vector layer. In actions pane select an action for vector layer called Feature table. A feature table for the vector layer will be displayed :numref:`admin_table_objects_upload`.
 
 .. figure:: _static/table_objects.png
    :name: admin_table_objects_upload
    :align: center
    :width: 16cm
 
-   Таблица объектов. 
+   Feature table. 
 
-Сформированная таблица атрибутов объектов позволят выполнить следующие операции 
-над выделенной записью :numref:`admin_table_objects1_upload`:
+Feature table allows to perform the following operations with a selected record  :numref:`admin_table_objects1_upload`:
 
-1. Открыть.
-2. Редактировать.
+1. Open.
+2. Edit.
  
 .. figure:: _static/table_objects1.png
    :name: admin_table_objects1_upload
    :align: center
    :width: 16cm
 
-   Операции над записью в таблице атрибутов.
+   Actions for the selected record in feature table.
 
-Фомирование таблицы атрибутов объектов можно выполнить другим способом. В административном 
-интерфейсе необходимо перейти к группе дочерних ресурсов, где обозначены типы слоев
-этих ресурсов и выбрать из группы дочерних ресурсов необходимое именование ресурса, 
-где тип такого ресурса - веб-карта. В блоке операций выбрать действие над ресурсом - "Открыть".
-В результате чего откроется карта (справа) и дерево слоев карты (слева). Для формирования 
-таблицы объектов необходимо выделить нужный слой карты в дереве слоев, после чего 
-во вкладке "Слой" выбрать "Таблица объектов" :numref:`admin_map_and_tree_layers_upload`:
+Feature table could be opened in a different way. In the adminitrative interface navigate to a child resource group where would be displayed resource types. Then select from child resources a resource with a type web map. In actions pane click a web map action called Display.
+A web map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select Feature table command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
 
 .. figure:: _static/map_and_tree_layers.png
    :name: admin_map_and_tree_layers_upload
    :align: center
    :width: 16cm
 
-   Карта и дерево слоев.
+   Map and layer tree.
  
-Cформируется таблица атрибутов объектов, которая позволяет выполнять следующие операции 
-над выделенной записью :numref:`admin_table_objects2_upload`:
+A table will be displayed in a new tab. Table allows to perform the following operations with a selected record :numref:`admin_table_objects2_upload`:
 
-1. Открыть.
-2. Редактировать.
-3. Перейти (при нажатии на кнопку происходит переход к выбраному объекту на карте).
+1. Open.
+2. Edit.
+3. Go to (after a click a map tab will become active and a map will display the selected feature).
  
 .. figure:: _static/table_objects2.png
    :name: admin_table_objects2_upload
    :align: center
    :width: 16cm
 
-   Операции над записью в таблице атрибутов.
-
- 
+   Actions for the selected record in feature table.
