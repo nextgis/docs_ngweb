@@ -1,141 +1,117 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
 .. _general:
 
-Общие сведения
+General Information
 ==============
 
-Программное обеспечение NextGIS Web представляет собой картографическое 
-веб-приложение, предназначенное для поддержки ввода, хранения и предоставления 
-регулируемого доступа к результатам картографической или космической деятельности, 
-интегрированным в единый банк данных и метаданных. 
+NextGIS Web software is a web mapping application designed to support input, storage and regulated access to the results of the mapping and space activities,
+integrated into a single bank of data and metadata 
 
-Программное обеспечение NextGIS Web разработано на базе программного обеспечения 
-с открытым исходным кодом (:term:`Open Source`). Программное обеспечение NextGIS 
-Web поддерживает протоколы открытого обмена данными Open Geospatial Consorcium 
-(`OGC <http://www.opengeospatial.org/>`_) и отвечает современным требованиям к 
-архитектуре приложений реализуемой на базе свободного программного обеспечения 
-(СПО).
+NextGIS Web developed based on :term:`open source` software. NextGIS Web software supports Open Geospatial Consorcium 
+(`OGC <http://www.opengeospatial.org/>`_) open data exchange protocols and meets the modern requirements for application architecture implemented on the basis of free software (:term:`Open Source`).
 
-NextGIS Web состоит из серверной и клиентской части. 
+NextGIS Web has server and client sides. 
 
-Серверная часть занимается хранением и отрисовкой геоданных. Она написана на 
-языке программирования Python с использованием фреймворка Pyramid. Клиентская 
-часть предоставляет пользовательский интерфейс для интерактивного управления 
-:term:`геоданными <геоданные>` и взаимодействия с ними через карту. 
+Server side store and render geodata. It's written on Python with a use of Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management and interaction with geodata on a map. 
 
-Клиент написан на языке JavaScript и построен на базе библиотеки Dojo. Вся 
-конфигурация системы хранится внутри базы данных PostgreSQL с модулем расширения 
-:term:`PostGIS`. Разметка страниц интерфейса пользователя проводится с 
-использованием языка разметки HTML. Оформление страниц интерфейса пользователя 
-производится с использованием таблиц описания стилей – CSS. Описание запросов к 
-базам данным производиться на языке SQL.
+Client is written on JavaScript and based on a Dojo framework. All configuration is stored in a PostgreSQL database with a :term:`PostGIS` extension. Page markup for user interface is written using HTML. Style for user interface is added using cascading style sheets – CSS. Queries to databases use SQL language.
 
-NextGIS Web – модульная система, состоящая из ряда обязательных и вспомогательных 
-модулей. Вспомогательные модули могут быть включены или отключены на этапе 
-конфигурации приложения. Компоненты NextGIS Web взаимодействуют между собой 
-посредством вызовов внутренних методов API.
+NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled on the step of application configuration. NextGIS Web components communicate with each other using internal API methods.
 
-NextGIS WEB должна функционировать под управлением операционной системы семейства 
-Linux (рекомендуется использовать дистрибутивы на базе Debian, например Ubuntu 
-Server 14.04 LTS или выше). Подробнее см. подраздел :ref:`sys_req`. 
-NextGIS Web работает во всех современных браузерах.
-Внешний вид пользовательского интерфейса с опубликованной веб-картой представлен 
-на :numref:`webmap_sample`.
+NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu 
+Server 14.04 LTS or higher). Reed more. section :ref:`sys_req`. 
+NextGIS Web works in all modern browsers.
+User interface with a published web map :numref:`webmap_sample`.
 
 .. figure:: _static/webmap_sample.png
    :name: webmap_sample
    :align: center
    :width: 16cm
    
-   Пользовательский интерфейс с опубликованной веб-картой. 
+   User interface with a published web map. 
 
 .. _ngweb_keyfeatures:
 
-Основные возможности NextGIS Web 
+Key features of NextGIS Web
 --------------------------------
 
-NextGIS Web обладает следующими основными возможностями:
+NextGIS Web has the following key features:
     
-Слои данных 
+Data layers 
 ~~~~~~~~~~~
 
-* Создание растровых и векторных слоев и загрузка данных для них через веб-интерфейс. 
-* Создание и подключение :term:`WMS` слоев. 
-* Создание и подключение :term:`PostGIS` слоев из внешних баз данных. 
-* Выбор из базовых подложек: OpenStreetMap, Google, Bing. 
-* Сервис WFS.
-* Сервис WMS.
-* Справочник (при наличии модуля расширения). 
-* Набор файлов.
-* Функция "Ключ-значение", поддержка метаданных.
-* Экспорт в GeoJSON и CSV.
+* Creation of raster and vector layers and data upload for them using web interface. 
+* Creation of :term:`WMS` layers and connection to existing services. 
+* Creation of :term:`PostGIS` layers and connection to layers in external databases. 
+* A set of standard basemaps: OpenStreetMap, Google, Bing. 
+* WFS service.
+* WMS service.
+* Dictionary (with extension). 
+* File set.
+* "Key-value" function, support for metadata.
+* Export to GeoJSON and CSV.
 
-Управление доступом 
+Access management 
 ~~~~~~~~~~~~~~~~~~~
 
-* Детальная настройка прав доступа для всех подключаемых слоев.
-* Настройка прав доступа для ресурсов и групп ресурсов.
+* Detailed settings of access rights for each connected layer.
+* Setting access rights for resources and resourse groups.
 
-Отрисовка и символика 
+Rendering and symbology 
 ~~~~~~~~~~~~~~~~~~~~~
 
-* Импорт символики QGIS с автоматической конвертацией "под рендерер". 
-* Подключаемые рендереры: :term:`MapServer`, :term:`Mapnik`. 
-* Несколько вариантов символики для одного слоя данных. 
+* Symbology import from QGIS with automated conversion "for renderer". 
+* Pluggable renderers: :term:`MapServer`, :term:`Mapnik`. 
+* Several symbology options for the single data layer. 
 
-Веб-карты 
+Web maps 
 ~~~~~~~~~
  
-* Неограниченное количество веб-карт. 
-* Свой набор слоев и управление деревом слоев для каждой карты. 
-* Повторное использование одного и того же представления слоя в разных картах. 
+* Unlimited number of web maps. 
+* Own set of layers and layer tree management for each map. 
+* Reuse of the same layer representation in different maps. 
 
-Интерфейс пользователя 
+User interface 
 ~~~~~~~~~~~~~~~~~~~~~~
 
-* Дерево слоев. 
-* Группы слоев. 
-* Панель инструментов навигации. 
-* Поиск по атрибутам. 
-* Закладки для быстрого перехода на нужные участки карты. 
-* Просмотр описания слоя. 
-* Просмотр таблицы атрибутов объектов слоя с быстрым переходом от таблицы к карте. 
+* Layer tree. 
+* Layer groups. 
+* Navigation tools panel. 
+* Search by attributes. 
+* Bookmarks for fast access to some regions of the map. 
+* Layer description view. 
+* Feature table view for layer with fast switch between a table and a map. 
 
-Редактирование 
+Editing 
 ~~~~~~~~~~~~~~
 
-* Редактирование атрибутов объектов.
-* Редактирование описания слоя. 
-* Прикрепление фотографий и др. вложений. 
-* Редактирование WFS-T.
+* Editing of feature attributes.
+* Editing of layer description. 
+* Adding photos and other  attachments. 
+* Editing features with WFS-T.
 
 .. _sys_req:
     
-Рекомендуемые параметры системы
+Recommended hardware
 -------------------------------
 
-Рекомендуемые параметры системы для эффективной работы :abbr:`ПО (программное 
-обеспечение)` NextGIS Web включают в себя сервер со следующими характеристиками:
+Recommended hardware for effective work with NextGIS Web software includes a server with the following characteristics:
 
-* один или два процессора Intel Xeon E5 или AMD Opteron с тактовой частотой не 
-  менее 2 ГГц (8 ядер)
-* оперативную память не менее 16 Гбайт DDR3 ECC Reg
-* соответствующая материнская плата для выбранных процессоров со встроенной 
-  видеосистемой и сетевым интерфейсом 10/100/1000BaseT
-* два накопителя на жестких магнитных дисках емкостью не менее 500 Гбт в RAID1
-* оптический накопитель DVD-ROM
-* серверный корпус
-* манипулятор "мышь"
-* клавиатура
-* источник бесперебойного питания емкостью не менее 1000 ВА
-* монитор LCD 17"
+* one or two processor  Intel Xeon E5 or AMD Opteron with frequency not  
+  less than 2 GHz (8 cores)
+* not less than 16 GB of DDR3 ECC Reg RAM
+* appropriate motherboard for selected processors with integrated 
+  videocard and a network interface 10/100/1000BaseT
+* two hard disk drives (HDD) with a capacity from 500 GB in RAID1
+* DVD-ROM
+* server case
+* mouse
+* keyboard
+* uninterruptible power supply with a capacity of not less than 1000 VA
+* LCD monitor 17"
 
-В качестве клиента может выступать стационарный компьютер (размер экрана 11-27 
-дюймов).
+Client device could be a desktop (with 11-27" monitor).
 
-Также можно использовать серверы на хостинге с аналогичными характеристиками по 
-процессору и оперативной памяти. Объем диска зависит от имеющихся геоданных. 
-Сама ОС со всеми библиотеками и :abbr:`ПО (программное обеспечение)` NextGIS Web, 
-базой данных занимает не более 20-30 Гбт.
-
+Also it is possible to use hosted servers with the same characteristics of proccessor and RAM. Hard disk drive capacity depends on the volume of geodata. 
+Operation system with NextGIS Web software and a database requires not more than 20-30 GB of hard disk drive space.
