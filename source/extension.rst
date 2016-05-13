@@ -1,79 +1,77 @@
-.. sectionauthor:: Наталья Барышникова <nshelekhova@gmail.com>
+.. sectionauthor:: Natalia Baryshnikova <nshelekhova@gmail.com>
 
 .. _ngweb_extension:
 
-Модули расширения
+Extensions
 ================================
 
-Общие сведения
+General Information
 -----------------
 
-Имеются следующие модули расширения для увеличения функциональных возможностей программного обеспечения:
+The following extensions are available to increase the functionality of the software:
 
-1. Rosavto - добавляется возможность выбора подложки по умолчанию и просмотр перечня 
-   имеющихся подложек, возможность выбора из готового списка адресов сервисов.
+1. Rosavto - added support for default basemap selection and a list view of available basemaps,
+   an option to select from pre-prepared list of services.
 
-2. Compulink - добавление к стандартному функционалу NextGIS Web справочника (ключ - значение),
-   возможность экспорта векторных слоев в разные форматы (ESRI шейп-файл, MapInfo tab и др.)
+2. Compulink - key - value dictionary added to NextGIS Web standard features,
+   added support for vector layer export to different formats (ESRI shapefile, MapInfo tab etc.)
 
-3. Rekod - добавляется поддержка наборов файлов, позволяет загружать любые файлы, 
-   не обязательно геопространственные.
+3. Rekod - added support for file sets, ability to upload any files, including non-geospatial.
 
-4. Forest violations - добавляется возможность фильтрации по атрибутам и пространственному 
-   охвату.
+4. Forest violations - added support for filtering by attribute and spatial extent.
 
-5. Mapnik - добавляется отрисовка карт при помощи Mapnik рендерера.
+5. Mapnik - added support for Mapnik map renderer.
 
-6. QGIS - добавляется отрисовка карт помощи QGIS рендерера.
+6. QGIS - added support for QGIS map renderer.
 
-7. MapServer - добавляется отрисовка карт при помощи MapServer рендерера.
+7. MapServer - added support for MapServer map renderer.
 
-8. Log - добавляется возможность для записи различных сообщение в логе.
+8. Log - added support for writing of various messages to a log.
 
-9. Mobile debug - добавляется возможность для получения и систематизации отладочной 
-   информации NextGIS Mobile SDK.
+9. Mobile debug - added support for recieving and categorizing debug 
+   information from NextGIS Mobile SDK.
  
-Добавление нового модуля расширения
+Adding a new extension
 ------------------------------------
 
-Рассмотрим пример добавления нового модуля расширения на базе Rekod. 
-Для этого необходимо выполнить ряд шагов.
+Example: adding Rekod extension. 
+Here are steps to add an extension:
 
-1. Выполнить команду, которая скачает исходные коды модуля на сервер, где установлен NextGIS Web: 
+1. Execute command to download extension source code to server where NextGIS Web is installed: 
 
 .. code:: bash
 
    git clone https://github.com/nextgis/nextgisweb_rekod.git
 
-2. Установить модуль расширения в NextGIS Web: 
+2. Install extension in NextGIS Web: 
 
 .. code:: bash
 
    env/bin/pip install -e ./nextgisweb_rekod
 
-3. Создать необходимые директории (опционально):
+3. Create nessesary directories (optional):
 
 .. code:: bash
 
    mkdir file_bucket
 
-4. Изменить файл конфигурации (опционально):
+4. Make changes to configuration file (optional):
 
 .. code:: bash
 
    nano config.ini
 
-Пример внесения изменений файл конфигурации см. ниже:
+Example: changes to configuration file:
 
 .. code:: bash
 
    [file_bucket]
    path =  /home/username/ngw/file_bucket
 
-5. Переинициализировать базу данных NextGIS Web:
+5. Reinitialize NextGIS Web database:
 
 .. code:: bash
 
    env/bin/nextgisweb --config config.ini initialize_db 
 
-6. Перезапустить сервис NextGIS Web что бы изменения вступили в силу.
+6. Restart NextGIS Web to apply changes.
