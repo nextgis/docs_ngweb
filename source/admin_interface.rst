@@ -23,8 +23,8 @@ After login to administrative interface the user is taken to the home page shown
    1 – main menu with login/logout button; 
    2 – main resource group pane; 
    3 – child resources pane with a list of items in main group; 
-   4 – user permissions for main resource group; 
-   5 – main resource group description; 
+   4 – main resource group description; 
+   5 – user permissions for main resource group;
    6 – types of items that could be added to the main resource group; 
    7 – actions that could be performed with main resource group.	
 
