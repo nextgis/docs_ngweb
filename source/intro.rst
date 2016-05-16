@@ -1,20 +1,17 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
 .. _intro:
 
-Введение
+Introduction
 ========
 
-В настоящем документе представлено руководство пользователя Веб-ГИС **NextGIS Web** 
-версии |version|. В руководстве даны общие сведения о программном обеспечении 
-(:abbr:`ПО (программное обеспечение)`), 
-сведения по установке и настройке ПО, описание административного интерфейса, 
-рассмотрены базовые пользовательские задачи и задачи администрирования.
+This document is a user manual for a **NextGIS Web** version |version| web gis. The manual covers general information about the software installation, configuration and usage, description of administrator interface,
+and an overview of basic user and administrator tasks.
 
 
 .. only:: latex
 
-   Данная документация распространяется по лицензии Creative Commons 
-   **"Attribution-NoDerivs" ("Атрибуция — Без производных произведений") СC BY-ND**
+   This documentation is distributed under Creative Commons license 
+   **"Attribution-NoDerivs" ะกC BY-ND**
    
    .. image:: _static/cc_by.png 
