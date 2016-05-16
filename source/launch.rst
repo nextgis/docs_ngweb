@@ -1,74 +1,73 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
 .. _launch:
     
-Запуск
+Launch
 ======
 
-Запуск через Pserve
+Launch using Pserve
 -------------------
 
-Для запуска NextGIS Web через Pserve необходимо выполнить команду:
+To launch NextGIS Web using Pserve run a command:
 
 .. code:: bash
 
     env/bin/pserve development.ini
 
-Для автоматического запуска NextGIS Web при загрузке операционной системы 
-необходимо отредактировать пользовательский скрипт автозапуска:
+To launch NextGIS Web automatically with a launch of operation system edit a user script for autolaunch:
 
 .. code:: bash
 
     sudo nano /etc/rc.local
 
-и добавить в него строку:
+and add the following string to the file:
 
 .. code:: bash
 
     /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
 
-В промышленной эксплуатации нужно использовать не pserve, а :ref:`uWSGI <uwsgi>`.
+In production you should use :ref:`uWSGI <uwsgi>` instead of pserve.
 
-Для проверки работоспособности необходимо в веб-браузере набрать:
+To test if application is running go to the following address in the browser:
 
 ::
 
     http://0.0.0.0:6543
 
-Должно открыться окно авторизации.
+An authentication page will be open.
 
-.. note: При запуске pserve через supervisor необходимо добавить настройку 
-   environment=LANG=ru_RU.UTF-8 для поддержки русскихимен в названии загружаемых 
-   файлов.
+.. note: If pserve is launched using supervisor you should add a setting 
+   environment=LANG=ru_RU.UTF-8 to support Russian names for uploaded 
+   files.
 
 
-Имя и пароль по умолчанию:
+Default login and password:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Имя: administrator
-* Пароль: admin
+* Login: administrator
+* Password: admin
 
 
 .. _uwsgi:
 
-Запуск через uWSGI
+Launch using uWSGI
 ------------------
 
-Для начал необходимо установить uWSGI:
+At first you need to install uWSGI:
 
 .. code:: bash
 
    user@ubuntu:~/ngw$ source env/bin/activate
    (env)user@ubuntu:~/ngw$ pip install uwsgi
     
-или через системный сервис:
+or using system service:
 
 .. code:: bash
 
    apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
-К существующему конфигурационном ini-файлу (development, production...) paste добавляем секцию
-``uwsgi``
+Then you need to add an ``uwsgi`` section to existing .ini file (development, production... )
+
 
 ::
 
@@ -76,15 +75,13 @@
     module = nextgisweb.uwsgiapp
     env = PASTE_CONFIG=%p
 
-При использовании FreeBSD может потребоваться отключить WSGI file
-wrapper, так как он иногда работает некорректно. Для этого в этой же
-секции:
+When using FreeBSD you may need to disable WSGI file wrapper, as it sometimes does not work properly. To do this add the following string to that section:
 
 ::
 
     env = WSGI_FILE_WRAPPER=no
     
-Для запуска uWSGI через unix socet секция должна иметь следующий вид:
+To launch uWSGI using unix socket the uwsgi section should look like:
     
 ::
     
@@ -102,14 +99,12 @@ wrapper, так как он иногда работает некорректно
     paste-logger = %p
     env=LANG=ru_RU.UTF-8
 
-.. note:: Соответсвующие папки должны быть созданы. Для работы локлаи 
-   (LANG=ru_RU.UTF-8) необходимо что бы в системе имелись соответсвующие файлы 
-   (locale -a). Если локали нет, то ее необходимо добавить (locale-gen ru_RU.utf8). 
-   Так же рекомендуется установить локаль системной (update-locale LANG=ru_RU.UTF-8).
+.. note:: Corresponding folders should be already created. To use locale  
+   (LANG=ru_RU.UTF-8) required files should be present in system 
+   (locale -a). If locale is absent you need to add it (locale-gen ru_RU.utf8). 
+   Also it is recommended to set locale as system (update-locale LANG=ru_RU.UTF-8).
 
-Далее в зависимости от того, какой интерфейс требуется на выходе от
-uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi - это
-одновременно и протокол и программа. Ниже речь идет именно о протоколе.
+The following steps will depend on what interface is required as an output of uwsgi. There is some confusion related to the fact that uwsgi is both protocol and program. Here we are talking about the protocol.
 
 HTTP:
 
@@ -132,35 +127,28 @@ FastCGI:
     socket = host:port | :port | /path/to/socket
     protocol = fastcgi
 
-Знака \| в конфиге быть не должно, надо написать например так:
+The sign \| should not be present in the configuration file. For example you can write:
 
 ::
 
     socket =  :6543    
 
-При использовании сокета в файловой системе права на него могут быть
-выставлены через параметр chmod:
+When using socket you can set file system permissions using chmod parameter:
 
 ::
 
     chmod = 777
 
-Количество процессов задается параметром ``workers``, а количество
-потоков в процессе - параметром ``thread``. В примере ниже будет
-запущено 2 процесса с 4 потоками в каждом:
+The number of processes is set with ``workers`` parameters. The number of threads for a process is set with a ``thread`` parameter. The example below shows a launch of 2 processes with 4 threads per process:
 
 ::
 
     workers = 2
     threads = 4
 
-Вариант с отдельным процессами более безопасный, но и более
-ресурсоемкий.
+An option with separate processes is more safe but it consumes more resources.
 
-Запуск uwsgi осуществляется командой ``uwsgi file.ini``, причем все
-переменные могут быть так же переопределены из командной строки,
-например так: ``uwsgi --workers=8 file.ini``. В таком же виде uwsgi
-можно запускать и через supervisor, например так:
+Launch of uwsgi is executed using a command ``uwsgi file.ini``, and all variables could be redefined in command line. For example : ``uwsgi --workers=8 file.ini``. You can launch uwsgi the same way using supervisor, for example:
 
 ::
 
@@ -170,8 +158,7 @@ FastCGI:
 supervisor + uwsgi
 ~~~~~~~~~~~~~~~~~~
 
-Для запуска через supervisor + uWSGI без использования веб-сервера конфигурация 
-должна иметь следующий вид:
+To launch supervisor + uWSGI without web server configuration file should look like:
     
 ::    
 
@@ -184,10 +171,10 @@ supervisor + uwsgi
    virtualenv = /home/ngw_admin/ngw/env
    protocol = http
    socket = :8080
-   workers = 4 # количество потоков обработки подключений
-   limit-post = 4831838208 # максимальный размер файла
+   workers = 4 # the number of threads for processing of connections
+   limit-post = 4831838208 # maximum file size
 
-Конфигурация supervisor может иметь следующий вид:
+Configuration file for supervisor should look like:
     
 ::
     
@@ -202,8 +189,7 @@ supervisor + uwsgi
 apache + mod\_uwsgi
 ~~~~~~~~~~~~~~~~~~~
 
-При наличии модуля ``mod_uwsgi`` uwsgi можно подключить при помощи такой
-конструкции:
+If module ``mod_uwsgi`` is available you can enable uwsgi with the following configuration:
 
 ::
 
@@ -212,23 +198,19 @@ apache + mod\_uwsgi
         uWSGISocket /path/to/socket
     </Location>
 
-В этом случае для коммуникации между uwsgi и apache используется сокет в
-файловой системе, то есть в секции ``[uwsgi]`` должно быть:
+In this case a file system socket is used for communication between uwsgi and apache, so section ``[uwsgi]`` should have the following strings:
 
 ::
 
     socket = /path/to/socket
     protocol = uwsgi
 
-К сожалению, при использовании этого модуля не работают всякие фишки,
-вроде сжатия gzip на стороне apache. Более того они могут привести к
-совершенно неожиданным последствиям.
+Unfortunatelly when using this module not all functions are available, for example gzip compression at the apache side will be unavailable. Moreover this can cause unexpected consequences.
 
 apache + mod\_proxy\_uwsgi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-При наличии модуля ``mod_proxy_uwsgi`` uwsgi можно подключить при помощи
-такой конструкции:
+If module ``mod_proxy_uwsgi`` is available you can enable uwsgi with the following configuration:
 
 ::
 
@@ -236,9 +218,7 @@ apache + mod\_proxy\_uwsgi
         ProxyPass uwsgi://localhost:10001
     </Location>
 
-Порт приходится использовать из-за того, что ``mod_proxy`` в apache не
-поддерживает сокеты из файловой системы. То есть в этом случае в
-``[uwsgi]`` должно быть что-то вроде:
+You need to use the port because ``mod_proxy`` in apache doesn't support file system sockets. So in this case the ``[uwsgi]`` section should contain something like:
 
 ::
 
@@ -248,10 +228,9 @@ apache + mod\_proxy\_uwsgi
 nginx + uwsgi
 ~~~~~~~~~~~~~
 
-Для запуска при помощи nginx в файл конфигурации веб сервера Nginx необходимо добавить 
-следующие строки.
+To launch using nginx you need to add the following strings to Nginx configuration file.
 
-В случае запуска uWSGI на TCP порту:    
+In case uWSGI is launched on TCP-port:    
 
 :: 
 
@@ -261,7 +240,7 @@ nginx + uwsgi
     }
     
     
-В случае запуска uWSGI на unix порту:    
+In case uWSGI is launched on unix-port:    
 
 :: 
 
@@ -271,7 +250,7 @@ nginx + uwsgi
     }
 
 
-Для работы Ajax запросов необходимы настройки CORS:
+To work with Ajax requests you should perform CORS setiings:
     
 ::
     
@@ -313,27 +292,27 @@ nginx + uwsgi
     }
 
 
-nginx + uwsgi (вариант 2)
+nginx + uwsgi (option 2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Создаем файл с настройками:  
+Create a file with configuration:  
 
 ::
 
 	sudo touch /etc/nginx/sites-available/ngw.conf
 
-содержание:  
+contents:  
 
 ::
 
      server {
           listen                 6555;
-          client_max_body_size 6G;   # для больших файлов увеличиваем размер POST запроса
-          large_client_header_buffers 8 32k; # для больших файлов увеличиваем буфер
+          client_max_body_size 6G;   # for large files increase POST request size
+          large_client_header_buffers 8 32k; # for large files increase buffer size
 
           
           location / {
-            uwsgi_read_timeout 600s; #для больших файлов необходимо поставить большее время
+            uwsgi_read_timeout 600s; #for large files set longer timeout
             uwsgi_send_timeout 600s;
 
             include            uwsgi_params;
@@ -345,8 +324,8 @@ nginx + uwsgi (вариант 2)
             proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header   X-Forwarded-Host $server_name;
             
-            proxy_buffer_size 64k; # для больших файлов увеличиваем буфер
-            proxy_max_temp_file_size 0; # и размер временного файла ставим без огранчиений
+            proxy_buffer_size 64k; # for large files increase buffer size
+            proxy_max_temp_file_size 0; # and a temporary file size is set to infinite
 	    proxy_buffers 8 32k;
         }
     }
@@ -359,13 +338,13 @@ Setup uWSGI
 	[app:main]
 	use = egg:nextgisweb
 	
-	# путь к основному конфигурационному файлу
+	# a path to the main configuration file
 	config = /opt/ngw/config.ini
 	
-	# путь к конфигурационному файлу библиотеки logging
+	# a path to logging library configuration file
 	# logging = %(here)s/logging.ini
 	
-	# полезные для отладки параметры
+	# parameters useful for debugging
 	# pyramid.reload_templates = true
 	# pyramid.includes = pyramid_debugtoolbar
 	
@@ -384,12 +363,12 @@ Setup uWSGI
 	chmod-socket=777
 	paste-logger = %p
 	workers = 8
-	limit-post = 7516192768 # ограничение post запоса 7Гб
-	harakiri = 6000	# таймаут на операцию 6000 с.
-	socket-timeout = 6000 # таймаут на сокет 6000 с.
+	limit-post = 7516192768 # POST request limit 7GB
+	harakiri = 6000	# operation timeout 6000 seconds
+	socket-timeout = 6000 # socket timeout 6000 seconds
 
 
-nginx + uwsgi (вариант 3)
+nginx + uwsgi (option 3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -421,7 +400,7 @@ nginx + uwsgi (вариант 3)
 	max-requests = 5000
 	buffer-size = 32768
 
-Сделать symlink на development.ini в папки:
+Create symlink to development.ini in folders:
 
 /etc/uwsgi/apps-available/ngw.ini
 /etc/uwsgi/apps-enabled/ngw.ini
@@ -430,7 +409,7 @@ nginx + uwsgi (вариант 3)
 
 	service uwsgi restart
 	
-Посмотреть лог на отсутствие ошибок:
+Lookup log for error messages:
 
 ::
 
