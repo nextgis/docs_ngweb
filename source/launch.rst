@@ -384,7 +384,7 @@ Setup uWSGI
 	chmod-socket=777
 	paste-logger = %p
 	workers = 8
-	limit-post = 7516192768 # ограничение post запоса 7Гб
+	limit-post = 7516192768 # ограничение post запроса 7Гб
 	harakiri = 6000	# таймаут на операцию 6000 с.
 	socket-timeout = 6000 # таймаут на сокет 6000 с.
 
