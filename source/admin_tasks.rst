@@ -30,7 +30,7 @@ In create new group dialog enter full name, group name (short name) and click a 
 
 
 Creation of a new user
----------------------
+----------------------
 
 A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
 This window could be opened from Control panel 
@@ -200,10 +200,10 @@ If you have a complex system with several maps and different users who should wo
 
 
 Example: Assigning permissions
------------------------------
+------------------------------
 
 Grant guest user web map display permission
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
 	Guest users will be able to see administrative interface and view all folders excluding especially closed ones.
@@ -233,7 +233,7 @@ Grant guest user web map display permission
 
 
 Grant a single user permissions to a single resource group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. figure:: _static/access_rights_group_for_user_1.png
