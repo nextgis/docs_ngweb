@@ -2,11 +2,10 @@
 
 .. _sysadmin_tasks:
     
-Системное администрирование
+System administration
 ===========================
 
-В данном разделе приведены задачи для системного администратора. Они актуальны на 
-этапе развертывания, резервного копирования и миграции.
+This section describes system administrator tasks. These tasks are actual during a process of deploy, backup, copying and migration.
 
 .. toctree::
    :maxdepth: 2
