@@ -14,7 +14,7 @@ Creation of a new user group
 A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
 This window could be opened from Control panel 
 (see  :numref:`admin_control_panel`). To open the window click : 
-:menuselection:`User groups --> Create`.
+:menuselection:`Groups --> Create`.
 
 .. figure:: _static/admin_controlpanel_usergroup_create.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
