@@ -1,246 +1,219 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Дмитрий Барышников <dmitry.baryshnikov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.ru>
 
 .. _admin_tasks:
 
-Административные задачи
+Administrator tasks
 ================================
 
 .. _create_group:
 
-Создание групп пользователей
+Creation of a new user group
 ----------------------------
 
-Диалог создания новой группы представлен на :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
-Для открытия этого окна необходимо открыть панель управления 
-(см. :numref:`admin_control_panel`) и выбрать там: 
-:menuselection:`Группы пользователей --> Создать`.
+A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
+This window could be opened from Control panel 
+(see  :numref:`admin_control_panel`). To open the window click : 
+:menuselection:`User groups --> Create`.
 
 .. figure:: _static/admin_controlpanel_usergroup_create.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
    :width: 16cm
 
-   Окно создания новой группы.
+   Create new group dialog.
 
-В диалоге необходимо указать полное и краткое наименование группы и нажать 
-кнопку :guilabel:`Создать`. Полное наименование служит в качестве описания. 
+In create new group dialog enter full name, group name (short name) and click a button  :guilabel:`Create`. Also you can enter a description for a user group. 
 
 .. note:: 
-   Название группы должно содержать только цифры и буквы. 
+   A name for a group should contain only letters and numbers. 
 
 
-Создание пользователя
+Creation of a new user
 ---------------------
 
-Диалог создания нового пользователя представлен на :numref:`admin_controlpanel_user_create`. 
-Для открытия этого окна необходимо открыть панель управления 
-(см. :numref:`admin_control_panel`) и выбрать там: 
-:menuselection:`Пользователи --> Создать`.
+A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
+This window could be opened from Control panel 
+(see  :numref:`admin_control_panel`). To open the window click: 
+:menuselection:`Users --> Create`.
 
-В диалоге необходимо указать:
+Enter the following information:
 
-* Полное имя пользователя (например, Иванов Иван Иванович)
-* Имя пользователя – логин (например, ivanov)
-* Пароль для входа
+* Full name (e.g. Ivanov Ivan Ivanovich)
+* Login – user login (e.g. ivanov)
+* Password
 
-Выбрать, к какой группе относится пользователь – в списке будут отображены 
-имеющиеся группы. Если необходимой группы в списке нет, то ее необходимо создать 
-(см. :ref:`create_group`).
+Then select groups user belongs to. The list of available groups is provided below user info. If the required group is absent you need to create a new one 
+(see  :ref:`create_group`).
 
-Далее необходимо нажать кнопку :guilabel:`Создать`.
+Then click a button :guilabel:`Create`.
 
 .. figure:: _static/admin_controlpanel_user_create.png
    :name: admin_controlpanel_user_create
    :align: center
    :width: 16cm
 
-   Окно создания пользователя.
+   Create new user dialog.
 
 
 .. _access_rights:
     
-Настройка прав доступа
+Setting permissions
 ----------------------
 
-NextGIS Web строится на ресурсном подходе - каждый компонент системы (слой, 
-группа, сервис) является ресурсом. NextGIS Web обладает расширенными настройками 
-прав доступа к ресурсам.
+NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
 
-Права доступа можно назначить как при создании ресурса (см. :ref:`create_layers`), 
-так и при его изменении (см. :ref:`change_layers`). Для этого в диалоге 
-создания/изменения ресурс необходимо перейти на вкладку 
-"Права доступа" (см. :numref:`ngweb_access_rights_tab`).
+Permissions could be set during resource creation (see. :ref:`create_layers`), 
+or using resource update (see. :ref:`change_layers`). To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`).
 
 .. figure:: _static/access_rights_tab.png
    :name: ngweb_access_rights_tab
    :align: center
    :width: 10cm
    
-   Вкладка настроек прав доступа.
+   Permissions tab for resource.
 
-В данной вкладке можно назначать, отменять или изменять права доступа. Для одного
-ресурса могут быть назначены различные права доступа пользователей и/или групп.
-Диалог настроек правил доступа представлен на рис. :numref:`ngweb_access_rights_dialog`.
+You can grant, revoke and update permissions using this tab. You can grant different permissions to a single resource for different users and/or groups.
+A dialog with permission item settings is presented on fig.  :numref:`ngweb_access_rights_dialog`.
 
 .. figure:: _static/access_rights_dialog.png
    :name: ngweb_access_rights_dialog
    :align: center
    :width: 10cm
    
-   Диалог настроек правил доступа.
+   Permission item settings dialog.
 
-Диалог включает в себя следующие элементы:
+A dialog has the following elements:
     
-* Действие
-* Субъект
-* Право
-* Ресурс
-* Распространять
+* Action
+* Principal
+* Permission
+* Resource
+* Propagate
 
-**Действие** определяет типы правила - запрещающее или разрешающее.
+**Action** defines the kind of the rule - allow or deny.
 
-.. note:: По-умолчанию все запрещено.
+.. note:: By default everything is denied.
 
-**Субъект** - пользователь или группа, на которых распространяется правило.
+**Principal** - a user or a user group who are subject to a rule.
 
-Право - определяет разрешенные или запрещенные действия с ресурсом. Существуют 
-следующие виды прав: 
+Permission - defines allowed or denied actions with the resource. There are the following available types of permissions: 
 
-* Все ресурсы: Все права
-* Ресурс: Все права
-* Ресурс: Управление дочерними ресурсами
-* Ресурс: Управление правами доступа
-* Ресурс: Чтение
-* Ресурс: Создание
-* Ресурс: Изменение
-* Ресурс: Удаление
-* Сервис: Все права
-* Сервис: Подключение
-* Сервис: Настройка
-* Структура данных: Все права
-* Структура данных: Запись
-* Структура данных: Чтение
-* Соединение: Все права
-* Соединение: Запись параметров соединения
-* Соединение: Чтение параметров соединения
-* Соединение: Использование соединения
-* Веб-карта: Все права
-* Веб-карта: Просмотр
-* Данные: Все права
-* Данные: Запись
-* Данные: Чтение
-* Метаданные: Все права
-* Метаданные: Запись
-* Метаданные: Чтение
+* All resources: All permissions
+* Resource: All permissions
+* Resource: Manage children
+* Resource: Change permissions
+* Resource: Read
+* Resource: Create
+* Resource: Update
+* Resource: Delete
+* Service: All permissions
+* Service: Connect
+* Service: Configure
+* Data structure: All permissions
+* Data structure: Write
+* Data structure: Read
+* Connection: All permissions
+* Connection: Write
+* Connection: Read
+* Connection: Connect
+* Web map: All permissions
+* Web map: Display
+* Data: All permissions
+* Data: Write
+* Data: Read
+* Metadata: All permissions
+* Metadata: Write
+* Metadata: Read
 
-**Ресурс** - на какие ресурсы распространять. Это актуально для группы ресурсов, 
-где необходимо назначить права определенным типам ресурсов. Если нет необходимости 
-в выборе типов ресурсов или все ресурсы в группе одинаковые, то ставиться "Все 
-ресурсы".
+**Resource** - type of resource the rule created for. This setting is important for resource groups where it is required to grant permissions only to some types of resources. If there is no need to grant different permissions to different types of resources, select "All resources" for this setting.
 
-Чекбокс "**Распространять**" определяет, распространять ли правило на ресурсы в 
-подгруппы или нет.
+ "**Propagate**" checkbox defines should permission rules be applied to resources in sub-groups or not.
 
-Права могут назначаться ресурсам, даже которым не соответствуют явно, например,
-право "Веб-карта: Просмотр" может быть назначено группе ресурсов, и, если включен
-переключатель "Распространять", то право будет распространяться на все веб-карты
-в данной группе и всех подгруппах.
+Permissions could be assigned to resources indirectly. For example permission "Web map: Display" could be assigned for a resource group and if a "Propagate" checkbox is checked this rule will be applied to every web map inside this resource group and inside all the subgroups.
 
-Рассмотрим права подробнее.
+Here is a description for available permission types.
 
-**Все ресурсы: Все права** - разрешает или запрещает любые действия с ресурсами.
+**All resources: All permissions** - allows or denies any actions with resources.
 
-**Ресурс: Все права** - разрешает или запрещает любые действия с ресурсами, за
-исключением групп ресурсов.
+**Resource: All permissions** - allows or denies any actions with resources excluding resource groups.
 
-**Ресурс: Управление дочерними ресурсами** - разрешает или запрещает изменение 
-настроек дочерних ресурсов. 
+**Resource: Manage children** - allows or denies update of child resources settings. 
  
-**Ресурс: Управление правами доступа** - разрешает или запрещает управлять правами
-доступа к ресурсу.
+**Resource: Change permissions** - allows or denies access permissions management for a resource.
 
-**Ресурс: Чтение** - разрешает или запрещает чтение ресурсов.
+**Resource: Read** - allows or denies reading of resources.
 
-**Ресурс: Создание** - разрешает или запрещает создание ресурсов.
+**Resource: Create** - allows or denies creation of resources.
 
-**Ресурс: Изменение** - разрешает или запрещает модифицировать ресурсы.
+**Resource: Update** - allows or denies modification of resources.
 
-**Ресурс: Удаление** - разрешает или запрещает удалять ресурсы.
+**Resource: Delete** - allows or denies deletion of resources.
 
-**Сервис: Все права** - разрешает или запрещает любые действия с сервисом.
+**Service: All permissions** - allows or denies any actions with a service.
 
-**Сервис: Подключение** - разрешает или запрещает выполнять подключения к сервису.
+**Service: Connect** - allows or denies connections to a service.
 
-**Сервис: Настройка** - разрешает или запрещает изменять настройки сервиса.
+**Service: Configure** - allows or denies modification of service setiings.
 
-**Структура данных: Все права** - разрешает или запрещает любые действия со 
-структурой данных.
+**Data structure: All permissions** - allows or denies any actions with data structure.
 
-**Структура данных: Запись** - разрешает или запрещает изменять структуру данных.
+**Data structure: Write** - allows or denies modification of data structure.
 
-**Структура данных: Чтение** - разрешает или запрещает чтение структуры данных.
+**Data structure: Read** - allows or denies reading of the data structure.
 
-**Соединение: Все права** - разрешает или запрещает любые действия с соединениями.
+**Connection: All permissions** - allows or denies any actions with connections.
 
-**Соединение: Запись параметров соединения** - разрешает или запрещает 
-модифицировать соединения.
+**Connection: Write** - allows or denies modification of connections.
 
-**Соединение: Чтение параметров соединения** - разрешает или запрещает чтение 
-параметров соединения.
+**Connection: Read** - allows or denies reading of connection parameters.
 
-**Соединение: Использование соединения** - разрешает или запрещает использовать 
-соединение (будут ли доступны пользователю слои или данные из соединения).
+**Connection: Connect** - allows or denies usage of connection (defines if layers and data from the connection will be available for a user).
 
-**Веб-карта: Все права** - разрешает или запрещает любые действия над веб-картой.
+**Web map: All permissions** - allows or denies any actions with a web map.
 
-**Веб-карта: Просмотр** - разрешает или запрещает просмотр веб-карты.
+**Web map: Display** - allows or denies display of a web map.
 
-**Данные: Все права** - разрешает или запрещает любые действия над данными.
+**Data: All permissions** - allows or denies any actions with data.
 
-**Данные: Запись** - разрешает или запрещает модификацию данных.
+**Data: Write** - allows or denies data modification.
 
-**Данные: Чтение** - разрешает или запрещает чтение данных.
+**Data: Read** - allows or denies reading of data.
 
-**Метаданные: Все права** - разрешает или запрещает любые действия над 
-метаданными.
+**Metadata: All permissions** - allows or denies any actions with metadata.
 
-**Метаданные: Запись** - разрешает или запрещает модифицировать метаданные.
+**Metadata: Write** - allows or denies modification of metadata.
 
-**Метаданные: Чтение** - разрешает или запрещает читать метаданные.
+**Metadata: Read** - allows or denies reading of metadata.
 
-При назначении прав на тот или иной ресурс следует учитывать права на составляющие 
-его ресурсы. Например, для предоставления доступа к WMS сервису необходимо дать 
-следующие права:
+When you assign rights to a particular resource take into account the rights of its constituent resources. For example to provide access to a WMS service you should grant the following permissions:
     
-* Сервис: Подключение - разрешение на само подключение.
-* Ресурс: Чтение - разрешение на все ресурсы (векторные и растровые слои), 
-  опубликованные в WMS сервисе.
-* Структура данных: Чтение - разрешение на все ресурсы (векторные и растровые слои),
-  опубликованные в WMS сервисе.
-* Данные: Чтение - разрешение на все ресурсы (векторные и растровые слои),
-  опубликованные в WMS сервисе.
+* Service: Connect - to a connection itself.
+* Resource: Read - to every resource (vector and raster layers)  
+  published with WMS service.
+* Data structure: Read - to every resource (vector and raster layers) 
+  published with WMS service.
+* Data: Read - to every resource (vector and raster layers) 
+  published with WMS service.
 
-Если у вас сложная система с несколькими отдельными картами, и с ней должны 
-работать разные пользователи, то можно создать группы пользователей. Для групп 
-можно настраивать права доступа по отдельности.
+If you have a complex system with several maps and different users who should work with these maps you can create user groups. You can assign different permissions to every group.
 
 
-Примеры настроек прав доступа
+Example: Assigning permissions
 -----------------------------
 
-Дать гостю права на просмотр карты
+Grant guest user web map display permission
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
-	Гости будут иметь возможность видеть админку и ходить по всем папкам, кроме специально закрытых.
+	Guest users will be able to see administrative interface and view all folders excluding especially closed ones.
 
 .. figure:: _static/access_rights_group_for_quest_0.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
    :width: 16cm
 
-   Задать в свойствах корневой группы ресурсов.
+   Settings for root resource group.
 
 
 .. figure:: _static/access_rights_group_for_quest_webmaps.png
@@ -248,7 +221,7 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов с веб-картами.
+   Settings for resourse group with maps.
 
 
 .. figure:: _static/access_rights_group_for_quest_geodata.png
@@ -256,10 +229,10 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов с геоданными.
+   Settings for resource group with geodata.
 
 
-Дать одному пользователю права на одну группу ресурсов
+Grant a single user permissions to a single resource group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -268,7 +241,7 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов.
+   Settings for a resource group.
 
 
 
@@ -277,13 +250,13 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах корневой группы ресурсов.
+   Settings for root resource group.
 
 
-Дать группе пользователей право на ввод данных через мобильное приложение
+Grant a permission to input data using a mobile application to a group of users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Создайте отдельную группу пользователей (в примере - "Openstreetmap users"), и отдельную группу ресурсов.  
+Create a separate group of users ("Openstreetmap users" in this example) and a separate resource group.  
 
 
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
@@ -291,7 +264,7 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов.
+   Settings for a resource group.
 
 
 
@@ -300,7 +273,7 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах корневой группы ресурсов.
+   Settings for root resource group.
 
 
 
@@ -308,14 +281,13 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. _change_password:
 
-Изменение пароля пользователя
+Update of user password
 -----------------------------
 
-Для смены пароля пользователя можно воспользоваться веб интерфейсом.
-Также существует возможность изменить пароль пользователя из командной
-строки:
+To update user password you can use a web interface.
+Also there is an option to change user password using command line:
 
-.. note:: Указание нового пароля пользователя в командной строке потенциально не безопасно.
+.. note:: Setting a password using a command line is not safe.
 
 .. code:: bash
 
