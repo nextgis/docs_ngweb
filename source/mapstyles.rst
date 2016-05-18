@@ -192,7 +192,7 @@
 * SYMBOLSCALEDENOM [double]
 * TYPE [chart|circle|line|point|polygon|raster|query]
 
-
+.. _ngw_mapserver_templates:
 
 Примеры картостилей Mapserver
 ----------------------------------
