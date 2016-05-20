@@ -2,47 +2,42 @@
 
 .. _ngw_install_centos7:
 
-Установка в CentOS 7
+Install in CentOS 7
 ====================
 
-Данная инструкция проверена и работает в CentOS 7.
-Для установки системы необходим Python 2.7.
+This document is checked and subject to work in CentOS 7.
+Python 2.7 is required to perform an installation.
 
 .. warning:: 
-   Для поддержки файлов названных на национальных языках (например, ru_RU.UTF-8) 
-   необходимо, что бы в системе была установлена соответсвующая локаль.
-   Проверку наличия локали можно командой: locale -a
-   Для добавления локали можно воспользоваться следующей командой: locale-gen ru_RU.utf8
+   To support file names with local names (e.g. ru_RU.UTF-8) 
+   it is required that appropriate locale is installed.
+   To check if locale is installed use a command: locale -a
+   To add a new locale use a command: locale-gen ru_RU.utf8
 
-Подготовка базы данных
+Preparation of the database
 ----------------------
 
-В официальном репозитории CentOS 7 нет PostGIS, поэтому необходимо
-подключить сторонний репозиторий. Для этого перейдите по
-`адресу <http://yum.postgresql.org/repopackages.php>`_
-и выберите необходимый пакет, соответствующий текущему релизу
-PostgreSQL и установите его. Для версии PostgreSQL 9.5 это будет
-выглядеть так:
+PostGIS is absent in the official repository of CentOS 7 so you need to add third party repository. To do this go to 
+`address <http://yum.postgresql.org/repopackages.php>`_,
+ select the required package for current release of PostgreSQL and install it. For PostgreSQL 9.5 it will look like:
 
 .. code:: bash
 
     sudo yum install https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-2.noarch.rpm
 
-Список всех пакетов, доступных в данном репозитории можно посмотреть
-с помощью следующей команды:
+To view a list of all packages available from this repository execute a command:
 
 .. code:: bash
 
     yum list | grep pgdg95
 
-Устанавливаем PostgreSQL:
+Install PostgreSQL:
 
 .. code:: bash
 
     sudo yum install postgresql95 postgresql95-server postgresql95-libs postgresql95-contrib postgresql95-devel
 
-Инициализируем базу данных и включаем автоматический запуск PostgreSQL
-при старте системы:
+Initialize a database and enable autolaunch with the system start:
 
 .. code:: bash
 
@@ -50,28 +45,26 @@ PostgreSQL и установите его. Для версии PostgreSQL 9.5 э
     sudo systemctl start postgresql-9.5.service
     sudo systemctl enable postgresql-9.5.service
 
-Создаем пользователя, который будет упомянут в качестве database.user в
-config.ini (см. далее):
+Create a user who would be used as database.user in
+config.ini (see  further):
 
 .. code:: bash
 
     sudo -u postgres createuser ngw_admin -P -e
 
-Создаем базу, в которую будет развернут NGW, имя базы должно быть таким
-же как и database.name в config.ini (см. далее):
+Create a database where NGW will be deployed, the name of database should be the same as database.name in config.ini (see further):
 
 .. code:: bash
 
     sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
 
-Отредактируем параметры аутентификации в соответствующем файле:
+Edit authentication parameters in corresponding file:
 
 .. code:: bash
 
     sudo nano /var/lib/pgsql/9.5/data/pg_hba.conf
 
-Отредактируем его таким образом, чтобы в нём присутствовали следующие
-строки (исправим метод аутентификации на ``md5``, если указан иной):
+Edit a file so it contains the following strings (change authentication method to ``md5``, if another is specified):
 
 .. code:: bash
 
@@ -80,19 +73,19 @@ config.ini (см. далее):
     # IPv6 local connections:
     host    all             all             ::1/128                 md5
 
-Не забудьте перезапустить PostgreSQL:
+Do not forget to restart PostgreSQL:
 
 .. code:: bash
 
     sudo systemctl restart postgresql-9.5.service
 
-Добавляем репозиторий с зависмостями для PostGIS:
+Add a repository with PostGIS dependences:
 
 .. code:: bash
 
     sudo yum install epel-release
 
-Устанавливаем PostGIS:
+Install PostGIS:
 
 .. code:: bash
 
@@ -102,71 +95,66 @@ config.ini (см. далее):
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER TO ngw_admin;'
 
-После этих операций будут созданы БД PostgreSQL с установленным в ней
-:term:`PostGIS` и пользователь :abbr:`БД (база данных)`, который станет ее владельцем, а также 
-таблиц ``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys``.
+After these operations databases will be created in PostgreSQL with installed :term:`PostGIS` and a user :abbr:`DB (database)`, will become an owner of databases, and also an owner of ``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys`` tables.
 
-Убедитесь, что функции PostGIS появились в базе:
+Check if PostGIS functions appeared in a database:
 
 .. code:: bash
 
     psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
-Подготовка базового ПО
+Preparation of basic software
 ----------------------
 
-Устанавливаем pip:
+Install pip:
 
 .. code:: bash
 
     sudo yum install python-pip
 
-Устанавливаем virtualenv:
+Install virtualenv:
 
 .. code:: bash
 
     sudo yum install python-virtualenv
 
-Установливаем дополнительные инструменты:
+Install additional tools:
 
 .. code:: bash
 
     sudo yum install git gdal gdal-devel libxml2-devel libxslt-devel gcc-c++ geos-devel proj-epsg zlib-devel libjpeg-turbo-devel dejavu-sans-fonts
 
-Подготовка к установке NextGIS Web
+Prepare to NextGIS Web installation
 ----------------------------------
 
-См. :ref:`nextgisweb-install-prepare`.
+See  :ref:`nextgisweb-install-prepare`.
 
-Установка NextGIS Web
+NextGIS Web installation
 ---------------------
 
-Устанавливаем переменную окружения ``PATH``:
+Set environment variable ``PATH``:
 
 .. code:: bash
 
     export PATH=/usr/pgsql-9.5/bin:$PATH
 
-Устанавливаем пакет NextGIS Web в режиме разработки, при этом будут установлены все необходимые пакеты:
+Install NextGIS Web in development mode. All required packages will be installed:
 
 .. code:: bash
 
     env/bin/pip install -e ./nextgisweb
 
-При сборке пакетов может не хватить оперативной памяти (было замечено
-на машине с 512 MB памяти при установке пакета ``lxml``), в этом
-случае объём памяти можно увеличить за счёт swap файла,
-`подробнее <http://stackoverflow.com/a/18335151/813758>`_.
+During packages build process there could occur a lack of memory. (was spotted on a computer with 512 MB of RAM during installation of ``lxml`` package), in this case you can increase memory size using a swap file,
+`see more <http://stackoverflow.com/a/18335151/813758>`_.
 
-Установка MapServer
+Install MapServer
 -------------------
 
-В репозитории нет MapServer, поэтому для пользователей CentOS 7
-мы предварительно собрали необходимые пакеты:
+MapServer is absent from repository of CentOS 7 so we built required packages:
 `mapserver <http://nextgis.ru/programs/centos7/mapserver-7.0.0-1.el7.centos.x86_64.rpm>`_ и
 `mapserver-python <http://nextgis.ru/programs/centos7/mapserver-python-7.0.0-1.el7.centos.x86_64.rpm>`_.
 
-Скачиваем их и устанавливаем в систему:
+Download them and install:
 
 .. code:: bash
 
@@ -175,8 +163,7 @@ config.ini (см. далее):
     sudo rpm -ivh mapserver-python-7.0.0-1.el7.centos.x86_64.rpm
 
 
-После чего копируем необходимые файлы в директорию виртуального
-окружения, используемого для работы NextGIS Web.
+After that you need to copy required files to a virtual environment directory used for NextGIS Web.
 
 .. code:: bash
 
@@ -184,18 +171,18 @@ config.ini (см. далее):
     cp /usr/lib64/python2.7/site-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
-Создаем файл ``PKG-INFO``:
+Create a file ``PKG-INFO``:
 
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
     touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-И указываем в нём используемую версию MapScript:
+Set the version of MapScript to be used:
 
 .. code:: bash
 
     echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-Для дальнейшей установки следуйте инструкциям раздела
-:ref:`nextgisweb-mapserver-install` и далее.
+For next steps see instructions if section 
+:ref:`nextgisweb-mapserver-install` and further.
