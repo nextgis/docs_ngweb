@@ -1,51 +1,46 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
 .. _ngweb_style_create:
     
-Стили векторных слоёв
+Vector layer styles
 =====================
 
-Стили служат для описания способов визуализации геоданных и являются одним из ресурсов NGW. Именно стиль добавляется на карты для представления на ней геоданных.
+Styles describe a way of rendering for geodata and are one of the resources of NGW. Style is added to a map to display geodata.
 
 
-Создания стиля
+Creation of style
 ----------------------------------
 
-Стиль привязан к конкретному слою, поэтому вы не найдете пункта "Стиль" в основном списке ресурсов. 
-Для создания стиля необходимо сначала зайти в слой, для которого вы его создаёте 
-и в окне свойств слоя в блоке операций выбрать: 
-:menuselection:`Добавить стиль --> Стиль MapServer`. При этом откроется окно, в 
-котором можно импортировать стиль из QGIS в формате QML или ввести его вручную. 
+Style is related to a single layer so there is no item "Style" in the main resources list. 
+To create a style you need to open layer properties of the layer you want create style for. In layer properties page click: 
+:menuselection:`Create resource --> MapServer style`. A create resource page for a new style will be opened. You have an option to import a QML style from QGIS or enter the style manually. 
 
-При импорте стиля из формата QML, он сконвертируется во внутренний формат системы. Следует 
-заметить, что на данный момент конвертируются только основные возможности отрисовки геометрий.
-Если в импортируем стиле идет выборка по условию, то вариант для пустого 
-значения нужно размещать последним (при импорте из QGIS он попадает первым).
+QML style will be converted to internal system format during import. Currently only basic geometry renderer settings are imported.
+If a style has a selection by query the empty option should be placed at the end (it is placed first after import from QGIS).
 
 .. warning:: 
-   Если вы создали векторный слой, но у вас отсутствует пункт Стиль Mapserver в разделе Создать ресурс, 
-   проверьте, установлен ли пакет nextgis_mapserver. Это можно сделать в Панели инструментов -> Версии пакетов. 
-   Если этого пакета нет, установка произведена не корректно, проверьте выполненные шаги: 
+   If you created a vector layer but MapServer style is absent in Create resource section  
+   check if you have installed nextgis_mapserver package. You can check this using Control panel -> Package versions. 
+   If this package is absent it is installed incorrectly. You will need to check executed steps: 
    http://docs.nextgis.ru/docs_ngweb/source/install.html
 
 
-Теги языка картостилей
+Map style tags
 ----------------------------------
 
-Для правки стиля, или написания нового рекомендуется взять код какого-нибудь 
-существующего стиля из примера, и потом дополнять его, а не писать с нуля.
+To change a style or to create a new one it is recommended you take a code of some existing style and then modify it, so there is no need to start creating a style from scratch.
   
-Общие теги
+Common tags
 ~~~~~~~~~~~~~~~~~ 
   
-* <color red="255" green="170" blue="127"/> - цвет заливки или линии
-* <outlinecolor red="106" green="106" blue="106"/> - цвет обводки
-* <width>0.5</width> - толщина линии или границы полигона в пикселях.
-* <outlinewidth>3</outlinewidth> - ширина обводки
-* <minscaledenom>1</minscaledenom> - не рисовать объект на масштабе больше указанного (когда карта крупнее чем) \
-* <maxscaledenom>100000</maxscaledenom> - не рисовать объект на масштабе меньше указанного (когда карта мельче чем) 
+* <color red="255" green="170" blue="127"/> - the color of a fill or a line
+* <outlinecolor red="106" green="106" blue="106"/> - outline color
+* <width>0.5</width> - a width of a line or an outline of the polygon.
+* <outlinewidth>3</outlinewidth> - outline width
+* <minscaledenom>1</minscaledenom> - do not display a feature if the map scale is larger than value \
+* <maxscaledenom>100000</maxscaledenom> - do not display a feature is the map scale is less than value 
 
-Значки
+Markers
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: _static/mapstyle_hatch_demo.png
@@ -53,34 +48,34 @@
    :align: center
    :width: 16cm
 
-   Демонстрация различных видов штриховок.
+   A demo for different hatches.
 
 
 
-* <symbol>std:circle</symbol> - тип значка
+* <symbol>std:circle</symbol> - marker type
 
-   * std:rectangle - квадратик
-   * std:circle - кружок
-   * std:diamond - ромбик
-   * std:triangle - треугольник острием вверх
-   * std:triangle-equilateral - треугольник острием вниз
-   * std:star - пятиконечная звёздочка
-   * std:pentagon - пятиугольник
-   * std:arrow - стрелка (по умолчанию вверх, можно поворачивать тегом <angle>45</angle>)
+   * std:rectangle - rectangle
+   * std:circle - circle
+   * std:diamond - diamong
+   * std:triangle - triangle with peak at the top
+   * std:triangle-equilateral - triangle with peak at the bottom
+   * std:star - five-pointed star
+   * std:pentagon - pentagon
+   * std:arrow - arrow (by default is top oriented. Rotation could be set using a tag <angle>45</angle>)
    * std:cross - +
    * std:xcross - x
-   * std:line - коротенькая линия
-   * std:hatch - длинная линия, стыкующаяся в текстуру
+   * std:line - short line
+   * std:hatch - long line texture
 
-Эти значки можно использовать для рисования линии, заливки полигонов, или обозначения точек. 
-Так же их можно комбинировать в такую конструкцию:
+These markers could be used to draw a line, to fill a polygon or to display points. 
+Also they may be combined to a complex symbol:
 
 .. code-block:: xml
 
         <class>
             <expression>"industrial"</expression>
-            <!-- Промзоны -->
-            <style> <!-- штриховка направо -->
+            <!-- Industrial areas -->
+            <style> <!-- hatch with a right slope -->
                 <color red="255" green="50" blue="50"/>
                 <width>1.4</width>
                 <symbol>std:hatch</symbol>
@@ -88,7 +83,7 @@
                 <size>5</size>
                 <angle>45</angle>
             </style>
-            <style> <!-- штриховка налево-->
+            <style> <!-- hatch with a left slope-->
                 <color red="255" green="50" blue="50"/>
                 <width>1.4</width>
                 <symbol>std:hatch</symbol>
@@ -96,7 +91,7 @@
                 <size>5</size>
                 <angle>-45</angle>
             </style>
-            <style> <!-- Обводка -->
+            <style> <!-- Outline -->
                 <outlinecolor red="255" green="50" blue="50"/>
                 <width>0.5</width>
             </style>
@@ -105,38 +100,38 @@
 
 
 
-* <size>2</size> - размер значка в пикселях
+* <size>2</size> - marker size in pixels
 
-Линейные объекты
+Line features
 ~~~~~~~~~~~~~~~~
 
-* <gap>10</gap> - шаг пунктира (используется вместе с <symbol>std:circle</symbol>)
-* <width>8</width> - ширина линии в пикселах
-* <classitem>PLACE</classitem> - выборка по атрибуту с названием PLACE. Так же смотрите пример в  #Выборка.
-  Поддерживаются следующие операторы
+* <gap>10</gap> - a step size for dashed line (used with <symbol>std:circle</symbol>)
+* <width>8</width> - width of line in pixels
+* <classitem>PLACE</classitem> - filter by attribute PLACE. Also see example in #Filtering.
+  The following operators are supported:
   
-  * имя атрибута
+  * attribute name
   * !=
   * >=
   * <=
   * <
   * >
-  * =* - сравнение строк без учёта раскладки.
+  * =* - case insensitive string comparison.
 
   * =
-  * lt - меньше
-  * gt - больше
-  * ge - больше или равно
-  * le - меньше или равно
-  * eq - равно
-  * ne - не равно
-  * and - И
-  * && - И
-  * or - ИЛИ
-  * || - ИЛИ
+  * lt - less than
+  * gt - greater than
+  * ge - greater or equal
+  * le - less or equal
+  * eq - equal
+  * ne - not equal
+  * and - AND
+  * && - AND
+  * or - OR
+  * || - OR
   
-* <linejoin>round</linejoin> - рисование линии в углах поворота
-* <linecap>round</linecap> - рисование начала и конца линии
+* <linejoin>round</linejoin> - line draw at corners
+* <linecap>round</linecap> - line draw at the beginning and at the end
 
 .. figure:: _static/admin_mapstyles_linecap.png
    :name: admin_mapstyles_linecap.png
@@ -145,29 +140,29 @@
 
    <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
 
-* <pattern>2.5 4.5</pattern> - шаблон пунктира 
+* <pattern>2.5 4.5</pattern> - dash template 
 
-.. todo:: узнать про цифры
+.. todo:: check for numbers
 
-* <angle> - угол поворота значка. Так же можно поворачивать штриховку.
+* <angle> - marker rotation angle. Hatch could also be rotated.
 
-Подписи
+Labels
 ~~~~~~~~
 
-* <labelitem>a_hsnmbr</labelitem> - название атрибута, из которого берётся подпись.
-* <minscaledenom>100</minscaledenom> - не выводить подпись на масштабе крупнее 1:1000
-* <maxscaledenom>100000</maxscaledenom> - не выводить подпись на масштабе мельче 1:100000
+* <labelitem>a_hsnmbr</labelitem> - attribute name for labelling.
+* <minscaledenom>100</minscaledenom> - do not show a label if a scale is larger than 1:1000
+* <maxscaledenom>100000</maxscaledenom> - do not show a label if a scale is smaller than1:100000
                 
                         
 
-* LABELCACHE [on|off] - не проверял, нашел в исхониках
-* <position>ur</position> - направление сдвига подписи.
+* LABELCACHE [on|off] - specifies whether labels should be drawn as the features for this layer are drawn, or whether they should be cached and drawn after all layers have been drawn. Default is on. Label overlap removal, auto placement etc... are only available when the label cache is active.
+* <position>ur</position> - label offset direction.
 
-   * ur - ↗ вверх вправо (в книгах по картографии рекомендуют так делать по умолчанию.
+   * ur - ↗ up and right (recommended).
    * ul - ↖
    * uc - ↑
    * cl - ←
-   * cc - строго по центру
+   * cc - centered
    * cr - →
    * ll - ↙
    * lc - ↓
@@ -176,28 +171,28 @@
 
 * <Maxoverlapangle> - ?  
 
-Неизвестные атрибуты
+Some other useful tags
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. todo:: узнать, реализованы ли они
 
-* MAXGEOWIDTH - не проверял, нашел в исходниках
-* MINGEOWIDTH - не проверял, нашел в исходниках
-* OFFSITE - не проверял, нашел в исходниках
-* OPACITY [integer|alpha] - не проверял, нашел в исходниках
-* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - не проверял, нашел в исходниках
-* SYMBOLSCALEDENOM [double] - не проверял, нашел в исходниках
-* TYPE [chart|circle|line|point|polygon|raster|query] - не проверял, нашел в исходниках
+* MAXGEOWIDTH - Maximum width, in the map’s geographic units, at which this LAYER is drawn. If MAXSCALEDENOM is also specified then MAXSCALEDENOM will be used instead.
+* MINGEOWIDTH - Minimum width, in the map’s geographic units, at which this LAYER is drawn. If MINSCALEDENOM is also specified then MINSCALEDENOM will be used instead.
+* OFFSITE - Sets the color index to treat as transparent for raster layers.
+* OPACITY [integer|alpha] - opacity of the layer
+* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - Sets the unit of CLASS object SIZE values (default is pixels). Useful for simulating buffering.
+* SYMBOLSCALEDENOM [double] - The scale at which symbols and/or text appear full size. This allows for dynamic scaling of objects based on the scale of the map. If not set then this layer will always appear at the same size. Scaling only takes place within the limits of MINSIZE and MAXSIZE as described above. Scale is given as the denominator of the actual scale fraction, for example for a map at a scale of 1:24,000 use 24000.
+* TYPE [chart|circle|line|point|polygon|raster|query] - Specifies how the data should be drawn. Need not be the same as the feature geometry type. For example polygons or polylines may be drawn as a point layer.
 
 
 
-Примеры картостилей
+Map styles examples
 ----------------------------------
 
 OSM-default
 ----------------------------------
 
-Полигональный слой с ограничением по масштабу и подписями
+Polygon layer with scale range and labels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
@@ -210,7 +205,7 @@ OSM-default
 		<color red="255" green="170" blue="127"/>
 		<outlinecolor red="106" green="106" blue="106"/>
 		<width>0.425196850394</width>
-		<maxscaledenom>10000</maxscaledenom> <!-- Ограничение по масштабу -->
+		<maxscaledenom>10000</maxscaledenom> <!-- Scale limit -->
 	      </style>
 	      <label>
 		<type>truetype</type>
@@ -227,7 +222,7 @@ OSM-default
 	</map>
 
 
-Точечный белый кружок
+White circle marker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
@@ -241,7 +236,7 @@ OSM-default
 
 
 
-Линия из маленьких чёрных кружков
+A line displayed with small black circles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
@@ -256,7 +251,7 @@ OSM-default
      </style>
 
 
-Выборка
+Filtering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
@@ -397,7 +392,7 @@ OSM-default
 	</map>
 
 
-Площадной слой с классификацией по значению поля и подписями
+Polygon layer with a classification by field values and labels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
@@ -474,7 +469,7 @@ OSM settlement-point
 
 .. code-block:: xml
 
-	<!-- Стиль с разделением по масштабам-->
+	<!-- Style with different settings for different scales-->
 	<!-- Версия 2015-07-24 -->
 	<map>
 	  <layer>
@@ -507,7 +502,7 @@ OSM settlement-point
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"town"</expression> <!-- Средний или малый город -->
+	      <expression>"town"</expression> <!-- Small or medium city -->
 	      <style>
 		<color red="255" green="255" blue="255"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -536,7 +531,7 @@ OSM settlement-point
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"village"</expression> <!-- Посёлок  -->
+	      <expression>"village"</expression> <!-- Village  -->
 	      <style>
 		<color red="255" green="255" blue="255"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -557,7 +552,7 @@ OSM settlement-point
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"hamlet"</expression> <!-- Деревня -->
+	      <expression>"hamlet"</expression> <!-- Hamlet -->
 	      <style>
 		<color red="255" green="255" blue="255"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -578,7 +573,7 @@ OSM settlement-point
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"locality"</expression> <!-- Необитаемая местность -->
+	      <expression>"locality"</expression> <!-- Non inhabited place -->
 	      <style>
 		<color red="255" green="255" blue="255"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -624,13 +619,13 @@ OSM settlement-point
 OSM highway-lowzoom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Дороги общего пользования (мелкие вынесены в отдельный стиль дальше, чтоб можно было отдельно включать-выключать). Цветовая схема - с openstreetmap.de
+Public roads (small roads are in a separate style). Colorscheme from openstreetmap.de
 
 .. figure:: _static/mastyles_osm-highway-lowzoom.png
    :name: mastyles_osm-highway-lowzoom
    :align: center
 
-   Фрагмент цветовой схемы дорог общего пользования. 
+   Fragment of colorscheme for public roads. 
 
 .. code-block:: xml
 
@@ -968,7 +963,7 @@ OSM highway-lowzoom
 OSM highway-maxzoom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Дороги подъездные, технологические, грунтовые, пешеходные
+Access roads, service roads, dirt roads, pedestrian ways
 
 
 .. figure:: _static/mastyles_osm-highway-highzoom.png
@@ -976,7 +971,7 @@ OSM highway-maxzoom
    :align: center
    :width: 10cm
 
-   Фрагмент изображения карты дорог.
+   Fragment of road map.
 
 .. code-block:: xml
 
@@ -1058,7 +1053,7 @@ railway-line
 
 .. code-block:: xml
 
-	<!-- Стиль railway-line с разделением по масштабам 
+	<!-- railway-line style with different display for different scales 
 	version 2015-07-24 -->
 	<map>
 	  <layer>
@@ -1154,7 +1149,7 @@ railway-line
 		<linejoin>bevel</linejoin>
 		<width>2.83464566929</width>
 		<linecap>square</linecap> 
-		<maxscaledenom>25000</maxscaledenom> <!-- Чёрно-белая линия на крупном масштабе -->
+		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large scale -->
 	      </style>
 	      <style>
 		<pattern>9.41102362205 14.1165354331</pattern>
@@ -1162,7 +1157,7 @@ railway-line
 		<linejoin>bevel</linejoin>
 		<width>2.35275590551</width>
 		<linecap>square</linecap>
-		<maxscaledenom>25000</maxscaledenom> <!-- Чёрно-белая линия на крупном масштабе -->
+		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large scale -->
 	      </style>
 	       <style>
 		
@@ -1170,7 +1165,7 @@ railway-line
 		<linejoin>bevel</linejoin>
 		<width>2</width>
 		<linecap>square</linecap>
-		<minscaledenom>25000</minscaledenom> <!-- Чёрная линия на среднем масштабе -->
+		<minscaledenom>25000</minscaledenom> <!-- Black line at medium scale -->
 	      </style>
 	    </class>
 	    <class>
@@ -1210,7 +1205,7 @@ OSM water-line
 
 .. code-block:: xml
 
-	<!-- Стиль water-line с разделением по масштабам-->
+	<!-- water-line style with different display for different scales-->
 	<!-- Версия 2015-07-24 -->
 	<map>
 	  <layer>
@@ -1223,7 +1218,7 @@ OSM water-line
 		<linejoin>round</linejoin>
 		<width>3</width>
 		<linecap>round</linecap>
-		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
 	      </style>
 	      <label>
 		<type>truetype</type> <!-- Подпись -->
@@ -1249,14 +1244,14 @@ OSM water-line
 		<outlinecolor red="0" green="0" blue="0"/>
 		<size>15.66929133858</size>
 		<symbol>std:line</symbol>
-		<!-- Остались необработанные атрибуты: outline_width, offset_unit, outline_width_unit, size_unit -->
+		<!-- Unprocessed attributes: outline_width, offset_unit, outline_width_unit, size_unit -->
 	      </style>
 	      <style>
 		<color red="102" green="153" blue="204"/>
 		<linejoin>round</linejoin>
 		<width>3</width>
 		<linecap>round</linecap>
-		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
 	      </style>
 	      <label>
 		<type>truetype</type> <!-- Подпись -->
@@ -1280,7 +1275,7 @@ OSM water-line
 		<width>1.5</width>
 		<linecap>round</linecap>
 		<maxscaledenom>250000</maxscaledenom>
-		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
 	      </style>
 	      </class> 
 	    
@@ -1292,7 +1287,7 @@ OSM water-line
 		<width>1</width>
 		<linecap>round</linecap>
 		<maxscaledenom>250000</maxscaledenom>
-		<!-- Остались необработанные атрибуты: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
 	      </style>
 	      </class> 
 	  </layer>
@@ -1303,18 +1298,18 @@ OSM water-polygon
 
 .. code-block:: xml
 
-	<!-- стиль water-polygon
-	Версия 2015-07-24 
-	Нужно добавить 
-	-водохранилища
-	-штриховку для болот
+	<!--  water-polygon style
+	version 2015-07-24 
+	To add 
+	-reservoirs
+	-swamp hatch
 	-->
 	<map>
 	  <layer>
 	    <labelitem>NAME</labelitem>
 	    <classitem>NATURAL</classitem>
 	    <class>
-	      <expression>"water"</expression> <!-- Вода -->
+	      <expression>"water"</expression> <!-- Water -->
 	      <style>
 		<color red="102" green="153" blue="204"/>
 		<outlinecolor red="102" green="153" blue="204"/>
@@ -1326,13 +1321,13 @@ OSM water-polygon
 		<color red="102" green="153" blue="204"/>
 		<outlinewidth>2</outlinewidth>
 		<outlinecolor red="255" green="255" blue="222"/>
-		<!-- Ограничение подписи по масштабу -->
+		<!-- Label scale range-->
 		<minscaledenom>1</minscaledenom>
 		<maxscaledenom>100000</maxscaledenom>    
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"wetland"</expression> <!-- Болото -->
+	      <expression>"wetland"</expression> <!-- Wetland -->
 		  <style>
 		<color red="102" green="153" blue="204"/>
 		<outlinecolor red="102" green="153" blue="204"/>
@@ -1344,7 +1339,7 @@ OSM water-polygon
 		<color red="102" green="153" blue="204"/>
 		<outlinewidth>2</outlinewidth>
 		<outlinecolor red="255" green="255" blue="222"/>
-		<!-- Ограничение подписи по масштабу -->
+		<!-- Label scale range -->
 		<minscaledenom>1</minscaledenom>
 		<maxscaledenom>100000</maxscaledenom>    
 	      </label>
@@ -1361,20 +1356,20 @@ OSM-black
 OSM landuse-polygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Стили NextGIS Web поддерживают различные штриховки (см. :numref:`ngweb_mapstyle_hatch_demo_pic`).
+NextGIS Web styles support for different hatched (see  :numref:`ngweb_mapstyle_hatch_demo_pic`).
 
 .. code-block:: xml
 
 
-	<map> <!-- Демонстрация штриховок, предполагается что под этим слоем будет чёрный фон-->
+	<map> <!-- A demo of different hatched. Use with dark background.-->
 	    <layer>
 		<labelitem>OSM_ID</labelitem>
 		<classitem>LANDUSE</classitem>
 		<class>
 		    <expression>"residential"</expression>
-		    <!-- Жилые зоны -->
+		    <!-- Residential -->
 		    <style>
-		        <!-- штриховка направо -->
+		        <!-- hatch with right slope -->
 		        <color red="255" green="185" blue="33"/>
 		        <width>1.4</width>
 		        <symbol>std:line</symbol>
@@ -1383,16 +1378,16 @@ OSM landuse-polygon
 		        <angle>90</angle>
 		    </style>
 		    <style>
-		        <!-- Обводка -->
+		        <!-- Outline -->
 		        <outlinecolor red="255" green="185" blue="33"/>
 		        <width>0.5</width>
 		    </style>
 		</class>
 		<class>
 		    <expression>"grass"</expression>
-		    <!-- Газоны зоны -->
+		    <!-- Grass zones -->
 		    <style>
-		        <!-- Линии -->
+		        <!-- Lines -->
 		        <color red="20" green="255" blue="33"/>
 		        <width>1</width>
 		        <symbol>std:line</symbol>
@@ -1402,16 +1397,16 @@ OSM landuse-polygon
 		        <pattern>2.5 4.5</pattern>
 		    </style>
 		    <style>
-		        <!-- Обводка -->
+		        <!-- Outline -->
 		        <outlinecolor red="20" green="255" blue="33"/>
 		        <width>0.5</width>
 		    </style>
 		</class>
 		<class>
 		    <expression>"commercial"</expression>
-		    <!-- Жилые зоны -->
+		    <!-- Residential -->
 		    <style>
-		        <!-- штриховка направо -->
+		        <!-- hatch with right slope -->
 		        <color red="133" green="33" blue="25"/>
 		        <width>1.4</width>
 		        <symbol>std:line</symbol>
@@ -1420,16 +1415,16 @@ OSM landuse-polygon
 		        <angle>45</angle>
 		    </style>
 		    <style>
-		        <!-- Обводка -->
+		        <!-- Outline -->
 		        <outlinecolor red="133" green="33" blue="25"/>
 		        <width>0.5</width>
 		    </style>
 		</class>
 		<class>
 		    <expression>"industrial"</expression>
-		    <!-- Промзоны -->
+		    <!-- Industrial zones -->
 		    <style>
-		        <!-- штриховка направо -->
+		        <!-- hatch with right slope -->
 		        <color red="255" green="50" blue="50"/>
 		        <width>0.4</width>
 		        <symbol>std:hatch</symbol>
@@ -1438,7 +1433,7 @@ OSM landuse-polygon
 		        <angle>45</angle>
 		    </style>
 		    <style>
-		        <!-- штриховка налево-->
+		        <!-- hatch with left slope-->
 		        <color red="255" green="50" blue="50"/>
 		        <width>0.4</width>
 		        <symbol>std:hatch</symbol>
@@ -1447,16 +1442,16 @@ OSM landuse-polygon
 		        <angle>-45</angle>
 		    </style>
 		    <style>
-		        <!-- Обводка -->
+		        <!-- Outline -->
 		        <outlinecolor red="255" green="50" blue="50"/>
 		        <width>0.5</width>
 		    </style>
 		</class>
 		<class>
 		    <expression>"cemetery"</expression>
-		    <!-- Кладбоны -->
+		    <!-- Cemeteries -->
 		    <style>
-		        <!-- оградки -->
+		        <!-- fences -->
 		        <color red="14" green="166" blue="0"/>
 		        <width>1.4</width>
 		        <symbol>std:rectangle</symbol>
@@ -1465,7 +1460,7 @@ OSM landuse-polygon
 		        <angle>0</angle>
 		    </style>
 		    <style>
-		        <!-- оградки -->
+		        <!-- fences -->
 		        <color red="0" green="0" blue="0"/>
 		        <width>1.2</width>
 		        <symbol>std:rectangle</symbol>
@@ -1474,7 +1469,7 @@ OSM landuse-polygon
 		        <angle>0</angle>
 		    </style>
 		    <style>
-		        <!-- кресты -->
+		        <!-- crosses -->
 		        <color red="14" green="166" blue="0"/>
 		        <width>1.4</width>
 		        <symbol>std:cross</symbol>
@@ -1483,7 +1478,7 @@ OSM landuse-polygon
 		        <angle>0</angle>
 		    </style>
 		    <style>
-		        <!-- Обводка -->
+		        <!-- Outline -->
 		        <outlinecolor red="14" green="166" blue="0"/>
 		        <width>0.5</width>
 		    </style>
