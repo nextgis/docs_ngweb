@@ -1,101 +1,98 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Дмитрий Барышников <dmitry.baryshnikov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.ru>
 
-.. _quick_tutorial:
+.. _ngw_quick_tutorial:
 
 
-Краткое руководство
+Quickstart tutorial
 ===================
 
-Краткое описание для подготовленных пользователей
+Quickstart tutorial for qualified users
 -------------------------------------------------
 
-**NextGIS Web** - это серверная :term:`геоинформационная система` (:abbr:`ГИС 
-(геоинформационная система)`), которая предоставляет возможность просмотра в веб-браузере 
-карт. Кроме того, NextGIS Web может обмениваться :term:`геоданными <геоданные>` с другими 
-продуктами NextGIS.
+**NextGIS Web** - is a server :term:`geographical information system` (:abbr:`GIS 
+(geographical information system)`), which allows to display maps in web browser. Also NextGIS Web can share geodata :term:`geodata <geodata>` with other NextGIS software.
 
-NextGIS Web обеспечивает следующие возможности:
+NextGIS Web has the following features:
 
-* Просмотр в веб-браузере карт (карт может быть много, с разным составом слоев и 
-  оформлением)
-* Гибкая настройка прав доступа
-* Геоданные для карт могут получаться из :term:`PostGIS`, либо загружаются из 
-  файловых :abbr:`ГИС (геоинформационная система)` форматов :term:`ESRI Shape`,  :term:`GeoJSON` или :term:`GeoTIFF`
-* Картостили могут импортироваться из проекта :term:`QGIS` или настраиваться вручную
-* Может работать как сервер :term:`TMS`, :term:`WMS`, :term:`WFS`
-* Может работать как клиент :term:`WMS`
-* Пользователь может :ref:`добавлять фотографии к записям <add-photos>`, 
-  :ref:`изменять атрибуты записей <attributes-edit>`, :ref:`поддерживается 
-  протокол WFS-T для редактирования <WFS-service>`.
+* Display of maps in web browser (different maps with different layers and  
+  styles)
+* Flexible access permissions management
+* Load of data from :term:`PostGIS`,of import from  
+  files in :abbr:`GIS (geographical information system)` formats :term:`ESRI Shape`,  :term:`GeoJSON` or :term:`GeoTIFF`
+* Vector data could be downloaded in the following formats: term:`GeoJSON`, :term:`CSV`, :term:`ESRI Shape`
+* Map styles could be imported from :term:`QGIS` project or could be set manually
+* Could act as a server for :term:`TMS`, :term:`WMS`, :term:`WFS`
+* Could act as a client for :term:`WMS`
+* User can :ref:`add photos to records <ngw_add_photos>`, 
+  :ref:`change records attributes <ngw_attributes-edit>`, :ref:` with a support  
+  for a WFS-T protocol for editing <ngw_wfs_service>`.
+* Listed features are available through a REST API from external software
 
-NextGIS Mobile - это программное обеспечение с открытым исходным кодом (лицензия GPL v3).
+NextGIS Web - is an open source software (license GPL v2+).
 
-Системные требования представлены в подразделе ":ref:`sys_req`".
+System requirements listed in section ":ref:`ngw_sys_req`".
 
-Интеграция с другими продуктами NextGIS
+Integration with other NextGIS software
 ---------------------------------------
 
 .. only:: html
 
-   Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение :ref:`NextGIS Manager <ng_manager_intro>`. 
+   To manage :term:`geodata <geodata>` in NextGIS Web you can use 
+   desktop application :ref:`NextGIS Manager <ngm_intro>`. 
 
 .. only:: latex
 
-   Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
+   To manage :term:`geodata <geodata>` in NextGIS Web you can use 
+   desktop application `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
 
-Данное :abbr:`ПО (программное обеспечение)` позволяет более просто выполнять 
-пакетные операции над данными в NextGIS Web.
+This software simplifies batch processing of data in NextGIS Web.
 
 .. only:: html
 
-   Мобильное приложение :ref:`NextGIS Mobile <ngmobile_intro>` позволяет загружать 
-   собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
+   Mobile application :ref:`NextGIS Mobile <ngmobile_intro>` allows to upload 
+   geodata collected in the field directly to web gis in online or offline mode. 
 
 .. only:: latex
 
-   Мобильное приложение `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro>`_ позволяет загружать 
-   собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
+   Mobile application `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro>`_ allow to upload 
+   geodata collected in the field directly to web gis in online or offline mode. 
    
    
-Несколько мобильных устройств могут видеть изменения данных в одном слое.
+Several mobile devices could see data changes in a single layer.
 
-.. todo: Написать про плагин к QGIS - NGW Admin
+.. todo: Write about plugin for QGIS - NGW Admin
 
 
-Создание карты
+Map creation
 --------------
 
-Создание векторного слоя из :term:`ESRI Shape` включает в себя ряд этапов:
+To create a vector layer from :term:`ESRI Shape` follow these steps:
 
-1. Архивация шейп-файла в архив ZIP
-2. Создание векторного слоя на базе ZIP архива через административный интерфейс
-3. Добавление к созданному векторному слою стиля
+1. Compress a shapefile to a zip-archive
+2. Create a vector layer using a zip-archive through administrator interface
+3. Add a style to newly created vector layer
 
-Создание векторного слоя из :term:`GeoJSON` включает в себя ряд этапов:
+To create a vector layer from :term:`GeoJSON` follow these steps:
 
-1. Создание векторного слоя на базе файла GeoJSON через административный интерфейс
-2. Добавление к созданному векторному слою стиля
+1. Create a vector layer from GeoJSON file through administrator interface
+2. Add a style to newly created vector layer
 
-Создание векторного слоя из :term:`PostGIS` включает в себя ряд этапов:
+To create a vector layer from :term:`PostGIS` follow these steps:
 
-1. Добавление подключения к PostGIS (требуется указать логин и пароль для доступа к 
-   базе данных)
-2. Добавление слоев из созданного подключения
-3. Создание стилей для добавленных слоев
+1. Add a PostGIS connection (user login and password are required for access to 
+   database)
+2. Add layers from created connection
+3. Create styles for added layers
 
-Создание растрового слоя включает в себя ряд этапов:
+To create a raster layer follow these steps:
 
-1. Подготовка растрового файла согласно требованиям
-2. Создание растрового слоя на базе растра через административный интерфейс
-3. Добавление стиля к растровому слою
+1. Prepare a raster file to meet the requirements
+2. Create a raster layer from a file through administrator interface
+3. Add a style to raster layer
 
 
-После загрузки слоёв необходимо добавить веб-карту. В настройках веб-карты следует
-добавить слои. Ссылку на веб-карту открываем в веб-браузере.
+After layers are loaded they may be added to a web map. Layers could be added in web map properties page. Then a web map could be displayed by address.
 
-Если предполагается добавлять большое количество слоёв, то данную операцию проще 
-выполнить через :ref:`NextGIS Manager <ng_manager_intro>`.
+If there are many layers to add this operation will be easier performed with :ref:`NextGIS Manager <ng_manager_intro>`.
 

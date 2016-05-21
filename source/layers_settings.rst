@@ -1,24 +1,23 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _change_layers:
+.. _ngw_change_layers:
 
-Настройки слоёв
+Layer settings
 ================================
 
-Введение
+Introduction
 ---------
 
-Настройки слоёв, которые становятся доступными после их создания.
+Layers settings become available after a layer creation.
 
-Для редактирования слоя необходимо зайти в его описание и в блоке :guilabel:`Операции` выбрать :guilabel:`Редактирование`. При этом откроется окно редактирования свойств 
-этого слоя. Кроме того, редактирование можно запустить в таблице слоев группы из колонки :guilabel:`Операции`.
+To edit a layer you need to open its layer properties page and select :guilabel:`Update` on :guilabel:`Actions` pane . Update resource page will open for editing layer properties. Also you can launch update from layers table using :guilabel:`Actions` column.
 
-.. _attributes:
+.. _ngw_attributes:
 
-Атрибуты слоёв
+Layer attributes
 ---------------
 
-Дополнительно к параметрам, которые вводились при создании слоя, в окне присутствует вкладка :guilabel:`Атрибуты` (см. :numref:`admin_layers_attr`)
+In addition to initial parameters that were entered during layer creation there is an :guilabel:`Attributes` tab (see  :numref:`admin_layers_attr`)
 
 
 .. figure:: _static/admin_layers_attr.png
@@ -26,14 +25,14 @@
    :align: center
    :width: 16cm
 
-   Окно редактирования слоя, вкладка :guilabel:`Атрибуты`.
+   :guilabel:`Attributes` tab of Update resource dialog.
 
-Галочка в столбце :guilabel:`ТО` обозначает, что поле выводится в окне идентификации.
-Галочка в столбце :guilabel:`АН` обозначает, что из этого поля берётся название для 
-идентификации, а также при формировании списка закладок. Также можно поставить отметки 
-напротив тех полей, которые следует показывать во всплывающем окне идентификации. 
-Для каждого имени поля можно поставить соответствующий псевдоним для отображения 
-вместо имени поля в окне идентификации.
+The tab has a table with a list of all layer attributes.
+
+* A checkbox in :guilabel:`FT` (feature table) column means that attribute will be visible in identify window.
+* A checkbox in :guilabel:`LA` (label attribute) means that this attribute is used to provide a name for identify operation and a name for a bookmark list. 
+
+You can set an alias for each attribute name to display it in identify window instead of an attribute name.
 
 
 .. figure:: _static/webmap_identification.png
@@ -41,103 +40,96 @@
    :align: center
    :width: 16cm
 
-   Окно идентификации.
+   Identify window.
 
-.. _attributes-edit:
+.. _ngw_attributes_edit:
 
-Редактирование значений атрибутов
+Edit attribute values
 ----------------------------------
 
-Программное обеспечение NextGIS Web позволяет редактировать атрибуты географических 
-объектов. Редактирование атрибутов можно вызывать из админки и из просмотра карты. 
+NextGIS Web software allows to edit attributes for geographical features. Editing could be launched from administrator interface or from a map display. 
 
-* Редактирование атрибутов из админки: откройте векторный слой, нажмите в правом меню :guilabel:`Таблица объектов`. Откроется таблица. Щёлкните на круглую кнопку в левом конце строки, затем кнопку :guilabel:`Изменить`.
+* Editing of attributes from administrator interface: open a vector layer, click on right 
+  menu :guilabel:`Feature table`. A feature table for the layer will open. Click a radio 
+  button at the left side of a row you want to edit and click :guilabel:`Edit` button.
+* Editing of attributes from a map display: click on a map with  
+  identify tool active and click edit button in identify window.
 
-* Редактирование атрибутов при просмотре карты: щёлкните инструментом идентификации 
-по объекту, нажмите на кнопку редактирования.
+You can change attribute values in opened window. 
+Description made on Description tab will be visible on a map display in indentify window. 
 
-В открывшемся окне можно изменять значения атрибутов. 
-Описание, заданное на вкладке "Описание", будет видно при просмотре карты в окне идентификации. 
+When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
+When editing a layer based on a Shapefile attribute changes are saved to a local database. 
 
-При редактировании слоя из PostGIS изменения атрибутов сохраняются в PostGIS, а 
-описания - в локальной базе. 
-При редактировании слоя из Shapefile изменения атрибутов и описания сохраняются 
-в локальной базе. 
+Geodata with changed attributes could be downloaded by link :guilabel:`Download as 
+GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
 
-Геоданные с изменёнными атрибутами можно выгрузить по ссылке  :guilabel:`Данные GeoJSON` 
-или раздав слой по протоколу WFS. Функционала выгрузки описаний сейчас нет.
+.. _ngw_add_photos:
 
-
-.. _add-photos:
-
-Добавлений фотографий к геоданным
+Adding photos to geodata
 ----------------------------------
 
-Программное обеспечение NextGIS Web позволяет прикреплять к записям фотографии. 
-При этом, при идентификации объекта на карте во всплывающем окне будет отображены 
-как атрибуты идентифицируемого объекта, так и фотографии, которые были ему сопоставлены (см. :numref:`webmap_identification_photos`).
+NextGIS Web software support adding photos to feature records. 
+If a feature has attached photos they will be shown with a description and attributes in identify window (see  :numref:`webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos.png
    :name: webmap_identification_photos
    :align: center
    :width: 16cm
 
-   Всплывающее окно результатов идентификации с фотографиями.
+   Identify window with an identify result with attached photos.
 
 
-Добавление фотографий осуществляется в режиме просмотра карты. 
+You can add photos in a map display. 
 
-.. note:: По умолчанию добавлять фотографии могут все пользователи, но можно настроить так, чтобы добавлять могли только отдельные пользователи (см. :ref:`access_rights`).
+.. note:: 
+   By default photos could be added by any user but there is an option 
+   to limit number of users who can upload photos (see  
+   :ref:`ngw_access_rights`).
 
-1. Щёлкните инструментом идентификации по объекту.
-
-2. Нажмите на кнопку редактирования.
-
-3. В окне редактирования откройте вкладку :guilabel:`Прикреплённые файлы` (см. :numref:`admin_object_edit_attr`).
+1. Click on a feature on a map with active Identify tool.
+2. Click edit button in Identify window.
+3. In the edit tab navigate to :guilabel:`Attachments` tab 
+   (see  :numref:`admin_object_edit_attr`).
 
 .. figure:: _static/admin_object_edit_attr.png
    :name: admin_object_edit_attr
    :align: center
    :width: 16cm
 
-   Окно редактирования атрибутов.
+   Edit attributes tab.
 
-
-4. Загрузите фотографии. Поддерживаются форматы JPEG, PNG. GIF не поддерживается (см. :numref:`admin_object_edit_photos1`).
+4. Upload photos. JPEG and PNG formats are supported. GIF format is not supported (see. :numref:`admin_object_edit_photos1`).
 
 .. figure:: _static/admin_object_edit_photos1.png
    :name: admin_object_edit_photos1
    :align: center
    :width: 16cm
 
-   Окно загрузки фотографий к объекту.
+   Attachments tab of edit feature window for upload of photos.
 
- 
-5. Нажмите :guilabel:`Сохранить`, введите подписи к фотографиям, потом ещё раз нажмите :guilabel:`Сохранить`  (см. :numref:`admin_object_edit_photos2`).
+5. Click :guilabel:`Save`, enter Description and then one more time 
+   click :guilabel:`Save`  (see  :numref:`admin_object_edit_photos2`).
 
 .. figure:: _static/admin_object_edit_photos2.png
    :name: admin_object_edit_photos2
    :align: center
    :width: 16cm
 
-   Окно загрузки фотографий к объекту с введёными подписями.
+   Attachment tab with uploaded photos with filled descriptions.
 
-Теперь при просмотре карты в окне идентификации на вкладке :guilabel:`Прикреплённые файлы` 
-видны превью фотографий  (см. :numref:`webmap_identification_photos`).
+After upload of photos you can see previews of photos on :guilabel:`Attachments` tab if identify window (see  :numref:`webmap_identification_photos`).
 
 
-При нажатии на фотографию открывается лайтбокс (всплывающее окно в браузере, работающее 
-на JavaScript). Размер фотографии вписывается в окно. Фотографии подписываются, 
-пользователю можно переходить между фотографиями, используя клавиши вправо-влево 
-на клавиатуре (см. :numref:`webmap_identification_photo_lightbox`).
+After a click on a photo preview a lightbox window is open (a javascript powered window in browser). Photo size is adjusted to fit the window. Photos have descriptions and user can navigate through photos using left and right arrow keys on a keyboard (see  :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox.png
    :name: webmap_identification_photo_lightbox
    :align: center
    :width: 16cm
 
-   Окно идентификации с загруженными фотографиями.  
+   A lightbox with uploaded photos for an identified feature.  
 
 
-Для удаления фотографий, выделите её в админке, нажмите кнопку :guilabel:`Удалить`, а потом нажмите кнопку :guilabel:`Сохранить`.
+To delete a photo select it in a table on Attachments tab of edit feature page and click :guilabel:`Delete`, and then click :guilabel:`Save` button.
 
