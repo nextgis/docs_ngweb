@@ -20,7 +20,7 @@
 --------------
 
 Для добавления растрового слоя перейдите в группу, где необходимо его создать. В 
-блоке операций выберите :menuselection:`Добавить --> Растровый слой`. Откроется окно, 
+блоке операций выберите :menuselection:`Создать ресурс --> Растровый слой`. Откроется окно, 
 представленное на :numref:`admin_layers_create_raster_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
