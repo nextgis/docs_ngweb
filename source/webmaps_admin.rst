@@ -1,66 +1,55 @@
 
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _webmaps_admin:
+.. _ngw_webmaps_admin:
 
-Администрирование веб-карты
+Administration of web map
 ===========================
 
-В NextGIS Web может быть несколько отдельных веб-карт. Например, одна может быть 
-рабочей, вторая – для общего доступа, третья –  тестовая для настройки слоев.
+There could be several web maps in NextGIS Web. For example one map is for work, another for public access and third for testing of layer styles.
 
-У разных веб-карт разные URL-адреса. Для разных пользователей и групп пользователей 
-можно задавать права на просмотр разных веб-карт. 
+Web maps have their own URL addresses. You can manage display web map access permission for different users and groups. 
 
-На карте показываются слои. Пользователь может их включать и выключать. В настройках 
-можно задавать порядок следования слоев, определять, какие слои будут показываться 
-сразу же при открытии карты, и раскладывать слои по группам. Группы слоев на карте 
-никак не связаны с группами слоев в панели управления. Переносить слои между группами 
-нельзя. Группы могут быть вложенными.
+Web map display layers. User can turn them on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map does not relate to groups of layers in control panel. There is no option to transfer layers between groups. Groups may be nested.
 
 
-.. _ngweb_map_create:
+.. _ngw_map_create:
     
-Добавление веб-карты
+Creation of web map
 --------------------
 
-Для добавления веб-карты перейдите в группу, где необходимо её создать. В блоке операций выберите :menuselection:`Добавить --> Веб-карта`. Откроется окно, представленное на :numref:`admin_webmap_name`. 
+To add a web map navigate to a resource group where you want to create a map. In Actions pane select :menuselection:`Create resource --> Web map`. Create resource dialog for a web map is presented on :numref:`admin_webmap_name`. 
 
 .. figure:: _static/admin_webmap_name.png
    :name: admin_webmap_name
    :align: center
    :width: 16cm
 
-   Окно создания веб-карты.
+   Create resource dialog for web map.
 
 
-Введите наименование веб-карты, которое будет отображаться в административном веб 
-интерфейсе, а также в дереве слоев карт.
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
+Enter web map display name that would be visible in administrator interface and in map layer tree.
+Fields :guilabel:`Keyname` и :guilabel:`Description` are non-required.
 
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Охват и закладки`. 
-Откроется окно, представленное на :numref:`admin_webmap_bbox`.
+Switch from :guilabel:`Resource` tab to :guilabel:`Extent and bookmarks`. 
+A tab for Extent and bookmarks will open:numref:`admin_webmap_bbox`.
 
 .. figure:: _static/admin_webmap_bbox.png
    :name: admin_webmap_bbox
    :align: center
    :width: 16cm
 
-   Окно ввода охвата.
+   An Extent and bookmarks tab of create resource window.
 
-Задайте охват.
+Setup an extent.
 
-   .. note:: Координаты охвата вы можете сгенерировать на сторонних веб-сайтах http://boundingbox.klokantech.com/ (выберите в списке csv), http://lxbarth.com/bbox.
+   .. note:: Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
 
-В поле слой закладок можно указать векторный слой. Тогда в клиенте появится выпадающее 
-меню с закладками, названия которых будут браться в соответствии с установленным 
-полем :guilabel:`Атрибут наименования`. 
+You can select a vector layer for bookmarks. If layer is set the client will have a menu with bookmarks with names defined by :guilabel:`Label attribute`. 
 
-Теперь необходимо перейти на вкладку :guilabel:`Дерево слоев`. На этой вкладке можно 
-добавлять слои и объединять их в группы, для чего предусмотрены соответствующие 
-кнопки :guilabel:`Добавить слой` и :guilabel:`Добавить группу`.
+Navigate to :guilabel:`Layers` tab. This tab is used for adding layer joining them to groups. These actions could be performed using corresponding buttons :guilabel:`Add layer` и :guilabel:`Add group`.
 
-При добавлении слоя задаётся его стиль. Настройки слоев на веб-карте представлены на :numref:`admin_webmap_layers`..
+When a layer is added you set its style. Settings for layers on web map are presented on :numref:`admin_webmap_layers`..
 
 
 .. figure:: _static/admin_webmap_layers.png
@@ -68,31 +57,24 @@
    :align: center
    :width: 16cm
    
-   Настройки слоев на веб-карте.
+   Layers tab of create resource dialog.
  
-Поле :guilabel:`Включить` обозначает, что при открытии страницы карты этот слой 
-будет по умолчанию отображаться.
+A checkbox :guilabel:`Enable` sets default visibility of a layer.
 
-Поле :guilabel:`Адаптер` рекомендуется выставить в :guilabel:`Тайлы`, если нет 
-каких-либо особых требований.
+Field :guilabel:`Adapter` is recommended to be set to :guilabel:`Tiles` if there is no special requirements.
 
-В полях :guilabel:`Масштаб` следует указать масштаб в формате например :guilabel:`1 : 10 000`.
+For :guilabel:`Scale` parameters you may enter a scale range in the following format :guilabel:`1 : 10 000`.
 
-Минимальный и максимальный масштаб можно указывать в стиле слоя и в настройках 
-слоя. Если весь слой не надо показывать на каком-то диапазоне масштабов, то это 
-лучше задать в свойствах слоя, а не в стиле.
+Scale range could be set in a layer style and in layer settings. If layer should be displayed in a range of scales it is better to set this in layer properties, instead of a style.
    
 .. note:: 
-   Если же выставить ограничение масштаба только в стиле, то в том диапазоне 
-   масштабов будут отдаваться пустые тайлы, что неэффективно.
+   If you set a scale range only in style   
+   empty tiles will be generated for distribution which is less efficient.
 
-После создания контента карты и настройки всех слоев следует нажать кнопку 
-:guilabel:`Сохранить`. После сохранения созданная карта появится в списке карт. 
-В списке веб-карт, при нажатии на ссылку :guilabel:`Просмотр` карта будет 
-открыта в веб-клиенте. Веб-клиент подробнее рассмотрен в главе :ref:`webmaps_client`.
-Адрес, по которому открывается веб-клиент, можно передавать другим пользователям, 
-он статичный. 
+After a creation of map content and adjusting settings for all layers click a :guilabel:`Save` button. A saved map will be shown in a list of maps. 
+In a list of web maps click a :guilabel:`Display` link to open a web map in a client application. Web map client application is described in section :ref:`ngw_webmaps_client`.
+Address which is used for web client may be transfered to other users because it is static. 
 
 .. note:: 
-   При удалении карты адрес больше доступен не будет.
+   Address will become inavailable if a web map is deleted.
 
