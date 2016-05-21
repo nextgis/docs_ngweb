@@ -1,95 +1,385 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _create_layers:
+.. _ngw_create_layers:
 
-Добавление ресурсов
+Adding resources
 ===================
 
-Одним из основных компонентов ПО NextGIS Web является слой. Слой - это растровое 
-изображение или векторный файл (таблица БД). Для объединения слоев в виде карты 
-необходимо настроить стиль (или набор стилей) отображения слоя.
+Layer is one of the main components of NextGIS Web software. Layer is a raster image or a vector file (table from database). To join layers on a map you need to set a style (or style set) to display a layer.
 
-Стили могут настраиваться только для векторных слоев.
+Styles may be set only for vector layers.
 
-Интерфейс добавления PostGIS, векторных и растровых слоев приблизительно одинаковый. 
-Нужно ввести параметры слоя, затем добавить стиль.
+Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
+Firstly you provide layer parameters and then add a style.
 
-Растровый слой
+.. _ngw_create_raster_layer:
+
+Raster layer
 --------------
 
-Для добавления растрового слоя перейдите в группу, где необходимо его создать. В 
-блоке операций выберите :menuselection:`Добавить --> Растровый слой`. Откроется окно, 
-представленное на :numref:`admin_layers_create_raster_layer_resourse_description`. 
+To add a raster layer navigate to a group where you want to create it. In Actions pane click :menuselection:`Create resource --> Raster layer`. Create resource dialog for raster layer layer will open and look like :numref:`admin_layers_create_raster_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
    :name: admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 16cm
 
-   Окно создания растрового слоя.
+   Create resource dialog for raster layer.
 
 
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карт.
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
+Enter display name that will be visible in administrator interface and in map layer tree.
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.
 
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Растровый слой`. 
-Откроется окно, представленное на :numref:`admin_layers_create_raster_layer_upload`.
+Switch from :guilabel:`Resource` tab to :guilabel:`Raster layer` tab. 
+Raster layer tab is presented on :numref:`admin_layers_create_raster_layer_upload`.
 
 .. figure:: _static/admin_layers_create_raster_layer_upload.png
    :name: admin_layers_create_raster_layer_upload
    :align: center
    :width: 16cm
 
-   Окно загрузки растрового файла.
+   Raster layer tab with button for upload of raster file.
 
-Далее необходимо выбрать систему координат, в которую будет перепроецирован растр 
-(по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ).
-Далее необходимо указать сам файл. 
+Then you need to specify a coordinate system the raster will be reprojected to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ).
+Then you need to specify a file. 
 
 .. note:: 
-   Файл может быть только формата GeoTIFF с 3 или 4 каналами (RGB или RGBA). 
+   The file should be in GeoTIFF format with 3 or 4 bands (RGB or RGBA). 
  
-После удачной загрузки растра необходимо создать стиль (если он не был создан автоматически). 
-При создании карты (подробнее см. подразд. :ref:`ngweb_map_create`) можно добавлять 
-растр на карту, выбрав растр и его стиль.
+After a file is successfully uploaded you need to create a style (if it was not create automatically). 
+When creating a map (for more information see  subsection. :ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and its style.
 
-Растровый слой с прозрачностью (обрезкой, альфа-каналом)
+Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Большинство утилит не создают альфа канал, а только добавляют значение NoData. 
-Для преобразования значений NoData в альфа канал можно воспользоваться утилитой 
-командной строки  :program:`gdalwarp`. Ниже приведен пример команды.
+Most of utilities does not create alpha channel and only add a NoData value. 
+ To transform NoData value to alpha channel use a command line utility :program:`gdalwarp`. Here is an example of this command.
 
 .. code:: shell
 
-    gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
-    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
-    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
+   gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
+   "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
+   d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
 
 .. note:: 
-   В NextGIS Manager эту операцию можно сделать проще. В програме есть функционал 
-загрузки растра в NextGIS Web и обрезки по альфа-каналу. 
+   NextGIS Manager simplifies this process. Software has an option to  
+   upload a raster to NextGIS Web and cut using alpha channel. 
 
-Растровый слой NextGIS Web можно добавлять в настольные, мобильные и веб ГИС несколькими способами.
+.. _ngw_create_vector_layer:
 
-**WMS**
+Vector layer from file
+-----------------------
+To add a vector layer navigate to a group where you want to create it. 
+In Actions pane in :guilabel:`Create resource` section select guilabel:`Vector layer` action. 
+A dialog for creation of vector layer will open. Enter display name that will be visible in administrator interface and in map layer tree. 
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required. 
+Switch from :guilabel:`Resource` tab to :guilabel:`Vector layer tab`. 
+Vector layer tab is presented on :numref:`admin_layers_create_vector_layer_resourse_description`. 
 
-NextGIS Web является сервером WMS. Соответственно подключить его слои как WMS можно 
-в любом клиентском ПО поддерживающем слои WMS. Для этого нужно знать адрес сервера 
-и номер ресурса соответствующего серверу WMS. Например:
+.. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
+   :name: admin_layers_create_vector_layer_resourse_description
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for vector layer.
+
+Then you need to specify a coordinate system the vector data will be reprojected to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ). 
+
+Then you need to specify source file (click button Select, see  :numref:`admin_layers_create_vector_layer_upload`).  
+Source files could be in the following formats: 
+
+* ESRI Shapefile;
+* GeoJSON.
+
+.. note:: 
+   In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) should be  
+   compressed to a zip-archive. 
+   Shapefile should have UTF-8 or Windows-1251 encoding.
+  
+.. note:: 
+   If you prepare data for upload using QGIS or GDAL you should not use EPSG:3857. GDAL saves files with incorrect coordinate system definition so data will have an offset after upload. Use EPSG:4326 or other coordinate systems.
+   
+Output file should not have invalid geometries (QGIS tool should output an empty list of invalid geometries), dates should not have NULL values, there should not be attribute names: *id (ID), type(TYPE), source(SOURCE)*.
+   
+Coordinate system should be recognized by GDAL (output of gdalinfo should contain coordinate system definition). 
+
+
+.. figure:: _static/admin_layers_create_vector_layer_upload.png
+   :name: admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 16cm
+
+   Vector layer tab with button for upload of vector file.
+
+Also you need to specify encoding that is used for attributes.
+If encoding is not set ESRI Shapefile should have a file with encoding description (cpg extension). In case of GeoJSON encoding is always UTF-8.
+
+After a file is successfully uploaded you need to create a style. 
+For more information about creation of styles see subsection  :ref:`ngw_style_create`.
+
+When creating a map (for more information see  subsection. :ref:`ngw_map_create`) you can add a vector layer to a map by selecting its style.
+
+.. note:: 
+   NextGIS Manager simplifies this process. Software has an option to 
+   upload of vector files in different formats to NextGIS Web without  
+   separate archiving. 
+
+.. _ngw_create_postgis_layer:
+
+Vector layer from PostGIS
+-------------------------
+
+To add a vector layer from database with PostGIS extension you need to create a resource PostGIS connection. It is enough to create one connection. 
+In Actions pane select :menuselection:`Create resource --> PostGIS connection`. Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_description.png
+   :name: admin_layers_create_postgis_connection_resourse_description
+   :align: center
+   :alt: map to buried treasure
+   :width: 16cm
+
+   Create resource dialog for PostGIS connection.
+
+Enter display name that will be visible in administrator interface. Do not confuse this name with a name of layers in a database. 
+
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.  
+
+Switch from :guilabel:`Resource` to :guilabel:`PostGIS connection` tab. 
+PostGIS connection tab is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
+
+
+Then enter PostGIS database connection parameters to connect data for display.  
+
+.. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
+   :name: admin_layers_create_postgis_connection_db_logins
+   :align: center
+   :width: 16cm
+
+   PostGIS connection tab of Create resource dialog.
+
+
+Then you can add single PostGIS layers. Navigate to a group where you want create layers. In Actions pane select :menuselection:`Create resource --> PostGIS layer`. 
+Create resource for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
+   :name: admin_layers_create_postgis_layer_resourse_description
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for PostGIS layer.
+
+Enter display name that will be visible in administrator interface and in map layer tree. 
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.  
+Switch from :guilabel:`Resource` tab to :guilabel:`PostGIS layer` tab. 
+Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_tablename`. 
+
+.. figure:: _static/admin_layers_create_postgis_layer_tablename.png
+   :name: admin_layers_create_postgis_layer_tablename
+   :align: center
+   :width: 16cm
+
+   PostGIS layer tab of create resource dialog.
+
+Then perform the following steps:
+
+#. From a dropdown list select a database connection (creation of a connection is described above).
+#. Enter a schema of a database where layer data is stored. 
+	Single database can store multiple schemas. Each schema contains tables and views. If there is only one schema its called public. For more information see :program:`PostgreSQL DBMS` manual.
+#. Enter Table name (PostGIS layer). 
+	You need to know names of tables and columns in your database. 
+	Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS Manager` or :program:`PgAdmin` software.
+#. Enter ID column. 
+	Ususally when data is loaded to PostGIS using :program: NextGIS Manager software an ogc_fid column is created. If data was loaded in another way the name of column may be different.
+	An ID column should follow rules for data type: the value type should be a number (**numeric**) and it should be a primary key.
+#. Enter geometry column name (if data was loaded to PostGIS using  :program:`NextGIS Manager` software usually a geometry column called wkb_geometry is created. If data is loaded in another way the name of column may be different).
+#. Parameters :guilabel:`Geometry type`, :guilabel:`Coordinate system` и :guilabel:`Attribute definitions` are not required so you can use default values.
+
+
+NextGIS Web software supports adding of tables with point, line and polygon geometries stored in a single geometry column. 
+This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points in a single table. In this case in NextGIS Web you need to add three different layers for each type of geometry and select appropriate geometry type in :guilabel:`Geometry type` parameter.
+
+After layer is created you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in :guilabel:`Label attribute` column.
+
+If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select :menuselection:`Update --> PostGIS layer --> Attribute definitions --> Reload` and click :guilabel:`Save`.
+
+Create layers with conditions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In :program:`NextGIS Web` you can not define queries using a WHERE SQL expression. 
+This provides additional security (prevention of SQL Injection attack). To provide query capability you need to create views with appropriate queries.
+
+To do this connect to PostgreSQL/PostGIS database using :program:`pgAdminIII`, 
+then navigate to data schema where you want to create a view, right click tree item :guilabel:`Views` and select :guilabel:`New view` (см. :numref:`pgadmin3`. number  1). Also you can right click on schema name and select :menuselection:`New object --> New view`.
+Enter the following information to create new view dialog:
+
+#. View name («Properties» tab).
+#. Data schema where to create a view («Properties» tab).
+#. SQL query («Definition» tab).
+
+.. figure:: _static/pgadmin3.png
+   :name: pgadmin3
+   :align: center
+   :width: 16cm
+
+   Main dialog of :program:`pgAdminIII` software.
+
+   The numbers indicate: 1. – Database items tree; 2 – a button for  
+   table open (is active if a table is selected in tree); 3 – SQL query for  
+   view.
+
+After that you can display a view to check if query is correct without closing :program:`pgAdminIII` (see  :numref:`pgadmin3`. number  2). 
+
+.. _ngw_create_wms_layer:
+
+WMS layer
+--------
+
+NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check for this coordinate system presence by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NGW requests data in 3857 and server does not support for that coordinate system.
+
+
+To add WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers. In the Actions pane select :menuselection:`Create resource --> WMS connection`. Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_description`.
+
+.. figure:: _static/admin_layers_create_wms_connection_description.png
+   :name: admin_layers_create_wms_connection_description
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for WMS connection.
+
+
+Enter display name that will be visible in administrator interface. Do not confuse this name with a name of layers in a database. 
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.
+ 
+Switch from :guilabel:`Resource` tab to :guilabel:`WMS connection` tab. 
+WMS connection tab is presented on :numref:`admin_layers_create_wms_connection_url`.
+Then you need to enter WMS server connection parameters from which you want to display data.  
+
+.. figure:: _static/admin_layers_create_wms_connection_url.png
+   :name: admin_layers_create_wms_connection_url
+   :align: center
+   :width: 16cm
+
+   WMS connection tab of Create resource dialog.
+
+Then you may start to add single WMS layers.
+Navigate to a group you want to create WMS layers in. In the Actions pane select :menuselection:`Create resource --> WMS layer`. Create resource dialog for WMS layer is presented :numref:`admin_layers_create_wms_layer_name`.
+
+.. figure:: _static/admin_layers_create_wms_layer_name.png
+   :name: admin_layers_create_wms_layer_name
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for WMS layer.
+
+
+Enter display name that will be visible in administrator interface and in map layer tree. 
+Fields :guilabel:`Keyname` и :guilabel:`Description` are not required. 
+Switch from :guilabel:`Resource` tab to :guilabel:`WMS layer` tab. 
+WMS layer tab of create resource dialog is presented on :numref:`admin_layers_create_wms_layer_parameters`.
+
+.. figure:: _static/admin_layers_create_wms_layer_parameters.png
+   :name: admin_layers_create_wms_layer_parameters
+   :align: center
+   :width: 16cm
+
+   WMS layer tab of Create resource dialog.
+
+Then perform the following steps:
+
+1. Select WMS connection that was created earlier.
+2. Select coordinate system which to use for requests to WMS server 
+   (by default there are only WGS84 / Pseudo Mercator (EPSG:3857) ).
+3. If parameters are correct the parameter :guilabel:`Format` will display 
+   MIME-types list that are served by a server. Select an appropriate one.
+4. If parameters are correct the parameter :guilabel:`WMS layers` will display 
+   a list of layers that are server by a server. Select required layers by clicking 
+   underlined names. You can select several layers.
+
+Parameters to add a WMS layer for Public cadastral map by Rosreestr:
+
+URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer?request=GetCapabilities&service=WMS
+
+Version 1.1.1. 
+
+.. _ngw_create_wms_service:
+
+WMS service
+----------
+
+NextGIS Web software could perform as WMS server. This protocol is used to provide images for requested extent. To deploy a WMS service you need to add a resource. 
+
+In Actions pane select :menuselection:`Create resource --> WMS service`. Create resource dialog will open.
+Enter display name that will be visible in administrator interface and in map layer tree. 
+
+On WMS service tab add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wms_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
+
+.. figure:: _static/admin_layers_create_wms_service_layers.png
+   :name: admin_layers_create_wms_service_layers.png
+   :align: center
+   :width: 16cm
+
+   Example of WMS service settings for delivery of separate sheets of topographic maps. 
+
+After a resource is created you will see a message with WMS service URL which you can use in other software, e.g. NextGIS QGIS or JOSM. 
+Then you need to set access permissions for WMS service. See  section :ref:`ngw_access_rights`.
+
+NextGIS Web layer could be added to desktop, mobile and web gis in different ways.
+
+
+Connection to WMS
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NextGIS Web is a WMS server. Any WMS layes could be added to a software that supports WMS layers. You need to know WMS service URL. You can get in on WMS service properties page. Example:
 
 .. code:: html
 
    http://demo.nextgis.ru/resource/60/wms?
 
-**TMS**
+Connection to WMS in GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Конкретные слои NextGIS Web можно подключать как TMS. Для этого нужно создать для 
-необходимого слоя файл XML. Для создания такого файла нужно знать адрес где развернут 
-NGW и номер нужного слоя (в примере: адрес - http://demo.nextgis.ru/ngw_kl, номер слоя - 5). 
-Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
-остается неизменным.
+
+Single NextGIS Web layers could be added as WMS. To use them through GDAL utilities you need to create an XML file for required layer. You need an URL for WMS service to create that file.
+You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
+
+.. code:: xml
+
+   <GDAL_WMS>
+    <Service name="WMS">
+        <Version>1.1.1</Version>
+        <ServerUrl>http://176.9.38.120/practice2/api/resource/85/wms?</ServerUrl>
+        <SRS>EPSG:3857</SRS>
+        <ImageFormat>image/png</ImageFormat>
+        <Layers>moscow_boundary_multipolygon</Layers>
+        <Styles></Styles>
+    </Service>
+    <DataWindow>
+      <UpperLeftX>-20037508.34</UpperLeftX>
+      <UpperLeftY>20037508.34</UpperLeftY>
+      <LowerRightX>20037508.34</LowerRightX>
+      <LowerRightY>-20037508.34</LowerRightY>
+      <SizeY>40075016</SizeY>
+      <SizeX>40075016.857</SizeX>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BandsCount>3</BandsCount>
+   </GDAL_WMS>
+
+If you need an image with transparency (alpha channel) set <BandsCount>4</BandsCount>
+
+Gdal utility call example. The utility gets an image by WMS from NGW and saves it to a GeoTIFF format
+
+.. code:: bash
+
+   gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 4190083 7468902   ngw.xml test.tiff
+
+.. _ngw_create_tms_service:
+
+Connection to TMS in GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Single layers of NextGIS Web could be added as TMS. You need t create an XML file for required layer. To create this file you need the information about NGW address and a layer number (in the example: address - http://demo.nextgis.ru/ngw_kl, layer number - 5). 
+You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
 
 .. code:: xml
 
@@ -116,386 +406,100 @@ NGW и номер нужного слоя (в примере: адрес - http:
     <Cache />
    </GDAL_WMS> 
 
-Векторный слой из файла
------------------------
-Для добавления векторного слоя перейдите в группу, где необходимо его создать. 
-В блоке операций Создать ресурс выберите из списка вкладку Векторный слой. 
-В открывшемся окне необходимо ввести Наименование слоя, которое будет отображаться 
-в административном веб интерфейсе, а также в дереве слоев карты. 
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами. 
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Векторный слой`. 
-Откроется окно, представленное на :numref:`admin_layers_create_vector_layer_resourse_description`. 
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
-   :name: admin_layers_create_vector_layer_resourse_description
-   :align: center
-   :width: 16cm
+.. _ngw_wfs_service:
 
-   Окно добавления векторного слоя.
-
-Далее необходимо выбрать систему координат, в которую будет перепроецированы векторные
-данные (по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ). 
-
-Далее необходимо указать сам исходный файл (кнопка Выбрать,
-см. :numref:`admin_layers_create_vector_layer_upload`).  
-В качестве исходного файла можно загружать следующие форматы: 
-
-* ESRI Shapefile;
-* GeoJSON.
-
-.. note:: 
-   В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
-   упакованы в архив формата zip. 
-   Шейп-файл должен быть в кодировке UTF-8 или Windows-1251.
-   
-   
-Во входном файле не должно быть невалидных геометрий (в QGIS соответствующий 
-инструмент должен выдавать пустой список невалидных геометрий), даты не должны 
-иметь значения NULL, не должно быть полей с названиями: *id (ID), type(TYPE), source(SOURCE)*.
-   
-Cистема координат геометрий должна распознается GDAL (вывод gdalinfo должен содержать описание СК). 
-
-
-.. figure:: _static/admin_layers_create_vector_layer_upload.png
-   :name: admin_layers_create_vector_layer_upload
-   :align: center
-   :width: 16cm
-
-   Окно загрузки векторного слоя.
-
-Кроме того, необходимо указать кодировку, в которой записаны атрибуты.
-Если кодировка не указана, то данные в ESRI Shapefile должен сопровождать файл с 
-описание кодировки (расширение cpg). В случае GeoJSON кодировка всегда UTF-8.
-
-После удачной загрузки векторного файла необходимо создать стиль. 
-Подробнее о создании стилей описано в подразд. :ref:`ngweb_style_create`.
-
-При создании карты (подробнее см. подразд. :ref:`ngweb_map_create`) можно добавлять 
-векторный слой на карту, указывая его стиль.
-
-.. note:: 
-   В NextGIS Manager эту операцию можно сделать проще. В програме есть функционал
-   загрузки в NextGIS Web векторных файлов разных форматов, без необходимости 
-   отдельного архивирования. 
-
-Векторный слой из PostGIS
--------------------------
-
-Для добавления векторного слоя из БД PostgreSQL с модулем расширения PostGIS необходимо 
-сначала создать ресурс — соединение с PostGIS. Вам достаточно создать одно подключение. 
-В блоке операций выберите :menuselection:`Добавить --> Cоединение с PostGIS`. Откроется окно, представленное на :numref:`admin_layers_create_postgis_connection_resourse_description`. 
-
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_description.png
-   :name: admin_layers_create_postgis_connection_resourse_description
-   :align: center
-   :alt: map to buried treasure
-   :width: 16cm
-
-   Окно добавления соединения PostGIS.
-
-Введите наименование подключения, которое будет отображаться в административном 
-веб интерфейсе. Не путайте потом это название и название слоёв в базе данных. 
-
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.  
-
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cоединение с PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_connection_db_logins`. 
-
-
-Далее необходимо ввести параметры подключения к базе данных PostGIS, из которой 
-будут отображаться ваши данные.  
-
-.. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
-   :name: admin_layers_create_postgis_connection_db_logins
-   :align: center
-   :width: 16cm
-
-   Окно параметров соединения с PostGIS.
-
-
-Далее можно приступать к добавлению отдельных слоёв PostGIS. Перейдите в группу, 
-где необходимо их создать. В блоке операций выберите :menuselection:`Добавить --> Слой PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_layer_resourse_description`. 
-
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
-   :name: admin_layers_create_postgis_layer_resourse_description
-   :align: center
-   :width: 16cm
-
-   Окно добавления слоя PostGIS.
-
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карты. 
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.  
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Слой с PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_layer_tablename`. 
-
-.. figure:: _static/admin_layers_create_postgis_layer_tablename.png
-   :name: admin_layers_create_postgis_layer_tablename
-   :align: center
-   :width: 16cm
-
-   Окно параметров слоя PostGIS.
-
-Далее необходимо:
-
-#. Из выпадающего списка выбрать подключение к БД (cоздание описано в этом же пункте, чуть выше).
-#. Ввести схему БД, в которой находится слой PostGIS. 
-	В одной базе данных PostgreSQL может быть несколько схем, внутри каждой схемы лежат таблицы и представления. Если схема одна, то она называется public. Подробнее смотрите в руководствах по :program:`СУБД PostgreSQL`.
-#. Ввести название таблицы (слоя PostGIS). 
-	Вам потребуется знать названия ваших таблиц и полей в базе данных. 
-	Отображение таблиц и представлений не входит в задачи NextGIS Web. Для просмотра можно воспользоваться :program:`NextGIS Manager` или :program:`PgAdmin`.
-#. Ввести поле ID. 
-	При загрузке данных в PostGIS через NextGIS Manager обычно создается поле с названием ogc_fid, при загрузки иным способом название поля может отличаться.
-	Поле ID должно удовлетворять ограничениям на тип данных: быть числовым (**numeric**) и являться первичным ключом.
-#. Ввести имя поля геометрии (при загрузке данных в PostGIS через :program:`NextGIS Manager`  обычно создается поле геометрии с названием wkb_geometry, при загрузки иным способом название поля может отличаться).
-#. Поля :guilabel:`Тип геометрии`, :guilabel:`Система координат` и :guilabel:`Описание атрибутов` не обязательными и могут быть оставлены по-умолчанию.
-
-
-Программное обеспечение NextGIS Web поддерживает добавление таблиц, в которых в 
-поле геометрии хранятся совместно точечные, линейные и полигональные геометрии. 
-Это необходимо для отображения специфических наборов данных: например, если в одной 
-таблице хранятся координаты городских парков в виде полигонов и мусорных урн в виде 
-точек. В этом случае в NextGIS Web нужно добавить три отдельных слоя для каждого 
-типа геометрии, и выбрать нужный элемент в поле :guilabel:`Тип геометрии`.
-
-После создания слоя для отображения подписей к геометриям необходимо задать атрибут 
-наименования. Для этого зайдите на страницу редактирования слоя и выберите нужное поле в списке :guilabel:`Атрибут наименования`.
-
-Если в БД были изменены какие либо данные, касающиеся структуры (названия или типы полей, 
-изменен их состав, переименованы таблицы и т. п.), то в свойствах соответствующего 
-слоя необходимо обновить описания атрибутов. Для этого, следует выбрать :menuselection:`Редактирование слоя --> Описания атрибутов --> Прочитать` из базы данных нажать :guilabel:`Сохранить`.
-
-Создание слоя с условиями
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-В :program:`NextGIS Web` нельзя указывать условия отбора записей из слоя (SQL конструкция WHERE). 
-Это делается для обеспечения безопасности (исключения атак SQL Injection). Для обеспечения такой возможности необходимо в БД создать представления с соответствующими условиями отбора.
-
-Для этого необходимо подключится к БД PostgreSQL/PostGIS при помощи :program:`pgAdminIII`, 
-перейти в схему данных, где следует создать представление и в элементе дерева :guilabel:`представления` правой клавишей мыши вызвать контекстное меню и выбрать :guilabel:`Создать новое представления` (см. :numref:`pgadmin3`. п. 1). Также диалог можно вызвать правым кликом на названии схемы, выбрав :menuselection:`Новый объект --> Новое представление`.
-Далее в открывшемся диалоге необходимо указать:
-
-#. Название представления (вкладка «Свойства»).
-#. Схему данных, в которой необходимо создать представление (вкладка «Свойства»).
-#. Необходимый SQL запрос (вкладка «Определение»).
-
-.. figure:: _static/pgadmin3.png
-   :name: pgadmin3
-   :align: center
-   :width: 16cm
-
-   Главное окно ПО :program:`pgAdminIII`.
-
-   Цифрами на рисунка обозначено: 1. – Дерево элементов базы данных; 2 – кнопка 
-открытия таблицы (активна при выделенной таблице); 3 – содержимое запроса в представлении.
-
-После этого, не выходя из :program:`pgAdminIII`, можно открыть представление для 
-проверки корректности введенного SQL запроса (см. :numref:`pgadmin3`. п. 2). 
-
-Cлой WMS
---------
-
-Программное обеспечение NextGIS Web является клиентом WMS. Для подключения слоя WMS 
-необходимо знать его адрес. Сервер WMS, предоставляющий подключаемый слой, должен 
-отдавать его в том числе в системе координат EPSG:3857. Проверить наличие этой системы 
-координат для подключаемого слоя можно, сделав запрос GetCapabilites к серверу и 
-посмотрев результат.Например, слой WMS, предоставляемый Geofabrik (GetCapabilities), 
-умеет отдавать данные в EPSG:4326 и EPSG:900913. Хотя фактически EPSG:900913 и EPSG:3857 - это одно и то же, но NGW запрашивает данные в 3857, а этот сервер WMS такую проекцию не поддерживает.
-
-
-Для добавления слоя WMS необходимо сначала создать ресурс — соединение WMS. Вам 
-достаточно создать одно подключение для множества слоёв. В блоке операций 
-выберите :menuselection:`Добавить --> Cоединение с WMS`. Откроется окно представленное на :numref:`admin_layers_create_wms_connection_description`.
-
-.. figure:: _static/admin_layers_create_wms_connection_description.png
-   :name: admin_layers_create_wms_connection_description
-   :align: center
-   :width: 16cm
-
-   Окно добавления подключения WMS.
-
-
-Введите наименование подключения, которое будет отображаться в административном 
-веб интерфейсе. Не путайте потом это название с названием отдельных слоёв. 
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
- 
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cоединение WMS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_wms_connection_url`.
-Далее необходимо ввести параметры подключения к WMS-серверу, из которого будут 
-отображаться ваши данные.  
-
-.. figure:: _static/admin_layers_create_wms_connection_url.png
-   :name: admin_layers_create_wms_connection_url
-   :align: center
-   :width: 16cm
-
-   Окно параметров соединения с WMS.
-
-Далее можно приступать к добавлению отдельных слоёв WMS.
-Перейдите в группу, где необходимо создать слой WMS. В блоке операций выберите :menuselection:`Добавить --> слой WMS`. Откроется окно, представленное на :numref:`admin_layers_create_wms_layer_name`.
-
-.. figure:: _static/admin_layers_create_wms_layer_name.png
-   :name: admin_layers_create_wms_layer_name
-   :align: center
-   :width: 16cm
-
-   Окно параметров слоя WMS.
-
-
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карты. 
-Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами. 
-Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cлой WMS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_wms_layer_parameters`.
-
-.. figure:: _static/admin_layers_create_wms_layer_parameters.png
-   :name: admin_layers_create_wms_layer_parameters
-   :align: center
-   :width: 16cm
-
-   Окно настройки параметров слоя WMS.
-
-Далее необходимо:
-
-#. Выбрать подключение WMS, которое было создано ранее.
-#. Выбрать систему координат, в которой запрашивать данные у WMS-сервера 
-(по-умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ).
-#. Если параметры подключения указаны верно, то в поле :guilabel:`Формат` выведется 
-список MIME-типов данных, предоставляемых сервером. Выберите подходящий вам формат.
-#. Если параметры подключения указаны верно, то в поле :guilabel:`WMS-слои` выведется 
-список слоёв, предоставляемых сервером. Выберите те слои, которые вам нужны, нажимая 
-по подчёркнутым названиям. Можно выбрать несколько слоёв.
-
-Параметры для добавления WMS-слоя с ПКК (публичной кадастровой картой Росреестра РФ)
-
-URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer?request=GetCapabilities&service=WMS
-
-Версия 1.1.1. 
-
-Сервис WMS
+WFS service
 ----------
 
-Программное обеспечение NextGIS Web может работать как сервер WMS. По этому протоколу 
-клиенты запрашивают картинку карты по заданному охвату. 
-Для развёртывания WMS-сервиса необходимо добавить ресурс. В блоке операций выберите :menuselection:`Добавить --> WMS-сервис`. Откроется типовое окно.
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карты. 
-На вкладке Сервис WMS добавьте в список ссылки на стили нужных вам слоёв. Для каждого 
-добавленого стиля вам нужно указать уникальный ключ. Можно скопировать его из названия. 
+Setup of WFS layer is performed the same way as for WMS service but you add a layer instead of a style.
 
-.. figure:: _static/admin_layers_create_wms_service_layers.png
-   :name: admin_layers_create_wms_service_layers.png
-   :align: center
-   :width: 16cm
+For more information see:
 
-   Пример настроек WMS-сервиса для раздачи отдельных листов топокарт. 
-
-После создания ресурса вам выведется сообщение с URL WMS-сервиса, который вы можете 
-использовать в других программах, например NextGIS QGIS, или JOSM. 
-Далее необходимо настроить права доступа к WMS-сервису. См. главу :ref:`access_rights`.
-
-.. _WFS-service:
-
-Cервис WFS
-----------
-
-Настройка сервиса WFS осуществляется так же, как для WMS-сервиса, только добавляется 
-не стиль, а слой.
-
-Детальнее:
-
-NextGIS Web может работать как сервер WFS. По этому протоколу сторонние программы 
-могут изменять векторные данные на сервере.
-Для развёртывания сервиса WFS необходимо добавить ресурс. В блоке операций выберите :menuselection:`Добавить --> WFS-сервис`. Откроется типовое окно.
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карты. 
-На вкладке Сервис WFS добавьте в список ссылки на нужные вам слои. Для каждого 
-добавленного слоя вам нужно указать уникальный ключ. Можно скопировать его из названия (см. :numref:`ngweb_admin_layers_create_wfs_service_layers_pic`). 
+NextGIS Web can act as WFS server. Third party software could edit vector data on server using this protocol.
+To deploy a WFS service you need to add a resource. In Actions pane select :menuselection:`Create resource --> WFS service`. Create resource dialog will open.
+Enter display name that will be visible in administrator interface and in map layer tree. 
+On WFS service tab add links to required layers to the list. For each added layer you should set a unique key. You can copy it from the name (see  :numref:`ngweb_admin_layers_create_wfs_service_layers_pic`). 
 
 .. figure:: _static/admin_layers_create_wfs_service_layers.png
    :name: ngweb_admin_layers_create_wfs_service_layers_pic
    :align: center
    :width: 16cm
    
-   Пример настроек WFS-сервиса для раздачи отдельных листов топокарт. 
+   Example of WFS service settings for delivery of separate sheets of topographic maps. 
 
-Для каждого слоя так же можно задать ограничение на количество передаваемых объектов за раз. 
-По умолчанию это значение равно 1000. Если в этом поле значение убрать совсем, то 
-ограничение будет снято и будут передаваться все объекты. Однако, это может привести 
-к значительной нагрузке на сервер и значительным задержкам при передаче больших объемов данных.
+For each layer you can set a limit for the number of features transfered at once. 
+By default the value is 1000. If this parameter is empty the limit will be disable and all features will be trasfered to the client. But this could result in high load of a server and cause significant timeouts because of high volumes of transfered data.
 
-После создания ресурса вам нужно перезайти в этот ресурс в админке. После этого выведется сообщение с URL WFS-сервиса, который вы можете использовать в других программах, например NextGIS QGIS. 
-Далее необходимо настроить права доступа к WFS-сервису. См. главу :ref:`access_rights`.
+After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example NextGIS QGIS. 
+Then you need to set access permissions for WFS service. See  section :ref:`ngw_access_rights`.
 
-Создание группы ресурсов
+.. _ngw_resourses_group:
+
+Creation of a resource group
 ------------------------
 
-Ресурсы можно объединять в группы. Например, в одну группу можно сложить базовые данные, 
-в другую группу –  космические снимки, в третью – тематические данные и т.д.
+Resources could be joined to groups. For example you can join base layers to one group, satellite imagery to another group and thematic data to one more group etc.
 
-Группы служат для удобной организации слоев в панели управления, а также для удобного 
-назначения прав доступа. 
+Groups help organize layers in Control panel and help manage access permissions in a convenient way. 
 
-Для создании группы ресурсов необходимо перейти в ту группу (корневая или др.) и 
-в панели операций выбрать :menuselection:`Создать ресурс --> Группа ресурсов`. 
-При этом откроется окно, представленное на :numref:`admin_layers_create_group`.
+To create a resource group navigate to root group and on Actions pane select :menuselection:`Create resource --> Resource group`. 
+Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
 
 .. figure:: _static/admin_layers_create_group.png
    :name: admin_layers_create_group
    :align: center
    :width: 16cm
 
-   Окно создания группы ресурсов.
+   Create resource dialog for resource group.
 
-В открывшемся окне необходимо указать:
+In create resource dialog enter:
 
-* Название группы
-* :guilabel:`Ключ` – поле можно оставить пустым
-* :guilabel:`Описание` – поле можно оставить пустым
+* Display name
+* :guilabel:`Keyname` – not required, may be empty
+* :guilabel:`Description` – not required, may be empty
 
 
-И нажать :guilabel:`Создать`.
+and then click :guilabel:`Create`.
 
-Типовая структура
+Typical structure
 -----------------
 
-С учетом опыта использования NextGIS Web рекомендуется следующая типовая структура 
-организации ресурсов.
+With NextGIS Web application experience we recommend the following typical structure for organizing resources.
 
-Типовая структура ::
+Typical structure ::
 
-  Основная группа ресурсов
-	Веб-карты
-		Основная веб-карта
-		Тестовая веб-карта
-	Подключения PostGIS
-		PostGIS на сервере
-	Слои данных
-		Базовые данные
-			Границы объектов
-			Инфраструктура - линейные объекты
-			Учётные площадки
-		Тематические данные
-			Результаты замеров на учётных площадках
-			Результаты замеров на учётных маршрутах
-			Точки встреч редких видов
-		Рельеф
+  Main resource group
+	Web maps
+		Master web map
+		Test web map
+	PostGIS connections
+		PostGIS on server
+	Data layers
+		Base data
+			Borders
+			Infrastructure - linear features
+			Accounting area
+		Thematic data
+			Results of measurements on accounting area
+			Results of measurements on accounting routes
+			Observation points for rare species
+		Relief
 			ASTER DEM
-				ЦМР
-				Изолинии
-		Топографические данные
+				DEM
+				Isolines
+		Topographic data
 			Openstreetmap
-				Автодороги
-				Административные границы
-				Гидросеть
-				Железнодорожные станции
-				Железные дороги
-				Землепользование
+				Roads
+				Administrative borders
+				Hydrology
+				Railway stations
+				Railway roads
+				Landuse
 			1 : 100000
 				M-37-015
 				M-37-016
 				M-37-017
-		Съёмка
+		Satellite imagery
 			Landsat-8
 			Ikonos
