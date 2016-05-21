@@ -1,12 +1,11 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _webmaps_client:
+.. _ngw_webmaps_client:
 
-Веб-клиент для просмотра карт
+A viewer for web maps
 =============================
 
-В составе ПО NextGIS Web предусмотрено специальное клиентское веб приложение для 
-просмотра веб-карт (см :numref:`webmap_client`).
+A special web application for viewing web maps is included with NextGIS Web (see :numref:`webmap_client`).
  
 
 .. figure:: _static/webmap_client.png
@@ -14,66 +13,55 @@
    :align: center
    :width: 16cm
    
-   Внешний вид веб-клиента.
+   The interface of viewer client application.
 
-   Цифрами обозначено: 1 – выпадающее меню выделенного слоя; 2 – дерево слоев; 
-3 – выпадающий список выбора подложек; 5 – инструменты карты; 6 – строка поиска; 
-7 – строка статуса.
+   Numbers indicate: 1 – dropdown menu for selected layer; 2 – layer tree; 
+   3 – dropdown list of basemaps; 5 – map tools; 6 – search bar; 
+   7 – status bar.
 
-Веб-клиент включает в себя два основных компонента: дерево слоев (2) и карту (4). 
-При выборе слоя в дереве слоев можно вызвать меню слоя (1), в котором имеются 
-следующие пункты:
+Web client includes two main components: layer tree (2) and a map (4). 
+When a layer is  selected in a tree you can open a layer menu (1) with the following actions:
     
-* просмотр таблицы атрибутов
-* просмотр описания слоя 
+* Feature table (opens feature table)
+* Description (opens description) 
 
-Для смены картографических подложек служит выпадающий список (3). По умолчанию 
-имеются следующие подложки:
+To change a basemap use a dropdown list (3). By default there are the following basemaps:
 
-* Пустая
+* No basemap
 * OpenStreetMap
-* Google – спутник
-* Google – схема
-* Google – гибрид 
-* Google – рельеф
+* Google – satellite
+* Google – map
+* Google – hybrid 
+* Google – terrain
 
-Подложка - это изображение карты, которое предоставляется другими, независимыми 
-сервисами в сети Интернет. На их содержание пользователь влиять не может. 
-Пользователь может выключить подложку, и тогда вместо нее будет показываться 
-белый фон. Если предполагается, что у пользователя слабый канал доступа в 
-интернет, или же Веб-ГИС развернута в локальной сети организации, из которой нет 
-доступа в интернет, то можно работать и без подложки, разместив базовые данные в 
-слоях Веб-ГИС. 
+Basemap - is a map image that is shared by thrid-party services in the Internet. User can not influence their content. 
+User has an option to disable a basemap so a white background will be shown instead. If a user is supposed to have a poor Internet access or if web gis is deployed in local network without an access to the Internet, it is possible to work without basemap adding base data as web gis layers. 
 
 .. note:: 
-   Если предполагается работа в сети без доступа к Интернету, то в 
-   файле `настроек подложек </nextgisweb/nextgisweb/webmap/basemaps.json>`_ нужно 
-   удалить записи про подложки Google.
+   If it is supposed to work without an Internet access 
+   edit a file with `basemap settings </nextgisweb/nextgisweb/webmap/basemaps.json>`_ and  
+   delete records about Google basemaps.
 
-Для работы с картой предусмотрены инструменты (5) – перечислены слева направо:
+.. _ngw_webmaps_client_tools:
 
-* полный охват карты
-* перемещение карты
-* приближение
-* отдаление
-* измерение длин
-* измерение площадей
-* идентификация
+There are some tools to work with map (5) - they are (from left to the right):
 
-В окне поиска (6) по мере ввода строки будет производиться поиск по двум источникам:
-1. Введенная строка ищется в атрибутивной информации добавленных на карту слоёв
-2. Строка так же ищется в адресной базе OpenStreetMap. 
+* initial extent of map
+* permanent link
+* pan (move a map)
+* zoom in
+* zoom out
+* measure distance
+* measure area
+* identify
 
-Результаты показываются по мере ввода, номера объектов для поиска по атрибутам и 
-полные адреса. Найденные объекты содержащие строку показываются первыми, сразу за 
-ними отображаются так же найденные адреса, включающие вводимую строку. При выборе 
-результата поиска из списка карта осуществляет переход к нему.
+In a search bar (6) during text input there will be performed a search using two sources:
+1. Entered string is searched in attributes of added layers
+2. Also a text is searched in address database of OpenStreetMap. 
 
-Строка статуса (7) отображает координаты клика и текущий масштаб.
+Results are shown as user inputs text with feature numbers for attribute search and full addresses. Found features that have a text in attributes are shown first and then addresses containing search text are shown. After a click on a search result map changes extent to show selected feature.
 
-Если перейти к просмотру таблицы атрибутов, то при выделении в ней отдельной 
-записи, можно перейти к просмотру соответствующей геометрии на карте. Для этого 
-надо слева сверху нажать кнопку :guilabel:`просмотреть`. В окне просмотра 
-атрибутов можно выполнять поиск по текущим атрибутом. По мере ввода, содержимое 
-окна фильтруется и остаются только записи, которые подпадают под критерии поиска.
+Status bar (7) displays mouse pointer coordinates and current map scale.
+
+In feature table tab you have an option to select a row for a feature and then navigate to that feature on a map. To do this click a button :guilabel:`Go to` when a required feature is selected. In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window is filtered leaving only records that match a search text.
 
