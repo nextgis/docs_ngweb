@@ -168,7 +168,8 @@ After that you need to copy required files to a virtual environment directory us
 .. code:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
-    cp /usr/lib64/python2.7/site-packages/*mapscript* env/lib/python2.7/site-packages/mapscript.egg
+    cp /usr/lib64/python2.7/site-packages/*mapscript* \
+    env/lib/python2.7/site-packages/mapscript.egg
     echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 Create a file ``PKG-INFO``:
@@ -182,7 +183,8 @@ Set the version of MapScript to be used:
 
 .. code:: bash
 
-    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
+    > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-For next steps see instructions if section 
-:ref:`nextgisweb-mapserver-install` and further.
+For next steps see instructions if section :ref:`nextgisweb-mapserver-install` 
+and further.

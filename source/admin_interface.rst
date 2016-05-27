@@ -9,7 +9,8 @@ Home page
 --------------------------------
 
 
-After login to administrative interface the user is taken to the home page shown on  :numref:`admin_index_pic`.
+After login to administrative interface the user is taken to the home page shown 
+on  :numref:`admin_index_pic`.
 
 
 .. figure:: _static/admin_index.png
@@ -36,11 +37,16 @@ Home page includes a main menu pane,
 * Login/logout button with current user indication 
   .
 
-Child resources pane (see  :numref:`admin_index_pic` index. 3) contains a list of all resources placed in a root group. Pane displays information about display name, owner and an edit resource button.
+Child resources pane (see  :numref:`admin_index_pic` index. 3) contains a list 
+of all resources placed in a root group. Pane displays information about display 
+name, owner and an edit resource button.
 
-Description pane (see  :numref:`admin_index_pic` index. 4) displays root group description (if available).
+Description pane (see  :numref:`admin_index_pic` index. 4) displays root group 
+description (if available).
 
-User permissions pane (see  :numref:`admin_index_pic` index. 5) displays list of permissions the current user granted for the root group. Green mark indicates that user has corresponding permission. 
+User permissions pane (see  :numref:`admin_index_pic` index. 5) displays list of 
+permissions the current user granted for the root group. Green mark indicates 
+that user has corresponding permission. 
 
 Possible permissions are the following:
 
@@ -53,7 +59,8 @@ Possible permissions are the following:
 * Delete
 
 
-Actions pane (see  :numref:`admin_index_pic`. 6 and 7) contains tools for adding data and executing operations with root group.
+Actions pane (see  :numref:`admin_index_pic`. 6 and 7) contains tools for adding
+data and executing operations with root group.
 
 In current version it is possible to add the following types of data:
 
@@ -92,12 +99,14 @@ Control panel allows to execute the following actions:
 * Create user
 * Grant permissions to resource groups and web maps.
 
-For more information about creation of user groups and users and granting permissions see topic :ref:`admin_tasks`.
+For more information about creation of user groups and users and granting 
+permissions see topic :ref:`admin_tasks`.
 
 Resource view
 ------------------
 
-After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
+After login to administrative interface the user is taken to home page shown on 
+:numref:`resource_group`.
 
 .. figure:: _static/resource_group.png
    :name: resource_group

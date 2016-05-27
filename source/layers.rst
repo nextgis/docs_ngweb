@@ -371,7 +371,8 @@ Gdal utility call example. The utility gets an image by WMS from NGW and saves i
 
 .. code:: bash
 
-   gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 4190083 7468902   ngw.xml test.tiff
+   $ gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 \
+   4190083 7468902   ngw.xml test.tiff
 
 .. _ngw_create_tms_service:
 

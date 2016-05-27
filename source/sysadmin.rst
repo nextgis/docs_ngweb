@@ -5,7 +5,8 @@
 System administration
 ===========================
 
-This section describes system administrator tasks. These tasks are actual during a process of deploy, backup, copying and migration.
+This section describes system administrator tasks. These tasks are actual during 
+a process of deploy, backup, copying and migration.
 
 .. toctree::
    :maxdepth: 2

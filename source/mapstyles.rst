@@ -630,7 +630,8 @@ Public roads (small roads are in a separate style). Colorscheme from openstreetm
 
 
     <map>
-    <!-- Highways for low-zoom from openstreetmap (from motorway to residential) version 2015-11-06 -->
+    <!-- Highways for low-zoom from openstreetmap (from motorway to residential) 
+    version 2015-11-06 -->
         <layer>
             <classitem>Highway</classitem>
             <labelitem>Name</labelitem>
@@ -975,7 +976,8 @@ Access roads, service roads, dirt roads, pedestrian ways
 .. code-block:: xml
 
     <map>
-     <!-- Highways for high-zoom from openstreetmap (from service to track) version 2015-11-06 -->
+     <!-- Highways for high-zoom from openstreetmap (from service to track) 
+     version 2015-11-06 -->
         <layer>
             <classitem>Highway</classitem>
             <labelitem>Name</labelitem>
@@ -1148,7 +1150,8 @@ railway-line
 		<linejoin>bevel</linejoin>
 		<width>2.83464566929</width>
 		<linecap>square</linecap> 
-		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large scale -->
+		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large 
+		scale -->
 	      </style>
 	      <style>
 		<pattern>9.41102362205 14.1165354331</pattern>
@@ -1156,7 +1159,8 @@ railway-line
 		<linejoin>bevel</linejoin>
 		<width>2.35275590551</width>
 		<linecap>square</linecap>
-		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large scale -->
+		<maxscaledenom>25000</maxscaledenom> <!-- Black and white line at large 
+		scale -->
 	      </style>
 	       <style>
 		
@@ -1238,19 +1242,22 @@ OSM water-line
 	      <style><!-- вертикальные линии -->
 		<angle>auto</angle>
 		<gap>-8.50393700787</gap>
-		<!-- Остались необработанные атрибуты: interval_unit, placement, offset_unit, offset -->
+		<!-- Остались необработанные атрибуты: interval_unit, placement, 
+		offset_unit, offset -->
 		<color red="102" green="153" blue="204"/>
 		<outlinecolor red="0" green="0" blue="0"/>
 		<size>15.66929133858</size>
 		<symbol>std:line</symbol>
-		<!-- Unprocessed attributes: outline_width, offset_unit, outline_width_unit, size_unit -->
+		<!-- Unprocessed attributes: outline_width, offset_unit, 
+		outline_width_unit, size_unit -->
 	      </style>
 	      <style>
 		<color red="102" green="153" blue="204"/>
 		<linejoin>round</linejoin>
 		<width>3</width>
 		<linecap>round</linecap>
-		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, 
+		customdash_unit -->
 	      </style>
 	      <label>
 		<type>truetype</type> <!-- Подпись -->
@@ -1274,7 +1281,8 @@ OSM water-line
 		<width>1.5</width>
 		<linecap>round</linecap>
 		<maxscaledenom>250000</maxscaledenom>
-		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, 
+		customdash_unit -->
 	      </style>
 	      </class> 
 	    
@@ -1286,7 +1294,8 @@ OSM water-line
 		<width>1</width>
 		<linecap>round</linecap>
 		<maxscaledenom>250000</maxscaledenom>
-		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
+		<!-- Unprocessed attributes: width_unit, offset_unit, 
+		customdash_unit -->
 	      </style>
 	      </class> 
 	  </layer>
@@ -1355,7 +1364,7 @@ OSM-black
 OSM landuse-polygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NextGIS Web styles support for different hatched (see  :numref:`ngweb_mapstyle_hatch_demo_pic`).
+NextGIS Web styles support for different hatched (see :numref:`ngweb_mapstyle_hatch_demo_pic`).
 
 .. code-block:: xml
 

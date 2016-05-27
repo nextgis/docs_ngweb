@@ -22,40 +22,42 @@ Add the ubuntugis repository (see  `supported distributions <http://trac.osgeo.o
 
 .. code:: bash
 
-   apt-get update
-   sudo apt-get install software-properties-common python-software-properties
+   $ sudo apt-get update
+   $ sudo apt-get install software-properties-common python-software-properties
 
 **For ubuntu server 14.04**
 
 .. code:: bash
     
-    sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
-    sudo apt-get update
-    sudo apt-get upgrade
+    $ sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
 
 Install PostgreSQL:
 
 .. code:: bash
 
-    sudo apt-get install postgresql-<version>
+    $ sudo apt-get install postgresql-<version>
 
 Create a user who would be used as database.user in
 config.ini (see  further):
 
 .. code:: bash
 
-    sudo -u postgres createuser ngw_admin -P -e
+    $ sudo -u postgres createuser ngw_admin -P -e
 
 enter a password three times and then input  'n'.
 
-Create a database where NGW will be deployed, the name of database should be the same as database.name in config.ini (see further):
+Create a database where NGW will be deployed, the name of database should be the 
+same as database.name in config.ini (see further):
 
 .. code:: bash
 
-    sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
-    sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+    $ sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
+    $ sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 
-Edit a file so it contains the following strings (change authentication method to ``md5``, if another is specified):
+Edit a file so it contains the following strings (change authentication method 
+to ``md5``, if another is specified):
 
 .. code:: bash
 
@@ -69,48 +71,55 @@ Do not forget to restart database service:
 
 .. code:: bash
 
-    sudo service postgresql restart
+    $ sudo service postgresql restart
 
 Install PostGIS:
 
 .. code:: bash
 
-    sudo apt-cache search postgis
+    $ sudo apt-cache search postgis
 
-Find a package in the list that suits for your PostgreSQL version, its name should look like 
-postgresql-{version}-postgis-{version}, and install it:
+Find a package in the list that suits for your PostgreSQL version, its name 
+should look like postgresql-{version}-postgis-{version}, and install it:
 
 .. code:: bash
 
-    sudo apt-get install postgresql-9.3-postgis-2.1
-    sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
-    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER TO ngw_admin;'
-    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin;'
-    sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER TO ngw_admin;'
+    $ sudo apt-get install postgresql-9.3-postgis-2.1
+    $ sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
+    $ sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER \ 
+    TO ngw_admin;'
+    $ sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER \
+    TO ngw_admin;'
+    $ sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER \
+    TO ngw_admin;'
 
-After these operations databases will be created in PostgreSQL with installed :term:`PostGIS` and a user :abbr:`DB (database)`, will become an owner of databases, and also an owner of ``geometry_columns``, ``georgaphy_columns``, ``spatial_ref_sys`` tables.
+After these operations databases will be created in PostgreSQL with installed 
+:term:`PostGIS` and a user :abbr:`DB (database)`, will become an owner of 
+databases, and also an owner of ``geometry_columns``, ``georgaphy_columns``, 
+``spatial_ref_sys`` tables.
 
 Check if PostGIS functions appeared in a database:
 
 .. code:: bash
 
-    psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
+    $ psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
-If you deploy a system on a clean server and need to create one more PostGIS database to store data, you may enable a network access to it
+If you deploy a system on a clean server and need to create one more PostGIS 
+database to store data, you may enable a network access to it
 
 .. code:: bash
 
-    sudo su - postgres
-    nano /etc/postgresql/9.3/main/pg_hba.conf
-    add a sting to the end of file: host    all    all    192.168.0.0/16    md5
+    $ sudo su - postgres
+    $ nano /etc/postgresql/9.3/main/pg_hba.conf
+    add a sting to the end of file: host  all    all    192.168.0.0/16    md5
     mask 192.168.0.0/16 allows to access to DB from all IP starting with "192.168"
 
-    nano /etc/postgresql/9.3/main/postgresql.conf
+    $ nano /etc/postgresql/9.3/main/postgresql.conf
     create a string listen_addresses='*' and uncomment it.
 
 .. code:: bash
 
-    sudo service postgresql restart
+    $ sudo service postgresql restart
 
 Preparation of basic software
 ----------------------
@@ -119,19 +128,19 @@ Install pip:
 
 .. code:: bash
 
-    sudo apt-get install python-pip
+    $ sudo apt-get install python-pip
 
 Install virtualenv:
 
 .. code:: bash
 
-    sudo pip install virtualenv
+    $ sudo pip install virtualenv
 
 Install additional tools:
 
 .. code:: bash
 
-    sudo apt-get install python-mapscript python-dev git libgdal-dev python-dev \
+    $ sudo apt-get install python-mapscript python-dev git libgdal-dev python-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
 
 After an update of NextGIS Web a key registration may be required. 
@@ -164,21 +173,20 @@ Create required directories:
 
 .. code:: bash
 
-    mkdir -p ~/ngw/{data,upload}
-    cd ~/ngw
+    $ mkdir -p ~/ngw/{data,upload}
+    $ cd ~/ngw
 
 Clone repository:
 
 .. code:: bash
 
-    git clone https://github.com/nextgis/nextgisweb.git
+    $ git clone https://github.com/nextgis/nextgisweb.git
 
 Create a virtual environment in a folder ``~/ngw/env`` (folder will be created after a command execution):
 
 .. code:: bash
 
-    virtualenv --no-site-packages env
-
+    $ virtualenv --no-site-packages env
 
 .. _nextgisweb-install:
 
@@ -189,7 +197,7 @@ Install NextGIS Web package in development mode. All required packages will be i
 
 .. code:: bash
 
-    env/bin/pip install -e ./nextgisweb
+    $ env/bin/pip install -e ./nextgisweb
 
 Install MapServer
 -------------------
@@ -200,7 +208,7 @@ Install required package to a system:
 
 .. code:: bash
 
-    sudo apt-get install python-mapscript
+    $ sudo apt-get install python-mapscript
 
 After that you need to copy required files to a virtual environment directory used for NextGIS Web. At this steps there are at least two options depending on what kind of python-mapscript package is installed to a system. This depends on distributive used.
 
@@ -208,33 +216,33 @@ If you use Ubuntu, to copy system MapScript to virtual environment (directory ``
 
 .. code:: bash
 
-    mkdir env/lib/python2.7/site-packages/mapscript.egg
-    cp /usr/lib/python2.7/dist-packages/*mapscript* \ 
-    env/lib/python2.7/site-packages/mapscript.egg
-    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+    $ mkdir env/lib/python2.7/site-packages/mapscript.egg
+    $ cp /usr/lib/python2.7/dist-packages/*mapscript* \ 
+    $ env/lib/python2.7/site-packages/mapscript.egg
+    $ echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 If you use FreeBSD, the process will be slightly different:
     
 .. code:: bash
 
-    cp -r `python -c "import mapscript, os.path; print \ 
+    $ cp -r `python -c "import mapscript, os.path; print \ 
     os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
-    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+    $ echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 If you use Fedora/CentOS, then:
 
 .. code:: bash
 
-    mkdir env/lib/python2.7/site-packages/mapscript.egg
-    cp /usr/lib/python2.7/site-packages/*mapscript* \ 
+    $ mkdir env/lib/python2.7/site-packages/mapscript.egg
+    $ cp /usr/lib/python2.7/site-packages/*mapscript* \ 
     env/lib/python2.7/site-packages/mapscript.egg
-    echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
+    $ echo "./mapscript.egg" > env/lib/python2.7/site-packages/mapscript.pth
 
 If you execute a command:
 
 .. code:: bash
 
-    env/bin/pip freeze
+    $ env/bin/pip freeze
 
 you will get an error message:
 
@@ -246,14 +254,14 @@ To fix it you create a file ``PKG-INFO``:
 
 .. code:: bash
 
-    mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
-    touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
+    $ mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
+    $ touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 Set the version of MapScript to be used:
 
 .. code:: bash
 
-    echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
+    $ echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 
@@ -266,19 +274,19 @@ Clone repository:
 
 .. code:: bash
 
-    git clone https://github.com/nextgis/nextgisweb_mapserver.git
+    $ git clone https://github.com/nextgis/nextgisweb_mapserver.git
 
 Install a package in development mode:
 
 .. code:: bash
 
-    env/bin/pip install -e ./nextgisweb_mapserver
+    $ env/bin/pip install -e ./nextgisweb_mapserver
 
 Execute a command one more time:
 
 .. code:: bash
 
-    env/bin/pip freeze
+    $ env/bin/pip freeze
 
 to check if there any errors.
 
@@ -290,7 +298,7 @@ Configuration file with default parameters could be created using a command ``ne
 
 .. code:: bash
 
-    env/bin/nextgisweb-config > config.ini
+    $ env/bin/nextgisweb-config > config.ini
 
 A configuration file ``config.ini`` will be created. This text file should be edited to match the environment. Purpose of parameters is described in comments. User name and password and also a directory for data storage are taken from commands above. Check if the following parameters a set correctly:
 
@@ -380,7 +388,7 @@ To generate a key for configuration file ``config.ini`` use a command
 
 .. code:: bash
 	
-	openssl rand -base64 16
+	$ openssl rand -base64 16
 
 .. warning::
    1. In some cases absolute paths to folders should be entered because a python parameter 
@@ -392,7 +400,7 @@ Also commands pserve or pshell require a paster configuration file, e.g. ``devel
 
 .. code:: bash
 
-    nano development.ini
+    $ nano development.ini
 
 Contents:
 
@@ -426,8 +434,8 @@ As compiled files with translated interface are not stored inside a version cont
 
 .. code:: bash
 
-    env/bin/nextgisweb-i18n --package nextgisweb compile
-    env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
+    $ env/bin/nextgisweb-i18n --package nextgisweb compile
+    $ env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
     
 To install localization by default for Russian language you need to add a string to a section **core** of configuration file (e.g. **config.ini**):
 
@@ -446,13 +454,13 @@ To initialize a database follow these steps:
 
 .. code:: bash
 
-    env/bin/nextgisweb --config config.ini initialize_db
+    $ env/bin/nextgisweb --config config.ini initialize_db
 
 In some cases, e.g. during update, you may need to remove all database data and initialize a database one more time:
 
 .. code:: bash
 
-    env/bin/nextgisweb --config config.ini initialize_db --drop
+    $ env/bin/nextgisweb --config config.ini initialize_db --drop
 
 
 Migration and backup
@@ -471,20 +479,20 @@ To start a process of migration execute the following commands:
 
 .. code:: bash
 
-	env/bin/nextgisweb --config config.ini backup file.ngwbackup
-	env/bin/nextgisweb --config config.ini restore file.ngwbackup
+	$ env/bin/nextgisweb --config config.ini backup file.ngwbackup
+	$ env/bin/nextgisweb --config config.ini restore file.ngwbackup
 
 Backup is a ZIP-archive. To disable archiving of backup you need to use a key —no-zip. A catalog with defined name would be created.
 
 .. code:: bash
 
-	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+	$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
 In FreeBSD OS there is an error: sqlite support is not transfered in virtualenv. You need to manually copy the file:
 
 .. code:: bash
 
-	cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
+	$ cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
 	env/lib/python2.7/site-packages/
 
 
@@ -494,7 +502,7 @@ Migration should be performed using these steps:
 
 .. code:: bash
 
-	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+	$ env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
 2. If you need to transfer a PostGIS database with geodata then you need 
    to make its backup using a pgAdminIII software in a tar format.
@@ -521,7 +529,7 @@ Migration should be performed using these steps:
 
 .. code:: bash
 
-	env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
+	$ env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
 
 7. Launch NextGIS Web. Everything should work except PostGIS layers (if there were any).  
    
@@ -529,7 +537,8 @@ Migration should be performed using these steps:
    and then deploy a backup from source server.
 9. You need to enter a new server address in PostGIS connection settings. 
 
-If there is an error "No module named pysqlite2" - it means that you forgot to transfer sqlite. Execute required command from the installation manual.
+If there is an error "No module named pysqlite2" - it means that you forgot to 
+transfer sqlite. Execute required command from the installation manual.
 
 
 Software update
@@ -539,28 +548,28 @@ To update NextGIS Web software execute a command:
 
 .. code:: bash
 
-	cd ~/ngw/nextgisweb
-	git pull
+	$ cd ~/ngw/nextgisweb
+	$ git pull
 	
 If some dependences were added to setup.py you need to execute:	
 
 .. code:: bash
 
-	sudo pip install -e ~/ngw/nextgisweb 
+	$ sudo pip install -e ~/ngw/nextgisweb 
 	
 If a database structure has changed you need to execute:	
 
 .. code:: bash
 
-	cd ../
-	env/bin/nextgisweb --config config.ini initialize_db
+	$ cd ../
+	$ env/bin/nextgisweb --config config.ini initialize_db
 
 Also you need to update nextgisweb_mapserver package:
 
 .. code:: bash
 
-	cd ./nextgisweb_mapserver
-	git pull
+	$ cd ./nextgisweb_mapserver
+	$ git pull
 
 After executing of commands you need to restart NextGIS Web software with a restart of 
 pserve, or with a restart of web server with uWSGI module.
@@ -578,4 +587,4 @@ During a work of software some diagnostic messages may be displayed in pserver c
 
 This message is not important.
 
-If you plan to work with API from leaflet or OpenLayers you need to setup CORS technology.
+If you plan to work with API from leaflet or OpenLayers you need to setup CORS technology.s
