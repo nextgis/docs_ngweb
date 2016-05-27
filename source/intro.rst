@@ -5,7 +5,9 @@
 Introduction
 ============
 
-This document is a user manual for a **NextGIS Web** version |version| web gis. The manual covers general information about the software installation, configuration and usage, description of administrator interface,
+This document is a user manual for a **NextGIS Web** version 3.0 Web GIS. The 
+manual covers general information about the software installation, configuration 
+and usage, description of administrator interface,
 and an overview of basic user and administrator tasks.
 
 

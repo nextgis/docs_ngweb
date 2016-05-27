@@ -5,7 +5,8 @@
 General Information
 ==============
 
-NextGIS Web software is a web mapping application designed to support input, storage and regulated access to the results of the mapping and space activities,
+NextGIS Web software is a web mapping application designed to support input, 
+storage and regulated access to the results of the mapping and space activities,
 integrated into a single bank of data and metadata 
 
 NextGIS Web developed based on :term:`open source` software. NextGIS Web software supports Open Geospatial Consorcium 
@@ -20,7 +21,7 @@ Client is written on JavaScript and based on a Dojo framework. All configuration
 NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled on the step of application configuration. NextGIS Web components communicate with each other using internal API methods.
 
 NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu 
-Server 14.04 LTS or higher). Reed more. section :ref:`sys_req`. 
+Server 14.04 LTS or higher). Reed more. section :ref:`ngweb_sys_req`. 
 NextGIS Web works in all modern browsers.
 User interface with a published web map :numref:`webmap_sample`.
 
@@ -91,7 +92,7 @@ Editing
 * Adding photos and other  attachments. 
 * Editing features with WFS-T.
 
-.. _sys_req:
+.. _ngweb_sys_req:
     
 Recommended hardware
 -------------------------------

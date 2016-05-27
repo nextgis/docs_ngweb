@@ -11,7 +11,9 @@ Quickstart tutorial for qualified users
 -------------------------------------------------
 
 **NextGIS Web** - is a server :term:`geographical information system` (:abbr:`GIS 
-(geographical information system)`), which allows to display maps in web browser. Also NextGIS Web can share geodata :term:`geodata <geodata>` with other NextGIS software.
+(geographical information system)`), which allows to display maps in web browser. 
+Also NextGIS Web can share geodata :term:`geodata <geodata>` with other NextGIS 
+software.
 
 NextGIS Web has the following features:
 
@@ -29,9 +31,9 @@ NextGIS Web has the following features:
   for a WFS-T protocol for editing <ngw_wfs_service>`.
 * Listed features are available through a REST API from external software
 
-NextGIS Web - is an open source software (license GPL v2+).
+NextGIS Web - is an open source software (license GPL v2+, see :ref:`ngw_gplv2`).
 
-System requirements listed in section ":ref:`ngw_sys_req`".
+System requirements listed in section ":ref:`ngweb_sys_req`".
 
 Integration with other NextGIS software
 ---------------------------------------

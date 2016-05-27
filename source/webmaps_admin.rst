@@ -43,7 +43,8 @@ A tab for Extent and bookmarks will open:numref:`admin_webmap_bbox`.
 
 Setup an extent.
 
-   .. note:: Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
+.. note:: 
+   Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
 
 You can select a vector layer for bookmarks. If layer is set the client will have a menu with bookmarks with names defined by :guilabel:`Label attribute`. 
 

@@ -53,19 +53,18 @@ Markers
 
 
 * <symbol>std:circle</symbol> - marker type
-
-   * std:rectangle - rectangle
-   * std:circle - circle
-   * std:diamond - diamong
-   * std:triangle - triangle with peak at the top
-   * std:triangle-equilateral - triangle with peak at the bottom
-   * std:star - five-pointed star
-   * std:pentagon - pentagon
-   * std:arrow - arrow (by default is top oriented. Rotation could be set using a tag <angle>45</angle>)
-   * std:cross - +
-   * std:xcross - x
-   * std:line - short line
-   * std:hatch - long line texture
+* std:rectangle - rectangle
+* std:circle - circle
+* std:diamond - diamong
+* std:triangle - triangle with peak at the top
+* std:triangle-equilateral - triangle with peak at the bottom
+* std:star - five-pointed star
+* std:pentagon - pentagon
+* std:arrow - arrow (by default is top oriented. Rotation could be set using a tag <angle>45</angle>)
+* std:cross - +
+* std:xcross - x
+* std:line - short line
+* std:hatch - long line texture
 
 These markers could be used to draw a line, to fill a polygon or to display points. 
 Also they may be combined to a complex symbol:
