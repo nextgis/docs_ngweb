@@ -21,8 +21,10 @@ NextGIS Web has the following features:
   styles)
 * Flexible access permissions management
 * Load of data from :term:`PostGIS`,of import from  
-  files in :abbr:`GIS (geographical information system)` formats :term:`ESRI Shape`,  :term:`GeoJSON` or :term:`GeoTIFF`
-* Vector data could be downloaded in the following formats: term:`GeoJSON`, :term:`CSV`, :term:`ESRI Shape`
+  files in :abbr:`GIS (geographical information system)` formats 
+  :term:`ESRI Shape`,  :term:`GeoJSON` or :term:`GeoTIFF`
+* Vector data could be downloaded in the following formats: :term:`GeoJSON`, 
+  :term:`CSV`, :term:`ESRI Shape`
 * Map styles could be imported from :term:`QGIS` project or could be set manually
 * Could act as a server for :term:`TMS`, :term:`WMS`, :term:`WFS`
 * Could act as a client for :term:`WMS`
