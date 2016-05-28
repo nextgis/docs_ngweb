@@ -1,19 +1,22 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _ngweb_style_create:
+.. _ngw_style_create:
     
 Vector layer styles
 =====================
 
-Styles describe a way of rendering for geodata and are one of the resources of NGW. Style is added to a map to display geodata.
-
+Styles describe a way of rendering for geodata and are one of the resources of 
+NGW. Style is added to a map to display geodata.
 
 Creation of style
 ----------------------------------
 
-Style is related to a single layer so there is no item "Style" in the main resources list. 
-To create a style you need to open layer properties of the layer you want create style for. In layer properties page click: 
-:menuselection:`Create resource --> MapServer style`. A create resource page for a new style will be opened. You have an option to import a QML style from QGIS or enter the style manually. 
+Style is related to a single layer so there is no item "Style" in the main 
+resources list. To create a style you need to open layer properties of the layer 
+you want create style for. In layer properties page click: 
+:menuselection:`Create resource --> MapServer style`. A create resource page for 
+a new style will be opened. You have an option to import a QML style from QGIS 
+or enter the style manually. 
 
 QML style will be converted to internal system format during import. Currently only basic geometry renderer settings are imported.
 If a style has a selection by query the empty option should be placed at the end (it is placed first after import from QGIS).
