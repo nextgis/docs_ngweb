@@ -335,7 +335,7 @@ Cлой WMS
 
 Параметры для добавления WMS-слоя с ПКК (публичной кадастровой карты Росреестра РФ)
 
-URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer?request=GetCapabilities&service=WMS
+URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
 Версия 1.1.1. 
 
