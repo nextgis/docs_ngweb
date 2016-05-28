@@ -6,7 +6,7 @@ Launch
 ======
 
 Launch using Pserve
--------------------
+--------------------
 
 To launch NextGIS Web using Pserve run a command:
 
@@ -42,7 +42,7 @@ An authentication page will be open.
 
 
 Default login and password:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Login: administrator
 * Password: admin
@@ -51,7 +51,7 @@ Default login and password:
 .. _ngw_uwsgi:
 
 Launch using uWSGI
-------------------
+-------------------
 
 At first you need to install uWSGI:
 
@@ -156,7 +156,7 @@ Launch of uwsgi is executed using a command ``uwsgi file.ini``, and all variable
     command = /path/to/uwsgi /path/to/file.ini
     
 supervisor + uwsgi
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 To launch supervisor + uWSGI without web server configuration file should look like:
     
@@ -187,7 +187,7 @@ Configuration file for supervisor should look like:
 
 
 apache + mod\_uwsgi
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 If module ``mod_uwsgi`` is available you can enable uwsgi with the following configuration:
 
@@ -208,7 +208,7 @@ In this case a file system socket is used for communication between uwsgi and ap
 Unfortunatelly when using this module not all functions are available, for example gzip compression at the apache side will be unavailable. Moreover this can cause unexpected consequences.
 
 apache + mod\_proxy\_uwsgi
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If module ``mod_proxy_uwsgi`` is available you can enable uwsgi with the following configuration:
 
@@ -226,7 +226,7 @@ You need to use the port because ``mod_proxy`` in apache doesn't support file sy
     protocol = uwsgi
     
 nginx + uwsgi
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 To launch using nginx you need to add the following strings to Nginx configuration file.
 
@@ -293,7 +293,7 @@ To work with Ajax requests you should perform CORS setiings:
 
 
 nginx + uwsgi (option 2)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a file with configuration:  
 

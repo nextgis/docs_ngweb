@@ -6,7 +6,7 @@ Layer settings
 ================================
 
 Introduction
----------
+-------------
 
 Layers settings become available after a layer creation.
 
@@ -15,7 +15,7 @@ To edit a layer you need to open its layer properties page and select :guilabel:
 .. _ngw_attributes:
 
 Layer attributes
----------------
+-----------------
 
 In addition to initial parameters that were entered during layer creation there is an :guilabel:`Attributes` tab (see  :numref:`admin_layers_attr`)
 

@@ -36,7 +36,7 @@ NextGIS Web - is an open source software (license GPL v2+, see :ref:`ngw_gplv2`)
 System requirements listed in section ":ref:`ngw_sys_req`".
 
 Integration with other NextGIS software
----------------------------------------
+----------------------------------------
 
 .. only:: html
 

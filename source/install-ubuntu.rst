@@ -16,7 +16,7 @@ Python 2.7 is required to perform an installation.
    To add a new locale use a command: locale-gen ru_RU.utf8
 
 Preparation of the database
-----------------------
+--------------------------------
 
 Add the ubuntugis repository (see  `supported distributions <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
 
@@ -122,7 +122,7 @@ database to store data, you may enable a network access to it
     $ sudo service postgresql restart
 
 Preparation of basic software
-----------------------
+------------------------------
 
 Install pip:
 
@@ -167,7 +167,7 @@ If you enebled two-factor authentication you need to:
 .. _ngw_install_prepare:
 
 Prepare to NextGIS Web installation
-----------------------------------
+--------------------------------------
 
 Create required directories:
 
@@ -191,7 +191,7 @@ Create a virtual environment in a folder ``~/ngw/env`` (folder will be created a
 .. _ngw_install:
 
 NextGIS Web installation
----------------------
+-------------------------
 
 Install NextGIS Web package in development mode. All required packages will be installed:
 
@@ -428,7 +428,7 @@ If it is supposed that a server will be used in Intranet only then you need to d
 /nextgisweb/nextgisweb/webmap/basemaps.json.
 
 Internationalization and Localization
----------------------------------
+---------------------------------------
 
 As compiled files with translated interface are not stored inside a version control system you need to compile them for each package, or the administrator interface will be in English:
 
@@ -446,7 +446,7 @@ To install localization by default for Russian language you need to add a string
 So the interface will be Russian during the first launch.   
 
 Database initialization
-----------------
+------------------------
 
 If you plan to use an interface language other than English by default make sure you have compiled translation files and that a ``locale.default`` setting of a ``core`` component in configuration file``config.ini`` is set to required language before initialization of database, in other case some strings will remain English even after a forced change of language in administrator interface.
 
@@ -542,7 +542,7 @@ transfer sqlite. Execute required command from the installation manual.
 
 
 Software update
--------------
+-----------------
 
 To update NextGIS Web software execute a command:
 

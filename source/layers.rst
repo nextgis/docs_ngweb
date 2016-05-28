@@ -338,7 +338,7 @@ Version 1.1.1.
 .. _ngw_create_wms_service:
 
 WMS service
-----------
+------------
 
 NextGIS Web software could perform as WMS server. This protocol is used to provide images for requested extent. To deploy a WMS service you need to add a resource. 
 
@@ -498,7 +498,7 @@ In create resource dialog enter:
 and then click :guilabel:`Create`.
 
 Typical structure
------------------
+------------------
 
 With NextGIS Web application experience we recommend the following typical structure for organizing resources.
 

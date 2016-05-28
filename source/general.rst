@@ -60,7 +60,7 @@ Access management
 * Setting access rights for resources and resourse groups.
 
 Rendering and symbology 
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Symbology import from QGIS with automated conversion "for renderer". 
 * Pluggable renderers: :term:`MapServer`, :term:`Mapnik`. 

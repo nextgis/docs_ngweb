@@ -16,7 +16,7 @@ Web map display layers. User can turn them on and off. You can set the order for
 .. _ngw_map_create:
     
 Creation of web map
---------------------
+---------------------
 
 To add a web map navigate to a resource group where you want to create a map. In Actions pane select :menuselection:`Create resource --> Web map`. Create resource dialog for a web map is presented on :numref:`admin_webmap_name`. 
 

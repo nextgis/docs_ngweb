@@ -6,7 +6,7 @@ Extensions
 ================================
 
 General Information
------------------
+--------------------
 
 The following extensions are available to increase the functionality of the software:
 
