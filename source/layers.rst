@@ -297,7 +297,7 @@ Then perform the following steps:
 
 Parameters to add a WMS layer for Public cadastral map by Rosreestr:
 
-URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer?request=GetCapabilities&service=WMS
+URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
 Version 1.1.1. 
 
