@@ -33,7 +33,14 @@ NextGIS Web has the following features:
 
 NextGIS Web - is an open source software (license GPL v2+, see :ref:`ngw_gplv2`).
 
-System requirements listed in section ":ref:`ngw_sys_req`".
+.. only:: html
+
+   System requirements listed in section ":ref:`ngw_sys_req`".
+   
+.. only:: latex
+   
+   System requirements listed in `section http://docs.nextgis.com/docs_ngweb/source/general.html#recommended-hardware`_.
+
 
 Integration with other NextGIS software
 ----------------------------------------
@@ -46,7 +53,7 @@ Integration with other NextGIS software
 .. only:: latex
 
    To manage :term:`geodata <geodata>` in NextGIS Web you can use 
-   desktop application `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
+   desktop application `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html>`_. 
 
 This software simplifies batch processing of data in NextGIS Web.
 
@@ -57,7 +64,7 @@ This software simplifies batch processing of data in NextGIS Web.
 
 .. only:: latex
 
-   Mobile application `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro>`_ allow to upload 
+   Mobile application `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html>`_ allow to upload 
    geodata collected in the field directly to web gis in online or offline mode. 
    
    

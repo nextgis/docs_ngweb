@@ -47,7 +47,6 @@ Glossary
      with their non-spatial attributes using a JavaScript Object notation.
      
    GPS
-   Global positioning system
       Global positioning system
 
    GLONASS
@@ -68,7 +67,6 @@ Glossary
      indexes R-Tree/GiST and geodata processing functions.
      
    ESRI Shape
-   Shapefile
    Shapefile
      Popular format for geodata files. Is developed and  
      supported by Esri company for interoperability between products of 
