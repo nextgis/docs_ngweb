@@ -164,7 +164,7 @@ If you enebled two-factor authentication you need to:
   and use it instead of password
 
 
-.. _nextgisweb-install-prepare:
+.. _ngw_install_prepare:
 
 Prepare to NextGIS Web installation
 ----------------------------------
@@ -188,7 +188,7 @@ Create a virtual environment in a folder ``~/ngw/env`` (folder will be created a
 
     $ virtualenv --no-site-packages env
 
-.. _nextgisweb-install:
+.. _ngw_install:
 
 NextGIS Web installation
 ---------------------
@@ -265,7 +265,7 @@ Set the version of MapScript to be used:
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 
-.. _nextgisweb-mapserver-install:
+.. _ngw_mapserver_install:
 
 Install NextGIS Web MapServer
 -------------------------------

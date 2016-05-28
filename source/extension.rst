@@ -1,6 +1,6 @@
 .. sectionauthor:: Natalia Baryshnikova <nshelekhova@gmail.com>
 
-.. _ngweb_extension:
+.. _ngw_extension:
 
 Extensions
 ================================

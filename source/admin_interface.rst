@@ -1,6 +1,6 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _admin_interface:
+.. _ngw_admin_interface:
 
 Administrator interface
 ================================
@@ -100,7 +100,7 @@ Control panel allows to execute the following actions:
 * Grant permissions to resource groups and web maps.
 
 For more information about creation of user groups and users and granting 
-permissions see topic :ref:`admin_tasks`.
+permissions see topic :ref:`ngw_admin_tasks`.
 
 Resource view
 ------------------

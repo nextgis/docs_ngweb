@@ -16,11 +16,11 @@ Glossary
       transfer and representation of information. [GOST 7.0-99, arcticle 3.1.30]
       2. A set of information contained in databases and tools and technologies for information processing 
       . [Federal law  "About information, 
-      information technnologies and information security" 27 July 2006 N 149-ФЗ]
+      information technnologies and information security" 27 July 2006 N 149-FL]
    
    geographical information system
       Information system that operates with geographical data (geodata). 
-      [GOST Р 52438-2005 "Geographical information systems. Terms and definitions"]
+      [GOST R 52438-2005 "Geographical information systems. Terms and definitions"]
    
    geodata
    geospatial data
@@ -79,7 +79,7 @@ Glossary
      matadata about georeferencing. Uses TIFF 6.0 specification, and 
      adds some types of geotags that defines a type 
      of cartographic projection, geographical coordinate system, geoid,  
-     datum and all other information required for preсise 
+     datum and all other information required for precise 
      spatial orientation of satellite image.
      
    WMS

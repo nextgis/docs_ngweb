@@ -29,7 +29,7 @@ To add a web map navigate to a resource group where you want to create a map. In
 
 
 Enter web map display name that would be visible in administrator interface and in map layer tree.
-Fields :guilabel:`Keyname` и :guilabel:`Description` are non-required.
+Fields :guilabel:`Keyname` and :guilabel:`Description` are non-required.
 
 Switch from :guilabel:`Resource` tab to :guilabel:`Extent and bookmarks`. 
 A tab for Extent and bookmarks will open:numref:`admin_webmap_bbox`.
@@ -46,11 +46,15 @@ Setup an extent.
 .. note:: 
    Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
 
-You can select a vector layer for bookmarks. If layer is set the client will have a menu with bookmarks with names defined by :guilabel:`Label attribute`. 
+You can select a vector layer for bookmarks. If layer is set the client will 
+have a menu with bookmarks with names defined by :guilabel:`Label attribute`. 
 
-Navigate to :guilabel:`Layers` tab. This tab is used for adding layer joining them to groups. These actions could be performed using corresponding buttons :guilabel:`Add layer` и :guilabel:`Add group`.
+Navigate to :guilabel:`Layers` tab. This tab is used for adding layer joining 
+them to groups. These actions could be performed using corresponding buttons 
+:guilabel:`Add layer` and :guilabel:`Add group`.
 
-When a layer is added you set its style. Settings for layers on web map are presented on :numref:`admin_webmap_layers`..
+When a layer is added you set its style. Settings for layers on web map are 
+presented on :numref:`admin_webmap_layers`..
 
 
 .. figure:: _static/admin_webmap_layers.png

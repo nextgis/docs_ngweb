@@ -1,12 +1,12 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.ru>
 
-.. _admin_tasks:
+.. _ngw_admin_tasks:
 
 Administrator tasks
 ================================
 
-.. _create_group:
+.. _ngw_create_group:
 
 Creation of a new user group
 ----------------------------
@@ -44,7 +44,7 @@ Enter the following information:
 * Password
 
 Then select groups user belongs to. The list of available groups is provided below user info. If the required group is absent you need to create a new one 
-(see  :ref:`create_group`).
+(see  :ref:`ngw_create_group`).
 
 Then click a button :guilabel:`Create`.
 
@@ -56,15 +56,15 @@ Then click a button :guilabel:`Create`.
    Create new user dialog.
 
 
-.. _access_rights:
+.. _ngw_access_rights:
     
 Setting permissions
 ----------------------
 
 NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
 
-Permissions could be set during resource creation (see. :ref:`create_layers`), 
-or using resource update (see. :ref:`change_layers`). To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`).
+Permissions could be set during resource creation (see. :ref:`ngw_create_layers`), 
+or using resource update (see. :ref:`ngw_change_layers`). To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`).
 
 .. figure:: _static/access_rights_tab.png
    :name: ngweb_access_rights_tab
@@ -279,7 +279,7 @@ Create a separate group of users ("Openstreetmap users" in this example) and a s
 
 
 
-.. _change_password:
+.. _ngw_change_password:
 
 Update of user password
 -----------------------------

@@ -1,6 +1,6 @@
 .. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.com>
 
-.. _sysadmin_tasks:
+.. _ngw_sysadmin_tasks:
     
 System administration
 ===========================

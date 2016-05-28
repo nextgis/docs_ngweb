@@ -17,7 +17,10 @@ Firstly you provide layer parameters and then add a style.
 Raster layer
 --------------
 
-To add a raster layer navigate to a group where you want to create it. In Actions pane click :menuselection:`Create resource --> Raster layer`. Create resource dialog for raster layer layer will open and look like :numref:`admin_layers_create_raster_layer_resourse_description`. 
+To add a raster layer navigate to a group where you want to create it. In 
+Actions pane click :menuselection:`Create resource --> Raster layer`. Create 
+resource dialog for raster layer layer will open and look like 
+:numref:`admin_layers_create_raster_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
    :name: admin_layers_create_raster_layer_resourse_description
@@ -27,8 +30,9 @@ To add a raster layer navigate to a group where you want to create it. In Action
    Create resource dialog for raster layer.
 
 
-Enter display name that will be visible in administrator interface and in map layer tree.
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.
+Enter display name that will be visible in administrator interface and in map 
+layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not 
+required.
 
 Switch from :guilabel:`Resource` tab to :guilabel:`Raster layer` tab. 
 Raster layer tab is presented on :numref:`admin_layers_create_raster_layer_upload`.
@@ -40,20 +44,24 @@ Raster layer tab is presented on :numref:`admin_layers_create_raster_layer_uploa
 
    Raster layer tab with button for upload of raster file.
 
-Then you need to specify a coordinate system the raster will be reprojected to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ).
+Then you need to specify a coordinate system the raster will be reprojected to. 
+By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ).
 Then you need to specify a file. 
 
 .. note:: 
    The file should be in GeoTIFF format with 3 or 4 bands (RGB or RGBA). 
  
-After a file is successfully uploaded you need to create a style (if it was not create automatically). 
-When creating a map (for more information see  subsection. :ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and its style.
+After a file is successfully uploaded you need to create a style (if it was not 
+create automatically). When creating a map (for more information see  subsection. 
+:ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and 
+its style.
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Most of utilities does not create alpha channel and only add a NoData value. 
- To transform NoData value to alpha channel use a command line utility :program:`gdalwarp`. Here is an example of this command.
+To transform NoData value to alpha channel use a command line utility 
+:program:`gdalwarp`. Here is an example of this command.
 
 .. code:: shell
 
@@ -70,10 +78,11 @@ Most of utilities does not create alpha channel and only add a NoData value.
 Vector layer from file
 -----------------------
 To add a vector layer navigate to a group where you want to create it. 
-In Actions pane in :guilabel:`Create resource` section select guilabel:`Vector layer` action. 
-A dialog for creation of vector layer will open. Enter display name that will be visible in administrator interface and in map layer tree. 
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required. 
-Switch from :guilabel:`Resource` tab to :guilabel:`Vector layer tab`. 
+In Actions pane in :guilabel:`Create resource` section select 
+:guilabel:`Vector layer` action. A dialog for creation of vector layer will open. 
+Enter display name that will be visible in administrator interface and in map 
+layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not 
+required. Switch from :guilabel:`Resource` tab to :guilabel:`Vector layer tab`. 
 Vector layer tab is presented on :numref:`admin_layers_create_vector_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
@@ -83,26 +92,32 @@ Vector layer tab is presented on :numref:`admin_layers_create_vector_layer_resou
 
    Create resource dialog for vector layer.
 
-Then you need to specify a coordinate system the vector data will be reprojected to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ). 
+Then you need to specify a coordinate system the vector data will be reprojected 
+to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ). 
 
-Then you need to specify source file (click button Select, see  :numref:`admin_layers_create_vector_layer_upload`).  
+Then you need to specify source file (click button Select, see 
+:numref:`admin_layers_create_vector_layer_upload`).  
 Source files could be in the following formats: 
 
 * ESRI Shapefile;
 * GeoJSON.
 
 .. note:: 
-   In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) should be  
-   compressed to a zip-archive. 
-   Shapefile should have UTF-8 or Windows-1251 encoding.
+   In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
+   should be compressed to a zip-archive. Shapefile should have UTF-8 or 
+   Windows-1251 encoding.
   
 .. note:: 
-   If you prepare data for upload using QGIS or GDAL you should not use EPSG:3857. GDAL saves files with incorrect coordinate system definition so data will have an offset after upload. Use EPSG:4326 or other coordinate systems.
+   If you prepare data for upload using QGIS or GDAL you should not use EPSG:3857. 
+   GDAL saves files with incorrect coordinate system definition so data will have 
+   an offset after upload. Use EPSG:4326 or other coordinate systems.
    
-Output file should not have invalid geometries (QGIS tool should output an empty list of invalid geometries), dates should not have NULL values, there should not be attribute names: *id (ID), type(TYPE), source(SOURCE)*.
+Output file should not have invalid geometries (QGIS tool should output an empty 
+list of invalid geometries), dates should not have NULL values, there should not 
+be attribute names: *id (ID), type(TYPE), source(SOURCE)*.
    
-Coordinate system should be recognized by GDAL (output of gdalinfo should contain coordinate system definition). 
-
+Coordinate system should be recognized by GDAL (output of gdalinfo should contain 
+coordinate system definition). 
 
 .. figure:: _static/admin_layers_create_vector_layer_upload.png
    :name: admin_layers_create_vector_layer_upload
@@ -112,12 +127,14 @@ Coordinate system should be recognized by GDAL (output of gdalinfo should contai
    Vector layer tab with button for upload of vector file.
 
 Also you need to specify encoding that is used for attributes.
-If encoding is not set ESRI Shapefile should have a file with encoding description (cpg extension). In case of GeoJSON encoding is always UTF-8.
+If encoding is not set ESRI Shapefile should have a file with encoding description 
+(cpg extension). In case of GeoJSON encoding is always UTF-8.
 
 After a file is successfully uploaded you need to create a style. 
 For more information about creation of styles see subsection  :ref:`ngw_style_create`.
 
-When creating a map (for more information see  subsection. :ref:`ngw_map_create`) you can add a vector layer to a map by selecting its style.
+When creating a map (for more information see  subsection. :ref:`ngw_map_create`) 
+you can add a vector layer to a map by selecting its style.
 
 .. note:: 
    NextGIS Manager simplifies this process. Software has an option to 
@@ -129,8 +146,11 @@ When creating a map (for more information see  subsection. :ref:`ngw_map_create`
 Vector layer from PostGIS
 -------------------------
 
-To add a vector layer from database with PostGIS extension you need to create a resource PostGIS connection. It is enough to create one connection. 
-In Actions pane select :menuselection:`Create resource --> PostGIS connection`. Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`. 
+To add a vector layer from database with PostGIS extension you need to create a
+resource PostGIS connection. It is enough to create one connection. 
+In Actions pane select :menuselection:`Create resource --> PostGIS connection`. 
+Create PostGIS connection dialog is shown on 
+:numref:`admin_layers_create_postgis_connection_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_description.png
    :name: admin_layers_create_postgis_connection_resourse_description
@@ -140,13 +160,13 @@ In Actions pane select :menuselection:`Create resource --> PostGIS connection`. 
 
    Create resource dialog for PostGIS connection.
 
-Enter display name that will be visible in administrator interface. Do not confuse this name with a name of layers in a database. 
+Enter display name that will be visible in administrator interface. Do not 
+confuse this name with a name of layers in a database. 
 
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.  
+Fields :guilabel:`Keyname` and :guilabel:`Description` are not required.  
 
 Switch from :guilabel:`Resource` to :guilabel:`PostGIS connection` tab. 
 PostGIS connection tab is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
-
 
 Then enter PostGIS database connection parameters to connect data for display.  
 
@@ -158,7 +178,8 @@ Then enter PostGIS database connection parameters to connect data for display.
    PostGIS connection tab of Create resource dialog.
 
 
-Then you can add single PostGIS layers. Navigate to a group where you want create layers. In Actions pane select :menuselection:`Create resource --> PostGIS layer`. 
+Then you can add single PostGIS layers. Navigate to a group where you want create 
+layers. In Actions pane select :menuselection:`Create resource --> PostGIS layer`. 
 Create resource for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
@@ -168,10 +189,11 @@ Create resource for PostGIS layer is presented on :numref:`admin_layers_create_p
 
    Create resource dialog for PostGIS layer.
 
-Enter display name that will be visible in administrator interface and in map layer tree. 
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.  
+Enter display name that will be visible in administrator interface and in map 
+layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not required.  
 Switch from :guilabel:`Resource` tab to :guilabel:`PostGIS layer` tab. 
-Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_tablename`. 
+Create resource dialog for PostGIS layer is presented on 
+:numref:`admin_layers_create_postgis_layer_tablename`. 
 
 .. figure:: _static/admin_layers_create_postgis_layer_tablename.png
    :name: admin_layers_create_postgis_layer_tablename
@@ -184,15 +206,23 @@ Then perform the following steps:
 
 #. From a dropdown list select a database connection (creation of a connection is described above).
 #. Enter a schema of a database where layer data is stored. 
-	Single database can store multiple schemas. Each schema contains tables and views. If there is only one schema its called public. For more information see :program:`PostgreSQL DBMS` manual.
+   Single database can store multiple schemas. Each schema contains tables and views. If there is only one schema its called public. For more information see :program:`PostgreSQL DBMS` manual.
 #. Enter Table name (PostGIS layer). 
-	You need to know names of tables and columns in your database. 
-	Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS Manager` or :program:`PgAdmin` software.
+   You need to know names of tables and columns in your database. 
+   Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS Manager` or :program:`PgAdmin` software.
 #. Enter ID column. 
-	Ususally when data is loaded to PostGIS using :program: NextGIS Manager software an ogc_fid column is created. If data was loaded in another way the name of column may be different.
-	An ID column should follow rules for data type: the value type should be a number (**numeric**) and it should be a primary key.
-#. Enter geometry column name (if data was loaded to PostGIS using  :program:`NextGIS Manager` software usually a geometry column called wkb_geometry is created. If data is loaded in another way the name of column may be different).
-#. Parameters :guilabel:`Geometry type`, :guilabel:`Coordinate system` и :guilabel:`Attribute definitions` are not required so you can use default values.
+   Ususally when data is loaded to PostGIS using :program: NextGIS Manager 
+   software an ogc_fid column is created. If data was loaded in another way the 
+   name of column may be different.
+   An ID column should follow rules for data type: the value type should be a 
+   number (**numeric**) and it should be a primary key.
+#. Enter geometry column name (if data was loaded to PostGIS using  
+   :program:`NextGIS Manager` software usually a geometry column called 
+   wkb_geometry is created. If data is loaded in another way the name of column 
+   may be different).
+#. Parameters :guilabel:`Geometry type`, :guilabel:`Coordinate system` and
+   :guilabel:`Attribute definitions` are not required so you can use default 
+   values.
 
 
 NextGIS Web software supports adding of tables with point, line and polygon geometries stored in a single geometry column. 
@@ -203,14 +233,17 @@ After layer is created you need to set a label attribute to display labels. Navi
 If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select :menuselection:`Update --> PostGIS layer --> Attribute definitions --> Reload` and click :guilabel:`Save`.
 
 Create layers with conditions
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In :program:`NextGIS Web` you can not define queries using a WHERE SQL expression. 
-This provides additional security (prevention of SQL Injection attack). To provide query capability you need to create views with appropriate queries.
+This provides additional security (prevention of SQL Injection attack). To 
+provide query capability you need to create views with appropriate queries.
 
 To do this connect to PostgreSQL/PostGIS database using :program:`pgAdminIII`, 
-then navigate to data schema where you want to create a view, right click tree item :guilabel:`Views` and select :guilabel:`New view` (см. :numref:`pgadmin3`. number  1). Also you can right click on schema name and select :menuselection:`New object --> New view`.
-Enter the following information to create new view dialog:
+then navigate to data schema where you want to create a view, right click tree 
+item :guilabel:`Views` and select :guilabel:`New view` (see. :numref:`pgadmin3`. 
+number  1). Also you can right click on schema name and select :menuselection:`New 
+object --> New view`. Enter the following information to create new view dialog:
 
 #. View name («Properties» tab).
 #. Data schema where to create a view («Properties» tab).
@@ -232,7 +265,7 @@ After that you can display a view to check if query is correct without closing :
 .. _ngw_create_wms_layer:
 
 WMS layer
---------
+-----------
 
 NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check for this coordinate system presence by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NGW requests data in 3857 and server does not support for that coordinate system.
 
@@ -247,8 +280,9 @@ To add WMS layer you need to create a resource called WMS connection. You may cr
    Create resource dialog for WMS connection.
 
 
-Enter display name that will be visible in administrator interface. Do not confuse this name with a name of layers in a database. 
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required.
+Enter display name that will be visible in administrator interface. Do not 
+confuse this name with a name of layers in a database. Fields :guilabel:`Keyname` 
+and :guilabel:`Description` are not required.
  
 Switch from :guilabel:`Resource` tab to :guilabel:`WMS connection` tab. 
 WMS connection tab is presented on :numref:`admin_layers_create_wms_connection_url`.
@@ -273,7 +307,7 @@ Navigate to a group you want to create WMS layers in. In the Actions pane select
 
 
 Enter display name that will be visible in administrator interface and in map layer tree. 
-Fields :guilabel:`Keyname` и :guilabel:`Description` are not required. 
+Fields :guilabel:`Keyname` and :guilabel:`Description` are not required. 
 Switch from :guilabel:`Resource` tab to :guilabel:`WMS layer` tab. 
 WMS layer tab of create resource dialog is presented on :numref:`admin_layers_create_wms_layer_parameters`.
 
@@ -411,7 +445,7 @@ You need to enter these parameters to ServerUrl string in example below. The res
 .. _ngw_wfs_service:
 
 WFS service
-----------
+------------
 
 Setup of WFS layer is performed the same way as for WMS service but you add a layer instead of a style.
 
@@ -438,7 +472,7 @@ Then you need to set access permissions for WFS service. See  section :ref:`ngw_
 .. _ngw_resourses_group:
 
 Creation of a resource group
-------------------------
+------------------------------
 
 Resources could be joined to groups. For example you can join base layers to one group, satellite imagery to another group and thematic data to one more group etc.
 

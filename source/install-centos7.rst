@@ -15,7 +15,7 @@ Python 2.7 is required to perform an installation.
    To add a new locale use a command: locale-gen ru_RU.utf8
 
 Preparation of the database
-----------------------
+----------------------------
 
 PostGIS is absent in the official repository of CentOS 7 so you need to add third 
 party repository. To do this go to `address <http://yum.postgresql.org/repopackages.php>`_,
@@ -114,7 +114,7 @@ Check if PostGIS functions appeared in a database:
     $ psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
 Preparation of basic software
-----------------------
+--------------------------------
 
 Install pip:
 
@@ -136,12 +136,12 @@ Install additional tools:
     geos-devel proj-epsg zlib-devel libjpeg-turbo-devel dejavu-sans-fonts
 
 Prepare to NextGIS Web installation
-----------------------------------
+------------------------------------
 
-See  :ref:`nextgisweb-install-prepare`.
+See  :ref:`ngw_install_prepare`.
 
 NextGIS Web installation
----------------------
+-------------------------
 
 Set environment variable ``PATH``:
 
@@ -164,8 +164,8 @@ Install MapServer
 -------------------
 
 MapServer is absent from repository of CentOS 7 so we built required packages:
-`mapserver <http://nextgis.ru/programs/centos7/mapserver-7.0.0-1.el7.centos.x86_64.rpm>`_ и
-`mapserver-python <http://nextgis.ru/programs/centos7/mapserver-python-7.0.0-1.el7.centos.x86_64.rpm>`_.
+`mapserver <http://nextgis.ru/programs/centos7/mapserver-7.0.0-1.el7.centos.x86_64.rpm>`_ 
+and `mapserver-python <http://nextgis.ru/programs/centos7/mapserver-python-7.0.0-1.el7.centos.x86_64.rpm>`_.
 
 Download them and install:
 
@@ -200,5 +200,5 @@ Set the version of MapScript to be used:
     'Version: %s' % mapscript.MS_VERSION"` \
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
-For next steps see instructions if section :ref:`nextgisweb-mapserver-install` 
+For next steps see instructions if section :ref:`ngw_mapserver_install` 
 and further.

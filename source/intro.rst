@@ -1,6 +1,6 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _intro:
+.. _ngw_intro:
 
 Introduction
 ============

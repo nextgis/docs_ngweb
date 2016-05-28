@@ -1,6 +1,6 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 
-.. _launch:
+.. _ngw_launch:
     
 Launch
 ======
@@ -26,7 +26,7 @@ and add the following string to the file:
 
     /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
 
-In production you should use :ref:`uWSGI <uwsgi>` instead of pserve.
+In production you should use :ref:`uWSGI <ngw_uwsgi>` instead of pserve.
 
 To test if application is running go to the following address in the browser:
 
@@ -48,7 +48,7 @@ Default login and password:
 * Password: admin
 
 
-.. _uwsgi:
+.. _ngw_uwsgi:
 
 Launch using uWSGI
 ------------------

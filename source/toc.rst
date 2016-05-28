@@ -4,7 +4,7 @@
 .. NextGIS Web TOC
 
 NextGIS Web documentation
-========================
+============================
 
 Contents:
 

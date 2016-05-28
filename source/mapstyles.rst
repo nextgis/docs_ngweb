@@ -173,8 +173,6 @@ Labels
 Some other useful tags
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: узнать, реализованы ли они
-
 * MAXGEOWIDTH - Maximum width, in the map’s geographic units, at which this LAYER is drawn. If MAXSCALEDENOM is also specified then MAXSCALEDENOM will be used instead.
 * MINGEOWIDTH - Minimum width, in the map’s geographic units, at which this LAYER is drawn. If MINSCALEDENOM is also specified then MINSCALEDENOM will be used instead.
 * OFFSITE - Sets the color index to treat as transparent for raster layers.
@@ -469,13 +467,13 @@ OSM settlement-point
 .. code-block:: xml
 
 	<!-- Style with different settings for different scales-->
-	<!-- Версия 2015-07-24 -->
+	<!-- Version 2015-07-24 -->
 	<map>
 	  <layer>
 	    <labelitem>NAME</labelitem>
 	    <classitem>PLACE</classitem>
 	    <class>
-	      <expression>"city"</expression> <!-- Большой город -->
+	      <expression>"city"</expression> <!-- City -->
 	      <style>
 		<color red="255" green="170" blue="0"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -501,7 +499,7 @@ OSM settlement-point
 	      </label>
 	    </class>
 	    <class>
-	      <expression>"town"</expression> <!-- Small or medium city -->
+	      <expression>"town"</expression> <!-- Small city or town -->
 	      <style>
 		<color red="255" green="255" blue="255"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -1209,7 +1207,7 @@ OSM water-line
 .. code-block:: xml
 
 	<!-- water-line style with different display for different scales-->
-	<!-- Версия 2015-07-24 -->
+	<!-- Version 2015-07-24 -->
 	<map>
 	  <layer>
 	    <classitem>Waterway</classitem>
@@ -1224,7 +1222,7 @@ OSM water-line
 		<!-- Unprocessed attributes: width_unit, offset_unit, customdash_unit -->
 	      </style>
 	      <label>
-		<type>truetype</type> <!-- Подпись -->
+		<type>truetype</type> <!-- Label -->
 		<font>bold</font>
 		<size>7</size>
 		<color blue="255" green="255" red="255"/>
@@ -1239,10 +1237,10 @@ OSM water-line
 	    
 	      <class>
 	      <expression>"canal"</expression>  
-	      <style><!-- вертикальные линии -->
+	      <style><!-- vertical lines -->
 		<angle>auto</angle>
 		<gap>-8.50393700787</gap>
-		<!-- Остались необработанные атрибуты: interval_unit, placement, 
+		<!-- unparsed attributes: interval_unit, placement, 
 		offset_unit, offset -->
 		<color red="102" green="153" blue="204"/>
 		<outlinecolor red="0" green="0" blue="0"/>
@@ -1260,7 +1258,7 @@ OSM water-line
 		customdash_unit -->
 	      </style>
 	      <label>
-		<type>truetype</type> <!-- Подпись -->
+		<type>truetype</type> <!-- Label -->
 		<font>bold</font>
 		<size>7</size>
 		<color blue="255" green="255" red="255"/>
