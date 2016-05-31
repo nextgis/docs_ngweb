@@ -469,7 +469,7 @@ By default the value is 1000. If this parameter is empty the limit will be disab
 After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example NextGIS QGIS. 
 Then you need to set access permissions for WFS service. See  section :ref:`ngw_access_rights`.
 
-.. _ngw_resourses_group:
+.. _ngw_resources_group:
 
 Creation of a resource group
 ------------------------------
