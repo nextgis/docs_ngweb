@@ -115,6 +115,8 @@ Source files could be in the following formats:
 Output file should not have invalid geometries (QGIS tool should output an empty 
 list of invalid geometries), dates should not have NULL values, there should not 
 be attribute names: *id (ID), type(TYPE), source(SOURCE)*.
+
+Special restriction for WFS protocol: attribute names should begin only with letter or (_), next allowed sybmols in name is letters, digits, (-), (_), (.).
    
 Coordinate system should be recognized by GDAL (output of gdalinfo should contain 
 coordinate system definition). 
