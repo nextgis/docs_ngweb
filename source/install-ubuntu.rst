@@ -23,7 +23,7 @@
 
 .. code:: bash
 
-   apt-get update
+   sudo apt-get update
    sudo apt-get install software-properties-common python-software-properties
 
 **Для ubuntu server 14.04**
@@ -138,7 +138,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-    sudo apt-get install python-mapscript python-dev git libgdal-dev python-dev \
+    sudo apt-get install git python-mapscript python-dev git libgdal-dev python-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
 
 В случае доработки NextGIS Web может понадобится регистрация ключей. 
