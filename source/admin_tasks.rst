@@ -13,7 +13,7 @@
 
 Диалог создания новой группы представлен на :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
 Для открытия этого окна необходимо открыть панель управления 
-(см. :numref:`admin_control_panel`) и выбрать там: 
+(см. :numref:`ngweb_admin_control_panel`) и выбрать там: 
 :menuselection:`Группы пользователей --> Создать`.
 
 .. figure:: _static/admin_controlpanel_usergroup_create.png
@@ -33,9 +33,9 @@
 Создание пользователя
 ---------------------
 
-Диалог создания нового пользователя представлен на :numref:`admin_controlpanel_user_create`. 
+Диалог создания нового пользователя представлен на :numref:`ngweb_admin_controlpanel_user_create`. 
 Для открытия этого окна необходимо открыть панель управления 
-(см. :numref:`admin_control_panel`) и выбрать там: 
+(см. :numref:`ngweb_admin_control_panel`) и выбрать там: 
 :menuselection:`Пользователи --> Создать`.
 
 В диалоге необходимо указать:
@@ -51,7 +51,7 @@
 Далее необходимо нажать кнопку :guilabel:`Создать`.
 
 .. figure:: _static/admin_controlpanel_user_create.png
-   :name: admin_controlpanel_user_create
+   :name: ngweb_admin_controlpanel_user_create
    :align: center
    :width: 16cm
 
