@@ -589,7 +589,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-	sudo pip install -e ~/ngw/nextgisweb 
+	env/bin/pip install -e ~/ngw/nextgisweb 
 	
 Обновление структуры БД:	
 
