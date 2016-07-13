@@ -555,7 +555,7 @@ If some dependences were added to setup.py you need to execute:
 
 .. code:: bash
 
-	$ sudo pip install -e ~/ngw/nextgisweb 
+	$ env/bin/pip install -e ~/ngw/nextgisweb
 	
 If a database structure has changed you need to execute:	
 
