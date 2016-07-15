@@ -24,10 +24,10 @@
 Добавление веб-карты
 --------------------
 
-Для добавления веб-карты перейдите в группу, где необходимо её создать. В блоке операций выберите :menuselection:`Добавить --> Веб-карта`. Откроется окно, представленное на :numref:`admin_webmap_name`. 
+Для добавления веб-карты перейдите в группу, где необходимо её создать. В блоке операций выберите :menuselection:`Добавить --> Веб-карта`. Откроется окно, представленное на :numref:`ngweb_admin_webmap_name`. 
 
 .. figure:: _static/admin_webmap_name.png
-   :name: admin_webmap_name
+   :name: ngweb_admin_webmap_name
    :align: center
    :width: 16cm
 
@@ -39,10 +39,10 @@
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
 
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Охват и закладки`. 
-Откроется окно, представленное на :numref:`admin_webmap_bbox`.
+Откроется окно, представленное на :numref:`ngweb_admin_webmap_bbox`.
 
 .. figure:: _static/admin_webmap_bbox.png
-   :name: admin_webmap_bbox
+   :name: ngweb_admin_webmap_bbox
    :align: center
    :width: 16cm
 
@@ -60,11 +60,11 @@
 добавлять слои и объединять их в группы, для чего предусмотрены соответствующие 
 кнопки :guilabel:`Добавить слой` и :guilabel:`Добавить группу`.
 
-При добавлении слоя задаётся его стиль. Настройки слоев на веб-карте представлены на :numref:`admin_webmap_layers`..
+При добавлении слоя задаётся его стиль. Настройки слоев на веб-карте представлены на :numref:`ngweb_admin_webmap_layers`..
 
 
 .. figure:: _static/admin_webmap_layers.png
-   :name: admin_webmap_layers
+   :name: ngweb_admin_webmap_layers
    :align: center
    :width: 16cm
    

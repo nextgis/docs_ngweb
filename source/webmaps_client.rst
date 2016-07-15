@@ -6,11 +6,11 @@
 =============================
 
 В составе ПО NextGIS Web предусмотрено специальное клиентское веб приложение для 
-просмотра веб-карт (см :numref:`webmap_client`).
+просмотра веб-карт (см :numref:`ngweb_webmap_client`).
  
 
 .. figure:: _static/webmap_client.png
-   :name: webmap_client
+   :name: ngweb_webmap_client
    :align: center
    :width: 16cm
    

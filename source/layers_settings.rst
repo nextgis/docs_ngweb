@@ -18,11 +18,11 @@
 Атрибуты слоёв
 ---------------
 
-Дополнительно к параметрам, которые вводились при создании слоя, в окне присутствует вкладка :guilabel:`Атрибуты` (см. :numref:`admin_layers_attr`)
+Дополнительно к параметрам, которые вводились при создании слоя, в окне присутствует вкладка :guilabel:`Атрибуты` (см. :numref:`ngweb_admin_layers_attr`)
 
 
 .. figure:: _static/admin_layers_attr.png
-   :name: admin_layers_attr
+   :name: ngweb_admin_layers_attr
    :align: center
    :width: 16cm
 
@@ -38,7 +38,7 @@
 
 
 .. figure:: _static/webmap_identification.png
-   :name: webmap_identification
+   :name: ngweb_webmap_identification
    :align: center
    :width: 16cm
 
@@ -77,10 +77,10 @@
 
 Программное обеспечение NextGIS Web позволяет прикреплять к записям фотографии. 
 При этом, при идентификации объекта на карте во всплывающем окне будет отображены 
-как атрибуты идентифицируемого объекта, так и фотографии, которые были ему сопоставлены (см. :numref:`webmap_identification_photos`).
+как атрибуты идентифицируемого объекта, так и фотографии, которые были ему сопоставлены (см. :numref:`ngweb_webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos.png
-   :name: webmap_identification_photos
+   :name: ngweb_webmap_identification_photos
    :align: center
    :width: 16cm
 
@@ -97,45 +97,45 @@
 1. Щёлкните инструментом идентификации по объекту.
 2. Нажмите на кнопку редактирования.
 3. В окне редактирования откройте вкладку :guilabel:`Прикреплённые файлы` 
-   (см. :numref:`admin_object_edit_attr`).
+   (см. :numref:`ngweb_admin_object_edit_attr`).
 
 .. figure:: _static/admin_object_edit_attr.png
-   :name: admin_object_edit_attr
+   :name: ngweb_admin_object_edit_attr
    :align: center
    :width: 16cm
 
    Окно редактирования атрибутов.
 
-4. Загрузите фотографии. Поддерживаются форматы JPEG, PNG. GIF не поддерживается (см. :numref:`admin_object_edit_photos1`).
+4. Загрузите фотографии. Поддерживаются форматы JPEG, PNG. GIF не поддерживается (см. :numref:`ngweb_admin_object_edit_photos1`).
 
 .. figure:: _static/admin_object_edit_photos1.png
-   :name: admin_object_edit_photos1
+   :name: ngweb_admin_object_edit_photos1
    :align: center
    :width: 16cm
 
    Окно загрузки фотографий к объекту.
 
 5. Нажмите :guilabel:`Сохранить`, введите подписи к фотографиям, потом ещё раз 
-   нажмите :guilabel:`Сохранить`  (см. :numref:`admin_object_edit_photos2`).
+   нажмите :guilabel:`Сохранить`  (см. :numref:`ngweb_admin_object_edit_photos2`).
 
 .. figure:: _static/admin_object_edit_photos2.png
-   :name: admin_object_edit_photos2
+   :name: ngweb_admin_object_edit_photos2
    :align: center
    :width: 16cm
 
    Окно загрузки фотографий к объекту с введёными подписями.
 
 Теперь при просмотре карты в окне идентификации на вкладке :guilabel:`Прикреплённые файлы` 
-видны превью фотографий  (см. :numref:`webmap_identification_photos`).
+видны превью фотографий (см. :numref:`ngweb_webmap_identification_photos`).
 
 
 При нажатии на фотографию открывается лайтбокс (всплывающее окно в браузере, работающее 
 на JavaScript). Размер фотографии вписывается в окно. Фотографии подписываются, 
 пользователю можно переходить между фотографиями, используя клавиши вправо-влево 
-на клавиатуре (см. :numref:`webmap_identification_photo_lightbox`).
+на клавиатуре (см. :numref:`ngweb_webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox.png
-   :name: webmap_identification_photo_lightbox
+   :name: ngweb_webmap_identification_photo_lightbox
    :align: center
    :width: 16cm
 

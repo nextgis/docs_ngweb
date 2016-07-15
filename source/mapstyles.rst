@@ -146,7 +146,7 @@
 * <linecap>round</linecap> - рисование начала и конца линии
 
 .. figure:: _static/admin_mapstyles_linecap.png
-   :name: admin_mapstyles_linecap.png
+   :name: ngweb_admin_mapstyles_linecap.png
    :align: center
    :width: 10cm
 
@@ -631,7 +631,7 @@ OSM highway-lowzoom
 Дороги общего пользования (мелкие вынесены в отдельный стиль дальше, чтоб можно было отдельно включать-выключать). Цветовая схема - с openstreetmap.de
 
 .. figure:: _static/mastyles_osm-highway-lowzoom.png
-   :name: mastyles_osm-highway-lowzoom
+   :name: ngweb_mastyles_osm-highway-lowzoom
    :align: center
 
    Фрагмент цветовой схемы дорог общего пользования. 
@@ -976,7 +976,7 @@ OSM highway-maxzoom
 
 
 .. figure:: _static/mastyles_osm-highway-highzoom.png
-   :name: mastyles_osm-highway-highzoom
+   :name: ngweb_mastyles_osm-highway-highzoom
    :align: center
    :width: 10cm
 

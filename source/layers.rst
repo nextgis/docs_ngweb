@@ -21,10 +21,10 @@
 
 Для добавления растрового слоя перейдите в группу, где необходимо его создать. В 
 блоке операций выберите :menuselection:`Создать ресурс --> Растровый слой`. Откроется окно, 
-представленное на :numref:`admin_layers_create_raster_layer_resourse_description`. 
+представленное на :numref:`ngweb_admin_layers_create_raster_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
-   :name: admin_layers_create_raster_layer_resourse_description
+   :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 16cm
 
@@ -36,10 +36,10 @@
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
 
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Растровый слой`. 
-Откроется окно, представленное на :numref:`admin_layers_create_raster_layer_upload`.
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
 
 .. figure:: _static/admin_layers_create_raster_layer_upload.png
-   :name: admin_layers_create_raster_layer_upload
+   :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
    :width: 16cm
 
@@ -83,10 +83,10 @@
 в административном веб интерфейсе, а также в дереве слоев карты. 
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами. 
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Векторный слой`. 
-Откроется окно, представленное на :numref:`admin_layers_create_vector_layer_resourse_description`. 
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
-   :name: admin_layers_create_vector_layer_resourse_description
+   :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
    :width: 16cm
 
@@ -96,7 +96,7 @@
 данные (по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ). 
 
 Далее необходимо указать сам исходный файл (кнопка Выбрать,
-см. :numref:`admin_layers_create_vector_layer_upload`).  
+см. :numref:`ngweb_admin_layers_create_vector_layer_upload`).  
 В качестве исходного файла можно загружать следующие форматы: 
 
 * ESRI Shapefile;
@@ -120,7 +120,7 @@ Cистема координат геометрий должна распозн�
 
 
 .. figure:: _static/admin_layers_create_vector_layer_upload.png
-   :name: admin_layers_create_vector_layer_upload
+   :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 16cm
 
@@ -148,10 +148,10 @@ Cистема координат геометрий должна распозн�
 
 Для добавления векторного слоя из БД PostgreSQL с модулем расширения PostGIS необходимо 
 сначала создать ресурс — соединение PostGIS. Вам достаточно создать одно подключение. 
-В блоке операций выберите :menuselection:`Создать ресурс --> Cоединение с PostGIS`. Откроется окно, представленное на :numref:`admin_layers_create_postgis_connection_resourse_description`. 
+В блоке операций выберите :menuselection:`Создать ресурс --> Cоединение с PostGIS`. Откроется окно, представленное на :numref:`ngweb_admin_layers_create_postgis_connection_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_description.png
-   :name: admin_layers_create_postgis_connection_resourse_description
+   :name: ngweb_admin_layers_create_postgis_connection_resourse_description
    :align: center
    :alt: map to buried treasure
    :width: 16cm
@@ -164,14 +164,14 @@ Cистема координат геометрий должна распозн�
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.  
 
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cоединение с PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_connection_db_logins`. 
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_postgis_connection_db_logins`. 
 
 
 Далее необходимо ввести параметры подключения к базе данных PostGIS, из которой 
 будут отображаться ваши данные.  
 
 .. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
-   :name: admin_layers_create_postgis_connection_db_logins
+   :name: ngweb_admin_layers_create_postgis_connection_db_logins
    :align: center
    :width: 16cm
 
@@ -180,10 +180,10 @@ Cистема координат геометрий должна распозн�
 
 Далее можно приступать к добавлению отдельных слоёв PostGIS. Перейдите в группу, 
 где необходимо их создать. В блоке операций выберите :menuselection:`Создать ресурс --> Слой PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_layer_resourse_description`. 
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_postgis_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
-   :name: admin_layers_create_postgis_layer_resourse_description
+   :name: ngweb_admin_layers_create_postgis_layer_resourse_description
    :align: center
    :width: 16cm
 
@@ -193,10 +193,10 @@ Cистема координат геометрий должна распозн�
 а также в дереве слоев карты. 
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.  
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Слой PostGIS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_postgis_layer_tablename`. 
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_postgis_layer_tablename`. 
 
 .. figure:: _static/admin_layers_create_postgis_layer_tablename.png
-   :name: admin_layers_create_postgis_layer_tablename
+   :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
    :width: 16cm
 
@@ -246,7 +246,7 @@ Cистема координат геометрий должна распозн�
 #. Необходимый SQL запрос (вкладка «Определение»).
 
 .. figure:: _static/pgadmin3.png
-   :name: pgadmin3
+   :name: ngweb_pgadmin3
    :align: center
    :width: 16cm
 
@@ -274,10 +274,10 @@ Cлой WMS
 
 Для добавления слоя WMS необходимо сначала создать ресурс — соединение WMS. Вам 
 достаточно создать одно подключение для множества слоёв. В блоке операций 
-выберите :menuselection:`Создать ресурс --> Cоединение с WMS`. Откроется окно представленное на :numref:`admin_layers_create_wms_connection_description`.
+выберите :menuselection:`Создать ресурс --> Cоединение с WMS`. Откроется окно представленное на :numref:`ngweb_admin_layers_create_wms_connection_description`.
 
 .. figure:: _static/admin_layers_create_wms_connection_description.png
-   :name: admin_layers_create_wms_connection_description
+   :name: ngweb_admin_layers_create_wms_connection_description
    :align: center
    :width: 16cm
 
@@ -289,22 +289,22 @@ Cлой WMS
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами.
  
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cоединение WMS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_wms_connection_url`.
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_wms_connection_url`.
 Далее необходимо ввести параметры подключения к WMS-серверу, из которого будут 
 отображаться ваши данные.  
 
 .. figure:: _static/admin_layers_create_wms_connection_url.png
-   :name: admin_layers_create_wms_connection_url
+   :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
    :width: 16cm
 
    Окно параметров соединения с WMS.
 
 Далее можно приступать к добавлению отдельных слоёв WMS.
-Перейдите в группу, где необходимо создать слой WMS. В блоке операций выберите :menuselection:`Создать ресурс --> слой WMS`. Откроется окно, представленное на :numref:`admin_layers_create_wms_layer_name`.
+Перейдите в группу, где необходимо создать слой WMS. В блоке операций выберите :menuselection:`Создать ресурс --> слой WMS`. Откроется окно, представленное на :numref:`ngweb_admin_layers_create_wms_layer_name`.
 
 .. figure:: _static/admin_layers_create_wms_layer_name.png
-   :name: admin_layers_create_wms_layer_name
+   :name: ngweb_admin_layers_create_wms_layer_name
    :align: center
    :width: 16cm
 
@@ -315,10 +315,10 @@ Cлой WMS
 а также в дереве слоев карты. 
 Поля :guilabel:`Ключ` и :guilabel:`Описание` являются необязательными параметрами. 
 Переключитесь с вкладки :guilabel:`Ресурс` на вкладку :guilabel:`Cлой WMS`. 
-Откроется окно, представленное на :numref:`admin_layers_create_wms_layer_parameters`.
+Откроется окно, представленное на :numref:`ngweb_admin_layers_create_wms_layer_parameters`.
 
 .. figure:: _static/admin_layers_create_wms_layer_parameters.png
-   :name: admin_layers_create_wms_layer_parameters
+   :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
    :width: 16cm
 
@@ -353,11 +353,11 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsS
 Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
 а также в дереве слоев карты. 
 
-На вкладке Сервис WMS добавьте в список ссылки на стили нужных вам слоёв. (см. :numref:`admin_layers_create_wms_service_layers.png`.)  Для каждого 
+На вкладке Сервис WMS добавьте в список ссылки на стили нужных вам слоёв. (см. :numref:`ngweb_admin_layers_create_wms_service_layers.png`.)  Для каждого 
 добавленого стиля вам нужно указать уникальный ключ. Можно скопировать его из названия. 
 
 .. figure:: _static/admin_layers_create_wms_service_layers.png
-   :name: admin_layers_create_wms_service_layers.png
+   :name: ngweb_admin_layers_create_wms_service_layers.png
    :align: center
    :width: 16cm
 
@@ -503,10 +503,10 @@ NextGIS Web может работать как сервер WFS. По этому
 
 Для создания группы ресурсов необходимо перейти в ту группу (корневая или др.) и 
 в панели операций выбрать :menuselection:`Создать ресурс --> Группа ресурсов`. 
-При этом откроется окно, представленное на :numref:`admin_layers_create_group`.
+При этом откроется окно, представленное на :numref:`ngweb_admin_layers_create_group`.
 
 .. figure:: _static/admin_layers_create_group.png
-   :name: admin_layers_create_group
+   :name: ngweb_admin_layers_create_group
    :align: center
    :width: 16cm
 
