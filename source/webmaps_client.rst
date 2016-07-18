@@ -27,7 +27,7 @@ When a layer is  selected in a tree you can open a layer menu (1) with the follo
 
 To change a basemap use a dropdown list (3). By default there are the following basemaps:
 
-* No basemap
+* None
 * OpenStreetMap
 * Google – satellite
 * Google – map
