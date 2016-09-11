@@ -1,7 +1,9 @@
-# docs_ngweb
-User documentation for NextGIS Web
+# User documentation for NextGIS Web
+====================================
 
-http://docs.nextgis.ru/docs_ngweb/source/toc.html
+Read online:
+* English - http://docs.nextgis.com/docs_ngweb/source/toc.html
+* Russian - http://docs.nextgis.ru/docs_ngweb/source/toc.html
 
 License
 -------------
