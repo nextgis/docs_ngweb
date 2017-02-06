@@ -20,9 +20,7 @@ Client is written on JavaScript and based on a Dojo framework. All configuration
 
 NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled on the step of application configuration. NextGIS Web components communicate with each other using internal API methods.
 
-NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu 
-Server 14.04 LTS or higher). Reed more. section :ref:`ngw_sys_req`. 
-NextGIS Web works in all modern browsers.
+NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web works in all modern browsers.
 User interface with a published web map :numref:`webmap_sample`.
 
 .. figure:: _static/webmap_sample.png
@@ -101,10 +99,10 @@ Recommended hardware for effective work with NextGIS Web software includes a ser
 
 * one or two processor  Intel Xeon E5 or AMD Opteron with frequency not  
   less than 2 GHz (8 cores)
-* not less than 16 GB of DDR3 ECC Reg RAM
+* not less than 16 Gb of DDR3 ECC Reg RAM
 * appropriate motherboard for selected processors with integrated 
   videocard and a network interface 10/100/1000BaseT
-* two hard disk drives (HDD) with a capacity from 500 GB in RAID1
+* two hard disk drives (HDD) with a capacity from 500 Gb in RAID1
 * DVD-ROM
 * server case
 * mouse
@@ -115,4 +113,16 @@ Recommended hardware for effective work with NextGIS Web software includes a ser
 Client device could be a desktop (with 11-27" monitor).
 
 Also it is possible to use hosted servers with the same characteristics of proccessor and RAM. Hard disk drive capacity depends on the volume of geodata. 
-Operation system with NextGIS Web software and a database requires not more than 20-30 GB of hard disk drive space.
+Operation system with NextGIS Web software and a database requires not more than 20-30 Gb of hard disk drive space.
+
+
+.. _ngw_soft_req:
+    
+Recommended software versions
+---------------------------------
+
+* Ubuntu Server 14.04 LTS
+* PostgreSQL 9.3
+* PostGIS 2.1.2
+
+NextGIS Web would probably work with other versions, but this is not garanteed.
