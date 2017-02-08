@@ -18,20 +18,11 @@ Python 2.7 is required to perform an installation.
 Preparation of the database
 --------------------------------
 
-Add the ubuntugis repository (see  `supported distributions <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
+Install some base packages:
 
 .. code:: bash
 
-   $ sudo apt-get update
    $ sudo apt-get install software-properties-common python-software-properties
-
-**For ubuntu server 14.04**
-
-.. code:: bash
-    
-    $ sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
-    $ sudo apt-get update
-    $ sudo apt-get upgrade
 
 Install PostgreSQL:
 
