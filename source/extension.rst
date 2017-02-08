@@ -76,9 +76,9 @@ Example: changes to configuration file:
 
 6. Restart NextGIS Web to apply changes.
 
-Install NextGIS Web QGIS extension
+Adding NextGIS Web QGIS extension
 ----------------------------------
-This extensions adds support for rending with QGIS. To operate it needs QGIS 2.8 or higher already installed on the system.
+This extension adds support for rending with QGIS. To operate it needs QGIS 2.8 or higher already installed on the system.
 
 .. code:: bash
 
@@ -87,7 +87,7 @@ This extensions adds support for rending with QGIS. To operate it needs QGIS 2.8
     source env/bin/activate
     pip install -e nextgisweb_qgis/
 
-QGIS and PyQT4 dependencies are not listed in ``setup.py`` because it hard to install it in virtualenv. So lets copy this packages from system packages to virtualenv. On Ubuntu this libraries located in ``python-sip``, ``python-qt4`` and ``python-qgis`` packages.
+QGIS and PyQT4 dependencies are not listed in ``setup.py`` because it is hard to install it in virtualenv. So lets copy these libraries from system packages to virtualenv. On Ubuntu these libraries are located in ``python-sip``, ``python-qt4`` and ``python-qgis`` packages.
 
 .. code:: bash
     # DST should point to virtualenv site-packages directory.
@@ -128,5 +128,3 @@ If you don't see cyrillic labels add the following environment variable:
 
 .. code:: bash
    environment = LC_ALL="en_US.UTF-8"
-
-
