@@ -17,24 +17,13 @@
 
 Подготовка базы данных
 ----------------------
-
-Подключить репозиторий ubuntugis (см. `поддерживаемые
-дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
+Устанавливаем базовое ПО:
 
 .. code:: bash
 
-   sudo apt-get update
    sudo apt-get install software-properties-common python-software-properties
 
-**Для ubuntu server 14.04**
-
-.. code:: bash
-    
-    sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
-    sudo apt-get update
-    sudo apt-get upgrade
-
-Установить PostgreSQL:
+Устанавливаем PostgreSQL:
 
 .. code:: bash
 
