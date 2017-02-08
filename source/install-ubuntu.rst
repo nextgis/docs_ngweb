@@ -290,6 +290,7 @@ Execute a command one more time:
 
 to check if there any errors.
 
+Also you can install QGIS rendering module, and get rendered maps looking same as in desktop NextGIS QGIS. See install manual at ":ref:`ngw_install_qgis`".
 
 NextGIS Web configuration file
 ---------------------------------
