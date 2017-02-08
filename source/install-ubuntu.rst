@@ -302,7 +302,7 @@ Example of NextGIS Web configuration file
 
 	[file_upload]
 	
-	# Temporary directory for storage of uploaded files
+	# Temporary directory for uploaded storage of files (either core/dir or (file_storage/path and file_upload/path) is required)
 	# path =
 
 	[pyramid]
@@ -338,14 +338,14 @@ Example of NextGIS Web configuration file
 	# packages.ignore = 
 	# Do not load listed components 
 	# components.ignore = 
-	# Data storage directory 
+	# Data storage directory (either sdir or (core/file_storage/path and file_upload/path) is required)
 	sdir = /home/trolleway/ngw/data
 	# Locale used by default
 	locale.default = ru
 
 	[file_storage]
 
-	# Directory for storage of files 
+	# Directory for file storage (either sdir or (core/file_storage/path and file_upload/path) is required)
 	# path =
 
 	[feature_layer]
