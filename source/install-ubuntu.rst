@@ -318,7 +318,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 	[file_upload]
 	
-	# Директория для временного хранения загруженных файлов
+	# Директория для временного хранения загруженных файлов (укажите или sdir или (core/file_storage/path и file_upload/path)
 	# path =
 
 	[pyramid]
@@ -354,14 +354,14 @@ postgresql-{version}-postgis-{version} и установите его:
 	# packages.ignore = 
 	# Не загружать перечисленные компоненты 
 	# components.ignore = 
-	# Директория для хранения данных 
+	# Директория для хранения данных (укажите или sdir или (core/file_storage/path и file_upload/path)
 	sdir = /home/trolleway/ngw/data
 	# Локаль, используемая по-умолчанию
 	locale.default = ru
 
 	[file_storage]
 
-	# Директория для хранения файлов 
+	# Директория для хранения файлов (укажите или sdir или (core/file_storage/path и file_upload/path)
 	# path =
 
 	[feature_layer]
