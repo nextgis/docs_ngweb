@@ -120,11 +120,10 @@ Beware as there is an older options named `lazy` that is way more invasive and h
 If you get an error message `ERROR: Auth db directory path could not be created` then you have to specify directory where an existing qgis-auth.db is located or created if not present.
 This directory needs to be writeable by uwsgi process user. For example:
 
-.. code:: bash
+..code:: bash
    [uwsgi]
    env = QGIS_AUTH_DB_DIR_PATH=/var/www
 
 If you don't see cyrillic labels add the following environment variable:
-
-.. code:: bash
+..code:: bash
    environment = LC_ALL="en_US.UTF-8"
