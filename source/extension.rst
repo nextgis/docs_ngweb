@@ -76,6 +76,8 @@ Example: changes to configuration file:
 
 6. Restart NextGIS Web to apply changes.
 
+.. _`ngw_install_qgis`:
+
 Adding NextGIS Web QGIS extension
 ----------------------------------
 This extension adds support for rending with QGIS. To operate it needs QGIS 2.8 or higher already installed on the system.
