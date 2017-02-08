@@ -6,7 +6,7 @@ Extensions
 ================================
 
 General Information
---------------------
+-------------------
 
 The following extensions are available to increase the functionality of the software:
 
@@ -32,7 +32,7 @@ The following extensions are available to increase the functionality of the soft
    information from NextGIS Mobile SDK.
  
 Adding a new extension
-------------------------------------
+----------------------
 
 Example: adding Rekod extension. 
 Here are steps to add an extension:
@@ -75,3 +75,58 @@ Example: changes to configuration file:
    env/bin/nextgisweb --config config.ini initialize_db 
 
 6. Restart NextGIS Web to apply changes.
+
+Install NextGIS Web QGIS extension
+----------------------------------
+This extensions adds support for rending with QGIS. To operate it needs QGIS 2.8 or higher already installed on the system.
+
+.. code:: bash
+
+    cd ~/ngw
+    git clone git@github.com:nextgis/nextgisweb_qgis.git
+    source env/bin/activate
+    pip install -e nextgisweb_qgis/
+
+QGIS and PyQT4 dependencies are not listed in ``setup.py`` because it hard to install it in virtualenv. So lets copy this packages from system packages to virtualenv. On Ubuntu this libraries located in ``python-sip``, ``python-qt4`` and ``python-qgis`` packages.
+
+.. code:: bash
+    # DST should point to virtualenv site-packages directory.
+    # If it is point to another place you have to modify DST definition.
+    # For example: DST=`python -c "import sys; print sys.path[-2]"`
+    DST=`python -c "import sys; print sys.path[-1]"`
+    echo $DST
+    cp `/usr/bin/python -c "import sip; print sip.__file__"` $DST
+    cp -r `/usr/bin/python -c "import PyQt4, os.path; print os.path.split(PyQt4.__file__)[0]"` $DST
+    cp -r `/usr/bin/python -c "import qgis, os.path; print os.path.split(qgis.__file__)[0]"` $DST
+
+For QGIS 2.16 and higher:
+
+.. code:: bash
+    # Only for latest QGIS version (2.16 and higher)
+    export PYTHONPATH=$PYTHONPATH:/usr/share/qgis/python
+    cp -r `/usr/bin/python -c "import PyQt, os.path; print os.path.split(PyQt.__file__)[0]"` $DST
+    
+uWSGI Deployment Notes
+~~~~~~~~~~~~~~~~~~~~~~
+
+You have to add `--lazy-apps` to the command line, in this way application will be loaded after master's fork, so each worker will get its thread.
+
+.. code:: bash
+   [uwsgi]
+   lazy-apps = True
+
+Beware as there is an older options named `lazy` that is way more invasive and highly discouraged (it is still here only for backward compatibility).
+
+If you get an error message `ERROR: Auth db directory path could not be created` then you have to specify directory where an existing qgis-auth.db is located or created if not present.
+This directory needs to be writeable by uwsgi process user. For example:
+
+.. code:: bash
+   [uwsgi]
+   env = QGIS_AUTH_DB_DIR_PATH=/var/www
+
+If you don't see cyrillic labels add the following environment variable:
+
+.. code:: bash
+   environment = LC_ALL="en_US.UTF-8"
+
+
