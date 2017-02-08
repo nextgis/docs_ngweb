@@ -124,7 +124,7 @@ Recommended software versions
 * Ubuntu Server 14.04 LTS
 * PostgreSQL 9.3
 * PostGIS 2.1.2
-* Pyramid>=1.5,<1.8
+* Pyramid >= 1.5
 * SQLAlchemy>=0.8,<0.9
 * GDAL 1.x
 
