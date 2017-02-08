@@ -140,7 +140,7 @@ Install additional tools:
 
 .. code:: bash
 
-    $ sudo apt-get install python-dev git libgdal-dev python-dev \
+    $ sudo apt-get install python-dev git libgdal-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
 
 After an update of NextGIS Web a key registration may be required. 
