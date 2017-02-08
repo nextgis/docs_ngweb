@@ -13,5 +13,4 @@
    
    install-ubuntu
    install-centos7
-   install-ngw-qgis
    launch
