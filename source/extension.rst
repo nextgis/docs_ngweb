@@ -108,3 +108,25 @@ QGIS и зависимости PyQT4 не перечисляются в ``setup.
     # Only for latest QGIS version (2.16 and higher)
     export PYTHONPATH=$PYTHONPATH:/usr/share/qgis/python
     cp -r `/usr/bin/python -c "import PyQt, os.path; print os.path.split(PyQt.__file__)[0]"` $DST
+    
+Настройки uWSGI
+~~~~~~~~~~~~~~~
+
+Необходимо добавить параметр `--lazy-apps`, в этом случае приложение будет загружено после основного и каждый воркер получит свой поток.
+
+.. code:: bash
+   [uwsgi]
+   lazy-apps = True
+
+Имейте в виду, что существует так же более старый параметр `lazy` использование которого не рекомендуется.
+
+Если вы получаете ошибку: `ERROR: Auth db directory path could not be created` то вам нужно указать папку где находится существующий или создаётся заново файл qgis-auth.db. Эта папка должна иметь права на запись для пользователя процесса uwsgi. Например:
+
+..code:: bash
+   [uwsgi]
+   env = QGIS_AUTH_DB_DIR_PATH=/var/www
+
+Если у вас проблемы с кириллицей в подписях, задайте системную переменную:
+..code:: bash
+   environment = LC_ALL="en_US.UTF-8"
+
