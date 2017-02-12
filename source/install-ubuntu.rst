@@ -127,27 +127,6 @@ Install additional tools:
     $ sudo apt-get install python-dev git libgdal-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
 
-After an update of NextGIS Web a key registration may be required. 
-**For most cases there is no need to generate keys.**  This is required for development.
-
-Generate keys to work with GitHub (copy and paste a key to user settings at GitHub in `SSH keys section <https://github.com/settings/ssh>`_):
-
-.. code:: bash
-
-    mkdir ~/.ssh
-    cd ~/.ssh
-    ssh-keygen -t rsa -C "your@email.com"
-    ssh-add ~/.ssh/id_rsa
-    cat id_rsa.pub
-    cd ~
-
-If you enebled two-factor authentication you need to:
-
-* `Cache a password <https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux>`_
-* `Generate an access token <https://github.com/settings/applications#personal-access-tokens>`_
-  and use it instead of password
-
-
 .. _ngw_install_prepare:
 
 Prepare to NextGIS Web installation
