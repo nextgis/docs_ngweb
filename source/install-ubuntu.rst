@@ -17,13 +17,6 @@ Python 2.7 is required to perform an installation.
 
 Preparation of the database
 --------------------------------
-
-Install some base packages:
-
-.. code:: bash
-
-   $ sudo apt-get install software-properties-common python-software-properties
-
 Install PostgreSQL:
 
 .. code:: bash
@@ -31,7 +24,7 @@ Install PostgreSQL:
     $ sudo apt-get install postgresql-<version>
 
 Create a user who would be used as database.user in
-config.ini (see  further):
+config.ini (see further):
 
 .. code:: bash
 
