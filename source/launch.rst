@@ -122,7 +122,6 @@
 
     server {
           listen                      80;
-          server_name                 82.162.194.216;
           client_max_body_size        6G;
           large_client_header_buffers 8 32k;
 
