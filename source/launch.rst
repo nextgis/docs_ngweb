@@ -50,8 +50,8 @@ Default login and password:
 
 .. _ngw_uwsgi:
 
-Launch using uWSGI
--------------------
+Launch using uWSGI + nginx
+--------------------------
 
 At first you need to install uWSGI:
 
@@ -66,7 +66,7 @@ or using system service:
 
    apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
-Then you need to add an ``uwsgi`` section to existing .ini file (development, production... )
+Then you need to add an ``uwsgi`` section to existing .ini file:
 
 
 ::
@@ -75,34 +75,72 @@ Then you need to add an ``uwsgi`` section to existing .ini file (development, pr
     module = nextgisweb.uwsgiapp
     env = PASTE_CONFIG=%p
 
-When using FreeBSD you may need to disable WSGI file wrapper, as it sometimes does not work properly. To do this add the following string to that section:
-
-::
-
-    env = WSGI_FILE_WRAPPER=no
     
 To launch uWSGI using unix socket the uwsgi section should look like:
     
 ::
     
     [uwsgi]
-    home = /home/ngw_admin/ngw/env
-    socket = /home/ngw_admin/uwsgi/ngw
-    protocol=uwsgi
-    chmod-socket=777
+    plugins = python
+    lazy-apps = true
+
     master = true
-    processes = 8
-    threads = 4
-    logto = /home/ngw_admin/logs/ngw.log
-    log-slow = 1000
-    paste = config:%p
-    paste-logger = %p
-    env=LANG=ru_RU.UTF-8
+    workers = 4
+    no-orphans = true
+
+    pidfile = /run/uwsgi/%n.pid
+    socket = /run/uwsgi/%n.sock
+    chmod-socket = 666
+
+    logto = /var/log/uwsgi/%n.log
+    log-date = true
+
+    limit-post = 7516192768
+
+    harakiri = 6000
+    socket-timeout = 6000
+
+    env = PASTE_CONFIG=/opt/ngw/development.ini
+    env = LANG=ru_RU.UTF-8
+
+    home = /opt/ngw/env
+    mount = /ngw=/opt/ngw/nextgisweb/nextgisweb/uwsgiapp.py
+    manage-script-name = true
 
 .. note:: Corresponding folders should be already created. To use locale  
    (LANG=ru_RU.UTF-8) required files should be present in system 
    (locale -a). If locale is absent you need to add it (locale-gen ru_RU.utf8). 
    Also it is recommended to set locale as system (update-locale LANG=ru_RU.UTF-8).
+
+Nginx configuration file:
+
+.. code:: bash
+
+    server {
+          listen                      80;
+          client_max_body_size        6G;
+          large_client_header_buffers 8 32k;
+
+        location /ngw {
+            uwsgi_read_timeout 600s;
+            uwsgi_send_timeout 600s;
+
+            include            uwsgi_params;
+            uwsgi_pass         unix:/run/uwsgi/ngw.sock;
+        }
+    }
+
+
+Other launch options
+--------------------
+
+**Important: these options are not officially supported.**
+
+When using FreeBSD you may need to disable WSGI file wrapper, as it sometimes does not work properly. To do this add the following string to that section:
+
+::
+
+    env = WSGI_FILE_WRAPPER=no
 
 The following steps will depend on what interface is required as an output of uwsgi. There is some confusion related to the fact that uwsgi is both protocol and program. Here we are talking about the protocol.
 
