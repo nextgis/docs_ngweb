@@ -55,8 +55,8 @@
 
 .. _ngw_uwsgi:
 
-Запуск через uWSGI
-------------------
+Запуск через uWSGI + nginx
+--------------------------
 
 Для начала необходимо установить uWSGI:
 
@@ -71,7 +71,7 @@
 
    apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
-К существующему конфигурационном ini-файлу (development, production...) paste добавляем секцию
+К существующему конфигурационном ini-файлу paste добавляем секцию
 ``uwsgi``
 
 ::
@@ -79,6 +79,100 @@
     [uwsgi]
     module = nextgisweb.uwsgiapp
     env = PASTE_CONFIG=%p
+    
+Для запуска uWSGI через unix socket секция должна иметь следующий вид:
+    
+::
+    
+    [uwsgi]
+    plugins = python
+    lazy-apps = true
+
+    master = true
+    workers = 4
+    no-orphans = true
+
+    pidfile = /run/uwsgi/%n.pid
+    socket = /run/uwsgi/%n.sock
+    chmod-socket = 666
+
+    logto = /var/log/uwsgi/%n.log
+    log-date = true
+
+    limit-post = 7516192768
+
+    harakiri = 6000
+    socket-timeout = 6000
+
+    env = PASTE_CONFIG=/opt/ngw/development.ini
+    env = LANG=ru_RU.UTF-8
+
+    home = /opt/ngw/env
+    mount = /ngw=/opt/ngw/nextgisweb/nextgisweb/uwsgiapp.py
+    manage-script-name = true
+
+.. note:: Соответствующие папки должны быть созданы. Для работы локали 
+   (LANG=ru_RU.UTF-8) необходимо что бы в системе имелись соответсвующие файлы 
+   (locale -a). Если локали нет, то ее необходимо добавить (locale-gen ru_RU.utf8). 
+   Так же рекомендуется установить локаль системной (update-locale LANG=ru_RU.UTF-8).
+   
+Конфигурационный файл Nginx:
+
+.. code:: bash
+
+    uwsgi_cache_path /var/lib/nginx/cache levels=1:2 keys_zone=ckan:30m max_size=250m;
+    uwsgi_cache_path /mnt/portal/ngw/cache levels=1:2 keys_zone=ngw:30m max_size=10g inactive=7d;
+
+    server {
+          listen                      80;
+          server_name                 82.162.194.216;
+          client_max_body_size        6G;
+          large_client_header_buffers 8 32k;
+
+          location /ckan {
+            uwsgi_read_timeout 600s;
+            uwsgi_send_timeout 600s;
+
+            include            uwsgi_params;
+            uwsgi_pass         unix:/run/uwsgi/ckan.sock;
+
+            # Cache stuff
+            uwsgi_cache         ckan;
+            uwsgi_cache_methods GET HEAD;
+            uwsgi_cache_bypass  $cookie_auth_tkt;
+            uwsgi_no_cache      $cookie_auth_tkt;
+            uwsgi_cache_valid   30m;
+            uwsgi_cache_key     $host$scheme$proxy_host$request_uri;
+        }
+
+        location /ngw {
+            uwsgi_read_timeout 600s;
+            uwsgi_send_timeout 600s;
+
+            include            uwsgi_params;
+            uwsgi_pass         unix:/run/uwsgi/ngw.sock;
+
+            # Cache stuff
+            uwsgi_cache          ngw;
+            uwsgi_cache_methods  GET HEAD;
+            uwsgi_cache_bypass   $cookie_tkt;
+            uwsgi_no_cache       $cookie_tkt;
+            uwsgi_cache_valid    7d;
+            uwsgi_ignore_headers Expires Cache-Control Set-Cookie;
+            uwsgi_cache_key      $host$scheme$proxy_host$request_uri;
+            add_header           X-uWSGI-Cache $upstream_cache_status;
+        }
+
+        location /opendata_map {
+            index index.html index.htm;
+            root /var/www;
+        }
+    }
+
+
+Другие варианты запуска
+-----------------------
+**Внимание, эти варианты запуска официально не поддерживаются**
 
 При использовании FreeBSD может потребоваться отключить WSGI file
 wrapper, так как он иногда работает некорректно. Для этого в этой же
@@ -87,31 +181,8 @@ wrapper, так как он иногда работает некорректно
 ::
 
     env = WSGI_FILE_WRAPPER=no
-    
-Для запуска uWSGI через unix socket секция должна иметь следующий вид:
-    
-::
-    
-    [uwsgi]
-    home = /home/ngw_admin/ngw/env
-    socket = /home/ngw_admin/uwsgi/ngw
-    protocol=uwsgi
-    chmod-socket=777
-    master = true
-    processes = 8
-    threads = 4
-    logto = /home/ngw_admin/logs/ngw.log
-    log-slow = 1000
-    paste = config:%p
-    paste-logger = %p
-    env=LANG=ru_RU.UTF-8
 
-.. note:: Соответсвующие папки должны быть созданы. Для работы локали 
-   (LANG=ru_RU.UTF-8) необходимо что бы в системе имелись соответсвующие файлы 
-   (locale -a). Если локали нет, то ее необходимо добавить (locale-gen ru_RU.utf8). 
-   Так же рекомендуется установить локаль системной (update-locale LANG=ru_RU.UTF-8).
-
-Далее в зависимости от того, какой интерфейс требуется на выходе от
+В зависимости от того, какой интерфейс требуется на выходе от
 uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi - это
 одновременно и протокол и программа. Ниже речь идет именно о протоколе.
 
@@ -439,4 +510,3 @@ nginx + uwsgi (вариант 3)
 ::
 
 	cat /var/log/uwsgi/app/ngw.log
-	
