@@ -120,30 +120,11 @@
 
 .. code:: bash
 
-    uwsgi_cache_path /var/lib/nginx/cache levels=1:2 keys_zone=ckan:30m max_size=250m;
-    uwsgi_cache_path /mnt/portal/ngw/cache levels=1:2 keys_zone=ngw:30m max_size=10g inactive=7d;
-
     server {
           listen                      80;
           server_name                 82.162.194.216;
           client_max_body_size        6G;
           large_client_header_buffers 8 32k;
-
-          location /ckan {
-            uwsgi_read_timeout 600s;
-            uwsgi_send_timeout 600s;
-
-            include            uwsgi_params;
-            uwsgi_pass         unix:/run/uwsgi/ckan.sock;
-
-            # Cache stuff
-            uwsgi_cache         ckan;
-            uwsgi_cache_methods GET HEAD;
-            uwsgi_cache_bypass  $cookie_auth_tkt;
-            uwsgi_no_cache      $cookie_auth_tkt;
-            uwsgi_cache_valid   30m;
-            uwsgi_cache_key     $host$scheme$proxy_host$request_uri;
-        }
 
         location /ngw {
             uwsgi_read_timeout 600s;
@@ -151,21 +132,6 @@
 
             include            uwsgi_params;
             uwsgi_pass         unix:/run/uwsgi/ngw.sock;
-
-            # Cache stuff
-            uwsgi_cache          ngw;
-            uwsgi_cache_methods  GET HEAD;
-            uwsgi_cache_bypass   $cookie_tkt;
-            uwsgi_no_cache       $cookie_tkt;
-            uwsgi_cache_valid    7d;
-            uwsgi_ignore_headers Expires Cache-Control Set-Cookie;
-            uwsgi_cache_key      $host$scheme$proxy_host$request_uri;
-            add_header           X-uWSGI-Cache $upstream_cache_status;
-        }
-
-        location /opendata_map {
-            index index.html index.htm;
-            root /var/www;
         }
     }
 
