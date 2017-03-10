@@ -471,7 +471,57 @@ OSM-default
 	</map>
 
 
+Кластеризация точек на сервере
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. code-block:: xml
+
+	<map>
+	  <symbol>
+	    <type>ellipse</type>
+	    <name>shop</name>
+	    <anchorpoint x="0.5" y="0.5" />
+	    <points>1 1</points>
+	    <filled>true</filled>
+	  </symbol>
+	  <layer>
+	    <labelitem>Cluster:FeatureCount</labelitem>
+	    <classitem>Cluster:FeatureCount</classitem>
+	    <cluster>
+	      <maxdistance>20</maxdistance>
+	      <region>"ellipse"</region>
+	    </cluster>
+	    <class>
+	      <expression>("[Cluster:FeatureCount]" != "1")</expression>
+	      <style>
+		<symbol>shop</symbol>
+		<size>20</size>
+		<color blue="0" green="0" red="180"/>
+		<outlinecolor blue="64" green="64" red="64"/>
+	      </style>
+	      <label>
+		<type>truetype</type>
+		<font>bold-italic</font>
+		<size>10</size>
+		<color blue="255" green="255" red="255"/>
+		<outlinewidth>1</outlinewidth>
+		<outlinecolor blue="0" green="0" red="0"/>
+		<position>cc</position>
+		<offset x="10" y="0" />
+	      </label>
+	    </class>
+	    <class>
+	      <expression>"1"</expression>
+	      <style>
+		<symbol>shop</symbol>
+		<size>10</size>
+		<color blue="0" green="0" red="180"/>
+		<outlinecolor blue="64" green="64" red="64"/>
+	      </style>
+	    </class>
+
+	  </layer>
+	</map>
 
 OSM settlement-point
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
