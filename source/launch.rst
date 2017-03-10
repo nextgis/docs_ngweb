@@ -112,7 +112,7 @@ To launch uWSGI using unix socket the uwsgi section should look like:
    (locale -a). If locale is absent you need to add it (locale-gen ru_RU.utf8). 
    Also it is recommended to set locale as system (update-locale LANG=ru_RU.UTF-8).
 
-Nginx configuration file:
+Nginx configuration file (edits should be done to a file in /etc/nginx/sites-available/):
 
 .. code:: bash
 
