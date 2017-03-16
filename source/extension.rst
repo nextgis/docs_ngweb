@@ -41,19 +41,19 @@
 
 1. Выполнить команду, которая скачает исходные коды модуля на сервер, где установлен NextGIS Web: 
 
-.. code:: bash
+.. code-block:: bash
 
    git clone https://github.com/nextgis/nextgisweb_rekod.git
 
 2. Установить модуль расширения в NextGIS Web: 
 
-.. code:: bash
+.. code-block:: bash
 
    env/bin/pip install -e ./nextgisweb_rekod
 
 3. Создать необходимые директории (опционально):
 
-.. code:: bash
+.. code-block:: bash
 
    mkdir file_bucket
 
@@ -65,14 +65,14 @@
 
 Пример внесения изменений файл конфигурации см. ниже:
 
-.. code:: bash
+.. code-block:: bash
 
    [file_bucket]
    path =  /home/username/ngw/file_bucket
 
 5. Переинициализировать базу данных NextGIS Web:
 
-.. code:: bash
+.. code-block:: bash
 
    env/bin/nextgisweb --config config.ini initialize_db 
 
@@ -84,7 +84,7 @@
 ----------------------------------
 Для установки модуля рендеринга с помощью QGIS необходимо, чтобы в системе уже был установлен QGIS версии 2.8 и выше.
 
-.. code:: bash
+.. code-block:: bash
 
     cd ~/ngw
     git clone git@github.com:nextgis/nextgisweb_qgis.git
@@ -93,7 +93,8 @@
 
 QGIS и зависимости PyQT4 не перечисляются в ``setup.py`` потому что их сложно устанавливать в virtualenv. Поэтому просто копируем эти библиотеки из системных пакетов в virtualenv. Обычно они находятся в пакетах ``python-sip``, ``python-qt4`` и ``python-qgis``.
 
-.. code:: bash
+.. code-block:: bash
+
     # DST should point to virtualenv site-packages directory.
     # If it is point to another place you have to modify DST definition.
     # For example: DST=`python -c "import sys; print sys.path[-2]"`
@@ -105,7 +106,7 @@ QGIS и зависимости PyQT4 не перечисляются в ``setup.
 
 Для версии QGIS 2.16 и выше
 
-.. code:: bash
+.. code-block:: bash
 
     # Only for latest QGIS version (2.16 and higher)
     export PYTHONPATH=$PYTHONPATH:/usr/share/qgis/python
@@ -116,7 +117,7 @@ QGIS и зависимости PyQT4 не перечисляются в ``setup.
 
 Необходимо добавить параметр `--lazy-apps`, в этом случае приложение будет загружено после основного и каждый воркер получит свой поток.
 
-.. code:: bash
+.. code-block:: bash
 
    [uwsgi]
    lazy-apps = True
@@ -125,14 +126,14 @@ QGIS и зависимости PyQT4 не перечисляются в ``setup.
 
 Если вы получаете ошибку: `ERROR: Auth db directory path could not be created` то вам нужно указать папку где находится существующий или создаётся заново файл qgis-auth.db. Эта папка должна иметь права на запись для пользователя процесса uwsgi. Например:
 
-.. code:: bash
+.. code-block:: bash
 
    [uwsgi]
    env = QGIS_AUTH_DB_DIR_PATH=/var/www
 
 Если у вас проблемы с кириллицей в подписях, задайте системную переменную:
 
-.. code:: bash
+.. code-block:: bash
 
    environment = LC_ALL="en_US.UTF-8"
 
