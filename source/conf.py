@@ -228,7 +228,7 @@ latex_elements = {
 
 'classoptions': ',openany,oneside', 
 
-'babel' : '\\usepackage[russian]{babel}',
+'babel' : '\\usepackage[english,russian]{babel}',
 
 'fontpkg': '\\usepackage{dejavu}',
 # Additional stuff for the LaTeX preamble.
