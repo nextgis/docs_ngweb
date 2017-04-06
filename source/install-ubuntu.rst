@@ -17,24 +17,7 @@
 
 Подготовка базы данных
 ----------------------
-
-Подключить репозиторий ubuntugis (см. `поддерживаемые
-дистрибутивы <http://trac.osgeo.org/ubuntugis/wiki/SupportedDistributions>`_):
-
-.. code:: bash
-
-   sudo apt-get update
-   sudo apt-get install software-properties-common python-software-properties
-
-**Для ubuntu server 14.04**
-
-.. code:: bash
-    
-    sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
-    sudo apt-get update
-    sudo apt-get upgrade
-
-Установить PostgreSQL:
+Устанавливаем PostgreSQL:
 
 .. code:: bash
 
@@ -138,31 +121,8 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code:: bash
 
-    sudo apt-get install git python-mapscript python-dev git libgdal-dev python-dev \
+    sudo apt-get install git python-dev libgdal-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
-
-В случае доработки NextGIS Web может понадобится регистрация ключей. 
-**Для большинства случаев ключи генерировать не нужно!** Это необходимо при
-разработке.
-
-Генерируем ключи для работы с GitHub (копируем и вставляем ключ в
-настройки пользователя GitHub в `разделе SSH keys <https://github.com/settings/ssh>`_):
-
-.. code:: bash
-
-    mkdir ~/.ssh
-    cd ~/.ssh
-    ssh-keygen -t rsa -C "your@email.com"
-    ssh-add ~/.ssh/id_rsa
-    cat id_rsa.pub
-    cd ~
-
-Если включена двух-факторная авторизация, понадобится еще:
-
-* `Закэшировать пароль <https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux>`_
-* `Сгенерировать access token <https://github.com/settings/applications#personal-access-tokens>`_
-  и использовать его вместо пароля
-
 
 .. _ngw_install_prepare:
 
@@ -300,6 +260,9 @@ postgresql-{version}-postgis-{version} и установите его:
 
 чтобы убедиться, что ошибок нет.
 
+Имеется возможность поставить модуль рендеринга QGIS, которым можно рендрить слои точно так же, как они выглядят в QGIS. Инструкция по установке находится в разделе ":ref:`ngw_install_qgis`".
+
+
 
 Конфигурационный файл NextGIS Web
 ---------------------------------
@@ -326,7 +289,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 	[file_upload]
 	
-	# Директория для временного хранения загруженных файлов
+	# Директория для временного хранения загруженных файлов (укажите или sdir или (core/file_storage/path и file_upload/path)
 	# path =
 
 	[pyramid]
@@ -362,14 +325,14 @@ postgresql-{version}-postgis-{version} и установите его:
 	# packages.ignore = 
 	# Не загружать перечисленные компоненты 
 	# components.ignore = 
-	# Директория для хранения данных 
+	# Директория для хранения данных (укажите или sdir или (core/file_storage/path и file_upload/path)
 	sdir = /home/trolleway/ngw/data
 	# Локаль, используемая по-умолчанию
 	locale.default = ru
 
 	[file_storage]
 
-	# Директория для хранения файлов 
+	# Директория для хранения файлов (укажите или sdir или (core/file_storage/path и file_upload/path)
 	# path =
 
 	[feature_layer]
