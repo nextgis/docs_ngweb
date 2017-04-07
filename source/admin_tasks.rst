@@ -317,7 +317,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. note:: Указание нового пароля пользователя в командной строке потенциально не безопасно.
 
-.. code:: bash
+.. code-block:: bash
 
   env/bin/nextgisweb --config config.ini change_password user password
   env/bin/nextgisweb --config config.ini change_password user password

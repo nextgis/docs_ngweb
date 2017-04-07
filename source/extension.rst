@@ -59,7 +59,7 @@
 
 4. Изменить файл конфигурации (опционально):
 
-.. code:: bash
+.. code-block:: bash
 
    nano config.ini
 

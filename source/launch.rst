@@ -10,20 +10,20 @@
 
 Для запуска NextGIS Web через Pserve необходимо выполнить команду:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/pserve development.ini
 
 Для автоматического запуска NextGIS Web при загрузке операционной системы 
 необходимо отредактировать пользовательский скрипт автозапуска:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo nano /etc/rc.local
 
 и добавить в него строку:
 
-.. code:: bash
+.. code-block:: bash
 
     /home/zadmin/ngw/env/bin/pserve --daemon  /home/zadmin/ngw/production.ini
 
@@ -60,14 +60,14 @@
 
 Для начала необходимо установить uWSGI:
 
-.. code:: bash
+.. code-block:: bash
 
    user@ubuntu:~/ngw$ source env/bin/activate
    (env)user@ubuntu:~/ngw$ pip install uwsgi
     
 или через системный сервис:
 
-.. code:: bash
+.. code-block:: bash
 
    apt-get install uwsgi uwsgi-plugin-python uwsgi-emperor
  
@@ -118,7 +118,7 @@
    
 Конфигурационный файл Nginx (исправления вносятся в соответствующий файл из папки /etc/nginx/sites-available/):
 
-.. code:: bash
+.. code-block:: bash
 
     server {
           listen                      80;

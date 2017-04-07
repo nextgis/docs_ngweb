@@ -63,7 +63,7 @@
 Для преобразования значений NoData в альфа канал можно воспользоваться утилитой 
 командной строки  :program:`gdalwarp`. Ниже приведен пример команды.
 
-.. code:: shell
+.. code-block:: shell
 
    gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 

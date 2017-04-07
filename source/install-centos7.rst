@@ -24,20 +24,20 @@
 PostgreSQL и установите его. Для версии PostgreSQL 9.5 это будет
 выглядеть так:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-2.noarch.rpm
 
 Список всех пакетов, доступных в данном репозитории, можно посмотреть
 с помощью следующей команды:
 
-.. code:: bash
+.. code-block:: bash
 
     $ yum list | grep pgdg95
 
 Устанавливаем PostgreSQL:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install postgresql95 postgresql95-server postgresql95-libs \
     postgresql95-contrib postgresql95-devel
@@ -45,7 +45,7 @@ PostgreSQL и установите его. Для версии PostgreSQL 9.5 э
 Инициализируем базу данных и включаем автоматический запуск PostgreSQL
 при старте системы:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo /usr/pgsql-9.5/bin/postgresql95-setup initdb
     $ sudo systemctl start postgresql-9.5.service
@@ -54,27 +54,27 @@ PostgreSQL и установите его. Для версии PostgreSQL 9.5 э
 Создаем пользователя, который будет упомянут в качестве database.user в
 config.ini (см. далее):
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo -u postgres createuser ngw_admin -P -e
 
 Создаем базу, в которую будет развернут NGW, имя базы должно быть таким
 же как и database.name в config.ini (см. далее):
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
 
 Отредактируем параметры аутентификации в соответствующем файле:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo nano /var/lib/pgsql/9.5/data/pg_hba.conf
 
 Отредактируем его таким образом, чтобы в нём присутствовали следующие
 строки (исправим метод аутентификации на ``md5``, если указан иной):
 
-.. code:: bash
+.. code-block:: bash
 
     # IPv4 local connections:
     host    all             all             127.0.0.1/32            md5
@@ -83,19 +83,19 @@ config.ini (см. далее):
 
 Не забудьте перезапустить PostgreSQL:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo systemctl restart postgresql-9.5.service
 
 Добавляем репозиторий с зависмостями для PostGIS:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install epel-release
 
 Устанавливаем PostGIS:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install postgis2_95
     $ sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
@@ -112,7 +112,7 @@ config.ini (см. далее):
 
 Убедитесь, что функции PostGIS появились в базе:
 
-.. code:: bash
+.. code-block:: bash
 
     $ psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
@@ -121,19 +121,19 @@ config.ini (см. далее):
 
 Устанавливаем pip:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install python-pip
 
 Устанавливаем virtualenv:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install python-virtualenv
 
 Установливаем дополнительные инструменты:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install git gdal gdal-devel libxml2-devel libxslt-devel gcc-c++ \
     geos-devel proj-epsg zlib-devel libjpeg-turbo-devel dejavu-sans-fonts
@@ -148,13 +148,13 @@ config.ini (см. далее):
 
 Устанавливаем переменную окружения ``PATH``:
 
-.. code:: bash
+.. code-block:: bash
 
     $ export PATH=/usr/pgsql-9.5/bin:$PATH
 
 Устанавливаем пакет NextGIS Web в режиме разработки, при этом будут установлены все необходимые пакеты:
 
-.. code:: bash
+.. code-block:: bash
 
     $ env/bin/pip install -e ./nextgisweb
 
@@ -173,7 +173,7 @@ config.ini (см. далее):
 
 Скачиваем их и устанавливаем в систему:
 
-.. code:: bash
+.. code-block:: bash
 
     $ sudo yum install fribidi cairo fcgi harfbuzz httpd librsvg2
     $ sudo rpm -ivh mapserver-7.0.0-1.el7.centos.x86_64.rpm
@@ -183,7 +183,7 @@ config.ini (см. далее):
 После чего копируем необходимые файлы в директорию виртуального
 окружения, используемого для работы NextGIS Web.
 
-.. code:: bash
+.. code-block:: bash
 
     $ mkdir env/lib/python2.7/site-packages/mapscript.egg
     $ cp /usr/lib64/python2.7/site-packages/*mapscript* \
@@ -192,14 +192,14 @@ config.ini (см. далее):
 
 Создаем файл ``PKG-INFO``:
 
-.. code:: bash
+.. code-block:: bash
 
     $ mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
     $ touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 И указываем в нём используемую версию MapScript:
 
-.. code:: bash
+.. code-block:: bash
 
     $ echo `python -c "import mapscript; print \
     'Version: %s' % mapscript.MS_VERSION"` \

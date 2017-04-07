@@ -19,14 +19,14 @@
 ----------------------
 Устанавливаем PostgreSQL:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-get install postgresql-<version>
 
 Создаем пользователя, который будет упомянут в качестве database.user в
 config.ini (см. далее):
 
-.. code:: bash
+.. code-block:: bash
 
     sudo -u postgres createuser ngw_admin -P -e
 
@@ -35,7 +35,7 @@ config.ini (см. далее):
 Создаем базу, в которую будет развернут NGW, имя базы должно быть таким
 же как и database.name в config.ini (см. далее):
 
-.. code:: bash
+.. code-block:: bash
 
     sudo -u postgres createdb -O ngw_admin --encoding=UTF8 db_ngw
     sudo nano /etc/postgresql/9.3/main/pg_hba.conf
@@ -43,7 +43,7 @@ config.ini (см. далее):
 Отредактируем файл таким образом, чтобы в нём присутствовали следующие
 строки (исправим метод аутентификации на ``md5``, если указан иной):
 
-.. code:: bash
+.. code-block:: bash
 
     # IPv4 local connections:
     host    all             all             127.0.0.1/32            md5
@@ -53,13 +53,13 @@ config.ini (см. далее):
 
 Не забудьте перезапустить сервис базы:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo service postgresql restart
 
 Установить PostGIS:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-cache search postgis
 
@@ -67,7 +67,7 @@ config.ini (см. далее):
 PostgreSQL, его имя должно иметь вид
 postgresql-{version}-postgis-{version} и установите его:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-get install postgresql-9.3-postgis-2.1
     sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
@@ -81,14 +81,14 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Убедитесь, что функции PostGIS появились в базе:
 
-.. code:: bash
+.. code-block:: bash
 
     psql -h localhost -d db_ngw -U ngw_admin -c "SELECT PostGIS_Full_Version();"
 
 Если вы разворачиваете систему на чистом сервере, и вам надо сделать ещё
 одну базу PostGIS для хранения данных, то можно включить доступ к ней из сети
 
-.. code:: bash
+.. code-block:: bash
 
     sudo su - postgres
     nano /etc/postgresql/9.3/main/pg_hba.conf
@@ -98,7 +98,7 @@ postgresql-{version}-postgis-{version} и установите его:
     nano /etc/postgresql/9.3/main/postgresql.conf
     делаем строку listen_addresses='*', и расскоментируем её.
 
-.. code:: bash
+.. code-block:: bash
 
     sudo service postgresql restart
 
@@ -107,19 +107,19 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Установить pip:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-get install python-pip
 
 Установить virtualenv:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo pip install virtualenv
 
 Установить дополнительные инструменты:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-get install git python-dev libgdal-dev \
     g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
@@ -131,21 +131,21 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Создаём необходимые директории:
 
-.. code:: bash
+.. code-block:: bash
 
     mkdir -p ~/ngw/{data,upload}
     cd ~/ngw
 
 Клонируем репозиторий:
 
-.. code:: bash
+.. code-block:: bash
 
     git clone https://github.com/nextgis/nextgisweb.git
 
 Создаем виртуальное окружение virtualenv в папке ``~/ngw/env`` (папка
 создастся сама после выполнения команды):
 
-.. code:: bash
+.. code-block:: bash
 
     virtualenv --no-site-packages env
 
@@ -158,7 +158,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Устанавливаем пакет NextGIS Web в режиме разработки, при этом будут
 установлены все необходимые пакеты:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/pip install -e ./nextgisweb
 
@@ -170,7 +170,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Устанавливаем необходимый пакет в систему:
 
-.. code:: bash
+.. code-block:: bash
 
     sudo apt-get install python-mapscript
 
@@ -184,7 +184,7 @@ postgresql-{version}-postgis-{version} и установите его:
 виртуальное окружение (директория ``env``) можно воспользоваться
 следующими командами:
 
-.. code:: bash
+.. code-block:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
     cp /usr/lib/python2.7/dist-packages/*mapscript* \ 
@@ -193,7 +193,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Если вы используете FreeBSD, то процесс будет несколько отличаться:
     
-.. code:: bash
+.. code-block:: bash
 
     cp -r `python -c "import mapscript, os.path; print \ 
     os.path.split(mapscript.__file__)[0]"` env/lib/python2.7/site-packages/mapscript.egg
@@ -201,7 +201,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Если вы используете Fedora/CentOS, то:
 
-.. code:: bash
+.. code-block:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg
     cp /usr/lib/python2.7/site-packages/*mapscript* \ 
@@ -210,7 +210,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Если сейчас выполнить команду:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/pip freeze
 
@@ -222,14 +222,14 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Для её исправления создаем файл ``PKG-INFO``:
 
-.. code:: bash
+.. code-block:: bash
 
     mkdir env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO
     touch env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
 
 И указываем в нём используемую версию MapScript:
 
-.. code:: bash
+.. code-block:: bash
 
     echo `python -c "import mapscript; print 'Version: %s' % mapscript.MS_VERSION"` \
     > env/lib/python2.7/site-packages/mapscript.egg/EGG-INFO/PKG-INFO
@@ -242,19 +242,19 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Клонируем репозиторий: 
 
-.. code:: bash
+.. code-block:: bash
 
     git clone https://github.com/nextgis/nextgisweb_mapserver.git
 
 Устанавливаем пакет в режиме разработки:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/pip install -e ./nextgisweb_mapserver
 
 Еще раз выполните команду:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/pip freeze
 
@@ -270,7 +270,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Конфигурационный файл с параметрами по умолчанию может быть создан при помощи
 команды ``nextgisweb-config``:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/nextgisweb-config > config.ini
 
@@ -285,7 +285,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Пример конфигурационного файла NextGIS Web
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: 
+.. code-block:: 
 
 	[file_upload]
 	
@@ -366,7 +366,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Для генерации ключа для конфигурационного файла ``config.ini`` можно 
 воспользоваться командой
 
-.. code:: bash
+.. code-block:: bash
 	
 	openssl rand -base64 16
 
@@ -379,7 +379,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Так же для работы команд pserve или pshell потребуется конфигурационный
 файл paster, например ``development.ini``.
 
-.. code:: bash
+.. code-block:: bash
 
     nano development.ini
 
@@ -409,7 +409,7 @@ postgresql-{version}-postgis-{version} и установите его:
 /nextgisweb/nextgisweb/webmap.
 Файл представляет из себя набор структур следующего вида:
 
-.. code:: json 
+.. code-block:: json 
 
    "base": {
         "keyname": "bing-satellite",
@@ -446,14 +446,14 @@ postgresql-{version}-postgis-{version} и установите его:
 скомпилировать (отдельно для каждого пакета), в противном случае
 весь административный интерфейс будет на английском:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/nextgisweb-i18n --package nextgisweb compile
     env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
     
 Для установки локализации по-умолчанию для русского языка необходимо в конфигурационный файл (например, **config.ini**) добавить в секцию **core** следующую строку:
 
-.. code:: ini
+.. code-block:: ini
 
    locale.default = ru
    
@@ -472,14 +472,14 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Инициализация БД выполняется следующим образом:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/nextgisweb --config config.ini initialize_db
 
 В некоторых случаях, например при обновлении, может потребоваться
 удалить все существующие в БД данные и инициализировать БД повторно:
 
-.. code:: bash
+.. code-block:: bash
 
     env/bin/nextgisweb --config config.ini initialize_db --drop
 
@@ -500,7 +500,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Для запуска процедуры миграции необходимо выполнять следующие команды:
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb --config config.ini backup file.ngwbackup
 	env/bin/nextgisweb --config config.ini restore file.ngwbackup
@@ -509,14 +509,14 @@ postgresql-{version}-postgis-{version} и установите его:
 необходимо указать ключ —no-zip. При это будет создан новый каталог с указанным 
 именем.
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
 В ОС FreeBSD есть ошибка: поддержка sqlite не переносится virtualenv. Нужно 
 вручную скопировать файл:
 
-.. code:: bash
+.. code-block:: bash
 
 	cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
 	env/lib/python2.7/site-packages/
@@ -526,7 +526,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 1. На старом сервере запускается процедура резервного копирования.
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
@@ -539,7 +539,7 @@ postgresql-{version}-postgis-{version} и установите его:
    NextGIS Web.
 
  
-.. code::
+.. code-block::
 
 	# Имя сервера БД 
 	database.host = localhost
@@ -553,7 +553,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 6. На новом сервере выполняем команду: 
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
 
@@ -574,13 +574,13 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Очистка временных файлов в папке загрузки:
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb --config config.ini file_upload.cleanup
 
 Очистка файлового хранилища:
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/nextgisweb --config config.ini file_storage.cleanup
 
@@ -589,27 +589,27 @@ postgresql-{version}-postgis-{version} и установите его:
 
 Для обновления ПО NextGIS Web необходимо выполнить команду:
 
-.. code:: bash
+.. code-block:: bash
 
 	cd ~/ngw/nextgisweb
 	git pull
 	
 Если в файле setup.py добавились какие-то зависимости, то следует выполнить:	
 
-.. code:: bash
+.. code-block:: bash
 
 	env/bin/pip install -e ~/ngw/nextgisweb 
 	
 Обновление структуры БД:	
 
-.. code:: bash
+.. code-block:: bash
 
 	cd ../
 	env/bin/nextgisweb --config config.ini initialize_db
 
 Кроме того, следует обновить пакет nextgisweb_mapserver:
 
-.. code:: bash
+.. code-block:: bash
 
 	cd ./nextgisweb_mapserver
 	git pull
@@ -624,7 +624,7 @@ pserve, либо веб-сервера с модулем uWSGI.
 В ходе работы ПО могут выдаваться диагностические сообщения в окно консоли, где 
 запущен pserve или в лог:
 
-.. code:: bash
+.. code-block:: bash
 
     ault.py:471: SAWarning: Unicode type received non-unicode bind param value.
     processors[key](compiled_params[key])
