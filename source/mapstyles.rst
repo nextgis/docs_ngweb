@@ -683,6 +683,7 @@ OSM highway-lowzoom
 .. figure:: _static/mastyles_osm-highway-lowzoom.png
    :name: ngweb_mastyles_osm-highway-lowzoom
    :align: center
+   :width: 10cm
 
    Фрагмент цветовой схемы дорог общего пользования. 
 
