@@ -46,7 +46,7 @@ NextGIS Web - это программное обеспечение с откры
 .. only:: latex
 
    Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение NextGIS Manager: http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro. 
+   специализированное настольное приложение `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
 
 Данное :abbr:`ПО (программное обеспечение)` позволяет более просто выполнять 
 пакетные операции над данными в NextGIS Web.
@@ -58,7 +58,7 @@ NextGIS Web - это программное обеспечение с откры
 
 .. only:: latex
 
-   Мобильное приложение NextGIS Mobile: http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro позволяет загружать 
+   Мобильное приложение `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html#ngmobile-intro>`_ позволяет загружать 
    собираемые в поле геоданные напрямую в Веб-ГИС как в режиме online, так и offline. 
    
    
@@ -98,6 +98,13 @@ NextGIS Web - это программное обеспечение с откры
 После загрузки слоёв необходимо добавить веб-карту. В настройках веб-карты следует
 добавить слои. Ссылку на веб-карту открываем в веб-браузере.
 
-Если предполагается добавлять большое количество слоёв, то данную операцию проще 
-выполнить через :ref:`NextGIS Manager <ng_manager_intro>`.
+.. only:: html
+
+   Если предполагается добавлять большое количество слоёв, то данную операцию проще 
+   выполнить через :ref:`NextGIS Manager <ngm_intro>`.
+
+.. only:: latex
+
+   Если предполагается добавлять большое количество слоёв, то данную операцию проще 
+   выполнить через `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ngm-intro>`_.
 
