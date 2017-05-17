@@ -149,27 +149,29 @@
 где обозначены типы слоев этих ресурсов. Выбирать из группы дочерних ресурсов необходимое 
 именование ресурса, где тип такого ресурса - векторный слой. В блоке операций выбирать 
 действие над слоем - "Таблица объектов". Cформируется таблица атрибутов объектов, 
-имеющая следующий вид :numref:`ngweb_admin_table_objects_upload`.
+имеющая следующий вид :numref:`ngweb_Object_table`.
 
-.. figure:: _static/table_objects.png
-   :name: ngweb_admin_table_objects_upload
+.. figure:: _static/ngweb_Object_table.png
+   :name: ngweb_Object_table
    :align: center
    :width: 16cm
 
    Таблица объектов. 
 
-Сформированная таблица атрибутов объектов позволят выполнить следующие операции 
-над выделенной записью :numref:`ngweb_admin_table_objects1_upload`:
+Сформированная таблица объектов позволят выполнить следующие операции 
+над выделенной записью :numref:`ngweb_operations_on_writing_in_object_table`:
 
-1. Открыть.
-2. Редактировать.
- 
-.. figure:: _static/table_objects1.png
-   :name: ngweb_admin_table_objects1_upload
+.. figure:: _static/ngweb_operations_on_writing_in_object_table.png
+   :name: ngweb_operations_on_writing_in_object_table
    :align: center
    :width: 16cm
 
-   Операции над записью в таблице атрибутов.
+   Операции над записью в таблице объектов.
+
+1. Открыть.
+2. Редактировать.
+3. Удалить.
+4. Воспользоваться Строкой поиска.
 
 Фомирование таблицы атрибутов объектов можно выполнить другим способом. В административном 
 интерфейсе необходимо перейти к группе дочерних ресурсов, где обозначены типы слоев
