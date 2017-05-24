@@ -37,8 +37,7 @@ To test if application is running go to the following address in the browser:
 An authentication page will be open.
 
 .. note: If pserve is launched using supervisor you should add a setting 
-   environment=LANG=ru_RU.UTF-8 to support Russian names for uploaded 
-   files.
+   environment=LC_ALL=en_US.UTF-8.
 
 
 Default login and password:
@@ -101,16 +100,17 @@ To launch uWSGI using unix socket the uwsgi section should look like:
     socket-timeout = 6000
 
     env = PASTE_CONFIG=/opt/ngw/development.ini
-    env = LANG=ru_RU.UTF-8
+    env = LC_ALL=en_US.UTF-8
 
     home = /opt/ngw/env
     mount = /ngw=/opt/ngw/nextgisweb/nextgisweb/uwsgiapp.py
     manage-script-name = true
 
 .. note:: Corresponding folders should be already created. To use locale  
-   (LANG=ru_RU.UTF-8) required files should be present in system 
-   (locale -a). If locale is absent you need to add it (locale-gen ru_RU.utf8). 
-   Also it is recommended to set locale as system (update-locale LANG=ru_RU.UTF-8).
+   (LC_ALL=en_US.UTF-8) required files should be present in system
+   (locale -a). If locale is absent you need to add it (locale-gen en_US.UTF-8).
+   Using any other locale that uses a comma as a decimal separator can
+   lead to unexpected `issues <https://github.com/mapserver/mapserver/issues/5431>`_.
 
 Nginx configuration file (edits should be done to a file in /etc/nginx/sites-available/):
 
@@ -205,7 +205,7 @@ To launch supervisor + uWSGI without web server configuration file should look l
    lazy = yes
    env = PASTE_CONFIG=%p
    env = PATH=/home/ngw_admin/ngw/env/bin:/bin:/usr/sbin:/usr/bin
-   env = LANG=ru_RU.UTF-8
+   env = LC_ALL=en_US.UTF-8
    virtualenv = /home/ngw_admin/ngw/env
    protocol = http
    socket = :8080
@@ -219,7 +219,7 @@ Configuration file for supervisor should look like:
     [program:ngw]
     command = /home/ngw_admin/ngw/env/bin/uwsgi /home/ngw_admin/ngw/production.ini
     user = ngw_admin
-    environment=LANG=ru_RU.UTF-8
+    environment=LC_ALL=en_US.UTF-8
     stderr_logfile=/var/log/supervisor/%(program_name)s_stderr.log
     stdout_logfile=/var/log/supervisor/%(program_name)s_stdout.log
 
@@ -425,7 +425,7 @@ nginx + uwsgi (option 3)
 	home = /opt/ngw/env
 	module = nextgisweb.uwsgiapp
 	env = PASTE_CONFIG=%p
-	env = LANG=ru_RU.UTF-8
+	env = LC_ALL=en_US.UTF-8
 	socket = :6543
 	protocol = uwsgi
 	chmod-socket=777
