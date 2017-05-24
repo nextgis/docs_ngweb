@@ -42,8 +42,7 @@
 Должно открыться окно авторизации.
 
 .. note: При запуске pserve через supervisor необходимо добавить настройку 
-   environment=LANG=ru_RU.UTF-8 для поддержки русских имен в названии загружаемых 
-   файлов.
+   environment=LC_ALL=en_US.UTF-8.
 
 
 Имя и пароль по умолчанию:
@@ -105,16 +104,18 @@
     socket-timeout = 6000
 
     env = PASTE_CONFIG=/opt/ngw/development.ini
-    env = LANG=ru_RU.UTF-8
+    env = LC_ALL=en_US.UTF-8
 
     home = /opt/ngw/env
     mount = /ngw=/opt/ngw/nextgisweb/nextgisweb/uwsgiapp.py
     manage-script-name = true
 
 .. note:: Соответствующие папки должны быть созданы. Для работы локали 
-   (LANG=ru_RU.UTF-8) необходимо что бы в системе имелись соответсвующие файлы 
-   (locale -a). Если локали нет, то ее необходимо добавить (locale-gen ru_RU.utf8). 
-   Так же рекомендуется установить локаль системной (update-locale LANG=ru_RU.UTF-8).
+   (LC_ALL=en_US.UTF-8) необходимо что бы в системе имелись соответсвующие файлы
+   (locale -a). Если локали нет, то ее необходимо добавить (locale-gen en_US.UTF-8).
+   Использование любой другой локали, использующей запятую в качестве десятичного
+   разделителя, может привести к неожиданным проблемам,
+   `например <https://github.com/mapserver/mapserver/issues/5431>`_.
    
 Конфигурационный файл Nginx (исправления вносятся в соответствующий файл из папки /etc/nginx/sites-available/):
 
@@ -220,7 +221,7 @@ supervisor + uwsgi
    lazy = yes
    env = PASTE_CONFIG=%p
    env = PATH=/home/ngw_admin/ngw/env/bin:/bin:/usr/sbin:/usr/bin
-   env = LANG=ru_RU.UTF-8
+   env = LC_ALL=en_US.UTF-8
    virtualenv = /home/ngw_admin/ngw/env
    protocol = http
    socket = :8080
@@ -234,7 +235,7 @@ supervisor + uwsgi
     [program:ngw]
     command = /home/ngw_admin/ngw/env/bin/uwsgi /home/ngw_admin/ngw/production.ini
     user = ngw_admin
-    environment=LANG=ru_RU.UTF-8
+    environment=LC_ALL=en_US.UTF-8
     stderr_logfile=/var/log/supervisor/%(program_name)s_stderr.log
     stdout_logfile=/var/log/supervisor/%(program_name)s_stdout.log
 
@@ -448,7 +449,7 @@ nginx + uwsgi (вариант 3)
 	home = /opt/ngw/env
 	module = nextgisweb.uwsgiapp
 	env = PASTE_CONFIG=%p
-	env = LANG=ru_RU.UTF-8
+	env = LC_ALL=en_US.UTF-8
 	socket = :6543
 	protocol = uwsgi
 	chmod-socket=777
