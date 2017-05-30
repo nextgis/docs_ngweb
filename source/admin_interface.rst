@@ -242,3 +242,10 @@ Cформируется таблица объектов, которая позв
 
 Четвертая вкладка Метаданные.
  
+.. figure:: _static/ngw_metadata_tab.png
+   :name: ngw_metadata_tab
+   :align: center
+   :width: 16cm
+
+   Вкладка Метаданные.
+
