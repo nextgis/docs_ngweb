@@ -105,6 +105,7 @@ QGIS and PyQT4 dependencies are not listed in ``setup.py`` because it is hard to
 For QGIS 2.16 and higher:
 
 .. code-block:: bash
+
     # Only for latest QGIS version (2.16 and higher)
     export PYTHONPATH=$PYTHONPATH:/usr/share/qgis/python
     cp -r `/usr/bin/python -c "import PyQt, os.path; print os.path.split(PyQt.__file__)[0]"` $DST
