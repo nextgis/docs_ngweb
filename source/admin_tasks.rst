@@ -263,6 +263,38 @@ NextGIS Web строится на ресурсном подходе - кажды
    Задать в свойствах группы ресурсов с геоданными.
 
 
+Дать гостю права на просмотр карты
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: 
+	Гости смогут только видеть веб-карту и слои в каталоге, а всё остальное будет закрыто
+
+.. figure:: _static/access_rights_group_for_quest_10.png
+   :name: ngweb_access_rights_tab_11_pic
+   :align: center
+   :width: 16cm
+
+   Задать в свойствах корневой группы ресурсов.
+
+
+.. figure:: _static/access_rights_group_for_quest_webmaps12.png
+   :name: ngweb_access_rights_tab_12_pic
+   :align: center
+   :width: 16cm
+
+   Задать в свойствах группы ресурсов с веб-картами.
+
+
+.. figure:: _static/access_rights_group_for_quest_geodata13.png
+   :name: ngweb_access_rights_tab_13_pic
+   :align: center
+   :width: 16cm
+
+   Задать в свойствах группы ресурсов с геоданными.
+
+
+
+
 Дать одному пользователю права на одну группу ресурсов
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
