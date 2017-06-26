@@ -7,7 +7,7 @@
 
 
 УНИВЕРСАЛЬНАЯ ОБЩЕСТВЕННАЯ ЛИЦЕНЗИЯ GNU
-Версия 2, июнь 1991 г.
+Версия 3, июнь 1991 г.
 
 Copyright (C) 1989, 1991 Free Software Foundation, Inc.
 59 Temple Place, Suite 330, Boston, MA 02111–1307, USA
