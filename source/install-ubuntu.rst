@@ -285,7 +285,7 @@ postgresql-{version}-postgis-{version} и установите его:
 Пример конфигурационного файла NextGIS Web
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: 
+::
 
 	[file_upload]
 	
@@ -368,7 +368,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 	
-	openssl rand -base64 16
+   openssl rand -base64 16
 
 .. warning::
    1. В некоторых случаях необходимо указывать абсолютные пути к папкам, 
@@ -381,7 +381,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-    nano development.ini
+   nano development.ini
 
 Содержание:
 
