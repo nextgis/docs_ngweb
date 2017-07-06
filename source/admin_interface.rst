@@ -10,7 +10,7 @@
 
 
 После входа в административный интерфейс, пользователь попадает на главную 
-страницу, представленную на :numref:`ngweb_main_page_administrative_interface_pic`.
+страницу, представленную на рисунке :numref:`ngweb_main_page_administrative_interface_pic`.
 
 
 .. figure:: _static/ngweb_main_page_administrative_interface.png
@@ -89,10 +89,10 @@
 Панель управления
 --------------------------------
 
-Панель управления NextGIS Web представлена на :numref:`ngweb_admin_control_panel`.
+Панель управления NextGIS Web представлена на :numref:`ngweb_сontrol_panel`.
 
-.. figure:: _static/admin_control_panel.png
-   :name: ngweb_admin_control_panel
+.. figure:: _static/ngweb_сontrol_panel.png
+   :name: ngweb_сontrol_panel
    :align: center
    :width: 16cm
 
@@ -105,6 +105,8 @@
 * Просмотр списка пользователей.
 * Создание пользователя.
 * Назначение прав доступа группам ресурсов и веб-картам.
+* Задать название Веб ГИС.
+* Возможность ввода перечня допустимых источников для кросс-доменных запросов на странице настроек CORS.
 
 Вопросы создания групп пользователей и пользователей, назначение прав доступа 
 рассмотрены в разделе :ref:`ngw_admin_tasks`.
