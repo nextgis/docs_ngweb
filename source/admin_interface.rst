@@ -91,7 +91,7 @@
 
 Панель управления NextGIS Web представлена на :numref:`ngweb_control_panel`.
 
-.. figure:: _static/ngweb_сontrol_panel.png
+.. figure:: _static/ngweb_control_panel.png
    :name: ngweb_control_panel
    :align: center
    :width: 16cm
