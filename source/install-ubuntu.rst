@@ -545,7 +545,7 @@ postgresql-{version}-postgis-{version} и установите его:
    NextGIS Web.
 
  
-.. code-block::
+.. code-block:: ini
 
 	# Имя сервера БД 
 	database.host = localhost
