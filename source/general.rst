@@ -108,7 +108,7 @@ Recommended hardware for effective work with NextGIS Web software includes a ser
 * mouse
 * keyboard
 * uninterruptible power supply with a capacity of not less than 1000 VA
-* LCD monitor 17"
+* LCD monitor 17
 
 Client device could be a desktop (with 11-27" monitor).
 
