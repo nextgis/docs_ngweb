@@ -28,23 +28,41 @@
   - Откройте векторный слой, нажмите в правом меню :guilabel:`Таблица объектов`. 
   - Откроется таблица. Выберите нужную строку в таблице и в этой строке слева в пустом 
     окошке проставьте отметку для выделения строки для выполнения действий над объектом. 
-  - Нажмите на кнопку :guilabel:`Изменить` справа внизу экрана :numref:`ngweb_editing_attributes2.7`).
+  - Нажмите на кнопку :guilabel:`Изменить` справа внизу экрана :numref:`ngweb_editing_attributes2.7`.
 
 .. figure:: _static/ngweb_editing_attributes2.7.png
    :name: ngweb_editing_attributes2.7
    :align: center
    :width: 16cm
+   
+   Редактирование атрибутов из админки.
 
+* Редактирование атрибутов при просмотре карты: 
+  
+  - щёлкните инструментом идентификации по объекту, 
+  - нажмите на кнопку редактирования (последняя кнопка в таблице после вкладки Вложение) :numref:`ngweb_editing_when_viewing_map`:
 
-* Редактирование атрибутов при просмотре карты: щёлкните инструментом 
-  идентификации по объекту, нажмите на кнопку редактирования.
+.. figure:: _static/ngweb_editing_when_viewing_map.png
+   :name: ngweb_editing_when_viewing_map
+   :align: center
+   :width: 16cm
 
-В открывшемся окне можно изменять значения атрибутов. 
+   Редактирование атрибутов при просмотре карты.
+
+В открывшемся окне можно изменять значения атрибутов :numref:`ngweb_editing_when_viewing_map1`: 
+
+.. figure:: _static/ngweb_editing_when_viewing_map1.png
+   :name: ngweb_editing_when_viewing_map1
+   :align: center
+   :width: 16cm
+
+   Окно редактирования атрибутов слоя.
+
 Описание, заданное на вкладке "Описание", будет видно при просмотре карты в окне идентификации. 
 
 В окне редактирования атрибутов слоя имеются следующие вкладки:
 
-* вкладка Атрибуты:
+* вкладка Атрибуты :numref:`ngweb_tab_attributes`:
 
 .. figure:: _static/ngweb_tab_attributes.png
    :name: ngweb_tab_attributes
@@ -53,7 +71,7 @@
  
    Вкладка Атрибуты.
 
-* вкладка Описание:
+* вкладка Описание :numref:`ngweb_tab_description`:
 
 .. figure:: _static/ngweb_tab_description.png
    :name: ngweb_tab_description
@@ -62,7 +80,7 @@
 
    Вкладка Описание.
 
-* вкладка Вложение:
+* вкладка Вложение :numref:`ngweb_tab_attachment`:
 
 .. figure:: _static/ngweb_tab_attachment.png
    :name: ngweb_tab_attachment
