@@ -256,7 +256,7 @@ Grant a single user permissions to a single resource group
 Grant a permission to input data using a mobile application to a group of users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a separate group of users ("Openstreetmap users" in this example) and a separate resource group.  
+Create a separate group of users ("Contributors" in this example) and a separate resource group.  
 
 
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
