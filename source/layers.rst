@@ -108,9 +108,9 @@ Source files could be in the following formats:
    Windows-1251 encoding.
   
 .. note:: 
-   If you prepare data for upload using QGIS or GDAL you should not use EPSG:3857. 
-   GDAL saves files with incorrect coordinate system definition so data will have 
-   an offset after upload. Use EPSG:4326 or other coordinate systems.
+   If you upload data through web-interface, do not use EPSG:3857. 
+   Use EPSG:4326 or other coordinate systems (EPSG:3857 mentioned on Vector layer 
+   tab is a storage CRS not related to data CRS).
    
 Output file should not have invalid geometries (QGIS tool should output an empty 
 list of invalid geometries), dates should not have NULL values, there should not 
