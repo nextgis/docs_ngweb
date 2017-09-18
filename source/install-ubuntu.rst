@@ -454,8 +454,8 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-    env/bin/nextgisweb-i18n --package nextgisweb compile
-    env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
+   env/bin/nextgisweb-i18n --package nextgisweb compile
+   env/bin/nextgisweb-i18n --package nextgisweb_mapserver compile
     
 Для установки локализации по-умолчанию для русского языка необходимо в конфигурационный файл (например, **config.ini**) добавить в секцию **core** следующую строку:
 
@@ -480,14 +480,14 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-    env/bin/nextgisweb --config config.ini initialize_db
+   env/bin/nextgisweb --config config.ini initialize_db
 
 В некоторых случаях, например при обновлении, может потребоваться
 удалить все существующие в БД данные и инициализировать БД повторно:
 
 .. code-block:: bash
 
-    env/bin/nextgisweb --config config.ini initialize_db --drop
+   env/bin/nextgisweb --config config.ini initialize_db --drop
 
 
 Миграция и резервное копирование
@@ -508,8 +508,8 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-	env/bin/nextgisweb --config config.ini backup file.ngwbackup
-	env/bin/nextgisweb --config config.ini restore file.ngwbackup
+   env/bin/nextgisweb --config config.ini backup file.ngwbackup
+   env/bin/nextgisweb --config config.ini restore file.ngwbackup
 
 Резервная копия – это ZIP-архив. Для отключения архивации резервной копии 
 необходимо указать ключ —no-zip. При это будет создан новый каталог с указанным 
@@ -517,15 +517,15 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+   env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
 В ОС FreeBSD есть ошибка: поддержка sqlite не переносится virtualenv. Нужно 
 вручную скопировать файл:
 
 .. code-block:: bash
 
-	cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
-	env/lib/python2.7/site-packages/
+   cp /usr/local/lib/python2.7/site-packages/_sqlite3.so \
+   env/lib/python2.7/site-packages/
 
 
 Миграция выполняется в следующем порядке:
@@ -534,7 +534,7 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-	env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
+   env/bin/nextgisweb  --config "config.ini" backup "backup/ngwbackup" --no-zip
 
 2. Если необходимо перенести базу PostGIS с геоданными, то со старого сервера 
    делается ее резервная копия программой pgAdminIII в формате tar.
@@ -547,24 +547,24 @@ postgresql-{version}-postgis-{version} и установите его:
  
 .. code-block:: ini
 
-	# Имя сервера БД 
-	database.host = localhost
-	# Имя БД на сервере 
-	database.name = zapoved_ngw
-	# Имя пользователя БД 
-	database.user = user
-	# Пароль пользователя БД 
-	database.password = password
+   # Имя сервера БД 
+   database.host = localhost
+   # Имя БД на сервере 
+   database.name = zapoved_ngw
+   # Имя пользователя БД 
+   database.user = user
+   # Пароль пользователя БД 
+   database.password = password
 
 
 6. На новом сервере выполняем команду: 
 
 .. code-block:: bash
 
-	env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
+   env/bin/nextgisweb  --config "config.ini" restore "backup/ngwbackup"
 
-7. Запустите NextGIS Web. Должно работать всё, кроме слоёв PostGIS (при их  
-   наличии).
+7. Запустите NextGIS Web (подробнее про запуск описано в разделе ":ref:`ngw_launch`"). 
+   Должно работать всё, кроме слоёв PostGIS (при их наличии).
 8. Если необходимо перенести базу PostGIS с геоданными, то создается новая база 
    данных, в нее разворачивается резервная копия со старого сервера.
 9. В настройках подключений PostGIS указывается новый адрес сервера. 
@@ -582,13 +582,13 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-	env/bin/nextgisweb --config config.ini file_upload.cleanup
+   env/bin/nextgisweb --config config.ini file_upload.cleanup
 
 Очистка файлового хранилища:
 
 .. code-block:: bash
 
-	env/bin/nextgisweb --config config.ini file_storage.cleanup
+   env/bin/nextgisweb --config config.ini file_storage.cleanup
 
 Обновление ПО
 -------------
@@ -597,28 +597,28 @@ postgresql-{version}-postgis-{version} и установите его:
 
 .. code-block:: bash
 
-	cd ~/ngw/nextgisweb
-	git pull
+   cd ~/ngw/nextgisweb
+   git pull
 	
 Если в файле setup.py добавились какие-то зависимости, то следует выполнить:	
 
 .. code-block:: bash
 
-	env/bin/pip install -e ~/ngw/nextgisweb 
+   env/bin/pip install -e ~/ngw/nextgisweb 
 	
 Обновление структуры БД:	
 
 .. code-block:: bash
 
-	cd ../
-	env/bin/nextgisweb --config config.ini initialize_db
+   cd ../
+   env/bin/nextgisweb --config config.ini initialize_db
 
 Кроме того, следует обновить пакет nextgisweb_mapserver:
 
 .. code-block:: bash
 
-	cd ./nextgisweb_mapserver
-	git pull
+   cd ./nextgisweb_mapserver
+   git pull
 
 После выполнения команд необходимо перезапустить ПО NextGIS Web либо перезапуском 
 pserve, либо веб-сервера с модулем uWSGI.
@@ -632,8 +632,8 @@ pserve, либо веб-сервера с модулем uWSGI.
 
 .. code-block:: bash
 
-    ault.py:471: SAWarning: Unicode type received non-unicode bind param value.
-    processors[key](compiled_params[key])
+   ault.py:471: SAWarning: Unicode type received non-unicode bind param value.
+   processors[key](compiled_params[key])
 
 Данное сообщение является несущественным.
 
