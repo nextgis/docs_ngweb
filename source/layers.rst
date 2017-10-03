@@ -335,9 +335,12 @@ Parameters to add a WMS layer for Public cadastral map by Rosreestr:
 
 URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
-Version 1.1.1. 
+Supported versions of WMS protocol 1.1.1, 1.3
 
 .. _ngw_create_wms_service:
+
+.. note:: 
+   Identification requests to external WMS layers from Web maps are not supported yet.
 
 WMS service
 ------------
