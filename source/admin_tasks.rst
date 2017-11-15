@@ -296,7 +296,7 @@ Also there is an option to change user password using command line:
 
 .. _ngw_CSS:
 
-How to change the look of NextGIS Web
+Customization of NextGIS Web outlook
 ---------------------------------------
 
 You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc., with a little bit of CSS magic:
