@@ -296,13 +296,10 @@ Also there is an option to change user password using command line:
 
 .. _ngw_CSS:
 
-How to change the look of your Web GIS
-========================================
+How to change the look of NextGIS Web
+---------------------------------------
 
-.. note:: 
-    This functionality is available only to nextgis.com `Premium users <http://nextgis.ru/nextgis-com/plans>`_ for users with administrative privileges.
-
-You can customize the look of your Web GIS, including logos, backgrounds, header and buttons colors etc with a little bit of CSS magic:
+You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc., with a little bit of CSS magic:
 
 #. Sign in as the user with administrative privileges and open Control panel, then select Custom CSS. 
 #. Enter your own CSS rules. They will be used throughout your Web GIS on all its pages.
@@ -325,13 +322,10 @@ Remove NextGIS logo from Web map:
 
     .map-logo{display:none;}
 
-.. note:: 
-    At the moment you can't upload a new logo by yourself, but we can do it for you. If you want us to do it simply send your logo to support@nextgis.com.
-
 Advanced example
 ~~~~~~~~~~~~~~~~~~
 
-This example shows how to change the look of pretty much all changeable elements of your Web GIS. 
+This example shows how to change the look of pretty much all changeable elements of NextGIS Web. 
 You can try these examples as is or change it to your liking. You can also see them in action `here <http://nastya.nextgis.com>`_.
 
 .. code-block:: bash
