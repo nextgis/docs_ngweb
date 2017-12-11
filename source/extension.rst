@@ -10,15 +10,14 @@ General Information
 
 The following extensions are available to increase the functionality of the software:
 
-1. Rosavto - added support for default basemap selection and a list view of available basemaps,
+1. Basemaps - added support for default basemap selection and a list view of available basemaps,
    an option to select from pre-prepared list of services.
 
-2. Compulink - key - value dictionary added to NextGIS Web standard features,
-   added support for vector layer export to different formats (ESRI shapefile, MapInfo tab etc.)
+2. Exporter - support for additional vector layer exporters to different formats (ESRI shapefile, MapInfo tab etc.)
 
-3. Rekod - added support for file sets, ability to upload any files, including non-geospatial.
+3. File buckets - added support for file sets, ability to upload any files, including non-geospatial files.
 
-4. Forest violations - added support for filtering by attribute and spatial extent.
+4. Filtering - added support for filtering by attribute and spatial extent.
 
 5. Mapnik - added support for Mapnik map renderer.
 
@@ -26,10 +25,14 @@ The following extensions are available to increase the functionality of the soft
 
 7. MapServer - added support for MapServer map renderer.
 
-8. Log - added support for writing of various messages to a log.
+8. Logging - added support for writing of various messages to a log.
 
 9. Mobile debug - added support for recieving and categorizing debug 
    information from NextGIS Mobile SDK.
+
+10. Data editing - ability to edit geometries right in the browser.
+
+11. Vector tiles - support for MVT and associated styles.
  
 Adding a new extension
 ----------------------
