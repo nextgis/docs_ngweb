@@ -69,7 +69,7 @@ To transform NoData value to alpha channel use a command line utility
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
 
-.. note:: 
+.. tip:: 
    NextGIS Manager simplifies this process. Software has an option to  
    upload a raster to NextGIS Web and cut using alpha channel. 
 
@@ -107,7 +107,7 @@ Source files could be in the following formats:
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
   
-.. note:: 
+.. warning:: 
    If you upload data through web-interface, do not use EPSG:3857. 
    Use EPSG:4326 or other coordinate systems (EPSG:3857 mentioned on Vector layer 
    tab is a storage CRS not related to data CRS).
@@ -138,7 +138,7 @@ For more information about creation of styles see subsection  :ref:`ngw_style_cr
 When creating a map (for more information see  subsection. :ref:`ngw_map_create`) 
 you can add a vector layer to a map by selecting its style.
 
-.. note:: 
+.. tip:: 
    NextGIS Manager simplifies this process. Software has an option to 
    upload of vector files in different formats to NextGIS Web without  
    separate archiving. 
