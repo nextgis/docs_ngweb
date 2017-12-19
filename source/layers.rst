@@ -73,7 +73,7 @@
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
 
-.. note:: 
+.. tip:: 
    В NextGIS Manager эту операцию можно сделать проще. В программе есть функционал 
    загрузки растра в NextGIS Web и обрезки по альфа каналу. 
 
