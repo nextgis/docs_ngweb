@@ -133,3 +133,12 @@
      Cерверная геоинформационная система с открытыми исходными кодами, запускаемая 
      через интерфейс CGI.
        
+   CORS
+   Cross-origin resource sharing
+     Технология современных браузеров, которая позволяет предоставить веб-странице доступ к ресурсам другого домена.
+     Подробнее см. https://ru.wikipedia.org/wiki/Cross-origin_resource_sharing
+
+   CSS
+   Cascading Style Sheets
+     Формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
+     Подробнее см. http://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html
