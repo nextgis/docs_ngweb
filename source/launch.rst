@@ -131,6 +131,77 @@ Nginx configuration file (edits should be done to a file in /etc/nginx/sites-ava
     }
 
 
+Gunicorn + nginx
+----------------
+
+/etc/systemd/system/nextgisweb.socket:
+
+::
+
+    [Unit]
+    Description=NextGIS Web socket
+
+    [Socket]
+    ListenStream=127.0.0.1:6543
+
+    [Install]
+    WantedBy=sockets.target
+
+
+/etc/systemd/system/nextgisweb.service:
+
+::
+
+    [Unit]
+    Description=NextGIS Web
+    Requires=nextgisweb.socket
+    After=network.target
+
+    [Service]
+    RuntimeDirectory=nextgisweb
+    WorkingDirectory=/opt/ngw
+    ExecStart=/opt/ngw/env/bin/gunicorn --no-sendfile \
+                                        --bind :6543 \
+                                        --workers 2 \
+                                        --error-logfile error.log \
+                                        --paste /opt/ngw/development.ini
+    Restart=always
+    ExecReload=/bin/kill -s HUP $MAINPID
+    ExecStop=/bin/kill -s TERM $MAINPID
+    KillSignal=SIGQUIT
+
+    User=ngw
+    Group=ngw
+
+    [Install]
+    WantedBy=multi-user.target
+
+
+/etc/nginx/sites-enabled/nextgisweb.conf:
+
+::
+
+    server {
+        listen 80;
+        server_name 127.0.0.1;
+
+        location / {
+            include proxy_params;
+            proxy_pass http://127.0.0.1:6543/;
+
+            client_max_body_size 512M;
+            gzip off;
+        }
+    }
+
+Enable socket unit:
+
+.. code-block:: bash
+
+    sudo systemctl start nextgisweb.socket
+    sudo systemctl enable nextgisweb.socket
+
+
 Other launch options
 --------------------
 
