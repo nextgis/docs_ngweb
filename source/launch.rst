@@ -168,6 +168,7 @@
     ExecStart=/opt/ngw/env/bin/gunicorn --no-sendfile \
                                         --bind :6543 \
                                         --workers 2 \
+                                        --timeout 300 \
                                         --error-logfile error.log \
                                         --paste /opt/ngw/development.ini
     Restart=always
