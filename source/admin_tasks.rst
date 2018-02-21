@@ -276,6 +276,20 @@ Create a separate group of users ("Contributors" in this example) and a separate
    Settings for root resource group.
 
 
+Disallow view of webmap to all not authendificated users, grant view to authendificated users
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+
+
+.. figure:: _static/access_rights_deny_webmap_guests_allow_logined.png
+   :name: access_rights_deny_webmap_guests_allow_logined_pic
+   :align: center
+   :width: 16cm
+
+    Settings for webmap.
+
+
+
 
 
 
