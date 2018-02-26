@@ -290,6 +290,19 @@ Disallow view of webmap to all not authendificated users, grant view to authendi
 
 
 
+Disallow all access for guest users 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+
+
+.. figure:: _static/access_rights_deny_all.png
+   :name: access_rights_deny_all
+   :align: center
+   :width: 16cm
+
+    Settings for root resource group.
+
+
 
 
 
