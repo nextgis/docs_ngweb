@@ -3,7 +3,7 @@
 .. _ngw_create_layers:
 
 Adding resources
-===================
+================
 
 Layer is one of the main components of NextGIS Web software. Layer is a raster image or a vector file (table from database). To join layers on a map you need to set a style (or style set) to display a layer.
 
@@ -15,7 +15,7 @@ Firstly you provide layer parameters and then add a style.
 .. _ngw_create_raster_layer:
 
 Raster layer
---------------
+------------
 
 To add a raster layer navigate to a group where you want to create it. In 
 Actions pane click :menuselection:`Create resource --> Raster layer`. Create 
@@ -234,6 +234,21 @@ After layer is created you need to set a label attribute to display labels. Navi
 
 If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select :menuselection:`Update --> PostGIS layer --> Attribute definitions --> Reload` and click :guilabel:`Save`.
 
+
+PostGIS layer troubleshooting
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You created a connection and trying to create a PostGIS layer based on it and getting errors. 
+
+If you get:
+
+1. Cannot connect to the database!
+
+Check if the database is available, is it up, do you have right credentials? You can all these using pgAdmin or QGIS.
+
+Note that databases go up and down and credentials change.
+
+
 Create layers with conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -267,7 +282,7 @@ After that you can display a view to check if query is correct without closing :
 .. _ngw_create_wms_layer:
 
 WMS layer
------------
+---------
 
 NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check for this coordinate system presence by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NGW requests data in 3857 and server does not support for that coordinate system.
 
@@ -365,8 +380,8 @@ Then you need to set access permissions for WMS service. See  section :ref:`ngw_
 NextGIS Web layer could be added to desktop, mobile and web gis in different ways.
 
 
-Connection to WMS
-^^^^^^^^^^^^^^^^^^^^^^^^^
+WMS connection
+^^^^^^^^^^^^^^^^^
 
 NextGIS Web is a WMS server. Any WMS layes could be added to a software that supports WMS layers. You need to know WMS service URL. You can get in on WMS service properties page. Example:
 
@@ -374,9 +389,8 @@ NextGIS Web is a WMS server. Any WMS layes could be added to a software that sup
 
    http://demo.nextgis.ru/resource/60/wms?
 
-Connection to WMS in GDAL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+Using WMS connection in GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Single NextGIS Web layers could be added as WMS. To use them through GDAL utilities you need to create an XML file for required layer. You need an URL for WMS service to create that file.
 You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
@@ -386,7 +400,7 @@ You need to enter these parameters to ServerUrl string in example below. The res
    <GDAL_WMS>
     <Service name="WMS">
         <Version>1.1.1</Version>
-        <ServerUrl>http://176.9.38.120/practice2/api/resource/85/wms?</ServerUrl>
+        <ServerUrl>http://dev.nextgis.com/practice2/api/resource/85/wms?</ServerUrl>
         <SRS>EPSG:3857</SRS>
         <ImageFormat>image/png</ImageFormat>
         <Layers>moscow_boundary_multipolygon</Layers>
@@ -415,8 +429,8 @@ Gdal utility call example. The utility gets an image by WMS from NGW and saves i
 
 .. _ngw_create_tms_service:
 
-Connection to TMS in GDAL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using TMS connection in GDAL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Single layers of NextGIS Web could be added as TMS. You need t create an XML file for required layer. To create this file you need the information about NGW address and a layer number (in the example: address - http://demo.nextgis.ru/ngw_kl, layer number - 5). 
 You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
@@ -452,7 +466,7 @@ You need to enter these parameters to ServerUrl string in example below. The res
 WFS service
 ------------
 
-Setup of WFS layer is performed the same way as for WMS service but you add a layer instead of a style.
+WFS layer setup is performed the same way as for WMS service but you add a layer instead of a style.
 
 For more information see:
 
@@ -477,7 +491,7 @@ Then you need to set access permissions for WFS service. See  section :ref:`ngw_
 .. _ngw_resources_group:
 
 Creation of a resource group
-------------------------------
+----------------------------
 
 Resources could be joined to groups. For example you can join base layers to one group, satellite imagery to another group and thematic data to one more group etc.
 
