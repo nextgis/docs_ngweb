@@ -14,3 +14,4 @@
    install-ubuntu
    install-centos7
    launch
+   qgis_icons
