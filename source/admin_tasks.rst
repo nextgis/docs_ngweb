@@ -3,13 +3,13 @@
 
 .. _ngw_admin_tasks:
 
-Administrator tasks
-================================
+Administrative tasks
+===================
 
 .. _ngw_create_group:
 
-Creation of a new user group
-----------------------------
+Create new user group
+---------------------
 
 A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
 This window could be opened from Control panel 
@@ -21,7 +21,7 @@ This window could be opened from Control panel
    :align: center
    :width: 16cm
 
-   Create new group dialog.
+   Create new group dialog
 
 In create new group dialog enter full name, group name (short name) and click a button  :guilabel:`Create`. Also you can enter a description for a user group. 
 
@@ -29,8 +29,8 @@ In create new group dialog enter full name, group name (short name) and click a 
    A name for a group should contain only letters and numbers. 
 
 
-Creation of a new user
-----------------------
+Create new user
+---------------
 
 A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
 This window could be opened from Control panel 
@@ -53,13 +53,13 @@ Then click a button :guilabel:`Create`.
    :align: center
    :width: 16cm
 
-   Create new user dialog.
+   Create new user dialog
 
 
 .. _ngw_access_rights:
     
 Setting permissions
-----------------------
+-------------------
 
 NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
 
@@ -308,8 +308,8 @@ Disallow all access for guest users
 
 .. _ngw_change_password:
 
-Update of user password
------------------------------
+Update user password
+--------------------
 
 To update user password you can use a web interface.
 Also there is an option to change user password using command line:
@@ -324,7 +324,7 @@ Also there is an option to change user password using command line:
 .. _ngw_CSS:
 
 Customization of NextGIS Web outlook
----------------------------------------
+------------------------------------
 
 You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc., with a little bit of CSS magic:
 
@@ -335,22 +335,33 @@ You can customize the look of NextGIS Web, including logos, backgrounds, header 
 Custom CSS examples
 --------------------
 
-Change header color:
-~~~~~~~~~~~~~~~~~~~~~
+Change header color
+~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
     .header{background-color: #F44336; color: #fff;}
 
-Remove NextGIS logo from Web map:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Remove NextGIS logo from Web map
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
     .map-logo{display:none;}
 
+Remove identification window header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Identification window is a popup that is shown when you click on a feature on a Web map. This setting will hide it's header and layer selector:
+
+.. code-block:: css
+
+	div.ngwPopup__content div div.dijitAlignTop,
+        div.ngwPopup__features span.ngwWebmapToolIdentify-controller {
+            display: none;
+        }
+
 Advanced example
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 This example shows how to change the look of pretty much all changeable elements of NextGIS Web. 
 You can try these examples as is or change it to your liking. You can also see them in action `here <http://nastya.nextgis.com>`_.
