@@ -93,7 +93,7 @@
 .. code-block:: bash
 
     cd ~/ngw
-    git clone git@github.com:nextgis/nextgisweb_qgis.git
+    git clone https://github.com/nextgis/nextgisweb_qgis.git
     source env/bin/activate
     pip install -e nextgisweb_qgis/
 
