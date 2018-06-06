@@ -44,7 +44,7 @@ Here are steps to add an extension:
 
 .. code-block:: bash
 
-   git clone https://github.com/nextgis/nextgisweb_rekod.git
+   git clone https://github.com/nextgis/nextgisweb_qgis.git
 
 2. Install extension in NextGIS Web: 
 
