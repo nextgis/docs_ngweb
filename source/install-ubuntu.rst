@@ -17,11 +17,12 @@
 
 Подготовка базы данных
 ----------------------
+
 Устанавливаем PostgreSQL:
 
 .. code-block:: bash
 
-    sudo apt-get install postgresql-<version>
+    sudo apt-get install postgresql-9.3
 
 Создаем пользователя, который будет упомянут в качестве database.user в
 config.ini (см. далее):
