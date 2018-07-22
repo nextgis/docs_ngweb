@@ -10,32 +10,32 @@ General Information
 
 The following extensions are available to increase the functionality of the software:
 
-1. **Basemaps** - added support for default basemap selection and a list view of available basemaps,
+1. **Basemaps** (nextgisweb_basemap) - support for default basemap selection and a list view of available basemaps,
    an option to select from pre-prepared list of services.
 
 2. **Exporter** - support for additional vector layer exporters to different formats (ESRI shapefile, MapInfo tab etc.)
 
-3. **File buckets** (nextgisweb_filebucket) - added support for file sets, ability to upload any files, including non-geospatial files.
+3. **File buckets** (nextgisweb_filebucket) - support for file sets, ability to upload any files, including non-geospatial files.
 
-4. **Filtering** - added support for filtering by attribute and spatial extent.
+4. **Filtering** - support for filtering by attribute and spatial extent.
 
-5. **Mapnik** - added support for Mapnik map renderer.
+5. **Mapnik** - support for Mapnik map renderer.
 
-6. **QGIS** - added support for QGIS map renderer.
+6. **QGIS** - support for QGIS map renderer.
 
-7. **MapServer** - added support for MapServer map renderer.
+7. **MapServer** - support for MapServer map renderer.
 
-8. **Logging** - added support for writing of various messages to a log.
+8. **Logging** - support for writing of various messages to a log.
 
-9. **Mobile debug** - added support for recieving and categorizing debug 
+9. **Mobile debug** - support for receiving and categorizing debug 
    information from NextGIS Mobile SDK.
 
 10. **Data editing** - ability to edit geometries right in the browser.
 
 11. **Vector tiles** - support for MVT and associated styles.
  
-Adding a new extension
-----------------------
+Adding an extension
+-------------------
 
 Example: adding nextgisweb_filebucket extension. 
 Here are steps to add an extension:
