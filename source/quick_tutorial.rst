@@ -11,7 +11,7 @@ Quickstart tutorial for qualified users
 -------------------------------------------------
 
 **NextGIS Web** - is a server :term:`geographical information system` (:abbr:`GIS 
-(geographical information system)`), which allows to display maps in web browser. 
+(geographical information system)`), which allows to store and to edit geodata and to display maps in web browser. 
 Also NextGIS Web can share geodata :term:`geodata <geodata>` with other NextGIS 
 software.
 
@@ -20,7 +20,7 @@ NextGIS Web has the following features:
 * Display of maps in web browser (different maps with different layers and  
   styles)
 * Flexible access permissions management
-* Load of data from :term:`PostGIS`,of import from  
+* Geodata could be loaded from :term:`PostGIS` or imported from  
   files in :abbr:`GIS (geographical information system)` formats 
   :term:`ESRI Shape`,  :term:`GeoJSON` or :term:`GeoTIFF`
 * Vector data could be downloaded in the following formats: :term:`GeoJSON`, 
@@ -62,12 +62,12 @@ This software simplifies batch processing of data in NextGIS Web.
 .. only:: html
 
    Mobile application :ref:`NextGIS Mobile <ngmob_intro>` allows to upload 
-   geodata collected in the field directly to web gis in online or offline mode. 
+   geodata collected in the field directly to Web GIS in online or offline mode. 
 
 .. only:: latex
 
    Mobile application `NextGIS Mobile <http://docs.nextgis.ru/docs_ngmobile/source/intro.html>`_ allow to upload 
-   geodata collected in the field directly to web gis in online or offline mode. 
+   geodata collected in the field directly to Web GIS in online or offline mode. 
    
    
 Several mobile devices could see data changes in a single layer.
@@ -103,7 +103,7 @@ To create a raster layer follow these steps:
 3. Add a style to raster layer
 
 
-After layers are loaded they may be added to a web map. Layers could be added in web map properties page. Then a web map could be displayed by address.
+After layers are loaded they should be added to a web map in web map properties page. Then a link to web map could be opened in a web browser.
 
 If there are many layers to add this operation will be easier performed with :ref:`NextGIS Manager <ngman_intro>`.
 
