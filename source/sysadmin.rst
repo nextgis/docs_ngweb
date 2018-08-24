@@ -14,4 +14,5 @@
    install-ubuntu
    install-centos7
    launch
+   replication
    qgis_icons

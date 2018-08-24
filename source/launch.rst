@@ -35,13 +35,14 @@
 
     http://0.0.0.0:6543
 
-.. note: IP адрес 0.0.0.0 необходим для проверки на том же сервере, где развернут NextGIS Web. Если веб-браузер не установлен
-   на сервере, то можно набрать команду в новой консоли 'curl http://0.0.0.0:6543'. Также можно на другом компьютере в той же
-   сети в веб-браузере набрать http://<ip адрес сервера с NextGIS Web>:6543.
+.. note:: IP адрес 0.0.0.0 необходим для проверки на том же сервере, где развернут 
+   NextGIS Web. Если веб-браузер не установлен на сервере, то можно набрать команду 
+   в новой консоли 'curl http://0.0.0.0:6543'. Также можно на другом компьютере 
+   в той же сети в веб-браузере набрать http://<ip адрес сервера с NextGIS Web>:6543.
 
 Должно открыться окно авторизации.
 
-.. note: При запуске pserve через supervisor необходимо добавить настройку 
+.. note:: При запуске pserve через supervisor необходимо добавить настройку 
    environment=LC_ALL=en_US.UTF-8.
 
 
@@ -210,6 +211,7 @@
 
 Другие варианты запуска
 -----------------------
+
 **Внимание, эти варианты запуска официально не поддерживаются**
 
 При использовании FreeBSD может потребоваться отключить WSGI file
@@ -218,7 +220,7 @@ wrapper, так как он иногда работает некорректно
 
 ::
 
-    env = WSGI_FILE_WRAPPER=no
+   env = WSGI_FILE_WRAPPER=no
 
 В зависимости от того, какой интерфейс требуется на выходе от
 uwsgi. Тут есть некоторая путаница, связаная с тем, что uwsgi - это
@@ -228,35 +230,35 @@ HTTP:
 
 ::
 
-    socket = host:port | :port
-    protocol = http
+   socket = host:port | :port
+   protocol = http
 
 uWSGI:
 
 ::
 
-    socket = host:port | :port | /path/to/socket
-    protocol = uwsgi
+   socket = host:port | :port | /path/to/socket
+   protocol = uwsgi
 
 FastCGI:
 
 ::
 
-    socket = host:port | :port | /path/to/socket
-    protocol = fastcgi
+   socket = host:port | :port | /path/to/socket
+   protocol = fastcgi
 
 Знака \| в конфиге быть не должно, надо написать, например, так:
 
 ::
 
-    socket =  :6543    
+   socket =  :6543    
 
 При использовании сокета в файловой системе права на него могут быть
 выставлены через параметр chmod:
 
 ::
 
-    chmod = 777
+  chmod = 777
 
 Количество процессов задается параметром ``workers``, а количество
 потоков в процессе - параметром ``thread``. В примере ниже будет
@@ -264,8 +266,8 @@ FastCGI:
 
 ::
 
-    workers = 2
-    threads = 4
+   workers = 2
+   threads = 4
 
 Вариант с отдельным процессами более безопасный, но и более
 ресурсоемкий.
@@ -277,8 +279,8 @@ FastCGI:
 
 ::
 
-    [program:nextgisweb]
-    command = /path/to/uwsgi /path/to/file.ini
+   [program:nextgisweb]
+   command = /path/to/uwsgi /path/to/file.ini
     
 supervisor + uwsgi
 ~~~~~~~~~~~~~~~~~~
