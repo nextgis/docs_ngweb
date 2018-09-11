@@ -12,6 +12,16 @@ integrated into a single bank of data and metadata
 NextGIS Web developed based on :term:`open source` software. NextGIS Web software supports Open Geospatial Consorcium 
 (`OGC <http://www.opengeospatial.org/>`_) open data exchange protocols and meets the modern requirements for application architecture implemented on the basis of free software (:term:`Open Source`).
 
+NextGIS Web allows:
+
+1. Creation and display of maps.
+2. Navigation on the map (zooming, shifting).
+3. Control a filling of the map through web-interface.
+4. Adding of vector (:term:`ESRI Shape`, :term:`PostGIS`) and raster data.
+5. Using of standart protocols (:term:`WMS`, :term:`WFS-T`).
+6. Detailed settings of access rights for layers, groups of layers, maps.
+7. Interaction through API.
+
 NextGIS Web has server and client sides. 
 
 Server side store and render geodata. It's written on Python with a use of Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management and interaction with geodata on a map. 
@@ -21,9 +31,9 @@ Client is written on JavaScript and based on a Dojo framework. All configuration
 NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled on the step of application configuration. NextGIS Web components communicate with each other using internal API methods.
 
 NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web works in all modern browsers.
-User interface with a published web map :numref:`webmap_sample`.
+User interface with a published web map is on the :numref:`webmap_sample`.
 
-.. figure:: _static/webmap_sample.png
+.. figure:: _static/webmap_sample_eng.png
    :name: webmap_sample
    :align: center
    :width: 16cm
@@ -43,25 +53,26 @@ Data layers
 * Creation of raster and vector layers and data upload for them using web interface. 
 * Creation of :term:`WMS` layers and connection to existing services. 
 * Creation of :term:`PostGIS` layers and connection to layers in external databases. 
-* A set of standard basemaps: OpenStreetMap, Google, Bing. 
+* A set of standard basemaps: OpenStreetMap, Google, Bing and others from `QuickMapServices <https://qms.nextgis.com/>`_. 
 * WFS service.
 * WMS service.
 * Dictionary (with extension). 
 * File set.
 * "Key-value" function, support for metadata.
-* Export to GeoJSON and CSV.
+* Export to :term:`GeoJSON` and CSV.
 
 Access management 
 ~~~~~~~~~~~~~~~~~~~
 
 * Detailed settings of access rights for each connected layer.
-* Setting access rights for resources and resourse groups.
+* Setting of access rights for resources and resourse groups.
 
 Rendering and symbology 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Symbology import from QGIS with automated conversion "for renderer". 
-* Pluggable renderers: :term:`MapServer`, :term:`Mapnik`. 
+* Pluggable renderers: :term:`MapServer`, :term:`Mapnik`, :term:`QGIS` (import a project from desktop software 
+  NextGIS QGIS with the same layers, styles etc.). 
 * Several symbology options for the single data layer. 
 
 Web maps 
@@ -87,7 +98,7 @@ Editing
 
 * Editing of feature attributes.
 * Editing of layer description. 
-* Adding photos and other  attachments. 
+* Adding of photos and other  attachments. 
 * Editing features with WFS-T.
 
 .. _ngw_sys_req:
@@ -121,11 +132,19 @@ Operation system with NextGIS Web software and a database requires not more than
 Recommended software versions
 ---------------------------------
 
-* Ubuntu Server 14.04 LTS
-* PostgreSQL 9.3
-* PostGIS 2.1.2
+* Ubuntu Server 16.04 LTS
+* PostgreSQL 9.5
+* PostGIS 2.2
 * Pyramid >= 1.5
-* SQLAlchemy>=0.8,<0.9
+* SQLAlchemy >=0.8, <0.9
 * GDAL 1.x
+
+Recomended browsers are:
+
+* Internet Explorer 11.0 or a newer version
+* Mozilla Firefox 45 or a newer version
+* Google Chrome 45 or a newer version
+
+.. warning::
 
 NextGIS Web would probably work with other versions, but this is not garanteed.
