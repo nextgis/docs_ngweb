@@ -12,41 +12,45 @@ Home page
 After login to administrative interface the user is taken to the home page shown 
 on  :numref:`admin_index_pic`.
 
-
-.. figure:: _static/admin_index.png
+.. figure:: _static/ngweb_main_page_administrative_interface_eng.png
    :name: admin_index_pic
    :align: center
    :width: 16cm
 
    Administrator interface home page.
 
-   The numbers indicate: 
-   1 – main menu with login/logout button; 
-   2 – main resource group pane; 
-   3 – child resources pane with a list of items in main group; 
-   4 – main resource group description; 
-   5 – user permissions for main resource group;
-   6 – types of items that could be added to the main resource group; 
-   7 – actions that could be performed with main resource group.	
+   The numbers indicate: 1 - main menu; 2 - "Change the language" button; 3 – main resource group description; 4 - child resources; 5 - user permissions for main resource group; 6 - types of items that could be added to the main resource group; 7 - actions that could be performed with main resource group.
 
 Home page includes a main menu pane, 
-(see  :numref:`admin_index_pic` index. 1) which has the following links:
+(see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
 
 * Resources
 * Control Panel
-* Login/logout button with current user indication 
-  .
+* Help
+* Account
 
-Child resources pane (see  :numref:`admin_index_pic` index. 3) contains a list 
-of all resources placed in a root group. Pane displays information about display 
-name, owner and an edit resource button.
+.. figure:: _static/ngweb_main_page_main_menu_eng.png
+   :name: ngweb_main_page_main_menu_pic
+   :align: center
+   :width: 16cm
 
-Description pane (see  :numref:`admin_index_pic` index. 4) displays root group 
+   Main menu.
+ 
+Description pane (see item 3 in :numref:`admin_index_pic`) displays root group 
 description (if available).
 
-User permissions pane (see  :numref:`admin_index_pic` index. 5) displays list of 
-permissions the current user granted for the root group. Green mark indicates 
-that user has corresponding permission. 
+Child resources pane (see item 4 in :numref:`admin_index_pic`) contains a list 
+of all resources placed in a root group. Pane displays information about display 
+name, owner and contains an edit resource button.
+
+User permissions pane (see item 5 in :numref:`admin_index_pic`) displays list of 
+permissions the current user granted for the root group. Green and red marks indicate 
+that user has/don't have corresponding permission. 
+
+* A - allow
+* D - deny
+* M - mask (indirectly deny)
+* E - empty (actually deny)
 
 Possible permissions are the following:
 
@@ -54,16 +58,17 @@ Possible permissions are the following:
 * Read
 * View permissions
 * Create
-* Update
+* Edit
 * Manage permissions
 * Delete
 
-
-Actions pane (see  :numref:`admin_index_pic`. 6 and 7) contains tools for adding
+Actions pane (see items 6 and 7 in :numref:`admin_index_pic`) contains tools for adding
 data and executing operations with root group.
 
-In current version it is possible to add the following types of data:
+In current version it is possible to add the following types of data (see item 6 in :numref:`admin_index_pic`):
 
+* Basemap
+* Lookup table
 * PostGIS connection
 * PostGIS layer
 * Raster layer
@@ -74,7 +79,7 @@ In current version it is possible to add the following types of data:
 * WMS layer
 * WMS service
 
-Possible operations are:: 
+Possible operations are (see item 7 in :numref:`admin_index_pic`): 
 
 * Delete
 * Update 
