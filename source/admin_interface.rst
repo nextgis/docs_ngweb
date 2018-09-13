@@ -21,8 +21,7 @@ on  :numref:`admin_index_pic`.
 
    The numbers indicate: 1 - main menu; 2 - "Change the language" button; 3 – main resource group description; 4 - child resources; 5 - user permissions for main resource group; 6 - types of items that could be added to the main resource group; 7 - actions that could be performed with main resource group.
 
-Home page includes a main menu pane, 
-(see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
+Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
 
 * Resources
 * Control Panel
@@ -87,7 +86,7 @@ Possible operations are (see item 7 in :numref:`admin_index_pic`):
 Control panel
 --------------------------------
 
-NextGIS Web Control panel presented on  :numref:`admin_control_panel`.
+NextGIS Web Control panel is available through the main menu (see item 1 in :numref:`admin_index_pic`), where you need to select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`). It is presented on  :numref:`admin_control_panel`.
 
 .. figure:: _static/admin_control_panel.png
    :name: admin_control_panel
@@ -98,11 +97,11 @@ NextGIS Web Control panel presented on  :numref:`admin_control_panel`.
 
 Control panel allows to execute the following actions:
 
-* View user groups
-* Create user groups
-* View user list
-* Create user
-* Grant permissions to resource groups and web maps.
+* View user groups and user list
+* Create user groups and users 
+* Grant permissions to resource groups and web maps
+* Set Web GIS name
+* Input a list of possible sources for cross-origin resource sharing (CORS)
 
 For more information about creation of user groups and users and granting 
 permissions see topic :ref:`ngw_admin_tasks`.
@@ -121,19 +120,11 @@ After login to administrative interface the user is taken to home page shown on
    Resource groups. 
 
 The content of resource group is displayed after a click on resource name in a child resources pane of main resource group. On resource group page there is a pane with a list of resources in root group and user permissions pane.
-Layer properties are displayed after a click on a name of a layer in child resources pane. E.g. user can click on a resource of type vector layer (see  :numref:`resource_group1`).
-
-.. figure:: _static/resource_group1.png
-   :name: resource_group1
-   :align: center
-   :width: 16cm
-
-   Child resource group
-
+Layer properties are displayed after a click on a name of a layer in child resources pane. E.g. user can click on a resource of type vector layer.
 
 After a click on layer in child resources pane user is taken to a vector layer properties and attributes page (see  :numref:`options_resource_group`).
 
-.. figure:: _static/options_resource_group.png
+.. figure:: _static/options_resource_group_eng.png
    :name: options_resource_group
    :align: center
    :width: 16cm
@@ -143,19 +134,21 @@ After a click on layer in child resources pane user is taken to a vector layer p
 Feature table
 -----------------
 
-To view feature table after login navigate to a child resource group, where would be displayed resource types. Then select from child resources a resource with type vector layer. In actions pane select an action for vector layer called Feature table. A feature table for the vector layer will be displayed :numref:`admin_table_objects_upload`.
+To view feature table after login navigate to a child resource group, where would be displayed resource types. Then select from child resources a resource with type vector layer. In actions pane select an action for vector layer called Feature table (see :numref:`admin_table_objects_upload`).
 
-.. figure:: _static/table_objects.png
+.. figure:: _static/feature_table_choice_eng.png
    :name: admin_table_objects_upload
    :align: center
    :width: 16cm
 
-   Feature table. 
+   Choice of feature table. 
 
-Feature table allows to perform the following operations with a selected record  :numref:`admin_table_objects1_upload`:
+Feature table allows to perform the following operations with a selected record  (see in :numref:`admin_table_objects1_upload`):
 
-1. Open.
-2. Edit.
+1. Open
+2. Edit
+3. Delete
+4. Use Search Box
  
 .. figure:: _static/table_objects1.png
    :name: admin_table_objects1_upload
@@ -164,10 +157,18 @@ Feature table allows to perform the following operations with a selected record 
 
    Actions for the selected record in feature table.
 
-Feature table could be opened in a different way. In the adminitrative interface navigate to a child resource group where would be displayed resource types. Then select from child resources a resource with a type web map. In actions pane click a web map action called Display.
+There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type web map. In actions pane click a web map action called Display (see in :numref:`webmap_open_eng_pic`):
+
+.. figure:: _static/webmap_open_eng.png
+   :name: webmap_open_eng_pic
+   :align: center
+   :width: 16cm
+
+   "Display" web map action.
+   
 A web map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select Feature table command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
 
-.. figure:: _static/map_and_tree_layers.png
+.. figure:: _static/map_and_tree_layers_eng.png
    :name: admin_map_and_tree_layers_upload
    :align: center
    :width: 16cm
@@ -176,9 +177,11 @@ A web map will be opened with a layer tree (left) and a map (right). To view a f
  
 A table will be displayed in a new tab. Table allows to perform the following operations with a selected record :numref:`admin_table_objects2_upload`:
 
-1. Open.
-2. Edit.
-3. Go to (after a click a map tab will become active and a map will display the selected feature).
+1. Open
+2. Edit
+3. Delete
+4. Go to (after a click the selected feature will be displayed on the map)
+5. Use Search Box
  
 .. figure:: _static/table_objects2.png
    :name: admin_table_objects2_upload
