@@ -58,7 +58,7 @@ Server). Подробнее см. подраздел :ref:`ngw_soft_req`. NextGI
    :name: webmap_sample
    :align: center
    :width: 16cm
-   
+      
    Пользовательский интерфейс с опубликованной веб-картой. 
 
 .. _ngw_keyfeatures:
