@@ -86,7 +86,7 @@
 
 В панель управления NextGIS Web можно попасть через основное меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1), выбрав соответствующий пункт (см. :numref:`ngweb_main_page_main_menu_pic`). Панель управления представлена на :numref:`ngweb_control_panel`.
 
-.. figure:: _static/ngweb_control_panel.png
+.. figure:: _static/ngweb_control_panel_new.png
    :name: ngweb_control_panel
    :align: center
    :width: 16cm
@@ -123,7 +123,7 @@
 В результате выбора векторного ресурса откроется окно с параметрами/атрибутами 
 векторного слоя (см. :numref:`ngweb_options_resource_group`).
 
-.. figure:: _static/options_resource_group.png
+.. figure:: _static/options_resource_group_rus.png
    :name: ngweb_options_resource_group
    :align: center
    :width: 16cm
@@ -154,7 +154,7 @@
 3. Удалить
 4. Воспользоваться Строкой поиска
 
-.. figure:: _static/ngweb_operations_on_writing_in_object_table.png
+.. figure:: _static/ngweb_operations_on_writing_in_object_table_rus.png
    :name: ngweb_operations_on_writing_in_object_table
    :align: center
    :width: 16cm
@@ -176,7 +176,7 @@
 таблицы объектов необходимо выделить нужный слой карты в дереве слоев, после чего 
 во вкладке "Слой" выбрать "Таблица объектов" :numref:`ngweb_admin_map_and_tree_layers_upload`:
 
-.. figure:: _static/map_and_tree_layers.png
+.. figure:: _static/map_and_tree_layers_rus.png
    :name: ngweb_admin_map_and_tree_layers_upload
    :align: center
    :width: 16cm
@@ -192,7 +192,7 @@ Cформируется таблица объектов, которая позв
 4. Перейти (при нажатии на кнопку происходит переход к выбранному объекту на карте)
 5. Воспользоваться Строкой поиска
  
-.. figure:: _static/ngweb_operations_on_writing_in_object_table2.png
+.. figure:: _static/ngweb_operations_on_writing_in_object_table2_rus.png
    :name: ngweb_admin_table_objects2_upload
    :align: center
    :width: 16cm
