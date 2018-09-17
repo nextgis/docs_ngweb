@@ -88,7 +88,7 @@ Control panel
 
 NextGIS Web Control panel is available through the main menu (see item 1 in :numref:`admin_index_pic`), where you need to select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`). It is presented on  :numref:`admin_control_panel`.
 
-.. figure:: _static/admin_control_panel.png
+.. figure:: _static/admin_control_panel_eng.png
    :name: admin_control_panel
    :align: center
    :width: 16cm
@@ -112,7 +112,7 @@ Resource view
 After login to administrative interface the user is taken to home page shown on 
 :numref:`resource_group`.
 
-.. figure:: _static/resource_group.png
+.. figure:: _static/resource_group_eng.png
    :name: resource_group
    :align: center
    :width: 16cm
@@ -150,7 +150,7 @@ Feature table allows to perform the following operations with a selected record 
 3. Delete
 4. Use Search Box
  
-.. figure:: _static/table_objects1.png
+.. figure:: _static/table_objects1_eng.png
    :name: admin_table_objects1_upload
    :align: center
    :width: 16cm
@@ -183,7 +183,7 @@ A table will be displayed in a new tab. Table allows to perform the following op
 4. Go to (after a click the selected feature will be displayed on the map)
 5. Use Search Box
  
-.. figure:: _static/table_objects2.png
+.. figure:: _static/table_objects2_eng.png
    :name: admin_table_objects2_upload
    :align: center
    :width: 16cm
