@@ -134,7 +134,7 @@ After a click on layer in child resources pane user is taken to a vector layer p
 Feature table
 -----------------
 
-To view feature table after login navigate to a child resource group, where would be displayed resource types. Then select from child resources a resource with type vector layer. In actions pane select an action for vector layer called Feature table (see :numref:`admin_table_objects_upload`).
+To view feature table after login navigate to a child resource group, where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Table" icon in the most right part of the row with the resource or select an action for vector layer called Feature table in actions pane (see :numref:`admin_table_objects_upload`).
 
 .. figure:: _static/feature_table_choice_eng.png
    :name: admin_table_objects_upload
