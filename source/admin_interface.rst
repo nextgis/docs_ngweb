@@ -195,7 +195,7 @@ Update resource
 
 To edit a resource after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`).
 
-.. figure:: _static/ngw_window_update_edit_resource_eng.png
+.. figure:: _static/ngw_window_update_edit_resource.png
    :name: ngw_window_update_edit_resource
    :align: center
    :width: 16cm
@@ -292,7 +292,7 @@ To delete the resource after login navigate to a child resource group (see item 
    
 In the opened "Delete resource" window (see :numref:`ngw_deletion_resource`) you need to tick "Confirm deletion of the resource" and press "Delete" button. 
 
-.. figure:: _static/ngw_deletion_resource_eng.png
+.. figure:: _static/ngw_deletion_resource.png
    :name: ngw_deletion_resource
    :align: center
    :width: 16cm
