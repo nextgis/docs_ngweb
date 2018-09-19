@@ -18,43 +18,46 @@ Raster layer
 ------------
 
 To add a raster layer navigate to a group where you want to create it. In 
-Actions pane click :menuselection:`Create resource --> Raster layer`. Create 
-resource dialog for raster layer layer will open and look like 
+actions pane "Create resource" click "Raster layer" (see :numref:`ngweb_admin_layers_create_raster_layer`). 
+
+.. figure:: _static/admin_layers_create_raster_layer_eng.png
+   :name: ngweb_admin_layers_create_raster_layer
+   :align: center
+   :width: 16cm
+
+   Selection of "Raster layer" action.
+   
+Create resource dialog for raster layer will open and will look like 
 :numref:`admin_layers_create_raster_layer_resourse_description`. 
 
-.. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
+.. figure:: _static/admin_layers_create_raster_layer_resourse_description_eng.png
    :name: admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 16cm
 
    Create resource dialog for raster layer.
 
-
 Enter display name that will be visible in administrator interface and in map 
-layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not 
-required.
+layer tree. Field "Keyname" is optional.
 
-Switch from :guilabel:`Resource` tab to :guilabel:`Raster layer` tab. 
-Raster layer tab is presented on :numref:`admin_layers_create_raster_layer_upload`.
+You can also add resource description and metadata on the corresponding tabs. 
 
-.. figure:: _static/admin_layers_create_raster_layer_upload.png
+Switch from "Resource" tab to "Raster layer" tab, which is presented on :numref:`admin_layers_create_raster_layer_upload`.
+
+.. figure:: _static/admin_layers_create_raster_layer_upload_eng.png
    :name: admin_layers_create_raster_layer_upload
    :align: center
    :width: 16cm
 
    Raster layer tab with button for upload of raster file.
 
-Then you need to specify a coordinate system the raster will be reprojected to. 
-By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ).
-Then you need to specify a file. 
+Here specify a coordinate system the raster will be reprojected to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)) and select a file. 
 
 .. note:: 
    The file should be in GeoTIFF format with 3 or 4 bands (RGB or RGBA). 
  
 After a file is successfully uploaded you need to create a style (if it was not 
-create automatically). When creating a map (for more information see  subsection. 
-:ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and 
-its style.
+create automatically). When creating a map (for more information see subsection :ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and its style.
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,30 +80,47 @@ To transform NoData value to alpha channel use a command line utility
 
 Vector layer from file
 -----------------------
-To add a vector layer navigate to a group where you want to create it. 
-In Actions pane in :guilabel:`Create resource` section select 
-:guilabel:`Vector layer` action. A dialog for creation of vector layer will open. 
-Enter display name that will be visible in administrator interface and in map 
-layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not 
-required. Switch from :guilabel:`Resource` tab to :guilabel:`Vector layer tab`. 
-Vector layer tab is presented on :numref:`admin_layers_create_vector_layer_resourse_description`. 
+To add a vector layer navigate to a group where you want to create it. In 
+actions pane "Create resource" click "Vector layer" (see :numref:`ngweb_admin_layers_create_vector_layer`). 
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
+.. figure:: _static/admin_layers_create_vector_layer_eng.png
+   :name: ngweb_admin_layers_create_vector_layer
+   :align: center
+   :width: 16cm
+
+   Selection of "Vector layer" action.
+   
+Create resource dialog for vector layer will open and will look like 
+:numref:`admin_layers_create_vector_layer_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_vector_layer_resourse_description_eng.png
    :name: admin_layers_create_vector_layer_resourse_description
    :align: center
    :width: 16cm
 
    Create resource dialog for vector layer.
+   
+Enter display name that will be visible in administrator interface and in map 
+layer tree. Field "Keyname" is optional.
 
-Then you need to specify a coordinate system the vector data will be reprojected 
-to. By default there are only (WGS84 and Pseudo Mercator (EPSG:3857) ). 
+You can also add resource description and metadata on the corresponding tabs. 
 
-Then you need to specify source file (click button Select, see 
-:numref:`admin_layers_create_vector_layer_upload`).  
+Switch from "Resource" tab to "Vector layer tab", which is presented on :numref:`admin_layers_create_vector_layer_upload`.
+
+.. figure:: _static/admin_layers_create_vector_layer_upload_eng.png
+   :name: admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 16cm
+
+   Vector layer tab with button for upload of vector file.
+
+Here specify a coordinate system the vector data will be reprojected 
+to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)), encoding type (UTF-8 or 
+   Windows-1251; also you need to specify encoding that is used for attributes: if encoding is not set ESRI Shapefile should have a file with encoding description (.cpg extension), in case of GeoJSON encoding is always UTF-8) and select source file.  
 Source files could be in the following formats: 
 
-* ESRI Shapefile;
-* GeoJSON.
+* ESRI Shapefile
+* GeoJSON
 
 .. note:: 
    In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
@@ -117,20 +137,15 @@ list of invalid geometries), dates should not have NULL values, there should not
 be attribute names: *id (ID), geom(GEOM)*.
 
 Special restriction for WFS protocol: attribute names should begin only with letter or (_), next allowed sybmols in name is letters, digits, (-), (_), (.).
+
+In case there are multigeometries in the file, field type of the geometry should be multigeometry. In this case program-clients should convert field type before uploading. You can do it manually with ogr2ogr utility
+
+.. code-block:: shell
+
+   ogr2ogr -nlt MULTIPOLYGON multipolygon_output.shp polygon_input.shp
    
 Coordinate system should be recognized by GDAL (output of gdalinfo should contain 
 coordinate system definition). 
-
-.. figure:: _static/admin_layers_create_vector_layer_upload.png
-   :name: admin_layers_create_vector_layer_upload
-   :align: center
-   :width: 16cm
-
-   Vector layer tab with button for upload of vector file.
-
-Also you need to specify encoding that is used for attributes.
-If encoding is not set ESRI Shapefile should have a file with encoding description 
-(cpg extension). In case of GeoJSON encoding is always UTF-8.
 
 After a file is successfully uploaded you need to create a style. 
 For more information about creation of styles see subsection  :ref:`ngw_style_create`.
