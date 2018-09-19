@@ -19,25 +19,33 @@
 Растровый слой
 --------------
 
-Для добавления растрового слоя перейдите в группу, где необходимо его создать. В 
-блоке операций выберите ``Создать ресурс ‣ Растровый слой``. Откроется окно, 
-представленное на :numref:`ngweb_admin_layers_create_raster_layer_resourse_description`. 
+Для добавления растрового слоя следует перейти в группу, где необходимо его создать, и в 
+блоке операций "Создать ресурс" выбрать "Растровый слой" (см. :numref:`ngweb_admin_layers_create_raster_layer`). 
 
-.. figure:: _static/admin_layers_create_raster_layer_resourse_description.png
+.. figure:: _static/admin_layers_create_raster_layer_rus.png
+   :name: ngweb_admin_layers_create_raster_layer
+   :align: center
+   :width: 16cm
+
+   Выбор действия "Растровый слой".
+
+В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_raster_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 16cm
 
    Окно создания растрового слоя.
 
-Введите наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карт.
-Поля ``Ключ`` и ``Описание`` являются необязательными параметрами.
+Далее следует ввести наименование слоя, которое будет отображаться в административном веб интерфейсе, 
+а также в дереве слоев карт. Поле "Ключ" является необязательным к заполнению.
 
-Переключитесь с вкладки "Ресурс" на вкладку "Растровый слой". 
-Откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
+Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
 
-.. figure:: _static/admin_layers_create_raster_layer_upload.png
+Если переключиться "Ресурс" на вкладку "Растровый слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
+
+.. figure:: _static/admin_layers_create_raster_layer_upload_rus.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
    :width: 16cm
@@ -45,13 +53,11 @@
    Окно загрузки растрового файла.
 
 Далее необходимо выбрать систему координат, в которую будет перепроецирован растр 
-(по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ).
-Далее необходимо указать сам файл. 
+(по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857)) и указать сам файл. 
 
 .. warning:: 
    Файл может быть только формата GeoTIFF с 3 или 4 каналами (RGB или RGBA).
-   
- 
+
 После удачной загрузки растра необходимо создать стиль (если он не был создан автоматически). 
 При создании карты (подробнее см. подразд. :ref:`ngw_map_create`) можно добавлять 
 растр на карту, выбрав растр и его стиль.
@@ -78,30 +84,46 @@
 Векторный слой из файла
 -----------------------
 
-Для добавления векторного слоя перейдите в группу, где необходимо его создать. 
-В блоке операций "Создать ресурс" выберите из списка вкладку "Векторный слой". 
-В открывшемся окне необходимо ввести Наименование слоя, которое будет отображаться 
-в административном веб интерфейсе, а также в дереве слоев карты. 
-Поля ``Ключ`` и ``Описание`` являются необязательными параметрами. 
-Переключитесь с вкладки "Ресурс" на вкладку "Векторный слой". 
-Откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
+Для добавления векторного слоя следует перейти в группу, где необходимо его создать, и в блоке операций "Создать ресурс" выберать из списка вкладку "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_description.png
+.. figure:: _static/admin_layers_create_vector_layer_rus.png
+   :name: ngweb_admin_layers_create_vector_layer
+   :align: center
+   :width: 16cm
+
+   Выбор действия "Векторный слой".
+ 
+В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_vector_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
    :width: 16cm
 
-   Окно добавления векторного слоя.
+   Окно создания векторного слоя.
+   
+В открывшемся окне необходимо ввести Наименование слоя, которое будет отображаться 
+в административном веб интерфейсе, а также в дереве слоев карты. 
+Поле "Ключ" является необязательным к заполнению. 
+
+Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
+
+Если переключиться с вкладки "Ресурс" на вкладку "Векторный слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_upload`.
+
+.. figure:: _static/admin_layers_create_vector_layer_upload_rus.png
+   :name: ngweb_admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 16cm
+
+   Окно загрузки векторного файла.
 
 Далее необходимо выбрать систему координат, в которую будет перепроецированы векторные
-данные (по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857) ). 
-
-Далее необходимо указать сам исходный файл (кнопка 2Выбрать",
-см. :numref:`ngweb_admin_layers_create_vector_layer_upload`).  
+данные (по умолчанию имеется только WGS84 / Pseudo Mercator (EPSG:3857)), кодировку файла (UTF-8 или Windows-1251, также необходимо указать кодировку атрибутов: если она не указана, то данные в ESRI Shapefile должен сопровождать файл с 
+описанием кодировки (расширение .cpg), в случае GeoJSON кодировка всегда должна быть UTF-8.) и указать сам исходный файл. 
 В качестве исходного файла можно загружать следующие форматы: 
 
-* :term:`ESRI Shapefile`;
-* :term:`GeoJSON`.
+* :term:`ESRI Shapefile`
+* :term:`GeoJSON`
 
 .. note:: 
    В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
@@ -132,20 +154,7 @@
 
    ogr2ogr -nlt MULTIPOLYGON multipolygon_output.shp polygon_input.shp
 
-
 Cистема координат геометрий должна распознаваться GDAL (вывод gdalinfo должен содержать описание СК). 
-
-
-.. figure:: _static/admin_layers_create_vector_layer_upload.png
-   :name: ngweb_admin_layers_create_vector_layer_upload
-   :align: center
-   :width: 16cm
-
-   Окно загрузки векторного слоя.
-
-Кроме того, необходимо указать кодировку, в которой записаны атрибуты.
-Если кодировка не указана, то данные в ESRI Shapefile должен сопровождать файл с 
-описание кодировки (расширение ``cpg``). В случае GeoJSON кодировка всегда должна быть UTF-8.
 
 После удачной загрузки векторного файла необходимо создать стиль. 
 Подробнее о создании стилей описано в подразд. :ref:`ngw_style_create`.
