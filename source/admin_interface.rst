@@ -200,7 +200,7 @@ To edit a resource after login navigate to a child resource group (see item 4 in
    :align: center
    :width: 16cm
 
-  Selection of "Update" action in action pane.
+   Selection of "Update" action in action pane.
 
 In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add description, metadata and attributes of the resource.
 
@@ -288,7 +288,7 @@ To delete the resource after login navigate to a child resource group (see item 
    :align: center
    :width: 16cm
 
-  Selection of "Delete" action in action pane
+   Selection of "Delete" action in action pane
    
 In the opened "Delete resource" window (see :numref:`ngw_deletion_resource`) you need to tick "Confirm deletion of the resource" and press "Delete" button. 
 
