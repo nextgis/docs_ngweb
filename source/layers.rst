@@ -38,7 +38,9 @@ Create resource dialog for raster layer will open and will look like
    Create resource dialog for raster layer.
 
 Enter display name that will be visible in administrator interface and in map 
-layer tree. Field "Keyname" is optional.
+layer tree. 
+
+Field "Keyname" is optional.
 
 You can also add resource description and metadata on the corresponding tabs. 
 
@@ -101,7 +103,9 @@ Create resource dialog for vector layer will open and will look like
    Create resource dialog for vector layer.
    
 Enter display name that will be visible in administrator interface and in map 
-layer tree. Field "Keyname" is optional.
+layer tree. 
+
+Field "Keyname" is optional.
 
 You can also add resource description and metadata on the corresponding tabs. 
 
@@ -163,13 +167,21 @@ you can add a vector layer to a map by selecting its style.
 Vector layer from PostGIS
 -------------------------
 
-To add a vector layer from database with PostGIS extension you need to create a
+To add a vector layer from database PostgreSQL with PostGIS extension you need to create a
 resource PostGIS connection. It is enough to create one connection. 
-In Actions pane select :menuselection:`Create resource --> PostGIS connection`. 
-Create PostGIS connection dialog is shown on 
-:numref:`admin_layers_create_postgis_connection_resourse_description`. 
+In 
+actions pane "Create resource" click "Vector layer" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_description.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_eng.png
+   :name: admin_layers_create_postgis_connection_resourse
+   :align: center
+   :width: 16cm
+
+   Selection of "PostGIS connection" action.
+ 
+Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_description_eng.png
    :name: admin_layers_create_postgis_connection_resourse_description
    :align: center
    :alt: map to buried treasure
@@ -180,26 +192,34 @@ Create PostGIS connection dialog is shown on
 Enter display name that will be visible in administrator interface. Do not 
 confuse this name with a name of layers in a database. 
 
-Fields :guilabel:`Keyname` and :guilabel:`Description` are not required.  
+Field "Keyname" is optional.
 
-Switch from :guilabel:`Resource` to :guilabel:`PostGIS connection` tab. 
-PostGIS connection tab is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
+You can also add resource description and metadata on the corresponding tabs.
 
-Then enter PostGIS database connection parameters to connect data for display.  
+Switch from "Resource" to "PostGIS connection" tab, which is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
 
-.. figure:: _static/admin_layers_create_postgis_connection_db_logins.png
+.. figure:: _static/admin_layers_create_postgis_connection_db_logins_eng.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
    :width: 16cm
 
    PostGIS connection tab of Create resource dialog.
 
+Here enter PostGIS database connection parameters to connect data for display.  
 
 Then you can add single PostGIS layers. Navigate to a group where you want create 
-layers. In Actions pane select :menuselection:`Create resource --> PostGIS layer`. 
-Create resource for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`. 
+layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`). 
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_description.png
+.. figure:: _static/admin_layers_create_postgis_layer_engs.png
+   :name: admin_layers_create_postgis_layer
+   :align: center
+   :width: 16cm
+
+   Selection of "PostGIS layer" action.
+   
+Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`. 
+
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_description_eng.png
    :name: admin_layers_create_postgis_layer_resourse_description
    :align: center
    :width: 16cm
@@ -207,12 +227,16 @@ Create resource for PostGIS layer is presented on :numref:`admin_layers_create_p
    Create resource dialog for PostGIS layer.
 
 Enter display name that will be visible in administrator interface and in map 
-layer tree. Fields :guilabel:`Keyname` and :guilabel:`Description` are not required.  
-Switch from :guilabel:`Resource` tab to :guilabel:`PostGIS layer` tab. 
-Create resource dialog for PostGIS layer is presented on 
+layer tree. 
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+
+Switch from "Resource" tab to "PostGIS layer" tab, which is presented on 
 :numref:`admin_layers_create_postgis_layer_tablename`. 
 
-.. figure:: _static/admin_layers_create_postgis_layer_tablename.png
+.. figure:: _static/admin_layers_create_postgis_layer_tablename_eng.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
    :width: 16cm
@@ -227,28 +251,26 @@ Then perform the following steps:
 #. Enter Table name (PostGIS layer). 
    You need to know names of tables and columns in your database. 
    Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS Manager` or :program:`PgAdmin` software.
-#. Enter ID column. 
+#. Enter "ID column". 
    Ususally when data is loaded to PostGIS using :program: NextGIS Manager 
    software an ogc_fid column is created. If data was loaded in another way the 
    name of column may be different.
    An ID column should follow rules for data type: the value type should be a 
    number (**numeric**) and it should be a primary key.
-#. Enter geometry column name (if data was loaded to PostGIS using  
+#. Enter "Geometry column" name (if data was loaded to PostGIS using  
    :program:`NextGIS Manager` software usually a geometry column called 
    wkb_geometry is created. If data is loaded in another way the name of column 
    may be different).
-#. Parameters :guilabel:`Geometry type`, :guilabel:`Coordinate system` and
-   :guilabel:`Attribute definitions` are not required so you can use default 
+#. Parameters "Geometry type", "Coordinate system",
+   "Attribute definitions" and "SRID" are not required so you can use default 
    values.
 
-
 NextGIS Web software supports adding of tables with point, line and polygon geometries stored in a single geometry column. 
-This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points in a single table. In this case in NextGIS Web you need to add three different layers for each type of geometry and select appropriate geometry type in :guilabel:`Geometry type` parameter.
+This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points in a single table. In this case in NextGIS Web you need to add three different layers for each type of geometry and select appropriate geometry type in "Geometry type" parameter.
 
-After layer is created you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in :guilabel:`Label attribute` column.
+After layer is created you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in "Label attribute" column.
 
-If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select :menuselection:`Update --> PostGIS layer --> Attribute definitions --> Reload` and click :guilabel:`Save`.
-
+If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select in actions pane :"Update" and then on "PostGIS layer" tab change "Attribute definitions" to "Reload" and click "Save".
 
 PostGIS layer troubleshooting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -263,7 +285,6 @@ Check if the database is available, is it up, do you have right credentials? You
 
 Note that databases go up and down and credentials change.
 
-
 Create layers with conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -273,9 +294,7 @@ provide query capability you need to create views with appropriate queries.
 
 To do this connect to PostgreSQL/PostGIS database using :program:`pgAdminIII`, 
 then navigate to data schema where you want to create a view, right click tree 
-item :guilabel:`Views` and select :guilabel:`New view` (see. :numref:`pgadmin3`. 
-number  1). Also you can right click on schema name and select :menuselection:`New 
-object --> New view`. Enter the following information to create new view dialog:
+item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you can right click on schema name and select "New object" and then "New view". Enter the following information to create new view dialog:
 
 #. View name («Properties» tab).
 #. Data schema where to create a view («Properties» tab).
@@ -292,7 +311,7 @@ object --> New view`. Enter the following information to create new view dialog:
    table open (is active if a table is selected in tree); 3 – SQL query for  
    view.
 
-After that you can display a view to check if query is correct without closing :program:`pgAdminIII` (see  :numref:`pgadmin3`. number  2). 
+After that you can display a view to check if query is correct without closing :program:`pgAdminIII` (see  item 2 in :numref:`pgadmin3`). 
 
 .. _ngw_create_wms_layer:
 
