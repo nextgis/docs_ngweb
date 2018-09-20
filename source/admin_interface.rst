@@ -194,7 +194,7 @@ Update resource
 ---------------
 
 To edit a resource after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`).
-
+ 
 .. figure:: _static/ngw_window_update_edit_resource.png
    :name: ngw_window_update_edit_resource
    :align: center
@@ -283,7 +283,7 @@ Web GIS allows to delete uploaded data through deleting of the corresponding res
 
 To delete the resource after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Cross" icon opposite the resource or select the layer and then select an action called "Delete" in actions pane (see :numref:`ngw_window_update_delete_resource`). 
 
-.. figure:: _static/ngw_window_update_delete_resource_eng.png
+.. figure:: _static/ngw_window_update_delete_resource.png
    :name: ngw_window_update_delete_resource
    :align: center
    :width: 16cm
