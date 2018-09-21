@@ -169,8 +169,7 @@ Vector layer from PostGIS
 
 To add a vector layer from database PostgreSQL with PostGIS extension you need to create a
 resource PostGIS connection. It is enough to create one connection. 
-In 
-actions pane "Create resource" click "Vector layer" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
+In actions pane "Create resource" click "PostGIS connection" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_eng.png
    :name: admin_layers_create_postgis_connection_resourse
@@ -210,7 +209,7 @@ Here enter PostGIS database connection parameters to connect data for display.
 Then you can add single PostGIS layers. Navigate to a group where you want create 
 layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`). 
 
-.. figure:: _static/admin_layers_create_postgis_layer_engs.png
+.. figure:: _static/admin_layers_create_postgis_layer_eng.png
    :name: admin_layers_create_postgis_layer
    :align: center
    :width: 16cm
@@ -300,7 +299,7 @@ item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you 
 #. Data schema where to create a view («Properties» tab).
 #. SQL query («Definition» tab).
 
-.. figure:: _static/pgadmin3.png
+.. figure:: _static/pgadmin3_eng.png
    :name: pgadmin3
    :align: center
    :width: 16cm
@@ -320,49 +319,72 @@ WMS layer
 
 NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check for this coordinate system presence by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NGW requests data in 3857 and server does not support for that coordinate system.
 
+To add WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers.
+In actions pane "Create resource" click "WMS connection" (see :numref:`admin_layers_create_wms_connection`). 
 
-To add WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers. In the Actions pane select :menuselection:`Create resource --> WMS connection`. Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_description`.
+.. figure:: _static/admin_layers_create_wms_connection_eng.png
+   :name: admin_layers_create_wms_connection
+   :align: center
+   :width: 16cm
 
-.. figure:: _static/admin_layers_create_wms_connection_description.png
+   Selection of "WMS connection" action.
+   
+Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_description`.
+
+.. figure:: _static/admin_layers_create_wms_connection_description_eng.png
    :name: admin_layers_create_wms_connection_description
    :align: center
    :width: 16cm
 
    Create resource dialog for WMS connection.
 
-
 Enter display name that will be visible in administrator interface. Do not 
-confuse this name with a name of layers in a database. Fields :guilabel:`Keyname` 
-and :guilabel:`Description` are not required.
- 
-Switch from :guilabel:`Resource` tab to :guilabel:`WMS connection` tab. 
-WMS connection tab is presented on :numref:`admin_layers_create_wms_connection_url`.
-Then you need to enter WMS server connection parameters from which you want to display data.  
+confuse this name with a name of layers in a database. 
 
-.. figure:: _static/admin_layers_create_wms_connection_url.png
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+ 
+Switch from "Resource" tab to "WMS connection" tab, which is presented on :numref:`admin_layers_create_wms_connection_url`.
+
+.. figure:: _static/admin_layers_create_wms_connection_url_eng.png
    :name: admin_layers_create_wms_connection_url
    :align: center
    :width: 16cm
 
    WMS connection tab of Create resource dialog.
 
-Then you may start to add single WMS layers.
-Navigate to a group you want to create WMS layers in. In the Actions pane select :menuselection:`Create resource --> WMS layer`. Create resource dialog for WMS layer is presented :numref:`admin_layers_create_wms_layer_name`.
+Here enter  WMS server connection parameters from which you want to display data. 
 
-.. figure:: _static/admin_layers_create_wms_layer_name.png
+Then you can add single WMS layers. Navigate to a group where you want create 
+WMS layers and in actions pane "Create resource" select "WMS layer" (see :numref:`admin_layers_create_wms_layer`). 
+
+.. figure:: _static/admin_layers_create_wms_layer_eng.png
+   :name: admin_layers_create_wms_layer
+   :align: center
+   :width: 16cm
+
+   Selection of "WMS layer" action.
+
+Create resource dialog for WMS layer is presented :numref:`admin_layers_create_wms_layer_name`.
+
+.. figure:: _static/admin_layers_create_wms_layer_name_eng.png
    :name: admin_layers_create_wms_layer_name
    :align: center
    :width: 16cm
 
    Create resource dialog for WMS layer.
 
+Enter display name that will be visible in administrator interface and in map 
+layer tree. 
 
-Enter display name that will be visible in administrator interface and in map layer tree. 
-Fields :guilabel:`Keyname` and :guilabel:`Description` are not required. 
-Switch from :guilabel:`Resource` tab to :guilabel:`WMS layer` tab. 
-WMS layer tab of create resource dialog is presented on :numref:`admin_layers_create_wms_layer_parameters`.
+Field "Keyname" is optional.
 
-.. figure:: _static/admin_layers_create_wms_layer_parameters.png
+You can also add resource description and metadata on the corresponding tabs.
+
+Switch from "Resource" tab to "WMS" tab, which is presented on :numref:`admin_layers_create_wms_layer_parameters`.
+
+.. figure:: _static/admin_layers_create_wms_layer_parameters_eng.png
    :name: admin_layers_create_wms_layer_parameters
    :align: center
    :width: 16cm
@@ -374,9 +396,9 @@ Then perform the following steps:
 1. Select WMS connection that was created earlier.
 2. Select coordinate system which to use for requests to WMS server 
    (by default there are only WGS84 / Pseudo Mercator (EPSG:3857) ).
-3. If parameters are correct the parameter :guilabel:`Format` will display 
+3. If parameters are correct the parameter "Format" will display 
    MIME-types list that are served by a server. Select an appropriate one.
-4. If parameters are correct the parameter :guilabel:`WMS layers` will display 
+4. If parameters are correct the parameter "WMS layers" will display 
    a list of layers that are server by a server. Select required layers by clicking 
    underlined names. You can select several layers.
 
@@ -384,32 +406,54 @@ Parameters to add a WMS layer for Public cadastral map by Rosreestr:
 
 URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
-Supported versions of WMS protocol 1.1.1, 1.3
-
-.. _ngw_create_wms_service:
+Supported versions of WMS protocol: 1.1.1, 1.3
 
 .. note:: 
    Identification requests to external WMS layers from Web maps are not supported yet.
 
+.. _ngw_create_wms_service:
+
 WMS service
 ------------
 
-NextGIS Web software could perform as WMS server. This protocol is used to provide images for requested extent. To deploy a WMS service you need to add a resource. 
+NextGIS Web software could perform as WMS server. This protocol is used to provide images for requested extent. 
 
-In Actions pane select :menuselection:`Create resource --> WMS service`. Create resource dialog will open.
-Enter display name that will be visible in administrator interface and in map layer tree. 
+To deploy a WMS service you need to add a resource. To do it in actions pane "Create resource" click "WMS service" (see :numref:`admin_layers_create_wms_service`). 
 
-On WMS service tab add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wms_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
-
-.. figure:: _static/admin_layers_create_wms_service_layers.png
-   :name: admin_layers_create_wms_service_layers.png
+.. figure:: _static/admin_layers_create_wms_service_eng.png
+   :name: admin_layers_create_wms_service
    :align: center
    :width: 16cm
 
-   Example of WMS service settings for delivery of separate sheets of topographic maps. 
+   Selection of "WMS service" action.
+   
+Create resource dialog for WMS service is presented on :numref:`ngweb_admin_layers_create_wms_service_name`. 
 
-After a resource is created you will see a message with WMS service URL which you can use in other software, e.g. NextGIS QGIS or JOSM. 
-Then you need to set access permissions for WMS service. See  section :ref:`ngw_access_rights`.
+.. figure:: _static/admin_layers_create_wms_service_name_eng.png
+   :name: ngweb_admin_layers_create_wms_service_name
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for WMS service.
+
+Enter display name that will be visible in administrator interface. Do not 
+confuse this name with a name of layers in a database. 
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+ 
+Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wms_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
+
+.. figure:: _static/admin_layers_create_wms_service_url_eng.png
+   :name: ngweb_admin_layers_create_wms_service_url
+   :align: center
+   :width: 16cm
+
+   WMS service tab of Create resource dialog. 
+
+After a resource is created you will see a message with WMS service URL which you can use in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`. 
+Then you need to set access permissions for WMS service (see section :ref:`ngw_access_rights`).
 
 NextGIS Web layer could be added to desktop, mobile and web gis in different ways.
 
@@ -426,8 +470,8 @@ NextGIS Web is a WMS server. Any WMS layes could be added to a software that sup
 Using WMS connection in GDAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Single NextGIS Web layers could be added as WMS. To use them through GDAL utilities you need to create an XML file for required layer. You need an URL for WMS service to create that file.
-You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
+Single NextGIS Web layers could be added as WMS. To use them through GDAL utilities you need to create an XML file for required layer. You need to know an URL for WMS service to create that file.
+Enter these parameters to ServerUrl string in example below. The rest remains unchanged.
 
 .. code:: xml
 
@@ -466,8 +510,8 @@ Gdal utility call example. The utility gets an image by WMS from NGW and saves i
 Using TMS connection in GDAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Single layers of NextGIS Web could be added as TMS. You need t create an XML file for required layer. To create this file you need the information about NGW address and a layer number (in the example: address - http://demo.nextgis.ru/ngw_kl, layer number - 5). 
-You need to enter these parameters to ServerUrl string in example below. The rest remains unchanged.
+Single layers of NextGIS Web could be added as TMS. Create an XML file for required layer. To create this file you need the information about NGW address and a layer number (in the example: address - http://demo.nextgis.ru/ngw_kl, layer number - 5). 
+Enter these parameters to ServerUrl string in example below. The rest remains unchanged.
 
 .. code:: xml
 
