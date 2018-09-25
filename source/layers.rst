@@ -546,24 +546,47 @@ WFS service
 
 WFS layer setup is performed the same way as for WMS service but you add a layer instead of a style.
 
-For more information see:
-
 NextGIS Web can act as WFS server. Third party software could edit vector data on server using this protocol.
-To deploy a WFS service you need to add a resource. In Actions pane select :menuselection:`Create resource --> WFS service`. Create resource dialog will open.
-Enter display name that will be visible in administrator interface and in map layer tree. 
-On WFS service tab add links to required layers to the list. For each added layer you should set a unique key. You can copy it from the name (see  :numref:`ngweb_admin_layers_create_wfs_service_layers_pic`). 
 
-.. figure:: _static/admin_layers_create_wfs_service_layers.png
-   :name: ngweb_admin_layers_create_wfs_service_layers_pic
+To deploy a WFS service you need to add a resource. To do it in actions pane "Create resource" click "WFS service" (see :numref:`admin_layers_create_wfs_service`). 
+
+.. figure:: _static/admin_layers_create_wfs_service_eng.png
+   :name: admin_layers_create_wfs_service
    :align: center
    :width: 16cm
+
+   Selection of "WFS service" action.
    
-   Example of WFS service settings for delivery of separate sheets of topographic maps. 
+Create resource dialog for WFS service is presented on :numref:`ngweb_admin_layers_create_wfs_service_name`. 
+
+.. figure:: _static/admin_layers_create_wfs_service_name_eng.png
+   :name: ngweb_admin_layers_create_wfs_service_name
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for WFS service.
+
+Enter display name that will be visible in administrator interface. Do not 
+confuse this name with a name of layers in a database. 
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+ 
+Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Here add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wfs_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
+
+.. figure:: _static/admin_layers_create_wfs_service_url_eng.png
+   :name: ngweb_admin_layers_create_wfs_service_url
+   :align: center
+   :width: 16cm
+
+   WFS service tab of Create resource dialog. 
 
 For each layer you can set a limit for the number of features transfered at once. 
 By default the value is 1000. If this parameter is empty the limit will be disable and all features will be trasfered to the client. But this could result in high load of a server and cause significant timeouts because of high volumes of transfered data.
 
-After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example NextGIS QGIS. 
+After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example :program:`NextGIS QGIS`. 
+
 Then you need to set access permissions for WFS service. See  section :ref:`ngw_access_rights`.
 
 .. _ngw_resources_group:
@@ -575,24 +598,83 @@ Resources could be joined to groups. For example you can join base layers to one
 
 Groups help organize layers in Control panel and help manage access permissions in a convenient way. 
 
-To create a resource group navigate to root group and on Actions pane select :menuselection:`Create resource --> Resource group`. 
+To create a resource group navigate to the group, where you want to create a new one (root group or another), and in actions pane "Create resource" click "Resource group" (see :numref:`admin_layers_create_resource_group`). 
+
+.. figure:: _static/admin_layers_create_resource_group_eng.png
+   :name: admin_layers_create_resource_group
+   :align: center
+   :width: 16cm
+
+   Selection of "Resource group" action.
+    
 Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
 
-.. figure:: _static/admin_layers_create_group.png
+.. figure:: _static/admin_layers_create_group_eng.png
    :name: admin_layers_create_group
    :align: center
    :width: 16cm
 
    Create resource dialog for resource group.
 
-In create resource dialog enter:
+In create resource dialog enter display name, that will be visible in administrator interface and in map 
+layer tree, and then click "Create". 
 
-* Display name
-* :guilabel:`Keyname` – not required, may be empty
-* :guilabel:`Description` – not required, may be empty
+Field "Keyname" is optional.
 
+You can also add resource description and metadata on the corresponding tabs.
 
-and then click :guilabel:`Create`.
+.. _ngw_create_lookup_table:
+
+Lookup table
+-------------
+
+To create a lookup table navigate to the group, where you want to create it (root group or another), and in actions pane "Create resource" click "Lookup table" (see :numref:`admin_layers_create_lookup_table`). 
+
+.. figure:: _static/admin_layers_create_lookup_table_eng.png
+   :name: admin_layers_create_lookup_table
+   :align: center
+   :width: 16cm
+
+   Selection of "Lookup table" action.
+   
+Create resource dialog for resource group is presented on :numref:`ngweb_admin_layers_create_lookup`.
+
+.. figure:: _static/ngweb_admin_layers_create_lookup_eng.png
+   :name: ngweb_admin_layers_create_lookup
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for lookup table.
+
+In create resource dialog enter display name.
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+
+Switch from "Resource" tab to "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`.
+
+.. figure:: _static/ngweb_creating_a_new_directory_eng.png
+   :name: ngweb_creating_a_new_directory_group
+   :align: center
+   :width: 16cm
+
+   Lookup table tab of Create resource dialog.
+   
+In opened window there are options "Add" and "Delete". "Text" tab in a dropdown list of "Add" option allows to fill in lookup table data as "key" - "value" pairs. Then press "Save" button. The window will then look as on :numref:`ngweb_new_resource_group`
+
+.. figure:: _static/ngweb_new_resource_eng.png
+   :name: ngweb_new_resource_group
+   :align: center
+   :width: 16cm
+
+   Creation of new resource.
+
+To change anything in lookup table in actions pane "Action" click "Update". The window of resource update will open. Switch to "Lookup table" tab, where you can change lookup table's contents:
+
+* to add a new key - value pair
+* to change current key - value pair
+* to delete key - value pair
 
 Typical structure
 ------------------
