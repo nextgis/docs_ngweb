@@ -8,6 +8,13 @@ Vector layer styles
 Styles describe a way of rendering for geodata and are one of the resources of 
 NGW. Style is added to a map to display geodata.
 
+Formats
+----------------------------------
+
+By now NextGIS Web supports two rendering libraries: "Mapserver" и "QGIS". 
+You can write Mapserver style yourself as a text or import from QGIS styles, it has few settings. 
+QGIS style you can only download from QGIS styles, it has much more settings. 
+
 Creation of style
 ----------------------------------
 
