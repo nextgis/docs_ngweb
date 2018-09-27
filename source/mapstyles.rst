@@ -20,20 +20,164 @@ Creation of style
 
 Style is related to a single layer so there is no item "Style" in the main 
 resources list. To create a style you need to open layer properties of the layer 
-you want create style for. In layer properties page click: 
-:menuselection:`Create resource --> MapServer style`. A create resource page for 
-a new style will be opened. You have an option to import a QML style from QGIS 
-or enter the style manually. 
+you want create style for. In 
+actions pane "Create resource" click "MapServer style" or "QGIS style" (see :numref:`ngweb_layer_properties_window_pic`).
+
+.. figure:: _static/ngweb_layer_properties_window_eng.png
+   :name: ngweb_layer_properties_window_pic
+   :align: center
+   :width: 16cm
+ 
+   Layer properties window.
+   
+   In opened window you can import a QML style from QGIS or enter the style manually. 
+   
+QGIS style
+~~~~~~~~~~~~~~~~~ 
+
+After the selection of "QGIS style" create resource dialog will open and will look like :numref:`ngweb_window_create_resource_pic`.
+
+.. figure:: _static/ngweb_window_create_resource_eng.png
+   :name: ngweb_window_create_resource_pic
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for QGIS style.
+
+On the "Resource" tab enter the display name. 
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+
+Switch from "Resource" tab to "QGIS style" tab and in the "QML file" field click "Select a file" button or drag a file to this field (see in :numref:`ngweb_download_file_pic`).
+
+.. figure:: _static/ngweb_download_file_eng.png
+   :name: ngweb_download_file_pic
+   :align: center
+   :width: 16cm
+
+   QML file selection.
+
+.. warning::
+   
+   QML file to upload should be created in :program:`NextGIS QGIS` and saved on the PC.
+
+After QML file uploaded click "Create". Then the window of QGIS style will open and will look like :numref:`ngweb_file_QGIS_style_pic`.
+
+.. figure:: _static/ngweb_file_QGIS_style_eng.png
+   :name: ngweb_file_QGIS_style_pic
+   :align: center
+   :width: 16cm
+
+   QGIS style window.
+
+To add a layer with QGIS style to a web-map navigate to home page (see in :numref:`admin_control_panel`) and select the web-map in child resources. To edit a web-map click pencil icon near it or click the web-map and in actions pane "Action" select "Update". In "Update resource" layer select "Layers" tab (see in :numref:`ngweb_select_styles_web_map_pic`).
+  
+.. figure:: _static/ngweb_select_styles_web_map_pic_eng.png
+   :name: ngweb_select_styles_web_map_pic
+   :align: center
+   :width: 16cm
+   
+   "Layers" tab.
+   
+Here you can do the following actions:
+
+1. Add layer
+2. Add group
+3. Remove
+
+Click "Add layer" and in opened window select a layer with QGIS style, then click "OK". After that click "Save" (see in :numref:`ngweb_select_file_upload_web_map_pic`).
+  
+.. figure:: _static/ngweb_select_file_upload_web_map_eng.png
+   :name: ngweb_select_file_upload_web_map_pic
+   :align: center
+   :width: 16cm
+   
+   Selection of a layer with QGIS style to add on a web-map.
+
+In actions pane "Web map" of web-map properties window select "Display". The map will open, layers tree will be on the left of it. To hide/display a layer place a tick near the layer (see in :numref:`ngweb_Map_and_tree_layers_pic`).
+
+.. figure:: _static/ngweb_Map_and_tree_layers_eng.png
+   :name: ngweb_Map_and_tree_layers_pic
+   :align: center
+   :width: 16cm
+
+   Web-map with a layer with QGIS style and layers tree.
+
+MapServer layer
+~~~~~~~~~~~~~~~~~ 
+
+To create MapServer style open layer properties of the layer 
+you want create style for (see in :numref:`ngweb_layer_properties_window_pic`). In 
+actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_pic`).
+
+Create resource dialog will open and will look like :numref:`ngweb_window_create_resource_mapserver_pic`.
+
+.. figure:: _static/ngweb_window_create_resource_mapserver_pic_eng.png
+   :name: ngweb_window_create_resource_mapserver_pic
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for MapServer style.
+
+On the "Resource" tab enter the display name. 
+
+Field "Keyname" is optional.
+
+You can also add resource description and metadata on the corresponding tabs.
+
+Switch from "Resource" tab to "MapServer style" tab and click "Import QGIS style" or write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`).
+
+.. figure:: _static/ngweb_create_resource_mapsrev_eng.png
+   :name: ngweb_create_resource_mapsrev_pic
+   :align: center
+   :width: 16cm
+ 
+   "MapServer style" tab.
+
+Click "Import QGIS style" button and in opened window select a file or drag a file in opened field:
+
+.. figure:: _static/ngweb_select_and_download_file_eng.png
+   :name: ngweb_select_and_download_file_pic
+   :align: center
+   :width: 16cm
+
+   Selection of a file with QGIS style.
+
+.. warning::
+   
+   File to upload should be created in :program:`NextGIS QGIS` and saved on the PC.
+
+After the import click "OK" and then, after "Import QGIS style" window will close, click "Create". When the process of creation will finish, the window of the file with MapServer style will open. 
+
+To add a layer with MapServer style to a web-map navigate to home page (see in :numref:`admin_control_panel``) and select the web-map in child resources. To edit a web-map click pencil icon near it or click the web-map and in actions pane "Action" select "Update". In "Update resource" layer select "Layers" tab (see in :numref:`ngweb_select_styles_web_map_pic`).
+   
+Here you can do the following actions:
+
+1. Add layer
+2. Add group
+3. Remove
+
+Click "Add layer" and in opened window select a layer with MapServer style, then click "OK". After that click "Save" (see in :numref:`ngweb_select_file_upload_web_map_pic`).
+
+In actions pane "Web map" of web-map properties window select "Display". The map will open, layers tree will be on the left of it. To hide/display a layer place a tick near the layer (see in :numref:`ngweb_Map_and_tree_layers_pic`).
 
 QML style will be converted to internal system format during import. Currently only basic geometry renderer settings are imported.
-If a style has a selection by query the empty option should be placed at the end (it is placed first after import from QGIS).
+If a style has a selection by query the empty option should be placed at the end (it is placed first after import from QGIS).  
 
 .. warning:: 
    If you created a vector layer but MapServer style is absent in Create resource section  
-   check if you have installed nextgis_mapserver package. You can check this using Control panel -> Package versions. 
+   check if you have installed nextgis_mapserver package. You can check this using "Package versions" (see in :numref:`admin_control_panel`) in Control panel (see item 1 in :numref:`admin_index_pic` and :numref:`ngweb_main_page_main_menu_pic`). 
+   
+.. only:: latex   
    If this package is absent it is installed incorrectly. You will need to check executed steps: 
    http://docs.nextgis.ru/docs_ngweb/source/install.html
+   
+.. only:: html
+   If this package is absent it is installed incorrectly. You will need to check executed steps: :ref:`ngw_sysadmin_tasks` 
 
+You can create or edit a style of the layer using a manual input of a text or a code, or by editing an existing text/code (see details in :ref:`ngw_mapstyles`).        
 
 Map style tags
 ----------------------------------
@@ -1057,7 +1201,7 @@ Access roads, service roads, dirt roads, pedestrian ways
         </layer>
     </map>
 
-railway-line
+OSM railway-line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: xml
