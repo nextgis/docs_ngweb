@@ -143,7 +143,7 @@ To view feature table after login navigate to a child resource group (see item 4
 
    Choice of feature table. 
 
-Feature table allows to perform the following operations with a selected record  (see in :numref:`admin_table_objects1_upload`):
+Feature table allows to perform the following operations with a selected record  (see :numref:`admin_table_objects1_upload`):
 
 1. Open
 2. Edit
@@ -157,7 +157,7 @@ Feature table allows to perform the following operations with a selected record 
 
    Actions for the selected record in feature table.
 
-There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type web map. In actions pane click a web map action called Display (see in :numref:`webmap_open_eng_pic`):
+There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type web map. In actions pane click a web map action called Display (see :numref:`webmap_open_eng_pic`):
 
 .. figure:: _static/webmap_open_eng.png
    :name: webmap_open_eng_pic
