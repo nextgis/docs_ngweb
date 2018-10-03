@@ -43,7 +43,7 @@
 
 Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
 
-Если переключиться "Ресурс" на вкладку "Растровый слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
+Если переключиться с вкладки "Ресурс" на вкладку "Растровый слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
 
 .. figure:: _static/admin_layers_create_raster_layer_upload_rus.png
    :name: ngweb_admin_layers_create_raster_layer_upload
