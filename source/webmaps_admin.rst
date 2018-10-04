@@ -6,67 +6,93 @@
 Administration of web map
 ===========================
 
-There could be several web maps in NextGIS Web. For example one map is for work, another for public access and third for testing of layer styles.
+There could be several web maps in NextGIS Web. For example one map is for work, another is for public access and third is for testing of layer styles.
 
 Web maps have their own URL addresses. You can manage display web map access permission for different users and groups. 
 
-Web map display layers. User can turn them on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map does not relate to groups of layers in control panel. There is no option to transfer layers between groups. Groups may be nested.
-
+Web map displays layers. User can turn web maps on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map do not relate to groups of layers in control panel. There is no option to transfer layers between groups. Groups may be nested.
 
 .. _ngw_map_create:
     
 Creation of web map
 ---------------------
 
-To add a web map navigate to a resource group where you want to create a map. In Actions pane select :menuselection:`Create resource --> Web map`. Create resource dialog for a web map is presented on :numref:`admin_webmap_name`. 
+To add a web map navigate to a resource group where you want to create a map and in actions pane "Create resource" select "Web map" (see :numref:`ngweb_admin_layers_create_webmap`). 
 
-.. figure:: _static/admin_webmap_name.png
+.. figure:: _static/admin_layers_create_webmap_eng.png
+   :name: ngweb_admin_layers_create_webmap
+   :align: center
+   :width: 16cm
+
+   Selection of “Web map” action. 
+   
+Create resource dialog for a web map will open and will look like :numref:`admin_webmap_name`. 
+
+.. figure:: _static/admin_webmap_name_eng.png
    :name: admin_webmap_name
    :align: center
    :width: 16cm
 
    Create resource dialog for web map.
 
+Enter web map display name that will be visible in administrator interface and in map layer tree.
 
-Enter web map display name that would be visible in administrator interface and in map layer tree.
-Fields :guilabel:`Keyname` and :guilabel:`Description` are non-required.
+Field “Keyname” is optional.
 
-Switch from :guilabel:`Resource` tab to :guilabel:`Extent and bookmarks`. 
-A tab for Extent and bookmarks will open:numref:`admin_webmap_bbox`.
+You can also add resource description and metadata on the corresponding tabs.
 
-.. figure:: _static/admin_webmap_bbox.png
+Switch from “Resource” tab to “Extent and bookmarks” tab, which is presented on :numref:`admin_webmap_bbox`.
+
+.. figure:: _static/admin_webmap_bbox_eng.png
    :name: admin_webmap_bbox
    :align: center
    :width: 16cm
 
-   An Extent and bookmarks tab of create resource window.
+   "Extent and bookmarks" tab.
 
-Setup an extent.
+Set the extent in four fields by setting degrees.
 
-.. note:: 
+The field "Extent from layer" allows to set web map extent on the layer extent. If you click the icon with plus on a folder near this field, the window "Select resource" will open, where you can select a layer to use for setting web map extent (four fields with extent coordinates will be filled up, see :numref:`ngw_select_resource2`). 
+
+.. figure:: _static/ngw_select_resource2_eng.png
+   :name: ngw_select_resource2
+   :align: center
+   :width: 16cm
+
+   "Select resource" window.
+
+.. tip::
    Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
 
-You can select a vector layer for bookmarks. If layer is set the client will 
-have a menu with bookmarks with names defined by :guilabel:`Label attribute`. 
+You can select a vector layer for bookmarks in the field "Bookmark resource". If layer is set the client will 
+have a menu with bookmarks with names defined by "Label attribute". 
 
-Navigate to :guilabel:`Layers` tab. This tab is used for adding layer joining 
-them to groups. These actions could be performed using corresponding buttons 
-:guilabel:`Add layer` and :guilabel:`Add group`.
+Navigate to "Layers" tab. This tab is used for adding layer, joining 
+them to groups or removing them. These actions could be performed using corresponding buttons 
+"Add layer", "Add group" and "Remove" (see :numref:`admin_webmap_layers`). 
 
-When a layer is added you set its style. Settings for layers on web map are 
-presented on :numref:`admin_webmap_layers`..
-
-
-.. figure:: _static/admin_webmap_layers.png
+.. figure:: _static/admin_webmap_layers_eng.png
    :name: admin_webmap_layers
+   :align: center
+   :width: 16cm
+
+   "Layers" tab.
+
+When a layer is added you set its style. The style is connected with the layer, so that "Style" is absent in main resource group. To create a style navigate to the layer resource and in actions pane select "MapServer style" or "QGIS style". 
+In opened window you can import a QML style from QGIS or enter the style manually (see :numref:`ngweb_layer_properties_window_pic`). 
+
+Settings for layers on web map are presented on :numref:`admin_webmap_create_layers`.
+
+.. figure:: _static/admin_webmap_create_layers_eng.png
+   :name: admin_webmap_create_layers
    :align: center
    :width: 16cm
    
    Layers tab of create resource dialog.
  
-A checkbox :guilabel:`Enable` sets default visibility of a layer.
+A checkbox "Enabled" sets default visibility of a layer.
 
-Field :guilabel:`Adapter` is recommended to be set to :guilabel:`Tiles` if there is no special requirements.
+Field "Adapter" is recommended to be set to "Tiles" if there is no special requirements. You can also set it to "Image", so there will be one image on a whole map. 
 
 For :guilabel:`Scale` parameters you may enter a scale range in the following format :guilabel:`1 : 10 000`.
 
