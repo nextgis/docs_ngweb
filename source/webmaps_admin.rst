@@ -124,14 +124,14 @@
    
 Кнопка "Порядок слоёв" открывает окно, в котором можно задать порядок отрисовки слоёв на карте отличающийся от порядка в списке слоёв. Эта функция нужна для демонстрации слоев при сохранении исходного разбиения слоев на папки.
 
-.. figure:: _static/admin_webmap_layerorders_1.jpg
+.. figure:: _static/admin_webmap_layerorders_1_cut.jpg
    :name: ngweb_admin_webmap_layerorders_1
    :align: center
    :width: 16cm
    
    Порядок слоёв как есть: аэрофотоснимки загораживают слой со зданиями.
 
-.. figure:: _static/admin_webmap_layerorders_2.jpg
+.. figure:: _static/admin_webmap_layerorders_2_cut.jpg
    :name: ngweb_admin_webmap_layerorders_2
    :align: center
    :width: 16cm
