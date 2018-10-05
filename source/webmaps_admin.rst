@@ -92,18 +92,33 @@ Settings for layers on web map are presented on :numref:`admin_webmap_create_lay
  
 A checkbox "Enabled" sets default visibility of a layer.
 
-Field "Adapter" is recommended to be set to "Tiles" if there is no special requirements. You can also set it to "Image", so there will be one image on a whole map. 
+Field "Transparency" sets layer transparency on a map from 0% to 100%. A layer with 1% transparency is almost transparent, a layer with 100% transparency is opaque.
 
-For :guilabel:`Scale` parameters you may enter a scale range in the following format :guilabel:`1 : 10 000`.
+Field "Adapter" is recommended to be set to "Tiles" (256 x 256 pixels images) if there is no special requirements. You can also set it to "Image", so there will be one image on a whole map. 
 
-Scale range could be set in a layer style and in layer settings. If layer should be displayed in a range of scales it is better to set this in layer properties, instead of a style.
+For "Scale" parameters you may enter a scale range in the format like "1 : 10 000". Scale range could be set in a layer style and in layer settings. If layer should be displayed in a range of scales it is better to set this in layer properties, instead of a style.
    
 .. note:: 
    If you set a scale range only in style   
    empty tiles will be generated for distribution which is less efficient.
 
-After a creation of map content and adjusting settings for all layers click a :guilabel:`Save` button. A saved map will be shown in a list of maps. 
-In a list of web maps click a :guilabel:`Display` link to open a web map in a client application. Web map client application is described in section :ref:`ngw_webmaps_client`.
+"Layer order" button opens a window where you can set layer order different from layer order in layers tree to show on a map.
+
+"Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" (see :numref:`admin_webmap_basemaps`). 
+
+.. figure:: _static/admin_webmap_basemaps_eng.png
+   :name: admin_webmap_basemaps
+   :align: center
+   :width: 16cm
+
+   "Basemaps" tab.
+
+A checkbox "Enabled" sets default visibility of a basemap.
+
+Field "Transparency" sets basemap transparency on a map from 0% to 100%. A basemap with 1% transparency is almost transparent, a basemap with 100% transparency is opaque.
+
+After a creation of map content and adjusting settings for all layers click a "Save" button. A saved map will be shown in a list of maps. 
+Click an icon with a map in a list of web maps or click a "Display" link in a window with web map properties to open a web map in a client application. Web map client application is described in section :ref:`ngw_webmaps_client`.
 Address which is used for web client may be transfered to other users because it is static. 
 
 .. note:: 
