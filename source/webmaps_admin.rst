@@ -121,6 +121,6 @@ After a creation of map content and adjusting settings for all layers click a "S
 Click an icon with a map in a list of web maps or click a "Display" link in a window with web map properties to open a web map in a client application. Web map client application is described in section :ref:`ngw_webmaps_client`.
 Address which is used for web client may be transfered to other users because it is static. 
 
-.. note:: 
+.. warning::  
    Address will become inavailable if a web map is deleted.
 
