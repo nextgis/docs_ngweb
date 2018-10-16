@@ -12,18 +12,16 @@ Create new user group
 ---------------------
 
 A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
-This window could be opened from Control panel 
-(see  :numref:`admin_control_panel`). To open the window click : 
-:menuselection:`Groups --> Create`.
+To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Create" option in "Groups" block.
 
-.. figure:: _static/admin_controlpanel_usergroup_create.png
+.. figure:: _static/admin_controlpanel_usergroup_create_eng.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
    :width: 16cm
 
-   Create new group dialog
+   "Create new group" dialog.
 
-In create new group dialog enter full name, group name (short name) and click a button  :guilabel:`Create`. Also you can enter a description for a user group. 
+In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and click "Create" button. 
 
 .. note:: 
    A name for a group should contain only letters and numbers. 
@@ -33,28 +31,23 @@ Create new user
 ---------------
 
 A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
-This window could be opened from Control panel 
-(see  :numref:`admin_control_panel`). To open the window click: 
-:menuselection:`Users --> Create`.
+To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Create" option in "Users" block.
 
-Enter the following information:
-
-* Full name (e.g. Ivanov Ivan Ivanovich)
-* Login – user login (e.g. ivanov)
-* Password
-
-Then select groups user belongs to. The list of available groups is provided below user info. If the required group is absent you need to create a new one 
-(see  :ref:`ngw_create_group`).
-
-Then click a button :guilabel:`Create`.
-
-.. figure:: _static/admin_controlpanel_user_create.png
+.. figure:: _static/admin_controlpanel_user_create_eng.png
    :name: admin_controlpanel_user_create
    :align: center
    :width: 16cm
 
-   Create new user dialog
+   "Create new user" dialog.
+   
+In "Create new user" dialog enter the following information:
 
+* Full user name (e.g. John Smith)
+* Login – user login (e.g. smith)
+* Password
+* Group(-s) user belongs to (the list of available groups is provided below user info. If the required group is absent you need to create a new one (see  :ref:`ngw_create_group`)).
+
+Then click "Create" button.
 
 .. _ngw_access_rights:
     
@@ -95,9 +88,9 @@ A dialog has the following elements:
 
 .. note:: By default everything is denied.
 
-**Principal** - a user or a user group who are subject to a rule.
+**Principal** - a user or a user group who is subject to a rule.
 
-Permission - defines allowed or denied actions with the resource. There are the following available types of permissions: 
+**Permission** - defines allowed or denied actions with the resource. There are the following available types of permissions: 
 
 * All resources: All permissions
 * Resource: All permissions
@@ -128,7 +121,7 @@ Permission - defines allowed or denied actions with the resource. There are the 
 
 **Resource** - type of resource the rule created for. This setting is important for resource groups where it is required to grant permissions only to some types of resources. If there is no need to grant different permissions to different types of resources, select "All resources" for this setting.
 
-**Propagate** checkbox defines if permission rules need to be applied to resources in sub-groups or not. Note: Setting permissions for lower level resource and propagating doesn't cancel the need to set them for upward resources. For example, if you gave read access to a resource group that is contained by other groups, but you didn't give appropriate permissions for higher level resources (up to root) the user will not get access to current resource group.
+**Propagate** checkbox defines if permission rules need to be applied to resources in sub-groups or not. Note, that setting permissions for lower level resource and propagating doesn't cancel the need to set them for upward resources. For example, if you gave read access to a resource group that is contained by other groups, but you didn't give appropriate permissions for higher level resources (up to root) the user will not get access to current resource group.
 
 Permissions could be assigned to resources indirectly. For example permission "Web map: Display" could be assigned for a resource group and if a "Propagate" checkbox is checked this rule will be applied to every web map inside this resource group and inside all the subgroups.
 
@@ -189,11 +182,11 @@ Here is a description for available permission types.
 When you assign rights to a particular resource take into account the rights of its constituent resources. For example to provide access to a WMS service you should grant the following permissions:
     
 * Service: Connect - to a connection itself.
-* Resource: Read - to every resource (vector and raster layers)  
+* Resource: Read - to all resources (vector and raster layers)  
   published with WMS service.
-* Data structure: Read - to every resource (vector and raster layers) 
+* Data structure: Read - to all resources (vector and raster layers) 
   published with WMS service.
-* Data: Read - to every resource (vector and raster layers) 
+* Data: Read - to all resources (vector and raster layers) 
   published with WMS service.
 
 If you have a complex system with several maps and different users who should work with these maps you can create user groups. You can assign different permissions to every group.
@@ -201,6 +194,26 @@ If you have a complex system with several maps and different users who should wo
 
 Example: Assigning permissions
 ------------------------------
+
+Close a group for guests, open it for the user
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: _static/access_rights_group_for_quest_1_eng.png
+   :name: ngweb_access_rights_tab_0_pic
+   :align: center
+   :width: 16cm
+
+   Settings for resourse group.
+
+
+.. figure:: _static/access_rights_group_for_quest_2_eng.png
+   :name: ngweb_access_rights_tab_0_pic
+   :align: center
+   :width: 16cm
+
+   Settings for root resource group.
+
+You can also allow the user reading all higher resource groups as alternative. 
 
 Grant guest user web map display permission
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -242,8 +255,6 @@ Grant a single user permissions to a single resource group
    :width: 16cm
 
    Settings for a resource group.
-
-
 
 .. figure:: _static/access_rights_group_for_user_2.png
    :name: ngweb_access_rights_tab_4_pic
@@ -303,18 +314,23 @@ Disallow all access for guest users
     Settings for root resource group.
 
 
-
-
-
 .. _ngw_change_password:
 
 Update user password
 --------------------
 
-To update user password you can use a web interface.
+To update user password you can use administrative interface. To do it select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "List" option in "Users" block and click pencil icon near the user you want to update password for  (see :numref:`ngweb_change_password_pic`). In opened window in "Password" field fill in a new password and click "Save" button.
+
+.. figure:: _static/ngweb_change_password_eng.png
+   :name: ngweb_change_password_pic
+   :align: center
+   :width: 16cm
+
+   User editting window.
+
 Also there is an option to change user password using command line:
 
-.. note:: Setting a password using a command line is not safe.
+.. warning:: Setting a password using a command line is not safe.
 
 .. code:: bash
 
@@ -326,10 +342,7 @@ Also there is an option to change user password using command line:
 Customization of NextGIS Web outlook
 ------------------------------------
 
-You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc., with a little bit of CSS magic:
-
-#. Sign in as the user with administrative privileges and open Control panel, then select Custom CSS. 
-#. Enter your own CSS rules. They will be used throughout your Web GIS on all its pages.
+You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc. To do it select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Custom CSS" in "Settings" block. In opened tab enter your own :term:`CSS` rules. They will be used throughout your Web GIS on all its pages.
 
 
 Custom CSS examples
