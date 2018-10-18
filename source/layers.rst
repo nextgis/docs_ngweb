@@ -542,9 +542,7 @@ NextGIS WEB, и номер нужного слоя (в примере: адре�
 
    <GDAL_WMS>
     <Service name="TMS">
-        <ServerUrl>http://demo.nextgis.com/api/component/render/tile?
-                   z=${z}&x=${x}&y=${y}&resource=5
-        </ServerUrl>
+        <ServerUrl>http://demo.nextgis.com/api/component/render/tile?z=${z}&x=${x}&y=${y}&resource=5</ServerUrl>
     </Service>
     <DataWindow>
         <UpperLeftX>-20037508.34</UpperLeftX>
