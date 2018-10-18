@@ -376,7 +376,7 @@ Cлой WMS
    
    URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
-Поддерживаемые версии протокал WMS: ``1.1.1``, ``1.3``.
+Поддерживаемые версии протокола WMS: ``1.1.1``, ``1.3``.
 
 .. warning:: 
    Идентификационные запросы к внешним WMS сервисам с Веб карт не поддерживаются. 
@@ -395,7 +395,7 @@ Cлой WMS
 а также в дереве слоев карты. 
 
 На вкладке "Сервис WMS" добавьте в список ссылки на стили нужных вам слоёв. (см. :numref:`ngweb_admin_layers_create_wms_service_layers.png`.)  Для каждого 
-добавленого стиля вам нужно указать уникальный ключ. Можно скопировать его из названия. 
+добавленного стиля вам нужно указать уникальный ключ. Можно скопировать его из названия. 
 
 .. figure:: _static/admin_layers_create_wms_service_layers.png
    :name: ngweb_admin_layers_create_wms_service_layers.png

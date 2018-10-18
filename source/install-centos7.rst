@@ -91,7 +91,7 @@ config.ini (см. далее):
 
     $ sudo systemctl restart postgresql-9.5.service
 
-Добавляем репозиторий с зависмостями для PostGIS:
+Добавляем репозиторий с зависимостями для PostGIS:
 
 .. code-block:: bash
 
@@ -135,7 +135,7 @@ config.ini (см. далее):
 
     $ sudo yum install python-virtualenv
 
-Установливаем дополнительные инструменты:
+Устанавливаем дополнительные инструменты:
 
 .. code-block:: bash
 
