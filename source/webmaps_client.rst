@@ -16,19 +16,19 @@ A special web application for viewing web maps is included with NextGIS Web (see
 
    Numbers indicate: 1 – map; 2 – map zoom tools; 3 - layer tree; 4 – dropdown menu for selected layer; 5 - search bar; 6 - "Share"; 7 - "Print map"; 8 - dropdown list of basemaps; 9 – map tools; 10 - status bar.
    
-Web client includes two main components: a map (see item 1 in :numref:`ngweb_webmap_client`) and layer tree (see item 3 in :numref:`ngweb_webmap_client`). 
+Web client includes two main components: a map (see item 1 in :numref:`webmap_client`) and layer tree (see item 3 in :numref:`webmap_client`). 
 
-In a search bar (see item 5 in :numref:`ngweb_webmap_client`) during text input there will be performed a search using two sources:
+In a search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
 1. In attributes of layers added to a map.
 2. In address database of OpenStreetMap. 
 
 Results are shown as user inputs text with feature numbers for attribute search and full addresses. Found features that have a text in attributes are shown first and then addresses containing search text are shown. After a click on a search result map changes extent to show selected feature.
 
-To share a link to a map use the function "Share" (see item 6 in :numref:`ngweb_webmap_client`), to print a map use the function "Print map" (see item 7 in :numref:`ngweb_webmap_client`). 
+To share a link to a map use the function "Share" (see item 6 in :numref:`webmap_client`), to print a map use the function "Print map" (see item 7 in :numref:`webmap_client`). 
 
-Status bar (see item 10 in :numref:`ngweb_webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
+Status bar (see item 10 in :numref:`webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
 
-When a layer is  selected in a tree you can open a layer menu (see item 4 in :numref:`ngweb_webmap_client`) with the following actions:
+When a layer is  selected in a tree you can open a layer menu (see item 4 in :numref:`webmap_client`) with the following actions:
     
 * Description
 * Zoom to layer
@@ -45,7 +45,7 @@ After a click on "Feature table" option you will see feature table of the select
    
    Feature table of the selected layer on a web map.
    
-   To change a basemap use a dropdown list (see item 8 in :numref:`ngweb_webmap_client`). By default there are the following basemaps:
+To change a basemap use a dropdown list (see item 8 in :numref:`webmap_client`). By default there are the following basemaps:
 
 * None
 * OpenStreetMap
@@ -60,9 +60,9 @@ User has an option to disable a basemap so a white background will be shown inst
 
 .. _ngw_webmaps_client_tools:
 
-Using map zoom tools (see item 2 in :numref:`ngweb_webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
+Using map zoom tools (see item 2 in :numref:`webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
 
-There are some tools to work with map (see item 9 in :numref:`ngweb_webmap_client`) named from left to the right:
+There are some tools to work with map (see item 9 in :numref:`webmap_client`) named from left to the right:
 
 * Zoom in
 * Zoom out
