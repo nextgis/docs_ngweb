@@ -53,7 +53,7 @@
 
 В окне редактирования атрибутов слоя имеются следующие вкладки:
 
-* вкладка "Атрибуты" (см. :numref:`ngweb_tab_attributes`).
+* вкладка "Атрибуты" (см. :numref:`ngweb_tab_attributes`)
 
 .. figure:: _static/ngweb_tab_attributes_rus.png
    :name: ngweb_tab_attributes
@@ -62,7 +62,7 @@
  
    Вкладка "Атрибуты".
 
-* вкладка "Описание" (см. :numref:`ngweb_tab_description`).
+* вкладка "Описание" (см. :numref:`ngweb_tab_description`)
 
 .. figure:: _static/ngweb_tab_description_rus.png
    :name: ngweb_tab_description
@@ -71,7 +71,7 @@
 
    Вкладка "Описание".
 
-* вкладка "Вложения" (см. :numref:`ngweb_tab_attachment`).
+* вкладка "Вложения" (см. :numref:`ngweb_tab_attachment`)
 
 .. figure:: _static/ngweb_tab_attachment_rus.png
    :name: ngweb_tab_attachment
