@@ -92,8 +92,7 @@ actions pane "Create resource" click "Vector layer" (see :numref:`ngweb_admin_la
 
    Selection of "Vector layer" action.
    
-Create resource dialog for vector layer will open and will look like 
-:numref:`admin_layers_create_vector_layer_resourse_description`. 
+Create resource dialog for vector layer will open and will look like :numref:`admin_layers_create_vector_layer_resourse_description`. 
 
 .. figure:: _static/admin_layers_create_vector_layer_resourse_description_eng.png
    :name: admin_layers_create_vector_layer_resourse_description
@@ -402,7 +401,8 @@ Then perform the following steps:
    a list of layers that are server by a server. Select required layers by clicking 
    underlined names. You can select several layers.
 
-Parameters to add a WMS layer for Public cadastral map by Rosreestr:
+.. note::
+   Parameters to add a WMS layer for Public cadastral map by Rosreestr:
 
 URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
 
@@ -443,7 +443,7 @@ Field "Keyname" is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wms_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
+Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list (see (see :numref:`ngweb_admin_layers_create_wms_service_url`)  For each added style you should set a unique key. You can copy it from the name. 
 
 .. figure:: _static/admin_layers_create_wms_service_url_eng.png
    :name: ngweb_admin_layers_create_wms_service_url
@@ -573,7 +573,7 @@ Field "Keyname" is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Here add links to styles of required layers to a list. (see  :numref:`admin_layers_create_wfs_service_layers.png`.)  For each added style you should set a unique key. You can copy it from the name. 
+Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Here add links to styles of required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`.)  For each added style you should set a unique key. You can copy it from the name. 
 
 .. figure:: _static/admin_layers_create_wfs_service_url_eng.png
    :name: ngweb_admin_layers_create_wfs_service_url
