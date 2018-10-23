@@ -24,7 +24,7 @@
 Добавление веб-карты
 --------------------
 
-Для добавления веб-карты перейдите в группу, где необходимо её создать, и в блоке операций "Создать ресурс" выбрать "Веб-карта" (см. :numref:`ngweb_admin_layers_create_webmap`). 
+Для добавления веб-карты следует перейти в группу, где необходимо её создать, и в блоке операций "Создать ресурс" выбрать "Веб-карта" (см. :numref:`ngweb_admin_layers_create_webmap`). 
 
 .. figure:: _static/admin_layers_create_webmap_rus.png
    :name: ngweb_admin_layers_create_webmap
