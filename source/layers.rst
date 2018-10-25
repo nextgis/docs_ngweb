@@ -418,9 +418,9 @@ Cлой WMS
 .. note::
    Параметры для добавления слоя WMS с ПКК (публичной кадастровой карты Росреестра РФ)
    
-   URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
+   URL http://pkk5.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer
 
-Поддерживаемые версии протокал WMS: 1.1.1, 1.3.
+Поддерживаемые версии протокола WMS: 1.3.0
 
 .. warning:: 
    Идентификационные запросы к внешним WMS сервисам с Веб карт не поддерживаются. 
