@@ -215,13 +215,14 @@ Close a group for guests, open it for the user
 
 You can also allow the user reading all higher resource groups as alternative. 
 
-Grant guest user web map display permission
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Grant guest user resource display permission
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
 	Guest users will be able to see administrative interface and view all folders excluding especially closed ones.
 
-.. figure:: _static/access_rights_group_for_quest_0.png
+.. figure:: _static/access_rights_group_for_quest_0_eng.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
    :width: 16cm
@@ -229,7 +230,7 @@ Grant guest user web map display permission
    Settings for root resource group.
 
 
-.. figure:: _static/access_rights_group_for_quest_webmaps.png
+.. figure:: _static/access_rights_group_for_quest_webmaps_eng.png
    :name: ngweb_access_rights_tab_1_pic
    :align: center
    :width: 16cm
@@ -237,13 +238,42 @@ Grant guest user web map display permission
    Settings for resourse group with maps.
 
 
-.. figure:: _static/access_rights_group_for_quest_geodata.png
+.. figure:: _static/access_rights_group_for_quest_geodata_eng.png
    :name: ngweb_access_rights_tab_2_pic
    :align: center
    :width: 16cm
 
    Settings for resource group with geodata.
 
+   
+Grant guest user web map display permission
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: 
+   Guest users will be able to see only a web map and layers in a folder, other resources will be closed.
+
+.. figure:: _static/access_rights_group_for_quest_10_eng.png
+   :name: ngweb_access_rights_tab_11_pic
+   :align: center
+   :width: 16cm
+
+   Settings for root resource group.
+
+
+.. figure:: _static/access_rights_group_for_quest_webmaps12_eng.png
+   :name: ngweb_access_rights_tab_12_pic
+   :align: center
+   :width: 16cm
+
+   Settings for resourse group with maps.
+
+
+.. figure:: _static/access_rights_group_for_quest_geodata13_eng.png
+   :name: ngweb_access_rights_tab_13_pic
+   :align: center
+   :width: 16cm
+
+   Settings for resource group with geodata.
 
 Grant a single user permissions to a single resource group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -301,7 +331,7 @@ Disallow view of webmap to all not authendificated users, grant view to authendi
 
 
 
-Disallow all access for guest users 
+Disallow all access for guest users (without password)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
 
