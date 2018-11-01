@@ -292,6 +292,7 @@ To delete the resource after login navigate to a child resource group (see item 
    
 In the opened "Delete resource" window (see :numref:`ngw_deletion_resource`) you need to tick "Confirm deletion of the resource" and press "Delete" button. 
 
+
 .. figure:: _static/ngw_deletion_resource_eng.png
    :name: ngw_deletion_resource
    :align: center
