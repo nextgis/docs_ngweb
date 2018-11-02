@@ -33,7 +33,7 @@ NextGIS Web is a modular system with several core modules and extensions. Extens
 NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web works in all modern browsers.
 User interface with a published web map is on the :numref:`webmap_sample`.
 
-.. figure:: _static/webmap_sample_eng.png
+.. figure:: _static/webmap_sample2_eng.png
    :name: webmap_sample
    :align: center
    :width: 16cm
