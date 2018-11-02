@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'NextGIS Web'
-copyright = u'2015-2017, NextGIS'
+copyright = u'2015-2018, NextGIS'
 author = u'NextGIS team'
 
 # The version info for the project you're documenting, acts as replacement for
