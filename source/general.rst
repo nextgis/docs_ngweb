@@ -54,7 +54,7 @@ Server). Подробнее см. подраздел :ref:`ngw_soft_req`. NextGI
 Внешний вид пользовательского интерфейса с опубликованной веб-картой представлен 
 на :numref:`webmap_sample`.
 
-.. figure:: _static/webmap_sample_rus.png
+.. figure:: _static/webmap_sample2_rus.png
    :name: webmap_sample
    :align: center
    :width: 16cm
