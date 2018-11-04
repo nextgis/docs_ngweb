@@ -41,12 +41,12 @@ NextGIS Web - это программное обеспечение с откры
 .. only:: html
 
    Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение :ref:`NextGIS Manager <ngm_intro>`. 
+   специализированный модуль расширения для ГИС NextGIS QGIS - :ref:`NextGIS Connect <ng_connect>`. 
 
 .. only:: latex
 
    Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированное настольное приложение `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html#ng-manager-intro>`_. 
+   специализированный модуль расширения для ГИС NextGIS QGIS - `NextGIS Connect <http://docs.nextgis.ru/docs_ngqgis/source/ngconnect.html>`_. 
 
 Данное :abbr:`ПО (программное обеспечение)` позволяет более просто выполнять 
 пакетные операции над данными в NextGIS Web.
