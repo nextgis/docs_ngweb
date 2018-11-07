@@ -177,7 +177,7 @@ In actions pane "Create resource" click "PostGIS connection" (see :numref:`admin
 
    Selection of "PostGIS connection" action.
  
-Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`. 
+Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_description_eng.png
    :name: admin_layers_create_postgis_connection_resourse_description
@@ -206,7 +206,7 @@ Switch from "Resource" to "PostGIS connection" tab, which is presented on :numre
 Here enter PostGIS database connection parameters to connect data for display.  
 
 Then you can add single PostGIS layers. Navigate to a group where you want create 
-layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`). 
+layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`).
 
 .. figure:: _static/admin_layers_create_postgis_layer_eng.png
    :name: admin_layers_create_postgis_layer
@@ -215,7 +215,7 @@ layers and in actions pane "Create resource" select "PostGIS layer" (see :numref
 
    Selection of "PostGIS layer" action.
    
-Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`. 
+Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description_eng.png
    :name: admin_layers_create_postgis_layer_resourse_description
@@ -248,15 +248,15 @@ Then perform the following steps:
    Single database can store multiple schemas. Each schema contains tables and views. If there is only one schema its called public. For more information see :program:`PostgreSQL DBMS` manual.
 #. Enter Table name (PostGIS layer). 
    You need to know names of tables and columns in your database. 
-   Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS Manager` or :program:`PgAdmin` software.
+   Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS QGIS` or :program:`PgAdmin` software.
 #. Enter "ID column". 
-   Ususally when data is loaded to PostGIS using :program: NextGIS Manager 
+   When data is loaded into PostGIS using :program: NextGIS QGIS 
    software an ogc_fid column is created. If data was loaded in another way the 
    name of column may be different.
    An ID column should follow rules for data type: the value type should be a 
    number (**numeric**) and it should be a primary key.
 #. Enter "Geometry column" name (if data was loaded to PostGIS using  
-   :program:`NextGIS Manager` software usually a geometry column called 
+   :program:`NextGIS QGIS` software usually a geometry column called 
    wkb_geometry is created. If data is loaded in another way the name of column 
    may be different).
 #. Parameters "Geometry type", "Coordinate system",
