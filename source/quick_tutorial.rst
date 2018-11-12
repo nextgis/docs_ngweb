@@ -7,7 +7,7 @@
 Quickstart tutorial
 ===================
 
-Quickstart tutorial for qualified users
+Quickstart tutorial for advanced users
 -------------------------------------------------
 
 **NextGIS Web** - is a server :term:`geographical information system` (:abbr:`GIS 
