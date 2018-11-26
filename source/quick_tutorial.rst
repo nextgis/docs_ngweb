@@ -12,7 +12,7 @@ Quickstart tutorial for advanced users
 
 **NextGIS Web** - is a server :term:`geographical information system` (:abbr:`GIS 
 (geographical information system)`), which allows to store and to edit geodata and to display maps in web browser. 
-Also NextGIS Web can share geodata :term:`geodata <geodata>` with other NextGIS 
+Also NextGIS Web can share :term:`geodata <geodata>` with other NextGIS 
 software.
 
 NextGIS Web has the following features:
