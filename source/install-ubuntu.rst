@@ -66,7 +66,7 @@ config.ini (см. далее):
 
 В полученном списке найдите пакеты, подходящий для вашей версии
 PostgreSQL, его имя должно иметь вид
-postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-scripts и установите его:
+postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-scripts и установите их:
 
 .. code-block:: bash
 
