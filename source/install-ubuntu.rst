@@ -64,13 +64,13 @@ config.ini (см. далее):
 
     sudo apt-cache search postgis
 
-В полученном списке найдите пакет, подходящий для вашей версии
+В полученном списке найдите пакеты, подходящий для вашей версии
 PostgreSQL, его имя должно иметь вид
-postgresql-{version}-postgis-{version} и установите его:
+postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-scripts и установите его:
 
 .. code-block:: bash
 
-    sudo apt-get install postgresql-9.3-postgis-2.1
+    sudo apt-get install postgresql-9.3-postgis-2.4 postgresql-9.3-postgis-2.4-scripts 
     sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER TO ngw_admin;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin;'
