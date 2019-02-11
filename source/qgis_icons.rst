@@ -7,6 +7,8 @@ Using additional SVG symbols
 
 You can use SVG symbols for your QGIS styles. NextGIS QGIS has a default set of icons, but you can also use your own. 
 
+Internal set is located here: C:/NextGIS/share/ngqgis/svg
+
 Example: http://trolleway.nextgis.com/resource/2061/display?panel=layers
 
 Using your own markers
