@@ -2,13 +2,24 @@
 
 .. _ngw_qgis_icons:
     
-User SVG symbols
-================
+Using additional SVG symbols
+============================
+
+You can use SVG symbols for your QGIS styles. NextGIS QGIS has a default set of icons, but you can also use your own. 
+
+Example: http://trolleway.nextgis.com/resource/2061/display?panel=layers
+
+Using your own markers
+----------------------
+
+If you need a marker which is not part of standard library, you can use a hyperlink for this marker while creating a style in QGIS. You can upload this style and the marker will also be functional. You'll need to host your marker somewhere to be available via hyperlink.
+
+Example: http://trolleway.nextgis.com/resource/1586/display?panel=layers
 
 SVG symbols search paths
 ------------------------
 
-If your QGIS style uses SVG symbols and server renderer can't find them - they won't rendered. 
+If your QGIS style uses local SVG symbols and server renderer can't find them - they won't rendered. 
 To help renderer locate them you need to expand search paths. To do that update
 configuration file ``config.ini`` and add a list of additional search paths to ``qgis`` section:
 
