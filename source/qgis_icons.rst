@@ -11,8 +11,8 @@ Internal set is located here: C:/NextGIS/share/ngqgis/svg
 
 Example: http://trolleway.nextgis.com/resource/2061/display?panel=layers
 
-Using your own markers
-----------------------
+Using your own markers (no server solution)
+-------------------------------------------
 
 If you need a marker which is not part of standard library, you can use a hyperlink for this marker while creating a style in QGIS. You can upload this style and the marker will also be functional. You'll need to host your marker somewhere to be available via hyperlink.
 
@@ -21,8 +21,8 @@ Example: https://demo.nextgis.com/resource/4177/display?panel=layers
 SVG symbols search paths
 ------------------------
 
-If your QGIS style uses local SVG symbols and server renderer can't find them - they won't rendered. 
-To help renderer locate them you need to expand search paths. To do that update
+If your QGIS style uses local SVG symbols and server renderer can't find them - they won't be rendered. 
+To help renderer locate them you need to expand the search paths. To do that update
 configuration file ``config.ini`` and add a list of additional search paths to ``qgis`` section:
 
 .. code-block:: bash
