@@ -391,7 +391,14 @@ Remove NextGIS logo from Web map
 .. code-block:: bash
 
     .map-logo{display:none;}
+    
+Remove social networks sharing buttons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. code-block:: bash
+
+    div.social-links {display:none;}
+    
 Remove identification window header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Identification window is a popup that is shown when you click on a feature on a Web map. This setting will hide it's header and layer selector:
