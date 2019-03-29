@@ -123,7 +123,7 @@ postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-s
 .. code-block:: bash
 
     sudo apt-get install git python-dev libgdal-dev \
-    g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev
+    g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev libmajic-dev
 
 .. _ngw_install_prepare:
 
