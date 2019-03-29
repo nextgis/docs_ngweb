@@ -140,7 +140,7 @@ config.ini (см. далее):
 .. code-block:: bash
 
     $ sudo yum install git gdal gdal-devel libxml2-devel libxslt-devel gcc-c++ \
-    geos-devel proj-epsg zlib-devel libjpeg-turbo-devel dejavu-sans-fonts
+    geos-devel proj-epsg zlib-devel libjpeg-turbo-devel dejavu-sans-fonts file-devel 
 
 Подготовка к установке NextGIS Web
 ----------------------------------
