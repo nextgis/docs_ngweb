@@ -316,7 +316,7 @@
    :align: center
    :width: 10cm
 
-   <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
+   Пример <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>.
 
 * <pattern>2.5 4.5</pattern> - шаблон пунктира 
 * <angle> - угол поворота значка. Так же можно поворачивать штриховку.
