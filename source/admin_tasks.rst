@@ -431,6 +431,13 @@ NextGIS Web строится на ресурсном подходе - кажды
 	span#rightMenuIcon {display:none;}
 
 Что бы вернуть её обратно - откройте контрольную панель по url http://username.nextgis.com/control-panel
+
+Убрать кнопки справа с логином
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: css
+	
+	ui.header-nav header__right {display:none;}
 	
 Убрать заголовок окна идентификации
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
