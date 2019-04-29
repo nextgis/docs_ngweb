@@ -399,6 +399,22 @@ Remove social networks sharing buttons
 
     div.social-links {display:none;}
     
+    Remove hamburger button	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: css
+	
+	span#rightMenuIcon {display:none;}
+	
+For return it back - open control panel by url http://username.nextgis.com/control-panel
+
+Remove login button in upper right corner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: css
+	
+	ui.header-nav header__right {display:none;}
+    
 Remove identification window header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Identification window is a popup that is shown when you click on a feature on a Web map. This setting will hide it's header and layer selector:
