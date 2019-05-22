@@ -30,9 +30,7 @@ The following extensions are available to increase the functionality of the soft
 9. **Mobile debug** - support for receiving and categorizing debug 
    information from NextGIS Mobile SDK.
 
-10. **Data editing** - ability to edit geometries right in the browser.
-
-11. **Vector tiles** - support for MVT and associated styles.
+10. **Vector tiles** - support for MVT and associated styles.
  
 Adding an extension
 -------------------
