@@ -190,6 +190,8 @@ A table will be displayed in a new tab. Table allows to perform the following op
 
    Actions for the selected record in feature table.
 
+.. _ngw_update_resource:
+
 Update resource
 ---------------
 
