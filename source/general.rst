@@ -130,7 +130,7 @@ Operation system with NextGIS Web software and a database requires not more than
 .. _ngw_soft_req:
     
 Recommended software versions
----------------------------------
+-----------------------------
 
 * Ubuntu Server 18.04 LTS
 * PostgreSQL 9.5
@@ -148,3 +148,16 @@ Recomended browsers are:
 .. warning::
 
 NextGIS Web would probably work with other versions, but this is not garanteed.
+
+Latest changes
+----------------
+
+2019-08-12 release
+~~~~~~~~~~~~~~~~~~
+
+* Web map. Search for integer values in added to the embedded feature table.
+* Web map. Improved zooming on a point from the embedded feature table.
+* Web map. While editing the embedded feature table is correctly updated to show newly added features.
+
+2019-00-00 release
+~~~~~~~~~~~~~~~~~~
