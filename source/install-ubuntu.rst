@@ -22,7 +22,7 @@
 
 .. code-block:: bash
 
-    sudo apt-get install postgresql-9.3
+    sudo apt install postgresql
 
 Создаем пользователя, который будет упомянут в качестве database.user в
 config.ini (см. далее):
@@ -70,11 +70,12 @@ postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-s
 
 .. code-block:: bash
 
-    sudo apt-get install postgresql-9.3-postgis-2.4 postgresql-9.3-postgis-2.4-scripts 
+    sudo apt install postgresql-9.3-postgis-2.4 postgresql-9.3-postgis-2.4-scripts 
     sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION postgis;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geometry_columns OWNER TO ngw_admin;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE spatial_ref_sys OWNER TO ngw_admin;'
     sudo -u postgres psql -d db_ngw -c 'ALTER TABLE geography_columns OWNER TO ngw_admin;'
+    sudo -u postgres psql -d db_ngw -c 'CREATE EXTENSION hstore;'
 
 После этих операций будут созданы БД PostgreSQL с установленным в ней
 :term:`PostGIS` и пользователь :abbr:`БД (база данных)`, который станет ее владельцем, а также 
@@ -110,7 +111,7 @@ postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-s
 
 .. code-block:: bash
 
-    sudo apt-get install python-pip
+    sudo apt install python-pip
 
 Установить virtualenv:
 
@@ -122,8 +123,8 @@ postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-s
 
 .. code-block:: bash
 
-    sudo apt-get install git python-dev libgdal-dev \
-    g++ libxml2-dev libxslt1-dev gdal-bin libgeos-dev zlib1g-dev libjpeg-turbo8-dev libmagic-dev
+    sudo apt install git python-dev libgdal-dev \
+    g++ libxml2-dev libxslt1-dev gdal-bin gdal-data libgeos-dev zlib1g-dev libjpeg-turbo8-dev libmagic-dev
 
 .. _ngw_install_prepare:
 
@@ -173,7 +174,7 @@ postgresql-{version}-postgis-{version}, postgresql-{version}-postgis-{version}-s
 
 .. code-block:: bash
 
-    sudo apt-get install python-mapscript
+    sudo apt install python-mapscript
 
 После чего копируем необходимые файлы в директорию виртуального
 окружения, используемого для работы NextGIS Web. На этом шаге возможны
