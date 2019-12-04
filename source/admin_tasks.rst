@@ -423,6 +423,22 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. code-block:: css
 
 	.map-logo{display:none;}
+
+Убрать логотип NextGIS из шапки:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: css
+
+	.header__title-logo{display:none;}
+	
+Заменить логотипы NextGIS на другие (только если вам это позволяет делать лицензионное соглашение):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: css	
+
+	.map-logo{content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/JR_logo_%28east%29.svg/80px-JR_logo_%28east%29.svg.png")}
+	.header__title-logo{content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/JR_logo_%28east%29.svg/80px-JR_logo_%28east%29.svg.png")}
+	
 	
 Убрать кнопки шаринга в социальные сети:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
