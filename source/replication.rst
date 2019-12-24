@@ -263,7 +263,7 @@ Ubuntu 16.04.
    psql -h 192.168.250.181 -U ngw_admin -d postgres
    
    psql (9.5.13)
-   Type "help" for help.   
+   Type "help" for help.
    postgres=> show pool_nodes;
    
     node_id |    hostname     | port | status | lb_weight |  role
@@ -281,7 +281,7 @@ Ubuntu 16.04.
 
 Failover требует настройки удаленного соединения по протоколу `ssh` без пароля. 
 Для этого нужно создать ssh-ключи пользователя `postgres` и разослать их на
-виртуальные машины **pgmaster** и **pgslave**. 
+виртуальные машины **pgmaster** и **pgslave**.
 
 Для начала назначим пароль для пользователя `postgres` на виртуальных машинах
 **pgmaster** и **pgslave**. Для этого выполним:
@@ -339,7 +339,7 @@ Failover требует настройки удаленного соединен
    ssh -T postgres@$NEW_MASTER touch $TRIGGER_FILE
    exit 0
    
-Назначим ему права на исполнение: 
+Назначим ему права на исполнение:
 
 .. code-block:: bash
 
@@ -406,7 +406,7 @@ Failover требует настройки удаленного соединен
 
 .. code-block:: bash   
 
-   hot_standby = on   
+   hot_standby = on
    
 3. На виртуальной машине **pgslave** под пользователем postgres создаем резервную
 копию кластера базы данных и пересылаем на виртуальну машину **pgmaster**.
@@ -441,7 +441,7 @@ Failover требует настройки удаленного соединен
 ----------------------
 
 При реализаци механизма репликации и балансировки нагрузки использовались 
-следующие истоники:
+следующие источники:
 
 1. `Отказоустойчивый кластер Master-Slave на PostgreSQL <https://habr.com/post/188096/>`_
 2. `PostgreSQL 9.5 Streaming Cluster on Ubuntu 16.04 <https://dennis.gesker.com/2016/09/08/postgresql-9-5-streaming-cluster-on-ubuntu-16-04/>`_
