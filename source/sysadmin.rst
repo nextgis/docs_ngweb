@@ -16,3 +16,4 @@
    launch
    replication
    qgis_icons
+   backups
