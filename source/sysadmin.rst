@@ -15,3 +15,4 @@ a process of deploy, backup, copying and migration.
    install-centos7
    launch
    qgis_icons
+   backups
