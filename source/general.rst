@@ -152,6 +152,11 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 Latest changes
 ----------------
 
+2020-02-12 release
+~~~~~~~~~~~~~~~~~~~
+* Storage. Support for storing Z-type geometries, PolygonZ etc.
+* For developers. API can accept and provide Z-type geometries.
+
 2019-08-12 release
 ~~~~~~~~~~~~~~~~~~
 
