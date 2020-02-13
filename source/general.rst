@@ -5,40 +5,38 @@
 General Information
 ====================
 
-NextGIS Web software is a web mapping application designed to support input, 
-storage and regulated access to the results of the mapping and space activities,
-integrated into a single bank of data and metadata 
+NextGIS Web is a web mapping application designed to store, manage access and visualize geographic data.
 
-NextGIS Web developed based on :term:`open source` software. NextGIS Web software supports Open Geospatial Consorcium 
+NextGIS Web is :term:`open source` software. NextGIS Web supports Open Geospatial Consorcium 
 (`OGC <http://www.opengeospatial.org/>`_) open data exchange protocols and meets the modern requirements for application architecture implemented on the basis of free software (:term:`Open Source`).
 
 NextGIS Web allows:
 
 1. Creation and display of maps.
-2. Navigation on the map (zooming, shifting).
-3. Control a filling of the map through web-interface.
-4. Adding of vector (:term:`ESRI Shape`, :term:`PostGIS`) and raster data.
-5. Using of standart protocols (:term:`WMS`, :term:`WFS-T`).
-6. Detailed settings of access rights for layers, groups of layers, maps.
+2. Map navigation (zooming, shifting).
+3. Manage the map through web-interface.
+4. Vector (:term:`ESRI Shape`, :term:`PostGIS`) and raster data import.
+5. Use of standart protocols (:term:`WMS`, :term:`WFS-T`).
+6. Manage access rights for layers, groups of layers, maps.
 7. Interaction through API.
 
 NextGIS Web has server and client sides. 
 
-Server side store and render geodata. It's written on Python with a use of Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management and interaction with geodata on a map. 
+Server side stores and renders geodata. It's written in Python using Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management as maps and separate resources.
 
-Client is written on JavaScript and based on a Dojo framework. All configuration is stored in a PostgreSQL database with a :term:`PostGIS` extension. Page markup for user interface is written using HTML. Style for user interface is added using cascading style sheets – CSS. Queries to databases use SQL language.
+Client is written in JavaScript and based on Dojo framework. All configuration is stored in a PostgreSQL database with a :term:`PostGIS` extension. Page markup for user interface is written using HTML. Style for user interface is added using cascading style sheets – CSS. Queries to databases use SQL language.
 
-NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled on the step of application configuration. NextGIS Web components communicate with each other using internal API methods.
+NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled at the  application configuration step. NextGIS Web components communicate with each other using internal API methods.
 
-NextGIS WEB is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web works in all modern browsers.
-User interface with a published web map is on the :numref:`webmap_sample`.
+NextGIS Web is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web client-side works in all modern browsers.
+User interface with a published Web map is shown on :numref:`webmap_sample`.
 
 .. figure:: _static/webmap_sample2_eng.png
    :name: webmap_sample
    :align: center
    :width: 16cm
    
-   User interface with a published web map. 
+   User interface with a published Web map. 
 
 .. _ngw_keyfeatures:
 
@@ -53,7 +51,7 @@ Data layers
 * Creation of raster and vector layers and data upload for them using web interface. 
 * Creation of :term:`WMS` layers and connection to existing services. 
 * Creation of :term:`PostGIS` layers and connection to layers in external databases. 
-* A set of standard basemaps: OpenStreetMap, Google, Bing and others from `QuickMapServices <https://qms.nextgis.com/>`_. 
+* A set of standard basemaps: OpenStreetMap and others from `QuickMapServices <https://qms.nextgis.com/>`_. 
 * WFS service.
 * WMS service.
 * Dictionary (with extension). 
@@ -104,7 +102,7 @@ Editing
 .. _ngw_sys_req:
     
 Recommended hardware
--------------------------------
+--------------------
 
 Recommended hardware for effective work with NextGIS Web software includes a server with the following characteristics:
 
@@ -150,7 +148,7 @@ Recomended browsers are:
 NextGIS Web would probably work with other versions, but this is not garanteed.
 
 Latest changes
-----------------
+--------------
 
 2020-02-12 release
 ~~~~~~~~~~~~~~~~~~~
