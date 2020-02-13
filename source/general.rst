@@ -157,6 +157,23 @@ Latest changes
 * Storage. Support for storing Z-type geometries, PolygonZ etc.
 * For developers. API can accept and provide Z-type geometries.
 
+2019-11-18 release
+~~~~~~~~~~~~~~~~~~~
+* Storage. Support for numeric-type fields on layers added from external PostgreSQL/PostGIS
+* Search. Improve address search (uses Nominatim)
+* For developers. In addition to style IDs Web map API now provides layer IDs.
+
+2019-11-06 release
+~~~~~~~~~~~~~~~~~~~
+* Printing. Zooming with the box now correctly fit the zoomed area with chosen paper format (A4 etc.)
+
+2019-10-17 release
+~~~~~~~~~~~~~~~~~~
+
+* CRS. Import from ESRI WKT (in addition to OGC WKT)
+* CRS. Unicode in CRS names is now supported.
+* CRS. Identification doesn't crash anymore if CRS transformation was not possible.
+
 2019-08-12 release
 ~~~~~~~~~~~~~~~~~~
 
@@ -164,5 +181,3 @@ Latest changes
 * Web map. Improved zooming on a point from the embedded feature table.
 * Web map. While editing the embedded feature table is correctly updated to show newly added features.
 
-2019-00-00 release
-~~~~~~~~~~~~~~~~~~
