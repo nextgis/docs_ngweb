@@ -196,7 +196,7 @@ Example: Assigning permissions
 ------------------------------
 
 Close a group for guests, open it for the user
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: _static/access_rights_group_for_quest_1_eng.png
    :name: ngweb_access_rights_tab_0_pic
@@ -217,7 +217,7 @@ You can also allow the user reading all higher resource groups as alternative.
 
 
 Grant guest user resource display permission
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
 	Guest users will be able to see administrative interface and view all folders excluding especially closed ones.
