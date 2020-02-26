@@ -116,7 +116,7 @@
 
 .. figure:: _static/swipe_tool.png
    :name: ngweb_webmap_swype_tool
-   :scale: 75 %
+   :scale: 85 %
    :align: center
    
    Иконка инструмента “Вертикальная шторка”
@@ -144,7 +144,7 @@
    
 .. figure:: _static/choose_layer.png
    :name: ngweb_webmap_choose_layer
-   :scale: 75 %
+   :scale: 85 %
    :align: center
    
    Выбор слоя для использования вертикальной шторки   
