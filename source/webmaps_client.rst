@@ -16,7 +16,13 @@ A special web application for viewing web maps is included with NextGIS Web (see
 
    Numbers indicate: 1 – map; 2 – map zoom tools; 3 - layer tree; 4 – dropdown menu for selected layer; 5 - search bar; 6 - "Share"; 7 - "Print map"; 8 - dropdown list of basemaps; 9 – map tools; 10 - status bar.
    
-Web client includes two main components: a map (see item 1 in :numref:`webmap_client`) and layer tree (see item 3 in :numref:`webmap_client`). 
+Web client includes three main components: a map (see item 1, 8, 10 in :numref:`webmap_client`), panels (see item 3-7 in :numref:`webmap_client`, map tools (see item 2, 9 in :numref:`webmap_client`. 
+
+
+.. _ngw_webmaps_client_panels:
+
+Panels
+----------------------
 
 In a search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
 1. In attributes of layers added to a map.
@@ -55,8 +61,9 @@ User has an option to disable a basemap so a white background will be shown inst
 
 .. note:: 
    If it is supposed to work without an Internet access 
-   edit a file with `basemap settings </nextgisweb/nextgisweb/webmap/basemaps.json>`_ and  
+   edit a file with `basemap settings <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ and  
    delete records about Google basemaps.
+
 
 .. _ngw_webmaps_client_tools:
 
