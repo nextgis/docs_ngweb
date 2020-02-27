@@ -140,7 +140,7 @@
    Снимок после применения вертикальной шторки
  
 .. note:: 
-   Выбранным слоем является тот, который выбран кликом и подсвечен серым цветом (см. :numref:`ngweb_webmap_choose_layer`).
+   Выбранный слой - слой который выбран щелчком по нему в дереве слоёв (подсвечен серым цветом) (см. :numref:`ngweb_webmap_choose_layer`).
    
 .. figure:: _static/choose_layer.png
    :name: ngweb_webmap_choose_layer
