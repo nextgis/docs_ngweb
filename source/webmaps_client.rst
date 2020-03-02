@@ -18,6 +18,11 @@ A special web application for viewing web maps is included with NextGIS Web (see
    
 Web client includes three main components: a map (see item 1, 8, 10 in :numref:`webmap_client`), panels (see item 3-7 in :numref:`webmap_client`, map tools (see item 2, 9 in :numref:`webmap_client`. 
 
+There are some options to work with map: 
+
+* if you click on ``alt + shift`` simultaneously and execute round cursor movements around a monitor, a map will turn for a certain degrees to the right or to the left,
+* if you simultaneously click on ``shift`` and select of the necessary part of a map on a monitor by a cursor, you will highlight this part and zoom it in on a map.
+
 
 .. _ngw_webmaps_client_panels:
 
@@ -67,6 +72,9 @@ User has an option to disable a basemap so a white background will be shown inst
 
 .. _ngw_webmaps_client_tools:
 
+Map tools
+----------------------
+
 Using map zoom tools (see item 2 in :numref:`webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
 
 There are some tools to work with map (see item 9 in :numref:`webmap_client`) named from left to the right:
@@ -77,7 +85,42 @@ There are some tools to work with map (see item 9 in :numref:`webmap_client`) na
 * Measure area
 * Vertical swipe
 
-There are some options to work with map: 
 
-* if you click on ``alt + shift`` simultaneously and execute round cursor movements around a monitor, a map will turn for a certain degrees to the right or to the left,
-* if you simultaneously click on ``shift`` and select of the necessary part of a map on a monitor by a cursor, you will highlight this part and zoom it in on a map.
+**Vertical swipe**
+
+.. figure:: _static/swipe_tool_en.png
+   :name: ngweb_webmap_swipe_tool_en
+   :scale: 85 %
+   :align: center
+   
+   Tool icon “Vertical swipe”
+
+Vertical swipe (see :numref:`ngweb_webmap_swipe_tool_en`) makes transparent the area of the selected layer on the map which is the right of it. (see :numref:`ngweb_webmap_full_swipe_en`).
+
+.. figure:: _static/full_swipe_en.png
+   :name: ngweb_webmap_full_swipe_en
+   :scale: 125 %
+   :align: center
+   
+   Satellite image before applying the vertical swipe
+
+This makes it possible to “look” under the selected layer and compare it with the substrate or another layer on the map (see :numref:`ngweb_webmap_swiped_en`). This makes it possible to “look” under the selected layer and compare it with the substrate or another layer on the map. For example, the tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling).
+
+.. figure:: _static/swiped_en.png
+   :name: ngweb_webmap_swiped_en
+   :scale: 125 %
+   :align: center
+   
+   Satellite image after applying the vertical swipe
+
+ 
+.. note:: 
+   The selected layer is the layer that is selected by clicking on it in the layer tree (highlighted in gray) (see :numref:`ngweb_webmap_choose_layer_en`).
+   
+.. figure:: _static/choose_layer_en.png
+   :name: ngweb_webmap_choose_layer_en
+   :scale: 85 %
+   :align: center
+   
+   Layer selection for using vertical swipe
+  
