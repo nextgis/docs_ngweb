@@ -29,6 +29,15 @@ There are some options to work with map:
 Panels
 ----------------------
 
+On the left side of the workspace are the functional panels:
+
+* Layers
+* Search
+* Description
+* Bookmarks
+* Share
+* Print
+
 In a search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
 1. In attributes of layers added to a map.
 2. In address database of OpenStreetMap. 
