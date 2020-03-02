@@ -90,7 +90,7 @@ There are some tools to work with map (see item 9 in :numref:`webmap_client`) na
 
 .. figure:: _static/swipe_tool_en.png
    :name: ngweb_webmap_swipe_tool_en
-   :scale: 85 %
+   :scale: 100 %
    :align: center
    
    Tool icon “Vertical swipe”
@@ -99,7 +99,7 @@ Vertical swipe (see :numref:`ngweb_webmap_swipe_tool_en`) makes transparent the 
 
 .. figure:: _static/full_swipe_en.png
    :name: ngweb_webmap_full_swipe_en
-   :scale: 125 %
+   :scale: 70 %
    :align: center
    
    Satellite image before applying the vertical swipe
@@ -108,7 +108,7 @@ This makes it possible to “look” under the selected layer and compare it wit
 
 .. figure:: _static/swiped_en.png
    :name: ngweb_webmap_swiped_en
-   :scale: 125 %
+   :scale: 70 %
    :align: center
    
    Satellite image after applying the vertical swipe
@@ -119,7 +119,7 @@ This makes it possible to “look” under the selected layer and compare it wit
    
 .. figure:: _static/choose_layer_en.png
    :name: ngweb_webmap_choose_layer_en
-   :scale: 85 %
+   :scale: 100 %
    :align: center
    
    Layer selection for using vertical swipe
