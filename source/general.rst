@@ -150,6 +150,11 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 Latest changes
 --------------
 
+2020-03-03 release
+~~~~~~~~~~~~~~~~~~~
+* Services. Fix declared CRS for WMS containing raster layers.
+* Services. Fix RGBA conversion to JPG on WMS requests.
+
 2020-02-12 release
 ~~~~~~~~~~~~~~~~~~~
 * Storage. Support for storing Z-type geometries, PolygonZ etc.
