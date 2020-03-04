@@ -3,42 +3,34 @@
 .. _ngw_extension:
 
 Extensions
-================================
+==========
 
 General Information
 -------------------
 
 The following extensions are available to increase the functionality of the software:
 
-1. **Basemaps** (nextgisweb_basemap) - support for default basemap selection and a list view of available basemaps,
-   an option to select from pre-prepared list of services.
+1. **Basemaps** - adding and managing basemaps.
 
-2. **Exporter** - support for additional vector layer exporters to different formats (ESRI shapefile, MapInfo tab etc.)
+2. **File buckets** - file sets, adds ability to upload any files, including non-geospatial ones.
 
-3. **File buckets** (nextgisweb_filebucket) - support for file sets, ability to upload any files, including non-geospatial files.
+3. **QGIS** - map rendering with QGIS.
 
-4. **Filtering** - support for filtering by attribute and spatial extent.
+4. **MapServer** - map rendering with MapServer.
 
-5. **Mapnik** - support for Mapnik map renderer.
+5. **Audit** - logging user events such as log in/out, resource addition or removal etc.
 
-6. **QGIS** - support for QGIS map renderer.
+6. **NextGIS ID on premise** - enterprise authentification and authorization features, such as LDAP or OAuth.
 
-7. **MapServer** - support for MapServer map renderer.
+Specific extensions may require installation of additional software components.
 
-8. **Logging** - support for writing of various messages to a log.
-
-9. **Mobile debug** - support for receiving and categorizing debug 
-   information from NextGIS Mobile SDK.
-
-10. **Vector tiles** - support for MVT and associated styles.
  
-Adding an extension
--------------------
+Installing an extension
+-----------------------
 
-Example: adding nextgisweb_filebucket extension. 
-Here are steps to add an extension:
+Here are the steps to add nextgisweb_filebucket extension:
 
-1. Execute command to download extension source code to server where NextGIS Web is installed: 
+1. Execute command to download extension source code to a server where NextGIS Web is installed: 
 
 .. code-block:: bash
 
