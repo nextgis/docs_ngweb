@@ -627,6 +627,11 @@ NextGIS Web может работать как сервер WFS. По этому
 
 Далее необходимо настроить права доступа к WFS-сервису (см. главу :ref:`ngw_access_rights`).
 
+Программно подключаться к созданным сервисам WFS можно по ссылкам вида:
+
+.. sourcecode:: http
+   https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
+
 .. _ngw_resourses_group:
 
 Создание группы ресурсов
