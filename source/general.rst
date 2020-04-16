@@ -150,6 +150,12 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 Latest changes
 --------------
 
+2020-04-16 release
+~~~~~~~~~~~~~~~~~~
+* For developers. Single feature extent endpoint. Example: https://demo.nextgis.com/api/resource/1735/feature/1/extent
+* For developers. Ordering for data filtering. Reverse ordering and two and more field ordering are supported. Example: https://demo.nextgis.com/api/resource/1731/feature/?limit=10&order_by=NAME,-LEISURE
+* Admin GUI. Prohibit blocking of the last (the only) administrator in the system.
+
 2020-03-03 release
 ~~~~~~~~~~~~~~~~~~~
 * Services. Fix declared CRS for WMS containing raster layers.
