@@ -53,13 +53,18 @@ Switch from "Resource" tab to "Raster layer" tab, which is presented on :numref:
 
    Raster layer tab with button for upload of raster file.
 
-Here specify a coordinate system the raster will be reprojected to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)) and select a file. 
+On this tab you need to specify a coordinate system the raster will be reprojected to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)) and updload an actual raster file. 
 
-.. note:: 
-   The file should be in GeoTIFF format with 3 or 4 bands (RGB or RGBA). 
- 
-After a file is successfully uploaded you need to create a style (if it was not 
-create automatically). When creating a map (for more information see subsection :ref:`ngw_map_create`) you can add a raster to a map by selecting a raster and its style.
+
+Raster style
+^^^^^^^^^^^^
+
+After a raster file is successfully uploaded and raster layer is created you need to create a style. You will need this style to add the raster to a Web map when creating one (for more information see subsection :ref:`ngw_map_create`).
+
+Two types of raster styles are available.
+
+1. Raster style - simple style summy with no properties, applicable only for RGB(A), numeric type - Byte.
+2. QGIS style - fully-featured style, applicable to any one or multiband rasters of any numeric type. You can create such style in NextGIS QGIS.
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
