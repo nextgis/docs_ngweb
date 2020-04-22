@@ -643,14 +643,14 @@
 	    <filled>true</filled>
 	  </symbol>
 	  <layer>
-	    <labelitem>Cluster:FeatureCount</labelitem>
-	    <classitem>Cluster:FeatureCount</classitem>
+	    <labelitem>Cluster_FeatureCount</labelitem>
+	    <classitem>Cluster_FeatureCount</classitem>
 	    <cluster>
 	      <maxdistance>20</maxdistance>
 	      <region>"ellipse"</region>
 	    </cluster>
 	    <class>
-	      <expression>("[Cluster:FeatureCount]" != "1")</expression>
+	      <expression>("[Cluster_FeatureCount]" != "1")</expression>
 	      <style>
 		<symbol>shop</symbol>
 		<size>20</size>
