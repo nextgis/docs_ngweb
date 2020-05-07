@@ -571,7 +571,7 @@ White label — это специальный модуль, позволяющи
 .. figure:: _static/web-map_logo.png
    :name: web-map_logo
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Веб-карта с логотипом NextGIS слева) и без логотипа (справа)
   
@@ -584,7 +584,7 @@ White label — это специальный модуль, позволяющи
 .. figure:: _static/help_link.png
    :name: help_link
    :align: center
-   :width: 16cm
+   :width: 12cm
 
    Переопределение ссылки на справку
    
@@ -610,7 +610,7 @@ White label — это специальный модуль, позволяющи
 .. figure:: _static/WMS_WFS_whitelabel.png
    :name: WMS_WFS_whitelabel
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Замена на *NextGIS QGIS* на *QGIS* в сервисах WMS и WFS
    
@@ -619,6 +619,6 @@ White label — это специальный модуль, позволяющи
 .. figure:: _static/Preview_maplinks.png
    :name: Preview_maplinks
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Сокрытие упоминания *NextGIS QGIS* в ссылках на веб ГИС
