@@ -506,3 +506,91 @@ You can try these examples as is or change it to your liking. You can also see t
 	  border-right: 1px solid rgba(0,0,0,.12) !important;
 	  color: #000 !important;
 	}
+
+
+Customize NextGIS UI Elements (White label)
+----------------------------------------
+
+White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately in NextGIS Web. The module adds a new section to the Control Panel, which allows you to disable or override various interface elements associated with the mention of NextGIS.
+
+
+Company logo on web map
+~~~~~~~~~~~~~~~~~~~~
+
+In Control Panel, you can upload your logo in PNG format (see in:numref: `logo_whitelabel_en`) to display in the lower right corner of the map. If the file is not loaded, there is no logo (see in:numref: `web-map_logo`).
+
+.. figure:: _static/logo_whitelabel_en.png
+   :name: logo_whitelabel_en
+   :align: center
+   :width: 25cm
+
+   Upload company logo file
+
+.. figure:: _static/web-map_logo.png
+   :name: web-map_logo
+   :align: center
+   :width: 25cm
+
+   Web map with NextGIS logo (left) and without logo (right)
+  
+ 
+Link to help
+~~~~~~~~~~~~~~~~~
+Without White label module, help leads to http://nextgis.ru/help/. You can provide a link (see in :numref: `help_whitelabel_en`) to 'Help' (see in :numref:`help_link_en`).
+
+.. figure:: _static/help_whitelabel_en.png
+   :name: help_whitelabel_en
+   :align: center
+   :width: 15cm
+
+   Reroute a link to 'help'
+
+.. figure:: _static/help_link_en.png
+   :name: help_link_en
+   :align: center
+   :width: 12cm
+
+   'Help' in the menu
+
+
+Support Link
+~~~~~~~~~~~~~~~~~~~
+
+Similarly, you can ask a link to a page of technical support  (see in :numref:`support_link_en`).
+
+.. figure:: _static/support_whitelebel_en.png
+   :name: support_whitelebel_en
+   :align: center
+   :width: 16cm
+   
+   Reroute a link to Support URL
+
+.. figure:: _static/support_link.png
+   :name: support_link
+   :align: center
+   :width: 16cm
+
+   Support link in the interface
+ 
+ 
+ Other items
+~~~~~~~~~~~~~~~~~
+
+* The default Web GIS name is specified without mentioning NextGIS.
+* In WMS and WFS services resources, the mention **NextGIS QGIS** is replaced with **QGIS**(см. :numref:`WMS_WFS_whitelabel`).
+
+.. figure:: _static/WMS_WFS_whitelabel.png
+   :name: WMS_WFS_whitelabel
+   :align: center
+   :width: 25cm
+
+   Replacing *NextGIS QGIS* (left) with *QGIS* (right) in WMS and WFS services
+   
+* In links to Web GIS, the preview with the mention of NextGIS is removed (см. :numref:`Preview_maplinks`).
+
+.. figure:: _static/Preview_maplinks.png
+   :name: Preview_maplinks
+   :align: center
+   :width: 25cm
+
+   Hiding the mention of *NextGIS QGIS* in web GIS links
