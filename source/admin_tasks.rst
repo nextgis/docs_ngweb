@@ -566,7 +566,14 @@ White label — это специальный модуль, позволяющи
 Логотип на Веб-карте
 ~~~~~~~~~~~~~~~~~~~~
 
-В панели управления вы сможете загрузить свой логотип в формате PNG для отображения в правом нижнем углу карты. Если файл не загружен - логотип отсутствует (см. :numref:`web-map_logo`).
+В панели управления вы сможете загрузить свой логотип в формате PNG (см. :numref:`logo_whitelabel`) для отображения в правом нижнем углу карты. Если файл не загружен - логотип отсутствует (см. :numref:`web-map_logo`).
+
+.. figure:: _static/logo_whitelabel.png
+   :name: logo_whitelabel
+   :align: center
+   :width: 25cm
+
+   Загрузка файла логотипа компании
 
 .. figure:: _static/web-map_logo.png
    :name: web-map_logo
@@ -579,20 +586,33 @@ White label — это специальный модуль, позволяющи
 Ссылка на справку
 ~~~~~~~~~~~~~~~~~
 
-Без модуля White label справка ведет на http://nextgis.ru/help/. Вы можете задать свою ссылку на справку (см. :numref:`help_link`).
+Без модуля White label справка ведет на http://nextgis.ru/help/. Вы можете задать свою ссылку (см. :numref:`helplink_whitelabel`) на справку (см. :numref:`help_link`).
+
+.. figure:: _static/helplink_whitelabel.png
+   :name: helplink_whitelabel
+   :align: center
+   :width: 15cm
+
+   Переопределение ссылки на справку
 
 .. figure:: _static/help_link.png
    :name: help_link
    :align: center
    :width: 12cm
 
-   Переопределение ссылки на справку
+   Раздел "Справка" в меню
    
 
 Ссылка на поддержку
 ~~~~~~~~~~~~~~~~~~~
 
-Аналогично вы сможете задать свою ссылку на страницу техподдержки (см. :numref:`support_link`).
+Аналогично вы сможете задать свою ссылку (см. :numref:`support_whitelabel`) на страницу техподдержки (см. :numref:`support_link`).
+
+.. figure:: _static/support_whitelabel.png
+   :name: support_whitelabel
+   :align: center
+   :width: 16cm
+   
 
 .. figure:: _static/support_link.png
    :name: support_link
@@ -600,6 +620,7 @@ White label — это специальный модуль, позволяющи
    :width: 16cm
 
    Переопределение ссылки на техническую поддержку
+
 
 Прочие элементы
 ~~~~~~~~~~~~~~~~
