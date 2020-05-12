@@ -613,20 +613,21 @@ White label — это специальный модуль, позволяющи
    :align: center
    :width: 16cm
    
+   Переопределение ссылки на техподдержку
 
 .. figure:: _static/support_link.png
    :name: support_link
    :align: center
    :width: 16cm
 
-   Переопределение ссылки на техническую поддержку
+   Ссылка в интерфейсе на страницу техподдержки
 
 
 Прочие элементы
 ~~~~~~~~~~~~~~~~
 
 * Название Веб ГИС по умолчанию задаётся без упоминания NextGIS.
-* В ресурсах WMS и WFS сервисов упоминание **NextGIS QGIS** заменяется на **QGIS**. (см. :numref:`WMS_WFS_whitelabel`).
+* В ресурсах WMS и WFS сервисов упоминание **NextGIS QGIS** заменяется на **QGIS** (см. :numref:`WMS_WFS_whitelabel`).
 
 .. figure:: _static/WMS_WFS_whitelabel.png
    :name: WMS_WFS_whitelabel
