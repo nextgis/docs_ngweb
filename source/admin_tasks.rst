@@ -585,7 +585,9 @@ Also you can set URL for the technical support page (see in :numref:`support_lin
    :width: 16cm
    
    Reroute Support URL
-   
+
+This link will appear on error messages:
+
 .. figure:: _static/support_link.png
    :name: support_link
    :align: center
