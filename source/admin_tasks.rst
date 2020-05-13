@@ -577,19 +577,12 @@ By default, help leads to http://nextgis.com/help/. You can set a different hype
 Support URL
 ~~~~~~~~~~~
 
-Also you can set URL for the technical support page (see in :numref:`support_link`).
-
-.. figure:: _static/support_whitelebel_en.png
-   :name: support_whitelebel_en
-   :align: center
-   :width: 16cm
-   
-   Reroute Support URL
+Also you can set URL for the technical support page (see in :numref:`tech_support`).
 
 This link will appear on error messages:
 
-.. figure:: _static/support_link.png
-   :name: support_link
+.. figure:: _static/tech_support.png
+   :name: tech_support
    :align: center
    :width: 16cm
    
