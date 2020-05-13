@@ -511,7 +511,7 @@ You can try these examples as is or change it to your liking. You can also see t
 Customize NextGIS UI Elements (White label)
 ----------------------------------------
 
-White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately in NextGIS Web. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements associated with the mention of NextGIS.
+White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements mentioning NextGIS.
 
 .. figure:: _static/Control_panel_whitelabel.png
    :name: Control_panel_whitelabel
@@ -520,8 +520,8 @@ White label is a special module that allows you to remove or replace NextGIS log
    
    'White label' module in control panel
 
-Company logo on web map
-~~~~~~~~~~~~~~~~~~~~
+Company logo on Web map
+~~~~~~~~~~~~~~~~~~~~~~~
 
 In Control Panel, you can upload your logo in PNG format (see in:numref: `logo_whitelabel_en`) to display in the lower right corner of the map. If the file is not loaded, there is no logo (see in:numref: `web-map_logo`).
 
@@ -541,9 +541,9 @@ In Control Panel, you can upload your logo in PNG format (see in:numref: `logo_w
   
   
 Company URL
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
   
-New logo can also be assigned a reference to the organization (см. :numref:`url-logo_en`)
+You can assigned a new hyperlink for a company website to a just added logo (см. :numref:`url-logo_en`)
 
 .. figure:: _static/url-logo_en.png
    :name: url-logo_en
@@ -554,8 +554,8 @@ New logo can also be assigned a reference to the organization (см. :numref:`ur
  
  
 Help page
-~~~~~~~~~~~~~~~~~
-Without White label module, help leads to http://nextgis.ru/help/. You can provide a link (see in :numref: `help_whitelabel_en`) to 'Help' (see in :numref:`help_link_en`).
+~~~~~~~~~
+By default, help leads to http://nextgis.com/help/. You can set a different hyperlink (see in :numref: `help_whitelabel_en`) to 'Help' (see in :numref:`help_link_en`).
 
 .. figure:: _static/help_whitelabel_en.png
    :name: help_whitelabel_en
@@ -573,9 +573,9 @@ Without White label module, help leads to http://nextgis.ru/help/. You can provi
 
 
 Support URL
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
 
-Also you can set URL to the technical support page (see in :numref:`support_link`).
+Also you can set URL for the technical support page (see in :numref:`support_link`).
 
 .. figure:: _static/support_whitelebel_en.png
    :name: support_whitelebel_en
@@ -596,7 +596,7 @@ Also you can set URL to the technical support page (see in :numref:`support_link
 ~~~~~~~~~~~~~~~~~
 
 * The default Web GIS name is specified without mentioning NextGIS.
-* In WMS and WFS services resources, the mention **NextGIS QGIS** is replaced with **QGIS**(см. :numref:`WMS_WFS_whitelabel`).
+* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS**(см. :numref:`WMS_WFS_whitelabel`).
 
 .. figure:: _static/WMS_WFS_whitelabel.png
    :name: WMS_WFS_whitelabel
@@ -605,7 +605,7 @@ Also you can set URL to the technical support page (see in :numref:`support_link
 
    Replacing *NextGIS QGIS* (left) with *QGIS* (right) in WMS and WFS services
    
-* In links to Web GIS, the preview with the mention of NextGIS is removed (см. :numref:`Preview_maplinks`).
+* The social networks preview mentioning NextGIS is removed (см. :numref:`Preview_maplinks`).
 
 .. figure:: _static/Preview_maplinks.png
    :name: Preview_maplinks
