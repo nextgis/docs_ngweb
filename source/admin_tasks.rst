@@ -566,7 +566,7 @@ White label — это специальный модуль, позволяющи
 .. figure:: _static/Control_panel_whitelabel_ru.png
    :name: Control_panel_whitelabel_ru
    :align: center
-   :width: 15cm
+   :width: 20cm
 
    Модуль 'White label' в панели управления
 
