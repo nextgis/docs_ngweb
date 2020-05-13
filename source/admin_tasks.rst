@@ -511,8 +511,14 @@ You can try these examples as is or change it to your liking. You can also see t
 Customize NextGIS UI Elements (White label)
 ----------------------------------------
 
-White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately in NextGIS Web. The module adds a new section to the Control Panel, which allows you to disable or override various interface elements associated with the mention of NextGIS.
+White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately in NextGIS Web. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements associated with the mention of NextGIS.
 
+.. figure:: _static/Control_panel_whitelabel.png
+   :name: Control_panel_whitelabel
+   :align: center
+   :width: 15cm
+   
+   'White label' module in control panel
 
 Company logo on web map
 ~~~~~~~~~~~~~~~~~~~~
@@ -533,8 +539,21 @@ In Control Panel, you can upload your logo in PNG format (see in:numref: `logo_w
 
    Web map with NextGIS logo (left) and without logo (right)
   
+  
+Company URL
+~~~~~~~~~~~~~~~~~~~~
+  
+New logo can also be assigned a reference to the organization (см. :numref:`url-logo_en`)
+
+.. figure:: _static/url-logo_en.png
+   :name: url-logo_en
+   :align: center
+   :width: 25cm
+
+   Company URL
  
-Link to help
+ 
+Help page
 ~~~~~~~~~~~~~~~~~
 Without White label module, help leads to http://nextgis.ru/help/. You can provide a link (see in :numref: `help_whitelabel_en`) to 'Help' (see in :numref:`help_link_en`).
 
@@ -548,29 +567,29 @@ Without White label module, help leads to http://nextgis.ru/help/. You can provi
 .. figure:: _static/help_link_en.png
    :name: help_link_en
    :align: center
-   :width: 12cm
+   :width: 10cm
 
    'Help' in the menu
 
 
-Support Link
+Support URL
 ~~~~~~~~~~~~~~~~~~~
 
-Similarly, you can ask a link to a page of technical support  (see in :numref:`support_link_en`).
+Also you can set URL to the technical support page (see in :numref:`support_link`).
 
 .. figure:: _static/support_whitelebel_en.png
    :name: support_whitelebel_en
    :align: center
    :width: 16cm
    
-   Reroute a link to Support URL
-
+   Reroute Support URL
+   
 .. figure:: _static/support_link.png
    :name: support_link
    :align: center
    :width: 16cm
-
-   Support link in the interface
+   
+   Support URL in the interface
  
  
  Other items
