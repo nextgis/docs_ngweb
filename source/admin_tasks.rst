@@ -523,7 +523,7 @@ White label is a special module that allows you to remove or replace NextGIS log
 Company logo on Web map
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In Control Panel, you can upload your logo in PNG format (see in:numref:`logo_whitelabel_en`) to display in the lower right corner of the map. If the file is not loaded, there is no logo (see in:numref:`web-map_logo`).
+In Control Panel, you can upload your logo in PNG format (see in:numref:`logo_whitelabel_en`) to display in the lower right corner of the map.
 
 .. figure:: _static/logo_whitelabel_en.png
    :name: logo_whitelabel_en
@@ -531,6 +531,8 @@ In Control Panel, you can upload your logo in PNG format (see in:numref:`logo_wh
    :width: 25cm
 
    Upload company logo file
+
+If the file is not loaded, there is no logo (see in:numref:`web-map_logo`).
 
 .. figure:: _static/web-map_logo.png
    :name: web-map_logo
