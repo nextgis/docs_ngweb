@@ -550,7 +550,7 @@ You can assigned a new hyperlink for a company website to a just added logo (—Å–
 .. figure:: _static/url-logo_en.png
    :name: url-logo_en
    :align: center
-   :width: 25cm
+   :width: 15cm
 
    Company URL
  
@@ -569,7 +569,7 @@ By default, help leads to http://nextgis.com/help/. You can set a different hype
 .. figure:: _static/help_link_en.png
    :name: help_link_en
    :align: center
-   :width: 10cm
+   :width: 7cm
 
    'Help' in the menu
 
