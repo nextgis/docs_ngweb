@@ -155,7 +155,7 @@ Latest changes
 
 * General. New data uploader. Check for size limits before starting an upload.
 * General. Stay on the same page on login to the same page.
-* General. Human readable error on trying to access non-existing attachement.
+* General. Human readable error on trying to access non-existing attachment.
 * General. Human readable error on trying to render non-existing layer.
 * General. Human readable error on trying to write a geometry to a layer with a different geometry type.
 * General. Improve handling rasters with huge size.
