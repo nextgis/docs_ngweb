@@ -150,6 +150,17 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 Latest changes
 --------------
 
+2020-06-05 release
+~~~~~~~~~~~~~~~~~~
+
+* General. New data uploader. Check for size limits before starting an upload.
+* General. Stay on the same page on login to the same page.
+* General. Human readable error on trying to access non-existing attachement.
+* General. Human readable error on trying to render non-existing layer.
+* General. Human readable error on trying to write a geometry to a layer with a different geometry type.
+* General. Improve handling rasters with huge size.
+* Extensions. Whitelabel - new extension to set corporate interface elements (logos, links, company mentions etc.).
+
 2020-04-16 release
 ~~~~~~~~~~~~~~~~~~
 * For developers. Single feature extent endpoint. Example: https://demo.nextgis.com/api/resource/1735/feature/1/extent
