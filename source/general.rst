@@ -152,7 +152,6 @@ Latest changes
 
 2020-06-05 release
 ~~~~~~~~~~~~~~~~~~
-
 * General. New data uploader. Check for size limits before starting an upload.
 * General. Stay on the same page on login to the same page.
 * General. Human readable error on trying to access non-existing attachment.
