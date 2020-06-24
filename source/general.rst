@@ -149,6 +149,9 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 
 Latest changes
 --------------
+2020-06-24 release
+~~~~~~~~~~~~~~~~~~
+* General. Support raster pyramids for QGIS style for raster layers.
 
 2020-06-05 release
 ~~~~~~~~~~~~~~~~~~
