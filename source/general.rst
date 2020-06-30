@@ -149,6 +149,11 @@ NextGIS Web would probably work with other versions, but this is not garanteed.
 
 Latest changes
 --------------
+2020-06-30 release
+~~~~~~~~~~~~~~~~~~
+* General. Add/remove fields of attributes table.
+* General. Reorder fields of attributes table.
+
 2020-06-24 release
 ~~~~~~~~~~~~~~~~~~
 * General. Support raster pyramids for QGIS style for raster layers.
