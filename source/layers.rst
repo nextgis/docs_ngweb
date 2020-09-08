@@ -521,7 +521,7 @@ Creating a TMS layer in NextGIS Web
 TMS Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to WMS (link) to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
+Similar to WMS (https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer) to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
 
 .. figure:: _static/TMS_connection_create_en.png
    :name: TMS_connection_create_en
