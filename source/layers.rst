@@ -1,4 +1,5 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Роман Гайнуллов <roman.gainullov@nextgis.ru>
 
 .. _ngw_create_layers:
 
