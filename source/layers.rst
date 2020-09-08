@@ -1,4 +1,5 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
 .. _ngw_create_layers:
 
@@ -521,12 +522,12 @@ Creating a TMS layer in NextGIS Web
 TMS Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer>` to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
+Similar to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_ to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
 
 .. figure:: _static/TMS_connection_create_en.png
    :name: TMS_connection_create_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    Selecting a TMS Connection resource
 
@@ -535,7 +536,7 @@ Enter the connection name that will be displayed in the administrative interface
 .. figure:: _static/TMS_connection_name_en.png
    :name: TMS_connection_name_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    TMS Connection Resource Name
 
@@ -544,7 +545,7 @@ The "Key" field is optional. If needed you can also add a description and metada
 .. figure:: _static/TMS_connection_type_en.png
    :name: TMS_connection_type_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    Configuring TMS Connection
    
@@ -560,7 +561,7 @@ TMS layer
 .. figure:: _static/TMS_layer_create_en.png
    :name: TMS_layer_create_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    Selection Resource TMS layer
    
@@ -569,7 +570,7 @@ Enter the name that will be displayed in the administrative interface (see :numr
 .. figure:: _static/TMS_layer_name_en.png
    :name: TMS_layer_name_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    TMS layer name
 
@@ -583,7 +584,7 @@ Caching provides faster rendering of web map layers. The tile cache settings tab
 .. figure:: _static/TMS_layer_cache_en.png
    :name: TMS_layer_cache_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    TMS layer tile cache settings
    
@@ -600,7 +601,7 @@ The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_set
 .. figure:: _static/TMS_layer_settings_en.png
    :name: TMS_layer_settings_en
    :align: center
-   :width: 16cm
+   :width: 25cm
    
    TMS_layer_settings_en
    
