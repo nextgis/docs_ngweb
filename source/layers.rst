@@ -510,7 +510,103 @@ Gdal utility call example. The utility gets an image by WMS from NGW and saves i
    $ gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 \
    4190083 7468902   ngw.xml test.tiff
 
-.. _ngw_create_tms_service:
+
+.. _ngw_create_tms_layer:
+
+Creating a TMS layer in NextGIS Web
+-------------------
+
+.. _ngw_create_tms_connection:
+
+TMS Connection
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Similar to WMS (link) to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
+
+.. figure:: _static/TMS_connection_create_en.png
+   :name: TMS_connection_create_en
+   :align: center
+   :width: 16cm
+   
+   Selecting a TMS Connection resource
+
+Enter the connection name that will be displayed in the administrative interface (see :numref:`TMS_connection_name_en`).
+
+.. figure:: _static/TMS_connection_name_en.png
+   :name: TMS_connection_name_en
+   :align: center
+   :width: 16cm
+   
+   TMS Connection Resource Name
+
+The "Key" field is optional. If needed you can also add a description and metadata. TMS connection tab is responsible for configuring the way to connect to the TMS server - custom or NextGIS geoservices (see :numref:`TMS_connection_type_en`).
+
+.. figure:: _static/TMS_connection_type_en.png
+   :name: TMS_connection_type_en
+   :align: center
+   :width: 16cm
+   
+   Configuring TMS Connection
+   
+In the case of a custom connection method, the user must specify the URL template, API key parameters if needed and the tile scheme used. For NextGIS geoservices, only a custom API key is specified. After filling in all fields press Create to complete the process of creating a **TMS Connection** resource.
+
+.. _ngw_tms_layer:
+
+TMS layer
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**TMS layer** resource is created using previously created **TMS Connection**. Select "TMS layer" under Create resource panel (see :numref:`TMS_layer_create_en`).
+
+.. figure:: _static/TMS_layer_create_en.png
+   :name: TMS_layer_create_en
+   :align: center
+   :width: 16cm
+   
+   Selection Resource TMS layer
+   
+Enter the name that will be displayed in the administrative interface (see :numref:`TMS_layer_name_en`).
+
+.. figure:: _static/TMS_layer_name_en.png
+   :name: TMS_layer_name_en
+   :align: center
+   :width: 16cm
+   
+   TMS layer name
+
+Caching provides faster rendering of web map layers. The tile cache settings tab consists of the following settings (см. :numref:`TMS_layer_cache_en`):
+
+* *Enabled* checkbox
+* *Image compose* checkbox
+* Input field *Maximum zoom level*
+* Input field *TTL, sec* (Time to live)
+
+.. figure:: _static/TMS_layer_cache_en.png
+   :name: TMS_layer_cache_en
+   :align: center
+   :width: 16cm
+   
+   TMS layer tile cache settings
+   
+If *Image compose* checkbox is on the requested image will be prepared from previously cached tiles. If the checkbox is off, the image will be rendered from the source vector layer.The *maximum zoom level* is a threshold value, above which the cache is not accessed and the image is formed "on the fly". *TTL* is the “time to live” or storage of tiles on the server in seconds, after which the image will be formed again on the next request.
+
+The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_settings_en`):
+
+* TMS connection - select a TMS connection resource that was created earlier
+* Select coordinate system for data display
+* The range of zoom levels for data display
+* Extent in degrees
+* Tile size in pixels
+
+.. figure:: _static/TMS_layer_settings_en.png
+   :name: TMS_layer_settings_en
+   :align: center
+   :width: 16cm
+   
+   TMS_layer_settings_en
+   
+After creating a TMS layer, the user can add it to the web map to display. No style is needed.
+
+.. _ngw_connect_tms_gdal:
 
 Using TMS connection in GDAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
