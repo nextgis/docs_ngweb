@@ -464,19 +464,16 @@ Then you need to set access permissions for WMS service (see section :ref:`ngw_a
 NextGIS Web layer could be added to desktop, mobile and web gis in different ways.
 
 
-WMS connection
-^^^^^^^^^^^^^^^^^
+Using WMS service connection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-NextGIS Web is a WMS server. Any WMS layes could be added to a software that supports WMS layers. You need to know WMS service URL. You can get in on WMS service properties page. Example:
+NextGIS Web acts as a WMS server. Any WMS layes could be added to a software that supports WMS layers. You need to know WMS service URL. You can get in on WMS service page. The link may look like this:
 
 .. code:: html
 
-   http://demo.nextgis.ru/resource/60/wms?
+   https://demo.nextgis.com/api/resource/4817/wms?
 
-Using WMS connection in GDAL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Single NextGIS Web layers could be added as WMS. To use them through GDAL utilities you need to create an XML file for required layer. You need to know an URL for WMS service to create that file.
+To use WMS service through GDAL utilities you need to create an XML file for required layer.
 Enter these parameters to ServerUrl string in example below. The rest remains unchanged.
 
 .. code:: xml
@@ -484,7 +481,7 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
    <GDAL_WMS>
     <Service name="WMS">
         <Version>1.1.1</Version>
-        <ServerUrl>http://dev.nextgis.com/practice2/api/resource/85/wms?</ServerUrl>
+        <ServerUrl>https://demo.nextgis.com/api/resource/4817/wms?</ServerUrl>
         <SRS>EPSG:3857</SRS>
         <ImageFormat>image/png</ImageFormat>
         <Layers>moscow_boundary_multipolygon</Layers>
@@ -504,23 +501,22 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
 
 If you need an image with transparency (alpha channel) set <BandsCount>4</BandsCount>
 
-Gdal utility call example. The utility gets an image by WMS from NGW and saves it to a GeoTIFF format
+GDAL utility call example. The utility gets an image by WMS from NGW and saves it to a GeoTIFF format
 
 .. code:: bash
 
    $ gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 \
    4190083 7468902   ngw.xml test.tiff
 
-
 .. _ngw_create_tms_layer:
 
 Creating a TMS layer
--------------------
+--------------------
 
 .. _ngw_create_tms_connection:
 
 TMS Connection
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 Similar to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_ to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
 
@@ -554,7 +550,7 @@ In the case of a custom connection method, the user must specify the URL templat
 .. _ngw_tms_layer:
 
 TMS layer
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^
 
 **TMS layer** resource is created using previously created **TMS Connection**. Select "TMS layer" under Create resource panel (see :numref:`TMS_layer_create_en`).
 
@@ -609,18 +605,23 @@ After creating a TMS layer, the user can add it to the web map to display. No st
 
 .. _ngw_connect_tms_gdal:
 
-Using TMS connection in GDAL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using TMS connection
+^^^^^^^^^^^^^^^^^^^^
 
-Single layers of NextGIS Web could be added as TMS. Create an XML file for required layer. To create this file you need the information about NGW address and a layer number (in the example: address - http://demo.nextgis.ru/ngw_kl, layer number - 5). 
+NextGIS Web style resources could be accessed as TMS. The link should look like this:
+
+.. code:: html
+
+   https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
+
+To use TMS service through GDAL utilities you need to create an XML file for the required style. You will a proper link. 
 Enter these parameters to ServerUrl string in example below. The rest remains unchanged.
 
 .. code:: xml
 
    <GDAL_WMS>
     <Service name="TMS">
-        <ServerUrl>http://demo.nextgis.ru/api/component/render/tile?
-                   z=${z}&x=${x}&y=${y}&resource=5
+        <ServerUrl>https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
         </ServerUrl>
     </Service>
     <DataWindow>
@@ -639,7 +640,6 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
     <BandsCount>4</BandsCount>
     <Cache />
    </GDAL_WMS> 
-
 
 .. _ngw_wfs_service:
 
