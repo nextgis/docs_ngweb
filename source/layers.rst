@@ -514,7 +514,7 @@ Gdal utility call example. The utility gets an image by WMS from NGW and saves i
 
 .. _ngw_create_tms_layer:
 
-Creating a TMS layer in NextGIS Web
+Creating a TMS layer
 -------------------
 
 .. _ngw_create_tms_connection:
