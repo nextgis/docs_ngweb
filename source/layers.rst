@@ -648,6 +648,9 @@ WFS service
 
 WFS layer setup is performed the same way as for WMS service but you add a layer instead of a style.
 
+.. warning:: 
+   The field names of the vector layer on the basis of which the WFS service is created should not contain Cyrillic.
+
 NextGIS Web can act as WFS server. Third party software could edit vector data on server using this protocol.
 
 To deploy a WFS service you need to add a resource. To do it in actions pane "Create resource" click "WFS service" (see :numref:`admin_layers_create_wfs_service`). 
