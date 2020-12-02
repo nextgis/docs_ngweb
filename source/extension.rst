@@ -73,7 +73,7 @@ Example: changes to configuration file:
 
 Adding NextGIS Web QGIS extension
 ----------------------------------
-This extension adds support for rending with QGIS. To operate it needs QGIS 2.8 or higher already installed on the system.
+This extension adds support for rending with QGIS. To operate it needs QGIS 2.8 < 3.0 already installed on the system.
 
 .. code-block:: bash
 
