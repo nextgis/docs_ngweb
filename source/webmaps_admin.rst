@@ -113,6 +113,13 @@ For "Scale" parameters you may enter a scale range in the format like "1 : 10 00
 
    "Basemaps" tab.
 
+
+Web map with no basemap
+~~~~~~~~~~~~~~~~~~~~~~~
+
+By default a Web map is created with OpenStreetMap basemap. If you need a map without a basemap: 
+create a new basemap, put 'blank' in name and URL and add it to your Web map. Turn just added basemap off.
+
 A checkbox "Enabled" sets default visibility of a basemap.
 
 Field "Transparency" sets basemap transparency on a map from 0% to 100%. A basemap with 1% transparency is almost transparent, a basemap with 100% transparency is opaque.
