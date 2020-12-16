@@ -510,15 +510,15 @@ GDAL utility call example. The utility gets an image by WMS from NGW and saves i
 
 .. _ngw_create_tms_layer:
 
-Creating a TMS layer
---------------------
+TMS layer
+---------
 
 .. _ngw_create_tms_connection:
 
 TMS Connection
 ^^^^^^^^^^^^^^
 
-Similar to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_ to add a TMS layer, you first need to create a TMS connection resource. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
+Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_ to add a TMS layer, you first need to create a TMS connection. Select **TMS connection** under Create resource panel (see :numref:`TMS_connection_create_en`)
 
 .. figure:: _static/TMS_connection_create_en.png
    :name: TMS_connection_create_en
