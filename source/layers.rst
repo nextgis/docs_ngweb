@@ -644,7 +644,7 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
 .. _ngw_wfs_service:
 
 WFS service
-------------
+-----------
 
 WFS layer setup is performed the same way as for WMS service but you add a layer instead of a style.
 
@@ -678,7 +678,7 @@ Field "Keyname" is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Here add links to styles of required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`.)  For each added style you should set a unique key. You can copy it from the name. 
+Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`.) For each layer you should set a unique key. You can copy paste it from the name of the layer, but don't use special symbols, only letters and numbers. 
 
 .. figure:: _static/admin_layers_create_wfs_service_url_eng.png
    :name: ngweb_admin_layers_create_wfs_service_url
@@ -687,7 +687,7 @@ Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`
 
    WFS service tab of Create resource dialog. 
 
-For each layer you can set a limit for the number of features transfered at once. 
+For each layer you can set a limit for the number of features transfered at once.
 By default the value is 1000. If this parameter is empty the limit will be disable and all features will be trasfered to the client. But this could result in high load of a server and cause significant timeouts because of high volumes of transfered data.
 
 After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example :program:`NextGIS QGIS`. 
