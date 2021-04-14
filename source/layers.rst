@@ -96,26 +96,28 @@
 -----------------------
 В веб ГИС можно создавать векторные слои на основе геоданных форматов ESRI Shapefile и GeoJSON. 
 
+.. _ngw_process_create_vector_layer:
+
 Процесс создания
 ^^^^^^^^^^^^^^^^^^
 
 Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
-В блоке операций "Создать ресурс" выбрать из списка "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
+В блоке операций "Создать ресурс" выберите из списка "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
 
-.. figure:: _static/admin_layers_create_vector_layer_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_rus.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Выбор действия "Векторный слой".
  
 В открывшемся окне укажите название векторного слоя :numref:`ngweb_admin_layers_create_vector_layer_resourse_name`. Оно будет отображаться в административном интерфейсе.
 Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_name_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Окно создания векторного слоя.
    
@@ -125,32 +127,32 @@
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Описание векторного слоя.
 
-В "Метаданные" слоя можно записать информацию в формате ключ-значение :numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`.
+В "Метаданные" слоя можно записать информацию в формате "ключ-значение" :numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`.
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Метаданные векторного слоя.
 
-На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив) или GeoJSON. В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла :numref:`ngweb_admin_layers_create_vector_layer_upload`.
+На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив) или GeoJSON. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла :numref:`ngweb_admin_layers_create_vector_layer_upload`.
 
-Ниже предлагается выбор кодировки данных - Юникод UTF-8 или Кириллица Windows-1251.
+Ниже предлагается выбор кодировки - Юникод UTF-8 или Кириллица Windows-1251. Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. Для формата GeoJSON кодировка всегда должна быть UTF-8.
 
-.. figure:: _static/admin_layers_create_vector_layer_upload_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Окно загрузки векторного файла.
 
-Необходимо указать кодировку файла (UTF-8 или Windows-1251, также необходимо указать кодировку атрибутов: если она не указана, то данные в ESRI Shapefile должен сопровождать файл с описанием кодировки [расширение .cpg], в случае GeoJSON кодировка всегда должна быть UTF-8 и указан сам исходный файл.
 
+.. _ngw_vector_data_requirements:
 
 Требования к исходным данным
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -174,10 +176,11 @@
 .. warning:: 
    Мы рекомендуем не использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
 
-Во входном файле не должно быть невалидных геометрий (в :program:`NextGIS QGIS` соответствующий 
-инструмент должен выдавать пустой список невалидных геометрий), даты не должны 
-иметь значения NULL, не должно быть полей с названиями: *id (ID), geom(GEOM)*. Если загрузка выполнена с такими 
-названиями полей, то после загрузки можно переименовать их через настройки слоя.
+Во входном файле не должно быть:
+
+1. Невалидных **геометрий** (в :program:`NextGIS QGIS` соответствующий инструмент должен выдавать пустой список невалидных геометрий);
+2. **Дат** со значениями NULL
+3. **Полей** с названиями: *id (ID), geom(GEOM)*. Если загрузка выполнена с такими названиями полей, то после их можно переименовать через настройки слоя.
 
 Для работы по протоколу :term:`WFS` названия атрибутов могут начинаться только с буквы или нижнего подчёркивания(_), в названии атрибутов допустимы только буквы, цифры, нижнее подчёркивание (_), тире (-) и точки(.).  
 
