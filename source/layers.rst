@@ -94,8 +94,13 @@
 
 Векторный слой из файла
 -----------------------
+В веб ГИС можно создавать векторные слои на основе геоданных форматов ESRI Shapefile и GeoJSON. 
 
-Для добавления векторного слоя следует перейти в группу, где необходимо его создать, и в блоке операций "Создать ресурс" выбрать из списка вкладку "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
+Процесс создания
+^^^^^^^^^^^^^^^^^^
+
+Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
+В блоке операций "Создать ресурс" выбрать из списка "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
 
 .. figure:: _static/admin_layers_create_vector_layer_rus.png
    :name: ngweb_admin_layers_create_vector_layer
@@ -104,22 +109,38 @@
 
    Выбор действия "Векторный слой".
  
-В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
+В открывшемся окне укажите название векторного слоя :numref:`ngweb_admin_layers_create_vector_layer_resourse_name`. Оно будет отображаться в административном интерфейсе.
+Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_description_rus.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_description
+.. figure:: _static/admin_layers_create_vector_layer_resourse_name_rus.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
    :width: 16cm
 
    Окно создания векторного слоя.
    
-В открывшемся окне необходимо ввести наименование слоя, которое будет отображаться 
-в административном веб интерфейсе, а также в дереве слоев карты. 
-Поле "Ключ" является необязательным к заполнению. 
+   
+На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
 
-Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_description
+   :align: center
+   :width: 16cm
 
-Если переключиться с вкладки "Ресурс" на вкладку "Векторный слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_vector_layer_upload`.
+   Описание векторного слоя.
+
+В "Метаданные" слоя можно записать информацию в формате ключ-значение :numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
+   :align: center
+   :width: 16cm
+
+   Метаданные векторного слоя.
+
+На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив) или GeoJSON. В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла :numref:`ngweb_admin_layers_create_vector_layer_upload`.
+
+Ниже предлагается выбор кодировки данных - Юникод UTF-8 или Кириллица Windows-1251.
 
 .. figure:: _static/admin_layers_create_vector_layer_upload_rus.png
    :name: ngweb_admin_layers_create_vector_layer_upload
@@ -128,16 +149,16 @@
 
    Окно загрузки векторного файла.
 
-Далее необходимо выбрать систему координат, в которую будет перепроецированы векторные
-данные (по умолчанию имеется только WGS84 / Pseudo Mercator [EPSG:3857]), кодировку файла (UTF-8 или Windows-1251, также необходимо указать кодировку атрибутов: если она не указана, то данные в ESRI Shapefile должен сопровождать файл с 
-описанием кодировки [расширение .cpg], в случае GeoJSON кодировка всегда должна быть UTF-8.) и указать сам исходный файл. 
-В качестве исходного файла можно загружать следующие форматы: 
+Необходимо указать кодировку файла (UTF-8 или Windows-1251, также необходимо указать кодировку атрибутов: если она не указана, то данные в ESRI Shapefile должен сопровождать файл с описанием кодировки [расширение .cpg], в случае GeoJSON кодировка всегда должна быть UTF-8 и указан сам исходный файл.
 
-* :term:`ESRI Shape`
-* :term:`GeoJSON`
 
 Требования к исходным данным
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+В качестве исходного файла можно загружать следующие форматы:
+
+* :term:`ESRI Shape`
+* :term:`GeoJSON`
 
 .. note:: 
    В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
