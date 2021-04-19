@@ -6,65 +6,85 @@
 Добавление ресурсов
 ===================
 
-Одним из основных компонентов ПО NextGIS Web является слой. Слой - это растровое 
-изображение или векторный файл (таблица базы данных). Для объединения слоев в виде карты 
-необходимо настроить стиль (или набор стилей) отображения слоя.
+NextGIS Web строится на **ресурсном** подходе - каждый компонент системы (слой, группа, сервис) является её ресурсом.
+Одним из таких основных компонентов является **слой**. Слой - это растровое изображение или векторный файл (таблица базы данных).
+Данные этих слоёв можно отображать на веб-картах, настроив для них соответствующие **стили** отображения слоёв.
+Для каждого слоя может быть создано **неограниченное** количество стилей - способов визуализации геоданных на веб-карте.
 
-Стили могут настраиваться только для векторных слоев.
-
-Интерфейс добавления PostGIS, векторных и растровых слоев приблизительно одинаковый. 
-Нужно ввести параметры слоя, затем добавить стиль.
+Интерфейс добавления PostGIS, векторных и растровых слоев приблизительно одинаковый - создается ресурс слоя, внутри него - ресурсы стилей.
+Последние визуализируют данные на веб-карте.
 
 .. _ngw_create_raster_layer:
 
 Растровый слой
 --------------
 
-Для добавления растрового слоя следует перейти в группу, где необходимо его создать, и в 
-блоке операций "Создать ресурс" выбрать "Растровый слой" (см. :numref:`ngweb_admin_layers_create_raster_layer`). 
+Растровые изображения в NextGIS Web загружаются через специальный ресурс "Растровый слой". 
 
-.. figure:: _static/admin_layers_create_raster_layer_rus.png
+.. _ngw_process_create_raster_layer:
+
+Процесс создания
+^^^^^^^^^^^^^^^^^^
+Перейдите в группу ресурсов (папку), в которой необходимо создать рстровый слой.
+В блоке операций «Создать ресурс» выберите из списка «Растровый слой» (см. :numref:`ngweb_admin_layers_create_raster_layer`)
+
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_rus.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Выбор действия "Растровый слой".
 
-В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_resourse_description`. 
 
-.. figure:: _static/admin_layers_create_raster_layer_resourse_description_rus.png
+В открывшемся окне укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`)
+Оно будет отображаться в административном интерфейсе. Поле «Ключ» является необязательным к заполнению.
+
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_name_rus.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_name
+   :align: center
+   :width: 25cm
+
+   Наименование растрового слоя.
+
+
+На вкладке «Описание» можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`)
+
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
-   :width: 16cm
+   :width: 25cm
 
-   Окно создания растрового слоя.
+   Описание растрового слоя.
 
-Далее следует ввести наименование слоя, которое будет отображаться в административном веб интерфейсе, 
-а также в дереве слоев карт. Поле "Ключ" является необязательным к заполнению.
 
-Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
+В «Метаданные» слоя можно записать информацию в формате «ключ-значение» (:numref:`ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata`).
 
-Если переключиться с вкладки "Ресурс" на вкладку "Растровый слой", откроется окно, представленное на :numref:`ngweb_admin_layers_create_raster_layer_upload`.
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_metadata_rus.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
+   :align: center
+   :width: 25cm
 
-.. figure:: _static/admin_layers_create_raster_layer_upload_rus.png
+   Метаданные растрового слоя.
+
+
+На вкладке «Векторный слой» необходимо загрузить файл геоданных в формате GeoTIFF.
+В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Окно загрузки растрового файла.
 
-Далее необходимо выбрать систему координат, в которую будет перепроецирован растр 
-(по умолчанию имеется только WGS84 / Pseudo Mercator [EPSG:3857]) и указать сам файл. 
+После загрузки файла нажмите кнопку **Создать**.
 
-Растровый стиль
-^^^^^^^^^^^^^^^
+Стиль QGIS (для растров)
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-После удачной загрузки растра необходимо создать стиль. При создании карты (подробнее см. подразд. :ref:`ngw_map_create`) можно добавить растр на карту, выбрав этот стиль.
+После удачной загрузки растра необходимо создать стиль QGIS. Эта процедура аналогична добавлению стиля для векторного слоя (подробнее см. подразд. :ref:`qgis`).
+При создании веб-карты (подробнее см. подразд. :ref:`ngw_map_create`) можно добавить загруженный растр на карту, выбрав этот стиль.
 
-Для растров доступно два вида стилей.
-
-1. Растровый стиль - простая заглушка, применима только для растров RGB(A), численный тип - Byte.
-2. Стиль QGIS - полноценный стиль, применим для любых растров, в т.ч. одно- и многоканальных, любого численного типа. Стиль можно создать в NextGIS QGIS.
 
 Растровый слой с прозрачностью (обрезкой, альфа-каналом)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -111,7 +131,7 @@
 
    Выбор действия "Векторный слой".
  
-В открывшемся окне укажите название векторного слоя :numref:`ngweb_admin_layers_create_vector_layer_resourse_name`. Оно будет отображаться в административном интерфейсе.
+В открывшемся окне укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
 Поле "Ключ" является необязательным к заполнению.
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus.png
@@ -119,10 +139,10 @@
    :align: center
    :width: 25cm
 
-   Окно создания векторного слоя.
+   Наименование векторного слоя.
    
    
-На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя :numref:`ngweb_admin_layers_create_vector_layer_resourse_description`. 
+На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
@@ -131,7 +151,7 @@
 
    Описание векторного слоя.
 
-В "Метаданные" слоя можно записать информацию в формате "ключ-значение" :numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`.
+В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
@@ -140,7 +160,7 @@
 
    Метаданные векторного слоя.
 
-На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив) или GeoJSON. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла :numref:`ngweb_admin_layers_create_vector_layer_upload`.
+На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив) или GeoJSON. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 
 Ниже предлагается выбор кодировки - Юникод UTF-8 или Кириллица Windows-1251. Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. Для формата GeoJSON кодировка всегда должна быть UTF-8.
 
@@ -151,6 +171,7 @@
 
    Окно загрузки векторного файла.
 
+После загрузки файла и указания параметров нажмите кнопку **Создать**.
 
 .. _ngw_vector_data_requirements:
 
