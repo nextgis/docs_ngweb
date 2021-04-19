@@ -49,7 +49,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 На вкладке «Описание» можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`)
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_description_rus.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 25cm
@@ -59,7 +59,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 В «Метаданные» слоя можно записать информацию в формате «ключ-значение» (:numref:`ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata`).
 
-.. figure:: _static/ngwebadmin_layers_create_raster_layer_resourse_metadata_rus.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
    :width: 25cm
