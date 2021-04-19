@@ -28,7 +28,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Перейдите в группу ресурсов (папку), в которой необходимо создать рстровый слой.
 В блоке операций «Создать ресурс» выберите из списка «Растровый слой» (см. :numref:`ngweb_admin_layers_create_raster_layer`)
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_rus.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_rus.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
    :width: 25cm
@@ -39,7 +39,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 В открывшемся окне укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`)
 Оно будет отображаться в административном интерфейсе. Поле «Ключ» является необязательным к заполнению.
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_name_rus.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
    :width: 25cm
@@ -49,7 +49,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 На вкладке «Описание» можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`)
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 25cm
@@ -59,7 +59,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 В «Метаданные» слоя можно записать информацию в формате «ключ-значение» (:numref:`ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata`).
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_metadata_rus.png
+.. figure:: _static/ngwebadmin_layers_create_raster_layer_resourse_metadata_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
    :width: 25cm
