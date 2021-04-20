@@ -173,7 +173,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 После загрузки файла и указания параметров нажмите кнопку **Создать**.
 
-Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>__, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>__.
+Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 
 .. _ngw_vector_data_requirements:
