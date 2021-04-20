@@ -26,7 +26,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Процесс создания
 ^^^^^^^^^^^^^^^^^^
 Перейдите в группу ресурсов (папку), в которой необходимо создать рстровый слой.
-В блоке операций «Создать ресурс» выберите из списка «Растровый слой» (см. :numref:`ngweb_admin_layers_create_raster_layer`)
+В блоке операций «Создать ресурс» выберите из списка «Растровый слой» (см. :numref:`ngweb_admin_layers_create_raster_layer`).
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_rus.png
    :name: ngweb_admin_layers_create_raster_layer
@@ -36,7 +36,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Выбор действия "Растровый слой".
 
 
-В открывшемся окне укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`)
+В открывшемся окне укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 Оно будет отображаться в административном интерфейсе. Поле «Ключ» является необязательным к заполнению.
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus.png
@@ -47,7 +47,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Наименование растрового слоя.
 
 
-На вкладке «Описание» можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`)
+На вкладке «Описание» можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
 
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
