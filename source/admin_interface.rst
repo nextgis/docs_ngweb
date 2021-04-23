@@ -15,7 +15,7 @@
 .. figure:: _static/ngweb_main_page_administrative_interface_rus.png
    :name: ngweb_main_page_administrative_interface_pic
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Главная страница административного интерфейса.
 
@@ -31,7 +31,7 @@
 .. figure:: _static/ngweb_main_page_main_menu_rus.png
    :name: ngweb_main_page_main_menu_pic
    :align: center
-   :width: 16cm
+   :width: 25cm
 
    Основное меню.
    
