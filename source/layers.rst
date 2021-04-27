@@ -315,7 +315,7 @@ Cистема координат геометрий должна распозн�
    :align: center
    :width: 25cm
 
-  Описание слоя PostGIS.
+   Описание слоя PostGIS.=
    
 
 На соответствующей вкладке есть возможность добавить метданные слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_metadata`).
@@ -325,16 +325,18 @@ Cистема координат геометрий должна распозн�
    :align: center
    :width: 25cm
 
-  Метаданные слоя PostGIS.
+   Метаданные слоя PostGIS
   
   
 На вкладке "Слой PostGIS" настраиваются параметры слоя (:numref:`ngweb_admin_layers_create_postgis_layer_tablename`).
+
 .. figure:: _static/admin_layers_create_postgis_layer_tablename_rus.png
    :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
    :width: 25cm
 
-   Окно параметров слоя PostGIS.
+   Окно параметров слоя PostGIS
+   
 
 Здесь необходимо выполнить следующие действия:
 
