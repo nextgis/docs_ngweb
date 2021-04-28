@@ -31,7 +31,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_rus.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Выбор действия "Растровый слой"
 
@@ -42,7 +42,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Наименование растрового слоя
 
@@ -62,7 +62,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Метаданные растрового слоя
 
@@ -73,7 +73,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Окно загрузки растрового файла
 
@@ -127,7 +127,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_rus.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Выбор действия "Векторный слой".
  
@@ -137,7 +137,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Наименование векторного слоя
    
@@ -147,7 +147,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Описание векторного слоя
 
@@ -156,7 +156,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Метаданные векторного слоя.
 
@@ -167,7 +167,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Окно загрузки векторного файла
 
@@ -238,7 +238,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_rus.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Выбор действия "Соединение PostGIS"
 
@@ -247,7 +247,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_name
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Наименование соединения PostGIS
 
@@ -256,7 +256,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_description_rus.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_description
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Описание соединения PostGIS
 
@@ -266,7 +266,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_rus.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_metadata
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Метаданные соединения PostGIS
    
@@ -277,7 +277,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_connection_db_logins_rus.png
    :name: ngweb_admin_layers_create_postgis_connection_db_logins
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Окно параметров соединения PostGIS.
    
@@ -293,7 +293,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_rus.png
    :name: admin_layers_create_postgis_layer
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Выбор действия "Слой PostGIS"
    
@@ -303,7 +303,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_name
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Наименование Слоя PostGIS
    
@@ -313,7 +313,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description_rus.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_description
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Описание слоя PostGIS.=
    
@@ -333,7 +333,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/admin_layers_create_postgis_layer_tablename_rus.png
    :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Окно параметров слоя PostGIS
    
@@ -412,7 +412,7 @@ Cистема координат геометрий должна распозн�
 .. figure:: _static/pgadmin3_rus.png
    :name: ngweb_pgadmin3
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Главное окно ПО :program:`pgAdminIII`.
 
