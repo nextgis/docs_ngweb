@@ -568,7 +568,7 @@ Cлой WMS
 
    Окно настройки параметров слоя WMS
 
-На последней вкладке добавляются вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`).
+На последней вкладке добавляются вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`). Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
 
 .. figure:: _static/admin_layers_create_wms_layer_vendorparameters_rus.png
    :name: ngweb_admin_layers_create_wms_layer_vendorparameters
