@@ -90,7 +90,15 @@ A dialog has the following elements:
 
 **Principal** - a user or a user group who is subject to a rule.
 
-**Permission** - defines allowed or denied actions with the resource. There are the following available types of permissions: 
+Special groups of users:
+
+* administrator - Web GIS user which has administrative rights
+* owner - Web GIS user which created a particular resource
+* guest - Web GIS user which is accessing a particular resource without being authentificated (not logged in)
+* authenticated - authenticated Web GIS user under any account (but not guest)
+* everyone - all users including guests and authenticated
+
+**Permission** - defines allowed or denied action with the resource. There are the following types of permissions: 
 
 * All resources: All permissions
 * Resource: All permissions
@@ -111,7 +119,11 @@ A dialog has the following elements:
 * Connection: Read
 * Connection: Connect
 * Web map: All permissions
+* Web map: Edit annotations
+* Web map: View annotations
 * Web map: Display
+* Collector: All permissions
+* Collector: Read
 * Data: All permissions
 * Data: Write
 * Data: Read
