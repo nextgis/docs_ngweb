@@ -90,7 +90,7 @@ A dialog has the following elements:
 
 **Principal** - a user or a user group who is subject to a rule.
 
-Special groups of users:
+Besides standard user there are special system users:
 
 * administrator - Web GIS user which has administrative rights
 * owner - Web GIS user which created a particular resource
