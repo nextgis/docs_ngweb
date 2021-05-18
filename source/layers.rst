@@ -6,17 +6,25 @@
 Adding resources
 ================
 
-Layer is one of the main components of NextGIS Web software. Layer is a raster image or a vector file (table from database). To join layers on a map you need to set a style (or style set) to display a layer.
+NextGIS Web is built on a **resource-based** approach - each component of the system (layer, group, service) is a resource.
+One of these resources is a **layer** - a raster image or vector file (database table).
 
-Styles may be set only for vector layers.
+An **unlimited** number of **styles** can be created for each layer - ways of visualizing geodata on a web map.
 
 Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
-Firstly you provide layer parameters and then add a style.
+First, you specify the parameters for the layer, and then you add a style that renders data on the web map.
 
 .. _ngw_create_raster_layer:
 
 Raster layer
 ------------
+
+Raster images in NextGIS Web should be loaded using the "Raster Layer" special resource.
+
+.. _ngw_process_create_raster_layer:
+
+Creation process
+^^^^^^^^^^^^^^^^
 
 To add a raster layer navigate to a group where you want to create it. In 
 actions pane "Create resource" click "Raster layer" (see :numref:`ngweb_admin_layers_create_raster_layer`). 
@@ -24,48 +32,62 @@ actions pane "Create resource" click "Raster layer" (see :numref:`ngweb_admin_la
 .. figure:: _static/admin_layers_create_raster_layer_eng.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Selection of "Raster layer" action.
+   Selection of "Raster layer" action
    
-Create resource dialog for raster layer will open and will look like 
-:numref:`admin_layers_create_raster_layer_resourse_description`. 
+In the dialog box specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
+It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/admin_layers_create_raster_layer_resourse_description_eng.png
-   :name: admin_layers_create_raster_layer_resourse_description
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Create resource dialog for raster layer.
+   Raster layer name
 
-Enter display name that will be visible in administrator interface and in map 
-layer tree. 
 
-Field "Keyname" is optional.
+On the "Description" tab, you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
 
-You can also add resource description and metadata on the corresponding tabs. 
-
-Switch from "Resource" tab to "Raster layer" tab, which is presented on :numref:`admin_layers_create_raster_layer_upload`.
-
-.. figure:: _static/admin_layers_create_raster_layer_upload_eng.png
-   :name: admin_layers_create_raster_layer_upload
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_eng.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Raster layer tab with button for upload of raster file.
-
-On this tab you need to specify a coordinate system the raster will be reprojected to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)) and updload an actual raster file. 
+   Description raster layer
 
 
-Raster style
-^^^^^^^^^^^^
+In the "Metadata" you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
 
-After a raster file is successfully uploaded and raster layer is created you need to create a style. You will need this style to add the raster to a Web map when creating one (for more information see subsection :ref:`ngw_map_create`).
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
+   :align: center
+   :width: 20cm
 
-Two types of raster styles are available.
+   Metadata raster layer
+   
+   
+On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
+Depending on the tariff plan in the dialog to specify the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
-1. Raster style - simple style summy with no properties, applicable only for RGB(A), numeric type - Byte.
-2. QGIS style - fully-featured style, applicable to any one or multiband rasters of any numeric type. You can create such style in NextGIS QGIS.
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
+   :name: ngweb_admin_layers_create_raster_layer_upload
+   :align: center
+   :width: 20cm
+
+   Tab upload raster file  
+
+After uploading a file, click the ** Create ** button.
+
+.. _ngw_process_create_raster_style:
+
+Raster style (QGIS)
+^^^^^^^^^^^^^^^^^^^
+
+After a raster file is successfully uploaded and raster layer is created you need to create a QGIS style.
+This procedure is similar to adding vector layer `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_. You can create one in NextGIS QGIS.
+You will need this style to add the raster to a Web map when creating one (for more information see subsection :ref:`ngw_map_create`).
+
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,10 +101,7 @@ To transform NoData value to alpha channel use a command line utility
    gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
-
-.. tip:: 
-   NextGIS Manager simplifies this process. Software has an option to  
-   upload a raster to NextGIS Web and cut using alpha channel. 
+   
 
 .. _ngw_create_vector_layer:
 
