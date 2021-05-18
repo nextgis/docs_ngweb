@@ -47,7 +47,7 @@ It will be displayed in the admin interface. The "Key" field is optional.
    Raster layer name
 
 
-On the "Description" tab, you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
+On the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
 
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_eng.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
@@ -68,7 +68,7 @@ In the "Metadata" you can write information in the "key-value" format (:numref:`
    
    
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-Depending on the tariff plan in the dialog to specify the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+Depending on the tariff plan in the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
    :name: ngweb_admin_layers_create_raster_layer_upload
@@ -77,7 +77,7 @@ Depending on the tariff plan in the dialog to specify the maximum size of upload
 
    Tab upload raster file  
 
-After uploading a file, click the ** Create ** button.
+After uploading a file, click the **Create** button.
 
 .. _ngw_process_create_raster_style:
 
