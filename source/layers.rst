@@ -68,7 +68,7 @@ In the "Metadata" you can write information in the "key-value" format (:numref:`
    
    
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-Depending on the tariff plan in the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
    :name: ngweb_admin_layers_create_raster_layer_upload
@@ -107,44 +107,77 @@ To transform NoData value to alpha channel use a command line utility
 
 Vector layer from file
 -----------------------
-To add a vector layer navigate to a group where you want to create it. In 
-actions pane "Create resource" click "Vector layer" (see :numref:`ngweb_admin_layers_create_vector_layer`). 
+You can create vector layers based on :term:`ESRI Shape`, :term:`GeoJSON`, KML and GML formats in NextGIS Web.
 
-.. figure:: _static/admin_layers_create_vector_layer_eng.png
+.. _ngw_process_create_vector_layer:
+
+Creation process
+^^^^^^^^^^^^^^^^
+Navigate to the resource group (folder) in which to create a vector layer.
+In the "Create resource" action block select "Vector layer" (see :numref:`ngweb_admin_layers_create_vector_layer`).
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_eng.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Selection of "Vector layer" action.
-   
-Create resource dialog for vector layer will open and will look like :numref:`admin_layers_create_vector_layer_resourse_description`. 
+   Selection of "Vector layer" action
 
-.. figure:: _static/admin_layers_create_vector_layer_resourse_description_eng.png
-   :name: admin_layers_create_vector_layer_resourse_description
+
+In the opened tab, enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
+It will be displayed in the admin interface. The "Key" field is optional.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Create resource dialog for vector layer.
-   
-Enter display name that will be visible in administrator interface and in map 
-layer tree. 
+   Vector layer name
 
-Field "Keyname" is optional.
 
-You can also add resource description and metadata on the corresponding tabs. 
+On the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
 
-Switch from "Resource" tab to "Vector layer tab", which is presented on :numref:`admin_layers_create_vector_layer_upload`.
-
-.. figure:: _static/admin_layers_create_vector_layer_upload_eng.png
-   :name: admin_layers_create_vector_layer_upload
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_eng.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Vector layer tab with button for upload of vector file.
+   Description vector layer
 
-Here specify a coordinate system the vector data will be reprojected 
-to (by default there is only WGS84 / Pseudo Mercator (EPSG:3857)), encoding type (UTF-8 or 
-   Windows-1251; also you need to specify encoding that is used for attributes: if encoding is not set ESRI Shapefile should have a file with encoding description (.cpg extension), in case of GeoJSON encoding is always UTF-8) and select source file.  
+
+In the "Metadata" you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_eng.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
+   :align: center
+   :width: 20cm
+
+   Metadata vector layer
+
+
+On the "Vector Layer" tab you need to upload a geodata file :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, GML or KML format. Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+
+Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
+
+* Not fix errors 
+* Fix whatever is possible
+* Fix without losing data
+
+Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated.
+There are two encodings to choose from - Unicode UTF-8 or Cyrillic Windows-1251. If ESRI Shapefile contains a file with encoding description [extension .cpg] then it will be taken into account when loading. For GeoJSON format encoding must always be UTF-8.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng.png
+   :name: ngweb_admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 20cm
+
+   Vector file upload tab
+
+
+After uploading the file and specifying the parameters click the **Create** button.
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+
 Source files could be in the following formats: 
 
 * ESRI Shapefile
