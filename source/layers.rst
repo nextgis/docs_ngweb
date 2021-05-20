@@ -107,7 +107,7 @@ To transform NoData value to alpha channel use a command line utility
 
 Vector layer from file
 -----------------------
-You can create vector layers based on :term:`ESRI Shape`, :term:`GeoJSON`, KML and GML formats in NextGIS Web.
+You can create vector layers based on :term:`ESRI Shape`, :term:`GeoJSON`, :term:`KML` and :term:`GML` formats in NextGIS Web.
 
 .. _ngw_process_create_vector_layer:
 
@@ -155,7 +155,7 @@ In the "Metadata" you can write information in the "key-value" format (:numref:`
    Metadata vector layer
 
 
-On the "Vector Layer" tab you need to upload a geodata file :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, GML or KML format. Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+On the "Vector Layer" tab you need to upload a geodata file :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
 
@@ -187,8 +187,8 @@ Source files could be in the following formats:
 
 * :term:`ESRI Shape`
 * :term:`GeoJSON`
-* KML
-* GML
+* :term:`KML`
+* :term:`GML`
 
 .. note:: 
    In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
