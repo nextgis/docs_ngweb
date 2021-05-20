@@ -178,46 +178,35 @@ After uploading the file and specifying the parameters click the **Create** butt
 Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 
+.. _ngw_vector_data_requirements:
+
+Initial data requirements
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Source files could be in the following formats: 
 
-* ESRI Shapefile
-* GeoJSON
+* :term:`ESRI Shape`
+* :term:`GeoJSON`
+* KML
+* GML
 
 .. note:: 
    In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
   
-.. warning:: 
+.. tip:: 
    If you upload data through web-interface, do not use EPSG:3857. 
    Use EPSG:4326 or other coordinate systems (EPSG:3857 mentioned on Vector layer 
    tab is a storage CRS not related to data CRS).
    
-Output file should not have invalid geometries (QGIS tool should output an empty 
-list of invalid geometries), dates should not have NULL values, there should not 
-be attribute names: *id (ID), geom(GEOM)*.
+.. warning::
+   Output file should not have attribute names: *id (ID), geom(GEOM)*.
 
-Special restriction for WFS protocol: attribute names should begin only with letter or (_), next allowed sybmols in name is letters, digits, (-), (_), (.).
+.. warning::
+   Special restriction for WFS protocol: attribute names should begin only with letter or (_), next allowed sybmols in name is letters, digits, (-), (_), (.).
 
-In case there are multigeometries in the file, field type of the geometry should be multigeometry. In this case program-clients should convert field type before uploading. You can do it manually with ogr2ogr utility
 
-.. code-block:: shell
-
-   ogr2ogr -nlt MULTIPOLYGON multipolygon_output.shp polygon_input.shp
-   
-Coordinate system should be recognized by GDAL (output of gdalinfo should contain 
-coordinate system definition). 
-
-After a file is successfully uploaded you need to create a style. 
-For more information about creation of styles see subsection  :ref:`ngw_style_create`.
-
-When creating a map (for more information see  subsection. :ref:`ngw_map_create`) 
-you can add a vector layer to a map by selecting its style.
-
-.. tip:: 
-   NextGIS Manager simplifies this process. Software has an option to 
-   upload of vector files in different formats to NextGIS Web without  
-   separate archiving. 
 
 .. _ngw_create_postgis_layer:
 
