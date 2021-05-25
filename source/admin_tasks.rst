@@ -51,8 +51,8 @@ Then click "Create" button.
 
 .. _ngw_access_rights:
     
-Setting permissions
--------------------
+Access management
+-----------------
 
 NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
 
@@ -90,7 +90,7 @@ A dialog has the following elements:
 
 **Principal** - a user or a user group who is subject to a rule.
 
-Besides standard user there are special system users:
+Besides standard users created by administrator, system has special system users:
 
 * administrator - Web GIS user which has administrative rights
 * owner - Web GIS user which created a particular resource
@@ -98,10 +98,12 @@ Besides standard user there are special system users:
 * authenticated - authenticated Web GIS user under any account (but not guest)
 * everyone - all users including guests and authenticated
 
-By default, two non-removable system user groups are created in Web GIS:
+Besides standard groups created by administrator, system has special system user groups:
 
 * Administrators - a group whose users have administrative rights
-* Editors - a group, whose users do not have access to the control panel, but have the rest of the system functionality
+* Editors - a group, whose users do not have access to the control panel, but can create, edit and manage data
+
+Adding users to this groups is a convenient way to set appropriate permissions across the whole system. These groups can't be removed.
 
 **Permission** - defines allowed or denied action with the resource. There are the following types of permissions: 
 
