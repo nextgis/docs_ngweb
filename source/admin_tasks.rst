@@ -98,6 +98,11 @@ Besides standard user there are special system users:
 * authenticated - authenticated Web GIS user under any account (but not guest)
 * everyone - all users including guests and authenticated
 
+By default, two non-removable system user groups are created in Web GIS:
+
+* Administrators - a group whose users have administrative rights
+* Editors - a group, whose users do not have access to the control panel, but have the rest of the system functionality
+
 **Permission** - defines allowed or denied action with the resource. There are the following types of permissions: 
 
 * All resources: All permissions
