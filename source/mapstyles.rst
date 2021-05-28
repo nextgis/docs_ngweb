@@ -12,45 +12,43 @@ Formats
 ----------------------------------
 
 By now NextGIS Web supports two rendering libraries: "Mapserver" и "QGIS". 
-You can write Mapserver style yourself as a text or import from QGIS styles, it has few settings. 
+You can write Mapserver style yourself as a text. 
 QGIS style you can only download from QGIS styles, it has much more settings. 
 
-Creation of style
-----------------------------------
 
-Style is related to a single layer so there is no item "Style" in the main 
-resources list. To create a style you need to open layer properties of the layer 
-you want create style for. In 
-actions pane "Create resource" click "MapServer style" or "QGIS style" (see :numref:`ngweb_layer_properties_window_pic`).
+.. _ngw_qgis_style:
+
+QGIS Style
+----------
+
+Style is related to a single layer so there is no item "Style" in the main resources list.
+To create a style you need to open layer properties of the layer you want create style for.
+
+In actions pane "Create resource" click "QGIS style" (see :numref:`ngweb_layer_properties_window_pic`).
+
 
 .. figure:: _static/ngweb_layer_properties_window_eng.png
    :name: ngweb_layer_properties_window_pic
    :align: center
    :width: 16cm
  
-   Layer properties window.
-   
-   In opened window you can import a QML style from QGIS or enter the style manually. 
-   
-QGIS style
-~~~~~~~~~~~~~~~~~ 
+   Layer properties window
+ 
 
-After the selection of "QGIS style" create resource dialog will open and will look like :numref:`ngweb_window_create_resource_pic`.
+After the selection of "QGIS style" create resource dialog will open and will look like :numref:`ngweb_window_create_resource_pic`. On the "Resource" tab enter the display name. 
 
 .. figure:: _static/ngweb_window_create_resource_eng.png
    :name: ngweb_window_create_resource_pic
    :align: center
    :width: 16cm
 
-   Create resource dialog for QGIS style.
+   Create resource dialog for QGIS style
 
-On the "Resource" tab enter the display name. 
 
-Field "Keyname" is optional.
+Field "Keyname" is optional. You can also add resource description and metadata on the corresponding tabs.
+Tile cache settings are described in detail in this section.
 
-You can also add resource description and metadata on the corresponding tabs.
-
-Switch from "Resource" tab to "QGIS style" tab and in the "QML file" field click "Select a file" button or drag a file to this field (see in :numref:`ngweb_download_file_pic`).
+Switch to "QGIS style" tab and in the "QML file" field click "Select a file" button or drag a file to this field (see in :numref:`ngweb_download_file_pic`).
 
 .. figure:: _static/ngweb_download_file_eng.png
    :name: ngweb_download_file_pic
