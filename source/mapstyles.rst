@@ -94,7 +94,7 @@ Mapserver style
 ---------------
 
 To create **MapServer** style open layer properties of the layer you want create style for.
-In actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_pic`).
+In actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_mapserver_pic`).
 On the "Resource" tab enter the display name.
 
 .. figure:: _static/ngweb_window_create_resource_mapserver_pic_eng.png
