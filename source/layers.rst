@@ -611,21 +611,7 @@ Enter the name that will be displayed in the administrative interface (see :numr
    
    TMS layer name
 
-Caching provides faster rendering of web map layers. The tile cache settings tab consists of the following settings (см. :numref:`TMS_layer_cache_en`):
-
-* *Enabled* checkbox
-* *Image compose* checkbox
-* Input field *Maximum zoom level*
-* Input field *TTL, sec* (Time to live)
-
-.. figure:: _static/TMS_layer_cache_en.png
-   :name: TMS_layer_cache_en
-   :align: center
-   :width: 25cm
-   
-   TMS layer tile cache settings
-   
-If *Image compose* checkbox is on the requested image will be prepared from previously cached tiles. If the checkbox is off, the image will be rendered from the source vector layer.The *maximum zoom level* is a threshold value, above which the cache is not accessed and the image is formed "on the fly". *TTL* is the “time to live” or storage of tiles on the server in seconds, after which the image will be formed again on the next request.
+Caching provides faster rendering of web map layers. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_:
 
 The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_settings_en`):
 
