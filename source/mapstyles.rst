@@ -132,7 +132,7 @@
 ------------
 
 .. warning::   
-   Для работы тайлового кэша в `настройках <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_ веб-карты должен быть включен адаптер **Изображение**.
+   Для работы тайлового кэша в `настройках <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_ веб-карты должен быть включен адаптер **Тайлы**.
 
 На вкладке **Тайловый кэш** при создании стиля (слоя для `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_) пользователь имеет возможность задать настройки кэширования стиля (слоя для WMS и TMS) (см. :numref:`tile_cache_settings`):
 
