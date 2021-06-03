@@ -133,9 +133,6 @@ After clicking "Create" the process of creation will finish, the window of the f
 Tile cache
 ------------
 
-.. warning::   
-   For the tile cache to work, the **Tiles** adapter for style must be enabled in the web map `settings <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_.
-
 Caching provides faster rendering of web map layers. The **tile cache** settings tab while creating styles consists of the following settings (см. :numref:`tile_cache_settings`):
 
 * *Enabled* checkbox;
