@@ -20,6 +20,7 @@ Cодержание:
    layers_settings 
    webmaps_admin       
    webmaps_client
+   permissions
    admin_tasks 
    sysadmin     
    extension
