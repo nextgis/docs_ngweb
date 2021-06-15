@@ -19,7 +19,7 @@
    layers_settings 
    webmaps_admin       
    webmaps_client
-   vect_layer_upload_parameters
+   vect_layer_upload_params
    permissions
    admin_tasks 
    sysadmin     
