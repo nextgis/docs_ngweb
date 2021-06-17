@@ -1,10 +1,10 @@
 .. sectionauthor:: Roman Gainullov <roman.gaynullov@nextgis.com>
 
 
-Additional options for uploading vector layer from file
+Advanced options for uploading vector layer from file
 ========================================================
 
-Additional settings are available when uploading a vector layer from a file (:numref:`ngweb_vect_layer_upload_params`).
+Advanced settings are available when uploading a vector layer from a file (:numref:`ngweb_vect_layer_upload_params`).
 
 .. figure:: _static/vect_layer_upload_params.png
    :name: ngweb_vect_layer_upload_params
