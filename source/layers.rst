@@ -164,7 +164,7 @@ Below it is proposed to define advanced options for creating a vector layer. Dep
 * Fix without losing data
 
 Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated.
-There are two encodings to choose from - Unicode UTF-8 or Cyrillic Windows-1251. If ESRI Shapefile contains a file with encoding description [extension .cpg] then it will be taken into account when loading. For GeoJSON format encoding must always be UTF-8.
+There are two encodings to choose from - Unicode UTF-8 or Cyrillic Windows-1251. If ESRI Shapefile contains a file with encoding description [extension .cpg] then it will be taken into account when loading. For GeoJSON format encoding must always be UTF-8. `More about this <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng.png
    :name: ngweb_admin_layers_create_vector_layer_upload
