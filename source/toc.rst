@@ -20,6 +20,7 @@ Contents:
    layers_settings 
    webmaps_admin       
    webmaps_client
+   vect_layer_upload_params
    admin_tasks 
    sysadmin     
    extension
