@@ -24,7 +24,7 @@ General Settings processing of possible errors
 Possible values:
 
 * **None** - no error will be corrected;
-* **Without losing data** - errors will be corrected without data loss. Correctable errors::
+* **Without losing data** - errors will be corrected without data loss. Correctable errors:
 
   * Extraction of geometries from Geometry Collection and Multigeometries if one geometry is contained inside;
   * Closing the rings of polygons;
