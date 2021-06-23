@@ -14,12 +14,60 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Интерфейс добавления PostGIS, векторных и растровых слоев приблизительно одинаковый - создается ресурс слоя, внутри него - ресурсы стилей.
 Последние визуализируют данные на веб-карте.
 
+
+.. _ngw_create_basemap:
+
+Подлложка веб-карты
+------------------
+
+В блоке операций выберите из списка «Подложка веб-карты» (:numref:`ngweb_admin_create_basemap`).
+В открывшемся окне введите название ресурса, которое будет отображаться в административном интерфейсе (:numref:`ngweb_admin_basemap_name`).
+
+.. figure:: _static/ngweb_admin_create_basemap_rus.png
+   :name: ngweb_admin_create_basemap
+   :align: center
+   :width: 20cm
+
+   Вебыор ресурса "Подложка веб-карты"
+   
+   
+.. figure:: _static/ngweb_admin_basemap_name_rus.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 20cm
+
+   Наименование подложки веб-карты
+   
+   
+На соответствующих картах настраивается "Описание" и "Метаданные" слоя (:numref:`ngweb_admin_basemap_desc`).
+
+.. figure:: _static/ngweb_admin_basemap_desc_rus.png
+   :name: ngweb_admin_basemap_desc
+   :align: center
+   :width: 20cm
+
+   Наименование подложки веб-карты
+   
+
+На вкладке "Подложка веб-карты" задается URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
+
+* Использовать настройки из `QMS <https://qms.nextgis.com/>`_. Если установлен данный флаг, то необходимо найти нужный сервис в строке поиска.
+* Ввести адрес вручную. Работает, если флаг QMS снят.
+
+.. figure:: _static/ngweb_admin_basemap_param_rus.png
+   :name: ngweb_admin_basemap_param
+   :align: center
+   :width: 20cm
+
+   Наименование подложки веб-карты
+
+
 .. _ngw_create_raster_layer:
 
 Растровый слой
 --------------
 
-Растровые изображения в NextGIS Web загружаются через специальный ресурс "Растровый слой". 
+Растровые изображения в NextGIS Web загружаются через специальный ресурс "Растровый слой".
 
 .. _ngw_process_create_raster_layer:
 
