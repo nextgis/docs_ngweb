@@ -14,6 +14,53 @@ An **unlimited** number of **styles** can be created for each layer - ways of vi
 Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
 First, you specify the parameters for the layer, and then you add a style that renders data on the web map.
 
+.. _ngw_create_basemap:
+
+Basemap
+--------
+
+In the actions pane "Create resource" click "Basemap" (:numref:`ngweb_admin_create_basemap`).
+In the opened window enter the name of the resource that will be displayed in the administrative interface (:numref:`ngweb_admin_basemap_name`).
+
+.. figure:: _static/ngweb_admin_create_basemap_eng.png
+   :name: ngweb_admin_create_basemap
+   :align: center
+   :width: 20cm
+
+   Selection of "Basemap" action
+   
+   
+.. figure:: _static/ngweb_admin_basemap_name_eng.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 20cm
+
+   Basemap name
+   
+   
+The "Description" and "Metadata" of the resource is configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`).
+
+.. figure:: _static/ngweb_admin_basemap_desc_eng.png
+   :name: ngweb_admin_basemap_desc
+   :align: center
+   :width: 20cm
+
+   Basemap description
+   
+
+On the "Basemap" must be given the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to specify it:
+
+* Use options from `QMS <https://qms.nextgis.com/>`_. If this flag is set then you need to find the required service in the search bar.
+* Enter the address manually. Works if the QMS flag is unchecked.
+
+.. figure:: _static/ngweb_admin_basemap_param_eng.png
+   :name: ngweb_admin_basemap_param
+   :align: center
+   :width: 20cm
+
+   Basemap settings
+
+
 .. _ngw_create_raster_layer:
 
 Raster layer
@@ -26,8 +73,7 @@ Raster images in NextGIS Web should be loaded using the "Raster Layer" special r
 Creation process
 ^^^^^^^^^^^^^^^^
 
-To add a raster layer navigate to a group where you want to create it. In 
-actions pane "Create resource" click "Raster layer" (see :numref:`ngweb_admin_layers_create_raster_layer`). 
+To add a raster layer navigate to a group where you want to create it. In the actions pane "Create resource" click "Raster layer" (see :numref:`ngweb_admin_layers_create_raster_layer`). 
 
 .. figure:: _static/admin_layers_create_raster_layer_eng.png
    :name: ngweb_admin_layers_create_raster_layer
