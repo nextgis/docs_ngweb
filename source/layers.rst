@@ -28,7 +28,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    :align: center
    :width: 20cm
 
-   Вебыор ресурса "Подложка веб-карты"
+   Выбор ресурса "Подложка веб-карты"
    
    
 .. figure:: _static/ngweb_admin_basemap_name_rus.png
