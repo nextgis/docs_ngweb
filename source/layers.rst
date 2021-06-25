@@ -39,7 +39,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Наименование подложки веб-карты
    
    
-На соответствующих картах настраивается "Описание" и "Метаданные" ресурса (:numref:`ngweb_admin_basemap_desc`).
+На соответствующих вкладках настраивается "Описание" и "Метаданные" ресурса (:numref:`ngweb_admin_basemap_desc`).
 
 .. figure:: _static/ngweb_admin_basemap_desc_rus.png
    :name: ngweb_admin_basemap_desc
