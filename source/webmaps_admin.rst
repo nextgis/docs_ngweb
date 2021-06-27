@@ -64,8 +64,9 @@ The field "Extent from layer" allows to set web map extent on the layer extent. 
 .. tip::
    Coordinates for extent could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
 
-You can select a vector layer for bookmarks in the field "Bookmark resource". If layer is set the client will 
-have a menu with bookmarks with names defined by "Label attribute". 
+You can select a vector layer for bookmarks in the field "Bookmark resource". If layer is set the Web map 
+will show a bookmarks panel with names defined by "Label attribute". You can use any type of geometry for
+vector layer with bookmarks.
 
 Navigate to "Layers" tab. This tab is used for adding layer, joining 
 them to groups or removing them. These actions could be performed using corresponding buttons 
