@@ -268,7 +268,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. note:: 
    Гости смогут видеть веб-карту со слоями и данными.
 
-.. figure:: _static/Case2_Main resource group.png
+.. figure:: _static/Case2_Main_resource_group.png
    :name: Case2_Main resource group
    :align: center
    :width: 16cm
@@ -294,12 +294,13 @@ NextGIS Web строится на ресурсном подходе - кажды
    Важно обратить внимание, что на родительские ресурсы (при их наличии) для данных/веб-карт также необходимо права на их чтения для гостя. 
    Если на любой ресурс нет права на чтение его данных, то вложенные в него данные также прочитать будет невозможно
    
-   .. figure:: _static/Case2_permissions.png
+   
+.. figure:: _static/Case2_permissions.png
    :name: Case2_permissions
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов с геоданными.
+   Задать во вложенных группах ресурсов
    
 
 Дать пользователю права на одну группу ресурсов
