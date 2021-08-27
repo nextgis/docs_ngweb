@@ -241,10 +241,6 @@ Source files could be in the following formats:
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
   
-.. tip:: 
-   If you upload data through web-interface, do not use EPSG:3857. 
-   Use EPSG:4326 or other coordinate systems (EPSG:3857 mentioned on Vector layer 
-   tab is a storage CRS not related to data CRS).
    
 .. warning::
    Output file should not have attribute names: *id (ID), geom(GEOM)*.
