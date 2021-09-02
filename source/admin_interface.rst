@@ -1,4 +1,5 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
 .. _ngw_admin_interface:
 
@@ -8,18 +9,17 @@ Administrator interface
 Home page
 --------------------------------
 
-
 After login to administrative interface the user is taken to the home page shown 
-on  :numref:`admin_index_pic`.
+on :numref:`admin_index_pic`
 
 .. figure:: _static/ngweb_main_page_administrative_interface_eng.png
    :name: admin_index_pic
    :align: center
-   :width: 16cm
+   :width: 25cm
 
-   Administrator interface home page.
+   Administrator interface home page
 
-   The numbers indicate: 1 - main menu; 2 - "Change the language" button; 3 – main resource group description; 4 - child resources; 5 - user permissions for main resource group; 6 - types of items that could be added to the main resource group; 7 - actions that could be performed with main resource group.
+   The numbers indicate: 1 - Main menu; 2 - User settings (Exit and Change language); 3 - Resource search bar in Web GIS 4 – Main resource group description; 5 - Child resources; 6 - User permissions for main resource group; 7 - Types of items that could be added to the main resource group; 8 - Actions that could be performed with main resource group
 
 Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
 
@@ -31,20 +31,18 @@ Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) w
 .. figure:: _static/ngweb_main_page_main_menu_eng.png
    :name: ngweb_main_page_main_menu_pic
    :align: center
-   :width: 16cm
+   :width: 25cm
 
-   Main menu.
+   Main menu in NextGIS Web
  
-Description pane (see item 3 in :numref:`admin_index_pic`) displays root group 
-description (if available).
+Description pane (see item 4 in :numref:`admin_index_pic`) displays a main group description (if available).
 
-Child resources pane (see item 4 in :numref:`admin_index_pic`) contains a list 
-of all resources placed in a root group. Pane displays information about display 
-name, owner and contains an edit resource button.
+Child resources pane (see item 5 in :numref:`admin_index_pic`) contains a list of all resources placed in a main group.
+In the form of a table, the parameters such as name, type and owner of the resource are available.
+At the same time there are buttons of different actions over resources (edit, delete, preview, open the attribute table).
 
-User permissions pane (see item 5 in :numref:`admin_index_pic`) displays list of 
-permissions the current user granted for the root group. Green and red marks indicate 
-that user has/don't have corresponding permission. 
+User permissions pane (see item 6 in :numref:`admin_index_pic`) displays list of permissions the current user granted for the current group.
+Green and red marks indicate that user has/don't have corresponding permission. 
 
 * A - allow
 * D - deny
@@ -61,22 +59,32 @@ Possible permissions are the following:
 * Manage permissions
 * Delete
 
-Actions pane (see items 6 and 7 in :numref:`admin_index_pic`) contains tools for adding
-data and executing operations with root group.
+Actions pane (see items 7 and 8 in :numref:`admin_index_pic`) contains tools for adding data and executing operations with root group.
 
 In current version it is possible to add the following types of data (see item 6 in :numref:`admin_index_pic`):
 
 * Basemap
+* Collector project
 * Lookup table
 * PostGIS connection
 * PostGIS layer
 * Raster layer
 * Resource group
+* TMS connection
+* TMS layer
+* Trackers group
 * Vector layer
 * Web Map
 * WMS connection
 * WMS layer
 * WMS service
+
+Depending on your NGW version may also be connected:
+
+* SVG marker library
+* 3D model
+* 3D scene
+* 3D tileset
 
 Possible operations are (see item 7 in :numref:`admin_index_pic`): 
 
@@ -91,17 +99,23 @@ NextGIS Web Control panel is available through the main menu (see item 1 in :num
 .. figure:: _static/admin_control_panel_eng.png
    :name: admin_control_panel
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Control panel.
+   Control panel
 
 Control panel allows to execute the following actions:
 
-* View user groups and user list
-* Create user groups and users 
-* Grant permissions to resource groups and web maps
-* Set Web GIS name
-* Input a list of possible sources for cross-origin resource sharing (CORS)
+* Manage NextGIS Web groups and users
+* Display information about the system
+* Set the name of your Web GIS
+* Configure CORS
+* Set CSS styles
+* Specify NGW start page (home path)
+* Set Logo (in the upper left corner)
+* Customize a type of users who have permission to export data
+* Create user accounts for Collector projects
+* Customize Tracking
+* Customize web map
 
 For more information about creation of user groups and users and granting 
 permissions see topic :ref:`ngw_admin_tasks`.
@@ -109,17 +123,17 @@ permissions see topic :ref:`ngw_admin_tasks`.
 Resource view
 ------------------
 
-After login to administrative interface the user is taken to home page shown on 
-:numref:`resource_group`.
+After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
 
 .. figure:: _static/resource_group_eng.png
    :name: resource_group
    :align: center
    :width: 16cm
 
-   Resource groups. 
+   Resource groups
 
-The content of resource group is displayed after a click on resource name in a child resources pane of main resource group (see item 4 in :numref:`admin_index_pic`). On resource group page there is a pane with a list of resources in root group and user permissions pane.
+
+The content of resource group is displayed after a click on resource name in a child resources pane of main resource group (see item 4 in :numref:`admin_index_pic`). On resource group page there is a pane with a list of resources in a main group and user permissions pane.
 Layer properties are displayed after a click on a name of a layer in child resources pane. E.g. user can click on a resource of type vector layer.
 
 After a click on layer in child resources pane user is taken to a vector layer properties and attributes page (see  :numref:`options_resource_group`).
@@ -129,19 +143,19 @@ After a click on layer in child resources pane user is taken to a vector layer p
    :align: center
    :width: 16cm
  
-   Vector layer parameters.
+   Vector layer parameters
 
 Feature table
 -----------------
 
-To view feature table after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Table" icon opposite the resource or select an action for a vector layer called "Feature table" in actions pane (see :numref:`admin_table_objects_upload`).
+To view feature table after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`) where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Table" icon opposite the resource or select an action for a vector layer called "Feature table" in actions pane (see :numref:`admin_table_objects_upload`).
 
 .. figure:: _static/feature_table_choice_eng.png
    :name: admin_table_objects_upload
    :align: center
    :width: 16cm
 
-   Choice of feature table. 
+   Choice of feature table
 
 Feature table allows to perform the following operations with a selected record  (see :numref:`admin_table_objects1_upload`):
 
@@ -155,7 +169,7 @@ Feature table allows to perform the following operations with a selected record 
    :align: center
    :width: 16cm
 
-   Actions for the selected record in feature table.
+   Actions for the selected record in feature table
 
 There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type web map. In actions pane click a web map action called Display (see :numref:`webmap_open_eng_pic`):
 
@@ -164,7 +178,7 @@ There is another way to open Feature table. In the adminitrative interface navig
    :align: center
    :width: 16cm
 
-   "Display" web map action.
+   "Display" web map action
    
 A web map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select "Feature table" command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
 
@@ -173,7 +187,7 @@ A web map will be opened with a layer tree (left) and a map (right). To view a f
    :align: center
    :width: 16cm
 
-   Map and layer tree.
+   Map and layer tree
  
 A table will be displayed in a new tab. Table allows to perform the following operations with a selected record :numref:`admin_table_objects2_upload`:
 
@@ -188,7 +202,7 @@ A table will be displayed in a new tab. Table allows to perform the following op
    :align: center
    :width: 16cm
 
-   Actions for the selected record in feature table.
+   Actions for the selected record in feature table
 
 .. _ngw_update_resource:
 
@@ -202,7 +216,7 @@ To edit a resource after login navigate to a child resource group (see item 4 in
    :align: center
    :width: 16cm
 
-   Selection of "Update" action in action pane.
+   Selection of "Update" action in action pane
 
 In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add description, metadata and attributes of the resource.
 
@@ -211,7 +225,7 @@ In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) y
    :align: center
    :width: 16cm
 
-   "Update resource" window.
+   "Update resource" window
 
 On the first tab "Resource" you can edit the next fields:
 
@@ -227,27 +241,27 @@ You can move resources from one resource group to another after their creation t
    :align: center
    :width: 16cm
 
-   "Select resource" window.
+   "Select resource" window
 
 If the resource is moved successfully, the information about it appears in a new resource group and is replaced from the previous one.
 
-The third tab "Description" allows to edit or delete a text or to add a new text and to save it after pressing "Save" button:  
+The tab "Description" allows to edit or delete a text or to add a new text and to save it after pressing "Save" button:  
 
 .. figure:: _static/ngw_description_window_eng.png
    :name: ngw_description_window
    :align: center
    :width: 16cm
   
-   "Description" tab.
+   "Description" tab
 
-The fourth tab "Metadata" allows to add and delete metadata, and to display them in a table using "Add" (Text, Integer, Float) and "Remove" operations:  
+The tab "Metadata" allows to add and delete metadata, and to display them in a table using "Add" (Text, Integer, Float) and "Remove" operations:  
 
 .. figure:: _static/ngw_metadata_tab_eng.png
    :name: ngw_metadata_tab
    :align: center
    :width: 16cm
 
-   "Metadata" tab.
+   "Metadata" tab
 
 The table contains three columns: 
 
@@ -255,14 +269,14 @@ The table contains three columns:
 2. Type: Text, Integer, Float
 3. Value. Value corresponds key type
 
-The fifth tab "Attributes" contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
+The tab "Attributes" contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
 
 .. figure:: _static/admin_layers_attr_eng.png
    :name: ngweb_admin_layers_attr
    :align: center
    :width: 16cm
 
-   "Attributes" tab.
+   "Attributes" tab
 
 * Tick in "FT" column means that the attribute is displayed in the identification window.
 * Tick in "LA" column means that the attribute gives its name during the identification and forming of the tabs list.
@@ -274,7 +288,7 @@ For each field name you can set the corresponding pseudonym to use it for displa
    :align: center
    :width: 16cm
 
-   The identification window.
+   The identification window
 
 .. _ngw_attributes_edit:
 
@@ -300,7 +314,7 @@ In the opened "Delete resource" window (see :numref:`ngw_deletion_resource`) you
    :align: center
    :width: 16cm
 
-   Delete resource.
+   Delete resource
 
 If the resource was deleted successfully, the information about it disappear in the corresponding resource group.
 
@@ -316,5 +330,25 @@ To download data after login navigate to a child resource group (see item 4 in :
    :align: center
    :width: 16cm
 
-   Data export to CSV and GeoJSON formats.
- 
+   Data export in various formats
+
+NextGIS Web allows you to export data in the following formats:
+
+* :term:`GeoJSON`
+* :term:`CSV`
+* CSV for Microsoft Excel
+* ESRI Shape
+* AutoCAD DXF
+* Mapinfo TAB
+* MapInfo MIF/MID
+* GeoPackage
+
+While exporting to some formats additional files are created, for example CSVT (field description) and PRJ (projection description) for CSV, CPG (code page) for ESRI Shapefile.
+
+To export data:
+
+#. Open a Vector or PostGIS layer, the data of which you want to export;
+#. Select the item: menuselection: `Features -> Save As` on the right pane: ref:` web interface <ngw_admin_interface> `;
+#. Specify the format and encoding of the data;
+#. If necessary, you can compress the result into a ZIP archive (for a number of formats this is the default setting)
+#. Save the file to your device
