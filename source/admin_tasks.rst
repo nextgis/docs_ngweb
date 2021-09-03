@@ -493,7 +493,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_webmap_panel_settings_rus.png
    :name: admin_webmap_panel_settings
    :align: center
-   :width: 20cm
+   :width: 15cm
 
    Страница настроек веб-карты
 
@@ -513,7 +513,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_webmap_panel_indentify_rus.png
    :name: admin_webmap_panel_indentify
    :align: center
-   :width: 20cm
+   :width: 10cm
 
    Идентификация объекта на веб-карте
 
@@ -544,7 +544,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_webmap_search_bar_rus.png
    :name: admin_webmap_search_bar
    :align: center
-   :width: 20cm
+   :width: 10cm
 
    Поиск на веб-карте
 
