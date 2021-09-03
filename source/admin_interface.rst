@@ -209,7 +209,7 @@ A table will be displayed in a new tab. Table allows to perform the following op
 Update resource
 ---------------
 
-To edit a resource after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`).
+To edit a resource after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`).
  
 .. figure:: _static/ngw_window_update_edit_resource.png
    :name: ngw_window_update_edit_resource
@@ -297,7 +297,7 @@ Delete resource
 
 Web GIS allows to delete uploaded data through deleting of the corresponding resources. 
 
-To delete the resource after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Cross" icon opposite the resource or select the layer and then select an action called "Delete" in actions pane (see :numref:`ngw_window_update_delete_resource`). 
+To delete the resource after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Cross" icon opposite the resource or select the layer and then select an action called "Delete" in actions pane (see :numref:`ngw_window_update_delete_resource`). 
 
 .. figure:: _static/ngw_window_update_delete_resource.png
    :name: ngw_window_update_delete_resource
@@ -323,7 +323,7 @@ Data export to CSV and GeoJSON formats
   
 Web GIS allows to download/export data in CSV and GeoJSON formats.
 
-To download data after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer or PostGIS layer you need to export and select an action called "Download as GeoJSON" or "Download as CSV" in actions pane "Vector layer" (see :numref:`ngweb_data_export`).
+To download data after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer or PostGIS layer you need to export and select an action called "Download as GeoJSON" or "Download as CSV" in actions pane "Vector layer" (see :numref:`ngweb_data_export`).
 
 .. figure:: _static/ngweb_data_export_eng.png
    :name: ngweb_data_export
