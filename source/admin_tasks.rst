@@ -1,10 +1,62 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Dmitry Baryshnikov <dmitry.baryshnikov@nextgis.ru>
+.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
 .. _ngw_admin_tasks:
 
 Administrative tasks
 ===================
+
+.. _ngw_change_lang:
+
+Language change
+---------------
+
+Any user can switch the interface language.
+To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`)
+
+.. figure:: _static/admin_settings_lang_en.png
+   :name: admin_settings_lang_pic
+   :align: center
+   :width: 10cm
+
+   Go to Settings bar
+
+The following languages are available for selection (:numref:`admin_settings_lang_pic`)
+
+* Default browser
+* Russian
+* English
+* Italian
+* Spanish
+* German
+* Portuguese
+* French
+* Czech
+
+.. figure:: _static/admin_select_lang_en.png
+   :name: admin_select_lang_pic
+   :align: center
+   :width: 10cm
+
+   Selecting language
+
+
+.. _ngw_search_bar:
+
+Resource search
+---------------
+
+For easy search for resources and navigation, there is a search bar in the top bar (:numref:`admin_search_bar_pic`)
+The search is carried out in the entire existing database, regardless of which directory the user is currently in.
+
+.. figure:: _static/admin_search_bar_en.png
+   :name: admin_search_bar_pic
+   :align: center
+   :width: 10cm
+
+   Finding Resources in Web GIS
+
 
 .. _ngw_create_group:
 
@@ -57,7 +109,7 @@ Access management
 NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
 
 Permissions could be set during resource creation (see. :ref:`ngw_create_layers`), 
-or using resource update (see. :ref:`ngw_change_layers`). To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`).
+or using resource update (see. :ref:`ngw_change_layers`) To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`)
 
 .. figure:: _static/access_rights_tab.png
    :name: ngweb_access_rights_tab
@@ -269,30 +321,43 @@ Grant guest user web map display permission
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Guest users will be able to see only a web map and layers in a folder, other resources will be closed.
+   Guest users will be able to see only a web map with layers
 
-.. figure:: _static/access_rights_group_for_quest_10_eng.png
-   :name: ngweb_access_rights_tab_11_pic
+.. figure:: _static/Case2_Main_resource_group.png
+   :name: Case2_Main resource group
    :align: center
    :width: 16cm
 
-   Settings for root resource group.
+   Settings for main resource group
 
 
-.. figure:: _static/access_rights_group_for_quest_webmaps12_eng.png
-   :name: ngweb_access_rights_tab_12_pic
+.. figure:: _static/Case2_mapfolder.png
+   :name: Case2_mapfolder
    :align: center
    :width: 16cm
 
-   Settings for resourse group with maps.
+   Settings for resourse group with maps
 
 
-.. figure:: _static/access_rights_group_for_quest_geodata13_eng.png
-   :name: ngweb_access_rights_tab_13_pic
+.. figure:: _static/Case2_datafolder.png
+   :name: Case2_datafolder
    :align: center
    :width: 16cm
 
-   Settings for resource group with geodata.
+   Settings for resource group with geodata
+
+
+It is important to note that parent resources (if any) also need read permissions for the guest (see. :numref:`Case2_permissions`)
+If there aren't rights to 'read' resource, then the data propagated to it will also be impossible to read.
+
+.. figure:: _static/Case2_permissions.png
+   :name: Case2_permissions
+   :align: center
+   :width: 16cm
+
+   Set in other resource groups
+
+
 
 Grant a single user permissions to a single resource group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
