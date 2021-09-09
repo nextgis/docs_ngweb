@@ -14,8 +14,8 @@
 Любой пользователь может переключить язык интерфейса.
 Для этого в правом верхнем углу экрана по иконке пользователя нужно перейти в раздел "Настройки" (:numref:`admin_select_lang_pic`)
 
-.. figure:: _static/admin_select_lang_rus.png
-   :name: admin_select_lang_pic
+.. figure:: _static/admin_settings_lang_rus.png
+   :name: admin_settings_lang_pic
    :align: center
    :width: 10cm
 
@@ -33,8 +33,9 @@
 * Французский
 * Чешский
 
-.. figure:: _static/admin_settings_lang_rus.png
-   :name: admin_settings_lang_pic
+
+.. figure:: _static/admin_select_lang_rus.png
+   :name: admin_select_lang_pic
    :align: center
    :width: 10cm
 
@@ -309,7 +310,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Гости смогут видеть веб-карту со слоями и данными.
+   Гости смогут видеть веб-карту со слоями c данными.
 
 .. figure:: _static/Case2_Main_resource_group.png
    :name: Case2_Main resource group
@@ -332,10 +333,10 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов с геоданными.
+   Задать в свойствах группы ресурсов с геоданными
    
-Важно обратить внимание, что на родительские ресурсы (при их наличии) также необходимы права на их чтения для гостя. 
-Если на ресурс нет права на чтение его данных, то вложенные в него данные также прочитать будет невозможно.
+Важно обратить внимание, что на родительские ресурсы (при их наличии) также необходимы права на их чтения для гостя (см. :ref:`Case2_permissions`) 
+Если на ресурс нет права на чтение, то вложенные в него данные также прочитать будет невозможно.
    
    
 .. figure:: _static/Case2_permissions.png
