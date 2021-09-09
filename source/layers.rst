@@ -719,6 +719,9 @@ WFS layer setup is performed the same way as for WMS service but you add a layer
 
 .. warning:: 
    The field names of the vector layer on the basis of which the WFS service is created should not contain Cyrillic.
+ 
+.. note::
+     Currently supported filters are Intersects, ResourceId (ObjectId, FeatureId).
 
 NextGIS Web can act as WFS server. Third party software could edit vector data on server using this protocol.
 
