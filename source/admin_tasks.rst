@@ -13,7 +13,7 @@ Language change
 ---------------
 
 Any user can switch the interface language.
-To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`)
+To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`).
 
 .. figure:: _static/admin_settings_lang_en.png
    :name: admin_settings_lang_pic
@@ -47,13 +47,13 @@ The following languages are available for selection (:numref:`admin_settings_lan
 Resource search
 ---------------
 
-For easy search for resources and navigation, there is a search bar in the top bar (:numref:`admin_search_bar_pic`)
+For easy search for resources and navigation, there is a search bar in the top bar (:numref:`admin_search_bar_pic`).
 The search is carried out in the entire existing database, regardless of which directory the user is currently in.
 
 .. figure:: _static/admin_search_bar_en.png
    :name: admin_search_bar_pic
    :align: center
-   :width: 10cm
+   :width: 5cm
 
    Finding Resources in Web GIS
 
@@ -63,7 +63,7 @@ The search is carried out in the entire existing database, regardless of which d
 Create new user group
 ---------------------
 
-A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`. 
+A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`
 To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Create" option in "Groups" block.
 
 .. figure:: _static/admin_controlpanel_usergroup_create_eng.png
@@ -71,7 +71,7 @@ To open this window select "Control panel" (see :numref:`ngweb_main_page_main_me
    :align: center
    :width: 16cm
 
-   "Create new group" dialog.
+   "Create new group" dialog
 
 In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and click "Create" button. 
 
@@ -90,7 +90,7 @@ To open this window select "Control panel" (see :numref:`ngweb_main_page_main_me
    :align: center
    :width: 16cm
 
-   "Create new user" dialog.
+   "Create new user" dialog
    
 In "Create new user" dialog enter the following information:
 
@@ -116,7 +116,7 @@ or using resource update (see. :ref:`ngw_change_layers`) To manage permissions u
    :align: center
    :width: 10cm
    
-   Permissions tab for resource.
+   Permissions tab for resource
 
 You can grant, revoke and update permissions using this tab. You can grant different permissions to a single resource for different users and/or groups.
 A dialog with permission item settings is presented on fig.  :numref:`ngweb_access_rights_dialog`.
@@ -126,7 +126,7 @@ A dialog with permission item settings is presented on fig.  :numref:`ngweb_acce
    :align: center
    :width: 10cm
    
-   Permission item settings dialog.
+   Permission item settings dialog
 
 A dialog has the following elements:
     
@@ -450,6 +450,8 @@ Also there is an option to change user password using command line:
 
   env/bin/nextgisweb --config config.ini change_password user password
   env/bin/nextgisweb --config config.ini change_password user password
+
+
 
 .. _ngw_CSS:
 
