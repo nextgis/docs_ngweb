@@ -101,6 +101,9 @@
 
 Далее необходимо нажать кнопку "Создать".
 
+.. note:: 
+   Пароль ограничен по длине в диапазоне 5-25 символов. Логин может иметь символы латинского алфавита, цифры и символ подчеркивания, но должен начинаться обязательно с буквы.
+
 .. _ngw_access_rights:
     
 Настройка прав доступа
@@ -372,7 +375,7 @@ NextGIS Web строится на ресурсном подходе - кажды
    :align: center
    :width: 16cm
 
-   Задать в свойствах группы ресурсов.
+   Задать в свойствах группы ресурсов
 
 
 .. figure:: _static/access_rights_group_for_quest_2_rus.png
@@ -453,7 +456,8 @@ NextGIS Web строится на ресурсном подходе - кажды
   env/bin/nextgisweb --config config.ini change_password user password
   env/bin/nextgisweb --config config.ini change_password user password
 
-
+.. note:: 
+   Пароль ограничен по длине в диапазоне 5-25 символов
 
 .. _ngw_system_info:
 
