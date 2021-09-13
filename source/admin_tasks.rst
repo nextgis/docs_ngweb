@@ -101,6 +101,10 @@ In "Create new user" dialog enter the following information:
 
 Then click "Create" button.
 
+.. note:: 
+   The password is limited in length in the range of 5-25 characters. Login can have symbols of the Latin alphabet, numbers and an underscore, but must begin necessarily with a letter.
+
+
 .. _ngw_access_rights:
     
 Access management
@@ -368,14 +372,14 @@ Grant a single user permissions to a single resource group
    :align: center
    :width: 16cm
 
-   Settings for a resource group.
+   Settings for a resource group
 
 .. figure:: _static/access_rights_group_for_user_2.png
    :name: ngweb_access_rights_tab_4_pic
    :align: center
    :width: 16cm
 
-   Settings for root resource group.
+   Settings for root resource group
 
 
 Grant a permission to input data using a mobile application to a group of users
@@ -441,6 +445,8 @@ To update user password you can use administrative interface. To do it select "C
    :width: 16cm
 
    User editting window.
+   
+
 
 Also there is an option to change user password using command line:
 
@@ -451,7 +457,8 @@ Also there is an option to change user password using command line:
   env/bin/nextgisweb --config config.ini change_password user password
   env/bin/nextgisweb --config config.ini change_password user password
 
-
+.. note:: 
+   The password is limited in length in the range of 5-25 characters.
 
 .. _ngw_CSS:
 
