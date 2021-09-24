@@ -245,9 +245,6 @@ Source files could be in the following formats:
 .. warning::
    Output file should not have attribute names: *id (ID), geom(GEOM)*.
 
-.. warning::
-   Special restriction for WFS protocol: attribute names should begin only with letter or (_), next allowed sybmols in name is letters, digits, (-), (_), (.).
-
 
 
 .. _ngw_create_postgis_layer:
