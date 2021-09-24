@@ -712,17 +712,14 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
 WFS service
 -----------
 
-WFS layer setup is performed the same way as for WMS service but you add a layer instead of a style.
-
-.. warning:: 
-   The field names of the vector layer on the basis of which the WFS service is created should not contain Cyrillic.
+WFS layer setup is performed the same way as for WMS service but you add layers instead of styles.
  
 .. note::
      Currently supported filters are Intersects, ResourceId (ObjectId, FeatureId).
 
-NextGIS Web can act as WFS server. Third party software could edit vector data on server using this protocol.
+NextGIS Web acts as WFS server and publishes WFS services. Third party software can use these services to edit vector data on server using this protocol.
 
-To deploy a WFS service you need to add a resource. To do it in actions pane "Create resource" click "WFS service" (see :numref:`admin_layers_create_wfs_service`). 
+To deploy a WFS service click "WFS service" on "Create resource" actions panel (see :numref:`admin_layers_create_wfs_service`). 
 
 .. figure:: _static/admin_layers_create_wfs_service_eng.png
    :name: admin_layers_create_wfs_service
@@ -757,11 +754,11 @@ Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`
    WFS service tab of Create resource dialog. 
 
 For each layer you can set a limit for the number of features transfered at once.
-By default the value is 1000. If this parameter is empty the limit will be disable and all features will be trasfered to the client. But this could result in high load of a server and cause significant timeouts because of high volumes of transfered data.
+By default the value is 1000. If this parameter is empty the limit will be disabled and all features will be trasfered to the client. This could result in high server load and significant timeouts if volume of transfered data is very high.
 
 After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example :program:`NextGIS QGIS`. 
 
-Then you need to set access permissions for WFS service. See  section :ref:`ngw_access_rights`.
+You can set access permissions for WFS service if needed. See  section :ref:`ngw_access_rights`.
 
 .. _ngw_resources_group:
 
