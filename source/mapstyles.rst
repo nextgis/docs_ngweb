@@ -138,7 +138,8 @@ Caching provides faster rendering of web map layers. The **tile cache** settings
 * *Enabled* checkbox;
 * *Allow using tiles in non-tile requests* checkbox - the requested image (not a tile) will be prepared from previously cached tiles (if available);
 * Input field *Maximum zoom level* - a threshold value, above which the cache is not accessed and the image is formed "on the fly";
-* Input field *TTL, sec* (Time to live) - a time of storage of tiles on the server in seconds, after which the image will be formed again on the next request. TTL = 0 means that the storage time is unlimited.
+* Input field *TTL, sec* (Time to live) - a time of storage of tiles on the server in seconds, after which the image will be formed again on the next request. TTL = 0 means that the storage time is unlimited;
+* *Flush* checkbox - write only - clears the tile cache when saving the style.
 
 .. figure:: _static/tile_cache_settings_eng.png
    :name: tile_cache_settings
