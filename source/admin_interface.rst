@@ -3,8 +3,8 @@
 
 .. _ngw_admin_interface:
 
-Administrator interface
-================================
+Administrator interface (Admin console)
+=========================================
 
 Home page
 --------------------------------
