@@ -444,7 +444,7 @@ To update user password you can use administrative interface. To do it select "C
    :align: center
    :width: 16cm
 
-   User editting window.
+   User editting window
    
 
 
@@ -459,6 +459,29 @@ Also there is an option to change user password using command line:
 
 .. note:: 
    The password is limited in length in the range of 5-25 characters.
+
+
+.. _system_info:
+
+System information
+------------------
+
+Through the control panel, the administrator can view information about the system and the current version of the platform (see :numref:`admin_system_info_rus_eng`). Using the icon in the upper right corner, you can copy all this data to the clipboard.
+
+.. figure:: _static/admin_system_info_rus_eng.png
+   :name: admin_system_info_rus_eng
+   :align: center
+   :width: 16cm
+
+   System information section in the control panel
+
+
+.. figure:: _static/admin_system_info1_rus_eng.png
+   :name: admin_system_info1_rus_eng
+   :align: center
+   :width: 16cm
+
+   System and platform information
 
 .. _ngw_CSS:
 
