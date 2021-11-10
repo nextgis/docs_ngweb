@@ -461,7 +461,7 @@ Also there is an option to change user password using command line:
    The password is limited in length in the range of 5-25 characters.
 
 
-.. _system_info:
+.. _ngw_system_info:
 
 System information
 ------------------
@@ -482,6 +482,48 @@ Through the control panel, the administrator can view information about the syst
    :width: 16cm
 
    System and platform information
+
+
+.. _ngw_contr_panel_webmap_settings:
+
+Web Map Settings
+----------------
+
+Using the control panel administrator can set a number of general settings for all web maps in NextGIS Web (:numref: `admin_webmap_panel_settings_eng`):
+
+* Identification popup
+* Measurement parameters
+* Address search parameters
+
+.. figure:: _static/admin_webmap_panel_settings_eng.png
+   :name: admin_webmap_panel_settings_eng
+   :align: center
+   :width: 15cm
+
+   Web Map Settings Page
+
+
+.. _ngw_contr_panel_webmap_ident:
+
+Identify popup
+~~~~~~~~~~~~~~~
+
+The section regulates two parameters:
+
+* Size of the pop-up window when identifying objects on the web map;
+* The radius of the area around the object within which the identification works.
+
+Dimensions are in pixels (:numref: `admin_webmap_panel_indentify_eng`)
+
+.. figure:: _static/admin_webmap_panel_indentify_eng.png
+   :name: admin_webmap_panel_indentify_eng
+   :align: center
+   :width: 20cm
+
+   Object identification on the web map
+
+
+At the same time you can turn on/off the display of feature attributes.
 
 .. _ngw_CSS:
 
