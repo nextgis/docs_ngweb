@@ -522,8 +522,36 @@ Dimensions are in pixels (:numref: `admin_webmap_panel_indentify_eng`)
 
    Object identification on the web map
 
-
 At the same time you can turn on/off the display of feature attributes.
+
+
+.. _ngw_contr_panel_webmap_measure:
+
+Measurement
+~~~~~~~~~~~
+
+The section sets the parameters responsible for various measurements on the web map (:numref: `admin_webmap_panel_settings`):
+
+* Units of length measurement (according to the selected SRS)
+* Units of measurement of areas (in accordance with the selected SRS)
+* Degree format
+* Coordinate system for calculating measurements
+
+
+.. _ngw_contr_panel_webmap_search:
+
+Address search
+~~~~~~~~~~~~~~
+
+* "Enable" - the search results on the web map will include not only the attribute data but also the address base if there are matches
+* "Limit by web map initial extent" - the search will be performed within the extent set in the web map settings
+
+.. figure:: _static/admin_webmap_search_bar_eng.png
+   :name: admin_webmap_search_bar
+   :align: center
+   :width: 10cm
+
+   Web map search
 
 .. _ngw_CSS:
 
