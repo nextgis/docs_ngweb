@@ -33,8 +33,6 @@ NextGIS Web has the following features:
   for a WFS-T protocol for editing <ngw_wfs_service>`.
 * Listed features are available through a REST API from external software
 
-NextGIS Web - is an open source software (license GPL v2+, see :ref:`ngw_gplv2`).
-
 .. only:: html
 
    System requirements listed in section ":ref:`ngw_sys_req`".
