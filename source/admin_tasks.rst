@@ -472,7 +472,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_storage_panel_settings.png
    :name: admin_storage_panel_settings
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Раздел "Хранилище"
 
