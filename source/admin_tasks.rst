@@ -489,7 +489,7 @@ Through the control panel, the administrator can view information about the syst
 Web Map Settings
 ----------------
 
-Using the control panel administrator can set a number of general settings for all web maps in NextGIS Web (:numref: `admin_webmap_panel_settings_eng`):
+Using the control panel administrator can set a number of general settings for all web maps in NextGIS Web:
 
 * Identification popup
 * Measurement parameters
@@ -513,7 +513,7 @@ The section regulates two parameters:
 * Size of the pop-up window when identifying objects on the web map;
 * The radius of the area around the object within which the identification works.
 
-Dimensions are in pixels (:numref: `admin_webmap_panel_indentify_eng`)
+Dimensions are in pixels.
 
 .. figure:: _static/admin_webmap_panel_indentify_eng.png
    :name: admin_webmap_panel_indentify_eng
@@ -530,7 +530,7 @@ At the same time you can turn on/off the display of feature attributes.
 Measurement
 ~~~~~~~~~~~
 
-The section sets the parameters responsible for various measurements on the web map (:numref: `admin_webmap_panel_settings`):
+The section sets the parameters responsible for various measurements on the web map:
 
 * Units of length measurement (according to the selected SRS)
 * Units of measurement of areas (in accordance with the selected SRS)
