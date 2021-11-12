@@ -461,6 +461,23 @@ Also there is an option to change user password using command line:
    The password is limited in length in the range of 5-25 characters.
 
 
+.. _ngw_storage:
+
+Storage
+--------
+
+The "Storage" section contains information about the volume of data loaded into Web GIS depending on their type.
+The space usage estimate is located below the main table.
+The administrator can forcibly recalculate the amount of storage (for example - immediately after loading big data, if the system has not yet recalculated the occupied space on its own).
+
+.. figure:: _static/admin_storage_panel_settings_eng.png
+   :name: admin_storage_panel_settings
+   :align: center
+   :width: 18cm
+
+   Storage section
+
+
 .. _ngw_system_info:
 
 System information
