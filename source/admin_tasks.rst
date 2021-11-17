@@ -478,6 +478,16 @@ The administrator can forcibly recalculate the amount of storage (for example - 
    Storage section
 
 
+
+.. _ngw_backups:
+
+Backups
+-------
+
+In this section you can see a list of available NextGIS Web backups, as well as download any of them.
+
+
+
 .. _ngw_system_info:
 
 System information
