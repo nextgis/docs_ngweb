@@ -116,6 +116,8 @@ In the "Metadata" you can write information in the "key-value" format (:numref:`
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
 Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
+If you plan to add this raster in QGIS directly from your Web GIS, turn on Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
+
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
