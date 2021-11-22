@@ -118,6 +118,8 @@ NextGIS Web строится на **ресурсном** подходе - каж
 На вкладке «Растровый слой» необходимо загрузить файл геоданных в формате GeoTIFF.
 В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
+Если вы планируете подключать этот растр в QGIS напрямую из Веб ГИС, при загрузке включите режим Загрузить как Cloud Optimized GeoTIFF (COG). Это оптимизирует его специальным образом для более быстрого подключения и отображения.
+
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
