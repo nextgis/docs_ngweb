@@ -519,11 +519,11 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_system_cadastr_serv.png
    :name: admin_system_cadastr_serv
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Кадастровые сервисы в панели управления
 
-Наличии Premium-подписки и API-ключа (получить можно `здесь <https://geoservices.nextgis.com/pkk>`_, код после 'apikey=' в адресе запроса) позволяет пользователю идентифицировать на веб-карте различные кадастровые единицы:
+Наличие `Premium-подписки <https://nextgis.ru/pricing-base/>`_ или `NextGIS Web на своем сервере <https://nextgis.ru/pricing/#ngw>`_ позволяет получить API-ключ (через `geoservices <https://geoservices.nextgis.com/pkk>`_, 'apikey=' в адресе запроса) для расширенных функций по работе с веб-картой. Кадастровые сервисы дают возможность пользователю идентифицировать на веб-карте различные кадастровые единицы:
 
 - Кварталы
 - Земельные участки
@@ -533,7 +533,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_system_cadastr_ident.png
    :name: admin_system_cadastr_ident
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Идентификация кадастровых единиц на веб-карте
 
