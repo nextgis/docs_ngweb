@@ -556,7 +556,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_system_export.png
    :name: admin_system_export
    :align: center
-   :width: 10cm
+   :width: 5cm
 
    Экспорт данных
 
