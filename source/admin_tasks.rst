@@ -483,7 +483,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 ----------------------
 
 В данном разделе можно посмотреть список имеющихся резервных копий NextGIS Web, а также скачать любую из них.
-Процесс создания бэкапов и восстановления для разработчиков описан в `данном разделе <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
+Процесс создания бэкапов и восстановления для разработчиков описан в `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
 
 
 .. _ngw_system_info:
@@ -509,6 +509,33 @@ NextGIS Web строится на ресурсном подходе - кажды
    :width: 16cm
 
    Информация о системе и платформе
+
+
+.. _ngw_cadastre_services:
+
+Кадастровые сервисы
+----------------------
+
+.. figure:: _static/admin_system_cadastr_serv.png
+   :name: admin_system_cadastr_serv
+   :align: center
+   :width: 16cm
+
+   Кадастровые сервисы в панели управления
+
+Наличии Premium-подписки и API-ключа (получить можно `здесь <https://geoservices.nextgis.com/pkk>`_, код после 'apikey=' в адресе запроса) позволяет пользователю идентифицировать на веб-карте различные кадастровые единицы:
+
+- Кварталы
+- Земельные участки
+- Объекты капитального строительства
+- Округа
+   
+.. figure:: _static/admin_system_cadastr_ident.png
+   :name: admin_system_cadastr_ident
+   :align: center
+   :width: 16cm
+
+   Идентификация кадастровых единиц на веб-карте
 
 
 .. _ngw_contr_panel_webmap_settings:
