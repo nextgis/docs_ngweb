@@ -95,7 +95,7 @@ A checkbox "Enabled" sets default visibility of a layer.
 
 Field "Transparency" sets layer transparency on a map from 0% to 100%. A layer with 1% transparency is almost transparent, a layer with 100% transparency is opaque.
 
-Field "Adapter" is recommended to be set to "Tiles" (256 x 256 pixels images) if there is no special requirements. You can also set it to "Image", so there will be one image on a whole map. 
+Field "Adapter" is recommended to be set to "Image". 
 
 For "Scale" parameters you may enter a scale range in the format like "1 : 10 000". Scale range could be set in a layer style and in layer settings. If layer should be displayed in a range of scales it is better to set this in layer properties, instead of a style.
    
