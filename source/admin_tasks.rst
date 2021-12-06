@@ -512,6 +512,39 @@ Through the control panel, the administrator can view information about the syst
    System and platform information
 
 
+.. _ngw_res_export:
+
+Resource export
+------------------
+
+This function shows in the Web GIS interface the ability to export (save) data only for those categories of users that are selected from the list below. 
+
+.. figure:: _static/admin_system_res_export_en.png
+   :name: admin_system_res_export_en
+   :align: center
+   :width: 20cm
+
+   Selecting a category of users entitled to export data
+
+
+.. figure:: _static/admin_system_export_en.png
+   :name: admin_system_export_en
+   :align: center
+   :width: 5cm
+
+   Data export
+
+The Data Export function can be seen either only by administrators or by users with the right to:
+
+- Reading data
+- Writing data
+
+All other users will not be able to save data from the Web GIS interface.
+
+.. note:: 
+   This setting does not in any way affect the ability to receive data through the `REST API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_ in accordance with the set `permissions <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#access-management>`_ to them.
+
+
 .. _ngw_contr_panel_webmap_settings:
 
 Web Map Settings
