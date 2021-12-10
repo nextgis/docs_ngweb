@@ -61,6 +61,36 @@ On the "Basemap" must be given the URL-address of the TMS service (:numref:`ngwe
    Basemap settings
 
 
+.. _ngw_data_preview:
+
+Data Preview
+------------
+
+The preview function allows you to see the uploaded data on the basemap without adding it on the web map.
+
+.. note:: 
+	For vector data, previews are available for both the layer and the style. For rasters - for style only. For TMS and WFS layers, preview is also available.
+	
+While in the corresponding resource, click on the **Preview** button in the right menu in the **Extra** section or on the "eye" icon opposite the name of the child resource.
+
+A visual preview of the uploaded geometries will open without the possibility of more detailed interaction (viewing attributes, identifying objects, etc).
+
+.. figure:: _static/ngweb_preview_1_en.png
+   :name: ngweb_preview_1_en
+   :align: center
+   :width: 20cm
+
+   Selecting Data Preview Function
+   
+
+.. figure:: _static/ngweb_preview_2_en.png
+   :name: ngweb_preview_2_en
+   :align: center
+   :width: 20cm
+
+   Data preview
+
+
 .. _ngw_create_raster_layer:
 
 Raster layer
