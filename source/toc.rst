@@ -20,6 +20,7 @@
    webmaps_admin       
    webmaps_client
    vect_layer_upload_params
+   data_collection_on_premise
    permissions
    admin_tasks 
    sysadmin     
