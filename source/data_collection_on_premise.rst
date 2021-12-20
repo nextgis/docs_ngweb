@@ -3,7 +3,7 @@
 .. role:: underline
     :class: underline
 
-Сбор данных на своем сервере
+Сбор геоданных на своем сервере
 ============================
 
 .. _intro:
@@ -16,7 +16,7 @@
 
 **Программное обеспечение и компоненты:**
 
-* `NextGIS Formbuilder <https://nextgis.ru/nextgis-formbuilder>`_. - настольное приложение для создания форм при подготовке к сбору геоданных.
+* `NextGIS Formbuilder <https://nextgis.ru/nextgis-formbuilder>`_ - настольное приложение для создания форм при подготовке к сбору геоданных.
 * `NextGIS Collector <https://nextgis.ru/nextgis-collector/>`_ - специализированное мобильное приложение для сбора геоданных в полевых условиях.
 * `NextGIS Web <https://nextgis.ru/nextgis-web/>`_ (NGW) - серверная Веб ГИС для синхронизации полученных в полевых условиях пространственных данных, их дальнейшего хранения, обработки, визуализации и анализа.
 * `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/toc.html>`_ (NGIDOP) - сервер авторизации пользователей для управления доступом к процессу сбора геоданных.
