@@ -273,11 +273,7 @@ Source files could be in the following formats:
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
   
-   
-.. warning::
-   Output file should not have attribute names: *id (ID), geom(GEOM)*.
-
-
+If input data layer contains fields named id (ID) or geom(GEOM) they will be renamed on import. If id has meaningful identifiers they will automatically be turned into internal FIDs.
 
 .. _ngw_create_postgis_layer:
 
