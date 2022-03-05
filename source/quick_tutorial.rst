@@ -45,15 +45,7 @@ NextGIS Web has the following features:
 Integration with other NextGIS software
 ----------------------------------------
 
-.. only:: html
 
-   To manage :term:`geodata <geodata>` in NextGIS Web you can use 
-   desktop application :ref:`NextGIS Manager <ngman_intro>`. 
-
-.. only:: latex
-
-   To manage :term:`geodata <geodata>` in NextGIS Web you can use 
-   desktop application `NextGIS Manager <http://docs.nextgis.ru/docs_ngmanager/source/intro.html>`_. 
 
 This software simplifies batch processing of data in NextGIS Web.
 
@@ -103,5 +95,4 @@ To create a raster layer follow these steps:
 
 After layers are loaded they should be added to a web map in web map properties page. Then a link to web map could be opened in a web browser.
 
-If there are many layers to add this operation will be easier performed with :ref:`NextGIS Manager <ngman_intro>`.
 
