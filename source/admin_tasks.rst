@@ -649,9 +649,9 @@ Remove social networks sharing buttons
 Remove hamburger button	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: css
-	
-	#menu.header-nav__item {display:none;}
+.. code-block:: bash
+
+    span#rightMenuIcon {display:none;}
 	
 For return it back - open control panel by url http://username.nextgis.com/control-panel
 
