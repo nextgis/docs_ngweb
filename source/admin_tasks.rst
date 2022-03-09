@@ -708,7 +708,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. code-block:: css
 	
-	#menu.header-nav__item {display:none;}
+	span#rightMenuIcon {display:none;}
 
 Чтобы вернуть её обратно - откройте контрольную панель по url http://username.nextgis.com/control-panel
 
