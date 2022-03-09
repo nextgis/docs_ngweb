@@ -647,7 +647,7 @@ Remove social networks sharing buttons
     div.social-links {display:none;}
     
 Remove hamburger button	
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
