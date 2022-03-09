@@ -646,12 +646,12 @@ Remove social networks sharing buttons
 
     div.social-links {display:none;}
     
-    Remove hamburger button	
+Remove hamburger button	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: css
 	
-	span#rightMenuIcon {display:none;}
+	#menu.header-nav__item {display:none;}
 	
 For return it back - open control panel by url http://username.nextgis.com/control-panel
 
