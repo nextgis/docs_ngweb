@@ -8,9 +8,9 @@ How to administrate Web Maps
 
 There could be several Web Maps in NextGIS Web. For example one map is for work, another is for public access and third is for testing of layer styles.
 
-Web Maps have their own URL addresses. You can manage display Web Map access permission for different users and groups. 
+Each Web Map has its own URL address. Different access permissions for Web Map viewing can be set for users and groups. 
 
-Web Map displays layers. User can turn Web Maps on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map do not relate to resource groups in the Control Panel. There is no option to transfer layers between groups. Groups may be nested.
+Web Map displays layers. They can be turned on or off by the user. You can set the order of the layers, default layer visibility and create layer groups. Groups on a map do not relate to resource groups in the Control Panel. There is no option to transfer layers between groups. Groups may be nested.
 
 .. _ngw_map_create:
     
@@ -24,7 +24,7 @@ To create a Web Map, open the resource group where you want to add it, then in t
    :align: center
    :width: 16cm
 
-   Selection of “Web Map” action. 
+   Selection of “Web Map” action 
    
 Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`. 
 
@@ -33,9 +33,9 @@ Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`.
    :align: center
    :width: 16cm
 
-   “Create resource” dialog for Web Map.
+   “Create resource” dialog for Web Map
 
-Enter Web Map display name that will be visible in administrator interface and in the Web Maps viewer.
+Enter Web Map display name that will be visible in the administrator interface and in the Web Maps viewer.
 
 “Keyname” field is optional.
 
@@ -51,7 +51,7 @@ Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :
    :align: center
    :width: 16cm
 
-   “Extent and bookmarks” tab.
+   “Extent and bookmarks” tab
 
 Use the four fields to set the extent measured in degrees.
 
@@ -62,10 +62,13 @@ The field “Extent from layer” allows to set Web Map extent from the layer's 
    :align: center
    :width: 16cm
 
-   “Select resource” window.
+   “Select resource” window
 
 .. tip::
    Extent coordinates could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
+
+Bookmarks
+~~~~~~~~~
 
 In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  If a layer is set, the Web Map will show bookmarks panel with names defined by “Label attribute”.
 
@@ -79,7 +82,7 @@ In the “Layers” tab you can add layers, group or remove them using the butto
    :align: center
    :width: 16cm
 
-   "Layers" tab.
+   "Layers" tab
 
 To view the data of the layer on a map, you need to create at least one layer style. More on creating styles for different layer types :ref:`here <ngcom_styles>`. 
 
@@ -90,7 +93,7 @@ Layers of a particular map have several settings, see :numref:`admin_webmap_crea
    :align: center
    :width: 16cm
    
-   Layers tab of Create Resource dialog.
+   "Layers" tab of the "Create Resource" dialog
  
 "Enabled" checkbox sets default visibility of a layer.
 
@@ -98,7 +101,7 @@ The “Transparency” field sets the layer transparency on a map between 0% (op
 
 We recommend setting the "Adapter" field to "Image".
 
-For "Scale" parameters you may enter a range, ex. "1 : 10 000". Scale range could be set in the layer's style or the layer settings.
+You can also set up a scale range. Min scale corresponds to the smaller image, max scale - to the larger, more detailed image. For example, if you want a layer to be displayed in scales between 1 : 250,000 and 1 : 5,000, the higher number (250,000) is the minimal scale.
    
 .. note:: 
    Max and min scale can be set not only using the Web Map’s Layers tab, but also in the layer style itself (See an `example <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#osm-water-line>`_). If the layer should not be displayed in a certain range of scales, we recommend to mark it in the Web Map’s layer settings. If the scale limit is only set within the style, empty tiles will be generated in other scales, which is less efficient.
@@ -115,9 +118,9 @@ Basemaps
    :align: center
    :width: 16cm
 
-   "Basemaps" tab.
+   “Basemaps” tab
 
-A checkbox "Enabled" sets default visibility of a basemap.
+“Enabled” checkbox sets default visibility of a basemap.
 
 "Opacity" field sets basemap transparency on a map in a range between 0 (transparent) and 1 (opaque) with decimals separated by a full stop (ex. 0.2).
 
@@ -128,7 +131,7 @@ By default a Web Map is created with OpenStreetMap basemap. If you need a map wi
 create a new basemap, put 'blank' in name and URL fields, and add it to your Web Map. Then turn this newly created basemap off.
 
 After creating the map content and adjusting settings for all the layers, click "Save" button. A saved map will be shown in the list of maps. 
-Click an icon with a map in the list of Web Maps or a "Display" link in a window with Web Map properties to open the Web Map in the Web Maps viewer. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
+Click an icon with a map in the list of Web Maps or a "Display" link in a window with Web Map properties to open the Web Map in the Web Maps viewer. While the Web Map resource page is open, you can also open the map by clicking the "View" button on the right. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
 A Web Map URL displayed in the viewer may be shared with other users because it is static. 
 
 .. warning::  
