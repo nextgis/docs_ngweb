@@ -710,7 +710,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 	
 	#menu.header-nav__item {display:none;}
 
-Что бы вернуть её обратно - откройте контрольную панель по url http://username.nextgis.com/control-panel
+Чтобы вернуть её обратно - откройте контрольную панель по url http://username.nextgis.com/control-panel
 
 Убрать кнопки справа с логином
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
