@@ -10,7 +10,7 @@ There could be several Web Maps in NextGIS Web. For example one map is for work,
 
 Web Maps have their own URL addresses. You can manage display Web Map access permission for different users and groups. 
 
-Web Map displays layers. User can turn Web Maps on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map do not relate to resours groups in the Control Panel. There is no option to transfer layers between groups. Groups may be nested.
+Web Map displays layers. User can turn Web Maps on and off. You can set the order for layers, define layers default visibility, create group layers. Groups on a map do not relate to resource groups in the Control Panel. There is no option to transfer layers between groups. Groups may be nested.
 
 .. _ngw_map_create:
     
@@ -83,7 +83,7 @@ In the “Layers” tab you can add layers, group or remove them using the butto
 
 To view the data of the layer on a map, you need to create at least one layer style. More on creating styles for different layer types :ref:`here <ngcom_styles>`. 
 
-Layers of a particular map have several settings, see the :numref:`admin_webmap_create_layers`.
+Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
 .. figure:: _static/admin_webmap_create_layers_eng.png
    :name: admin_webmap_create_layers
@@ -96,12 +96,12 @@ Layers of a particular map have several settings, see the :numref:`admin_webmap_
 
 The “Transparency” field sets the layer transparency on a map between 0% (opaque) and 100% (completely transparent). 
 
-We recommend setting the "Adapter" field to "Image" (the entire map rendered as a single image) if there are no specific requirements. Alternatively, you can choose “Tiles” (images of 256 x 256 pixels).
+We recommend setting the "Adapter" field to "Image".
 
 For "Scale" parameters you may enter a range, ex. "1 : 10 000". Scale range could be set in the layer's style or the layer settings.
    
 .. note:: 
-   Max and min scale can be set not only using the Web Map’s Layers tab, but also in the layer style itself (See an example). If the layer should not be displayed in a certain range of scales, we recommend to mark in in the Web Map’s layer settings. If the scale limit is only set within the style, empty tiles will be generated in other scales, which is less efficient.
+   Max and min scale can be set not only using the Web Map’s Layers tab, but also in the layer style itself (See an `example <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#osm-water-line>`_). If the layer should not be displayed in a certain range of scales, we recommend to mark it in the Web Map’s layer settings. If the scale limit is only set within the style, empty tiles will be generated in other scales, which is less efficient.
 
 The order of the layers on a map can be different from the order in which they appear in the tree. Click "Layer order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
 
@@ -125,12 +125,12 @@ Web Map with no basemap
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
-create a new basemap, put 'blank' in name and URL and add it to your Web Map. Turn just added basemap off.
+create a new basemap, put 'blank' in name and URL fields, and add it to your Web Map. Then turn this newly created basemap off.
 
 After creating the map content and adjusting settings for all the layers, click "Save" button. A saved map will be shown in the list of maps. 
-Click an icon with a map in the list of Web Maps or a "Display" link in a window with Web Map properties to open the Web Map in the client application. Web Map client application is described in section :ref:`ngw_webmaps_client`.
-Address which is used for web client may be transfered to other users because it is static. 
+Click an icon with a map in the list of Web Maps or a "Display" link in a window with Web Map properties to open the Web Map in the Web Maps viewer. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
+A Web Map URL displayed in the viewer may be shared with other users because it is static. 
 
 .. warning::  
-   After a map is deleted, its address will no longer be available.
+   After a map is deleted, its URL will no longer be available.
 
