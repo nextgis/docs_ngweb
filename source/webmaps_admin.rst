@@ -70,7 +70,21 @@ The field “Extent from layer” allows to set Web Map extent from the layer's 
 Bookmarks
 ~~~~~~~~~
 
-In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  If a layer is set, the Web Map will show bookmarks panel with names defined by “Label attribute”.
+In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  If a layer is set, the Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” (see :numref:`bookmark_attribute`).
+
+.. figure:: _static/ngw_bookmarks.png
+   :name: ngw_bookmarks
+   :align: center
+   :width: 16cm
+   
+   Bookmarks tab and the bookmarks viewed on the map
+
+.. figure:: _static/bookmark_attribute.png
+   :name: bookmark_attribute
+   :align: center
+   :width: 16cm
+   
+   Setting attributes for the vector layer containing boundaries
 
 Web Map Layers
 ~~~~~~~~~~~~~~
@@ -107,6 +121,20 @@ You can also set up a scale range. Min scale corresponds to the smaller image, m
    Max and min scale can be set not only using the Web Map’s Layers tab, but also in the layer style itself (See an `example <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#osm-water-line>`_). If the layer should not be displayed in a certain range of scales, we recommend to mark it in the Web Map’s layer settings. If the scale limit is only set within the style, empty tiles will be generated in other scales, which is less efficient.
 
 The order of the layers on a map can be different from the order in which they appear in the tree. Click "Layer order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
+
+.. figure:: _static/admin_webmap_layerorders_1_cut.jpg
+   :name: ngweb_admin_webmap_layerorders_1
+   :align: center
+   :width: 16cm
+   
+   Layer order as is: satellite images obscure the layer where the buildings are marked
+
+.. figure:: _static/admin_webmap_layerorders_2_cut.jpg
+   :name: ngweb_admin_webmap_layerorders_2
+   :align: center
+   :width: 16cm
+   
+   Different layer arrangement: the layer marking the buildings is above the satellite images, while the layer groups on the left remain unchanged
 
 Basemaps
 ~~~~~~~~~
