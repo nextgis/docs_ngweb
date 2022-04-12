@@ -9,10 +9,10 @@ Adding resources
 NextGIS Web is built on a **resource-based** approach - each component of the system (layer, group, service) is a resource.
 One of these resources is a **layer** - a raster image or vector file (database table).
 
-An **unlimited** number of **styles** can be created for each layer - ways of visualizing geodata on a web map.
+For each layer you can create an **unlimited** number of **styles** - ways of visualizing geodata on a Web Map.
 
 Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
-First, you specify the parameters for the layer, and then you add a style that renders data on the web map.
+First, you specify the parameters for the layer, and then you add a style that renders data on the Web Map.
 
 .. _ngw_create_basemap:
 
@@ -38,7 +38,7 @@ In the opened window enter the name of the resource that will be displayed in th
    Basemap name
    
    
-The "Description" and "Metadata" of the resource is configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`).
+The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
 
 .. figure:: _static/ngweb_admin_basemap_desc_eng.png
    :name: ngweb_admin_basemap_desc
@@ -48,9 +48,9 @@ The "Description" and "Metadata" of the resource is configured on the correspond
    Basemap description
    
 
-On the "Basemap" must be given the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to specify it:
+In the “Basemap” tab you must enter the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to do so:
 
-* Use options from `QMS <https://qms.nextgis.com/>`_. If this flag is set then you need to find the required service in the search bar.
+* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  URL field will be filled in automatically and option “Use options from QMS” will be activated.
 * Enter the address manually. Works if the QMS flag is unchecked.
 
 .. figure:: _static/ngweb_admin_basemap_param_eng.png
@@ -66,7 +66,7 @@ On the "Basemap" must be given the URL-address of the TMS service (:numref:`ngwe
 Data Preview
 ------------
 
-The preview function allows you to see the uploaded data on the basemap without adding it on the web map.
+The preview function allows you to see the uploaded data on the basemap without adding it on the Web Map.
 
 .. note:: 
 	For vector data, previews are available for both the layer and the style. For rasters - for style only. For TMS and WFS layers, preview is also available.
@@ -130,30 +130,30 @@ On the "Description" tab you can add any text describing the content of this lay
    :align: center
    :width: 20cm
 
-   Description raster layer
+   Raster layer description 
 
 
-In the "Metadata" you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
+In the "Metadata" tab you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
 
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
    :width: 20cm
 
-   Metadata raster layer
+   Raster layer metadata 
    
    
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+The upload dialog indicates the maximum file size allowed by your tariff plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
-If you plan to add this raster in QGIS directly from your Web GIS, turn on Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
+If you plan to add this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
    :width: 20cm
 
-   Tab upload raster file  
+   Uploading raster file  
 
 After uploading a file, click the **Create** button.
 
@@ -162,16 +162,16 @@ After uploading a file, click the **Create** button.
 Raster style (QGIS)
 ^^^^^^^^^^^^^^^^^^^
 
-After a raster file is successfully uploaded and raster layer is created you need to create a QGIS style.
-This procedure is similar to adding vector layer `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_. You can create one in NextGIS QGIS.
-You will need this style to add the raster to a Web map when creating one (for more information see subsection :ref:`ngw_map_create`).
+After a raster file is successfully uploaded and a raster layer is created, you need to create a QGIS style.
+This procedure is similar to adding a vector layer `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_. You can create one in NextGIS QGIS.
+You will need this style to add the raster to a Web Map when creating one (for more information see subsection :ref:`ngw_map_create`).
 
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of utilities does not create alpha channel and only add a NoData value. 
-To transform NoData value to alpha channel use a command line utility 
+Most of utilities do not create an alpha channel and only add a NoData value. 
+To transform NoData value to an alpha channel use the command line utility 
 :program:`gdalwarp`. Here is an example of this command.
 
 .. code:: shell
@@ -223,17 +223,17 @@ On the "Description" tab you can add any text describing the content of this lay
    Description vector layer
 
 
-In the "Metadata" you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+In the "Metadata" tab you can add information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_eng.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
    :align: center
    :width: 20cm
 
-   Metadata vector layer
+   Vector layer metadata
 
 
-On the "Vector Layer" tab you need to upload a geodata file :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. Depending on the tariff plan the dialog indicates the maximum size of uploaded file (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. The upload dialog indicates the maximum file size allowed by your tariff plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multy-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
 
@@ -241,8 +241,7 @@ Below it is proposed to define advanced options for creating a vector layer. Dep
 * Fix whatever is possible
 * Fix without losing data
 
-Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated.
-There are two encodings to choose from - Unicode UTF-8 or Cyrillic Windows-1251. If ESRI Shapefile contains a file with encoding description [extension .cpg] then it will be taken into account when loading. For GeoJSON format encoding must always be UTF-8. `More about this <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_
+Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng.png
    :name: ngweb_admin_layers_create_vector_layer_upload
@@ -252,8 +251,8 @@ There are two encodings to choose from - Unicode UTF-8 or Cyrillic Windows-1251.
    Vector file upload tab
 
 
-After uploading the file and specifying the parameters click the **Create** button.
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `web map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+After uploading the file and specifying the parameters, click the **Create** button.
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map<https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 
 .. _ngw_vector_data_requirements:
@@ -272,8 +271,12 @@ Source files could be in the following formats:
    In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
-  
-If input data layer contains fields named id (ID) or geom(GEOM) they will be renamed on import. If id has meaningful identifiers they will automatically be turned into internal FIDs.
+   
+.. warning:: 
+	Avoid using Unicode symbols in data field names. While such data can be uploaded, you may experience problems working with it via WFS, in NextGIS Mobile or visualization (especially if styles are using such fields). Use plain Latin for field names and set up field aliases to show Unicode names.
+	
+	
+If input data layer contains fields named id (ID) or geom (GEOM), they will be renamed on import. If id has meaningful identifiers, they will automatically be turned into internal FIDs.
 
 .. _ngw_create_postgis_layer:
 
@@ -301,10 +304,9 @@ Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgi
 
    Create resource dialog for PostGIS connection.
 
-Enter display name that will be visible in administrator interface. Do not 
-confuse this name with a name of layers in a database. 
+Enter display name that will be visible in the administrator interface. Not to be confused with layer name in a database. 
 
-Field "Keyname" is optional.
+"Keyname" field is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
 
@@ -317,9 +319,9 @@ Switch from "Resource" to "PostGIS connection" tab, which is presented on :numre
 
    PostGIS connection tab of Create resource dialog.
 
-Here enter PostGIS database connection parameters to connect data for display.  
+In this tab you should enter connection parameters for the PostGIS database that you are going to take data from. Then click **Create**.
 
-Then you can add single PostGIS layers. Navigate to a group where you want create 
+Then you can add individual PostGIS layers. Navigate to a group where you want create 
 layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`).
 
 .. figure:: _static/admin_layers_create_postgis_layer_eng.png
@@ -523,7 +525,7 @@ URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsS
 Supported versions of WMS protocol: 1.1.1, 1.3
 
 .. note:: 
-   Identification requests to external WMS layers from Web maps are not supported yet.
+   Identification requests to external WMS layers from Web Maps are not supported yet.
 
 .. _ngw_create_wms_service:
 
@@ -678,7 +680,7 @@ Enter the name that will be displayed in the administrative interface (see :numr
    
    TMS layer name
 
-Caching provides faster rendering of web map layers. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_:
+Caching provides faster rendering of Web Map layers. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_:
 
 The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_settings_en`):
 
@@ -695,7 +697,7 @@ The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_set
    
    TMS_layer_settings_en
    
-After creating a TMS layer, the user can add it to the web map to display. No style is needed.
+After creating a TMS layer, the user can add it to the Web Map to display. No style is needed.
 
 .. _ngw_connect_tms_gdal:
 
@@ -883,9 +885,9 @@ With NextGIS Web application experience we recommend the following typical struc
 Typical structure ::
 
   Main resource group
-	Web maps
-		Master web map
-		Test web map
+	Web Maps
+		Master Web Map
+		Test Web Map
 	PostGIS connections
 		PostGIS on server
 	Data layers
