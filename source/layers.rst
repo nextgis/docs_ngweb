@@ -30,7 +30,7 @@ In the opened window enter the name of the resource that will be displayed in th
    Selection of "Basemap" action
    
    
-.. figure:: _static/ngweb_admin_basemap_name_eng.png
+.. figure:: _static/ngweb_admin_basemap_name_eng_2.png
    :name: ngweb_admin_basemap_name
    :align: center
    :width: 20cm
@@ -40,7 +40,7 @@ In the opened window enter the name of the resource that will be displayed in th
    
 The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
 
-.. figure:: _static/ngweb_admin_basemap_desc_eng.png
+.. figure:: _static/ngweb_admin_basemap_desc_eng_2.png
    :name: ngweb_admin_basemap_desc
    :align: center
    :width: 20cm
@@ -53,7 +53,7 @@ In the “Basemap” tab you must enter the URL-address of the TMS service (:num
 * Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  URL field will be filled in automatically and option “Use options from QMS” will be activated.
 * Enter the address manually. Works if the QMS flag is unchecked.
 
-.. figure:: _static/ngweb_admin_basemap_param_eng.png
+.. figure:: _static/ngweb_admin_basemap_param_eng_2.png
    :name: ngweb_admin_basemap_param
    :align: center
    :width: 20cm
@@ -115,7 +115,7 @@ To add a raster layer navigate to a group where you want to create it. In the ac
 In the dialog box specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
    :width: 20cm
@@ -133,7 +133,7 @@ On the "Description" tab you can add any text describing the content of this lay
    Raster layer description 
 
 
-In the "Metadata" tab you can write information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
+In the "Metadata" tab you can enter information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
 
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
@@ -144,11 +144,11 @@ In the "Metadata" tab you can write information in the "key-value" format (:numr
    
    
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-The upload dialog indicates the maximum file size allowed by your tariff plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
 If you plan to add this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
    :width: 20cm
@@ -181,6 +181,16 @@ To transform NoData value to an alpha channel use the command line utility
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
    
 
+Uploading Indexed Color Rasters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Indexed Color raster files are uploaded just like the RGB raster files. If the file is not in GeoTIFF format, you can convert it as follows:
+
+.. code-block:: shell
+
+    gdal_translate yaroslavl.map  yaroslavl.tif
+
+
 .. _ngw_create_vector_layer:
 
 Vector layer from file
@@ -205,7 +215,7 @@ In the "Create resource" action block select "Vector layer" (see :numref:`ngweb_
 In the opened tab, enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng_2.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
    :width: 20cm
@@ -220,7 +230,7 @@ On the "Description" tab you can add any text describing the content of this lay
    :align: center
    :width: 20cm
 
-   Description vector layer
+   Vector layer description
 
 
 In the "Metadata" tab you can add information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
@@ -233,7 +243,7 @@ In the "Metadata" tab you can add information in the "key-value" format (:numref
    Vector layer metadata
 
 
-On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. The upload dialog indicates the maximum file size allowed by your tariff plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multy-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
+On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shape` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
 
@@ -241,9 +251,9 @@ Below it is proposed to define advanced options for creating a vector layer. Dep
 * Fix whatever is possible
 * Fix without losing data
 
-Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_
+Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng_2.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 20cm
@@ -252,12 +262,12 @@ Next - the type of geometry, the presence/absence of multigeometries, Z-coordina
 
 
 After uploading the file and specifying the parameters, click the **Create** button.
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map<https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 
 .. _ngw_vector_data_requirements:
 
-Initial data requirements
+Input data requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Source files could be in the following formats: 
@@ -268,12 +278,12 @@ Source files could be in the following formats:
 * :term:`GML`
 
 .. note:: 
-   In case of ESRI Shapefile all components (dbf, shp, shx, prj and other files) 
+   In case of ESRI Shapefile, all components (dbf, shp, shx, prj and other files) 
    should be compressed to a zip-archive. Shapefile should have UTF-8 or 
    Windows-1251 encoding.
    
 .. warning:: 
-	Avoid using Unicode symbols in data field names. While such data can be uploaded, you may experience problems working with it via WFS, in NextGIS Mobile or visualization (especially if styles are using such fields). Use plain Latin for field names and set up field aliases to show Unicode names.
+	Avoid using Unicode symbols in data field names. While such data can be uploaded to the Web GIS and displayed on Web Maps, you can experience problems working with it in NextGIS Mobile or visualization (especially if labels are using such fields). Use plain Latin for field names and set up field aliases to show Unicode names.
 	
 	
 If input data layer contains fields named id (ID) or geom (GEOM), they will be renamed on import. If id has meaningful identifiers, they will automatically be turned into internal FIDs.
@@ -283,18 +293,25 @@ If input data layer contains fields named id (ID) or geom (GEOM), they will be r
 Vector layer from PostGIS
 -------------------------
 
-To add a vector layer from database PostgreSQL with PostGIS extension you need to create a
-resource PostGIS connection. It is enough to create one connection. 
-In actions pane "Create resource" click "PostGIS connection" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
+To add a vector layer from PostgreSQL database with PostGIS extension, you need to create a PostGIS connection resource. It is enough to create one connection. 
+
+.. _ngw_create_postgis_connection:
+
+Creating PostGIS connection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the "Create resource" actions pane click "PostGIS connection" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_eng.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
    :width: 16cm
 
-   Selection of "PostGIS connection" action.
+   Selection of "PostGIS connection" action
  
-Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgis_connection_resourse_description`
+Enter a display name that will be visible in the administrator interface. Not to be confused with layer name in a database. 
+
+"Keyname" field is optional.
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_description_eng.png
    :name: admin_layers_create_postgis_connection_resourse_description
@@ -302,11 +319,7 @@ Create PostGIS connection dialog is shown on :numref:`admin_layers_create_postgi
    :alt: map to buried treasure
    :width: 16cm
 
-   Create resource dialog for PostGIS connection.
-
-Enter display name that will be visible in the administrator interface. Not to be confused with layer name in a database. 
-
-"Keyname" field is optional.
+   Create resource dialog for PostGIS connection
 
 You can also add resource description and metadata on the corresponding tabs.
 
@@ -317,33 +330,33 @@ Switch from "Resource" to "PostGIS connection" tab, which is presented on :numre
    :align: center
    :width: 16cm
 
-   PostGIS connection tab of Create resource dialog.
+   PostGIS connection tab of Create resource dialog
 
 In this tab you should enter connection parameters for the PostGIS database that you are going to take data from. Then click **Create**.
 
-Then you can add individual PostGIS layers. Navigate to a group where you want create 
-layers and in actions pane "Create resource" select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`).
+Creating PostGIS layer
+^^^^^^^^^^^^^^^^^^^^^^
+
+Now you can add individual PostGIS layers. Navigate to a group where you want to create layers and in the  "Create resource" actions pane select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`).
 
 .. figure:: _static/admin_layers_create_postgis_layer_eng.png
    :name: admin_layers_create_postgis_layer
    :align: center
    :width: 16cm
 
-   Selection of "PostGIS layer" action.
-   
-Create resource dialog for PostGIS layer is presented on :numref:`admin_layers_create_postgis_layer_resourse_description`
+   Selection of "PostGIS layer" action
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_description_eng.png
    :name: admin_layers_create_postgis_layer_resourse_description
    :align: center
    :width: 16cm
 
-   Create resource dialog for PostGIS layer.
+   Create resource dialog for PostGIS layer
 
-Enter display name that will be visible in administrator interface and in map 
+Enter a display name that will be visible in administrator interface and in the map 
 layer tree. 
 
-Field "Keyname" is optional.
+"Keyname" field is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
 
@@ -355,60 +368,66 @@ Switch from "Resource" tab to "PostGIS layer" tab, which is presented on
    :align: center
    :width: 16cm
 
-   PostGIS layer tab of create resource dialog.
+   PostGIS layer tab of create resource dialog
 
 Then perform the following steps:
 
 #. From a dropdown list select a database connection (creation of a connection is described above).
-#. Enter a schema of a database where layer data is stored. 
-   Single database can store multiple schemas. Each schema contains tables and views. If there is only one schema its called public. For more information see :program:`PostgreSQL DBMS` manual.
-#. Enter Table name (PostGIS layer). 
+#. Select a schema of the database where layer data is stored. 
+   A single database can store multiple schemas. Each schema contains tables and views. If there is only one schema, it's called public. For more information see :program:`PostgreSQL DBMS` manual.
+#. Select the Table name (PostGIS layer). 
    You need to know names of tables and columns in your database. 
-   Display of tables and views is not a feature of NextGIS Web. To view them you can use: `NextGIS QGIS` or :program:`PgAdmin` software.
-#. Enter "ID column". 
-   When data is loaded into PostGIS using :program: NextGIS QGIS 
-   software an ogc_fid column is created. If data was loaded in another way the 
-   name of column may be different.
+   Display of tables and views is not a feature of NextGIS Web. You can veiw them using `NextGIS QGIS` or :program:`PgAdmin` software.
+#. Select an ID column. 
+   When data is loaded into PostGIS using :program: `NextGIS QGIS` 
+   software, an ogc_fid column is created. If the data was loaded another way, the 
+   column name may be different.
    An ID column should follow rules for data type: the value type should be a 
    number (**numeric**) and it should be a primary key.
-#. Enter "Geometry column" name (if data was loaded to PostGIS using  
-   :program:`NextGIS QGIS` software usually a geometry column called 
-   wkb_geometry is created. If data is loaded in another way the name of column 
+#. Select the Geometry column (if the data was loaded to PostGIS using  
+   :program:`NextGIS QGIS` software, usually a geometry column called 
+   wkb_geometry is created. If the data was loaded some other way, the name of the column 
    may be different).
 #. Parameters "Geometry type", "Coordinate system",
-   "Attribute definitions" and "SRID" are not required so you can use default 
+   "Attribute definitions" and "SRID" are not required, so you can use default 
    values.
 
-NextGIS Web software supports adding of tables with point, line and polygon geometries stored in a single geometry column. 
-This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points in a single table. In this case in NextGIS Web you need to add three different layers for each type of geometry and select appropriate geometry type in "Geometry type" parameter.
+After specifying all the necessery parameters, click **Create**.
 
-After layer is created you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in "Label attribute" column.
 
-If structure of a database has changed (column names, column types, number of columns, table names etc.) you need to update attribute definitions in layer properties. To perform changes select in actions pane :"Update" and then on "PostGIS layer" tab change "Attribute definitions" to "Reload" and click "Save".
+Details
+^^^^^^^
+
+NextGIS Web software supports tables with point, line and polygon geometries stored in a single geometry column. 
+This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points. In this case, in NextGIS Web you need to add three different layers, one for each type of geometry, and select the appropriate "Geometry type" parameter for each layer.
+
+After a layer is created, you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in the "Label attribute" column.
+
+If the structure of the database changes (column names, column types, number of columns, table names etc.), you need to update the attribute definitions in the layer properties. Select "Update" in the actions pane and then on the "PostGIS layer" tab change "Attribute definitions" to "Reload" and click "Save".
 
 PostGIS layer troubleshooting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You created a connection and trying to create a PostGIS layer based on it and getting errors. 
+You created a connection, but when you try to create a PostGIS layer based on it, you get errors. 
 
 If you get:
 
 1. Cannot connect to the database!
 
-Check if the database is available, is it up, do you have right credentials? You can all these using pgAdmin or QGIS.
+Check the database: is it available, do you have the right credentials? You can do it using pgAdmin or QGIS.
 
-Note that databases go up and down and credentials change.
+Note that databases may be down temporarily and credentials might change.
 
 Create layers with conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In :program:`NextGIS Web` you can not define queries using a WHERE SQL expression. 
+In :program:`NextGIS Web` you can not define queries using WHERE SQL clause. 
 This provides additional security (prevention of SQL Injection attack). To 
-provide query capability you need to create views with appropriate queries.
+provide query capability you need to create views with appropriate queries in the database.
 
 To do this connect to PostgreSQL/PostGIS database using :program:`pgAdminIII`, 
 then navigate to data schema where you want to create a view, right click tree 
-item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you can right click on schema name and select "New object" and then "New view". Enter the following information to create new view dialog:
+item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you can right click on schema name and select "New object" and then "New view". In the opened dialog, enter the following information:
 
 #. View name («Properties» tab).
 #. Data schema where to create a view («Properties» tab).
@@ -419,13 +438,13 @@ item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you 
    :align: center
    :width: 16cm
 
-   Main dialog of :program:`pgAdminIII` software.
+   Main dialog of :program:`pgAdminIII` software
 
    The numbers indicate: 1. – Database items tree; 2 – a button for  
    table open (is active if a table is selected in tree); 3 – SQL query for  
    view.
 
-After that you can display a view to check if query is correct without closing :program:`pgAdminIII` (see  item 2 in :numref:`pgadmin3`). 
+After that you can display a view to check if the query is correct without closing :program:`pgAdminIII` (see  item 2 in :numref:`pgadmin3`). 
 
 .. _ngw_create_wms_layer:
 
