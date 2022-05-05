@@ -302,7 +302,7 @@ Creating PostGIS connection
 
 In the "Create resource" actions pane click "PostGIS connection" (see :numref:`admin_layers_create_postgis_connection_resourse`). 
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_eng.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_eng_2.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
    :width: 16cm
@@ -323,9 +323,24 @@ Enter a display name that will be visible in the administrator interface. Not to
 
 You can also add resource description and metadata on the corresponding tabs.
 
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_description_eng_2.png
+   :name: admin_layers_create_postgis_connection_resourse_description_eng_2
+   :align: center
+   :alt: map to buried treasure
+   :width: 16cm
+   
+   PostGIS connection description
+   
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_eng_2.png
+   :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
+   :align: center
+   :width: 16cm
+
+   PostGIS connection metadata
+
 Switch from "Resource" to "PostGIS connection" tab, which is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
 
-.. figure:: _static/admin_layers_create_postgis_connection_db_logins_eng.png
+.. figure:: _static/admin_layers_create_postgis_connection_db_logins_eng_2.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
    :width: 16cm
@@ -339,15 +354,15 @@ Creating PostGIS layer
 
 Now you can add individual PostGIS layers. Navigate to a group where you want to create layers and in the  "Create resource" actions pane select "PostGIS layer" (see :numref:`admin_layers_create_postgis_layer`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_eng.png
+.. figure:: _static/admin_layers_create_postgis_layer_eng_2.png
    :name: admin_layers_create_postgis_layer
    :align: center
    :width: 16cm
 
    Selection of "PostGIS layer" action
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_description_eng.png
-   :name: admin_layers_create_postgis_layer_resourse_description
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_eng_2.png
+   :name: admin_layers_create_postgis_layer_resourse_name_eng
    :align: center
    :width: 16cm
 
@@ -360,10 +375,17 @@ layer tree.
 
 You can also add resource description and metadata on the corresponding tabs.
 
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_eng_2.png
+   :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
+   :align: center
+   :width: 25cm
+
+   PostGIS layer metadata
+
 Switch from "Resource" tab to "PostGIS layer" tab, which is presented on 
 :numref:`admin_layers_create_postgis_layer_tablename`. 
 
-.. figure:: _static/admin_layers_create_postgis_layer_tablename_eng.png
+.. figure:: _static/admin_layers_create_postgis_layer_tablename_eng_2.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
    :width: 16cm
@@ -388,8 +410,7 @@ Then perform the following steps:
    :program:`NextGIS QGIS` software, usually a geometry column called 
    wkb_geometry is created. If the data was loaded some other way, the name of the column 
    may be different).
-#. Parameters "Geometry type", "Coordinate system",
-   "Attribute definitions" and "SRID" are not required, so you can use default 
+#. Parameters "Geometry type", "Attribute definitions" and "SRID" are not required, so you can use default 
    values.
 
 After specifying all the necessery parameters, click **Create**.
@@ -489,11 +510,6 @@ Switch from "Resource" tab to "WMS connection" tab, which is presented on :numre
 
 Here enter  WMS server connection parameters from which you want to display data. 
 
-.. note::
-   Parameters to add a WMS layer for Public cadastral map by Rosreestr:
-
-URL http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WmsServer?
-
 Supported versions of WMS protocol: 1.1.1, 1.3
 
 Then you can add single WMS layers. Navigate to a group where you want create 
@@ -579,7 +595,7 @@ confuse this name with a name of layers in a database.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list (see (see :numref:`ngweb_admin_layers_create_wms_service_url`)  For each added style you should set a unique key. You can copy it from the name. 
+Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list (see :numref:`ngweb_admin_layers_create_wms_service_url`)  For each added style you should set a unique key. You can copy it from the name. 
 
 .. figure:: _static/admin_layers_create_wms_service_url_eng.png
    :name: ngweb_admin_layers_create_wms_service_url
@@ -837,7 +853,7 @@ Create resource dialog for resource group is presented on :numref:`admin_layers_
 
    Create resource dialog for resource group
 
-In the opened dialog enter the name of the resource that will be displayed in the administrator interface and in the map layer tree, and then click "Create". 
+In the opened dialog enter the name of the resource that will be displayed in the administrator interface and in the map layer tree, and then click **Create**. 
 
 "Keyname" field is optional.
 
@@ -902,7 +918,7 @@ To change anything in a lookup table click "Update"  in the "Action" pane. The w
 SVG Marker Library
 ----------------------
 
-In Web GIS you can create SVG marker libraries to be dysplayed using QGIS styles of vector layers. To create a library, select SVG marker library in the Create Resource pane on the right (see :numref:`select_svg_lib`).
+In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. To create a library, select SVG marker library in the Create Resource pane on the right (see :numref:`select_svg_lib`).
 
 .. figure:: _static/select_svg_lib_eng.png
    :name: select_svg_lib
