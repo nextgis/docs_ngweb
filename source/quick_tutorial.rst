@@ -80,13 +80,13 @@ To create a vector layer from :term:`PostGIS` follow these steps:
 
 1. Add a PostGIS connection (user login and password are required for access to 
    database)
-2. Add layers from created connection
+2. Add layers using created connection
 3. Create styles for added layers
 
 To create a raster layer follow these steps:
 
-1. Prepare a raster file to meet the requirements
-2. Create a raster layer from a file through administrator interface
+1. Prepare a raster file meeting the requirements
+2. Create a raster layer from a raster file
 3. Add a style to raster layer
 
 
