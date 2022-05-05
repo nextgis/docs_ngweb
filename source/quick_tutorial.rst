@@ -23,8 +23,8 @@ NextGIS Web has the following features:
   files in :abbr:`GIS (geographical information system)` formats: :term:`ESRI Shape`,  :term:`GeoJSON`,  :term:`GeoTIFF`,  :term:`GeoPackage` and many others.
 * Vector data could be downloaded in the following formats: :term:`GeoJSON`, :term:`CSV`, :term:`ESRI Shape`, :term:`DXF`, Mapinfo TAB, MIF/MID, GeoPackage.
 * Map styles could be imported from :term:`QGIS` project or could be set manually
-* Could act as a server for :term:`TMS`, :term:`WMS`, :term:`WFS`
-* Could act as a client for :term:`TMS` and :term:`WMS`
+* Act as a server for :term:`TMS`, :term:`WMS`, :term:`WFS`
+* Act as a client for :term:`TMS` and :term:`WMS`
 * User can :ref:`add photos to records <ngw_add_photos>`, 
   :ref:`change records attributes <ngw_attributes_edit>`, :ref:`with a support  
   for a WFS-T protocol for editing <ngw_wfs_service>`.
