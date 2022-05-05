@@ -17,17 +17,14 @@ software.
 
 NextGIS Web has the following features:
 
-* Display of maps in web browser (different maps with different layers and  
-  styles)
-* Flexible access permissions management
+* Create and display maps in web browser (unlimited number of maps with different layers and styles)
+* Flexible access management
 * Geodata could be loaded from :term:`PostGIS` or imported from  
-  files in :abbr:`GIS (geographical information system)` formats 
-  :term:`ESRI Shape`,  :term:`GeoJSON` or :term:`GeoTIFF`
-* Vector data could be downloaded in the following formats: :term:`GeoJSON`, 
-  :term:`CSV`, :term:`ESRI Shape`
+  files in :abbr:`GIS (geographical information system)` formats: :term:`ESRI Shape`,  :term:`GeoJSON`,  :term:`GeoTIFF`,  :term:`GeoPackage` and many others.
+* Vector data could be downloaded in the following formats: :term:`GeoJSON`, :term:`CSV`, :term:`ESRI Shape`, :term:`DXF`, Mapinfo TAB, MIF/MID, GeoPackage.
 * Map styles could be imported from :term:`QGIS` project or could be set manually
 * Could act as a server for :term:`TMS`, :term:`WMS`, :term:`WFS`
-* Could act as a client for :term:`WMS`
+* Could act as a client for :term:`TMS` and :term:`WMS`
 * User can :ref:`add photos to records <ngw_add_photos>`, 
   :ref:`change records attributes <ngw_attributes_edit>`, :ref:`with a support  
   for a WFS-T protocol for editing <ngw_wfs_service>`.
