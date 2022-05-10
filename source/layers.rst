@@ -146,7 +146,7 @@ In the "Metadata" tab you can enter information in the "key-value" format (:numr
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
 The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
-If you plan to add this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
+If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer_upload
@@ -399,9 +399,9 @@ Then perform the following steps:
    A single database can store multiple schemas. Each schema contains tables and views. If there is only one schema, it's called public. For more information see :program:`PostgreSQL DBMS` manual.
 #. Select the Table name (PostGIS layer). 
    You need to know names of tables and columns in your database. 
-   Display of tables and views is not a feature of NextGIS Web. You can veiw them using `NextGIS QGIS` or :program:`PgAdmin` software.
+   Display of tables content is is not a feature of NextGIS Web. You can view them using :program:`NextGIS QGIS` or :program:`pgAdmin` software.
 #. Select an ID column. 
-   When data is loaded into PostGIS using :program: `NextGIS QGIS` 
+   When data is loaded into PostGIS using :program:`NextGIS QGIS` 
    software, an ogc_fid column is created. If the data was loaded another way, the 
    column name may be different.
    An ID column should follow rules for data type: the value type should be a 
@@ -435,7 +435,7 @@ If you get:
 
 1. Cannot connect to the database!
 
-Check the database: is it available, do you have the right credentials? You can do it using pgAdmin or QGIS.
+Check the database: is it available, do you have the right credentials? You can do it using :program:`pgAdmin` or :program:`NextGIS QGIS`.
 
 Note that databases may be down temporarily and credentials might change.
 
@@ -446,7 +446,7 @@ In :program:`NextGIS Web` you can not define queries using WHERE SQL clause.
 This provides additional security (prevention of SQL Injection attack). To 
 provide query capability you need to create views with appropriate queries in the database.
 
-To do this connect to PostgreSQL/PostGIS database using :program:`pgAdminIII`, 
+To do this connect to PostgreSQL/PostGIS database using :program:`pgAdmin`, 
 then navigate to data schema where you want to create a view, right click tree 
 item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you can right click on schema name and select "New object" and then "New view". In the opened dialog, enter the following information:
 
@@ -459,20 +459,20 @@ item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you 
    :align: center
    :width: 16cm
 
-   Main dialog of :program:`pgAdminIII` software
+   Main dialog of :program:`pgAdmin` software
 
    The numbers indicate: 1. – Database items tree; 2 – a button for  
    table open (is active if a table is selected in tree); 3 – SQL query for  
    view.
 
-After that you can display a view to check if the query is correct without closing :program:`pgAdminIII` (see  item 2 in :numref:`pgadmin3`). 
+After that you can display a view to check if the query is correct without closing :program:`pgAdmin` (see  item 2 in :numref:`pgadmin3`). 
 
 .. _ngw_create_wms_layer:
 
 WMS layer
 ---------
 
-NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check if this coordinate system is available for a particular layer by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NGW requests data in 3857 and the server does not support that coordinate system.
+NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check if this coordinate system is available for a particular layer by making a GetCapabilites request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NextGIS Web requests data in EPSG:3857 and this particular server does not support that coordinate system.
 
 To add a WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers.
 In the "Create resource" actions pane click  "WMS connection" (see :numref:`admin_layers_create_wms_connection`). 
@@ -512,8 +512,7 @@ Here enter  WMS server connection parameters from which you want to display data
 
 Supported versions of WMS protocol: 1.1.1, 1.3
 
-Then you can add single WMS layers. Navigate to a group where you want create 
-WMS layers and in actions pane "Create resource" select "WMS layer" (see :numref:`admin_layers_create_wms_layer`). 
+Now you can add individual WMS layers. Navigate to a group where you want to create WMS layers and in actions pane "Create resource" select "WMS layer" (see :numref:`admin_layers_create_wms_layer`). 
 
 .. figure:: _static/admin_layers_create_wms_layer_eng.png
    :name: admin_layers_create_wms_layer
@@ -522,7 +521,7 @@ WMS layers and in actions pane "Create resource" select "WMS layer" (see :numref
 
    Selection of "WMS layer" action
 
-Create resource dialog for WMS layer is presented :numref:`admin_layers_create_wms_layer_name`.
+Create resource dialog for WMS layer is presented on :numref:`admin_layers_create_wms_layer_name`
 
 .. figure:: _static/admin_layers_create_wms_layer_name_eng.png
    :name: admin_layers_create_wms_layer_name
@@ -568,7 +567,7 @@ After configuring all the parameters click **Create**.
 WMS service
 ------------
 
-NextGIS Web software could perform as WMS server. This protocol is used to provide images with a requested extent. 
+NextGIS Web software can perform as WMS server. This protocol is used to provide images with a requested extent. 
 
 To deploy a WMS service you need to add a resource. In the "Create resource" actions pane click "WMS service" (see :numref:`admin_layers_create_wms_service`). 
 
@@ -607,13 +606,13 @@ Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`
 After a resource is created, you will see a message with WMS service URL which you can use in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`. 
 Then you need to set access permissions for WMS service (see :ref:`ngw_access_rights`).
 
-NextGIS Web layer could be added to desktop, mobile and web gis in different ways.
+NextGIS Web layer can be added to desktop, mobile and Web GIS in different ways.
 
 
 Using WMS service connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-NextGIS Web acts as a WMS server. Any WMS layes could be added to a software that supports WMS layers. You need to know the WMS service URL. You can get in on the WMS service page. The link may look like this:
+NextGIS Web acts as a WMS server: WMS services created in NextGIS Web can be added to any software that supports WMS protocol. For that you need to know the WMS service URL. You can get it on the WMS service page. The link may look like this:
 
 .. code:: html
 
@@ -740,7 +739,7 @@ After creating a TMS layer, the user can add it to the Web Map to display. No st
 Using TMS connection
 ^^^^^^^^^^^^^^^^^^^^
 
-NextGIS Web style resources could be accessed as TMS. The link should look like this:
+NextGIS Web style resources can be accessed as TMS. The link should look like this:
 
 .. code:: html
 
@@ -785,7 +784,7 @@ WFS layer setup is performed the same way as for WMS service but you add layers 
 
 NextGIS Web acts as WFS server and publishes WFS services based on vector layers. Third party software can use these services to edit vector data on server.
 
-To deploy a WFS service click "WFS service" on "Create resource" actions panel (see :numref:`admin_layers_create_wfs_service`). 
+To deploy a WFS service click "WFS service" on "Create resource" actions pane (see :numref:`admin_layers_create_wfs_service`). 
 
 .. figure:: _static/admin_layers_create_wfs_service_eng.png
    :name: admin_layers_create_wfs_service
@@ -819,19 +818,19 @@ Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`
 
    WFS service tab of Create resource dialog
 
-For each layer you can set a limit for the number of features transfered at once.
-By default the value is 1000. If this parameter is empty the limit will be disabled and all features will be trasfered to the client. This could result in high server load and significant timeouts if volume of transfered data is very high.
+For each layer you can set a limit for the number of features returned from the vector layer. 
+By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
 
 After a resource is created you need to open it in administrator interface one more time. You will see a message with WFS service URL which you can use in other software, for example :program:`NextGIS QGIS`. 
 
-You can set access permissions for WFS service if needed. See  section :ref:`ngw_access_rights`.
+You can set access permissions for WFS service if needed. See section :ref:`ngw_access_rights`.
 
 .. _ngw_resources_group:
 
-Creation of a resource group
+Creation of a Resource group
 ----------------------------
 
-Resources can be arranged in groups. For example, you can have special groups for base layers, satellite images and special data.
+Resources can be arranged in groups. For example, you can have special groups for base layers, satellite images and topical data.
 
 Groups help organize the layers in the Control panel and make it easier to manage access permissions. 
 
@@ -906,7 +905,7 @@ In the opened window there are options "Add" and "Delete". Click **Add**, choose
 
    Creation of new resource
 
-To change anything in a lookup table click "Update"  in the "Action" pane. The window of resource update will open. Switch to "Lookup table" tab where you can change the table's contents:
+To change anything in a lookup table click "Update"  in the "Action" pane. The resource update dialog will open. Switch to "Lookup table" tab where you can change the table's contents:
 
 * add a new key-value pair
 * change a current key-value pair
@@ -918,7 +917,7 @@ To change anything in a lookup table click "Update"  in the "Action" pane. The w
 SVG Marker Library
 ----------------------
 
-In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. To create a library, select SVG marker library in the Create Resource pane on the right (see :numref:`select_svg_lib`).
+In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. To create a library, select SVG marker library in the Create Resource actions pane on the right (see :numref:`select_svg_lib`).
 
 .. figure:: _static/select_svg_lib_eng.png
    :name: select_svg_lib
