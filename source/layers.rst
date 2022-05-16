@@ -195,7 +195,7 @@ Indexed Color raster files are uploaded just like the RGB raster files. If the f
 
 Vector layer from file
 -----------------------
-You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML` and :term:`GML` formats in NextGIS Web.
+You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` and :term:`GeoPackage` formats in NextGIS Web.
 
 .. _ngw_process_create_vector_layer:
 
@@ -243,7 +243,7 @@ In the "Metadata" tab you can add information in the "key-value" format (:numref
    Vector layer metadata
 
 
-On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML` or :term:`GML` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
+On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
 
@@ -276,6 +276,9 @@ Source files could be in the following formats:
 * :term:`GeoJSON`
 * :term:`KML`
 * :term:`GML`
+* :term:`GeoPackage`
+
+Use :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>` if you need to upload data in other formats.
 
 .. note:: 
    In case of ESRI Shapefile, all components (dbf, shp, shx, prj and other files) 
