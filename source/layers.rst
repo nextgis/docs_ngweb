@@ -197,7 +197,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Векторный слой из файла
 -----------------------
 
-В NextGIS Web можно создавать векторные слои на основе геоданных в форматах :term:`ESRI Shape`, :term:`GeoJSON`, :term:`KML` и :term:`GML`. 
+В NextGIS Web можно создавать векторные слои на основе геоданных в форматах :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` и :term:`GeoPackage`. 
 
 .. _ngw_process_create_vector_layer:
 
@@ -207,7 +207,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
 В блоке операций "Создать ресурс" выберите из списка "Векторный слой" (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_rus_2.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
    :width: 20cm
@@ -217,7 +217,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 В открывшемся окне укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
 Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_2.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
    :width: 20cm
@@ -243,7 +243,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
    Метаданные векторного слоя
 
-На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoJSON, GML или KML. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoJSON, GML, KML или GeoPackage. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
 
 Ниже предлагается определить дополнительные параметры создания векторного слоя. В зависимости от качества данных можно следующим образом обрабатывать ошибки геометрии при загрузке файла:
@@ -252,9 +252,9 @@ NextGIS Web может принимать многослойные наборы 
 * Исправлять без потери данных (если это будет возможно)
 * Исправлять с возможными потерями
 
-Исходя из данных далее указываются тип геометрии, наличие/отсутствие мультигеометрий, Z-координаты и источник FID (field-ID, определять автоматически или указать из определенного поля). На выбор представлены две кодировки - Юникод UTF-8 или Кириллица Windows-1251. Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. Для формата GeoJSON кодировка всегда должна быть UTF-8. Подробнее о дополнительных параметрах можно прочитать `здесь <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_.
+Исходя из данных далее указываются тип геометрии, наличие/отсутствие мультигеометрий, Z-координаты и источник FID (field-ID, определять автоматически или указать из определенного поля). Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. Для формата GeoJSON кодировка всегда должна быть UTF-8. Подробнее о дополнительных параметрах можно прочитать `здесь <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus_2.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 20cm
@@ -273,16 +273,17 @@ NextGIS Web может принимать многослойные наборы 
 
 В качестве исходного файла можно загружать следующие форматы:
 
-* :term:`ESRI Shape`
+* :term:`ESRI Shapefile`
 * :term:`GeoJSON`
 * :term:`KML`
 * :term:`GML`
+* :term:`GeoPackage`
 
+Если нужно загрузить данные в другом формате, вы можете использовать :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>`.
 
 .. note:: 
    В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
    упакованы в архив формата Zip. 
-   Шейп-файл должен быть в кодировке UTF-8 или Windows-1251.
 
 .. note:: 
    Мы рекомендуем **не** использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
@@ -305,7 +306,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Для этого в блоке операций "Создать ресурс" следует выбрать "Cоединение PostGIS" (см. :numref:`admin_layers_create_postgis_connection_resourse`). 
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_rus.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_rus_2.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
    :width: 20cm
@@ -314,7 +315,7 @@ NextGIS Web может принимать многослойные наборы 
 
 В открывшемся окне укажите наименование PostGIS соединения (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и название слоёв в базе данных). Поле «Ключ» является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus_2.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_name
    :align: center
    :width: 20cm
