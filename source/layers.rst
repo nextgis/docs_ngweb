@@ -361,20 +361,20 @@ NextGIS Web может принимать многослойные наборы 
 
 Далее можно приступать к добавлению отдельных слоёв PostGIS. Для этого в блоке операций необходимо выбрать "Слой PostGIS" (см. :numref:`admin_layers_create_postgis_layer`). 
 
-.. figure:: _static/admin_layers_create_postgis_layer_rus.png
+.. figure:: _static/admin_layers_create_postgis_layer_rus_2.png
    :name: admin_layers_create_postgis_layer
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Выбор действия "Слой PostGIS"
    
    
 На вкладке "Ресурс" указывается наименование слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
    
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование Слоя PostGIS
    
@@ -386,7 +386,7 @@ NextGIS Web может принимать многослойные наборы 
    :align: center
    :width: 20cm
 
-   Описание слоя PostGIS.=
+   Описание слоя PostGIS
    
 
 На соответствующей вкладке есть возможность добавить метданные слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_metadata`).
@@ -401,10 +401,10 @@ NextGIS Web может принимать многослойные наборы 
   
 На вкладке "Слой PostGIS" настраиваются параметры слоя (:numref:`ngweb_admin_layers_create_postgis_layer_tablename`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_tablename_rus.png
+.. figure:: _static/admin_layers_create_postgis_layer_tablename_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Окно параметров слоя PostGIS
    
@@ -412,15 +412,15 @@ NextGIS Web может принимать многослойные наборы 
 Здесь необходимо выполнить следующие действия:
 
 #. Из выпадающего списка выбрать подключение к :abbr:`БД (база данных)` (созданное ранее).
-#. Ввести схему :abbr:`БД (база данных)`, в которой находится слой PostGIS. 
+#. Выбрать схему :abbr:`БД (база данных)`, в которой находится слой PostGIS. 
 	В одной базе данных PostgreSQL может быть несколько схем, внутри каждой схемы лежат таблицы и представления. Если схема одна, то она называется public. Подробнее смотрите в руководствах по :program:`СУБД PostgreSQL`.
-#. Ввести название таблицы (слоя PostGIS). 
+#. Выбрать название таблицы (слоя PostGIS). 
 	Вам потребуется знать названия ваших таблиц и полей в базе данных. 
 	Отображение таблиц и представлений не входит в задачи NextGIS Web. Для просмотра можно воспользоваться :program:`NextGIS QGIS` или :program:`PgAdmin`.
-#. Ввести "Поле ID". 
+#. Выбрать "Поле ID". 
 	При загрузке данных в PostGIS через NextGIS QGIS обычно создается поле с названием ogc_fid, при загрузке иным способом название поля может отличаться.
 	Поле ID должно удовлетворять ограничениям на тип данных: быть числовым (**numeric**) и являться первичным ключом.
-#. Ввести "Поле геометрии".
+#. Выбрать "Поле геометрии".
 	При загрузке данных в PostGIS через :program:`NextGIS QGIS`  обычно создается поле геометрии с названием wkb_geometry, при загрузке иным способом название поля может отличаться.
 #. Поля "Тип геометрии", "Система координат", "Описание атрибутов" и "SRID" являются не обязательными, и их значения могут быть оставлены по умолчанию.
 
@@ -461,7 +461,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Проверьте, доступна ли база данных к которой вы подключаетесь, правильная ли у вас учетная запись. Это удобно делать через pgAdmin или QGIS.
 
-Имейте в виду, что база может быть временно отключена или изменились параметры доступа.
+Имейте в виду, может быть так, что база временно отключена или изменились параметры доступа.
 
 Создание слоя с условиями
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -505,7 +505,7 @@ Cлой WMS
 координат для подключаемого слоя можно, сделав запрос ``GetCapabilites`` к серверу и 
 посмотрев результат. Например, слой WMS, предоставляемый Geofabrik (GetCapabilities), 
 умеет отдавать данные в EPSG:4326 и EPSG:900913. Хотя фактически EPSG:900913 и EPSG:3857 - это одно и то же, 
-но NextGIS WEB запрашивает данные в 3857, а этот сервер WMS такую проекцию не поддерживает.
+но NextGIS WEB запрашивает данные в EPSG:3857, а этот сервер WMS такую проекцию не поддерживает.
 
 .. _ngw_create_wms_connection:
 
@@ -514,20 +514,20 @@ Cлой WMS
 
 Для добавления слоя WMS необходимо сначала создать подключение к серверу WMS (достаточно одного соединения для множества слоёв). Для этого в блоке операций «Создать ресурс» следует выбрать **Cоединение WMS** (см. :numref:`admin_layers_create_wms_connection`). 
 
-.. figure:: _static/admin_layers_create_wms_connection_rus.png
+.. figure:: _static/admin_layers_create_wms_connection_rus_2.png
    :name: admin_layers_create_wms_connection
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Выбор действия "Cоединение WMS"
    
 
 В открывшемся окне укажите наименование WMS соединения (:numref:`admin_layers_create_wms_connection_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и названия слоёв в базе данных). Поле «Ключ» является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_connection_name_rus.png
+.. figure:: _static/admin_layers_create_wms_connection_name_rus_2.png
    :name: admin_layers_create_wms_connection_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование Соединения WMS
 
@@ -558,10 +558,10 @@ Cлой WMS
 * Версия WMS
 * Возможности (управление запросом ``GetCapabilites`` к WMS-серверу)
 
-.. figure:: _static/admin_layers_create_wms_connection_url_rus.png
+.. figure:: _static/admin_layers_create_wms_connection_url_rus_2.png
    :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Окно параметров Cоединения WMS
 
@@ -574,7 +574,7 @@ Cлой WMS
 
 Далее можно приступать к добавлению отдельных слоёв WMS. Для этого следует перейти в группу, где необходимо создать слой и в блоке операций выбрать **Слой WMS** (см. :numref:`admin_layers_create_wms_layer`). 
 
-.. figure:: _static/admin_layers_create_wms_layer_rus.png
+.. figure:: _static/admin_layers_create_wms_layer_rus_2.png
    :name: admin_layers_create_wms_layer
    :align: center
    :width: 20cm
@@ -584,10 +584,10 @@ Cлой WMS
 
 На вкладке **Ресурс** указывается наименование слоя WMS (:numref:`ngweb_admin_layers_create_wms_layer_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_layer_name_rus.png
+.. figure:: _static/admin_layers_create_wms_layer_name_rus_2.png
    :name: ngweb_admin_layers_create_wms_layer_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование слоя WMS
 
@@ -627,7 +627,7 @@ Cлой WMS
 
 На последней вкладке добавляются вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`). Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
 
-.. figure:: _static/admin_layers_create_wms_layer_vendorparameters_rus.png
+.. figure:: _static/admin_layers_create_wms_layer_vendorparameters_rus_2.png
    :name: ngweb_admin_layers_create_wms_layer_vendorparameters
    :align: center
    :width: 20cm
