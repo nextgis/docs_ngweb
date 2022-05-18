@@ -607,7 +607,7 @@ confuse this name with a name of layers in a database.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list (see :numref:`ngweb_admin_layers_create_wms_service_url`)  For each added style you should set a unique key. By default, the name of the style is automatically copied.
+Switch from "Resource" tab to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to styles of required layers to a list (see :numref:`ngweb_admin_layers_create_wms_service_url`).
 
 .. figure:: _static/admin_layers_create_wms_service_url_eng_2.png
    :name: ngweb_admin_layers_create_wms_service_url
@@ -822,7 +822,7 @@ confuse this name with a name of layers in a database.
 
 You can also add resource description and metadata on the corresponding tabs.
  
-Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`). For each layer you should set a unique key. By default the name of the layer is automatically copied, but make sure it doesn't include any special symbols, only letters and numbers. 
+Switch from "Resource" tab to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url`. Add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`). For each layer you should set default count of returned features. By default it's 1000. Leaving this field blank removes all restrictions so that all the features are returned. It may however lead to a higher server load and cause considerable delays while processing large amounts of data. 
 
 .. figure:: _static/admin_layers_create_wfs_service_url_eng_2.png
    :name: ngweb_admin_layers_create_wfs_service_url
