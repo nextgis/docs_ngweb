@@ -666,7 +666,7 @@ Cлой WMS
 На вкладке "Ресурс" указывается наименование сервиса WMS (:numref:`admin_layers_create_wms_service_name_rus`). Оно будет отображаться в административном интерфейсе. Поле Ключ является необязательным к заполнению.
 
 .. figure:: _static/admin_layers_create_wms_service_name_rus.png
-   :name: ngweb_admin_layers_create_wms_description
+   :name: admin_layers_create_wms_service_name_rus
    :align: center
    :width: 16cm
    
@@ -675,7 +675,7 @@ Cлой WMS
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wms_description`)
 
 .. figure:: _static/admin_layers_create_wms_description_rus.png
-   :name: ngweb_admin_layers_create_wms_description
+   :name: admin_layers_create_wms_description_rus
    :align: center
    :width: 20cm
 
