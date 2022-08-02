@@ -23,5 +23,6 @@
    data_collection_on_premise
    permissions
    admin_tasks 
+   ngw_srs
    sysadmin     
    extension
