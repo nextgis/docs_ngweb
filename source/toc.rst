@@ -22,5 +22,6 @@ Contents:
    webmaps_client
    vect_layer_upload_params
    admin_tasks 
+   ngw_srs
    sysadmin     
    extension
