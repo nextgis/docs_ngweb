@@ -23,11 +23,13 @@
 
 Для выбора доступны следующие языки (:numref:`admin_settings_lang_pic`):
 
-* Браузер по умолчанию
+* По умолчанию в браузере
 * Русский
 * Английский 
+* Болгарский
 * Итальянский
 * Испанский
+* Китайский
 * Немецкий
 * Португальский
 * Французский
@@ -37,7 +39,7 @@
 .. figure:: _static/admin_select_lang_rus.png
    :name: admin_select_lang_pic
    :align: center
-   :width: 10cm
+   :width: 13cm
 
    Изменение языка интерфейса
 
@@ -66,14 +68,15 @@
 Диалог создания новой группы пользователей представлен на :numref:`ngweb_admin_controlpanel_usergroup_create_pic`
 Для открытия этого окна необходимо в основном меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) выбрать пункт "Панель управления" (см. :numref:`ngweb_main_page_main_menu_pic`). На Панели управления (см. :numref:`ngweb_control_panel`) следует выбрать команду "Создать" в подпункте "Группы".
 
-.. figure:: _static/admin_controlpanel_usergroup_create_rus.png
+.. figure:: _static/admin_controlpanel_usergroup_create_rus_2.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
    :width: 16cm
 
    Окно создания новой группы
 
-В диалоге необходимо указать полное и краткое наименование группы, при необходимости ввести описание группы, указать членов данной группы и нажать кнопку "Создать". 
+В диалоге необходимо указать полное и краткое наименование группы, при необходимости ввести описание группы, выбрать членов данной группы в выпадающем списке и нажать кнопку "Создать". 
+Установите флаг "Новые пользователи" в настройках группы для её автоматического назначения вновь создаваемым пользователям. 
 
 .. note:: 
    Название группы должно содержать только цифры и буквы. 
@@ -85,7 +88,7 @@
 Диалог создания нового пользователя представлен на :numref:`ngweb_admin_controlpanel_user_create`. 
 Для открытия этого окна необходимо в основном меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) открыть панель управления (см. :numref:`ngweb_main_page_main_menu_pic`) и выбрать команду "Создать" в подпункте "Пользователи".
 
-.. figure:: _static/admin_controlpanel_user_create_rus.png
+.. figure:: _static/admin_controlpanel_user_create_rus_2.png
    :name: ngweb_admin_controlpanel_user_create
    :align: center
    :width: 16cm
@@ -98,8 +101,11 @@
 * Имя пользователя – логин (например, ivanov)
 * Пароль для входа
 * Группа(-ы), к которым относится пользователь (в списке будут отображены имеющиеся группы. Если необходимой группы в списке нет, то ее необходимо предварительно создать (см. :ref:`ngw_create_group`)).
+* Язык интерфейса для этого пользователя
 
-Далее необходимо нажать кнопку "Создать".
+Дополнительные сведения о пользователе можно добавить в пункт "Описание".
+
+Далее необходимо нажать кнопку **"Создать"**.
 
 .. note:: 
    Пароль ограничен по длине в диапазоне 5-25 символов. Логин может иметь символы латинского алфавита, цифры и символ подчеркивания, но должен начинаться обязательно с буквы.
@@ -121,7 +127,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_tab_rus.png
    :name: ngweb_access_rights_tab
    :align: center
-   :width: 10cm
+   :width: 20cm
    
    Вкладка настроек прав доступа
 
@@ -132,7 +138,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_dialog.png
    :name: ngweb_access_rights_dialog
    :align: center
-   :width: 10cm
+   :width: 20cm
    
    Диалог настроек правил доступа
 
@@ -305,7 +311,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_0.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах основной группы ресурсов
 
@@ -318,7 +324,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/Case2_Main_resource_group.png
    :name: Case2_Main resource group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов
 
@@ -326,7 +332,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/Case2_mapfolder.png
    :name: Case2_mapfolder
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов с веб-картой
 
@@ -334,7 +340,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/Case2_datafolder.png
    :name: Case2_datafolder
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов с геоданными
    
@@ -345,7 +351,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/Case2_permissions.png
    :name: Case2_permissions
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать во вложенных группах ресурсов
    
@@ -356,14 +362,14 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_user_1.png
    :name: ngweb_access_rights_tab_3_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов
 
 .. figure:: _static/access_rights_group_for_user_2_rus.png
    :name: ngweb_access_rights_tab_4_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов
 
@@ -373,7 +379,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_1_rus.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов
 
@@ -381,7 +387,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_quest_2_rus.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов
 
@@ -396,7 +402,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
    :name: ngweb_access_rights_tab_mobile_import_1_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах группы ресурсов
 
@@ -405,7 +411,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_group_for_mobile_import_2.png
    :name: ngweb_access_rights_tab_mobile_import_2_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов
 
@@ -416,7 +422,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_deny_webmap_guests_allow_logined_rus.png
    :name: access_rights_deny_webmap_guests_allow_logined_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах веб-карты.
    
@@ -427,7 +433,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_deny_all_rus.png
    :name: access_rights_deny_all
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в свойствах корневой группы ресурсов
 
@@ -442,7 +448,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/access_rights_wms_serv_rus.png
    :name: access_rights_wms_serv_rus
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Задать в группе ресурсов с данными и WMS сервисом
 
@@ -457,7 +463,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/ngweb_change_password_rus.png
    :name: ngweb_change_password_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно редактирования пользователя
 
@@ -497,7 +503,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 ----------------------
 
 В данном разделе можно посмотреть список имеющихся резервных копий NextGIS Web, а также скачать любую из них.
-Процесс создания бэкапов и восстановления для разработчиков описан в `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
+Процесс создания бэкапов и восстановления для разработчиков описан `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
 
 
 .. _ngw_system_info:
@@ -509,7 +515,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 Через иконку в правом верхнем углу есть возможность скопировать все эти данные в буфер обмена.
 
 
-.. figure:: _static/admin_system_info_rus.png
+.. figure:: _static/admin_system_info_rus_2.png
    :name: admin_system_info_pic
    :align: center
    :width: 16cm
@@ -656,6 +662,13 @@ NextGIS Web строится на ресурсном подходе - кажды
    :width: 10cm
 
    Поиск по веб-карте
+
+
+
+
+
+
+
 
 
 .. _ngw_CSS:
