@@ -36,10 +36,10 @@
 * Чешский
 
 
-.. figure:: _static/admin_select_lang_rus.png
+.. figure:: _static/admin_select_lang_rus_2.png
    :name: admin_select_lang_pic
    :align: center
-   :width: 13cm
+   :width: 16cm
 
    Изменение языка интерфейса
 
