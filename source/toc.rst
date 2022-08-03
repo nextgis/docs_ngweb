@@ -21,6 +21,7 @@ Contents:
    webmaps_admin       
    webmaps_client
    vect_layer_upload_params
+   permissions
    admin_tasks 
    ngw_srs
    sysadmin     
