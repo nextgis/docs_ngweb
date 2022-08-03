@@ -27,17 +27,19 @@ The following languages are available for selection (:numref:`admin_settings_lan
 * Default browser
 * Russian
 * English
+* Bulgarian
+* Chinese
+* Czech
+* French
+* German
 * Italian
 * Spanish
-* German
 * Portuguese
-* French
-* Czech
 
-.. figure:: _static/admin_select_lang_en.png
+.. figure:: _static/admin_select_lang_en_2.png
    :name: admin_select_lang_pic
    :align: center
-   :width: 10cm
+   :width: 16cm
 
    Selecting language
 
@@ -53,7 +55,7 @@ The search is carried out in the entire existing database, regardless of which d
 .. figure:: _static/admin_search_bar_en.png
    :name: admin_search_bar_pic
    :align: center
-   :width: 5cm
+   :width: 12cm
 
    Finding Resources in Web GIS
 
@@ -64,16 +66,17 @@ Create new user group
 ---------------------
 
 A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`
-To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Create" option in "Groups" block.
+To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). From the control panel (see :numref:`admin_control_panel`) go to the "Groups" page and click **Create**.
 
-.. figure:: _static/admin_controlpanel_usergroup_create_eng.png
+.. figure:: _static/admin_controlpanel_usergroup_create_eng_2.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
    :width: 16cm
 
    "Create new group" dialog
 
-In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and click "Create" button. 
+In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and click **"Create"**. 
+Set "New users" flag for a group to automatically assign new user to it.
 
 .. note:: 
    A name for a group should contain only letters and numbers. 
@@ -83,9 +86,9 @@ Create new user
 ---------------
 
 A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
-To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Create" option in "Users" block.
+To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). From the control panel (see :numref:`admin_control_panel`) go to the "Users" page and click **Create**.
 
-.. figure:: _static/admin_controlpanel_user_create_eng.png
+.. figure:: _static/admin_controlpanel_user_create_eng_2.png
    :name: admin_controlpanel_user_create
    :align: center
    :width: 16cm
@@ -97,9 +100,12 @@ In "Create new user" dialog enter the following information:
 * Full user name (e.g. John Smith)
 * Login – user login (e.g. smith)
 * Password
-* Group(-s) user belongs to (the list of available groups is provided below user info. If the required group is absent you need to create a new one (see  :ref:`ngw_create_group`)).
+* Group(-s) user belongs to (select from a dropdown menu. If the required group is absent you need to create a new one (see :ref:`ngw_create_group`)).
+* Interface language for the user
 
-Then click "Create" button.
+You can add some more information about the user in the "Description" field.
+
+Then click **"Create"**.
 
 .. note:: 
    The password is limited in length in the range of 5-25 characters. Login can have symbols of the Latin alphabet, numbers and an underscore, but must begin necessarily with a letter.
@@ -118,7 +124,7 @@ or using resource update (see. :ref:`ngw_change_layers`) To manage permissions u
 .. figure:: _static/access_rights_tab.png
    :name: ngweb_access_rights_tab
    :align: center
-   :width: 10cm
+   :width: 16cm
    
    Permissions tab for resource
 
@@ -128,7 +134,7 @@ A dialog with permission item settings is presented on fig.  :numref:`ngweb_acce
 .. figure:: _static/access_rights_dialog.png
    :name: ngweb_access_rights_dialog
    :align: center
-   :width: 10cm
+   :width: 16cm
    
    Permission item settings dialog
 
@@ -238,9 +244,9 @@ Here is a description for available permission types.
 
 **Connection: Connect** - allows or denies usage of connection (defines if layers and data from the connection will be available for a user).
 
-**Web map: All permissions** - allows or denies any actions with a web map.
+**Web Map: All permissions** - allows or denies any actions with a Web Map.
 
-**Web map: Display** - allows or denies display of a web map.
+**Web Map: Display** - allows or denies display of a Web Map.
 
 **Data: All permissions** - allows or denies any actions with data.
 
@@ -276,17 +282,17 @@ Close a group for guests, open it for the user
 .. figure:: _static/access_rights_group_for_quest_1_eng.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for resourse group.
+   Settings for resourse group
 
 
 .. figure:: _static/access_rights_group_for_quest_2_eng.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for root resource group.
+   Settings for root resource group
 
 You can also allow the user reading all higher resource groups as alternative. 
 
@@ -300,37 +306,37 @@ Grant guest user resource display permission
 .. figure:: _static/access_rights_group_for_quest_0_eng.png
    :name: ngweb_access_rights_tab_0_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for root resource group.
+   Settings for root resource group
 
 
 .. figure:: _static/access_rights_group_for_quest_webmaps_eng.png
    :name: ngweb_access_rights_tab_1_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for resourse group with maps.
+   Settings for resourse group with maps
 
 
 .. figure:: _static/access_rights_group_for_quest_geodata_eng.png
    :name: ngweb_access_rights_tab_2_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for resource group with geodata.
+   Settings for resource group with geodata
 
    
-Grant guest user web map display permission
+Grant guest user Web Map display permission
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Guest users will be able to see only a web map with layers
+   Guest users will be able to see only a Web Map with layers
 
 .. figure:: _static/Case2_Main_resource_group.png
    :name: Case2_Main resource group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Settings for main resource group
 
@@ -338,7 +344,7 @@ Grant guest user web map display permission
 .. figure:: _static/Case2_mapfolder.png
    :name: Case2_mapfolder
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Settings for resourse group with maps
 
@@ -346,7 +352,7 @@ Grant guest user web map display permission
 .. figure:: _static/Case2_datafolder.png
    :name: Case2_datafolder
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Settings for resource group with geodata
 
@@ -357,7 +363,7 @@ If there aren't rights to 'read' resource, then the data propagated to it will a
 .. figure:: _static/Case2_permissions.png
    :name: Case2_permissions
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Set in other resource groups
 
@@ -370,14 +376,14 @@ Grant a single user permissions to a single resource group
 .. figure:: _static/access_rights_group_for_user_1.png
    :name: ngweb_access_rights_tab_3_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Settings for a resource group
 
 .. figure:: _static/access_rights_group_for_user_2.png
    :name: ngweb_access_rights_tab_4_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Settings for root resource group
 
@@ -391,21 +397,21 @@ Create a separate group of users ("Contributors" in this example) and a separate
 .. figure:: _static/access_rights_group_for_mobile_import_1.png
    :name: ngweb_access_rights_tab_mobile_import_1_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for a resource group.
+   Settings for a resource group
 
 
 
 .. figure:: _static/access_rights_group_for_mobile_import_2.png
    :name: ngweb_access_rights_tab_mobile_import_2_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Settings for root resource group.
+   Settings for root resource group
 
 
-Disallow view of webmap to all not authendificated users, grant view to authendificated users
+Disallow view of Web Map to all not authendificated users, grant view to authendificated users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
 
@@ -413,9 +419,9 @@ Disallow view of webmap to all not authendificated users, grant view to authendi
 .. figure:: _static/access_rights_deny_webmap_guests_allow_logined.png
    :name: access_rights_deny_webmap_guests_allow_logined_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-    Settings for webmap.
+    Settings for Web Map
 
 
 
@@ -427,9 +433,9 @@ Disallow all access for guest users (without password)
 .. figure:: _static/access_rights_deny_all.png
    :name: access_rights_deny_all
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-    Settings for root resource group.
+    Settings for root resource group
 
 
 .. _ngw_change_password:
@@ -496,7 +502,7 @@ System information
 
 Through the control panel, the administrator can view information about the system and the current version of the platform (see :numref:`admin_system_info_rus_eng`). Using the icon in the upper right corner, you can copy all this data to the clipboard.
 
-.. figure:: _static/admin_system_info_rus_eng.png
+.. figure:: _static/admin_system_info_eng_2.png
    :name: admin_system_info_rus_eng
    :align: center
    :width: 16cm
@@ -550,7 +556,7 @@ All other users will not be able to save data from the Web GIS interface.
 Web Map Settings
 ----------------
 
-Using the control panel administrator can set a number of general settings for all web maps in NextGIS Web:
+Using the control panel administrator can set a number of general settings for all Web Maps in NextGIS Web:
 
 * Identification popup
 * Measurement parameters
@@ -571,7 +577,7 @@ Identify popup
 
 The section regulates two parameters:
 
-* Size of the pop-up window when identifying objects on the web map;
+* Size of the pop-up window when identifying objects on the Web Map;
 * The radius of the area around the object within which the identification works.
 
 Dimensions are in pixels.
@@ -581,7 +587,7 @@ Dimensions are in pixels.
    :align: center
    :width: 20cm
 
-   Object identification on the web map
+   Object identification on the Web Map
 
 At the same time you can turn on/off the display of feature attributes.
 
@@ -591,7 +597,7 @@ At the same time you can turn on/off the display of feature attributes.
 Measurement
 ~~~~~~~~~~~
 
-The section sets the parameters responsible for various measurements on the web map:
+The section sets the parameters responsible for various measurements on the Web Map:
 
 * Units of length measurement (according to the selected SRS)
 * Units of measurement of areas (in accordance with the selected SRS)
@@ -604,15 +610,15 @@ The section sets the parameters responsible for various measurements on the web 
 Address search
 ~~~~~~~~~~~~~~
 
-* "Enable" - the search results on the web map will include not only the attribute data but also the address base if there are matches
-* "Limit by web map initial extent" - the search will be performed within the extent set in the web map settings
+* "Enable" - the search results on the Web Map will include not only the attribute data but also the address base if there are matches
+* "Limit by Web Map initial extent" - the search will be performed within the extent set in the Web Map settings
 
 .. figure:: _static/admin_webmap_search_bar_eng.png
    :name: admin_webmap_search_bar
    :align: center
    :width: 10cm
 
-   Web map search
+   Web Map search
 
 .. _ngw_CSS:
 
@@ -632,7 +638,7 @@ Change header color
 
     .header{background-color: #F44336; color: #fff;}
 
-Remove NextGIS logo from Web map
+Remove NextGIS logo from Web Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
@@ -664,7 +670,7 @@ Remove login button in upper right corner
     
 Remove identification window header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Identification window is a popup that is shown when you click on a feature on a Web map. This setting will hide it's header and layer selector:
+Identification window is a popup that is shown when you click on a feature on a Web Map. This setting will hide it's header and layer selector:
 
 .. code-block:: css
 
@@ -767,7 +773,7 @@ White label is a special module that allows you to remove or replace NextGIS log
    
    'White label' module in control panel
 
-Company logo on Web map
+Company logo on Web Map
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 In Control Panel, you can upload your logo in PNG format (see in:numref:`logo_whitelabel_en`) to display in the lower right corner of the map.
@@ -786,7 +792,7 @@ If the file is not loaded, there is no logo (see in:numref:`web-map_logo`).
    :align: center
    :width: 25cm
 
-   Web map with NextGIS logo (left) and without logo (right)
+   Web Map with NextGIS logo (left) and without logo (right)
   
   
 Company URL
@@ -834,9 +840,11 @@ This link will appear on error messages:
    :width: 16cm
    
    Support URL in the interface
- 
- 
- Other items
+   
+
+
+
+Other items
 ~~~~~~~~~~~~~~~~~
 
 * The default Web GIS name is specified without mentioning NextGIS.
