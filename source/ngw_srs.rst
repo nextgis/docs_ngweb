@@ -115,7 +115,7 @@ The added SRS can be used for various purposes:
 
 1. To capture coordinates on Web maps. If you have set up additional SRS (one or several), you can now conveniently capture coordinates in this SRS from anywhere on the map: 
    
-2. To export vector layers.  All custom SRS are also available for data export.
+2. To export vector layers.  All custom SRS are also available for data export. See `this section <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#data-export-to-csv-and-geojson-formats>`_ for details.
 
 3. To extend API requests. Support for custom SRS is gradually added to NextGIS Web API too.  For example, this request will return a feature in a required SRS:
 
