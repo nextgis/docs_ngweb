@@ -37,10 +37,11 @@ On the left side of the workspace are the functional panels:
 * Bookmarks
 * Share
 * Print
+* Trackers
 
 In a search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
 1. In attributes of layers added to a map.
-2. In address database of OpenStreetMap. 
+2. In address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#address-search>`_). 
 
 Results are shown as user inputs text with feature numbers for attribute search and full addresses. Found features that have a text in attributes are shown first and then addresses containing search text are shown. After a click on a search result map changes extent to show selected feature.
 
