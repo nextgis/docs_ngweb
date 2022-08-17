@@ -6,6 +6,41 @@
 Administrator interface (Admin console)
 =========================================
 
+Authorization
+-----------
+
+To open the admin console, open the Web GIS and press "Sign in" in the top right corner.
+
+.. figure:: _static/ngweb_before_signin_en.png
+   :name: ngweb_before_signin_pic
+   :align: center
+   :width: 20cm
+   
+   Signing in from Web GIS main page
+
+In the opened dialog press the green button that reads "Sign in with NextGIS ID".
+
+.. figure:: _static/ngweb_signin_nextgisid_en.png
+   :name: ngweb_signin_nextgisid_pic
+   :align: center
+   :width: 20cm
+   
+   Selecting sign-in via NextGIS
+
+You will be redirected to my.nextgis.com authorization page. Enter your username or email you used for registration and your password. 
+
+.. figure:: _static/ngweb_nextgisid_en.png
+   :name: ngweb_nextgisid_pic
+   :align: center
+   :width: 12cm
+   
+   Signing in with NextGIS
+
+After the authorization is completed successfully you will be redirected back to the Web GIS.
+
+
+
+
 Home page
 --------------------------------
 
@@ -115,7 +150,7 @@ Control panel allows to execute the following actions:
 * Customize a type of users who have permission to export data
 * Create user accounts for Collector projects
 * Customize Tracking
-* Customize web map
+* Customize Web Map
 
 For more information about creation of user groups and users and granting 
 permissions see topic :ref:`ngw_admin_tasks`.
@@ -171,16 +206,16 @@ Feature table allows to perform the following operations with a selected record 
 
    Actions for the selected record in feature table
 
-There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type web map. In actions pane click a web map action called Display (see :numref:`webmap_open_eng_pic`):
+There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type Web Map. In actions pane click a Web Map action called Display (see :numref:`webmap_open_eng_pic`):
 
 .. figure:: _static/webmap_open_eng.png
    :name: webmap_open_eng_pic
    :align: center
    :width: 16cm
 
-   "Display" web map action
+   "Display" Web Map action
    
-A web map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select "Feature table" command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
+A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select "Feature table" command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
 
 .. figure:: _static/map_and_tree_layers_eng.png
    :name: admin_map_and_tree_layers_upload
@@ -337,7 +372,7 @@ NextGIS Web allows you to export data in the following formats:
 * :term:`GeoJSON`
 * :term:`CSV`
 * CSV for Microsoft Excel
-* ESRI Shape
+* ESRI Shapefile
 * AutoCAD DXF
 * Mapinfo TAB
 * MapInfo MIF/MID
