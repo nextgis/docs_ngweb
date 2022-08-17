@@ -6,10 +6,43 @@
 Административный интерфейс
 ================================
 
+Авторизация
+-----------
+
+Для того, чтобы войти в административный интерфейс, откройте Веб ГИС и нажмите "Войти" в правом верхнем углу.
+
+.. figure:: _static/ngweb_before_signin_ru.png
+   :name: ngweb_before_signin_pic
+   :align: center
+   :width: 20cm
+   
+   Вход с главной страницы Веб ГИС
+
+В открывшемся диалоговом окне нажмите синюю кнопку "Войти через NextGIS ID".
+
+.. figure:: _static/ngweb_signin_nextgisid_ru.png
+   :name: ngweb_signin_nextgisid_pic
+   :align: center
+   :width: 20cm
+   
+   Выбор входа по NextGIS ID
+
+Вы будете перенаправлены на страницу авторизации my.nextgis.com. Введите имя пользователя или емейл, использованный при регистрации аккаунта, и пароль. 
+
+.. figure:: _static/ngweb_nextgisid_ru.png
+   :name: ngweb_nextgisid_pic
+   :align: center
+   :width: 12cm
+   
+   Страница входа NextGIS ID
+
+После успешной авторизации вы будете возвращены на страницу Веб ГИС.
+
+
 Главная страница
 --------------------------------
 
-После входа в административный интерфейс, пользователь попадает на главную 
+После входа в административный интерфейс пользователь попадает на главную 
 страницу, представленную на рисунке :numref:`ngweb_main_page_administrative_interface_pic`
 
 .. figure:: _static/ngweb_main_page_administrative_interface_rus.png
@@ -358,7 +391,7 @@ NextGIS Web позволяет удалять созданные ресурсы.
 * :term:`GeoJSON`
 * :term:`CSV`
 * CSV для Microsoft Excel
-* ESRI Shape
+* ESRI Shapefile
 * AutoCAD DXF
 * Mapinfo TAB
 * MapInfo MIF/MID
