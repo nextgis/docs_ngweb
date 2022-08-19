@@ -132,10 +132,10 @@
 
 В панель управления NextGIS Web можно попасть через основное меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1), выбрав соответствующий пункт (см. :numref:`ngweb_main_page_main_menu_pic`). Панель управления представлена на :numref:`ngweb_control_panel`.
 
-.. figure:: _static/ngweb_control_panel_new.png
+.. figure:: _static/ngweb_control_panel_new_ru.png
    :name: ngweb_control_panel
    :align: center
-   :width: 20cm
+   :width: 10cm
 
    Панель управления
 
@@ -162,21 +162,21 @@
 
 После входа в административный интерфейс, пользователь попадает на главную страницу :numref:`ngweb_resource_group`
 
-.. figure:: _static/resource_group.png
+.. figure:: _static/resource_group_ru.png
    :name: ngweb_resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Группы ресурсов
+   Главная страница
 
 Для просмотра ресурса следует перейти "внутрь" него через блок Дочерних ресурсов.
 
 После выбора ресурса (например, вам нужен векторный слой) откроется окно с его параметрами/атрибутами см. :numref:`ngweb_options_resource_group`
 
-.. figure:: _static/options_resource_group_rus.png
+.. figure:: _static/options_resource_group_rus_2.png
    :name: ngweb_options_resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
  
    Параметры векторного слоя ресурса
 
@@ -186,17 +186,24 @@
 -----------------
 
 Ряд слоев (векторые, PostGIS) состоят из набора объектов. Для удобной работы с этими данными существуют Таблицы объектов.
-Чтобы открыть таблицу слоя, нужно либо нажать на иконку таблицы в списке дочерних ресурсов (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.4) либо пройти внутрь ресурса этого слоя и в блоке операций выбрать "Таблица объектов" (см. :numref:`ngweb_Object_table`).
+Чтобы открыть таблицу слоя, нужно либо нажать на иконку таблицы в списке дочерних ресурсов (см. :numref:`feature_table_choice_from_group_pic`) либо пройти внутрь ресурса этого слоя и в блоке операций выбрать "Таблица объектов" (см. :numref:`ngweb_Object_table`).
 
+.. figure:: _static/feature_table_choice_from_group_ru.png
+   :name: feature_table_choice_from_group_pic
+   :align: center
+   :width: 20cm
 
-Для того, чтобы произвести действия над таблицей объектов, необходимо войти в административный интерфейс, перейти к группе дочерних ресурсов, где обозначены типы слоев этих ресурсов (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5) и нажать на значок таблицы напротив векторного слоя или выбрать этот слой, а затем в блоке операций выбрать действие над слоем - "Таблица объектов" (см. :numref:`ngweb_Object_table`).
+   Выбор таблицы объектов в списке ресурсов
 
-.. figure:: _static/feature_table_choice_rus.png
+.. figure:: _static/feature_table_choice_rus_2.png
    :name: ngweb_Object_table
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Выбор таблицы объектов
+   Выбор таблицы объектов на странице слоя
+
+Для того, чтобы произвести действия над таблицей объектов, необходимо войти в административный интерфейс, перейти к группе дочерних ресурсов, где обозначены типы слоев этих ресурсов (см. :numref:`feature_table_choice_from_group_pic`, п.5) и нажать на значок таблицы напротив векторного слоя.
+Другой способ - выбрать этот слой, а затем в блоке операций выбрать действие над слоем - "Таблица объектов" (см. :numref:`ngweb_Object_table`).
 
 Сформированная таблица объектов позволяет выполнить следующие операции 
 над выделенной записью из таблицы (см. :numref:`ngweb_operations_on_writing_in_object_table`):
@@ -206,32 +213,41 @@
 3. Удалить
 4. Воспользоваться Строкой поиска
 
-.. figure:: _static/ngweb_operations_on_writing_in_object_table_rus.png
+.. figure:: _static/ngweb_operations_on_writing_in_object_table_rus_2.png
    :name: ngweb_operations_on_writing_in_object_table
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Операции над записью в таблице объектов
 
-Фомирование таблицы объектов можно выполнить другим способом. В административном 
+Формирование таблицы объектов можно выполнить другим способом. В административном 
 интерфейсе необходимо перейти к группе дочерних ресурсов, где обозначены типы слоев
-этих ресурсов (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.4), и выбрать веб-карту. В блоке операций выбрать действие над ресурсом - "Открыть" (см. :numref:`webmap_open_rus_pic`):
+этих ресурсов (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.4), найти веб-карту и в той же строке нажать значок с изображением лупы, чтобы открыть карту.
 
-.. figure:: _static/webmap_open_rus.png
+.. figure:: _static/webmap_open_simple_ru.png
+   :name: webmap_open_simple_pic
+   :align: center
+   :width: 20cm
+
+   Операция открытия веб-карты из группы ресурсов
+
+Также можно сначала перейти на страницу ресурса веб-карты и в блоке операций выбрать действие над ресурсом - "Открыть" (см. :numref:`webmap_open_rus_pic`):
+
+.. figure:: _static/webmap_open_rus_2.png
    :name: webmap_open_rus_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Операция открытия веб-карты
+   Операция открытия веб-карты со страницы ресурса
    
 В результате откроется карта (справа) и дерево слоев карты (слева). Для формирования 
 таблицы объектов необходимо выделить нужный слой карты в дереве слоев, после чего 
 во вкладке "Слой" выбрать "Таблица объектов" :numref:`ngweb_admin_map_and_tree_layers_upload`:
 
-.. figure:: _static/map_and_tree_layers_rus.png
+.. figure:: _static/map_and_tree_layers_rus_2.png
    :name: ngweb_admin_map_and_tree_layers_upload
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Карта и дерево слоев
  
@@ -244,10 +260,10 @@ Cформируется таблица объектов, которая позв
 4. Перейти (при нажатии на кнопку происходит переход к выбранному объекту на карте)
 5. Воспользоваться Строкой поиска
  
-.. figure:: _static/ngweb_operations_on_writing_in_object_table2_rus.png
+.. figure:: _static/ngweb_operations_on_writing_in_object_table2_rus_2.png
    :name: ngweb_admin_table_objects2_upload
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Операции над записью в таблице объектов
 
@@ -258,27 +274,33 @@ Cформируется таблица объектов, которая позв
 
 Для изменения свойств ресурса необходимо:
 
-* Перейти внутрь ресурса, свойства которого нужно изменить;
-* Нажать кнопку "Изменить" в блоке операций справа (см. :numref:`ngw_window_update_edit_resource`)
+* Находясь в родительском ресурсе, в списке дочерних напротив целевого слоя выбрать иконку "карандаш" (см. :numref:`ngw_update_edit_resource_from_group_pic`)
+
+.. figure:: _static/ngw_update_edit_resource_from_group_rus.png
+   :name: ngw_update_edit_resource_from_group_pic
+   :align: center
+   :width: 20cm
+
+   Выбор действия "Изменить" в списке ресурсов
 
 Или
 
-* Находясь в родительском ресурсе, в списке дочерних напротив целевого слоя выбрать иконку "карандаш" (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5)
+* Перейти внутрь ресурса, свойства которого нужно изменить;
+* Нажать кнопку "Изменить" в блоке операций справа (см. :numref:`ngw_window_update_edit_resource`)
 
-
-.. figure:: _static/ngw_window_update_edit_resource_rus.png
+.. figure:: _static/ngw_window_update_edit_resource_rus_2.png
    :name: ngw_window_update_edit_resource
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Выбор действия "Изменить"
+   Выбор действия "Изменить" на странице ресурса
 
 После этого откроется окно "Обновить ресурс" (см. :numref:`ngw_window_update_resource1`), в котором можно добавить описание, редактировать родителя, метаданные и атрибуты выбранного ресурса.
 
-.. figure:: _static/ngw_window_update_resource1_rus.png
+.. figure:: _static/ngw_window_update_resource1_rus_2.png
    :name: ngw_window_update_resource1
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно "Обновить ресурс"
 
@@ -292,30 +314,30 @@ Cформируется таблица объектов, которая позв
 Ресурсы можно перемещать из одной группы ресурсов в другую и после их создания. 
 Для этого в поле "Родитель" нужно выбрать ту группу, куда вы хотите переместить текущий ресурс (см. :numref:`ngw_resource_selection`). Выбрав группу ресурсов для перемещения своего ресурса, нажмите Ok и сохраните изменения. 
 
-.. figure:: _static/ngw_resource_selection_rus.png
+.. figure:: _static/ngw_resource_selection_rus_2.png
    :name: ngw_resource_selection
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Окно выбора ресурса
+   Окно выбора группы ресурсов
 
 Если ресурс успешно перемещен, то он появится в новой группе ресурсов и пропадет из старой.
 
 Вкладка "Описание" позволяет добавить текстовое описание и гибко его настроить, вставить изображение или ссылку на внешний ресурс.
 
-.. figure:: _static/ngw_description_window_rus.png
+.. figure:: _static/ngw_description_window_rus_2.png
    :name: ngw_description_window
    :align: center
-   :width: 16cm
+   :width: 20cm
   
    Вкладка "Описание"
 
 Вкладка "Метаданные" позволяет заносить, удалять метаданные и отображать их в таблице (Текст, Целое число, Вещественное число):  
 
-.. figure:: _static/ngw_metadata_tab_rus.png
+.. figure:: _static/ngw_metadata_tab_rus_2.png
    :name: ngw_metadata_tab
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Вкладка "Метаданные"
 
@@ -327,23 +349,23 @@ Cформируется таблица объектов, которая позв
 
 Вкладка "Атрибуты" содержит таблицу, в которой перечислены атрибуты выбранного слоя (см. :numref:`ngweb_admin_layers_attr`).
 
-.. figure:: _static/admin_layers_attr_rus.png
+.. figure:: _static/admin_layers_attr_rus_2.png
    :name: ngweb_admin_layers_attr
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Вкладка "Атрибуты"
 
 * Галочка в столбце "ТО" обозначает, что атрибут выводится в окне идентификации.
 * Галочка в столбце "АН" обозначает, что из этого атрибута формируется список закладок. 
 
-Для каждого имени поля можно поставить соответствующий псевдоним для отображения 
+Для каждого имени поля в графе "Наименование" можно поставить соответствующий псевдоним для отображения 
 вместо имени поля в окне идентификации.
 
-.. figure:: _static/webmap_identification_rus.png
+.. figure:: _static/webmap_identification_rus_2.png
    :name: ngweb_webmap_identification
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно идентификации
 
@@ -356,27 +378,42 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 Чтобы удалить ресурс, необходимо :
 
-* Перейти внутрь ресурса, который вы хотите удалить;
-* Нажать кнопку "Удалить" в блоке операций справа (см. :numref:`ngw_window_update_delete_resource`)
+* Находясь в родительском ресурсе, в списке дочерних напротив целевого слоя выбрать иконку "крест" (см. :numref:`ngw_delete_resource_from_group_pic`)
+
+.. figure:: _static/ngw_delete_resource_from_group_ru.png
+   :name: ngw_delete_resource_from_group_pic
+   :align: center
+   :width: 20cm
+
+   Выбор действия "Удалить" в списке ресурсов
+
+Затем подтвердить операцию во всплывающем окне.
+
+.. figure:: _static/ngw_deletion_resource_from_group_ru.png
+   :name: ngw_deletion_resource_from_group_pic
+   :align: center
+   :width: 20cm
+
+   Подтверждение удаления
 
 Или
 
-* Находясь в родительском ресурсе, в списке дочерних напротив целевого слоя выбрать иконку "крест" (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5)
+* Перейти внутрь ресурса, который вы хотите удалить;
+* Нажать кнопку "Удалить" в блоке операций справа (см. :numref:`ngw_window_update_delete_resource`)
 
-.. figure:: _static/ngw_window_update_delete_resource_rus.png
+.. figure:: _static/ngw_window_update_delete_resource_rus_2.png
    :name: ngw_window_update_delete_resource
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Выбор действия "Удалить"
+   Выбор действия "Удалить" на странице ресурса
 
+Затем подтвердить операцию в открывшемся окне (см. :numref:`ngw_deletion_resource`), поставив галочку и нажав на синюю кнопку "Удалить".
 
-И подтвердить операцию в открывшемся окне (см. :numref:`ngw_deletion_resource`)
-
-.. figure:: _static/ngw_deletion_resource_rus.png
+.. figure:: _static/ngw_deletion_resource_rus_2.png
    :name: ngw_deletion_resource
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Удаление ресурса
 
@@ -410,9 +447,9 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 В поле "Формат" следует указать требуемый формат данных:
 
-.. figure:: _static/formats.png
+.. figure:: _static/formats_ru.png
    :name: newformats_pic
    :align: center
-   :width: 16cm    
+   :width: 20cm    
 
    Поле "Формат"
