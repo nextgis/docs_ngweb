@@ -14,7 +14,7 @@ A special web application for viewing web maps is included with NextGIS Web (see
    
    The interface of viewer client application
 
-   Numbers indicate: 1 – map; 2 – map zoom tools; 3 - layer tree; 4 – dropdown menu for selected layer; 5 - search bar; 6 annotations; 7 - Web Map description; 8 - bookmarks; 9 - "Share"; 10 - "Print map"; 11 - list of trackers; 12 - dropdown list of basemaps; 13 – map tools; 14 - status bar.
+   Numbers indicate: 1 – map; 2 – map zoom tools; 3 - layer tree; 4 – dropdown menu for selected layer; 5 - search bar; 6 annotations; 7 - Web Map description; 8 - bookmarks; 9 - "Share"; 10 - "Print map"; 11 - list of trackers; 12 - dropdown list of basemaps; 13 – map tools; 14 - status bar and copyright.
 
 
 Web client includes three main components: a map (see item 1, 12, 14 in :numref:`webmap_client`), panels (see item 3-11 in :numref:`webmap_client`, map tools (see item 2, 13 in :numref:`webmap_client`. 
