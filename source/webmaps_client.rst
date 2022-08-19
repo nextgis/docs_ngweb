@@ -32,14 +32,21 @@ Panels
 
 On the left side of the workspace are the functional panels:
 
-* Layers
-* Search
+* Layers 
+* `Search <https://docs.nextgis.com/docs_ngcom/source/address_search.html>`_
 * `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
-* Description
+* `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
 * `Bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_
 * Share
 * Print
-* Trackers
+* `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
+
+The layer tree contains a list of all layer styles added to the web map. The panel allows:
+
+* Disable/Enable style visibility
+* Open layer attribute table
+* Zoom map to layer
+* Open layer description
 
 In the search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
 1. In attributes of layers added to a map.
@@ -50,12 +57,6 @@ Results are shown as user inputs text with feature numbers for attribute search 
 To share a link to a map use the function "Share" (see item 9 in :numref:`webmap_client`), to print a map use the function "Print map" (see item 10 in :numref:`webmap_client`). 
 
 Status bar (see item 14 in :numref:`webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
-
-When a layer is  selected in a tree you can open a layer menu (see item 4 in :numref:`webmap_client`) with the following actions:
-    
-* Description
-* Zoom to layer
-* Feature table
 
 Using "Description" option you can get a description of selected layer, which was written during creation or editing of the layer. "Zoom to layer" option allows you to zoom a map to display selected layer on the whole visible map area.
 
