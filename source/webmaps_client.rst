@@ -41,26 +41,32 @@ On the left side of the workspace are the functional panels:
 * Print
 * `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
 
-The layer tree contains a list of all layer styles added to the web map. The panel allows:
+The **layer tree** contains a list of all layer styles added to the web map. The panel allows:
 
 * Disable/Enable style visibility
 * Open layer attribute table
 * Zoom map to layer
 * Open layer description
 
-In the search bar (see item 5 in :numref:`webmap_client`) during text input there will be performed a search using two sources:
-1. In attributes of layers added to a map.
-2. In address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#address-search>`_). 
+Search is performed using three sources:
 
-Results are shown as user inputs text with feature numbers for attribute search and full addresses. Found features that have a text in attributes are shown first and then addresses containing search text are shown. After a click on a search result map changes extent to show selected feature.
+1. Coordinates.
+2. Attributes of layers added to a map.
+3. Address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#address-search>`_). 
 
-To share a link to a map use the function "Share" (see item 9 in :numref:`webmap_client`), to print a map use the function "Print map" (see item 10 in :numref:`webmap_client`). 
+Results are shown as user inputs text and are sorted in this order: points on the map matching the coordinates, then feature numbers for attribute search and finally full addresses.
+After a click on a search result map changes extent to show selected feature.
 
-Status bar (see item 14 in :numref:`webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
+.. note::
+   To find a point using the coordinates, enter the latitude and longitude in or decimal degrees, for example: 79°4'14.08"W, 43°4'59.37"N или -79 43; -79,07 43,08; -79.068493 43.079920.
 
-Using "Description" option you can get a description of selected layer, which was written during creation or editing of the layer. "Zoom to layer" option allows you to zoom a map to display selected layer on the whole visible map area.
+To share a link to a map use the function **"Share"** (see item 9 in :numref:`webmap_client`), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`). 
 
-After a click on "Feature table" option you will see feature table of the selected layer under a map. Select a row in feature table and navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. "Go to" button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window is filtered leaving only records that match a search text.
+**Status bar** (see item 14 in :numref:`webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
+
+Using **"Description"** option you can get a description of selected layer, which was written during creation or editing of the layer. **"Zoom to layer"** option allows you to zoom a map to display selected layer on the whole visible map area.
+
+After a click on **"Feature table"** option you will see feature table of the selected layer under a map. Select a row in feature table and navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. "Go to" button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window is filtered leaving only records that match a search text.
 
 .. figure:: _static/ngweb_webmap_attribute_table_eng_2.png
    :name: ngweb_webmap_attribute_table
