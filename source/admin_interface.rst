@@ -63,10 +63,10 @@ Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) w
 * Help
 * Account
 
-.. figure:: _static/ngweb_main_page_main_menu_eng.png
+.. figure:: _static/ngweb_main_page_main_menu_eng_2.png
    :name: ngweb_main_page_main_menu_pic
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Main menu in NextGIS Web
  
@@ -90,13 +90,14 @@ Possible permissions are the following:
 * Read
 * View permissions
 * Create
-* Edit
-* Manage permissions
+* Update (Edit)
 * Delete
+* Manage children
+* Change permissions
 
-Actions pane (see items 7 and 8 in :numref:`admin_index_pic`) contains tools for adding data and executing operations with root group.
+Actions pane (see items 7 and 8 in :numref:`admin_index_pic`) contains tools for adding data and executing operations with the root group.
 
-In current version it is possible to add the following types of data (see item 6 in :numref:`admin_index_pic`):
+In current version it is possible to add the following types of data:
 
 * Basemap
 * Collector project
@@ -110,6 +111,7 @@ In current version it is possible to add the following types of data (see item 6
 * Trackers group
 * Vector layer
 * Web Map
+* WFS service
 * WMS connection
 * WMS layer
 * WMS service
@@ -121,36 +123,39 @@ Depending on your NGW version may also be connected:
 * 3D scene
 * 3D tileset
 
-Possible operations are (see item 7 in :numref:`admin_index_pic`): 
+Possible operations are (see item 8 in :numref:`admin_index_pic`): 
 
-* Delete
 * Update 
+* Delete
+
 
 Control panel
 --------------------------------
 
 NextGIS Web Control panel is available through the main menu (see item 1 in :numref:`admin_index_pic`), where you need to select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`). It is presented on  :numref:`admin_control_panel`.
 
-.. figure:: _static/admin_control_panel_eng.png
+.. figure:: _static/admin_control_panel_eng_2.png
    :name: admin_control_panel
    :align: center
-   :width: 20cm
+   :width: 9cm
 
    Control panel
 
 Control panel allows to execute the following actions:
 
 * Manage NextGIS Web groups and users
-* Display information about the system
+* Display information about the system and storage
+* Access cadaster services
+* Create user accounts for Collector projects
 * Set the name of your Web GIS
 * Configure CORS
 * Set CSS styles
 * Specify NGW start page (home path)
 * Set Logo (in the upper left corner)
 * Customize a type of users who have permission to export data
-* Create user accounts for Collector projects
 * Customize Tracking
 * Customize Web Map
+* Add spacial reference systems
 
 For more information about creation of user groups and users and granting 
 permissions see topic :ref:`ngw_admin_tasks`.
@@ -160,37 +165,43 @@ Resource view
 
 After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
 
-.. figure:: _static/resource_group_eng.png
+.. figure:: _static/resource_group_eng_2.png
    :name: resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Resource groups
 
+To open a resource group and view the contents, click on it in the child resource pane.
 
-The content of resource group is displayed after a click on resource name in a child resources pane of main resource group (see item 4 in :numref:`admin_index_pic`). On resource group page there is a pane with a list of resources in a main group and user permissions pane.
-Layer properties are displayed after a click on a name of a layer in child resources pane. E.g. user can click on a resource of type vector layer.
+Resource parameters are displayed after a click on the name of the resource in the list. User is taken to a page containing properties, attributes, user permissions, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
 
-After a click on layer in child resources pane user is taken to a vector layer properties and attributes page (see  :numref:`options_resource_group`).
-
-.. figure:: _static/options_resource_group_eng.png
-   :name: options_resource_group
+.. figure:: _static/resource_details_en.png
+   :name: resource_details_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
  
    Vector layer parameters
 
 Feature table
 -----------------
 
-To view feature table after login navigate to a child resource group (see item 4 in :numref:`admin_index_pic`) where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Table" icon opposite the resource or select an action for a vector layer called "Feature table" in actions pane (see :numref:`admin_table_objects_upload`).
+Some resources contain a set of features that can be viewed as a table.
+Press the "Table" icon opposite the resource name or select an action for a vector layer called "Table" in the features pane.
 
-.. figure:: _static/feature_table_choice_eng.png
+.. figure:: _static/feature_table_choice_from_group_en.png
+   :name: feature_table_choice_from_group_pic
+   :align: center
+   :width: 20cm
+
+   Opening feature table from the resource list
+
+.. figure:: _static/feature_table_choice_eng_2.png
    :name: admin_table_objects_upload
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Choice of feature table
+   Opening feature table from the resource page
 
 Feature table allows to perform the following operations with a selected record  (see :numref:`admin_table_objects1_upload`):
 
@@ -199,30 +210,39 @@ Feature table allows to perform the following operations with a selected record 
 3. Delete
 4. Use Search Box
  
-.. figure:: _static/table_objects1_eng.png
+.. figure:: _static/table_objects1_eng_2.png
    :name: admin_table_objects1_upload
    :align: center
    :width: 16cm
 
-   Actions for the selected record in feature table
+   Actions for the selected record in the feature table
 
-There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where would be displayed resource types and select a resource with a type Web Map. In actions pane click a Web Map action called Display (see :numref:`webmap_open_eng_pic`):
+There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where resource types are marked and find a resource with a type Web Map. Open it by clicking on the "Display" icon (see :numref:`webmap_open_eng_pic`):
 
-.. figure:: _static/webmap_open_eng.png
+.. figure:: _static/webmap_open_from_group_en.png
    :name: webmap_open_eng_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   "Display" Web Map action
-   
-A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select required layer in layer tree and then select "Feature table" command in Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
+   Opening a Web Map from the list
 
-.. figure:: _static/map_and_tree_layers_eng.png
+Alternatively, you can go to the resource page and click "Display" in the Web Map actions pane on the right.
+
+.. figure:: _static/webmap_open_from_page_en.png
+   :name: webmap_open_eng_pic
+   :align: center
+   :width: 20cm
+
+   Opening a Web Map from the resouce page
+
+A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select the required layer in layer tree and then select "Feature table" command in the Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
+
+.. figure:: _static/map_and_tree_layers_eng_2.png
    :name: admin_map_and_tree_layers_upload
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Map and layer tree
+   Opening feature table from the map
  
 A table will be displayed in a new tab. Table allows to perform the following operations with a selected record :numref:`admin_table_objects2_upload`:
 
@@ -232,10 +252,10 @@ A table will be displayed in a new tab. Table allows to perform the following op
 4. Go to (after a click the selected feature will be displayed on the map)
 5. Use Search Box
  
-.. figure:: _static/table_objects2_eng.png
+.. figure:: _static/table_objects2_eng_2.png
    :name: admin_table_objects2_upload
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Actions for the selected record in feature table
 
@@ -244,21 +264,28 @@ A table will be displayed in a new tab. Table allows to perform the following op
 Update resource
 ---------------
 
-To edit a resource after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`).
+In the group page press the pencil icon opposite the resource.
+
+.. figure:: _static/ngw_update_resource_from_group_en.png
+   :name: ngw_update_resource_from_group_pic
+   :align: center
+   :width: 20cm
+
+Alternatively, open the resource properties page and then select "Update" in the actions pane (see :numref:`ngw_window_update_edit_resource`).
  
-.. figure:: _static/ngw_window_update_edit_resource.png
+.. figure:: _static/ngw_window_update_edit_resource_en.png
    :name: ngw_window_update_edit_resource
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Selection of "Update" action in action pane
+   Selection of "Update" action in the actions pane
 
 In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add description, metadata and attributes of the resource.
 
-.. figure:: _static/ngw_window_update_resource1_eng.png
+.. figure:: _static/ngw_window_update_resource1_eng_2.png
    :name: ngw_window_update_resource1
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    "Update resource" window
 
@@ -267,34 +294,35 @@ On the first tab "Resource" you can edit the next fields:
 1. Display name (you can change the resource's name)
 2. Keyname
 3. Parent (you can change the resource group through moving the resource)
-4. Type
+4. Owner
+5. Type
 
-You can move resources from one resource group to another after their creation too. To do it press Parent drop down menu and select resource group to move the resource to in "Select resource" window (see :numref:`ngw_resource_selection`). Then press OK and "Save" button.
+You can move resources from one resource group to another. To do it press Parent drop down menu and select resource group to move the resource to in the"Select resource" pop-up window (see :numref:`ngw_resource_selection`). Then press OK and "Save" button.
 
-.. figure:: _static/ngw_resource_selection_eng.png
+.. figure:: _static/ngw_resource_selection_eng_2.png
    :name: ngw_resource_selection
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    "Select resource" window
 
-If the resource is moved successfully, the information about it appears in a new resource group and is replaced from the previous one.
+If the resource is moved successfully, the information about it appears in the new resource group and is removed from the previous one.
 
-The tab "Description" allows to edit or delete a text or to add a new text and to save it after pressing "Save" button:  
+The tab "Description" allows to add text, links and images describing the resource.
 
-.. figure:: _static/ngw_description_window_eng.png
+.. figure:: _static/ngw_description_window_eng_2.png
    :name: ngw_description_window
    :align: center
-   :width: 16cm
+   :width: 20cm
   
    "Description" tab
 
 The tab "Metadata" allows to add and delete metadata, and to display them in a table using "Add" (Text, Integer, Float) and "Remove" operations:  
 
-.. figure:: _static/ngw_metadata_tab_eng.png
+.. figure:: _static/ngw_metadata_tab_eng_2.png
    :name: ngw_metadata_tab
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    "Metadata" tab
 
@@ -302,26 +330,26 @@ The table contains three columns:
 
 1. Key. It allows to describe metadata features (author, date, version etc.)
 2. Type: Text, Integer, Float
-3. Value. Value corresponds key type
+3. Value. Value corresponds the key type
 
 The tab "Attributes" contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
 
-.. figure:: _static/admin_layers_attr_eng.png
+.. figure:: _static/admin_layers_attr_eng_2.png
    :name: ngweb_admin_layers_attr
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    "Attributes" tab
 
 * Tick in "FT" column means that the attribute is displayed in the identification window.
-* Tick in "LA" column means that the attribute gives its name during the identification and forming of the tabs list.
+* Tick in "LA" column means that the attribute is used for bookmarks.
 
-For each field name you can set the corresponding pseudonym to use it for display in the identification window instead of the name.
+For each field name you can set the display name to use it in the identification window instead of the keyname.
 
-.. figure:: _static/webmap_identification_eng.png
+.. figure:: _static/webmap_identification_eng_2.png
    :name: ngweb_webmap_identification
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    The identification window
 
@@ -332,51 +360,57 @@ Delete resource
 
 Web GIS allows to delete uploaded data through deleting of the corresponding resources. 
 
-To delete the resource after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Cross" icon opposite the resource or select the layer and then select an action called "Delete" in actions pane (see :numref:`ngw_window_update_delete_resource`). 
+In the group page press the cross icon opposite the resource.
 
-.. figure:: _static/ngw_window_update_delete_resource.png
+.. figure:: _static/ngw_delete_resource_from_group_en.png
+   :name: ngw_delete_resource_from_group_pic
+   :align: center
+   :width: 20cm
+   
+   Deleting resource from the group
+
+A pop-up window for confirmation will appear. Click "Delete" to confirm.
+
+.. figure:: _static/ngw_delete_from_group_confirmation_en.png
+   :name: ngw_delete_resource_from_group_pic
+   :align: center
+   :width: 20cm
+   
+   Confirmation to delete a resource
+
+Alternatively, open the resource page and then select "Delete" in the actions pane (see :numref:`ngw_window_update_delete_resource`). 
+
+.. figure:: _static/ngw_window_update_delete_resource_2.png
    :name: ngw_window_update_delete_resource
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Selection of "Delete" action in action pane
+   Selection of "Delete" action in the action pane
    
-In the opened "Delete resource" window (see :numref:`ngw_deletion_resource`) you need to tick "Confirm deletion of the resource" and press "Delete" button. 
+In the opened "Delete resource" window you need to tick "Confirm deletion of the resource" and press "Delete" button. 
 
-
-.. figure:: _static/ngw_deletion_resource_eng.png
-   :name: ngw_deletion_resource
+.. figure:: _static/ngw_delete_from_group_confirmation_en.png
+   :name: ngw_delete_from_group_confirmation_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Delete resource
+   "Delete resource" window
 
-If the resource was deleted successfully, the information about it disappear in the corresponding resource group.
+If the resource was deleted successfully, the information about it disappear from the corresponding resource group.
 
-Data export to CSV and GeoJSON formats
----------------------------------------
+Data export
+-----------------
   
-Web GIS allows to download/export data in CSV and GeoJSON formats.
-
-To download data after login navigate to a child resource group (see item 5 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer or PostGIS layer you need to export and select an action called "Download as GeoJSON" or "Download as CSV" in actions pane "Vector layer" (see :numref:`ngweb_data_export`).
-
-.. figure:: _static/ngweb_data_export_eng.png
-   :name: ngweb_data_export
-   :align: center
-   :width: 16cm
-
-   Data export in various formats
-
 NextGIS Web allows you to export data in the following formats:
 
 * :term:`GeoJSON`
 * :term:`CSV`
 * CSV for Microsoft Excel
-* ESRI Shapefile
+* :term:`ESRI Shapefile`
 * AutoCAD DXF
 * Mapinfo TAB
 * MapInfo MIF/MID
-* GeoPackage
+* :term:`GeoPackage`
 
 While exporting to some formats additional files are created, for example CSVT (field description) and PRJ (projection description) for CSV, CPG (code page) for ESRI Shapefile.
 
@@ -387,3 +421,19 @@ To export data:
 #. Specify the format and encoding of the data;
 #. If necessary, you can compress the result into a ZIP archive (for a number of formats this is the default setting)
 #. Save the file to your device
+
+.. figure:: _static/ngweb_data_export_eng_2.png
+   :name: ngweb_data_export
+   :align: center
+   :width: 20cm
+   
+   Selecting "Save as" action to export data
+
+.. figure:: _static/formats_en_2.png
+   :name: formats_pic
+   :align: center
+   :width: 20cm
+
+   Data export in various formats
+
+
