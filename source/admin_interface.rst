@@ -417,10 +417,10 @@ While exporting to some formats additional files are created, for example CSVT (
 To export data:
 
 #. Open a Vector or PostGIS layer, the data of which you want to export;
-#. Select the item: menuselection: `Features -> Save As` on the right pane: ref:` web interface <ngw_admin_interface> `;
-#. Specify the format and encoding of the data;
-#. If necessary, you can compress the result into a ZIP archive (for a number of formats this is the default setting)
-#. Save the file to your device
+#. Select the item: menuselection: `Features -> Save As` on the right pane :ref:` web interface <ngw_admin_interface> `;
+#. Specify the format and encoding of the data and select fields to be exported;
+#. If necessary, you can compress the result into a ZIP archive (for a number of formats this is the default setting);
+#. Save the file to your device.
 
 .. figure:: _static/ngweb_data_export_eng_2.png
    :name: ngweb_data_export
