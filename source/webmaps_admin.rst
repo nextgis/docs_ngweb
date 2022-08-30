@@ -26,35 +26,35 @@
 
 Для добавления веб-карты следует перейти в группу, где необходимо её создать, и в блоке операций "Создать ресурс" выбрать "Веб-карта" (см. :numref:`ngweb_admin_layers_create_webmap`). 
 
-.. figure:: _static/admin_layers_create_webmap_rus.png
+.. figure:: _static/admin_layers_create_webmap_rus_2.png
    :name: ngweb_admin_layers_create_webmap
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Веб-карта" 
    
 В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_webmap_name`. 
 
-.. figure:: _static/admin_webmap_name_rus.png
+.. figure:: _static/admin_webmap_name_rus_2.png
    :name: ngweb_admin_webmap_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно создания веб-карты
 
 Далее следует ввести наименование веб-карты, которое будет отображаться в административном веб-интерфейсе и в :ref:`веб-клиенте <ngw_webmaps_client>` для просмотра карт. Поле "Ключ" является необязательным к заполнению.
 
-Можно добавить описание ресурса и метаданные на соответствующих вкладках. 
+Можно добавить **описание** ресурса и **метаданные** на соответствующих вкладках. 
 
 Охват
 ~~~~~
 
 Если переключиться с вкладки "Ресурс" на вкладку "Охват и закладки", откроется окно, представленное на :numref:`ngweb_admin_webmap_bbox`.
 
-.. figure:: _static/admin_webmap_bbox_rus.png
+.. figure:: _static/admin_webmap_bbox_rus_2.png
    :name: ngweb_admin_webmap_bbox
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно ввода охвата
 
@@ -62,19 +62,19 @@
 
 "Охват по слою" позволяет установить охват веб-карты по охвату выбранного слоя. 
 Напротив этой строки имеется значок в виде папки с плюсом. Если нажать 
-на этот значок, то откроется окно "Выбрать ресурс" с деревом слоев, из которого можно 
+на этот значок, то откроется окно "Выберите слой" с деревом ресурсов, из которого можно 
 выбрать слой, по которому будет установлен охват веб-карты, 
 (будут заполнены четыре строки с координатами охвата, см. :numref:`ngw_select_resource2`).
 
-.. figure:: _static/ngw_select_resource2_rus.png
+.. figure:: _static/ngw_select_resource2_rus_2.png
    :name: ngw_select_resource2
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Окно "Выбрать ресурс"
+   Окно "Выберите слой"
 
 .. tip:: 
-   Координаты охвата вы можете сгенерировать на сторонних веб-сайтах http://boundingbox.klokantech.com/ (выберите в списке csv), http://lxbarth.com/bbox.
+   Координаты охвата вы можете сгенерировать на сторонних веб-сайтах, например http://boundingbox.klokantech.com/ (выберите в списке csv).
 
 Закладки
 ~~~~~~~~
@@ -83,41 +83,48 @@
 закладок (см. :numref:`ngw_bookmarks`). Названия закладок будут браться из "Атрибут наименования" (см. :numref:`bookmark_attribute`)
 если он установлен. 
 
-.. figure:: _static/ngw_bookmarks.png
+.. figure:: _static/ngw_bookmarks_ru.png
    :name: ngw_bookmarks
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Панель закладок и отображение по клику на Веб-карте
 
-.. figure:: _static/bookmark_attribute.png
+.. figure:: _static/bookmark_attribute_ru.png
    :name: bookmark_attribute
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Установка Атрибута наименования для векторного слоя границ
 
 Слои веб-карты
 ~~~~~~~~~~~~~~~~
 
-На  вкладке "Слои" можно добавлять слои, объединять их в группы и удалять их, для чего предусмотрены соответствующие 
-кнопки "Добавить слой", "Добавить группу", "Удалить" (см. :numref:`admin_webmap_layers`). 
+На  вкладке "Слои" можно добавлять слои, объединять их в группы и удалять их, а также менять порядок слоев, для чего предусмотрены соответствующие 
+кнопки "Добавить слой", "Добавить группу", "Удалить" и "Порядок слоев" (см. :numref:`admin_webmap_layers`). 
 
-.. figure:: _static/admin_webmap_layers_rus.png
+.. figure:: _static/admin_webmap_layers_rus_2.png
    :name: admin_webmap_layers
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Вкладка "Слои"
 
 Для того, чтобы отобразить данные слоя на карте, необходимо создать для него хотя бы один стиль. О создании стилей для различных типов слоев можно прочитать :ref:`здесь <ngcom_styles>`. 
 
+.. figure:: _static/admin_webmap_add_layers_rus.png
+   :name: admin_webmap_add_layers_pic
+   :align: center
+   :width: 20cm
+   
+   Окно добавления стиля слоя на веб-карту
+
 Настройки слоев на веб-карте представлены на :numref:`admin_webmap_create_layers`.
 
-.. figure:: _static/admin_webmap_create_layers_rus.png
+.. figure:: _static/admin_webmap_create_layers_rus_2.png
    :name: admin_webmap_create_layers
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Настройки слоев на веб-карте
  
@@ -138,30 +145,42 @@
    
 Кнопка "Порядок слоёв" открывает окно, в котором можно задать порядок отрисовки слоёв на карте отличающийся от порядка в списке слоёв. Эта функция нужна для демонстрации слоев при сохранении исходного разбиения слоев на папки.
 
-.. figure:: _static/admin_webmap_layerorders_1_cut.jpg
+.. figure:: _static/admin_webmap_layerorders_1_cut_ru.png
    :name: ngweb_admin_webmap_layerorders_1
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Порядок слоёв как есть: аэрофотоснимки загораживают слой со зданиями
 
-.. figure:: _static/admin_webmap_layerorders_2_cut.jpg
+.. figure:: _static/admin_webmap_layerorders_2_cut_ru.png
    :name: ngweb_admin_webmap_layerorders_2
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Другой порядок слоёв: слой со зданиями рисуется выше аэрофотоснимков, но структура слоёв слева не изменена
  
+Настройки
+~~~~~~~~~
+
+На вкладке "Настройки" можно разрешить редактирование слоев и включить аннотации (о работе с аннотациями подробнее см. :ref:`<ngcom_annotation>`)
+
+.. figure:: _static/admin_webmap_settings_tab_ru.png
+   :name: admin_webmap_settings_tab_pic
+   :align: center
+   :width: 20cm
+   
+   Вкладка "Настройки" 
+
 Подложки 
 ~~~~~~~~~~~
  
 На  вкладке "Подложки" можно добавлять подложки и удалять их, для чего предусмотрены соответствующие 
 кнопки "Добавить" и "Удалить" (см. :numref:`admin_webmap_basemaps`). 
 
-.. figure:: _static/admin_webmap_basemaps_rus.png
+.. figure:: _static/admin_webmap_basemaps_rus_2.png
    :name: admin_webmap_basemaps
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Вкладка "Подложки"
 
@@ -186,6 +205,19 @@
 
 .. warning:: 
    При удалении карты адрес больше доступен не будет.
+
+Соцсети
+~~~~~~~
+
+На этой вкладке можно выбрать изображение для предпросмотра, которое будет использовано в соцсетях.
+
+
+.. figure:: _static/admin_webmap_social_ru.png
+   :name: admin_webmap_social_pic
+   :align: center
+   :width: 20cm
+   
+   Вкладка "Соцсети"
 
 
 .. _ngw_map_clone:
