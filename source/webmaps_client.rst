@@ -48,7 +48,7 @@ The **layer tree** contains a list of all layer styles added to the web map. The
 * Zoom map to layer
 * Open layer description
 
-Search is performed using three sources:
+**Search** is performed using three sources:
 
 1. Coordinates.
 2. Attributes of layers added to a map.
@@ -58,7 +58,22 @@ Results are shown as user inputs text and are sorted in this order: points on th
 After a click on a search result map changes extent to show selected feature.
 
 .. note::
-   To find a point using the coordinates, enter the latitude and longitude in or decimal degrees, for example: 79°4'14.08"W, 43°4'59.37"N или -79 43; -79,07 43,08; -79.068493 43.079920.
+   To find a point using the coordinates, enter the latitude and longitude in or decimal degrees, for example: 
+   
+.. code-block:: bash
+
+    79 W 43 N
+    W 79 N 43
+    -79 43 (the results will contain two points: 79 W, 43 N and 43 E, 79 S)
+    79- 43
+    -79 W 43 N
+    79°4'14.08" W 43°4'59.37" N
+    -79°4'14.08"  43°4'59.37"
+    -79 4.25 W  43 4.95 N
+    -79 4.25  43 4.95
+    79.068493 43.079920
+    79.068 W 43.08 N
+
 
 To share a link to a map use the function **"Share"** (see item 9 in :numref:`webmap_client`), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`). 
 
