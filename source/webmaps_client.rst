@@ -58,7 +58,7 @@ Results are shown as user inputs text and are sorted in this order: points on th
 After a click on a search result map changes extent to show selected feature.
 
 .. note::
-   To find a point using the coordinates, enter the latitude and longitude in degrees, minutes and second, degrees and decimal minutes or decimal degrees, for example: 
+   To find a point using the coordinates, enter the latitude and longitude in degrees, minutes and second, degrees and decimal minutes or decimal degrees (make sure to use straight single and double quotes), for example: 
    
 .. code-block:: bash
 
