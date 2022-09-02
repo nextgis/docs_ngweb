@@ -389,7 +389,7 @@ Alternatively, open the resource page and then select "Delete" in the actions pa
    
 In the opened "Delete resource" window you need to tick "Confirm deletion of the resource" and press "Delete" button. 
 
-.. figure:: _static/ngw_delete_from_group_confirmation_en.png
+.. figure:: _static/ngw_delete_from_page_confirmation_en.png
    :name: ngw_delete_from_group_confirmation_pic
    :align: center
    :width: 20cm
@@ -397,6 +397,21 @@ In the opened "Delete resource" window you need to tick "Confirm deletion of the
    "Delete resource" window
 
 If the resource was deleted successfully, the information about it disappear from the corresponding resource group.
+
+Deleting several resources at once
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the parent resource open the child resources list menu and enable multiple selection.
+
+Tick the resources and select "Delete" from the same menu. Confirm the operation in the pop-up window.
+
+.. figure:: _static/delete_selected_multiple_en.png
+   :name: delete_selected_multiple_pic
+   :align: center
+   :width: 20cm
+   
+   Deleting multiple resources
+
 
 Data export
 -----------------
