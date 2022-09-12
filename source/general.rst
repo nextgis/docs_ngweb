@@ -69,7 +69,7 @@ Rendering and symbology
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Symbology import from QGIS with automated conversion "for renderer". 
-* Pluggable renderers: :term:`MapServer`, :term:`Mapnik`, :term:`QGIS` (import a project from desktop software 
+* Pluggable renderers: :term:`MapServer`, :term:`QGIS` (import a project from desktop software 
   NextGIS QGIS with the same layers, styles etc.). 
 * Several symbology options for the single data layer. 
 
