@@ -19,23 +19,23 @@ Creating a Web Map
 
 To create a Web Map, open the resource group where you want to add it, then in the actions pane “Create resource” select “Web Map”. (see :numref:`ngweb_admin_layers_create_webmap`). 
 
-.. figure:: _static/admin_layers_create_webmap_eng.png
+.. figure:: _static/admin_layers_create_webmap_eng_2.png
    :name: ngweb_admin_layers_create_webmap
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of “Web Map” action 
    
 Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`. 
 
-.. figure:: _static/admin_webmap_name_eng.png
+.. figure:: _static/admin_webmap_name_eng_2.png
    :name: admin_webmap_name
    :align: center
-   :width: 16cm
+   :width: 2-cm
 
    “Create resource” dialog for Web Map
 
-Enter Web Map display name that will be visible in the administrator interface and in the Web Maps viewer.
+Enter Web Map display name that will be visible in the administrator interface and in the Web Map viewer.
 
 “Keyname” field is optional.
 
@@ -46,10 +46,10 @@ Extent
 
 Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :numref:`admin_webmap_bbox`.
 
-.. figure:: _static/admin_webmap_bbox_eng.png
+.. figure:: _static/admin_webmap_bbox_eng_2.png
    :name: admin_webmap_bbox
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    “Extent and bookmarks” tab
 
@@ -57,55 +57,62 @@ Use the four fields to set the extent measured in degrees.
 
 The field “Extent from layer” allows to set Web Map extent from the layer's extent. Next to the field, there is a folder icon with a plus on it. Click it to open the “Select resource” window, where you can select a layer to use for setting the Web Map extent (four fields with the extent coordinates will be filled in, see :numref:`ngw_select_resource2`). 
 
-.. figure:: _static/ngw_select_resource2_eng.png
+.. figure:: _static/ngw_select_resource2_eng_2.png
    :name: ngw_select_resource2
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   “Select resource” window
+   “Select layer” window
 
 .. tip::
-   Extent coordinates could be generated using third-party services http://boundingbox.klokantech.com/ (select csv in a list), http://lxbarth.com/bbox.
+   Extent coordinates could be generated using third-party services, for example http://boundingbox.klokantech.com/ (select csv in a list).
 
 Bookmarks
 ~~~~~~~~~
 
-In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  If a layer is set, the Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” (see :numref:`bookmark_attribute`).
+In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  The Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” if it is set (see :numref:`bookmark_attribute`).
 
-.. figure:: _static/ngw_bookmarks.png
+.. figure:: _static/ngw_bookmarks_en.png
    :name: ngw_bookmarks
    :align: center
-   :width: 16cm
+   :width: 20cm
    
-   Bookmarks tab and the bookmarks viewed on the map
+   "Bookmarks" tab and the bookmarks viewed on the map
 
-.. figure:: _static/bookmark_attribute.png
+.. figure:: _static/bookmark_attribute_en.png
    :name: bookmark_attribute
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Setting attributes for the vector layer containing boundaries
 
 Web Map Layers
 ~~~~~~~~~~~~~~
 
-In the “Layers” tab you can add layers, group or remove them using the buttons “Add layer”, “Add group” and “Remove” respectively (see :numref:`admin_webmap_layers`). 
+In the “Layers” tab you can add, group or remove layers and change their order using the buttons “Add layer”, “Add group”, “Remove” and "Layer order" respectively (see :numref:`admin_webmap_layers`). 
 
-.. figure:: _static/admin_webmap_layers_eng.png
+.. figure:: _static/admin_webmap_layers_eng_2.png
    :name: admin_webmap_layers
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    "Layers" tab
 
 To view the data of the layer on a map, you need to create at least one layer style. More on creating styles for different layer types :ref:`here <ngcom_styles>`. 
 
+.. figure:: _static/admin_webmap_add_layers_en.png
+   :name: admin_webmap_add_layers_pic
+   :align: center
+   :width: 20cm
+   
+   Using style to add a layer to the Web Map
+
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
-.. figure:: _static/admin_webmap_create_layers_eng.png
+.. figure:: _static/admin_webmap_create_layers_eng_2.png
    :name: admin_webmap_create_layers
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    "Layers" tab of the "Create Resource" dialog
  
@@ -113,7 +120,7 @@ Layers of a particular map have several settings, see :numref:`admin_webmap_crea
 
 The “Transparency” field sets the layer transparency on a map between 0% (opaque) and 100% (completely transparent). 
 
-We recommend setting the "Adapter" field to "Image".
+We recommend setting the "Adapter" field to "Image" (a single image for the entire map), unless there are some special requirements. Alternatively, you can choose “Tiles” (images of 256 x 256 pixels).
 
 You can also set up a scale range. Min scale corresponds to the smaller image, max scale - to the larger, more detailed image. For example, if you want a layer to be displayed in scales between 1 : 250,000 and 1 : 5,000, the higher number (250,000) is the minimal scale.
    
@@ -136,15 +143,28 @@ The order of the layers on a map can be different from the order in which they a
    
    Different layer arrangement: the layer marking the buildings is above the satellite images, while the layer groups on the left remain unchanged
 
+Settings
+~~~~~~~~~
+
+The "Settings" tab is used to allow layer editing and enable annotations (more on annotations see in :ref:`here <ngcom_annotation>`).
+
+.. figure:: _static/admin_webmap_settings_tab_en.png
+   :name: admin_webmap_settings_tab_pic
+   :align: center
+   :width: 20cm
+   
+   "Settings" tab
+
+
 Basemaps
 ~~~~~~~~~
 
 "Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" (see :numref:`admin_webmap_basemaps`). 
 
-.. figure:: _static/admin_webmap_basemaps_eng.png
+.. figure:: _static/admin_webmap_basemaps_eng_2.png
    :name: admin_webmap_basemaps
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    “Basemaps” tab
 
@@ -158,12 +178,29 @@ Web Map with no basemap
 By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
 create a new basemap, put 'blank' in name and URL fields, and add it to your Web Map. Then turn this newly created basemap off.
 
+
+Social
+~~~~~~~
+
+The "Social" tab is used to upload an image to be used as preview in social media.
+
+.. figure:: _static/admin_webmap_social_en.png
+   :name: admin_webmap_social_pic
+   :align: center
+   :width: 20cm
+   
+   "Social" tab
+
+Final steps
+~~~~~~~~~~~
+
 After creating the map content and adjusting settings for all the layers, click "Save" button. A saved map will be shown in the list of maps. 
-Click an icon with a map in the list of Web Maps or a "Display" link in a window with Web Map properties to open the Web Map in the Web Maps viewer. While the Web Map resource page is open, you can also open the map by clicking the "View" button on the right. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
+Click an icon with a map in the list of Web Maps or select "Display" action in the tab on the Web Map properties page to open it in the viewer. While the Web Map resource page is open, you can also open the map by clicking the "View" button on the right. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
 A Web Map URL displayed in the viewer may be shared with other users because it is static. 
 
 .. warning::  
    After a map is deleted, its URL will no longer be available.
+
 
 .. _ngw_map_clone:
 
