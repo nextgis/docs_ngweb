@@ -146,7 +146,7 @@ The order of the layers on a map can be different from the order in which they a
 Settings
 ~~~~~~~~~
 
-The "Settings" tab is used to allow layer editing and enable annotations (more on annotations see in :ref:`here <ngcom_annotation>`).
+The "Settings" tab is used to allow layer editing and enable annotations (more on annotations see :ref:`here <ngcom_annotation>`).
 
 .. figure:: _static/admin_webmap_settings_tab_en.png
    :name: admin_webmap_settings_tab_pic
