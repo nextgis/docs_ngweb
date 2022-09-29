@@ -162,7 +162,7 @@
 Настройки
 ~~~~~~~~~
 
-На вкладке "Настройки" можно разрешить редактирование слоев и включить аннотации (о работе с аннотациями  см. :ref:`здесь <ngcom_annotation>`).
+На вкладке "Настройки" можно разрешить редактирование слоев и включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_).
 
 .. figure:: _static/admin_webmap_settings_tab_ru.png
    :name: admin_webmap_settings_tab_pic
