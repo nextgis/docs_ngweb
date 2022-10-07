@@ -15,9 +15,9 @@ NextGIS Web allows:
 1. Creation and display of maps.
 2. Map navigation (zooming, shifting).
 3. Manage the map through web-interface.
-4. Vector (:term:`ESRI Shape`, :term:`PostGIS`) and raster data import.
-5. Use of standart protocols (:term:`WMS`, :term:`WFS-T`).
-6. Manage access rights for layers, groups of layers, maps.
+4. Vector (:term:`ESRI Shape`, :term:`PostGIS` etc) and raster data import.
+5. Use of standart protocols (:term:`WMS`, :term:`WFS-T`, :term:`TMS`).
+6. Manage access rights for layers, groups of layers, maps and other resources.
 7. Interaction through API.
 
 NextGIS Web has server and client sides. 
@@ -29,14 +29,14 @@ Client is written in JavaScript and based on Dojo framework. All configuration i
 NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled at the  application configuration step. NextGIS Web components communicate with each other using internal API methods.
 
 NextGIS Web is designed to operate in Linux operating system environment (Debian-based distributives are recommended, e.g. Ubuntu Server). Read more in section :ref:`ngw_soft_req`. NextGIS Web client-side works in all modern browsers.
-User interface with a published Web map is shown on :numref:`webmap_sample`.
+User interface with a published Web Map is shown on :numref:`webmap_sample`.
 
-.. figure:: _static/webmap_sample2_eng.png
+.. figure:: _static/webmap_sample2_eng_2.png
    :name: webmap_sample
    :align: center
-   :width: 16cm
+   :width: 20cm
    
-   User interface with a published Web map. 
+   User interface with a published Web Map
 
 .. _ngw_keyfeatures:
 
@@ -49,7 +49,7 @@ Data layers
 ~~~~~~~~~~~
 
 * Creation of raster and vector layers and data upload for them using web interface. 
-* Creation of :term:`WMS` layers and connection to existing services. 
+* Creation of :term:`WMS` and :term:`TMS` layers and connections to existing services. 
 * Creation of :term:`PostGIS` layers and connection to layers in external databases. 
 * A set of standard basemaps: OpenStreetMap and others from `QuickMapServices <https://qms.nextgis.com/>`_. 
 * WFS service.
@@ -57,13 +57,13 @@ Data layers
 * Dictionary (with extension). 
 * File set.
 * "Key-value" function, support for metadata.
-* Export to :term:`GeoJSON` and CSV.
+* Export to various formats (see `full list here <https://docs.nextgis.com/docs_ngcom/source/data_export.html#how-to-export-data>`_).
 
 Access management 
 ~~~~~~~~~~~~~~~~~~~
 
 * Detailed settings of access rights for each connected layer.
-* Setting of access rights for resources and resourse groups.
+* Setting of access rights for resources and resource groups.
 
 Rendering and symbology 
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,10 +73,9 @@ Rendering and symbology
   NextGIS QGIS with the same layers, styles etc.). 
 * Several symbology options for the single data layer. 
 
-Web maps 
+Web Maps 
 ~~~~~~~~~
  
-* Unlimited number of web maps. 
 * Own set of layers and layer tree management for each map. 
 * Reuse of the same layer representation in different maps. 
 
@@ -90,6 +89,7 @@ User interface
 * Bookmarks for fast access to some regions of the map. 
 * Layer description view. 
 * Feature table view for layer with fast switch between a table and a map. 
+* Annotations.
 
 Editing 
 ~~~~~~~~~~~~~~
@@ -188,7 +188,7 @@ Latest changes
 ~~~~~~~~~~~~~~~~~~~
 * Storage. Support for numeric-type fields on layers added from external PostgreSQL/PostGIS
 * Search. Improve address search (uses Nominatim)
-* For developers. In addition to style IDs Web map API now provides layer IDs.
+* For developers. In addition to style IDs Web Map API now provides layer IDs.
 
 2019-11-06 release
 ~~~~~~~~~~~~~~~~~~~
@@ -204,7 +204,7 @@ Latest changes
 2019-08-12 release
 ~~~~~~~~~~~~~~~~~~
 
-* Web map. Search for integer values in added to the embedded feature table.
-* Web map. Improved zooming on a point from the embedded feature table.
-* Web map. While editing the embedded feature table is correctly updated to show newly added features.
+* Web Map. Search for integer values in added to the embedded feature table.
+* Web Map. Improved zooming on a point from the embedded feature table.
+* Web Map. While editing the embedded feature table is correctly updated to show newly added features.
 
