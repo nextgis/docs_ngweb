@@ -10,7 +10,7 @@
 Именно стиль добавляется на карты для представления на ней геоданных.
 
 Форматы
-----------------------------------
+-----------
 
 Сейчас NextGIS Web поддерживает две библиотеки рендеринга: "Mapserver" и "QGIS". 
 Стиль Mapserver можно писать в текстовом виде. 
@@ -26,7 +26,7 @@
 
 В блоке операций на правой боковой панели в блоке "Создать ресурс" выбрать "Стиль QGIS" (см. :numref:`select_qgis_style`).
 
-.. figure:: _static/select_qgis_style.png
+.. figure:: _static/QGIS_style_select_ru.png
    :name: select_qgis_style
    :align: center
    :width: 20cm
@@ -36,7 +36,7 @@
 
 После выбора «Стиль QGIS» откроется диалог создания ресурса. В открывшемся окне на вкладке «Ресурс» необходимо ввести наименование в соответствующее поле.
 
-.. figure:: _static/name_qgis_style.png
+.. figure:: _static/QGIS_style_name_ru.png
    :name: name_qgis_style
    :align: center
    :width: 20cm
@@ -49,7 +49,7 @@
 На вкладке **Стиль QGIS** необходимо выбрать qml-файл стиля на устройстве или перетащить его в эту область (см. :numref:`upload_svg_qgis_style`).
 Здесь же при необходимости можно выбрать ресурс библиотеки маркеров SVG, в которой находится иконка для отображения на веб-карте.
 
-.. figure:: _static/upload_svg_qgis_style.png
+.. figure:: _static/QGIS_style_upload_ru.png
    :name: upload_svg_qgis_style
    :align: center
    :width: 20cm
@@ -63,14 +63,14 @@
 .. figure:: _static/save_svg_qgis_style.png
    :name: save_svg_qgis_style
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Сохранение qml-файла в NextGIS QGIS
    
 .. figure:: _static/svg_qgis_style.png
    :name: svg_qgis_style
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Настройка свойств стиля в NextGIS QGIS
 
@@ -90,12 +90,19 @@
 Стиль Mapserver
 --------------
 
-Для создания стиля **Mapserver** необходимо сначала зайти в слой, для которого вы его создаёте. В окне свойств поля "Создать ресурс" выбрать "Стиль MapServer".
+Для создания стиля **MapServer** необходимо сначала зайти в слой, для которого вы его создаёте. В окне свойств поля "Создать ресурс" выбрать "Стиль MapServer".
+
+.. figure:: _static/mapserver_style_select_ru.png
+   :name: mapserver_style_select_pic
+   :align: center
+   :width: 20cm
+ 
+   Выбор стиля MapServer
 
 После выбора "Стиль MapServer" откроется диалог создания ресурса (см. :numref:`ngweb_window_create_resource_mapserver_pic`).
 В открывшемся окне на вкладке "Ресурс" необходимо внести данные в обязательное к заполнению поле - "Наименование".
 
-.. figure:: _static/ngweb_window_create_resource_mapserver_pic_rus.png
+.. figure:: _static/mapserver_style_create_ru.png
    :name: ngweb_window_create_resource_mapserver_pic
    :align: center
    :width: 20cm
@@ -106,24 +113,24 @@
 Поле "Ключ" является опциональным. Можно также ввести описание и метаданные на соответствующих вкладках.
 Настройки тайлового кэша подробнее описаны в `данном <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-tile-cache>`_ разделе. 
 
-На вкладке "Стиль MapServer" необходимо построчно ввести стиль вручную (см. :numref:`ngweb_create_resource_mapsrev_pic`).
+При желании на вкладке "Стиль MapServer" можно построчно ввести стиль вручную (см. :numref:`ngweb_create_resource_mapsrev_pic`). Если этого не сделать, будут использованы значения по умолчанию.
 
 .. figure:: _static/ngweb_create_resource_mapsrev_rus.png
    :name: ngweb_create_resource_mapsrev_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
  
    Вкладка "Стиль MapServer"
 
 
-После нажатия кнопки "Создать" начнется процесс обработки запроса, по окончании которого откроется окно файла со стилем Mapserver:
+После нажатия кнопки "Создать" начнется процесс обработки запроса, по окончании которого откроется  ресурс стиля Mapserver:
 
-.. figure:: _static/ngweb_File_format_window_MapServer_rus.png
-   :name: ngweb_File_format_window_MapServer_pic
+.. figure:: _static/MapServer_created_ru.png
+   :name: MapServer_created_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Окно файла со стилем Mapserver
+   Созданный стиль Mapserver
 
 
 .. _ngw_create_tile_cache:
@@ -159,21 +166,22 @@
 
 1. Добавить слой
 2. Добавить группу
-3. Удалить
+3. Удалить слой или группу
+4. Изменить отображемый порядок слоев
   
-.. figure:: _static/select_svg_style.png
+.. figure:: _static/admin_webmap_add_layers_rus.png
    :name: select_svg_style
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Добавления QGIS стиля на веб-карту
 
 Чтобы посмотреть карту, нажмите *Открыть* на правой боковой панели, находясь внутри ресурса *веб-карта*. Откроется окно веб-карты с загруженными стилями. Если в свойствах qml-файлов были прописаны пути до svg-маркеров и в настройках стилей в веб-интерфейсе указаны библиотеки соответствующих маркеров, то слой на карте отобразится соответствующим образом (см. :numref:`webmap_svg`).
   
-.. figure:: _static/webmap_svg.png
+.. figure:: _static/webmap_svg_ru.png
    :name: webmap_svg
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Веб-карта с QGIS стилем (с svg-маркерами)
 
@@ -203,7 +211,7 @@
    :align: center
    :width: 16cm
 
-   Демонстрация различных видов штриховок.
+   Демонстрация различных видов штриховок
 
 * <symbol>std:circle</symbol> - тип значка
 
