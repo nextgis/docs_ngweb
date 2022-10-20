@@ -110,3 +110,21 @@ The computing is performed in the following sequence:
 
 In the result you have an effective set of user permissions - permissions which are allowed, not denied and not masked by dependencies.
 Based on this set NextGIS Web makes a decision about performing an action both in the API and in the web interface.
+
+
+.. _ngw_first_entry:
+
+Assigning permissions to users before their first sign in
+----------------------------------------------------------
+
+In NextGIS Web, users have the ability to sign in both as an internal NextGIS Web user and as a global account on my.nextgis.com.
+In the second case, the administrator must add the global user account to `the team <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_ in its profile on my.nextgis.com or NextGIS ID on-premise server.
+
+After sign in, a global user becomes a NextGIS Web user and is counted in the limit on their number.
+However, by default, it does not have any permissions in NextGIS Web.
+
+Therefore, we advise you to pre-set the permission type for a global user before its first auth.
+There are two ways how you can do this:
+
+* Preferred method: Assign permissions to some `user group <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#ngw-create-group>`_ by checking the "New Users" flag. The user will be included in this group the first time they log in to NextGIS Web.
+* Alternative way: assign resource permissions for the principal “Authenticated”.
