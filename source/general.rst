@@ -139,9 +139,12 @@ Recommended software versions
 
 Recomended browsers are:
 
-* Internet Explorer 11.0 or a newer version
-* Mozilla Firefox 45 or a newer version
-* Google Chrome 45 or a newer version
+* Google Chrome (version 94 or newer)
+* Mozilla Firefox (version 91 or newer)
+* Edge (version 94 or newer)
+* Safari (version 14 or newer)
+
+Microsoft Internet Explorer browser is no suppoted.
 
 .. warning::
 
