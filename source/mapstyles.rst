@@ -5,15 +5,15 @@
 Vector layer styles
 =====================
 
-Styles describe a way of rendering for geodata and are one of the resources of NGW.
-Style is added to a map to display geodata.
+Style is a type of NextGIS resource that describes a way to render the geodata.
+Styles are necessary to display geodata on a Web Map.
 
 Formats
 ----------------------------------
 
 By now NextGIS Web supports two rendering libraries: "Mapserver" and "QGIS". 
 You can write Mapserver style yourself as a text. 
-QGIS style you can only download from related qml file, it has much more settings. 
+QGIS style can only be uploaded from a qml file, it has much more settings. 
 
 
 .. _ngw_qgis_style:
@@ -26,7 +26,7 @@ To create a style you need to open layer properties of the layer you want create
 
 In actions pane "Create resource" click "QGIS style" (see :numref:`select_qgis_style`).
 
-.. figure:: _static/select_qgis_style_en.png
+.. figure:: _static/QGIS_style_select_en.png
    :name: select_qgis_style
    :align: center
    :width: 20cm
@@ -37,7 +37,7 @@ In actions pane "Create resource" click "QGIS style" (see :numref:`select_qgis_s
 After the selection of "QGIS style" create resource dialog will open and will look like :numref:` name_qgis_style`.
 On the "Resource" tab enter the display name. 
 
-.. figure:: _static/name_qgis_style_eng.png
+.. figure:: _static/QGIS_style_name_en.png
    :name: name_qgis_style
    :align: center
    :width: 20cm
@@ -49,7 +49,7 @@ Field "Keyname" is optional. You can also add resource description and metadata 
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_. 
 
 Switch to "QGIS style" tab and click "Select a file" button in the "QML file" field or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
-Here, if necessary, you can select the SVG marker library resource, which contains the icon to be displayed on the web map.
+Here, if necessary, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
 
 .. figure:: _static/upload_svg_qgis_style_en.png
    :name: upload_svg_qgis_style
@@ -65,14 +65,14 @@ Here, if necessary, you can select the SVG marker library resource, which contai
 .. figure:: _static/save_svg_qgis_style_en.png
    :name: save_svg_qgis_style
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Save QML file in NextGIS QGIS
    
 .. figure:: _static/svg_qgis_style_en.png
    :name: svg_qgis_style
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Layer properties settings in NextGIS QGIS
 
@@ -108,12 +108,12 @@ Field "Keyname" is optional.
 You can also add resource description and metadata on the corresponding tabs.
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
-Switch to "MapServer style" tab and write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`).
+In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). Otherwise default values are used.
 
 .. figure:: _static/ngweb_create_resource_mapsrev_eng.png
    :name: ngweb_create_resource_mapsrev_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
  
    "MapServer style" tab
 
@@ -133,7 +133,7 @@ After clicking "Create" the process of creation will finish, the window of the f
 Tile cache
 ------------
 
-Caching provides faster rendering of web map layers. The **tile cache** settings tab while creating styles consists of the following settings (см. :numref:`tile_cache_settings`):
+Caching provides faster rendering of Web Map layers. The **tile cache** settings tab while creating styles consists of the following settings (см. :numref:`tile_cache_settings`):
 
 * *Enabled* checkbox;
 * *Allow using tiles in non-tile requests* checkbox - the requested image (not a tile) will be prepared from previously cached tiles (if available);
@@ -154,39 +154,33 @@ Caching provides faster rendering of web map layers. The **tile cache** settings
 Adding a style on the map
 ------------------------
 
-To edit a web-map click pencil icon near it or click the web-map and in actions pane "Action" select "Update". In "Update resource" layer select **Layers** tab (see in :numref:`select_svg_style`).
+To edit a Web Map click pencil icon near it or click the Web Map and in actions pane "Action" select "Update". In "Update resource" layer select **Layers** tab (see in :numref:`select_svg_style`).
 
 Here you can do the following actions:
 
 1. Add layer
 2. Add group
-3. Remove
-  
+3. Remove layer or group
+4. Modify the order of the layers on the map
+
+Click "Add layer" and in opened window select the QGIS style of the layer, then click "OK". After that click "Save" 
+
 .. figure:: _static/select_svg_style_en.png
    :name: select_svg_style
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Adding QGIS style on the map
    
 
-Click "Add layer" and in opened window select a layer with QGIS style, then click "OK". After that click "Save" (see in :numref:`ngweb_select_file_upload_web_map_pic`).
-  
-.. figure:: _static/ngweb_select_file_upload_web_map_eng.png
-   :name: ngweb_select_file_upload_web_map_pic
+In the "Web Map" actions pane of the Web Map properties window select "Display". The map will open, layers tree will be on the left. To hide/display a layer place a tick near the layer .
+
+.. figure:: _static/webmap_svg_en.png
+   :name: webmap_svg_pic
    :align: center
-   :width: 16cm
-   
-   Selection of a layer with QGIS style to add on a web-map.
+   :width: 20cm
 
-In actions pane "Web map" of web-map properties window select "Display". The map will open, layers tree will be on the left of it. To hide/display a layer place a tick near the layer (see in :numref:`ngweb_Map_and_tree_layers_pic`).
-
-.. figure:: _static/ngweb_Map_and_tree_layers_eng.png
-   :name: ngweb_Map_and_tree_layers_pic
-   :align: center
-   :width: 16cm
-
-   Web-map with a layer with QGIS style and layers tree      
+   Web Map with a layer with QGIS style      
 
 
 Map style tags
@@ -778,7 +772,7 @@ OSM highway-lowzoom
 
 Public roads (small roads are in a separate style). Colorscheme from openstreetmap.de
 
-.. figure:: _static/mastyles_osm-highway-lowzoom.png
+.. figure:: _static/mastyles_osm-highway-lowzoom_en.png
    :name: mastyles_osm-highway-lowzoom
    :align: center
 
