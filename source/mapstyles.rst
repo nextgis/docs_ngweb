@@ -175,12 +175,12 @@ Click "Add layer" and in opened window select the QGIS style of the layer, then 
 
 In the "Web Map" actions pane of the Web Map properties window select "Display". The map will open, layers tree will be on the left. To hide/display a layer place a tick near the layer .
 
-.. figure:: _static/webmap_svg_en.png
+.. figure:: _static/webmap_svg_en_2.png
    :name: webmap_svg_pic
    :align: center
    :width: 20cm
 
-   Web Map with a layer with QGIS style      
+   Layer with special SVG markers in the QGIS style on a Web Map    
 
 
 Map style tags
