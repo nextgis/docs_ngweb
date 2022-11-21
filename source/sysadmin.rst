@@ -5,9 +5,10 @@
 System administration
 =====================
 
-This section describes system administrator tasks..
+This section describes system administrator tasks and provides changelog information.
 
 .. toctree::
    :maxdepth: 2
    
    install-ubuntu
+   sysadmin_updates
