@@ -11,3 +11,4 @@
    :maxdepth: 2
    
    install-ubuntu
+   sysadmin_updates
