@@ -17,7 +17,7 @@ First, you specify the parameters for the layer, and then you add a style that r
 .. _ngw_create_basemap:
 
 Basemap
---------
+-------
 
 In the "Create resource" actions pane click **Basemap** (:numref:`ngweb_admin_create_basemap`).
 In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
@@ -538,7 +538,7 @@ Here enter the following WMS server connection parameters:
 * Version of WMS protocol
 * Capabilities (manages GetCapabilities queries to the WMS Server)
 
-Supported versions of WMS protocol: 1.1.1, 1.3.
+Supported versions of WMS protocol: 1.1.1, 1.3.0
 After setting up all necessery parameters, click **Create**.
 
 
