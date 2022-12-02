@@ -474,6 +474,9 @@ After that you can display a view to check if the query is correct without closi
 WMS layer
 ---------
 
+.. note:: 
+	Currently supported WMS versions 1.1.1 and 1.3.0.
+
 NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NextGIS Web requests data in EPSG:3857 and this particular server does not support that coordinate system.
 
 
