@@ -101,29 +101,14 @@ Editing
 
 .. _ngw_sys_req:
     
-Recommended hardware
---------------------
+Minimum hardware
+----------------
 
-Recommended hardware for effective work with NextGIS Web software includes a server with the following characteristics:
+Minimum hardware requirements for NextGIS Web software:
 
-* one or two processor  Intel Xeon E5 or AMD Opteron with frequency not  
-  less than 2 GHz (8 cores)
-* not less than 16 Gb of DDR3 ECC Reg RAM
-* appropriate motherboard for selected processors with integrated 
-  videocard and a network interface 10/100/1000BaseT
-* two hard disk drives (HDD) with a capacity from 500 Gb in RAID1
-* DVD-ROM
-* server case
-* mouse
-* keyboard
-* uninterruptible power supply with a capacity of not less than 1000 VA
-* LCD monitor 17
-
-Client device could be a desktop (with 11-27" monitor).
-
-Also it is possible to use hosted servers with the same characteristics of proccessor and RAM. Hard disk drive capacity depends on the volume of geodata. 
-Operation system with NextGIS Web software and a database requires not more than 20-30 Gb of hard disk drive space.
-
+* 4 vCPU
+* 8 Gb of RAM
+* 250 Gb HDD (SSD would be much better)
 
 .. _ngw_soft_req:
     
