@@ -130,12 +130,11 @@ Operation system with NextGIS Web software and a database requires not more than
 Recommended software versions
 -----------------------------
 
-* Ubuntu Server 18.04 LTS
-* PostgreSQL 9.5
-* PostGIS 2.2
-* Pyramid >= 1.5
-* SQLAlchemy >= 0.8,<0.9
-* GDAL 2.x
+* Ubuntu Server 20.04 LTS
+* Python >= 3.8
+* PostgreSQL >= 10
+* PostGIS >= 2.5
+* GDAL >= 3
 
 Recomended browsers are:
 
