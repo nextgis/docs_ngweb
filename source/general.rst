@@ -24,7 +24,7 @@ NextGIS Web has server and client sides.
 
 Server side stores and renders geodata. It's written in Python using Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management as maps and separate resources.
 
-Client is written in JavaScript and based on Dojo framework. All configuration is stored in a PostgreSQL database with a :term:`PostGIS` extension. Page markup for user interface is written using HTML. Style for user interface is added using cascading style sheets – CSS. Queries to databases use SQL language.
+Client is written in JavaScript. System's configuration is stored in a PostgreSQL database with a :term:`PostGIS` extension. Page markup for user interface is written using HTML. Style for user interface is added using cascading style sheets – CSS. Queries to databases use SQL language.
 
 NextGIS Web is a modular system with several core modules and extensions. Extensions could be enabled or disabled at the  application configuration step. NextGIS Web components communicate with each other using internal API methods.
 
