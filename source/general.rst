@@ -135,6 +135,8 @@ Recommended software versions
 * PostgreSQL >= 10
 * PostGIS >= 2.5
 * GDAL >= 3
+* Node.js >= 14.x
+* Yarn >= 1.x 
 
 Recomended browsers are:
 
