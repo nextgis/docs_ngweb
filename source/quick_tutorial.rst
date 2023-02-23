@@ -42,7 +42,9 @@ NextGIS Web has the following features:
 Integration with other NextGIS software
 ----------------------------------------
 
+To manage geodata in NextGIS Web you can use the specialized plugin for NextGIS QGIS - `NextGIS Connect <https://docs.nextgis.com/docs_ngconnect/source/toc.html>`_.
 
+Use the specialized NextGIS Knnekt module to manage geodata in NextGIS Web.
 
 This software simplifies batch processing of data in NextGIS Web.
 
