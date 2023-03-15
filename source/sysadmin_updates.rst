@@ -7,6 +7,22 @@ Latest changes
 
 This section describes latest changes to the software.
 
+
+4.4.0 released 28.12.2022
+~~~~~~~~~~~~~~~~~~~~~~~~~
+* Limit by extent while exporting feature layer.
+* OAuth-based automatic group assignment.
+* Geometry properties in the identification popup.
+* Display the cursor location and an extent on webmaps.
+* Zoom to all layers on webmaps.
+* Support for linear and polygonal annotations.
+
+
+4.3.1 released 14.12.2022
+~~~~~~~~~~~~~~~~~~~~~~~~~
+* Fix resource group selection issue while cloning webmaps
+
+
 4.3.0 released 21.11.2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 * Support for webmap cloning via UI.
