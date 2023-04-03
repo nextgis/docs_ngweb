@@ -8,7 +8,7 @@ Latest changes
 This section describes latest changes to the software.
 
 
-4.4.0 released 28.12.2022
+4.4.0 future release
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 * Limit by extent while exporting feature layer.
 * OAuth-based automatic group assignment.
