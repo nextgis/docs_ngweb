@@ -38,7 +38,7 @@ NextGIS Web обеспечивает следующие возможности:
 .. only:: html
 
    Для управления :term:`геоданными <геоданные>` в NextGIS Web можно использовать 
-   специализированный модуль расширения для ГИС NextGIS QGIS - :ref:`NextGIS Connect <ng_connect>`. 
+   специализированный модуль расширения для ГИС NextGIS QGIS - `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/ngconnect.html>`_. 
 
 .. only:: latex
 
