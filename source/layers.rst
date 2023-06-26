@@ -212,39 +212,17 @@ NextGIS Web строится на **ресурсном** подходе - каж
    :align: center
    :width: 20cm
 
-   Выбор действия "Векторный слой".
+   Выбор действия "Векторный слой"
  
-В открывшемся окне укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
-Поле "Ключ" является необязательным к заполнению.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_2.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_name
-   :align: center
-   :width: 20cm
-
-   Наименование векторного слоя
-   
-   
-На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_description
-   :align: center
-   :width: 20cm
-
-   Описание векторного слоя
-
-В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
-   :align: center
-   :width: 20cm
-
-   Метаданные векторного слоя
-
-На вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoJSON, GML, KML или GeoPackage. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+На открывшейся вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoJSON, GML, KML или GeoPackage. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus_3.png
+   :name: ngweb_admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 15cm
+
+   Окно загрузки векторного файла
 
 Ниже предлагается определить дополнительные параметры создания векторного слоя. В зависимости от качества данных можно следующим образом обрабатывать ошибки геометрии при загрузке файла:
 
@@ -254,14 +232,39 @@ NextGIS Web может принимать многослойные наборы 
 
 Исходя из данных далее указываются тип геометрии, наличие/отсутствие мультигеометрий, Z-координаты и источник FID (field-ID, определять автоматически или указать из определенного поля). Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. Для формата GeoJSON кодировка всегда должна быть UTF-8. Подробнее о дополнительных параметрах можно прочитать `здесь <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus_2.png
-   :name: ngweb_admin_layers_create_vector_layer_upload
+
+
+Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
+Поле "Ключ" является необязательным к заполнению.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_3.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 20cm
+   :width: 15cm
 
-   Окно загрузки векторного файла
+   Наименование векторного слоя
+   
+   
+На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
 
-После загрузки файла и указания параметров нажмите кнопку **Создать**.
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus_2.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_description
+   :align: center
+   :width: 15cm
+
+   Описание векторного слоя
+
+В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus_2.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
+   :align: center
+   :width: 15cm
+
+   Метаданные векторного слоя
+
+
+После завершения ввода нужных данных нажмите кнопку **Создать**.
 
 Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
