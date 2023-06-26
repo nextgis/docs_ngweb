@@ -294,6 +294,42 @@ NextGIS Web может принимать многослойные наборы 
 Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
 
 
+.. _ngw_create_vector_layer:
+
+Пустой векторный слой
+-------------------------
+
+Создание пустого векторного слоя позволяет начать вести базу данных в ВебГИС без использования настольного приложения. 
+
+Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
+В блоке операций "Создать ресурс" выберите из списка **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_rus_2.png
+   :name: ngweb_admin_layers_create_vector_layer
+   :align: center
+   :width: 20cm
+
+   Выбор действия "Векторный слой"
+
+В открывшемся окне в выпадающем меню выберите "Создать пустой слой". Ниже появится поле выбора типа геометрии слоя. По умолчанию создается точечный слой.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_blank_ru.png
+   :name: ngweb_admin_layers_create_vector_layer_blank_pic
+   :align: center
+   :width: 15cm
+
+   Окно выбора геометрии пустого слоя
+
+На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
+
+В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+
+После завершения ввода нужных данных нажмите кнопку **Создать**.
+
+Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngcom/source/data_edit.html#id5>`_.
+
 .. _ngw_create_postgis:
 
 Векторный слой из PostGIS
