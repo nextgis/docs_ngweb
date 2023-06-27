@@ -294,7 +294,7 @@ NextGIS Web может принимать многослойные наборы 
 Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
 
 
-.. _ngw_create_vector_layer:
+.. _ngw_create_empty_vector_layer:
 
 Пустой векторный слой
 -------------------------
@@ -320,6 +320,9 @@ NextGIS Web может принимать многослойные наборы 
 
    Окно выбора геометрии пустого слоя
 
+Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
+Поле "Ключ" является необязательным к заполнению.
+
 На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
 
 В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
@@ -328,7 +331,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
-Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngcom/source/data_edit.html#id5>`_.
+Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngcom/source/data_edit.html#ngcom-data-create-objects>`_.
 
 .. _ngw_create_postgis:
 
