@@ -211,8 +211,25 @@ In the "Create resource" actions pane select **Vector layer** (see :numref:`ngwe
 
    Selection of "Vector layer" action
 
+In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
-In the opened tab, enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
+Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
+
+* Not fix errors 
+* Fix whatever is possible
+* Fix without losing data
+
+Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng_3.png
+   :name: ngweb_admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 14cm
+
+   Vector file upload tab
+
+
+In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng_2.png
@@ -223,7 +240,7 @@ It will be displayed in the admin interface. The "Key" field is optional.
    Vector layer name
 
 
-On the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
+In the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_eng.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
@@ -243,25 +260,10 @@ In the "Metadata" tab you can add information in the "key-value" format (:numref
    Vector layer metadata
 
 
-On the "Vector Layer" tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
-
-Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
-
-* Not fix errors 
-* Fix whatever is possible
-* Fix without losing data
-
-Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng_2.png
-   :name: ngweb_admin_layers_create_vector_layer_upload
-   :align: center
-   :width: 20cm
-
-   Vector file upload tab
 
 
 After uploading the file and specifying the parameters, click the **Create** button.
+
 Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 
@@ -289,6 +291,50 @@ Use :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>` if you need to upl
 	
 	
 If input data layer contains fields named id (ID) or geom (GEOM), they will be renamed on import. If id has meaningful identifiers, they will automatically be turned into internal FIDs.
+
+
+.. _ngw_create_empty_vector_layer:
+
+Empty vector layer
+-------------------------
+
+Creating an empty vector layer allows you to start a data base in your WebGIS without using a desktop app. 
+
+Navigate to the resource group (folder) in which to create a vector layer.
+In the “Create resource” actions pane select Vector layer (see :numref:`ngweb_admin_layers_create_vector_layer_2`). 
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_eng_2.png
+   :name: ngweb_admin_layers_create_vector_layer_2
+   :align: center
+   :width: 20cm
+
+   Selecting "Vector layer" action
+
+In the opened window use the dropdown menu to select "Create empty layer". In the field below select geometry type for the layer. By default, a point layer will be created.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_blank_en.png
+   :name: ngweb_admin_layers_create_vector_layer_blank_pic
+   :align: center
+   :width: 15cm
+
+   Selecting geometry type for an empty layer
+
+In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
+It will be displayed in the admin interface. The "Key" field is optional.
+
+In the “Description” tab you can add any text describing the content (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
+
+In the “Metadata” tab you can add information in the “key-value” format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+
+After uploading the file and specifying the parameters, click the Create button. 
+
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+To add features to the newly created layer you can use the `editing toolbar <https://docs.nextgis.com/docs_ngcom/source/data_edit.html#create-a-new-feature-point-line-polygon>`_.
+
+
+
+
 
 .. _ngw_create_postgis_layer:
 
