@@ -302,10 +302,10 @@ NextGIS Web может принимать многослойные наборы 
 Создание пустого векторного слоя позволяет начать вести базу данных в ВебГИС без использования настольного приложения. 
 
 Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
-В блоке операций "Создать ресурс" выберите из списка **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
+В блоке операций "Создать ресурс" выберите из списка **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer_2`). 
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_rus_2.png
-   :name: ngweb_admin_layers_create_vector_layer
+   :name: ngweb_admin_layers_create_vector_layer_2
    :align: center
    :width: 20cm
 
