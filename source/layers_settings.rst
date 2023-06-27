@@ -12,6 +12,49 @@ Layers settings become available after a layer creation.
 
 To edit a layer you need to navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`). The window "Update resource" will open, where you can edit the layer.
 
+.. _ngw_vector_file_replace:
+
+Delete or replace all features
+-------------------------
+
+NextGIS Web software allows to delete all features of a layer or replace them by uploading a new file.
+
+Click on the pencil icon next to the layer. 
+
+In the "Vector layer" tab select the action from the dropdown menu.
+
+.. figure:: _static/ngw_update_vector_file_options_en.png
+   :name: ngw_update_vector_file_options_pic
+   :align: center
+   :width: 15cm
+   
+   Options to edit the layer file
+
+You can delete all the features. This will result in an empty layer of the same structure that you can add new features to. To do so, select "Delete all features from layer", tick to confirm and press **Save**.
+
+.. figure:: _static/ngw_update_vector_file_clear_en.png
+   :name: ngw_update_vector_file_clear_pic
+   :align: center
+   :width: 15cm
+   
+   Deleting all features from the layer
+
+You can replace all the features by uploading a previously prepared file. Select "Replace layer features from file". Open the file or drag and drop it into the frame. 
+
+.. figure:: _static/ngw_update_vector_file_replace_en.png
+   :name: ngw_update_vector_file_replace_pic
+   :align: center
+   :width: 15cm
+   
+   Replacing layer file
+
+If the file has multiple layers, select the one you need in the "Source layer" field. You can also set up other properties, as while creating a new vector layer.
+
+.. note:
+   You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
+
+
+
 .. _ngw_attributes_edit:
 
 Edit attribute values
