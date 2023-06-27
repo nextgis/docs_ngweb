@@ -50,6 +50,8 @@ You can replace all the features by uploading a previously prepared file. Select
 
 If the file has multiple layers, select the one you need in the "Source layer" field. You can also set up other properties, as while creating a new vector layer.
 
+If you replace the file, now only the features, but the structure of the attributes and other properties will be changed to match the new file.
+
 .. note:
    You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
 
