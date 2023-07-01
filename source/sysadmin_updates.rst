@@ -7,16 +7,34 @@ Latest changes
 
 This section describes latest changes to the software.
 
-
-4.4.0 future release
+4.4.0 released 30.06.2023
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-* Limit by extent while exporting feature layer.
-* OAuth-based automatic group assignment.
+
+* Auto-generated and configurable legends for webmaps.
+* Reordering layers via drag-and-drop while viewing webmaps.
+* Changing layer opacity while viewing webmaps.
+* Creation of an empty vector layer without uploading a file.
+* Ability to replace existing vector layer features and fields from a file.
+* Brand-new feature table based on React.
+* Resource and feature description editors updated to CKEditor 5.
+* Improved handling of resource descriptions on webmaps.
+* Zoom to a filtered set of features on webmaps.
 * Geometry properties in the identification popup.
-* Display the cursor location and an extent on webmaps.
+* Show the cursor location and the current extent on webmaps.
 * Zoom to all layers on webmaps.
 * Support for linear and polygonal annotations.
-
+* Default display names for resources during creation.
+* Deletion of all features and changing geometry type for vector layers.
+* Limit by extent while exporting feature layers.
+* Ability to export a filtered set of features.
+* MapInfo formats support when creating a vector layer.
+* TMS client: parallel fetching of tiles and HTTP/2.
+* Reasonable resource tabs ordering and auto-activation.
+* Improved usability of the layers tree on webmaps.
+* Fast PNG compression for rendering.
+* Chrome 102+, Safari 15+, Edge 109+ or Firefox 102+ is required.
+* User permissions section is moved to a separate page.
+* OAuth-based automatic group assignment.
 
 4.3.1 released 14.12.2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~
