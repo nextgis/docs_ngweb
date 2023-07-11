@@ -1084,7 +1084,7 @@ NextGIS Web является сервером OGC API Features - может пу
 
 .. sourcecode:: http
 
-   https://yourwebgis.nextgis.com/api
+   https://yourwebgis.nextgis.com/api/resource/208/ogcf
 
 .. _ngw_resourses_group:
 Создание группы ресурсов
