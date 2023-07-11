@@ -1011,6 +1011,79 @@ NextGIS Web является сервером WFS - может публиков�
 
 .. _ngw_resourses_group:
 
+Создание сервиса OGC API Features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Настройка сервиса OGC API Features осуществляется так же, как для WFS-сервиса.
+   
+NextGIS Web является сервером OGC API Features - может публиковать сервисы OGC API Features на базе векторных слоёв. Используя эти сервисы, сторонние программы могут изменять векторные данные на сервере. Поддерживаемые версии протокола OGC API Features: 1.0.0.
+
+Для развёртывания сервиса OGC API Features необходимо в блоке операций «Создать ресурс» выбрать **Сервис OGC API Features**. (:numref:`admin_layers_create_ogc_api_features_service_rus`). 
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_rus.png
+   :name: admin_layers_create_ogc_api_features_service_rus
+   :align: center
+   :width: 16cm
+
+   Выбор действия "Сервис OGC API Features"
+   
+На вкладке **Ресурс** указывается наименование сервиса (:numref:`admin_layers_create_ogc_api_features_service_name_rus`). Поле "Ключ" предназначено для разработчиков, заполенять его не обязательно.
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_name_rus.png
+   :name: admin_layers_create_ogc_api_features_service_name_rus
+   :align: center
+   :width: 16cm
+
+   Наименование Сервиса OGC API Features
+   
+   
+На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`admin_layers_create_ogc_api_features_service_description_rus`)
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_description_rus.png
+   :name: admin_layers_create_ogc_api_features_service_description_rus
+   :align: center
+   :width: 20cm
+
+   Описание Сервиса OGC API Features
+   
+В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_ogc_api_features_service_metadata_rus`).
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_rus.png
+   :name: admin_layers_create_ogc_api_features_service_metadata_rus
+   :align: center
+   :width: 20cm
+
+   Метаданные Сервиса OGC API Features
+
+Вкладка "Сервис OGC API Features" отвечает за слои, включаемые в сервис (:numref:`admin_layers_create_ogc_api_features_service_settings_rus`). Для каждого 
+добавленного слоя нужно указать число возвращаемых из базы объектов. По умолчанию это значение равно 1000.
+Если в этом поле значение убрать совсем, то ограничение будет снято и будут передаваться все объекты. Однако это может привести 
+к значительной нагрузке на сервер и значительным задержкам при передаче больших объемов данных.
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_settings_rus.png
+   :name: admin_layers_create_ogc_api_features_service_settings_rus
+   :align: center
+   :width: 20cm
+
+   Окно параметров сервиса OGC API Features
+
+
+.. _ngw_service_using_OGC_API_Features:
+
+Использование сервиса OGC API Features
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+После создания ресурса вам будет доступен URL сервиса OGC API Features, который вы можете использовать в других программах, например :program:`QGIS`. 
+
+Если это необходимо, можно настроить права доступа к сервису OGC API Features (см. главу :ref:`ngw_access_rights`).
+
+Программно подключаться к созданным сервисам OGC API Features можно по ссылкам следующего вида (также `поддерживается <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/auth.html>`_ basic auth):
+
+.. sourcecode:: http
+
+   https://yourwebgis.nextgis.com/api
+
+.. _ngw_resourses_group:
 Создание группы ресурсов
 ------------------------
 
