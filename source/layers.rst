@@ -973,6 +973,81 @@ WFS services can also be accessed with links of the following type (`basic auth 
 
    https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
 
+.. _ngw_wfs_service:
+
+OGC API Features service
+-----------
+
+The OGC API Features service is configured in the same way as for a WFS service.
+ 
+NextGIS Web acts as OGC API Features server and publishes OGC API Features services based on vector layers. Third party software can use these services to edit vector data on server. Supported OGC API Features protocol versions is 1.0.0. 
+
+To deploy a OGC API Features service click **OGC API Features service** in the "Create resource" actions pane (see :numref:`admin_layers_create_ogc_api_features_service_en`). 
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_en.png
+   :name: admin_layers_create_ogc_api_features_service_en
+   :align: center
+   :width: 16cm
+
+   Selection of "OGC API Features service" action
+   
+Create resource dialog for OGC API Features service is presented on :numref:`admin_layers_create_ogc_api_features_service_name_en`. 
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_name_en.png
+   :name: admin_layers_create_ogc_api_features_service_name_en
+   :align: center
+   :width: 16cm
+
+   Create resource dialog for OGC API Features service
+
+Enter the name of the resource that will be displayed in the administrator interface. Do not 
+confuse this name with a name of layers in a database. 
+
+"Keyname" field is optional.
+
+On the "Description" tab you can add any text describing the content of this service.
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_description_en.png
+   :name: admin_layers_create_ogc_api_features_service_description_en
+   :align: center
+   :width: 16cm
+
+   OGC API Features service description
+
+On the "Metadata" tab you can enter information in the "key-value" format.
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_en.png
+   :name: admin_layers_create_ogc_api_features_service_metadata_en
+   :align: center
+   :width: 16cm
+
+   OGC API Features service metadata
+ 
+Switch to "OGC API Features service" tab, which is presented on :numref:`admin_layers_create_ogc_api_features_service_settings_en` and add required layers to a list (see :numref:`admin_layers_create_ogc_api_features_service_settings_en`).
+For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
+
+.. figure:: _static/admin_layers_create_ogc_api_features_service_settings_en.png
+   :name: admin_layers_create_ogc_api_features_service_settings_en
+   :align: center
+   :width: 16cm
+
+   OGC API Features service tab of Create resource dialog
+
+
+.. _ngw_service_using_wfs:
+
+Using OGC API Features service
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After the resource is created, a URL for the OGC API Features service is available. You can use it in other software, for example :program:`QGIS`. 
+
+You can set access permissions for OGC API Features service if needed. See section :ref:`ngw_access_rights`.
+
+OGC API Features services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
+
+.. sourcecode:: http
+
+   hhttps://yourwebgis.nextgis.com/api
 
 .. _ngw_resources_group:
 
