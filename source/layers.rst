@@ -1047,7 +1047,7 @@ OGC API Features services can also be accessed with links of the following type 
 
 .. sourcecode:: http
 
-   hhttps://yourwebgis.nextgis.com/api
+   hhttps://yourwebgis.nextgis.com/api/resource/208/ogcf
 
 .. _ngw_resources_group:
 
