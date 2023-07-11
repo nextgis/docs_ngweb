@@ -68,16 +68,15 @@
 * Редактирование атрибутов из административного интерфейса: 
 
   - Нажать на значок таблицы напротив векторного слоя или открыть этот слой, а затем в блоке операций выбрать действие над слоем - "Таблица объектов" (см. :numref:`ngweb_Object_table`).
-  - Откроется таблица. Выбрать нужную строку в таблице и в этой строке слева в пустом 
-    окошке проставить отметку для выделения строки для выполнения действий над объектом. 
+  - Откроется таблица. Кликнуть на нужную строку в таблице, она будет выделена желтым. 
   - Нажать на кнопку "Редактировать" над таблицей (см. :numref:`ngweb_editing_attributes2.7`).
 
-.. figure:: _static/ngweb_editing_attributes2.7_rus.png
+.. figure:: _static/ngweb_editing_attributes2.7_rus_2.png
    :name: ngweb_editing_attributes2.7
    :align: center
    :width: 16cm
    
-   Редактирование атрибутов из административного интерфейса.
+   Редактирование атрибутов из административного интерфейса
 
 * Редактирование атрибутов при просмотре карты: 
   
@@ -85,12 +84,12 @@
   - Выбрать объект и нажать на него инструментом идентификации. 
   - Нажать на кнопку редактирования (последняя вкладка, см. :numref:`ngweb_editing_when_viewing_map`).
 
-.. figure:: _static/ngweb_editing_when_viewing_map_rus.png
+.. figure:: _static/ngweb_editing_when_viewing_map_rus_2.png
    :name: ngweb_editing_when_viewing_map
    :align: center
    :width: 16cm
 
-   Редактирование атрибутов при просмотре карты.
+   Редактирование атрибутов при просмотре карты
 
 В открывшемся окне можно изменять значения атрибутов. Описание, заданное на вкладке "Описание", будет видно при просмотре карты в окне идентификации. 
 
@@ -98,30 +97,38 @@
 
 * вкладка "Атрибуты" (см. :numref:`ngweb_tab_attributes`)
 
-.. figure:: _static/ngweb_tab_attributes_rus.png
+.. figure:: _static/ngweb_tab_attributes_rus_2.png
    :name: ngweb_tab_attributes
    :align: center
    :width: 16cm
  
-   Вкладка "Атрибуты".
+   Вкладка "Атрибуты"
 
-* вкладка "Описание" (см. :numref:`ngweb_tab_description`)
+Для редактирования атрибута просто кликните на нужной строчке. 
 
-.. figure:: _static/ngweb_tab_description_rus.png
-   :name: ngweb_tab_description
-   :align: center
-   :width: 16cm
+Числовые атрибуты можно вводить вручную или изменять, нажимая на стрелки, появляющиеся в правом конце поля. 
 
-   Вкладка "Описание".
+Дату также можно ввести вручную или выбрать в календаре - чтобы вызвать его, нажмите иконку в правом конце поля.
 
 * вкладка "Вложения" (см. :numref:`ngweb_tab_attachment`)
 
-.. figure:: _static/ngweb_tab_attachment_rus.png
+.. figure:: _static/ngweb_tab_attachment_rus_2.png
    :name: ngweb_tab_attachment
    :align: center
    :width: 16cm
  
-   Вкладка "Вложения".
+   Вкладка "Вложения"
+
+* вкладка "Описание" (см. :numref:`ngweb_tab_description`)
+
+.. figure:: _static/ngweb_tab_description_rus_2.png
+   :name: ngweb_tab_description
+   :align: center
+   :width: 16cm
+
+   Вкладка "Описание"
+
+
 
 .. note::
    При редактировании слоя из PostGIS изменения атрибутов сохраняются в PostGIS, 
@@ -141,12 +148,12 @@
 При этом, при идентификации объекта на карте во всплывающем окне будет отображены 
 как атрибуты объекта, так и фотографии, которые были ему сопоставлены (см. :numref:`ngweb_webmap_identification_photos`).
 
-.. figure:: _static/webmap_identification_photos_rus.png
+.. figure:: _static/webmap_identification_photos_rus_2.png
    :name: ngweb_webmap_identification_photos
    :align: center
    :width: 16cm
 
-   Всплывающее окно результатов идентификации объекта с фотографиями.
+   Всплывающее окно результатов идентификации объекта с фотографиями
 
 Добавление фотографий осуществляется в режиме просмотра карты или через редактирование атрибутов из административного интерфейса. Для добавления фотографий в режиме просмотра карты нужно выполнить следующие действия:
 
@@ -156,12 +163,12 @@
 4. Загрузить фотографии. Поддерживаются форматы JPEG, PNG. 
    Формат GIF не поддерживается (см. :numref:`ngweb_admin_object_edit_photos1`).
 
-.. figure:: _static/admin_object_edit_photos1_rus.png
+.. figure:: _static/admin_object_edit_photos1_rus_2.png
    :name: ngweb_admin_object_edit_photos1
    :align: center
    :width: 16cm
 
-   Окно загрузки фотографий к объекту.
+   Окно загрузки фотографий к объекту
 
 5. Ввести подписи к фотографиям и нажать "Сохранить".
 
@@ -173,12 +180,12 @@
 пользователю можно переходить между фотографиями, используя клавиши вправо-влево 
 на клавиатуре (см. :numref:`ngweb_webmap_identification_photo_lightbox`).
 
-.. figure:: _static/webmap_identification_photo_lightbox_rus.png
+.. figure:: _static/webmap_identification_photo_lightbox_rus_2.png
    :name: ngweb_webmap_identification_photo_lightbox
    :align: center
    :width: 16cm
 
-   Окно идентификации с загруженными фотографиями.  
+   Развернутая фотография во всплывающем окне
 
 .. note:: 
    По умолчанию фотографии могут добавлять все пользователи, но можно настроить 
