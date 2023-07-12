@@ -81,6 +81,7 @@ Set "New users" flag for a group to automatically assign new user to it.
 .. note:: 
    A name for a group should contain only letters and numbers. 
 
+.. _ngw_create_user:
 
 Create new user
 ---------------
@@ -109,6 +110,35 @@ Then click **"Create"**.
 
 .. note:: 
    The password is limited in length in the range of 5-25 characters. Login can have symbols of the Latin alphabet, numbers and an underscore, but must begin necessarily with a letter.
+
+.. _ngw_disable_delete_user:
+
+Disable or delete users
+----------------------------------
+
+In the main menu (see :numref:`ngweb_main_page_administrative_interface_pic`, item 1) open the Control panel (see :numref:`ngweb_main_page_main_menu_pic`) and select "Users". Each user has "Edit" and "Delete" icons on the right end of the line.
+
+.. figure:: _static/admin_controlpanel_user_list_en.png
+   :name: ngweb_admin_controlpanel_user_list_pic
+   :align: center
+   :width: 20cm
+   
+   User list
+
+On the editing page you can modify properties of the user and **disable** the user. Tick "Disabled" and press **Save**.
+
+.. figure:: _static/admin_controlpanel_user_disable_en.png
+   :name: ngweb_admin_controlpanel_user_disable_pic
+   :align: center
+   :width: 20cm
+   
+   Disabling the user
+
+Users that are turned off in this fashion do not count in the user limit of your plan. It allows you to enable various users as needed, all within the limits of your current plan.
+
+If you need to **delete a user permanently**, you can do so by pressing the "Delete" icon in the user list (see :numref:`ngweb_admin_controlpanel_user_list_pic`) and confirming the action in the pop-up window.
+
+Alternatively, you can open the editing page and press **Delete**.
 
 
 .. _ngw_access_rights:
