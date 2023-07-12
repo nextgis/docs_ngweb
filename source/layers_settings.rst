@@ -62,70 +62,76 @@ If you replace the file, now only the features, but the structure of the attribu
 Edit attribute values
 ----------------------------------
 
-NextGIS Web software allows to edit attributes for geographical features. Editing could be launched from administrator interface or from a map display. 
+NextGIS Web software allows to edit attributes for geographical features. Editing could be launched from the administrator interface or from the map display. 
 
-* Editing of attributes from administrator interface: 
+* Editing attributes from administrator interface: 
 
-  - Click the "Table" icon opposite the resource or select an action for a vector layer called "Feature table" in actions pane (see :numref:`admin_table_objects_upload`).
-  - A feature table for the layer will open. Click a radio 
-  button at the left side of a row you want to edit.
-  - Click "Edit" button (see :numref:`ngweb_editing_attributes2.7`).
+  - Click the table icon opposite the resource or select an action for a vector layer called "Feature table" in the actions pane (see :numref:`admin_table_objects_upload`).
+  - A feature table for the layer will open. Select the row you want to edit. It will be highlighted in yellow.
+  - Click **Edit** button (see :numref:`ngweb_editing_attributes2.7`).
 
-.. figure:: _static/ngweb_editing_attributes_eng.png
+.. figure:: _static/ngweb_editing_attributes_eng_2.png
    :name: ngweb_editing_attributes2.7
    :align: center
    :width: 16cm
    
-   Editing of attributes from administrator interface.
+   Editing attributes from administrator interface
   
-* Editing of attributes from a map display: 
+* Editing attributes from the map display: 
 
-  - Open a web-map.
-  - Click on a map with identify tool active.
-  - Click edit button in identify window (the last tab, see :numref:`ngweb_editing_when_viewing_map`).
+  - Open a Web Map.
+  - Click on the map with Identify tool active.
+  - Click edit button in the Identify window (the last tab, see :numref:`ngweb_editing_when_viewing_map`).
 
-.. figure:: _static/ngweb_editing_when_viewing_map_eng.png
+.. figure:: _static/ngweb_editing_when_viewing_map_eng_2.png
    :name: ngweb_editing_when_viewing_map
    :align: center
    :width: 16cm
 
-   Editing of attributes from a map display.
+   Editing attributes from the map
 
-You can change attribute values in opened window. Description made on "Description" tab will be visible on a map display in indentify window. 
+You can change attribute values in the opened window. Description made on "Description" tab will be visible on the map display in the indentify window. 
 
-In the editing of attributes window there are the next tabs:
+Editing page has following tabs:
 
 * "Attributes" tab (see :numref:`ngweb_tab_attributes`).
 
-.. figure:: _static/ngweb_tab_attributes_eng.png
+.. figure:: _static/ngweb_tab_attributes_eng_2.png
    :name: ngweb_tab_attributes
    :align: center
    :width: 16cm
  
-   "Attributes" tab.
+   "Attributes" tab
+
+To edit an attribute click on the field.
+
+Numbers can be typed in or modified with errows that appear on the right end of the field.
+
+Dates also can be typed in or selected in the calender. To open the calender click the icon on the right end of the field.
+
 
 * "Description" tab (see :numref:`ngweb_tab_description`).
 
-.. figure:: _static/ngweb_tab_description_eng.png
+.. figure:: _static/ngweb_tab_description_eng_2.png
    :name: ngweb_tab_description
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   "Description" tab.
+   "Description" tab
 
 * "Attachments" tab (see :numref:`ngweb_tab_attachment`).
 
-.. figure:: _static/ngweb_tab_attachment_eng.png
+.. figure:: _static/ngweb_tab_attachment_eng_2.png
    :name: ngweb_tab_attachment
    :align: center
    :width: 16cm
  
-   "Attachments" tab.
+   "Attachments" tab
 
 .. note::
 
 When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
-When editing a layer based on a Shapefile attribute changes are saved to a local database. 
+When editing a layer based on a Shapefile attribute all changes are saved to a local database. 
 
 .. note::
 
@@ -137,47 +143,47 @@ GeoJSON` or published as WFS service. Download of descriptions is currently unav
 Adding photos to geodata
 ----------------------------------
 
-NextGIS Web software support adding photos to feature records. 
-If a feature has attached photos they will be shown with a description and attributes in identify window (see  :numref:`webmap_identification_photos`).
+NextGIS Web software supports adding photos to features. 
+If a feature has attached photos, they will be shown along with description and attributes in the identify window (see  :numref:`webmap_identification_photos`).
 
-.. figure:: _static/webmap_identification_photos_eng.png
+.. figure:: _static/webmap_identification_photos_eng_2.png
    :name: webmap_identification_photos
    :align: center
    :width: 16cm
 
-   Identify window with an identify result with attached photos.
+   Identify window for a feature with attached photos
 
-You can add photos in a map display. To do it:
+You can add photos in a map display.
 
-1. Click on a feature on a map with active Identify tool.
-2. Click edit button in Identify window (see :numref:`ngweb_editing_when_viewing_map`).
+1. Click on a feature on the map with active Identify tool.
+2. Click edit button in the Identify window (see :numref:`ngweb_editing_when_viewing_map`).
 3. In the edit tab navigate to "Attachments" tab (see :numref:`ngweb_tab_attachment`).
 4. Upload photos. JPEG and PNG formats are supported. GIF format is not supported (see. :numref:`admin_object_edit_photos1`).
 
-.. figure:: _static/admin_object_edit_photos1_eng.png
+.. figure:: _static/admin_object_edit_photos1_eng_2.png
    :name: admin_object_edit_photos1
    :align: center
    :width: 16cm
 
-   Attachments tab of edit feature window for upload of photos.
+   Uploading photos in the "Attachments" tab
 
-5. Enter Description and click "Save".
+5. Enter description for the image and click **Save**.
 
-After upload of photos you can see previews of photos on "Attachments" tab if identify window (see  :numref:`webmap_identification_photos`).
+After uploading you can see previews of photos on the "Attachments" tab of the identify window (see  :numref:`webmap_identification_photos`).
 
-After a click on a photo preview a lightbox window is open (a javascript powered window in browser). Photo size is adjusted to fit the window. Photos have descriptions and user can navigate through photos using left and right arrow keys on a keyboard (see  :numref:`webmap_identification_photo_lightbox`).
+After a click on a photo preview a lightbox window is open (a javascript powered window in browser). Photo size is adjusted to fit the window. Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see  :numref:`webmap_identification_photo_lightbox`).
 
-.. figure:: _static/webmap_identification_photo_lightbox_eng.png
+.. figure:: _static/webmap_identification_photo_lightbox_eng_2.png
    :name: webmap_identification_photo_lightbox
    :align: center
    :width: 16cm
 
-   A lightbox with uploaded photos for an identified feature.  
+   A lightbox with uploaded photos for the identified feature
 
 .. note:: 
    By default photos could be added by any user but there is an option 
    to limit number of users who can upload photos (see  
    :ref:`ngw_access_rights`).
 
-To delete a photo select it on "Attachments" tab of editting attributes window and click "Delete", and then click "Save" button.
+To delete a photo select it on "Attachments" tab of editting attributes window and click "Delete", and then click **Save** button.
 
