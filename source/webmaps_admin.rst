@@ -46,18 +46,23 @@ Extent
 
 Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :numref:`admin_webmap_bbox`.
 
-.. figure:: _static/admin_webmap_bbox_eng_2.png
+.. figure:: _static/admin_webmap_bbox_eng_3.png
    :name: admin_webmap_bbox
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    “Extent and bookmarks” tab
 
+In this tab you can set up:
+
+* Initial extent - part of the Web Map that is shown upon its opening
+* Constraining extent - users will not be able to zoom out or scroll past this extent
+
 Use the four fields to set the extent measured in degrees.
 
-The field “Extent from layer” allows to set Web Map extent from the layer's extent. Next to the field, there is a folder icon with a plus on it. Click it to open the “Select resource” window, where you can select a layer to use for setting the Web Map extent (four fields with the extent coordinates will be filled in, see :numref:`ngw_select_resource2`). 
+**Extent from layer** button allows to set Web Map extent from the layer's extent. Click it to open the “Select layer” window, where you can select a layer to use for setting the Web Map extent (see :numref:`ngw_select_resource2`). The four fields for the extent coordinates will be filled in. 
 
-.. figure:: _static/ngw_select_resource2_eng_2.png
+.. figure:: _static/ngw_select_resource2_eng_3.png
    :name: ngw_select_resource2
    :align: center
    :width: 20cm
