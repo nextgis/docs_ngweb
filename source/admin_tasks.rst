@@ -116,7 +116,7 @@ Then click **"Create"**.
 Disable or delete users
 ----------------------------------
 
-In the main menu (see :numref:`ngweb_main_page_administrative_interface_pic`, item 1) open the Control panel (see :numref:`ngweb_main_page_main_menu_pic`) and select "Users". Each user has "Edit" and "Delete" icons on the right end of the line.
+In the main menu (see item 1 in :numref:`admin_index_pic`) open the Control panel (see :numref:`ngweb_main_page_main_menu_pic`) and select "Users". Each user has "Edit" and "Delete" icons on the right end of the line.
 
 .. figure:: _static/admin_controlpanel_user_list_en.png
    :name: ngweb_admin_controlpanel_user_list_pic
