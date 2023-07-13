@@ -41,6 +41,8 @@ Enter Web Map display name that will be visible in the administrator interface a
 
 You can also add resource description and metadata on the corresponding tabs.
 
+.. _ngw_map_extent:
+
 Extent
 ~~~~~~
 
