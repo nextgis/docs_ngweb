@@ -18,7 +18,7 @@ To open the admin console, open the Web GIS and press "Sign in" in the top right
    
    Signing in from Web GIS main page
 
-In the opened dialog press the green button that reads "Sign in with NextGIS ID".
+In the opened dialog press the blue button that reads **Sign in with NextGIS ID**.
 
 .. figure:: _static/ngweb_signin_nextgisid_en.png
    :name: ngweb_signin_nextgisid_pic
@@ -297,7 +297,7 @@ On the first tab "Resource" you can edit the next fields:
 4. Keyname
 
 
-You can move resources from one resource group to another. To do it press Parent drop down menu and select resource group to move the resource to in the pop-up window (see :numref:`ngw_resource_selection`). Then press **OK** and **Save** button.
+You can move resources from one resource group to another. To do it press the arrow at the end of the Parent field and select resource group to move the resource to in the pop-up window (see :numref:`ngw_resource_selection`). Then press **OK** and **Save** button.
 
 .. figure:: _static/ngw_resource_selection_eng_3.png
    :name: ngw_resource_selection
@@ -321,7 +321,7 @@ Close the alert window, change the name of the resource and try to change the pa
 
 The tab "Description" allows to add text, links and images describing the resource.
 
-.. figure:: _static/ngw_description_window_eng_2.png
+.. figure:: _static/ngw_description_window_eng_3.png
    :name: ngw_description_window
    :align: center
    :width: 20cm
@@ -330,18 +330,18 @@ The tab "Description" allows to add text, links and images describing the resour
 
 The tab "Metadata" allows to add and delete metadata, and to display them in a table using "Add" (Text, Integer, Float) and "Remove" operations:  
 
-.. figure:: _static/ngw_metadata_tab_eng_2.png
+.. figure:: _static/ngw_metadata_tab_eng_3.png
    :name: ngw_metadata_tab
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    "Metadata" tab
 
 The table contains three columns: 
 
 1. Key. It allows to describe metadata features (author, date, version etc.)
-2. Type: Text, Integer, Float
-3. Value. Value corresponds the key type
+2. Type: String, Numer, Boolean, Empty (if you select "Empty", the value field will be cleared)
+3. Value. Value corresponds to the key type
 
 The tab "Attributes" contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
 
