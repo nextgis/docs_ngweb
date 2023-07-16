@@ -473,12 +473,12 @@ Disallow all access for guest users (without password)
 Update user password
 --------------------
 
-To update user password you can use administrative interface. To do it select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "List" option in "Users" block and click pencil icon near the user you want to update password for  (see :numref:`ngweb_change_password_pic`). In opened window in "Password" field fill in a new password and click "Save" button.
+To update user password you can use administrative interface. To do it select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "List" option in "Users" block and click pencil icon near the user you want to update password for  (see :numref:`ngweb_change_password_pic`). In opened window in "Password" field select "Assign new" in the dropdown menu, fill in a new password and click **Save** button.
 
-.. figure:: _static/ngweb_change_password_eng.png
+.. figure:: _static/ngweb_change_password_eng_2.png
    :name: ngweb_change_password_pic
    :align: center
-   :width: 16cm
+   :width: 12cm
 
    User editting window
    
