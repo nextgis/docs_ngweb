@@ -282,7 +282,7 @@ Alternatively, open the resource properties page and then select "Update" in the
 
 In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add description, metadata and attributes of the resource.
 
-.. figure:: _static/ngw_window_update_resource1_eng_2.png
+.. figure:: _static/ngw_window_update_resource1_eng_3.png
    :name: ngw_window_update_resource1
    :align: center
    :width: 20cm
@@ -292,21 +292,32 @@ In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) y
 On the first tab "Resource" you can edit the next fields:
 
 1. Display name (you can change the resource's name)
-2. Keyname
-3. Parent (you can change the resource group through moving the resource)
-4. Owner
-5. Type
+2. Parent (you can change the resource group through moving the resource)
+3. Owner
+4. Keyname
 
-You can move resources from one resource group to another. To do it press Parent drop down menu and select resource group to move the resource to in the"Select resource" pop-up window (see :numref:`ngw_resource_selection`). Then press OK and "Save" button.
 
-.. figure:: _static/ngw_resource_selection_eng_2.png
+You can move resources from one resource group to another. To do it press Parent drop down menu and select resource group to move the resource to in the pop-up window (see :numref:`ngw_resource_selection`). Then press **OK** and **Save** button.
+
+.. figure:: _static/ngw_resource_selection_eng_3.png
    :name: ngw_resource_selection
    :align: center
    :width: 20cm
 
-   "Select resource" window
+   Folder selection window
 
 If the resource is moved successfully, the information about it appears in the new resource group and is removed from the previous one.
+
+If in the selected folder there is already a resource with the same name as the one you want to transfer, it will not be moved and the following message will appear:
+
+.. figure:: _static/parent_change_name_not_unique_en.png
+   :name: parent_change_name_not_unique_pic
+   :align: center
+   :width: 20cm
+
+   Alert in case if the name is not unique
+
+Close the alert window, change the name of the resource and try to change the parent again.
 
 The tab "Description" allows to add text, links and images describing the resource.
 
@@ -369,7 +380,7 @@ In the group page press the cross icon opposite the resource.
    
    Deleting resource from the group
 
-A pop-up window for confirmation will appear. Click "Delete" to confirm.
+A pop-up window for confirmation will appear. Click **Delete** to confirm.
 
 .. figure:: _static/ngw_delete_from_group_confirmation_en.png
    :name: ngw_delete_resource_from_group_pic
@@ -387,7 +398,7 @@ Alternatively, open the resource page and then select "Delete" in the actions pa
 
    Selection of "Delete" action in the action pane
    
-In the opened "Delete resource" window you need to tick "Confirm deletion of the resource" and press "Delete" button. 
+In the opened "Delete resource" window you need to tick "Confirm deletion of the resource" and press **Delete** button. 
 
 .. figure:: _static/ngw_delete_from_page_confirmation_en.png
    :name: ngw_delete_from_group_confirmation_pic
