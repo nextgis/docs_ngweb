@@ -30,7 +30,7 @@ In the opened window enter the name of the resource that will be displayed in th
    Selection of "Basemap" action
    
    
-.. figure:: _static/ngweb_admin_basemap_name_eng_2.png
+.. figure:: _static/ngweb_admin_basemap_name_eng_3.png
    :name: ngweb_admin_basemap_name
    :align: center
    :width: 20cm
@@ -112,10 +112,22 @@ To add a raster layer navigate to a group where you want to create it. In the "C
 
    Selection of "Raster layer" action
    
-In the dialog box specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
+On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
+The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+
+If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
+
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
+   :name: ngweb_admin_layers_create_raster_layer_upload
+   :align: center
+   :width: 20cm
+
+   Uploading raster file  
+
+In the "Resource" tab specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_2.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_3.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
    :width: 20cm
@@ -142,20 +154,7 @@ In the "Metadata" tab you can enter information in the "key-value" format (:numr
 
    Raster layer metadata 
    
-   
-On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
-
-If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
-
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
-   :name: ngweb_admin_layers_create_raster_layer_upload
-   :align: center
-   :width: 20cm
-
-   Uploading raster file  
-
-After uploading a file, click the **Create** button.
+To complete click the **Create** button.
 
 .. _ngw_process_create_raster_style:
 
@@ -232,7 +231,7 @@ Next - the type of geometry, the presence/absence of multigeometries, Z-coordina
 In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng_2.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng_3.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
    :width: 20cm
@@ -361,7 +360,7 @@ Enter a display name that will be visible in the administrator interface. Not to
 
 "Keyname" field is optional.
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_eng.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_eng_2.png
    :name: admin_layers_create_postgis_connection_resourse_name
    :align: center
    :alt: map to buried treasure
@@ -409,7 +408,7 @@ Now you can add individual PostGIS layers. Navigate to a group where you want to
 
    Selection of "PostGIS layer" action
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_eng_2.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_eng_3.png
    :name: admin_layers_create_postgis_layer_resourse_name_eng
    :align: center
    :width: 16cm
@@ -543,7 +542,7 @@ In the "Create resource" actions pane click **WMS connection** (see :numref:`adm
    
 Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_name`.
 
-.. figure:: _static/admin_layers_create_wms_connection_name_eng.png
+.. figure:: _static/admin_layers_create_wms_connection_name_eng_2.png
    :name: admin_layers_create_wms_connection_name
    :align: center
    :width: 16cm
@@ -607,7 +606,7 @@ Now you can add individual WMS layers. Navigate to a group where you want to cre
 
 Create resource dialog for WMS layer is presented on :numref:`admin_layers_create_wms_layer_name`
 
-.. figure:: _static/admin_layers_create_wms_layer_name_eng_2.png
+.. figure:: _static/admin_layers_create_wms_layer_name_eng_3.png
    :name: admin_layers_create_wms_layer_name
    :align: center
    :width: 16cm
@@ -684,7 +683,7 @@ To deploy a WMS service you need to add a resource. In the "Create resource" act
    
 Create resource dialog for WMS service is presented on :numref:`ngweb_admin_layers_create_wms_service_name`. 
 
-.. figure:: _static/admin_layers_create_wms_service_name_eng_2.png
+.. figure:: _static/admin_layers_create_wms_service_name_eng_3.png
    :name: ngweb_admin_layers_create_wms_service_name
    :align: center
    :width: 16cm
@@ -794,7 +793,7 @@ Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-la
 
 Enter the connection name that will be displayed in the administrator interface (see :numref:`TMS_connection_name_en`).
 
-.. figure:: _static/TMS_connection_name_en_2.png
+.. figure:: _static/TMS_connection_name_en_3.png
    :name: TMS_connection_name_en
    :align: center
    :width: 16cm
@@ -828,7 +827,7 @@ TMS layer
    
 Enter the name that will be displayed in the administrator interface (see :numref:`TMS_layer_name_en`).
 
-.. figure:: _static/TMS_layer_name_en_2.png
+.. figure:: _static/TMS_layer_name_en_3.png
    :name: TMS_layer_name_en
    :align: center
    :width: 16cm
@@ -917,7 +916,7 @@ To deploy a WFS service click **WFS service** in the "Create resource" actions p
    
 Create resource dialog for WFS service is presented on :numref:`ngweb_admin_layers_create_wfs_service_name`. 
 
-.. figure:: _static/admin_layers_create_wfs_service_name_eng_2.png
+.. figure:: _static/admin_layers_create_wfs_service_name_eng_3.png
    :name: ngweb_admin_layers_create_wfs_service_name
    :align: center
    :width: 16cm
@@ -993,7 +992,7 @@ To deploy a OGC API Features service click **OGC API Features service** in the "
    
 Create resource dialog for OGC API Features service is presented on :numref:`admin_layers_create_ogc_api_features_service_name_en`. 
 
-.. figure:: _static/admin_layers_create_ogc_api_features_service_name_en.png
+.. figure:: _static/admin_layers_create_ogc_api_features_service_name_en_2.png
    :name: admin_layers_create_ogc_api_features_service_name_en
    :align: center
    :width: 16cm
@@ -1069,7 +1068,7 @@ To create a resource group navigate to the group, where you want to create a new
     
 Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
 
-.. figure:: _static/admin_layers_create_group_eng_2.png
+.. figure:: _static/admin_layers_create_group_eng_3.png
    :name: admin_layers_create_group
    :align: center
    :width: 16cm
@@ -1098,7 +1097,7 @@ To create a lookup table navigate to the group, where you want to create it (roo
    
 Create resource dialog for resource group is presented on :numref:`ngweb_admin_layers_create_lookup`.
 
-.. figure:: _static/ngweb_admin_layers_create_lookup_eng_2.png
+.. figure:: _static/ngweb_admin_layers_create_lookup_eng_3.png
    :name: ngweb_admin_layers_create_lookup
    :align: center
    :width: 16cm
@@ -1152,7 +1151,7 @@ In Web GIS you can create SVG marker libraries to be displayed using QGIS styles
 
 In the opened window, enter the name of the resource (see :numref:`name_svg_lib`).
 
-.. figure:: _static/name_svg_lib_eng.png
+.. figure:: _static/name_svg_lib_eng_2.png
    :name: name_svg_lib
    :align: center
    :width: 16cm
