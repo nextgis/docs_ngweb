@@ -31,7 +31,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Выбор ресурса "Подложка веб-карты"
    
    
-.. figure:: _static/ngweb_admin_basemap_name_rus_2.png
+.. figure:: _static/ngweb_admin_basemap_name_rus_3.png
    :name: ngweb_admin_basemap_name
    :align: center
    :width: 20cm
@@ -114,10 +114,23 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Выбор действия "Растровый слой"
 
 
-В открывшемся окне укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
+В открывшемся окне на вкладке "Растровый слой" необходимо загрузить файл геоданных в формате GeoTIFF.
+В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
+
+Если вы планируете подключать этот растр в QGIS напрямую из Веб ГИС, при загрузке включите режим Загрузить как Cloud Optimized GeoTIFF (COG). Это оптимизирует его специальным образом для более быстрого подключения и отображения.
+
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus_2.png
+   :name: ngweb_admin_layers_create_raster_layer_upload
+   :align: center
+   :width: 20cm
+
+   Окно загрузки растрового файла
+
+
+Во вкладке "Наименование" укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 Оно будет отображаться в административном интерфейсе. Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus_2.png
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
    :width: 20cm
@@ -144,20 +157,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
    Метаданные растрового слоя
 
-
-На вкладке "Растровый слой" необходимо загрузить файл геоданных в формате GeoTIFF.
-В зависимости от тарифного плана в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
-
-Если вы планируете подключать этот растр в QGIS напрямую из Веб ГИС, при загрузке включите режим Загрузить как Cloud Optimized GeoTIFF (COG). Это оптимизирует его специальным образом для более быстрого подключения и отображения.
-
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus_2.png
-   :name: ngweb_admin_layers_create_raster_layer_upload
-   :align: center
-   :width: 20cm
-
-   Окно загрузки растрового файла
-
-После загрузки файла нажмите кнопку **Создать**.
+После указания всех необходимых параметров нажмите кнопку **Создать**.
 
 .. _ngw_process_create_raster_style:
 
@@ -237,10 +237,10 @@ NextGIS Web может принимать многослойные наборы 
 Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
 Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_3.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_4.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 15cm
+   :width: 20cm
 
    Наименование векторного слоя
    
@@ -357,7 +357,7 @@ NextGIS Web может принимать многослойные наборы 
 
 В открывшемся окне укажите наименование PostGIS соединения (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и название слоёв в базе данных). Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus_2.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_name
    :align: center
    :width: 20cm
@@ -406,17 +406,17 @@ NextGIS Web может принимать многослойные наборы 
 .. figure:: _static/admin_layers_create_postgis_layer_rus_2.png
    :name: admin_layers_create_postgis_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Слой PostGIS"
    
    
 На вкладке "Ресурс" указывается наименование слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
    
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus_2.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование Слоя PostGIS
    
@@ -446,7 +446,7 @@ NextGIS Web может принимать многослойные наборы 
 .. figure:: _static/admin_layers_create_postgis_layer_tablename_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно параметров слоя PostGIS
    
@@ -569,7 +569,7 @@ Cлой WMS
 
 В открывшемся окне укажите наименование WMS соединения (:numref:`admin_layers_create_wms_connection_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и названия слоёв в базе данных). Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_connection_name_rus_2.png
+.. figure:: _static/admin_layers_create_wms_connection_name_rus_3.png
    :name: admin_layers_create_wms_connection_name
    :align: center
    :width: 16cm
@@ -629,7 +629,7 @@ Cлой WMS
 
 На вкладке "Ресурс" указывается наименование слоя WMS (:numref:`ngweb_admin_layers_create_wms_layer_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_layer_name_rus_2.png
+.. figure:: _static/admin_layers_create_wms_layer_name_rus_3.png
    :name: ngweb_admin_layers_create_wms_layer_name
    :align: center
    :width: 16cm
@@ -710,7 +710,7 @@ Cлой WMS
    
 На вкладке "Ресурс" указывается наименование сервиса WMS (:numref:`admin_layers_create_wms_service_name_rus`). Оно будет отображаться в административном интерфейсе. Поле Ключ является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_service_name_rus.png
+.. figure:: _static/admin_layers_create_wms_service_name_rus_2.png
    :name: admin_layers_create_wms_service_name_rus
    :align: center
    :width: 16cm
@@ -823,7 +823,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
    
 Далее необходимо ввести наименование подключения, которое будет отображаться в административном веб интерфейсе (см. :numref:`TMS_connection_name`).
 
-.. figure:: _static/TMS_connection_name_rus.png
+.. figure:: _static/TMS_connection_name_rus_2.png
    :name: TMS_connection_name
    :align: center
    :width: 16cm
@@ -858,7 +858,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
 
 На первой вкладке указывается наименование слоя для отображения в административном интерфейсе (см. :numref:`TMS_layer_name`).
 
-.. figure:: _static/TMS_layer_name_rus.png
+.. figure:: _static/TMS_layer_name_rus_2.png
    :name: TMS_layer_name
    :align: center
    :width: 16cm
@@ -955,7 +955,7 @@ NextGIS Web является сервером WFS - может публиков�
    
 На вкладке **Ресурс** указывается наименование сервиса (:numref:`ngweb_admin_layers_create_wfs_service_name`). Поле "Ключ" предназначено для разработчиков, заполенять его не обязательно.
 
-.. figure:: _static/admin_layers_create_wfs_service_name_rus_2.png
+.. figure:: _static/admin_layers_create_wfs_service_name_rus_3.png
    :name: ngweb_admin_layers_create_wfs_service_name
    :align: center
    :width: 16cm
@@ -1032,7 +1032,7 @@ NextGIS Web является сервером OGC API Features - может пу
    
 На вкладке **Ресурс** указывается наименование сервиса (:numref:`admin_layers_create_ogc_api_features_service_name_rus`). Поле "Ключ" предназначено для разработчиков, заполенять его не обязательно.
 
-.. figure:: _static/admin_layers_create_ogc_api_features_service_name_rus.png
+.. figure:: _static/admin_layers_create_ogc_api_features_service_name_rus_2.png
    :name: admin_layers_create_ogc_api_features_service_name_rus
    :align: center
    :width: 16cm
@@ -1104,16 +1104,16 @@ NextGIS Web является сервером OGC API Features - может пу
    :align: center
    :width: 16cm
 
-   Выбор действия "Группа ресурсов".
+   Выбор действия "Группа ресурсов"
    
 При этом откроется окно, представленное на :numref:`ngweb_admin_layers_create_group`.
 
-.. figure:: _static/admin_layers_create_group_rus_2.png
+.. figure:: _static/admin_layers_create_group_rus_3.png
    :name: ngweb_admin_layers_create_group
    :align: center
    :width: 16cm
 
-   Окно создания группы ресурсов.
+   Окно создания группы ресурсов
 
 В открывшемся окне необходимо указать название группы, которое будет отображаться в административном веб интерфейсе, 
 а также в дереве слоев карты, и нажать кнопку **Создать**.
@@ -1139,7 +1139,7 @@ Cправочники
    
 При этом откроется окно, представленное на :numref:`ngweb_admin_layers_create_lookup`.
 
-.. figure:: _static/ngweb_admin_layers_create_lookup_rus_2.png
+.. figure:: _static/ngweb_admin_layers_create_lookup_rus_3.png
    :name: ngweb_admin_layers_create_lookup
    :align: center
    :width: 16cm
@@ -1198,7 +1198,7 @@ Cправочники
 
 Откроется окно создания ресурса. На первой вкладке введите название ресурса маркеров (см. :numref:`name_svg_lib`).
 
-.. figure:: _static/name_svg_lib_rus.png
+.. figure:: _static/name_svg_lib_rus_2.png
    :name: name_svg_lib
    :align: center
    :width: 16cm
