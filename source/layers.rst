@@ -150,7 +150,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus_2.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus_3.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
    :width: 20cm
@@ -256,10 +256,10 @@ NextGIS Web может принимать многослойные наборы 
 
 В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus_2.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus_3.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
    :align: center
-   :width: 15cm
+   :width: 20cm
 
    Метаданные векторного слоя
 
@@ -376,7 +376,7 @@ NextGIS Web может принимать многослойные наборы 
 
 В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_metadata`).
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_rus.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_rus_2.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_metadata
    :align: center
    :width: 20cm
@@ -433,10 +433,10 @@ NextGIS Web может принимать многослойные наборы 
 
 На соответствующей вкладке есть возможность добавить метданные слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_metadata`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_rus.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Метаданные слоя PostGIS
   
@@ -587,7 +587,7 @@ Cлой WMS
    
 В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_wms_connection_metadata`).
 
-.. figure:: _static/admin_layers_create_wms_connection_metadata_rus.png
+.. figure:: _static/admin_layers_create_wms_connection_metadata_rus_2.png
    :name: admin_layers_create_wms_connection_metadata
    :align: center
    :width: 20cm
@@ -649,7 +649,7 @@ Cлой WMS
 
 На соответствующей вкладке есть возможность добавить метаданные слоя в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_wms_layer_metadata`).
 
-.. figure:: _static/admin_layers_create_wms_layer_metadata_rus.png
+.. figure:: _static/admin_layers_create_wms_layer_metadata_rus_2.png
    :name: ngweb_admin_layers_create_wms_layer_metadata
    :align: center
    :width: 20cm
@@ -728,7 +728,7 @@ Cлой WMS
    
 В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_wms_metadata`).
 
-.. figure:: _static/admin_layers_create_wms_metadata_rus.png
+.. figure:: _static/admin_layers_create_wms_metadata_rus_2.png
    :name: admin_layers_create_wms_metadata
    :align: center
    :width: 20cm
@@ -974,7 +974,7 @@ NextGIS Web является сервером WFS - может публиков�
    
 В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_wfs_metadata`).
 
-.. figure:: _static/admin_layers_create_wfs_metadata_rus.png
+.. figure:: _static/admin_layers_create_wfs_metadata_rus_2.png
    :name: admin_layers_create_wfs_metadata
    :align: center
    :width: 20cm
@@ -1051,7 +1051,7 @@ NextGIS Web является сервером OGC API Features - может пу
    
 В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_ogc_api_features_service_metadata_rus`).
 
-.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_rus.png
+.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_rus_2.png
    :name: admin_layers_create_ogc_api_features_service_metadata_rus
    :align: center
    :width: 20cm
