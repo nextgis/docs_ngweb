@@ -41,7 +41,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    
 На соответствующих вкладках можно добавить "Описание" и "Метаданные" ресурса (:numref:`ngweb_admin_basemap_desc`).
 
-.. figure:: _static/ngweb_admin_basemap_desc_rus_2.png
+.. figure:: _static/ngweb_admin_basemap_desc_rus_3.png
    :name: ngweb_admin_basemap_desc
    :align: center
    :width: 20cm
@@ -140,10 +140,10 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_rus_2.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
-   :width: 25cm
+   :width: 20cm
 
    Описание растрового слоя
 
@@ -247,10 +247,10 @@ NextGIS Web может принимать многослойные наборы 
    
 На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus_2.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus_3.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
-   :width: 15cm
+   :width: 20cm
 
    Описание векторного слоя
 
@@ -366,7 +366,7 @@ NextGIS Web может принимать многослойные наборы 
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий создаваемый ресурс (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_description`).
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_description_rus.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_description_rus_2.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_description
    :align: center
    :width: 20cm
@@ -423,7 +423,7 @@ NextGIS Web может принимать многослойные наборы 
 
 В "Описании" можно задать произвольный текст, отражающий содержание ресурса (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_description`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_description_rus.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_description_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_description
    :align: center
    :width: 20cm
@@ -562,7 +562,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_rus_2.png
    :name: admin_layers_create_wms_connection
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Cоединение WMS"
    
@@ -572,13 +572,13 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_name_rus_3.png
    :name: admin_layers_create_wms_connection_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование Соединения WMS
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wms_connection_description`)
 
-.. figure:: _static/admin_layers_create_wms_connection_description_rus.png
+.. figure:: _static/admin_layers_create_wms_connection_description_rus_2.png
    :name: ngweb_admin_layers_create_wms_connection_description
    :align: center
    :width: 20cm
@@ -606,7 +606,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_connection_url_rus_2.png
    :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно параметров Cоединения WMS
 
@@ -632,13 +632,13 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_layer_name_rus_3.png
    :name: ngweb_admin_layers_create_wms_layer_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование слоя WMS
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое слоя (:numref:`ngweb_admin_layers_create_wms_layer_description`).
 
-.. figure:: _static/admin_layers_create_wms_layer_description_rus.png
+.. figure:: _static/admin_layers_create_wms_layer_description_rus_2.png
    :name: ngweb_admin_layers_create_wms_layer_description
    :align: center
    :width: 20cm
@@ -703,7 +703,7 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_service_rus_2.png
    :name: admin_layers_create_wms_service
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Сервис WMS"
    
@@ -713,13 +713,13 @@ Cлой WMS
 .. figure:: _static/admin_layers_create_wms_service_name_rus_2.png
    :name: admin_layers_create_wms_service_name_rus
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Наименование сервиса WMS
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wms_description`)
 
-.. figure:: _static/admin_layers_create_wms_description_rus.png
+.. figure:: _static/admin_layers_create_wms_description_rus_2.png
    :name: admin_layers_create_wms_description_rus
    :align: center
    :width: 20cm
@@ -817,7 +817,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
 .. figure:: _static/TMS_connection_create_rus.png
    :name: TMS_connection_create
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор ресурса Соединение TMS
    
@@ -826,7 +826,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
 .. figure:: _static/TMS_connection_name_rus_2.png
    :name: TMS_connection_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование ресурса Соединение TMS
    
@@ -852,7 +852,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
 .. figure:: _static/TMS_layer_create_rus.png
    :name: TMS_layer_create
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Выбор ресурса Слой TMS
 
@@ -861,7 +861,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
 .. figure:: _static/TMS_layer_name_rus_2.png
    :name: TMS_layer_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование TMS слоя
 
@@ -949,7 +949,7 @@ NextGIS Web является сервером WFS - может публиков�
 .. figure:: _static/admin_layers_create_wfs_service_rus_2.png
    :name: admin_layers_create_wfs_service
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Сервис WFS"
    
@@ -958,14 +958,14 @@ NextGIS Web является сервером WFS - может публиков�
 .. figure:: _static/admin_layers_create_wfs_service_name_rus_3.png
    :name: ngweb_admin_layers_create_wfs_service_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование Сервиса WFS
    
    
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wfs_description`)
 
-.. figure:: _static/admin_layers_create_wfs_description_rus.png
+.. figure:: _static/admin_layers_create_wfs_description_rus_2.png
    :name: ngweb_admin_layers_create_wfs_description
    :align: center
    :width: 20cm
@@ -1026,7 +1026,7 @@ NextGIS Web является сервером OGC API Features - может пу
 .. figure:: _static/admin_layers_create_ogc_api_features_service_rus.png
    :name: admin_layers_create_ogc_api_features_service_rus
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Сервис OGC API Features"
    
@@ -1035,14 +1035,14 @@ NextGIS Web является сервером OGC API Features - может пу
 .. figure:: _static/admin_layers_create_ogc_api_features_service_name_rus_2.png
    :name: admin_layers_create_ogc_api_features_service_name_rus
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Наименование Сервиса OGC API Features
    
    
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`admin_layers_create_ogc_api_features_service_description_rus`)
 
-.. figure:: _static/admin_layers_create_ogc_api_features_service_description_rus.png
+.. figure:: _static/admin_layers_create_ogc_api_features_service_description_rus_2.png
    :name: admin_layers_create_ogc_api_features_service_description_rus
    :align: center
    :width: 20cm
@@ -1102,7 +1102,7 @@ NextGIS Web является сервером OGC API Features - может пу
 .. figure:: _static/admin_layers_create_resource_group_rus_2.png
    :name: admin_layers_create_resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Группа ресурсов"
    
@@ -1111,7 +1111,7 @@ NextGIS Web является сервером OGC API Features - может пу
 .. figure:: _static/admin_layers_create_group_rus_3.png
    :name: ngweb_admin_layers_create_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно создания группы ресурсов
 
@@ -1133,7 +1133,7 @@ Cправочники
 .. figure:: _static/admin_layers_create_lookup_table_rus_2.png
    :name: admin_layers_create_lookup_table
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Выбор действия "Справочник"
    
@@ -1142,7 +1142,7 @@ Cправочники
 .. figure:: _static/ngweb_admin_layers_create_lookup_rus_3.png
    :name: ngweb_admin_layers_create_lookup
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно создания справочника
 
@@ -1157,7 +1157,7 @@ Cправочники
 .. figure:: _static/ngweb_creating_a_new_directory_rus.png
    :name: ngweb_creating_a_new_directory_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Окно параметров справочника
     
@@ -1167,7 +1167,7 @@ Cправочники
 .. figure:: _static/ngweb_new_resource_lookup.png
    :name: ngweb_new_resource_lookup
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Созданный справочник
 
@@ -1192,7 +1192,7 @@ Cправочники
 .. figure:: _static/select_svg_lib_rus.png
    :name: select_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Выбор ресурса Библиотека маркеров SVG
 
@@ -1201,7 +1201,7 @@ Cправочники
 .. figure:: _static/name_svg_lib_rus_2.png
    :name: name_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Название ресурса Библиотеки маркеров SVG
    
@@ -1212,7 +1212,7 @@ Cправочники
 .. figure:: _static/upload_svg_rus.png
    :name: upload_svg
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Загрузка SVG-маркера
 
@@ -1221,14 +1221,14 @@ Cправочники
 .. figure:: _static/create_svg_lib_rus.png
    :name: create_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Создание библиотеки маркеров SVG
    
 .. figure:: _static/list_svg.png
    :name: list_svg
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Список загруженных в библиотеку SVG-маркеров
    
