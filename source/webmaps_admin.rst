@@ -35,7 +35,7 @@
    
 В результате этих действий откроется окно, представленное на :numref:`ngweb_admin_webmap_name`. 
 
-.. figure:: _static/admin_webmap_name_rus_2.png
+.. figure:: _static/admin_webmap_name_rus_3.png
    :name: ngweb_admin_webmap_name
    :align: center
    :width: 20cm
