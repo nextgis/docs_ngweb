@@ -720,7 +720,7 @@ Cлой WMS
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wms_description`)
 
 .. figure:: _static/admin_layers_create_wms_description_rus_2.png
-   :name: admin_layers_create_wms_description_rus
+   :name: admin_layers_create_wms_description
    :align: center
    :width: 20cm
 
