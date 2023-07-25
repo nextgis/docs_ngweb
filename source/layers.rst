@@ -147,7 +147,7 @@ On the "Description" tab you can add any text describing the content of this lay
 
 In the "Metadata" tab you can enter information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
    :align: center
    :width: 20cm
@@ -251,7 +251,7 @@ In the "Description" tab you can add any text describing the content of this lay
 
 In the "Metadata" tab you can add information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_eng.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_eng_2.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
    :align: center
    :width: 20cm
@@ -378,7 +378,7 @@ You can also add resource description and metadata on the corresponding tabs.
    
    PostGIS connection description
    
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_eng_2.png
+.. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_eng_3.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
    :align: center
    :width: 20cm
@@ -422,7 +422,7 @@ layer tree.
 
 You can also add resource description and metadata on the corresponding tabs.
 
-.. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_eng_2.png
+.. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_eng_3.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
    :align: center
    :width: 20cm
@@ -562,7 +562,7 @@ On the "Description" tab you can add any text describing the content of this con
 
 On the "Metadata" tab you can enter information in the "key-value" format.
 
-.. figure:: _static/admin_layers_create_wms_connection_metadata_eng.png
+.. figure:: _static/admin_layers_create_wms_connection_metadata_eng_2.png
    :name: admin_layers_create_wms_connection_metadata_eng
    :align: center
    :width: 20cm
@@ -631,7 +631,7 @@ On the "Description" tab you can add any text describing the content of this lay
 
 OIn the "Metadata" tab you can enter information in the "key-value" format.
 
-.. figure:: _static/admin_layers_create_wms_layer_metadata_eng.png
+.. figure:: _static/admin_layers_create_wms_layer_metadata_eng_2.png
    :name: admin_layers_create_wms_layer_metadata_eng
    :align: center
    :width: 20cm
@@ -706,7 +706,7 @@ On the "Description" tab you can add any text describing the content of this ser
 
 On the "Metadata" tab you can enter information in the "key-value" format.
 
-.. figure:: _static/admin_layers_create_wms_service_metadata_eng.png
+.. figure:: _static/admin_layers_create_wms_service_metadata_eng_2.png
    :name: admin_layers_create_wms_service_metadata_eng
    :align: center
    :width: 20cm
@@ -939,7 +939,7 @@ On the "Description" tab you can add any text describing the content of this ser
 
 On the "Metadata" tab you can enter information in the "key-value" format.
 
-.. figure:: _static/admin_layers_create_wfs_metadata_eng.png
+.. figure:: _static/admin_layers_create_wfs_metadata_eng_2.png
    :name: admin_layers_create_wfs_metadata_eng
    :align: center
    :width: 20cm
