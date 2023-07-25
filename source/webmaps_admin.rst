@@ -28,10 +28,10 @@ To create a Web Map, open the resource group where you want to add it, then in t
    
 Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`. 
 
-.. figure:: _static/admin_webmap_name_eng_2.png
+.. figure:: _static/admin_webmap_name_eng_3.png
    :name: admin_webmap_name
    :align: center
-   :width: 2-cm
+   :width: 20cm
 
    “Create resource” dialog for Web Map
 
