@@ -40,7 +40,7 @@ In the opened window enter the name of the resource that will be displayed in th
    
 The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
 
-.. figure:: _static/ngweb_admin_basemap_desc_eng_2.png
+.. figure:: _static/ngweb_admin_basemap_desc_eng_3.png
    :name: ngweb_admin_basemap_desc
    :align: center
    :width: 20cm
@@ -108,7 +108,7 @@ To add a raster layer navigate to a group where you want to create it. In the "C
 .. figure:: _static/admin_layers_create_raster_layer_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "Raster layer" action
    
@@ -137,7 +137,7 @@ It will be displayed in the admin interface. The "Key" field is optional.
 
 On the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
 
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_eng.png
+.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_eng_2.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_description
    :align: center
    :width: 20cm
@@ -206,7 +206,7 @@ In the "Create resource" actions pane select **Vector layer** (see :numref:`ngwe
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_eng_2.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "Vector layer" action
 
@@ -241,7 +241,7 @@ It will be displayed in the admin interface. The "Key" field is optional.
 
 In the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_eng.png
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_eng_2.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_description
    :align: center
    :width: 20cm
@@ -352,7 +352,7 @@ In the "Create resource" actions pane click **PostGIS connection** (see :numref:
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_eng_2.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "PostGIS connection" action
  
@@ -364,24 +364,24 @@ Enter a display name that will be visible in the administrator interface. Not to
    :name: admin_layers_create_postgis_connection_resourse_name
    :align: center
    :alt: map to buried treasure
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for PostGIS connection
 
 You can also add resource description and metadata on the corresponding tabs.
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_description_eng_2.png
+.. figure:: _static/admin_layers_create_postgis_connection_description_en.png
    :name: admin_layers_create_postgis_connection_resourse_description_eng_2
    :align: center
    :alt: map to buried treasure
-   :width: 16cm
+   :width: 20cm
    
    PostGIS connection description
    
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_eng_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    PostGIS connection metadata
 
@@ -390,7 +390,7 @@ Switch from "Resource" to "PostGIS connection" tab, which is presented on :numre
 .. figure:: _static/admin_layers_create_postgis_connection_db_logins_eng_2.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    PostGIS connection tab of Create resource dialog
 
@@ -404,14 +404,14 @@ Now you can add individual PostGIS layers. Navigate to a group where you want to
 .. figure:: _static/admin_layers_create_postgis_layer_eng_2.png
    :name: admin_layers_create_postgis_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "PostGIS layer" action
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_name_eng_3.png
    :name: admin_layers_create_postgis_layer_resourse_name_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for PostGIS layer
 
@@ -425,7 +425,7 @@ You can also add resource description and metadata on the corresponding tabs.
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_eng_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    PostGIS layer metadata
 
@@ -435,7 +435,7 @@ Switch from "Resource" tab to "PostGIS layer" tab, which is presented on
 .. figure:: _static/admin_layers_create_postgis_layer_tablename_eng_2.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    PostGIS layer tab of create resource dialog
 
@@ -504,7 +504,7 @@ item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you 
 .. figure:: _static/pgadmin3_eng.png
    :name: pgadmin3
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Main dialog of :program:`pgAdmin` software
 
@@ -536,7 +536,7 @@ In the "Create resource" actions pane click **WMS connection** (see :numref:`adm
 .. figure:: _static/admin_layers_create_wms_connection_eng_2.png
    :name: admin_layers_create_wms_connection
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "WMS connection" action
    
@@ -545,7 +545,7 @@ Create resource dialog for WMS connection is presented on :numref:`admin_layers_
 .. figure:: _static/admin_layers_create_wms_connection_name_eng_2.png
    :name: admin_layers_create_wms_connection_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for WMS connection
 
@@ -553,10 +553,10 @@ Enter the name of the resource that will be displayed in the administrator inter
 
 On the "Description" tab you can add any text describing the content of this connection.
 
-.. figure:: _static/admin_layers_create_wms_connection_description_eng.png
+.. figure:: _static/admin_layers_create_wms_connection_description_eng_2.png
    :name: admin_layers_create_wms_connection_description_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS connection description
 
@@ -565,7 +565,7 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 .. figure:: _static/admin_layers_create_wms_connection_metadata_eng.png
    :name: admin_layers_create_wms_connection_metadata_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS connection metadata
 
@@ -574,7 +574,7 @@ Switch to "WMS connection" tab, which is presented on :numref:`admin_layers_crea
 .. figure:: _static/admin_layers_create_wms_connection_url_eng_2.png
    :name: admin_layers_create_wms_connection_url
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS connection tab of Create resource dialog
 
@@ -600,7 +600,7 @@ Now you can add individual WMS layers. Navigate to a group where you want to cre
 .. figure:: _static/admin_layers_create_wms_layer_eng_2.png
    :name: admin_layers_create_wms_layer
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "WMS layer" action
 
@@ -609,7 +609,7 @@ Create resource dialog for WMS layer is presented on :numref:`admin_layers_creat
 .. figure:: _static/admin_layers_create_wms_layer_name_eng_3.png
    :name: admin_layers_create_wms_layer_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for WMS layer
 
@@ -622,10 +622,10 @@ Tile cache settings are described in detail in `this section <https://docs.nextg
 
 On the "Description" tab you can add any text describing the content of this layer.
 
-.. figure:: _static/admin_layers_create_wms_layer_description_eng.png
+.. figure:: _static/admin_layers_create_wms_layer_description_eng_2.png
    :name: admin_layers_create_wms_layer_description_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    WMS layer description
 
@@ -634,7 +634,7 @@ OIn the "Metadata" tab you can enter information in the "key-value" format.
 .. figure:: _static/admin_layers_create_wms_layer_metadata_eng.png
    :name: admin_layers_create_wms_layer_metadata_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS layer metadata
    
@@ -647,7 +647,7 @@ Switch to the "WMS layer" tab, which is presented on :numref:`admin_layers_creat
 .. figure:: _static/admin_layers_create_wms_layer_parameters_eng_2.png
    :name: admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS layer tab of Create resource dialog
 
@@ -656,7 +656,7 @@ In the last tab you can add vendor parameters. These are special query settings 
 .. figure:: _static/admin_layers_create_wms_layer_vendorparameters_eng_2.png
    :name: admin_layers_create_wms_layer_vendorparameters_eng_2
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Vendor parameters of the WMS layer
 
@@ -677,7 +677,7 @@ To deploy a WMS service you need to add a resource. In the "Create resource" act
 .. figure:: _static/admin_layers_create_wms_service_eng_2.png
    :name: admin_layers_create_wms_service
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "WMS service" action
    
@@ -686,7 +686,7 @@ Create resource dialog for WMS service is presented on :numref:`ngweb_admin_laye
 .. figure:: _static/admin_layers_create_wms_service_name_eng_3.png
    :name: ngweb_admin_layers_create_wms_service_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for WMS service
 
@@ -697,10 +697,10 @@ confuse this name with a name of layers in a database.
 
 On the "Description" tab you can add any text describing the content of this service.
 
-.. figure:: _static/admin_layers_create_wms_service_description_eng.png
+.. figure:: _static/admin_layers_create_wms_service_description_eng_2.png
    :name: admin_layers_create_wms_service_description_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS service description
 
@@ -709,7 +709,7 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 .. figure:: _static/admin_layers_create_wms_service_metadata_eng.png
    :name: admin_layers_create_wms_service_metadata_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS service metadata
  
@@ -718,7 +718,7 @@ Switch to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_c
 .. figure:: _static/admin_layers_create_wms_service_url_eng_2.png
    :name: ngweb_admin_layers_create_wms_service_url
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WMS service tab of Create resource dialog
 
@@ -787,7 +787,7 @@ Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-la
 .. figure:: _static/TMS_connection_create_en_2.png
    :name: TMS_connection_create_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Selecting a TMS Connection resource
 
@@ -796,7 +796,7 @@ Enter the connection name that will be displayed in the administrator interface 
 .. figure:: _static/TMS_connection_name_en_3.png
    :name: TMS_connection_name_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    TMS Connection Resource Name
 
@@ -805,7 +805,7 @@ The "Key" field is optional. If needed, you can also add a description and metad
 .. figure:: _static/TMS_connection_type_en_2.png
    :name: TMS_connection_type_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Configuring TMS Connection
    
@@ -821,7 +821,7 @@ TMS layer
 .. figure:: _static/TMS_layer_create_en_2.png
    :name: TMS_layer_create_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Selecting of TMS layer action
    
@@ -830,7 +830,7 @@ Enter the name that will be displayed in the administrator interface (see :numre
 .. figure:: _static/TMS_layer_name_en_3.png
    :name: TMS_layer_name_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    TMS layer name
 
@@ -847,7 +847,7 @@ The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_set
 .. figure:: _static/TMS_layer_settings_en_2.png
    :name: TMS_layer_settings_en
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    TMS layer settings
    
@@ -910,7 +910,7 @@ To deploy a WFS service click **WFS service** in the "Create resource" actions p
 .. figure:: _static/admin_layers_create_wfs_service_eng_2.png
    :name: admin_layers_create_wfs_service
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "WFS service" action
    
@@ -919,7 +919,7 @@ Create resource dialog for WFS service is presented on :numref:`ngweb_admin_laye
 .. figure:: _static/admin_layers_create_wfs_service_name_eng_3.png
    :name: ngweb_admin_layers_create_wfs_service_name
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for WFS service
 
@@ -930,10 +930,10 @@ confuse this name with a name of layers in a database.
 
 On the "Description" tab you can add any text describing the content of this service.
 
-.. figure:: _static/admin_layers_create_wfs_description_eng.png
+.. figure:: _static/admin_layers_create_wfs_description_eng_2.png
    :name: admin_layers_create_wfs_description_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WFS service description
 
@@ -942,7 +942,7 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 .. figure:: _static/admin_layers_create_wfs_metadata_eng.png
    :name: admin_layers_create_wfs_metadata_eng
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WFS service metadata
  
@@ -952,7 +952,7 @@ For each layer you can set a limit for the number of features returned from the 
 .. figure:: _static/admin_layers_create_wfs_service_url_eng_2.png
    :name: ngweb_admin_layers_create_wfs_service_url
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    WFS service tab of Create resource dialog
 
@@ -986,7 +986,7 @@ To deploy a OGC API Features service click **OGC API Features service** in the "
 .. figure:: _static/admin_layers_create_ogc_api_features_service_en.png
    :name: admin_layers_create_ogc_api_features_service_en
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "OGC API Features service" action
    
@@ -995,7 +995,7 @@ Create resource dialog for OGC API Features service is presented on :numref:`adm
 .. figure:: _static/admin_layers_create_ogc_api_features_service_name_en_2.png
    :name: admin_layers_create_ogc_api_features_service_name_en
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for OGC API Features service
 
@@ -1009,7 +1009,7 @@ On the "Description" tab you can add any text describing the content of this ser
 .. figure:: _static/admin_layers_create_ogc_api_features_service_description_en.png
    :name: admin_layers_create_ogc_api_features_service_description_en
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    OGC API Features service description
 
@@ -1018,7 +1018,7 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 .. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_en.png
    :name: admin_layers_create_ogc_api_features_service_metadata_en
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    OGC API Features service metadata
  
@@ -1028,7 +1028,7 @@ For each layer you can set a limit for the number of features returned from the 
 .. figure:: _static/admin_layers_create_ogc_api_features_service_settings_en.png
    :name: admin_layers_create_ogc_api_features_service_settings_en
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    OGC API Features service tab of Create resource dialog
 
@@ -1062,7 +1062,7 @@ To create a resource group navigate to the group, where you want to create a new
 .. figure:: _static/admin_layers_create_resource_group_eng_2.png
    :name: admin_layers_create_resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "Resource group" action
     
@@ -1071,7 +1071,7 @@ Create resource dialog for resource group is presented on :numref:`admin_layers_
 .. figure:: _static/admin_layers_create_group_eng_3.png
    :name: admin_layers_create_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for resource group
 
@@ -1091,7 +1091,7 @@ To create a lookup table navigate to the group, where you want to create it (roo
 .. figure:: _static/admin_layers_create_lookup_table_eng_2.png
    :name: admin_layers_create_lookup_table
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Selection of "Lookup table" action
    
@@ -1100,7 +1100,7 @@ Create resource dialog for resource group is presented on :numref:`ngweb_admin_l
 .. figure:: _static/ngweb_admin_layers_create_lookup_eng_3.png
    :name: ngweb_admin_layers_create_lookup
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Create resource dialog for lookup table
 
@@ -1115,7 +1115,7 @@ Switch from "Resource" tab to "Lookup table" tab, which is presented on :numref:
 .. figure:: _static/ngweb_creating_a_new_directory_eng_2.png
    :name: ngweb_creating_a_new_directory_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Lookup table tab of Create resource dialog
    
@@ -1124,7 +1124,7 @@ In the opened window there are options "Add" and "Delete". Click **Add**, choose
 .. figure:: _static/ngweb_new_resource_eng_2.png
    :name: ngweb_new_resource_group
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Newly created lookup table
 
@@ -1145,7 +1145,7 @@ In Web GIS you can create SVG marker libraries to be displayed using QGIS styles
 .. figure:: _static/select_svg_lib_eng.png
    :name: select_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Selecting SVG marker library
 
@@ -1154,7 +1154,7 @@ In the opened window, enter the name of the resource (see :numref:`name_svg_lib`
 .. figure:: _static/name_svg_lib_eng_2.png
    :name: name_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    SVG marker library name
 
@@ -1166,14 +1166,14 @@ After all icons have been uploaded to the library, you will see the list of the 
 .. figure:: _static/create_svg_lib_eng.png
    :name: create_svg_lib
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Final steps of creating an SVG marker library
    
 .. figure:: _static/list_svg_eng.png
    :name: list_svg
    :align: center
-   :width: 16cm
+   :width: 20cm
       
    List of SVG markers uploaded to the library
 
