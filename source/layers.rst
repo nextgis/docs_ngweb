@@ -893,6 +893,46 @@ Enter these parameters to ServerUrl string in example below. The rest remains un
     <Cache />
    </GDAL_WMS> 
 
+.. _ngw_tile_set:
+
+Tileset
+-------
+
+To add a **Tileset**, select a Tileset in the "Create Resource" block of operations.
+
+.. figure:: _static/Tileset_create_en.png
+   :name: Tileset_create_en
+   :align: center
+   :width: 16cm
+
+Next, you need to enter the name of the tileset, which will be displayed in the administrative web interface.
+
+The "Key" field is optional. On the appropriate tabs, you can add a resource description and metadata. Typically, metadata is used to develop third-party applications using APIs.
+
+In the "Tileset" tab, you need to upload a tileset in MBTiles format or a zip archive. Tiles must be in PNG or JPEG format and have a size of 256x256 pixels.
+
+.. figure:: _static/Tileset_add_en.png
+   :name: Tileset_add_en
+   :align: center
+   :width: 16cm
+
+In the "Tile Cache" tab, the user can set the caching settings:
+
+* Enable - enable/disable tile caching;
+* Allow using tiles in non-tile requests - when requesting an image (not a tile), use cached tiles if available;
+* Max zoom level - the threshold value above which the cache is not accessed, the map image is rendered on the fly;
+* TTL, sec (Time to live) - “time to live” or storage of tiles on the server in seconds, after which the image will be re-formed at the next request. If TTL = 0, then the storage time of tiles is not limited;
+
+* Flush - write only - clears the tile cache when saving the style.
+
+.. figure:: _static/Tileset_settings_en.png
+   :name: Tileset_settings_en
+   :align: center
+   :width: 16cm
+
+After filling in all the fields, clicking the **Create button** completes the process of creating the resource **Tileset**.
+
+
 .. _ngw_wfs_service:
 
 WFS service
