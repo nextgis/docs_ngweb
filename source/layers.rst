@@ -495,6 +495,39 @@ NextGIS Web может принимать многослойные наборы 
 слоя необходимо обновить описания атрибутов. Для этого для выбранного слоя следует 
 выбрать действие "Изменить", на вкладке "Слой PostGIS" в поле "Описания атрибутов" выбрать "Загрузить" из базы данных и нажать "Сохранить".
 
+.. _ngw_postgis_diagnostics:
+
+Диагностика PostGIS
+^^^^^^^^^^^^^^^^^^^
+
+Проверить корректность введенных данных при добавлении ресурса **Соединение PostGIS** можно при помощи инструмента **Диагностика**. 
+Для этого вам необходимо нажать на кнопку  **Диагностика** на панели справа.
+
+.. figure:: _static/diagnostics_start_ru.png
+   :name: diagnostics_start_ru
+   :align: center
+   :width: 20cm
+
+В случае, если при создании PostGIS-соединения все поля заполнены верно - диагностика пройдет успешно.
+
+.. figure:: _static/diagnostics_successfully_ru.png
+   :name: diagnostics_successfully_ru
+   :align: center
+   :width: 20cm
+
+В случае, если какие-то из введенных данных не корректны - появится сообщение об ошибке.
+
+.. figure:: _static/diagnostics_fail1_ru.png
+   :name: diagnostics_fail1_ru
+   :align: center
+   :width: 20cm
+
+.. figure:: _static/diagnostics_fail2_ru.png
+   :name: diagnostics_fail2_ru
+   :align: center
+   :width: 20cm
+
+.. _ngw_postgis_diagnostics:
 
 .. _ngw_create_postgis_problems:
 
