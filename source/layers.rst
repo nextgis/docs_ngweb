@@ -473,6 +473,40 @@ After a layer is created, you need to set a label attribute to display labels. N
 
 If the structure of the database changes (column names, column types, number of columns, table names etc.), you need to update the attribute definitions in the layer properties. Select "Update" in the actions pane and then on the "PostGIS layer" tab change "Attribute definitions" to "Reload" and click **Save**.
 
+.. _ngw_postgis_diagnostics:
+
+PostGIS diagnostics
+^^^^^^^^^^^^^^^^^^^
+
+You can check the correctness of the entered data when adding the **PostGIS Connection** resource using the **Diagnostics** tool.
+To do this, you need to click on the **Diagnostics** button on the panel on the right.
+
+.. figure:: _static/diagnostics_start_en.png
+   :name: diagnostics_start_en
+   :align: center
+   :width: 20cm
+
+If all fields are filled in correctly when creating a connection to PostGIS - diagnostics will be successful.
+
+.. figure:: _static/diagnostics_successfully_en.png
+   :name: diagnostics_successfully_en
+   :align: center
+   :width: 20cm
+
+If any of the entered data is not correct, an error message will appear.
+
+.. figure:: _static/diagnostics_fail1_en.png
+   :name: diagnostics_fail1_en
+   :align: center
+   :width: 20cm
+
+.. figure:: _static/diagnostics_fail2_en.png
+   :name: diagnostics_fail2_en
+   :align: center
+   :width: 20cm
+
+.. _ngw_postgis_diagnostics:
+
 PostGIS layer troubleshooting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
