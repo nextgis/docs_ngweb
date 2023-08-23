@@ -500,7 +500,7 @@ NextGIS Web может принимать многослойные наборы 
 Диагностика PostGIS
 ^^^^^^^^^^^^^^^^^^^
 
-Проверить корректность введенных данных при добавлении ресурса **Соединение PostGIS** можно при помощи инструмента **Диагностика**. 
+Проверить корректность введенных данных при добавлении ресурса **Соединение PostGIS** или **Слой PostGIS** можно при помощи инструмента **Диагностика**. 
 Для этого вам необходимо нажать на кнопку  **Диагностика** на панели справа.
 
 .. figure:: _static/diagnostics_start_ru.png
@@ -508,10 +508,15 @@ NextGIS Web может принимать многослойные наборы 
    :align: center
    :width: 20cm
 
-В случае, если при создании PostGIS-соединения все поля заполнены верно - диагностика пройдет успешно.
+В случае, если при создании PostGIS-соединения или PostGIS слоя все поля заполнены верно - диагностика пройдет успешно.
 
 .. figure:: _static/diagnostics_successfully_ru.png
    :name: diagnostics_successfully_ru
+   :align: center
+   :width: 20cm
+
+.. figure:: _static/diagnostics_successfully_layer_ru.png
+   :name: diagnostics_successfully_layer_ru
    :align: center
    :width: 20cm
 
@@ -524,6 +529,11 @@ NextGIS Web может принимать многослойные наборы 
 
 .. figure:: _static/diagnostics_fail2_ru.png
    :name: diagnostics_fail2_ru
+   :align: center
+   :width: 20cm
+
+.. figure:: _static/diagnostics_fail_layer_ru.png
+   :name: diagnostics_fail_layer_ru
    :align: center
    :width: 20cm
 
