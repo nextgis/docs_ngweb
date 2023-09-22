@@ -8,12 +8,16 @@ Vector layer styles
 Style is a type of NextGIS resource that describes a way to render the geodata.
 Styles are necessary to display geodata on a Web Map.
 
+Style is related to a single layer so there is no item "Style" in the main resources list. To create a style you need to open layer properties of the layer you want create style for.
+
+
 Formats
 ----------------------------------
 
 By now NextGIS Web supports two rendering libraries: "Mapserver" and "QGIS". 
-You can write Mapserver style yourself as a text. 
-QGIS style can only be uploaded from a qml file, it has much more settings. 
+
+* You can write Mapserver style yourself as a text. 
+* QGIS style can only be uploaded from a qml file, it has much more settings. 
 
 
 .. _ngw_qgis_style:
@@ -21,10 +25,17 @@ QGIS style can only be uploaded from a qml file, it has much more settings.
 QGIS Style
 ----------
 
-Style is related to a single layer so there is no item "Style" in the main resources list.
-To create a style you need to open layer properties of the layer you want create style for.
+Open the properties page of the layer you want create style for. To create a default QGIS style, just press the blue button on the resource page of the layer.
 
-In actions pane "Create resource" click "QGIS style" (see :numref:`select_qgis_style`).
+.. figure:: _static/default_style_select_en.png
+   :name: mapserver_style_select
+   :align: center
+   :width: 20cm
+
+   Creating default QGIS style
+
+
+If you want to add a customized style, in the "Create resource" actions pane click "QGIS style" (see :numref:`select_qgis_style`).
 
 .. figure:: _static/QGIS_style_select_en.png
    :name: select_qgis_style
@@ -34,21 +45,15 @@ In actions pane "Create resource" click "QGIS style" (see :numref:`select_qgis_s
    Selecting QGIS style resourse
  
 
-After the selection of "QGIS style" create resource dialog will open and will look like :numref:` name_qgis_style`.
-On the "Resource" tab enter the display name. 
+After the selection of "QGIS style" create resource dialog will open.
 
-.. figure:: _static/QGIS_style_name_en.png
-   :name: name_qgis_style
-   :align: center
-   :width: 20cm
+You can upload a file or create a simple vector style in the dialog.
 
-   Name of QGIS style resource
+QGIS style from file
+~~~~~~~~~~~~~~~~~~~~
 
+To upload a pre-made style click "Select a style" or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
 
-Field "Keyname" is optional. You can also add resource description and metadata on the corresponding tabs.
-Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_. 
-
-Switch to "QGIS style" tab and click "Select a file" button in the "QML file" field or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
 Here, if necessary, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
 
 .. figure:: _static/upload_svg_qgis_style_en.png
@@ -76,6 +81,8 @@ Here, if necessary, you can select the SVG marker library resource, which contai
 
    Layer properties settings in NextGIS QGIS
 
+You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
+Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
 After QML file uploaded click "Create". Then the window of QGIS style will open and will look like :numref:`svg_res_style`
 You can see here already formed TMS link to plug data into external applications.
@@ -86,6 +93,23 @@ You can see here already formed TMS link to plug data into external applications
    :width: 20cm
 
    QGIS style window
+
+.. _ngw_qgis_style_custom:
+
+Custom QGIS style
+~~~~~~~~~~~~~~~~~~~
+
+If you want to create a simple custom style, select "User-defined style" in the drop-down menu. You can set up:
+
+* Marker shape
+* Marker size and stroke width
+* Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format)
+
+You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
+
+When all the parameters are set, click **Create**. Then the window of QGIS style will open.
+
+Styles created this way can be edited directly in NextGIS Web.
 
 
 .. _ngw_mapserver_style:
