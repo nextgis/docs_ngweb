@@ -397,7 +397,7 @@ Labels
    * lr - ↘
    * auto
 
-* <Maxoverlapangle> - ?  
+
 
 Some other useful tags
 ~~~~~~~~~~~~~~~~~~~~~~~
