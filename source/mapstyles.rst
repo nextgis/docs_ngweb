@@ -397,18 +397,9 @@
    * lr - ↘
    * auto
 
-* <Maxoverlapangle> - ?  
 
-Неизвестные атрибуты
-~~~~~~~~~~~~~~~~~~~~~~~
 
-* MAXGEOWIDTH
-* MINGEOWIDTH
-* OFFSITE
-* OPACITY [integer|alpha]
-* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels]
-* SYMBOLSCALEDENOM [double]
-* TYPE [chart|circle|line|point|polygon|raster|query]
+
 
 .. _ngw_mapserver_templates:
 
@@ -900,7 +891,7 @@ OSM highway-lowzoom
    :align: center
    :width: 10cm
 
-   Фрагмент цветовой схемы дорог общего пользования. 
+   Фрагмент цветовой схемы дорог общего пользования
 
 .. code-block:: xml
 
@@ -1246,7 +1237,7 @@ OSM highway-maxzoom
    :align: center
    :width: 10cm
 
-   Фрагмент изображения карты дорог.
+   Фрагмент изображения карты дорог
 
 .. code-block:: xml
 
