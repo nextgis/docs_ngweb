@@ -37,7 +37,7 @@ Open the properties page of the layer you want create style for. To create a def
 
 If you want to add a customized style, in the "Create resource" actions pane click "QGIS style" (see :numref:`select_qgis_style`).
 
-.. figure:: _static/QGIS_style_select_en.png
+.. figure:: _static/QGIS_style_select_en_2.png
    :name: select_qgis_style
    :align: center
    :width: 20cm
@@ -56,10 +56,10 @@ To upload a pre-made style click "Select a style" or drag a file to this field (
 
 Here, if necessary, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
 
-.. figure:: _static/upload_svg_qgis_style_en.png
+.. figure:: _static/upload_svg_qgis_style_en_2.png
    :name: upload_svg_qgis_style
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Upload QML file
 
@@ -84,10 +84,10 @@ Here, if necessary, you can select the SVG marker library resource, which contai
 You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
-After QML file uploaded click "Create". Then the window of QGIS style will open and will look like :numref:`svg_res_style`
-You can see here already formed TMS link to plug data into external applications.
+After QML file is uploaded click **Create**. Then the window of QGIS style will open and will look like :numref:`svg_res_style`. 
+You can see here a TMS link to connect data to external applications.
 
-.. figure:: _static/svg_res_style_en.png
+.. figure:: _static/svg_res_style_en_2.png
    :name: svg_res_style
    :align: center
    :width: 20cm
@@ -105,11 +105,51 @@ If you want to create a simple custom style, select "User-defined style" in the 
 * Marker size and stroke width
 * Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format)
 
+
+.. figure:: _static/QGIS_style_custom_en.png
+   :name: QGIS_style_custom_pic
+   :align: center
+   :width: 16cm
+
+   Custom QGIS style
+
 You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
 
 When all the parameters are set, click **Create**. Then the window of QGIS style will open.
 
 Styles created this way can be edited directly in NextGIS Web.
+
+.. _ngw_qgis_style_custom_edit:
+
+Editing QGIS style
+----------------------------
+
+To edit a style click on the pencil icon by the style's name in the layer tree.
+
+.. figure:: _static/QGIS_style_select_edit_en.png
+   :name: QGIS_style_select_edit_pic
+   :align: center
+   :width: 20cm
+
+   Opening the Update resource dialog
+
+In the opened window you can **replace** the style by uploading a new file from your device. To do so, in the "QGIS style" tab select "Style from file" in the dropdown menu, then add a new QML file and click **Save**.
+
+A simple QGIS vector style, the default style, for example, can be **edited** directly in NextGIS Web.
+
+To do so, in the "QGIS style" tab select "User-defined style" in the dropdown menu. You can modify:
+
+* Marker shape
+* Marker size and stroke width (type it or use arrows in the field)
+* Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format)
+
+.. figure:: _static/QGIS_style_custom_edit_en.png
+   :name: QGIS_style_custom_edit_pic
+   :align: center
+   :width: 16cm
+
+   Editing vector style marker
+
 
 
 .. _ngw_mapserver_style:
@@ -118,18 +158,25 @@ Mapserver style
 ---------------
 
 To create **MapServer** style open layer properties of the layer you want create style for.
-In actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_mapserver_pic`).
-On the "Resource" tab enter the display name.
+In the actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_mapserver_pic`).
 
-.. figure:: _static/ngweb_window_create_resource_mapserver_pic_eng.png
+
+.. figure:: _static/mapserver_style_select_en.png
    :name: ngweb_window_create_resource_mapserver_pic
    :align: center
    :width: 20cm
 
-   Create resource dialog for MapServer style
+   Selecting MapServer style
 
-Field "Keyname" is optional.
-You can also add resource description and metadata on the corresponding tabs.
+You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
+
+.. figure:: _static/mapserver_style_custom_name_en.png
+   :name: mapserver_style_custom_name_pic
+   :align: center
+   :width: 16cm
+
+   Custom name for MapServer style
+
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
 In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). Otherwise default values are used.
@@ -142,9 +189,9 @@ In the "MapServer style" tab you can write a style manually (see in :numref:`ngw
    "MapServer style" tab
 
 
-After clicking "Create" the process of creation will finish, the window of the file with MapServer style will open (see in :numref:`ngweb_File_format_window_MapServer_pic`).
+Click **Create** to finish the process. The window of the created MapServer style will open (see in :numref:`ngweb_File_format_window_MapServer_pic`).
 
-.. figure:: _static/ngweb_File_format_window_MapServer_eng.png
+.. figure:: _static/MapServer_created_en.png
    :name: ngweb_File_format_window_MapServer_pic
    :align: center
    :width: 20cm
