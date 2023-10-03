@@ -5,7 +5,25 @@
 Latest changes
 ==============
 
-This section describes latest changes to the software.
+This section describes the latest changes to the software.
+
+4.5.0 released 29.30.2023
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* New tileset resource for storing and serving prerendered tiles.
+* New OGC API Features service with read and write support.
+* Up to 2x speed-up of loading vector layer data.
+* Differentiate webmap intial and contstraining extents.
+* Support for Google Analytics metrics.
+* Support for basic user-defined styles.
+* Save to PDF from the webmap printing panel.
+* Check effective permissions of other users for a resource.
+* Legends for webmaps is enabled by default.
+* Lots of improvements in feature editing widgets.
+* OutputFormat declaration in WFS for better compatibility.
+* Store audit journal in PostgreSQL database instead of ElasticSearch.
+* React library upgraded to 18.
+* Ant Design library upgraded to 5.
 
 4.4.0 released 30.06.2023
 ~~~~~~~~~~~~~~~~~~~~~~~~~
