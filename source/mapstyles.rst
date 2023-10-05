@@ -14,10 +14,10 @@ Style is related to a single layer so there is no item "Style" in the main resou
 Formats
 ----------------------------------
 
-By now NextGIS Web supports two rendering libraries: "Mapserver" and "QGIS". 
+By now NextGIS Web supports two rendering libraries: "QGIS" and "Mapserver" . 
 
+* QGIS style can be uploaded from a QML file or created in Web GIS, it has much more settings. 
 * You can write Mapserver style yourself as a text. 
-* QGIS style can only be uploaded from a qml file, it has much more settings. 
 
 
 .. _ngw_qgis_style:
@@ -35,7 +35,7 @@ Open the properties page of the layer you want create style for. To create a def
    Creating default QGIS style
 
 
-If you want to add a customized style, in the "Create resource" actions pane click "QGIS style" (see :numref:`select_qgis_style`).
+If you want to add a customized style, in the "Create resource" actions pane click "QGIS vector style" (see :numref:`select_qgis_style`).
 
 .. figure:: _static/QGIS_style_select_en_2.png
    :name: select_qgis_style
@@ -45,7 +45,7 @@ If you want to add a customized style, in the "Create resource" actions pane cli
    Selecting QGIS style resourse
  
 
-After the selection of "QGIS style" create resource dialog will open.
+After the selection of "QGIS vector style" create resource dialog will open.
 
 You can upload a file or create a simple vector style in the dialog.
 
@@ -54,7 +54,7 @@ QGIS style from file
 
 To upload a pre-made style click "Select a style" or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
 
-Here, if necessary, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
+If you need to use specially-made markers, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
 
 .. figure:: _static/upload_svg_qgis_style_en_2.png
    :name: upload_svg_qgis_style
@@ -65,7 +65,7 @@ Here, if necessary, you can select the SVG marker library resource, which contai
 
 .. warning::
    QML file to upload should be created in :program:`NextGIS QGIS` and saved on the PC (:numref:`save_svg_qgis_style`).
-   To create a style using SVG markers, you need to specify the **SVG marker** type in the layer properties and write the **full path to the file** on the local machine (:numref:`svg_qgis_style`). The file name and format must match the one loaded in the *SVG Marker Library* resource that the user selects when loading the QML file.
+   To create a style using SVG markers, you need to specify the **SVG marker** type in the layer properties and write the **full path to the file** on the local machine (:numref:`svg_qgis_style`). The file name must match the one loaded in the *SVG Marker Library* resource that the user selects when loading the QML file.
 
 .. figure:: _static/save_svg_qgis_style_en.png
    :name: save_svg_qgis_style
@@ -111,7 +111,22 @@ If you want to create a simple custom style, select "User-defined style" in the 
    :align: center
    :width: 16cm
 
-   Custom QGIS style
+   Custom QGIS style for points
+
+
+.. figure:: _static/QGIS_style_custom_line_en.png
+   :name: QGIS_style_custom_polygon_pic
+   :align: center
+   :width: 15cm
+
+   Custom QGIS style for lines
+
+.. figure:: _static/QGIS_style_custom_polygon_en.png
+   :name: QGIS_style_custom_polygon_pic
+   :align: center
+   :width: 15cm
+
+   Custom QGIS style for polygons
 
 You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
 
@@ -409,6 +424,9 @@ Some other useful tags
 * SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - Sets the unit of CLASS object SIZE values (default is pixels). Useful for simulating buffering.
 * SYMBOLSCALEDENOM [double] - The scale at which symbols and/or text appear full size. This allows for dynamic scaling of objects based on the scale of the map. If not set then this layer will always appear at the same size. Scaling only takes place within the limits of MINSIZE and MAXSIZE as described above. Scale is given as the denominator of the actual scale fraction, for example for a map at a scale of 1:24,000 use 24000.
 * TYPE [chart|circle|line|point|polygon|raster|query] - Specifies how the data should be drawn. Need not be the same as the feature geometry type. For example polygons or polylines may be drawn as a point layer.
+
+See MapServer templates `here <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_.
+
 
 .. _ngw_mapserver_templates:
 
