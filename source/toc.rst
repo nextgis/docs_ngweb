@@ -16,7 +16,8 @@ Contents:
    general   
    admin_interface
    layers
-   mapstyles    
+   mapstyles
+   mapservertemplates
    layers_settings 
    webmaps_admin       
    webmaps_client
