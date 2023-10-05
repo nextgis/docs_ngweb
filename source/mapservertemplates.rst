@@ -1169,8 +1169,6 @@ OSM water-polygon
 
 
 
-OSM-black
-=============
 
 OSM landuse-polygon
 -----------------------------
