@@ -1210,33 +1210,6 @@ OSM water-polygon
 	  </layer>
 	</map>
 	
-	
-Использование стиля из поля векторного слоя
---------------------------------------------------
-
-Имеется возможность настройки стиля отрисовки векторных данных для каждой записи индивидуально. 
-Для этого необходимо завести поле с описание стиля в формате ORG Style. Например,
-
-.. code-block:: bash
-
-   ogr2ogr -f GeoJSON -sql "select *, OGR_STYLE from Australia" australia.geojson Australia.TAB
-   
-Описание формата ORG Style можно изучить по странице `Feature Style Specification <https://gdal.org/user/ogr_feature_style.html>`_.
-
-Для векторного слоя с полем `OGR_STYLE` которое содержит стиль записи необходимо выставить следующий стиль NextGIS Web Mapserver:
-
-.. code-block:: xml
-
-   <map>
-     <layer>
-       <styleitem>OGR_STYLE</styleitem>
-       <class>
-         <name>default</name>
-       </class>
-     </layer>
-   </map>
-
-
 OSM landuse-polygon
 -----------------------
 
@@ -1369,3 +1342,33 @@ OSM landuse-polygon
 		</class>
 	    </layer>
 	</map>
+
+
+.. _ngw_mapserver_from_field:
+
+Использование стиля из поля векторного слоя
+--------------------------------------------------
+
+Имеется возможность настройки стиля отрисовки векторных данных для каждой записи индивидуально. 
+Для этого необходимо завести поле с описание стиля в формате ORG Style. Например,
+
+.. code-block:: bash
+
+   ogr2ogr -f GeoJSON -sql "select *, OGR_STYLE from Australia" australia.geojson Australia.TAB
+   
+Описание формата ORG Style можно изучить по странице `Feature Style Specification <https://gdal.org/user/ogr_feature_style.html>`_.
+
+Для векторного слоя с полем `OGR_STYLE` которое содержит стиль записи необходимо выставить следующий стиль NextGIS Web Mapserver:
+
+.. code-block:: xml
+
+   <map>
+     <layer>
+       <styleitem>OGR_STYLE</styleitem>
+       <class>
+         <name>default</name>
+       </class>
+     </layer>
+   </map>
+
+
