@@ -10,5 +10,4 @@ This section describes system administrator tasks and provides changelog informa
 .. toctree::
    :maxdepth: 2
    
-   install-ubuntu
-   sysadmin_updates
+
