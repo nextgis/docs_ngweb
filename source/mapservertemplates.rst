@@ -1,6 +1,6 @@
 .. _ngw_mapserver_templates:
 
-Map styles examples (OSM-default)
+Map styles examples 
 ===================================
 
 Polygon layer with scale range and labels
@@ -1302,3 +1302,31 @@ NextGIS Web styles support for different hatched (see :numref:`ngweb_mapstyle_ha
 		</class>
 	    </layer>
 	</map>
+
+
+.. _ngw_mapserver_from_field:
+
+Individual feature styles from field
+--------------------------------------------------
+
+It is possible to set up individual style for every vector feature. 
+First create a field that contains style description in ORG Style format. For example,
+
+.. code-block:: bash
+
+   ogr2ogr -f GeoJSON -sql "select *, OGR_STYLE from Australia" australia.geojson Australia.TAB
+   
+Learn more on ORG Style on the `Feature Style Specification <https://gdal.org/user/ogr_feature_style.html>`_ page.
+
+Now that you have a vector layer with `OGR_STYLE` field containing the style for the feature, add the following NextGIS Web Mapserver:
+
+.. code-block:: xml
+
+   <map>
+     <layer>
+       <styleitem>OGR_STYLE</styleitem>
+       <class>
+         <name>default</name>
+       </class>
+     </layer>
+   </map>
