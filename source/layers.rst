@@ -518,7 +518,7 @@ NextGIS Web может принимать многослойные наборы 
 .. figure:: _static/diagnostics_successfully_layer_ru.png
    :name: diagnostics_successfully_layer_ru
    :align: center
-   :width: 20cm
+   :width: 13cm
 
 В случае, если какие-то из введенных данных не корректны - появится сообщение об ошибке.
 
@@ -535,7 +535,7 @@ NextGIS Web может принимать многослойные наборы 
 .. figure:: _static/diagnostics_fail_layer_ru.png
    :name: diagnostics_fail_layer_ru
    :align: center
-   :width: 20cm
+   :width: 13cm
 
 .. _ngw_postgis_diagnostics:
 
