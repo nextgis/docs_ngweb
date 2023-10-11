@@ -25,5 +25,5 @@ Contents:
    permissions
    admin_tasks 
    ngw_srs
-   sysadmin     
+   sysadmin_updates    
    extension
