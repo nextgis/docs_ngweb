@@ -177,7 +177,7 @@ Basemaps
 
 “Enabled” checkbox sets default visibility of a basemap.
 
-"Opacity" field sets basemap transparency on a map in a range between 0 (transparent) and 1 (opaque) with decimals separated by a full stop (ex. 0.2).
+"Opacity" field sets basemap transparency on a map in a range between 0 (transparent) and 1 (opaque) with decimals comma separated (ex. 0.2).
 
 Web Map with no basemap
 ~~~~~~~~~~~~~~~~~~~~~~~
