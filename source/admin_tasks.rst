@@ -773,157 +773,46 @@ NextGIS Web строится на ресурсном подходе - кажды
 Настройка внешнего вида интерфейса на CSS
 -------------------------------------------
 
-Можно изменять внешний вид NextGIS Web. Внешний вид включает: логотипы, цвета шапки, фона, кнопок и других элементов. Для этого необходимо в основном меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) выбрать пункт "Панель управления" (см. :numref:`ngweb_main_page_main_menu_pic`). На Панели управления (см. :numref:`ngweb_control_panel`) следует выбрать команду "Пользовательские стили CSS" в подпункте "Настройки". В открывшейся вкладке можно задать собственные стили :term:`CSS`, которые будут использованы для оформления всех страниц Веб ГИС. 
+Можно изменять внешний вид NextGIS Web.
+Для этого необходимо в основном меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) выбрать пункт "Панель управления" (см. :numref:`ngweb_main_page_main_menu_pic`).
+На Панели управления (см. :numref:`ngweb_control_panel`) следует выбрать команду "Пользовательские стили CSS" в подпункте "Настройки".
+В открывшейся вкладке можно задать собственные стили :term:`CSS`, которые будут использованы для оформления всех страниц Веб ГИС. 
 
 Примеры настроек внешнего вида интерфейса
 -------------------------------------------
 
-Изменить цвет шапки:
-~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: css
-
-	.header{background-color: #F44336; color: #fff;}
-
-Убрать логотип NextGIS с карты:
+Изменить основной цвет Веб ГИС 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Шапка, символы в шапке, кнопки, обводка полей, подсветка ссылок при наведении и другое.
+
 .. code-block:: css
 
-	.map-logo{display:none;}
+:root {
+  --primary: red
+}
 
-Убрать логотип NextGIS из шапки:
+Изменить цвет основных надписей 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Пункты меню, имя и свойства текущей группы ресурсов и другое.
+
 .. code-block:: css
 
-	.header__title-logo{display:none;}
-	
-Заменить логотипы NextGIS на другие (только если вам это позволяет делать лицензионное соглашение):
+:root {
+  --text-base: #ff6600
+}
+
+Изменить цвет вспомогательных надписей
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: css	
-
-	.map-logo{content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/JR_logo_%28east%29.svg/80px-JR_logo_%28east%29.svg.png")}
-	.header__title-logo{content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/JR_logo_%28east%29.svg/80px-JR_logo_%28east%29.svg.png")}
-	
-	
-Убрать кнопки шаринга в социальные сети:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: css
-	
-	div.social-links {display:none;}
-	
-Убрать кнопку-гамбургер	
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: css
-	
-	#menu.header-nav__item {display:none;}
-
-Чтобы вернуть её обратно - откройте контрольную панель по url http://username.nextgis.com/control-panel
-
-Убрать кнопки справа с логином
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: css
-	
-	ui.header-nav header__right {display:none;}
-	
-Убрать заголовок окна идентификации
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Окно идентификации - это всплывающее окно, появляющееся при нажатии на объект на карте. Данная настройка скроет его заголовок и выбор идетифицируемого слоя.
+Путь до текущего ресурса, заголовки свойств ресурсов и другое.
 
 .. code-block:: css
 
-	div.ngwPopup__content div div.dijitAlignTop,
-        div.ngwPopup__features span.ngwWebmapToolIdentify-controller {
-            display: none;
-        }
-
-
-Расширенный пример настройки внешнего вида Веб ГИС
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Этот пример показывает, как настроить большинство изменяемых элементов внешнего вида NextGIS Web. 
-Можно использовать фрагменты приведенных ниже стилей как есть или с нужными изменениями. 
-Увидеть эти стили в действии можно по `ссылке <http://nastya.nextgis.com>`_.
-
-.. code-block:: css
-
-	/* Base background */
-
-	body{
-	  background-color: #fff;
-	  background-image:url("https://nextgis.ru/img/hypnotize_transparent.png");
-	}
-
-	/* Header text and background color */
-
-	.header{
-	  background-color: #F44336;
-	  color: #fff;
-	}
-
-	/* Separator color between logo and title */
-
-	.header__title-logo{
-	  border-right: 1px solid rgba(255,255,255,.48) !important;
-	}
-
-	/* User info color in header */
-
-	.user-avatar__label{
-	  background-color: #fff !important;
-	  color: #F44336 !important;
-	}
-
-	.user-avatar .user-avatar__icon{
-	  color: rgba(255,255,255,.82) !important;
-	}
-
-	/* Primary button */
-
-	.dijitButton--primary{
-	  background-color: #fff !important;
-	  color:#f44336 !important;
-	  font-weight: bold !important;
-	  border: 2px solid #f44336 !important;
-	}
-
-	.dijitButton--primary:hover{
-	  background-color: #f44336 !important;
-	  color: #fff !important;
-	}
-
-	/* Default button */
-
-	.dijitButton--default{
-	  background-color: #fff !important;
-	  color:#999 !important;
-	  font-weight: bold !important;
-	  border: 2px solid #999 !important;
-	}
-
-	.dijitButton--default:hover{
-	  background-color: #999 !important;
-	  color: #fff !important;
-	}
-
-	/* Tabs color */
-
-	.dijitTabContainerTop-tabs .dijitTabChecked{
-	  border-top-color: #f44336 !important;
-	}
-
-	/* Left navigation panel on the map */
-
-	.navigation-menu{
-	  background-color: #fff !important;
-	  border-right: 1px solid rgba(0,0,0,.12) !important;
-	  color: #000 !important;
-	}
+:root {
+  --text-secondary: rgb(40 200 40 / .8)
+}
 	
 
 Настройка элементов интерфейса NextGIS (White label)
