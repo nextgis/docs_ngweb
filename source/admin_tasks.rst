@@ -788,9 +788,9 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. code-block:: css
 
-:root {
-  --primary: red
-}
+	:root {
+  	--primary: red
+	}
 
 Изменить цвет основных надписей 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -799,9 +799,9 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. code-block:: css
 
-:root {
-  --text-base: #ff6600
-}
+	:root {
+  	--text-base: #ff6600
+	}
 
 Изменить цвет вспомогательных надписей
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -810,9 +810,9 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 .. code-block:: css
 
-:root {
-  --text-secondary: rgb(40 200 40 / .8)
-}
+	:root {
+  	--text-secondary: rgb(40 200 40 / .8)
+	}
 	
 
 Настройка элементов интерфейса NextGIS (White label)
