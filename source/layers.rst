@@ -816,7 +816,7 @@ NextGIS Web является сервером WMS. Соответственно 
 
 .. code-block:: html
 
-   https://demo.nextgis.ru/api/resource/4818/wms
+   https://demo.nextgis.ru/api/resource/4817/wms
 
 Для использования сервиса через утилиты GDAL нужно создать для него файл XML. Для создания такого файла нужно знать
 URL сервиса WMS. Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
@@ -827,7 +827,7 @@ URL сервиса WMS. Эти параметры нужно подставит�
    <GDAL_WMS>
     <Service name="WMS">
         <Version>1.1.1</Version>
-        <ServerUrl>https://demo.nextgis.com/api/resource/4817/wms?</ServerUrl>
+        <ServerUrl>https://demo.nextgis.ru/api/resource/4817/wms</ServerUrl>
         <SRS>EPSG:3857</SRS>
         <ImageFormat>image/png</ImageFormat>
         <Layers>moscow_boundary_multipolygon</Layers>
