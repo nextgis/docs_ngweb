@@ -7,8 +7,7 @@ Latest changes
 
 This section describes the latest changes to the software.
 
-4.5.0 released 29.30.2023
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**4.5.0 released 29.30.2023**
 
 * New tileset resource for storing and serving prerendered tiles.
 * New OGC API Features service with read and write support.
@@ -25,8 +24,7 @@ This section describes the latest changes to the software.
 * React library upgraded to 18.
 * Ant Design library upgraded to 5.
 
-4.4.0 released 30.06.2023
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**4.4.0 released 30.06.2023**
 
 * Auto-generated and configurable legends for webmaps.
 * Reordering layers via drag-and-drop while viewing webmaps.
@@ -54,13 +52,13 @@ This section describes the latest changes to the software.
 * User permissions section is moved to a separate page.
 * OAuth-based automatic group assignment.
 
-4.3.1 released 14.12.2022
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**4.3.1 released 14.12.2022**
+
 * Fix resource group selection issue while cloning webmaps
 
 
-4.3.0 released 21.11.2022
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**4.3.0 released 21.11.2022**
+
 * Support for webmap cloning via UI.
 * Search by coordinates on web maps.
 * CSV and XLSX support when creating a vector layer.
@@ -78,8 +76,8 @@ This section describes the latest changes to the software.
 * Ability to search through resources recursively in REST API.
 * OpenLayers library upgraded to 6.15.1.
 
-4.2.0 released 18.07.22
-~~~~~~~~~~~~~~~~~~~~~~~
+**4.2.0 released 18.07.2022**
+
 * "Locate me" tool on web maps.
 * Identifiable setting for web map layers.
 * Batch deletion and moving of resources.
@@ -99,8 +97,8 @@ This section describes the latest changes to the software.
 * Fast JSON serialization and deserialization based on orjson library.
 * Completed control panel migration to Antd and React.
 
-4.1.0 released 16.02.22
-~~~~~~~~~~~~~~~~~~~~~~~
+**4.1.0 released 16.02.2022**
+
 * Cloud-optimized GeoTIFF (COG) support for raster layers.
 * Browser compatibility test and Internet Explorer deprecation.
 * Experimental support for long-runnning requests for raster and vector layers creation using lunkwill extension.
@@ -119,8 +117,8 @@ This section describes the latest changes to the software.
 * Improved handling of external services errors and timeouts.
 * Upgraded dependencies: Pyramid 2.0, SQLAlchemy 1.4, and OpenLayers 6.10
 
-4.0.0 released 18.11.21
-~~~~~~~~~~~~~~~~~~~~~~~
+**4.0.0 released 18.11.2021**
+
 * Source layer selection while creating vector layers from multi-layer sources, such as ZIP-archives or Mapinfo TABs.
 * On-the-fly reprojection for WMS and WFS services.
 * Ability to restrict address search by a country if using Nominatim.
@@ -138,8 +136,8 @@ This section describes the latest changes to the software.
 * Synchronization of translations with POEditor.
 * Yandex Maps-based address search on the webmap.
 
-3.9.0 released 11.08.21
-~~~~~~~~~~~~~~~~~~~~~~~
+**3.9.0 released 11.08.2021**
+
 * Simple tool for previewing resources on the map.
 * Resource quick search tool in the page header.
 * Disable/enable address search via settings in the control panel.
@@ -153,8 +151,8 @@ This section describes the latest changes to the software.
 * Information about available distribution versions in the control panel.
 * Experimental storage accounting and estimation subsystem.
 
-3.8.0 released 12.05.21
-~~~~~~~~~~~~~~~~~~~~~~~
+**3.8.0 released 12.05.2021**
+
 * Ability to constraint a web map to the default extent.
 * More length and area units in web map settings.
 * Automatic correction of errors during the creation of a vector layer.
@@ -170,8 +168,8 @@ This section describes the latest changes to the software.
 * OpenLayers library upgraded to 6.5.0.
 * OAuth server logout support via logout redirect endpoint.
 
-3.7.0
-~~~~~
+**3.7.0**
+
 * Add database migrations framework and automatic migrations applying.
 * External access links for styles, web maps (TMS), and feature layers (MVT).
 * Experimental WFS client and raster mosaic, which is disabled by default.
@@ -185,8 +183,8 @@ This section describes the latest changes to the software.
 * Vector layer export to MapInfo MIF/MID format.
 * Vector layer export to Panorama SXF format.
 
-3.6.0
-~~~~~
+**3.6.0**
+
 * Major improvements and bug fixes in WFS protocol implementation.
 * Permission model changes: now any action on resource requires read permission from scope resource on the resource and its parent.
 * PostGIS layer extent calculation and improved extent calculation in vector layer.
@@ -204,8 +202,8 @@ This section describes the latest changes to the software.
 * Fix GDAL > 3 compability issues, including axis orientation.
 * SVG marker library resource available to renderers.
 
-3.5.0
-~~~~~
+**3.5.0**
+
 * Raster layer export to GeoTIFF, ERDAS IMAGINE and Panorama RMF formats.
 * Customizable link preview for resources.
 * Improved resource picker: inappropriate resources are disabled now.
@@ -222,16 +220,16 @@ This section describes the latest changes to the software.
 * Fix coordinates display format in web map identification popup.
 * Fix tile distortion issue for raster styles
 
-3.4.2
-~~~~~
+**3.4.2**
+
 * Fix WMS layer creation.
 
-3.4.1
-~~~~~
+**3.4.1**
+
 * Fix layout scroll bug in vector layer fields editing.
 
-3.4.0
-~~~~~
+**3.4.0**
+
 * New tus-based file uploader. Check for size limits before starting an upload.
 * Server-side TMS-client. New resource types: TMS connection and TMS layer.
 * Create, delete and reorder fields for existing vector layer.
@@ -240,17 +238,17 @@ This section describes the latest changes to the software.
 * Stay on the same page after login.
 * Error messages improvements on trying to: render non-existing layer, access non-existing attachment or write a geometry to a layer with a different geometry type.
 
-2020-06-30 release
-~~~~~~~~~~~~~~~~~~
+**2020-06-30 release**
+
 * General. Add/remove fields of attributes table.
 * General. Reorder fields of attributes table.
 
-2020-06-24 release
-~~~~~~~~~~~~~~~~~~
+**2020-06-24 release**
+
 * General. Support raster pyramids for QGIS style for raster layers.
 
-2020-06-05 release
-~~~~~~~~~~~~~~~~~~
+**2020-06-05 release**
+
 * General. New data uploader. Check for size limits before starting an upload.
 * General. Stay on the same page on login to the same page.
 * General. Human readable error on trying to access non-existing attachment.
@@ -259,41 +257,39 @@ This section describes the latest changes to the software.
 * General. Improve handling rasters with huge size.
 * Extensions. Whitelabel - new extension to set corporate interface elements (logos, links, company mentions etc.).
 
-2020-04-16 release
-~~~~~~~~~~~~~~~~~~
+**2020-04-16 release**
+
 * For developers. Single feature extent endpoint. Example: https://demo.nextgis.com/api/resource/1735/feature/1/extent
 * For developers. Ordering for data filtering. Reverse ordering and two and more field ordering are supported. Example: https://demo.nextgis.com/api/resource/1731/feature/?limit=10&order_by=NAME,-LEISURE
 * Admin GUI. Prohibit blocking of the last (the only) administrator in the system.
 
-2020-03-03 release
-~~~~~~~~~~~~~~~~~~~
+**2020-03-03 release**
+
 * Services. Fix declared CRS for WMS containing raster layers.
 * Services. Fix RGBA conversion to JPG on WMS requests.
 
-2020-02-12 release
-~~~~~~~~~~~~~~~~~~~
+**2020-02-12 release**
+
 * Storage. Support for storing Z-type geometries, PolygonZ etc.
 * For developers. API can accept and provide Z-type geometries.
 
-2019-11-18 release
-~~~~~~~~~~~~~~~~~~~
+**2019-11-18 release**
+
 * Storage. Support for numeric-type fields on layers added from external PostgreSQL/PostGIS
 * Search. Improve address search (uses Nominatim)
 * For developers. In addition to style IDs Web Map API now provides layer IDs.
 
-2019-11-06 release
-~~~~~~~~~~~~~~~~~~~
+**2019-11-06 release**
+
 * Printing. Zooming with the box now correctly fit the zoomed area with chosen paper format (A4 etc.)
 
-2019-10-17 release
-~~~~~~~~~~~~~~~~~~
+**2019-10-17 release**
 
 * CRS. Import from ESRI WKT (in addition to OGC WKT)
 * CRS. Unicode in CRS names is now supported.
 * CRS. Identification doesn't crash anymore if CRS transformation was not possible.
 
-2019-08-12 release
-~~~~~~~~~~~~~~~~~~
+**2019-08-12 release**
 
 * Web Map. Search for integer values in added to the embedded feature table.
 * Web Map. Improved zooming on a point from the embedded feature table.
