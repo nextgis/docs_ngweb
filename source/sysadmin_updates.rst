@@ -7,7 +7,11 @@ Latest changes
 
 This section describes the latest changes to the software.
 
-**4.5.0 released 29.30.2023**
+**4.5.1 released on 17 Nov 2023**
+
+* Fix print to TIFF format in addition to PDF, JPEG and PNG.
+
+**4.5.0 released on 29 Sep 2023**
 
 * New tileset resource for storing and serving prerendered tiles.
 * New OGC API Features service with read and write support.
@@ -24,7 +28,7 @@ This section describes the latest changes to the software.
 * React library upgraded to 18.
 * Ant Design library upgraded to 5.
 
-**4.4.0 released 30.06.2023**
+**4.4.0 released on 30 Jun 2023**
 
 * Auto-generated and configurable legends for webmaps.
 * Reordering layers via drag-and-drop while viewing webmaps.
@@ -52,12 +56,12 @@ This section describes the latest changes to the software.
 * User permissions section is moved to a separate page.
 * OAuth-based automatic group assignment.
 
-**4.3.1 released 14.12.2022**
+**4.3.1 released on 14 Dec 2022**
 
 * Fix resource group selection issue while cloning webmaps
 
 
-**4.3.0 released 21.11.2022**
+**4.3.0 released on 21 Nov 2022**
 
 * Support for webmap cloning via UI.
 * Search by coordinates on web maps.
@@ -76,7 +80,7 @@ This section describes the latest changes to the software.
 * Ability to search through resources recursively in REST API.
 * OpenLayers library upgraded to 6.15.1.
 
-**4.2.0 released 18.07.2022**
+**4.2.0 released on 18 Jul 2022**
 
 * "Locate me" tool on web maps.
 * Identifiable setting for web map layers.
@@ -97,7 +101,7 @@ This section describes the latest changes to the software.
 * Fast JSON serialization and deserialization based on orjson library.
 * Completed control panel migration to Antd and React.
 
-**4.1.0 released 16.02.2022**
+**4.1.0 released on 16 Feb 2022**
 
 * Cloud-optimized GeoTIFF (COG) support for raster layers.
 * Browser compatibility test and Internet Explorer deprecation.
@@ -117,7 +121,7 @@ This section describes the latest changes to the software.
 * Improved handling of external services errors and timeouts.
 * Upgraded dependencies: Pyramid 2.0, SQLAlchemy 1.4, and OpenLayers 6.10
 
-**4.0.0 released 18.11.2021**
+**4.0.0 released on 18 Nov 2021**
 
 * Source layer selection while creating vector layers from multi-layer sources, such as ZIP-archives or Mapinfo TABs.
 * On-the-fly reprojection for WMS and WFS services.
@@ -136,7 +140,7 @@ This section describes the latest changes to the software.
 * Synchronization of translations with POEditor.
 * Yandex Maps-based address search on the webmap.
 
-**3.9.0 released 11.08.2021**
+**3.9.0 released on 11 Aug 2021**
 
 * Simple tool for previewing resources on the map.
 * Resource quick search tool in the page header.
@@ -151,7 +155,7 @@ This section describes the latest changes to the software.
 * Information about available distribution versions in the control panel.
 * Experimental storage accounting and estimation subsystem.
 
-**3.8.0 released 12.05.2021**
+**3.8.0 released on 12 May 2021**
 
 * Ability to constraint a web map to the default extent.
 * More length and area units in web map settings.
