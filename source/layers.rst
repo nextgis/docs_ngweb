@@ -949,17 +949,16 @@ NextGIS Web является сервером TMS. Соответственно 
 
 .. code-block:: html
 
-   https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
+   https://demo.nextgis.ru/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
 
-Для использования TMS через утилиты GDAL нужно создать для него файл XML. Для создания такого файла нужно знать
-URL TMS. Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
+Для использования TMS через утилиты GDAL нужно создать для него файл XML. Для создания такого файла нужно знать URL TMS. Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
 остается неизменным.
 
 .. code-block:: xml
 
    <GDAL_WMS>
     <Service name="TMS">
-        <ServerUrl>https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234</ServerUrl>
+        <ServerUrl>https://demo.nextgis.ru/api/component/render/tile?z={z}&x={x}&y={y}&resource=234</ServerUrl>
     </Service>
     <DataWindow>
         <UpperLeftX>-20037508.34</UpperLeftX>
