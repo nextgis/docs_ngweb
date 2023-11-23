@@ -194,7 +194,7 @@ Indexed Color raster files are uploaded just like the RGB raster files. If the f
 
 Vector layer from file
 -----------------------
-You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` and :term:`GeoPackage` formats in NextGIS Web.
+You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, CSV :term:`GML` and :term:`GeoPackage` formats in NextGIS Web.
 
 .. _ngw_process_create_vector_layer:
 
