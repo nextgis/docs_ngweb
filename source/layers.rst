@@ -1098,7 +1098,7 @@ NextGIS Web является сервером WFS - может публиков�
 
    https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
 
-.. _ngw_resourses_group:
+.. _ngw_OGC_API_Features:
 
 Cервис OGC API Features
 -----------------------
