@@ -1046,7 +1046,7 @@ WFS services can also be accessed with links of the following type (`basic auth 
 
    https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
 
-.. _ngw_wfs_service:
+.. _ngw_OGC_API_Features:
 
 OGC API Features service
 -----------
@@ -1107,7 +1107,7 @@ For each layer you can set a limit for the number of features returned from the 
    OGC API Features service tab of Create resource dialog
 
 
-.. _ngw_service_using_wfs:
+.. _ngw_service_using_OGC_API_Features:
 
 Using OGC API Features service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
