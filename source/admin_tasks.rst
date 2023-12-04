@@ -668,145 +668,53 @@ The following parameters can be set up:
 
    Web Map search
 
+
 .. _ngw_CSS:
 
-Customization of NextGIS Web outlook
-------------------------------------
+Customize the design with CSS
+-------------------------------------------
 
-You can customize the look of NextGIS Web, including logos, backgrounds, header and buttons colors etc. To do it select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). In control panel (see :numref:`admin_control_panel`) select "Custom CSS" in "Settings" block. In opened tab enter your own :term:`CSS` rules. They will be used throughout your Web GIS on all its pages.
-
+You can modify the look of NextGIS Web using CSS.
+From the main menu (see :numref:`admin_index_pic`) open the Control Panel (see :numref:`ngweb_main_page_main_menu_pic`).
+In the Control Panel (see :numref:`admin_control_panel`) select **Custom CSS** in the Settings section.
+Here you can enter your own :term:`CSS` rules. They will be used throughout your Web GIS on all its pages. 
 
 Custom CSS examples
---------------------
+-------------------------------------------
 
-Change header color
-~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-    .header{background-color: #F44336; color: #fff;}
-
-Remove NextGIS logo from Web Map
+Change main Web GIS color 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
-
-    .map-logo{display:none;}
-    
-Remove social networks sharing buttons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-    div.social-links {display:none;}
-    
-Remove hamburger button	
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-    #menu.header-nav__item {display:none;}
-	
-For return it back - open control panel by url http://username.nextgis.com/control-panel
-
-Remove login button in upper right corner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: css
-	
-	ui.header-nav header__right {display:none;}
-    
-Remove identification window header
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Identification window is a popup that is shown when you click on a feature on a Web Map. This setting will hide it's header and layer selector:
+Affects header, symbols in the header, buttons, field contours, links highlighted on hover etc.
 
 .. code-block:: css
 
-	div.ngwPopup__content div div.dijitAlignTop,
-        div.ngwPopup__features span.ngwWebmapToolIdentify-controller {
-            display: none;
-        }
-
-Advanced example
-~~~~~~~~~~~~~~~~
-
-This example shows how to change the look of pretty much all changeable elements of NextGIS Web. 
-You can try these examples as is or change it to your liking. You can also see them in action `here <http://nastya.nextgis.com>`_.
-
-.. code-block:: bash
-
-	/* Base background */
-
-	body{
-	  background-color: #fff;
-	  background-image:url("https://nextgis.ru/img/hypnotize_transparent.png");
+	:root {
+  	--primary: red
 	}
 
-	/* Header text and background color */
+Change main font color 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	.header{
-	  background-color: #F44336;
-	  color: #fff;
+Affects menu, name and parameters of displayed resource group etc.
+
+.. code-block:: css
+
+	:root {
+  	--text-base: #ff6600
 	}
 
-	/* Separator color between logo and title */
+Change additional font color
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	.header__title-logo{
-	  border-right: 1px solid rgba(255,255,255,.48) !important;
+Affects paths for the displayed resource, parameters etc.
+
+.. code-block:: css
+
+	:root {
+  	--text-secondary: rgb(40 200 40 / .8)
 	}
-
-	/* User info color in header */
-
-	.user-avatar__label{
-	  background-color: #fff !important;
-	  color: #F44336 !important;
-	}
-
-	.user-avatar .user-avatar__icon{
-	  color: rgba(255,255,255,.82) !important;
-	}
-
-	/* Primary button */
-
-	.dijitButton--primary{
-	  background-color: #fff !important;
-	  color:#f44336 !important;
-	  font-weight: bold !important;
-	  border: 2px solid #f44336 !important;
-	}
-
-	.dijitButton--primary:hover{
-	  background-color: #f44336 !important;
-	  color: #fff !important;
-	}
-
-	/* Default button */
-
-	.dijitButton--default{
-	  background-color: #fff !important;
-	  color:#999 !important;
-	  font-weight: bold !important;
-	  border: 2px solid #999 !important;
-	}
-
-	.dijitButton--default:hover{
-	  background-color: #999 !important;
-	  color: #fff !important;
-	}
-
-	/* Tabs color */
-
-	.dijitTabContainerTop-tabs .dijitTabChecked{
-	  border-top-color: #f44336 !important;
-	}
-
-	/* Left navigation panel on the map */
-
-	.navigation-menu{
-	  background-color: #fff !important;
-	  border-right: 1px solid rgba(0,0,0,.12) !important;
-	  color: #000 !important;
-	}
+	
 
 
 Customize NextGIS UI Elements (White label)
