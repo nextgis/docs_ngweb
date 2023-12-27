@@ -7,6 +7,19 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.6.0 released on 27 Dec 2023**
+
+* Support for lookup tables for feature layer attributes.
+* Print to TIFF format in addition to PDF, JPEG and PNG.
+* Geometry-based filtering of feature tables on webmaps.
+* Autodetection of minimum and maximum scales for webmap and WMS layers.
+* Refresh feature tables after saving layer changes on webmaps.
+* Improved handling of ``id`` and ``fid`` attributes of vector layers.
+* Improved handling of date and time inputs.
+* Passing a zoom level to webmaps via ``zoom`` attribute.
+* Support for OpenID Connect UserInfo endpoint.
+* Extraction of scale ranges from QML styles.
+
 **4.5.1 released on 17 Nov 2023**
 
 * Fix print to TIFF format in addition to PDF, JPEG and PNG.
