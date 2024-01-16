@@ -197,15 +197,19 @@ https://demo.nextgis.ru/resource/6144/display?panel=layers&hl_lid=6145&hl_attr=N
 
 Параметры объекта и их значения:
 
-* hl_lid – ID слоя (зайдите в ресурс слоя и посмотрите число, включенное в URL, например https://experimental.nextgis.com/resource/142 -> hl_lid=142);
+* hl_lid – ID слоя (зайдите в ресурс слоя и посмотрите число, включенное в URL, например https://experimental.nextgis.com/resource/142 --> ``hl_lid=142``);
 
 * hl_attr – атрибут слоя (название поля атрибутов, из которого берётся значение);
 
 * hl_val – значение атрибута.
 
+Также можно добавить:
+
+* zoom - степень приближения к объекту (от 1 до 17, где 17 - максимальное приближение).
+
 Итоговая ссылка:
 
-https://experimental.nextgis.com/resource/147/display?panel=layers&hl_lid=142&hl_attr=ngw_id&hl_val=4
+https://experimental.nextgis.com/resource/147/display?panel=layers&hl_lid=142&hl_attr=ngw_id&hl_val=4&zoom=14
 
 .. figure:: _static/webmap_feature_lik_ID_ru.png
    :name: webmap_feature_lik_ID_pic
