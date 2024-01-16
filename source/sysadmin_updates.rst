@@ -7,7 +7,7 @@ Latest changes
 
 This section describes the latest changes to the software.
 
-**4.6.0 released on 27 Dec 2023**
+**4.6.0 released on 27 Dec 2023 and 29 Dec 2023**
 
 * Support for lookup tables for feature layer attributes.
 * Print to TIFF format in addition to PDF, JPEG and PNG.
@@ -19,6 +19,9 @@ This section describes the latest changes to the software.
 * Passing a zoom level to webmaps via ``zoom`` attribute.
 * Support for OpenID Connect UserInfo endpoint.
 * Extraction of scale ranges from QML styles.
+* Fix NextGIS ID configuration issue.
+* Support for PostgreSQL 12.
+
 
 **4.5.1 released on 17 Nov 2023**
 
