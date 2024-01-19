@@ -686,17 +686,35 @@ NextGIS Web строится на ресурсном подходе - кажды
 
 Через панель управления администратор может задать ряд общих настроек для всех веб-карт в NextGIS Web (:numref:`admin_webmap_panel_settings`):
 
+* Видимость меню навигации для гостя
 * Размер окна идентификации
 * Параметры измерений
 * Параметры адресного поиска
+* Параметры видимости легенды
 
-.. figure:: _static/admin_webmap_panel_settings_rus.png
+.. figure:: _static/admin_webmap_panel_settings_rus_2.png
    :name: admin_webmap_panel_settings
    :align: center
-   :width: 15cm
+   :width: 20cm
 
    Страница настроек веб-карты
 
+.. _ngw_contr_panel_webmap_no_menu:
+
+Видимость меню навигации
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Вы можете скрыть переход к списку ресурсов для гостей, просматривающих веб-карту.
+
+В панели управления вашей Веб ГИС в разделе Настройки веб-карты включите опцию *Скрывать меню навигации для гостя*.
+
+
+.. figure:: _static/admin_webmap_no_menu_ru.png
+   :name: admin_webmap_no_menu_pic
+   :align: center
+   :width: 17cm
+
+   Веб-карта без кнопки главного меню навигации
 
 .. _ngw_contr_panel_webmap_ident:
 
@@ -713,7 +731,7 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. figure:: _static/admin_webmap_panel_indentify_rus.png
    :name: admin_webmap_panel_indentify
    :align: center
-   :width: 20cm
+   :width: 14cm
 
    Идентификация объекта на веб-карте
 
