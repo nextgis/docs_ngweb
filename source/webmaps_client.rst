@@ -9,16 +9,17 @@
 В составе :program:`NextGIS Web` предусмотрено специальное клиентское веб приложение для 
 просмотра веб-карт (см. :numref:`ngweb_webmap_client`).
  
-.. figure:: _static/webmap_client_rus_2.png
+.. figure:: _static/webmap_client_rus_3.png
    :name: ngweb_webmap_client
    :align: center
    :width: 20cm
    
    Внешний вид веб-клиента
 
-   Цифрами обозначено: 1 – карта; 2 - кнопки управления масштабом карты; 3 - дерево слоев; 4 - выпадающее меню выделенного слоя; 5 - строка поиска; 6 - панель аннотаций; 7- панель закладок; 8- "Поделиться"; 9 - "Распечатать карту"; 10 - панель трекеров; 11 – выпадающий список выбора подложек; 12 – инструменты карты; 13 – строка статуса и копирайт.
+   Цифрами обозначено: 1 - карта; 2 - панели карты; 3 - дерево слоёв с кнопками вызова меню; 4 - выпадающий список выбора подложек; 5 - кнопки управления масштабом карты; 6 - инструменты карты; 7 - инструменты работы с кадастром; 8 - строка статуса и копирайт
 
-Веб-клиент включает в себя три основных компонента: карту (см. :numref:`ngweb_webmap_client`, п. 1, 11, 13), панели (см. :numref:`ngweb_webmap_client`, п. 3-10), инструменты карты (см. :numref:`ngweb_webmap_client`, п. 2, 12). 
+
+Веб-клиент включает в себя три основных компонента: карту, панели, инструменты карты. 
 
 .. _ngw_webmaps_client_scale:
 
@@ -42,14 +43,24 @@
 
 В левой части рабочей области располагаются функциональные панели:
 
-* Дерево слоев
-* `Поиск <https://docs.nextgis.ru/docs_ngcom/source/address_search.html>`_
-* `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#id4>`_
-* `Аннотации <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_
-* `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html?highlight=слой%20закладок#id4>`_
-* Поделиться
-* Печать
-* `Трекеры <https://docs.nextgis.ru/docs_ngcom/source/tracking.html>`_
+* |panel_layers| Дерево слоев
+* |panel_search| `Поиск <https://docs.nextgis.ru/docs_ngcom/source/address_search.html>`_
+* |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_
+* |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#id4>`_
+* |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html?highlight=слой%20закладок#id4>`_
+* |panel_share| Поделиться
+* |panel_print| Печать
+* |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngcom/source/tracking.html>`_
+
+.. |panel_layers| image:: _static/panel_layers.png
+.. |panel_search| image:: _static/panel_search.png
+.. |panel_annot| image:: _static/panel_annot.png
+.. |panel_info| image:: _static/panel_info.png
+.. |panel_bookmarks| image:: _static/panel_bookmarks.png
+.. |panel_share| image:: _static/panel_share.png
+.. |panel_print| image:: _static/panel_print.png
+.. |panel_trackers| image:: _static/panel_trackers.png
+
 
 В **дереве слоев** находится список всех стилей слоев, добавленных на веб-карту. Панель позволяет:
 
@@ -131,7 +142,13 @@
 * Измерение расстояния
 * Измерение площади
 * Вертикальная шторка
+* Показ координат/охвата
 
+.. figure:: _static/ngw_map_instruments.png
+   :name: ngweb_webmap_swype_tool
+   :align: center
+
+   Инструменты карты
 
 Вертикальная шторка
 ~~~~~~~~~
