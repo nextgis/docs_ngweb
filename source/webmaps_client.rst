@@ -32,14 +32,23 @@ Panels
 
 On the left side of the workspace are the functional panels:
 
-* Layers 
-* `Search <https://docs.nextgis.com/docs_ngcom/source/address_search.html>`_
-* `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
-* `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
-* `Bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_
-* Share
-* Print
-* `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
+* |panel_layers| Layers 
+* |panel_search| `Search <https://docs.nextgis.com/docs_ngcom/source/address_search.html>`_
+* |panel_annot| `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
+* |panel_info| `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
+* |panel_bookmarks| `Bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_
+* |panel_share| Share
+* |panel_print| Print
+* |panel_trackers| `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
+
+.. |panel_layers| image:: _static/panel_layers.png
+.. |panel_search| image:: _static/panel_search.png
+.. |panel_annot| image:: _static/panel_annot.png
+.. |panel_info| image:: _static/panel_info.png
+.. |panel_bookmarks| image:: _static/panel_bookmarks.png
+.. |panel_share| image:: _static/panel_share.png
+.. |panel_print| image:: _static/panel_print.png
+.. |panel_trackers| image:: _static/panel_trackers.png
 
 The **layer tree** contains a list of all layer styles added to the web map. The panel allows:
 
@@ -74,6 +83,7 @@ After a click on a search result map changes extent to show selected feature.
     79.068493 43.079920
     79.068 W 43.08 N
 
+When the feature table is opened on the Web Map, you can filter features by area (`read more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-feature-table-filter-area>`_).
 
 To share a link to a map use the function **"Share"** (see item 9 in :numref:`webmap_client`), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`). 
 
