@@ -588,16 +588,36 @@ Web Map Settings
 
 Using the control panel administrator can set a number of general settings for all Web Maps in NextGIS Web:
 
-* Identification popup
-* Measurement parameters
-* Address search parameters
+* Visibility of the navigation menu for guests;
+* Identification popup parameters;
+* Measurement units;
+* Address search parameters;
+* Legend visibility.
 
-.. figure:: _static/admin_webmap_panel_settings_eng_2.png
-   :name: admin_webmap_panel_settings_eng
+.. figure:: _static/admin_webmap_panel_settings_eng_3.png
+   :name: admin_webmap_panel_settings_pic
    :align: center
    :width: 15cm
 
    Web Map Settings Page
+
+
+.. _ngw_contr_panel_webmap_no_menu:
+
+Navigation menu vizibility
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can hide the navigation menu for guests. While veiwing your Web Maps, guests will not have access to the main dropdown menu in the top right corner that has link to the main resource group.
+
+In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_webmap_panel_settings_pic`) and enable the option *Hide navigation menu for guest*.
+
+.. figure:: _static/admin_webmap_no_menu_en.png
+   :name: admin_webmap_no_menu_pic
+   :align: center
+   :width: 17cm
+
+   Веб-карта без кнопки главного меню навигации
+
 
 
 .. _ngw_contr_panel_webmap_ident:
