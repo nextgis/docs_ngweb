@@ -7,18 +7,27 @@ A viewer for Web Maps
 
 A special web application for viewing Web Maps is included with NextGIS Web (see :numref:`webmap_client`).
  
-.. figure:: _static/webmap_client_eng_2.png
+.. figure:: _static/webmap_client_eng_3.png
    :name: webmap_client
    :align: center
    :width: 20cm
    
    The interface of viewer client application
 
-   Numbers indicate: 1 – map; 2 – map zoom tools; 3 - layer tree; 4 – dropdown menu for selected layer; 5 - search bar; 6 annotations; 7 - Web Map description; 8 - bookmarks; 9 - "Share"; 10 - "Print map"; 11 - list of trackers; 12 - dropdown list of basemaps; 13 – map tools; 14 - status bar and copyright.
+   Numbers indicate: 1 – map; 2 – map panels; 3 - layer tree with layer menu buttons; 4 – dropdown list of basemaps; 5 - zoom tools; 6 - map tools;  7 - status bar and copyright.
+
+Web client includes three main components: a map, `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#panels>`_, `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#map-tools>`_. 
 
 
-Web client includes three main components: a map (see item 1, 12, 14 in :numref:`webmap_client`), panels (see item 3-11 in :numref:`webmap_client`, map tools (see item 2, 13 in :numref:`webmap_client`. 
+.. _ngw_webmaps_client_scale:
 
+Zoom and rotation
+--------------------
+
+The status bar (see :numref:`ngweb_webmap_client`) displays the current scale of the map. If you use the identify tool to click on the map, a pop-up window will show the coordinates of the point you clicked on and list map features if present in this point of the map.
+
+You can change the scale of the map using zoom tools (see :numref:`ngweb_webmap_client`, item 2). To reset the map to its initial extent, press the house icon.
+ 
 There are some options to work with map: 
 
 * if you click on ``alt + shift`` simultaneously and execute round cursor movements around a monitor, a map will turn for a certain degrees to the right or to the left,
