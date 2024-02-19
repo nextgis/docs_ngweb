@@ -12,7 +12,7 @@ Administrative tasks
 Language change
 ---------------
 
-Any user can switch the interface language.
+Any authorized user can switch the interface language.
 To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`).
 
 .. figure:: _static/admin_settings_lang_en.png
