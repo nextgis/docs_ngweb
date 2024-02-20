@@ -616,7 +616,7 @@ In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_
    :align: center
    :width: 17cm
 
-   Веб-карта без кнопки главного меню навигации
+   Web Map without the navigation menu icon
 
 
 
