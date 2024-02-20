@@ -96,31 +96,55 @@ When the feature table is opened on the Web Map, you can filter features by area
 
 To share a link to a map use the function **"Share"** (see item 9 in :numref:`webmap_client`), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`). 
 
-**Status bar** (see item 14 in :numref:`webmap_client`) displays current map scale. After a click on a map a window with click coordinates and features in this point (if there are any of them) appears.
+.. _ngw_webmaps_client_layer_menu:
 
-Using **"Description"** option you can get a description of selected layer, which was written during creation or editing of the layer. **"Zoom to layer"** option allows you to zoom a map to display selected layer on the whole visible map area.
+Layer menu
+------------
 
-After a click on **"Feature table"** option you will see feature table of the selected layer under a map. Select a row in feature table and navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. "Go to" button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window is filtered leaving only records that match a search text.
+To change the transparency of the layer use the slider in the dropdown menu of the layer.
 
-.. figure:: _static/ngweb_webmap_attribute_table_eng_2.png
+Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_).
+
+Using **"Description"** option you can view the description of the selected layer, added during creation or editing of the layer. 
+
+**"Zoom to layer"** option allows you to zoom a map so that the selected layer takes up all the visible map area.
+
+After a click on **"Feature table"** option you will see feature table of the selected layer under the map. 
+
+.. figure:: _static/ngweb_webmap_layer_menu_en.png
+   :name: ngweb_webmap_layer_menu_pic
+   :align: center
+   :width: 19cm
+   
+   Layer menu on the Web Map
+
+Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. **"Go to"** button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-feature-table-filter-area>`_).
+ 
+
+.. figure:: _static/ngweb_webmap_attribute_table_eng_3.png
    :name: ngweb_webmap_attribute_table
    :align: center
    :width: 20cm
    
-   Feature table of the selected layer on a web map
+   Feature table of the selected layer on a Web Map
    
-To change a basemap use a dropdown list (see :numref:`webmap_client`). By default there are the following basemaps:
+.. _ngw_webmaps_client_basemap:
+
+Basemap
+----------
+
+To change a basemap use the dropdown list (see :numref:`webmap_client`). By default there are the following basemaps:
 
 * None
 * OpenStreetMap
 
-Basemap - is a map image that is shared by thrid-party services in the Internet. User can not influence their content. 
-User has an option to disable a basemap so a white background will be shown instead. If a user is supposed to have a poor Internet access or if web gis is deployed in local network without an access to the Internet, it is possible to work without basemap adding base data as WebGIS layers. 
+Basemap is a map image that is shared by thrid-party services in the Internet. Users can not influence their content. 
+You can disable the basemap so that a white background is shown instead. If the Internet access is expected to be poor or if the Web GIS is deployed in local network without access to the Internet, it is possible to work without a basemap adding base data as WebGIS layers.
+
+You can add other basemaps, see the instructions in `Adding resources <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-basemap>`_.
 
 .. note:: 
-   If it is supposed to work without an Internet access 
-   edit a file with `basemap settings <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ and  
-   delete records about Google basemaps.
+   If the Web Map is supposed to work without Internet access, edit the file with `basemap settings <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ and delete records about Google basemaps.
 
 
 .. _ngw_webmaps_client_tools:
@@ -128,54 +152,72 @@ User has an option to disable a basemap so a white background will be shown inst
 Map tools
 ----------------------
 
-Using map zoom tools (see :numref:`webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
-
-There are some tools to work with map (see :numref:`webmap_client`) named from left to the right:
+Tools to work with the Web Map (see :numref:`webmap_client` item 6) named from left to the right:
 
 * Zoom in
 * Zoom out
 * Measure distance
 * Measure area
 * Vertical swipe
+* Show cursor coordinates/extent
 
+.. figure:: _static/ngw_map_instruments.png
+   :name: ngw_map_instruments
+   :align: center
 
-**Vertical swipe**
+   Map tools
 
-.. figure:: _static/swipe_tool_en.png
-   :name: ngweb_webmap_swipe_tool_en
-   :scale: 100 %
+.. _ngw_webmaps_client_tools_swipe:
+
+Vertical swipe
+~~~~~~~~~~~~~~~~~~
+
+Vertical swipe |button_swipe| makes the selected layer transparent to the right of it (see :numref:`ngweb_webmap_full_swipe_en`).
+
+.. |button_swipe| image:: _static/button_swipe.png
+
+To select a layer click on it in the layer tree (it will be highlighted in blue) (see :numref:`ngweb_webmap_choose_layer`).
+   
+.. figure:: _static/choose_layer_swipe_en.png
+   :name: ngweb_webmap_choose_layer
+   :width: 20cm
    :align: center
    
-   Tool icon “Vertical swipe”
+   Selecting layer to use the vertical swipe on
 
-Vertical swipe (see :numref:`ngweb_webmap_swipe_tool_en`) makes transparent the area of the selected layer on the map which is the right of it. (see :numref:`ngweb_webmap_full_swipe_en`).
+This makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map (see :numref:`ngweb_webmap_swiped`). For example, the tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
 
-.. figure:: _static/full_swipe_en.png
-   :name: ngweb_webmap_full_swipe_en
-   :scale: 70 %
-   :align: center
-   
-   Satellite image before applying the vertical swipe
-
-This makes it possible to “look” under the selected layer and compare it with the substrate or another layer on the map (see :numref:`ngweb_webmap_swiped_en`). This makes it possible to “look” under the selected layer and compare it with the substrate or another layer on the map. For example, the tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling).
-
-.. figure:: _static/swiped_en.png
-   :name: ngweb_webmap_swiped_en
-   :scale: 70 %
+.. figure:: _static/swiped_satellite_en.png
+   :name: ngweb_webmap_swyped
+   :width: 20cm
    :align: center
    
    Satellite image after applying the vertical swipe
 
+.. _ngw_webmaps_client_tools_coord_extent:
  
-.. note:: 
-   The selected layer is the layer that is selected by clicking on it in the layer tree (highlighted in gray) (see :numref:`ngweb_webmap_choose_layer_en`).
-   
-.. figure:: _static/choose_layer_en.png
-   :name: ngweb_webmap_choose_layer_en
-   :scale: 100 %
+Show extent or cursor coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A field can be added to the Web Map interface to show the coordinates of the current cursor position or the extent of the visible map area. To activate it, press the |button_extent_coord| button in the map tools panel.
+
+.. |button_extent_coord| image:: _static/button_extent_coord.png
+
+The icon on the right indicates what is displayed. Click on it to switch between modes. 
+
+.. figure:: _static/web_client_coordinates.png
+   :name: web_client_coordinates_pic
+   :width: 20cm
    :align: center
-   
-   Layer selection for using vertical swipe
+
+   Cursor coordinates mode
+
+.. figure:: _static/web_client_extent.png
+   :name: web_client_extent_pic
+   :width: 20cm
+   :align: center
+
+   Extent mode
 
 
 .. _ngw_webmaps_client_feature_link:
