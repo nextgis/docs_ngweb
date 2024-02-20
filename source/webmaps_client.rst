@@ -10,7 +10,7 @@ A special web application for viewing Web Maps is included with NextGIS Web (see
 .. figure:: _static/webmap_client_eng_3.png
    :name: webmap_client
    :align: center
-   :width: 20cm
+   :width: 19cm
    
    The interface of viewer client application
 
@@ -24,9 +24,9 @@ Web client includes three main components: a map, `panels <https://docs.nextgis.
 Zoom and rotation
 --------------------
 
-The status bar (see :numref:`ngweb_webmap_client`) displays the current scale of the map. If you use the identify tool to click on the map, a pop-up window will show the coordinates of the point you clicked on and list map features if present in this point of the map.
+The status bar (see :numref:`webmap_client`) displays the current scale of the map. If you use the identify tool to click on the map, a pop-up window will show the coordinates of the point you clicked on and list map features if present in this point of the map.
 
-You can change the scale of the map using zoom tools (see :numref:`ngweb_webmap_client`, item 2). To reset the map to its initial extent, press the house icon.
+You can change the scale of the map using zoom tools (see item 5 in :numref:`webmap_client`). To reset the map to its initial extent, press the house icon.
  
 There are some options to work with map: 
 
@@ -109,7 +109,7 @@ After a click on **"Feature table"** option you will see feature table of the se
    
    Feature table of the selected layer on a web map
    
-To change a basemap use a dropdown list (see item 12 in :numref:`webmap_client`). By default there are the following basemaps:
+To change a basemap use a dropdown list (see :numref:`webmap_client`). By default there are the following basemaps:
 
 * None
 * OpenStreetMap
@@ -128,9 +128,9 @@ User has an option to disable a basemap so a white background will be shown inst
 Map tools
 ----------------------
 
-Using map zoom tools (see item 2 in :numref:`webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
+Using map zoom tools (see :numref:`webmap_client`) you can change a map zoom or return it to a default zoom using "Initial extent" button with house icon. 
 
-There are some tools to work with map (see item 13 in :numref:`webmap_client`) named from left to the right:
+There are some tools to work with map (see :numref:`webmap_client`) named from left to the right:
 
 * Zoom in
 * Zoom out
