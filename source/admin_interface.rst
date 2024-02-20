@@ -229,10 +229,10 @@ Feature table allows to perform the following operations with a selected feature
 
    Actions for the selected feature in the feature table
 
-There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where resource types are marked and find a resource with a type Web Map. Open it by clicking on the "Display" icon (see :numref:`webmap_open_eng_pic`):
+There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where resource types are marked and find a resource with a type Web Map. Open it by clicking on the "Display" icon (see :numref:`webmap_open_from_group_pic`):
 
 .. figure:: _static/webmap_open_from_group_en.png
-   :name: webmap_open_eng_pic
+   :name: webmap_open_from_group_pic
    :align: center
    :width: 20cm
 
