@@ -1184,16 +1184,16 @@ In the opened dialog enter a display name.
 
 You can also add resource description and metadata on the corresponding tabs.
 
-Switch from "Resource" tab to "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`.
+Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`. Add data in the “key-value” format. 
 
-.. figure:: _static/ngweb_creating_a_new_directory_eng_2.png
+.. figure:: _static/ngweb_creating_a_new_lookuptable_en.png
    :name: ngweb_creating_a_new_directory_group
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Lookup table tab of Create resource dialog
    
-In the opened window there are options "Add" and "Delete". Click **Add**, choose “Text” in the dropdown list and then add data in the “key-value” format. Then click **Save**. The window will then look as on :numref:`ngweb_new_resource_group`
+Then click **Save**. The window will then look as on :numref:`ngweb_new_resource_group`
 
 .. figure:: _static/ngweb_new_resource_eng_2.png
    :name: ngweb_new_resource_group
@@ -1208,6 +1208,7 @@ To change anything in a lookup table click **Update** in the "Action" pane. The 
 * change a current key-value pair
 * delete a key-value pair
 
+You can also connect a lookup table to a field of a vector layer. This way while editing the layer you can choose attribute values from the list. To add a lookup table to the layer, open the Edit dialog for the layer and go to the Attributes tab. In the row of the attribute click on the downward arrow in the Lookup table column to select the table.
 
 .. _ngw_create_svg_marker_lib:
 
