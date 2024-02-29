@@ -59,6 +59,55 @@ The search is carried out in the entire existing database, regardless of which d
 
    Finding Resources in Web GIS
 
+.. _ngw_audit:
+
+Registering user activity
+----------
+
+User requests to the Web GIS are logged in a journal. It can be found in the **Info** section of the Control panel of the Web GIS (:numref:`control_panel_audit_pic`).
+
+.. figure:: _static/control_panel_audit_en.png
+   :name: control_panel_audit_pic
+   :align: center
+   :width: 9cm
+   
+   Request journal in the Web GIS Control panel
+
+The log is presented in a form of a table that has a set of filters above it (:numref:`user_activity_log_pic`). Every user action is registered in the journal. The entry contains the following details:
+
+* Timestamp
+* Request (includes `response status codes <https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>`_ and `request method <https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods>`_ )
+* IP address
+* User
+* Route name
+* Context (type and ID of the resource)
+
+  
+.. figure:: _static/user_activity_log_en.png
+   :name: user_activity_log_pic
+   :align: center
+   :width: 24cm
+   
+   Activity journal
+
+You can filter the journal entries by time period and user performing the action (:numref:`audit_filter_pic`). The table, filtered or otherwise, can be exported as a CSV file.
+
+.. figure:: _static/audit_filter_en.png
+   :name: audit_filter_pic
+   :align: center
+   :width: 20cm
+   
+   Filtering by timestamp and user
+
+To view the complete text of the request click on the corresponding entry (:numref:`audit_log_entry_pic`).
+
+.. figure:: _static/audit_log_entry_en.png
+   :name: audit_log_entry_pic
+   :align: center
+   :width: 20cm
+   
+   Log entry
+
 
 .. _ngw_create_group:
 
