@@ -1168,8 +1168,8 @@ To create a lookup table navigate to the group, where you want to create it (roo
    :width: 20cm
 
    Selection of "Lookup table" action
-   
-Create resource dialog for resource group is presented on :numref:`ngweb_admin_layers_create_lookup`.
+
+In the opened dialog enter a display name. "Keyname" field is optional.
 
 .. figure:: _static/ngweb_admin_layers_create_lookup_eng_3.png
    :name: ngweb_admin_layers_create_lookup
@@ -1178,13 +1178,10 @@ Create resource dialog for resource group is presented on :numref:`ngweb_admin_l
 
    Create resource dialog for lookup table
 
-In the opened dialog enter a display name.
-
-"Keyname" field is optional.
 
 You can also add resource description and metadata on the corresponding tabs.
 
-Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`. Add data in the “key-value” format. 
+Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`. Add data in the “key-value” format. You can also import a pre-made lookup table from a CSV file.
 
 .. figure:: _static/ngweb_creating_a_new_lookuptable_en.png
    :name: ngweb_creating_a_new_directory_group
@@ -1207,6 +1204,8 @@ To change anything in a lookup table click **Update** in the "Action" pane. The 
 * add a new key-value pair
 * change a current key-value pair
 * delete a key-value pair
+
+A lookup table can be exported to a CSV file.
 
 You can also connect a lookup table to a field of a vector layer. This way while editing the layer you can choose attribute values from the list. To add a lookup table to the layer, open the Edit dialog for the layer and go to the Attributes tab. In the row of the attribute click on the downward arrow in the Lookup table column to select the table.
 
