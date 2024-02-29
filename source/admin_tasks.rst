@@ -61,7 +61,7 @@ The search is carried out in the entire existing database, regardless of which d
 
 .. _ngw_audit:
 
-Registering user activity
+User activity log
 ----------
 
 User requests to the Web GIS are logged in a journal. It can be found in the **Info** section of the Control panel of the Web GIS (:numref:`control_panel_audit_pic`).
