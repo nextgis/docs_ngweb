@@ -290,50 +290,104 @@ GeoJSON` or published as WFS service. Download of descriptions is currently unav
 
 .. _ngw_add_photos:
 
-Adding photos to geodata
+Adding attachments to geodata
 ----------------------------------
 
-NextGIS Web software supports adding photos to features. 
-If a feature has attached photos, they will be shown along with description and attributes in the identify window (see  :numref:`webmap_identification_photos`).
+NextGIS Web software supports adding photos, panoramas and other files to the features. 
+If a feature has attachments, they will be shown along with description and attributes in the identify window 
+(see  :numref:`webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos_eng_2.png
-   :name: webmap_identification_photos
+   :name: ngweb_webmap_identification_photos
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Identify window for a feature with attached photos
 
-You can add photos in a map display.
+Files in the following formats can be viewed directly in the web client:
 
-1. Click on a feature on the map with active Identify tool.
-2. Click edit button in the Identify window (see :numref:`ngweb_editing_when_viewing_map`).
-3. In the edit tab navigate to "Attachments" tab (see :numref:`ngweb_tab_attachment`).
-4. Upload photos. JPEG and PNG formats are supported. GIF format is not supported (see. :numref:`admin_object_edit_photos1`).
+* JPEG, PNG images. GIF format not supported.
+* Panoramas complying with the `specification<https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+
+Other types of files can be added as attachments, but won't be viewed in the interface.
+
+You can add attachments from the Web Map or from the features table in the Administrator interface. To add attachments from the Web Map:
+
+1. Click on the feature with the identify tool.
+2. Press Edit button (see :numref:`ngweb_editing_when_viewing_map`).
+3. In the edit tab navigate to the **Attachments** tab (see :numref:`ngweb_tab_attachment`).
+4. Upload files. (see :numref:`admin_object_edit_photos1`).
 
 .. figure:: _static/admin_object_edit_photos1_eng_2.png
-   :name: admin_object_edit_photos1
+   :name: ngweb_admin_object_edit_photos1
    :align: center
    :width: 16cm
 
    Uploading photos in the "Attachments" tab
 
-5. Enter description for the image and click **Save**.
+Enter description and click **Save**.
 
-After uploading you can see previews of photos on the "Attachments" tab of the identify window (see  :numref:`webmap_identification_photos`).
+After uploading you can see previews of photos and panoramas on the "Attachments" tab  
+of the identify window (see  :numref:`webmap_identification_photos`).
 
-After a click on a photo preview a lightbox window is open (a javascript powered window in browser). Photo size is adjusted to fit the window. Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see  :numref:`webmap_identification_photo_lightbox`).
+After a click on a photo preview a lightbox window is open (a  
+javascript powered window in browser). Hoto size is adjusted to fit the window.  Photos have descriptions  
+and user can navigate through them using left and right arrow keys  
+on the keyboard (see  :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox_eng_2.png
-   :name: webmap_identification_photo_lightbox
+   :name: ngweb_webmap_identification_photo_lightbox
+   :align: center
+   :width: 18cm
+
+   A lightbox with uploaded photo for the identified feature 
+
+To navigate within the panorama, use the mouse. Hold down the left mouse button to rotate the camera. Use the wheel to zoom in and out. Panorama mode can be disabled by clicking on the blue round button in the upper right corner.
+
+.. figure:: _static/panorama_opened_en.png
+   :name: panorama_opened_pic
+   :align: center
+   :width: 18cm
+
+   Panorama opened from Web Map
+
+.. note:: 
+   By default attachments could be added by any user but there is an option  
+   to limit number of users who can upload photos (see  
+   `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
+   
+To delete an attachment select it on the "Attachments" tab of the edit window, click **Delete**, and then click **Save** button.
+
+Export and import attachments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To copy feature attachments between different layers or to create a backup you can save them to your device as an archive (Standard layer saving does not include attachments). 
+
+Navigate to the layer resource page and select **Manage attachments**.
+
+.. figure:: _static/manage_att_select_en.png
+   :name: manage_att_select_pic
    :align: center
    :width: 16cm
 
-   A lightbox with uploaded photos for the identified feature
+   Managing attachments
 
-.. note:: 
-   By default photos could be added by any user but there is an option 
-   to limit number of users who can upload photos (see  
-   :ref:`ngw_access_rights`).
+To save the attachments, go to the **Export** tab and press **Export attachments to ZIP archive**. The resulting ZIP archive will contain all of the attachments put in directories named after feature IDs. Attachment metadata are put into a separate JSON file.
 
-To delete a photo select it on "Attachments" tab of editting attributes window and click "Delete", and then click **Save** button.
+.. figure:: _static/manage_att_export_en.png
+   :name: manage_att_export_pic
+   :align: center
+   :width: 16cm
+
+   Exporting attachments as ZIP archive
+
+The resulting archive can be imported to add the attachments to the layer features. Open the **Import** tab, click **Import attachments from ZIP archive** and select the archive on your device. An archive must contain directories named after feature IDs. Each folder can contain one or many attachments. Duplicates will be ignored. If you need to replace the current attachments, tick "Delete existing attachments".
+
+
+.. figure:: _static/manage_att_import_en.png
+   :name: manage_att_import_pic
+   :align: center
+   :width: 16cm
+
+   Importing attachments from ZIP archive
 
