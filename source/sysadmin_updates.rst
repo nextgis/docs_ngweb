@@ -7,6 +7,10 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.6.2 released on 02 Mar 2023**
+
+* Expanded list of allowed CORS headers.
+
 **4.6.1 released on 27 Dec 2023 and 29 Dec 2023**
 
 * Fix styles for WFS layers.
