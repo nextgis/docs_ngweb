@@ -7,6 +7,22 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.7.0 released on 04 Apr 2024**
+
+* Turn legend categories on/off for a better experience on webmaps.
+* Lots of customization options for embedded webmaps: map tools and panels.
+* Ability to exclude feature layer fields from text search.
+* Configurable permissions for groups, users, SRS and CORS management.
+* Enhanced feature attachment viewer now includes panoramic images support.
+* Ctrl+click opens feature attachment in a fixed tab.
+* Ability to copy printing parameters as a URL for sharing.
+* Support for custom SVG logos in addition to PNG.
+* Add export to CSV and import from CSV for lookup tables.
+* Support for multiple replicas and long-runnning requests.
+* Update minimum required NodeJS version to 20.0.
+* Fix permission dependencies on QGIS style parent resources.
+* Copying QGIS styles from one to another.
+
 **4.6.2 released on 02 Mar 2023**
 
 * Expanded list of allowed CORS headers.
