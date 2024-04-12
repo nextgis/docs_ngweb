@@ -581,7 +581,6 @@ NextGIS Web строится на ресурсном подходе - кажды
 .. code-block:: shell
 
   env/bin/nextgisweb --config config.ini change_password user password
-  env/bin/nextgisweb --config config.ini change_password user password
 
 .. note:: 
    Пароль ограничен по длине в диапазоне 5-25 символов
