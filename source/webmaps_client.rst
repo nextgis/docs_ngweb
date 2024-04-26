@@ -16,7 +16,7 @@ A special web application for viewing Web Maps is included with NextGIS Web (see
 
    Numbers indicate: 1 – map; 2 – map panels; 3 - layer tree with layer menu buttons; 4 – dropdown list of basemaps; 5 - zoom tools; 6 - map tools;  7 - status bar and copyright.
 
-Web client includes three main components: a map, `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#panels>`_, `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#map-tools>`_. 
+Web client includes three main components: a map, `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_, `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_. 
 
 
 .. _ngw_webmaps_client_scale:
@@ -61,7 +61,7 @@ On the left side of the workspace are the functional panels:
 
 The **layer tree** contains a list of all layer styles added to the web map. The panel allows:
 
-* Disable/Enable style visibility
+* Disable/Enable layer visibility. You can also hide parts of a layer by selecting items in the Web Map lengend. It's helpful for big projects where one layer may contain a variety of features grouped by value of an attribute.
 * Open layer attribute table
 * Zoom map to layer
 * Open layer description
@@ -94,7 +94,7 @@ After a click on a search result map changes extent to show selected feature.
 
 When the feature table is opened on the Web Map, you can filter features by area (`read more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-feature-table-filter-area>`_).
 
-To share a link to a map use the function **"Share"** (see item 9 in :numref:`webmap_client`), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`). 
+To share a link to a map or generate embed code use the function **"Share"** (see item 9 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/webmap_print.html>`_). 
 
 .. _ngw_webmaps_client_layer_menu:
 
