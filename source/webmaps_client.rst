@@ -172,7 +172,7 @@ Tools to work with the Web Map (see :numref:`webmap_client` item 6) named from l
 Vertical swipe
 ~~~~~~~~~~~~~~~~~~
 
-Vertical swipe |button_swipe| makes the selected layer transparent to the right of it (see :numref:`ngweb_webmap_full_swipe_en`).
+Vertical swipe |button_swipe| makes the selected layer transparent to the right of it.
 
 .. |button_swipe| image:: _static/button_swipe.png
 
@@ -185,7 +185,7 @@ To select a layer click on it in the layer tree (it will be highlighted in blue)
    
    Selecting layer to use the vertical swipe on
 
-This makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map (see :numref:`ngweb_webmap_swiped`). For example, the tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
+This makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map. The tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
 
 .. figure:: _static/swiped_satellite_en.png
    :name: ngweb_webmap_swyped
