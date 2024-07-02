@@ -10,7 +10,7 @@
 .. figure:: _static/Control_panel_SRS_ru.png
    :name: Control_panel_SRS_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
    
    Раздел "Системы координат" в Панели управления
 
@@ -34,7 +34,7 @@
 Для того, чтобы добавить СК из каталога, нужно перейти в «Панель управления» и в разделе «Системы координат» нажать **«Каталог»** или на странице списка СК нажать «Импортировать из каталога». 
 На странице каталога в строку поиска начните вводить название нужной системы координат. В появившемся списке результатов поиска нажмите на иконку со стрелкой.
 
-.. figure:: _static/new_srs_catalog_ru.png
+.. figure:: _static/new_srs_catalog_ru_2.png
    :name: new_srs_catalog
    :align: center
    :width: 20cm    
@@ -43,14 +43,14 @@
    
 Откроется окно импорта, где можно задать название, под которым система координат будет отображаться в списке в вашей Веб ГИС.
 
-.. figure:: _static/new_srs_import_ru.png
+.. figure:: _static/new_srs_import_ru_2.png
    :name: new_srs_import
    :align: center
    :width: 20cm    
 
    Импорт системы координат из каталога
    
-.. figure:: _static/new_srs_import_save_ru.png
+.. figure:: _static/new_srs_import_save_ru_2.png
    :name: new_srs_import_save
    :align: center
    :width: 20cm    
@@ -81,14 +81,14 @@
 
 Отображаемое *наименование системы координат* можно изменить, нажав на иконку редактирования в соответствующей строке списка. Для созданных пользователем СК также доступно редактирование *OGC WKT определения*.
 
-.. figure:: _static/list_srs_edit_ru.png
+.. figure:: _static/list_srs_edit_ru_2.png
    :name: list_srs_edit_pic
    :align: center
    :width: 20cm 
    
    Иконка редактирования в списке СК
 
-.. figure:: _static/srs_edit_ru.png
+.. figure:: _static/srs_edit_ru_2.png
    :name: srs_edit_pic
    :align: center
    :width: 20cm 
@@ -97,7 +97,7 @@
 
 Для того, чтобы *удалить* систему координат, нажмите на иконку мусорного ведра в соответствующей строке списка. Рядом появится небольшое диалоговое окно, где для подтверждения удаления нужно нажать **«ОК»**.
 
-.. figure:: _static/delete_srs_ru.png
+.. figure:: _static/delete_srs_ru_2.png
    :name: delete_srs_pic
    :align: center
    :width: 20cm 
@@ -115,7 +115,7 @@
 
 1. В окне идентификации веб карты для определения координат места клика. Раньше можно было смотреть координаты только в EPSG:4326 и EPSG:3857. Теперь в окне индентификации можно быстро получить координаты и в заданных пользователем СК:
 
-.. figure:: _static/use_of_custom_srs1_ru.png
+.. figure:: _static/use_of_custom_srs1_ru_2.png
    :name: use_of_custom_srs1_pic
    :align: center
    :width: 20cm    
