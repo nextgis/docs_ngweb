@@ -45,6 +45,8 @@
 2. Убедиться в наличии настроек NGIDOP (Параметры конфигурации предоставляются по запросу): разделы `Приложения OAuth <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#oauth>`_ и `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#nextgis-id-on-premise>`_ - настройки collector_hub в соответствии с адресом, где он был развернут - **без этого сбор данных будет невозможен**. 
 3. Завести пользователей для сборщиков данных в Разделе `Команда <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#ngidop-teams>`_ NGIDOP
 
+Более полное и развернутое описание есть в `документе <https://docs.google.com/document/d/1fAfL-DqwUKeGQkNHWPRE7sU4N4VRMc4z7xWFShTOCq4/edit?usp=sharing>`_.
+
 **Администратор проекта**
 
 4. Перейти в NextGIS Web. Через `Панель управления <https://docs.nextgis.ru/docs_ngcom/source/collector.html#collector-add-members>`_ создать список участников сбора данных с именами пользователей, аналогичными пользователям в Команде на предыдущем шаге. В дальнейшем при настройке всех проектов сбора данных пользователи (сборщики) будут браться из этого списка.
