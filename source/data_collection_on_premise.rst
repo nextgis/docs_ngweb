@@ -41,7 +41,7 @@
 -------
 **Системный администратор**
 
-1. Развернуты NGW и NGIDOP на своем сервере. Есть логин и пароль администратора для обоих компонентов.
+1. Развернуты NGW, NGIDOP, Collector Hub и Tracking Hub на своем сервере.
 2. Убедиться в наличии настроек NGIDOP (Параметры конфигурации предоставляются по запросу): разделы `Приложения OAuth <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#oauth>`_ и `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#nextgis-id-on-premise>`_ - настройки collector_hub в соответствии с адресом, где он был развернут - **без этого сбор данных будет невозможен**. 
 3. Завести пользователей для сборщиков данных в Разделе `Команда <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#ngidop-teams>`_ NGIDOP
 
