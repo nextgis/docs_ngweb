@@ -399,19 +399,20 @@ The table contains three columns:
 2. Type: String, Numer, Boolean, Empty (if you select "Empty", the value field will be cleared)
 3. Value. Value corresponds to the key type
 
-The tab "Attributes" contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
+"Fields" tab contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
 
-.. figure:: _static/admin_layers_attr_eng_2.png
+.. figure:: _static/vector_fields_en.png
    :name: ngweb_admin_layers_attr
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   "Attributes" tab
+   "Fields" tab
 
-* Tick in "FT" column means that the attribute is displayed in the identification window.
-* Tick in "LA" column means that the attribute is used for bookmarks.
+Click on a table row to open the attribute edit form. You can manage the following parameters:
 
-For each field name you can set the display name to use it in the identification window instead of the keyname.
+
+* Name - you can set the display name to use in the identification window instead of the keyname. 
+
 
 .. figure:: _static/webmap_identification_eng_2.png
    :name: ngweb_webmap_identification
@@ -419,6 +420,42 @@ For each field name you can set the display name to use it in the identification
    :width: 20cm
 
    The identification window
+
+.. figure:: _static/key_field_name_en.png
+   :name: key_field_name_pic
+   :align: center
+   :width: 20cm    
+
+   Display name with superscript symbol and keyname of the field
+
+* Key
+* Type
+* Lookup table - allows to add a lookup table to the field and use it to select values of the attribute when you add or edit features. To add a lookup table, click on the field in the form, then in the pop-up window select the resource.
+
+.. figure:: _static/update_add_lookup_en.png
+   :name: update_add_lookup_pic
+   :align: center
+   :width: 20cm
+
+   Adding lookup table to a field
+
+.. |attr_label_symbol| image:: _static/attr_label_symbol.png
+.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
+.. |attr_table_symbol| image:: _static/attr_table_symbol.png
+
+
+* |attr_table_symbol| Feature table - the attribute is displayed in the identification window.
+* |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
+* |attr_label_symbol| Label attribute - the attribute is used for bookmarks.
+
+For these three parameters a dark symbol means "on" and a light symbol means "off".
+
+* Delete
+
+To go back to table view, press the arrow in the top row of the form.
+
+After all edits are made, click **Save**.
+
 
 .. _ngw_attributes_edit:
 
