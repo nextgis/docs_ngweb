@@ -418,12 +418,20 @@ Cформируется таблица объектов, которая позв
 
 * Наименование - можно поставить соответствующий псевдоним для отображения вместо технического ключа поля в окне идентификации.
 
+
 .. figure:: _static/webmap_identification_rus_2.png
    :name: ngweb_webmap_identification
    :align: center
    :width: 20cm
 
    Окно идентификации
+
+.. figure:: _static/key_field_name_ru.png
+   :name: key_field_name_pic
+   :align: center
+   :width: 20cm    
+
+   Наименование поля с верхним индексом и его ключ
 
 * Ключ
 * Тип
