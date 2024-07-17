@@ -7,7 +7,29 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.8.0 released on 17 Jul 2024**
+-----
+
+- Customizable print layout including legend.
+- Exclusive layer groups on webmaps.
+- User-defined favorite resource pages.
+- Measurement SRS configuration per-webmap.
+- Experimental support for feature versioning.
+- Better handling of incomplete geometry parts.
+- Show feature attachment descriptions in the viewer.
+- Extent information in PostGIS layer diagnostics.
+- Transparent annotation polygons for better visibility.
+- Switch to nearest neighbor resampling for raster pyramids.
+- Experimental support for NULL geometries.
+- Support for upper-case placeholders in TMS connections.
+- Metadata permission scope and webmap display permission removed.
+- Sentry client-side JavaScript integrations.
+- Cache seeding and invalidation removed, use NextGIS Geoservices instead.
+- Most of resource widgets migrated to Antd and React.
+
+
 **4.7.0 released on 04 Apr 2024**
+-----
 
 * Turn legend categories on/off for a better experience on webmaps.
 * Lots of customization options for embedded webmaps: map tools and panels.
@@ -24,14 +46,17 @@ This section describes the latest changes to the software.
 * Copying QGIS styles from one to another.
 
 **4.6.2 released on 02 Mar 2023**
+-----
 
 * Expanded list of allowed CORS headers.
 
 **4.6.1 released on 27 Dec 2023 and 29 Dec 2023**
+-----
 
 * Fix styles for WFS layers.
 
 **4.6.0 released on 27 Dec 2023 and 29 Dec 2023**
+-----
 
 * Support for lookup tables for feature layer attributes.
 * Print to TIFF format in addition to PDF, JPEG and PNG.
