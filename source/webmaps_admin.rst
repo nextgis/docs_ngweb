@@ -41,57 +41,7 @@ Enter Web Map display name that will be visible in the administrator interface a
 
 You can also add resource description and metadata on the corresponding tabs.
 
-.. _ngw_map_extent:
-
-Extent
-~~~~~~
-
-Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :numref:`admin_webmap_bbox`.
-
-.. figure:: _static/admin_webmap_bbox_eng_3.png
-   :name: admin_webmap_bbox
-   :align: center
-   :width: 16cm
-
-   “Extent and bookmarks” tab
-
-In this tab you can set up:
-
-* Initial extent - part of the Web Map that is shown upon its opening
-* Constraining extent - users will not be able to zoom out or scroll past this extent
-
-Use the four fields to set the extent measured in degrees.
-
-**Extent from layer** button allows to set Web Map extent from the layer's extent. Click it to open the “Select layer” window, where you can select a layer to use for setting the Web Map extent (see :numref:`ngw_select_resource2`). The four fields for the extent coordinates will be filled in. 
-
-.. figure:: _static/ngw_select_resource2_eng_3.png
-   :name: ngw_select_resource2
-   :align: center
-   :width: 20cm
-
-   “Select layer” window
-
-.. tip::
-   Extent coordinates could be generated using third-party services, for example http://boundingbox.klokantech.com/ (select csv in a list).
-
-Bookmarks
-~~~~~~~~~
-
-In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  The Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” if it is set (see :numref:`bookmark_attribute`).
-
-.. figure:: _static/ngw_bookmarks_en.png
-   :name: ngw_bookmarks
-   :align: center
-   :width: 20cm
-   
-   "Bookmarks" tab and the bookmarks viewed on the map
-
-.. figure:: _static/bookmark_attribute_en.png
-   :name: bookmark_attribute
-   :align: center
-   :width: 20cm
-   
-   Setting attributes for the vector layer containing boundaries
+.. _ngw_map_layers:
 
 Web Map Layers
 ~~~~~~~~~~~~~~
@@ -116,12 +66,12 @@ To view the data of the layer on a map, you need to create at least one layer st
 
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
-.. figure:: _static/admin_webmap_create_layers_eng_2.png
+.. figure:: _static/admin_webmap_create_layers_eng_3.png
    :name: admin_webmap_create_layers
    :align: center
-   :width: 20cm
+   :width: 16cm
    
-   "Layers" tab of the "Create Resource" dialog
+   Layer settings
  
 "Enabled" checkbox sets default visibility of a layer.
 
@@ -150,41 +100,111 @@ The order of the layers on a map can be different from the order in which they a
    
    Different layer arrangement: the layer marking the buildings is above the satellite images, while the layer groups on the left remain unchanged
 
-Settings
-~~~~~~~~~
-
-The "Settings" tab is used to allow layer editing and enable annotations (more on annotations see :ref:`here <ngcom_annotation>`).
-
-.. figure:: _static/admin_webmap_settings_tab_en.png
-   :name: admin_webmap_settings_tab_pic
-   :align: center
-   :width: 20cm
-   
-   "Settings" tab
-
+.. _ngw_map_basemaps:
 
 Basemaps
 ~~~~~~~~~
 
 "Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" (see :numref:`admin_webmap_basemaps`). 
 
-.. figure:: _static/admin_webmap_basemaps_eng_2.png
+.. figure:: _static/admin_webmap_basemaps_eng_3.png
    :name: admin_webmap_basemaps
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    “Basemaps” tab
 
-“Enabled” checkbox sets default visibility of a basemap.
+If “Default basemap” is checked, this basemap will be visible when the Web Map is opened.
 
-"Opacity" field sets basemap transparency on a map in a range between 0 (transparent) and 1 (opaque) with decimals comma separated (ex. 0.2).
+"Opacity" field sets basemap transparency on a map in a range between 0 and 100%.
+
+.. _ngw_map_no_base:
 
 Web Map with no basemap
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
-create a new basemap, put 'blank' in name and URL fields, and add it to your Web Map. Then turn this newly created basemap off.
+create a new basemap and add it to your Web Map. Then turn this newly created basemap off.
 
+.. _ngw_map_settings:
+
+Settings
+~~~~~~~~~
+
+In the "Settings" tab you can modify several parameters:
+
+* legend visibility (more `here <https://docs.nextgis.com/docs_ngcom/source/legend.html>`_);
+* enable annotations (more on annotations see :ref:`here <ngcom_annotation>`);
+* select measurement spacial reference system;
+* allow layer editing;
+* set up initial and constraining extent (see below);
+* select bookmark resource.
+
+.. figure:: _static/admin_webmap_settings_tab_en_2.png
+   :name: admin_webmap_settings_tab_pic
+   :align: center
+   :width: 16cm
+   
+   "Settings" tab
+
+
+.. _ngw_map_extent:
+
+Extent
+~~~~~~
+
+Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :numref:`admin_webmap_bbox`.
+
+.. figure:: _static/webmap_extent_en.png
+   :name: admin_webmap_bbox
+   :align: center
+   :width: 22cm
+
+   Extent settings
+
+In this tab you can set up:
+
+* Initial extent - part of the Web Map that is shown upon its opening
+* Constraining extent - users will not be able to zoom out or scroll past this extent
+
+Use the four fields to set the extent measured in degrees.
+
+**Extent from layer** button allows to set Web Map extent from the layer's extent. Click it to open the “Select layer” window, where you can select a layer to use for setting the Web Map extent (see :numref:`ngw_select_resource2`). The four fields for the extent coordinates will be filled in. 
+
+.. figure:: _static/ngw_select_resource2_eng_3.png
+   :name: ngw_select_resource2
+   :align: center
+   :width: 20cm
+
+   “Select layer” window
+
+.. tip::
+   Extent coordinates could be generated using third-party services, for example http://boundingbox.klokantech.com/ (select csv in a list).
+
+.. _ngw_map_bookmarks:
+
+Bookmarks
+~~~~~~~~~
+
+In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  The Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” if it is set (see :numref:`bookmark_attribute`).
+
+.. figure:: _static/ngw_bookmarks_en.png
+   :name: ngw_bookmarks
+   :align: center
+   :width: 20cm
+   
+   "Bookmarks" tab and the bookmarks viewed on the map
+
+.. figure:: _static/bookmark_attribute_en_2.png
+   :name: bookmark_attribute
+   :align: center
+   :width: 16cm
+   
+   Setting attributes for the vector layer containing boundaries
+
+
+
+.. _ngw_map_socials:
 
 Social
 ~~~~~~~
@@ -197,6 +217,8 @@ The "Social" tab is used to upload an image to be used as preview in social medi
    :width: 20cm
    
    "Social" tab
+
+.. _ngw_map_save:
 
 Final steps
 ~~~~~~~~~~~
