@@ -432,10 +432,10 @@ You can also add resource description and metadata on the corresponding tabs.
 Switch from "Resource" tab to "PostGIS layer" tab, which is presented on 
 :numref:`admin_layers_create_postgis_layer_tablename`. 
 
-.. figure:: _static/admin_layers_create_postgis_layer_tablename_eng_2.png
+.. figure:: _static/create_postgis_layer_settings_en.png
    :name: admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    PostGIS layer tab of create resource dialog
 
@@ -457,7 +457,7 @@ Then perform the following steps:
    :program:`NextGIS QGIS` software, usually a geometry column called 
    wkb_geometry is created. If the data was loaded some other way, the name of the column 
    may be different).
-#. Parameters "Geometry type", "Attribute definitions" and "SRID" are not required, so you can use default 
+#. Parameters "Geometry type", "Fields" and "SRID" are not required, so you can use default 
    values.
 
 After specifying all the necessery parameters, click **Create**.
