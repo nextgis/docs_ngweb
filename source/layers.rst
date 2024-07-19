@@ -449,10 +449,10 @@ NextGIS Web может принимать многослойные наборы 
   
 На вкладке "Слой PostGIS" настраиваются параметры слоя (:numref:`ngweb_admin_layers_create_postgis_layer_tablename`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_tablename_rus_2.png
+.. figure:: _static/create_postgis_layer_settings_ru.png
    :name: ngweb_admin_layers_create_postgis_layer_tablename
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Окно параметров слоя PostGIS
    
