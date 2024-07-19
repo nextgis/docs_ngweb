@@ -50,10 +50,10 @@ The "Description" and "Metadata" of the resource are configured on the correspon
 
 In the “Basemap” tab you must enter the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to do so:
 
-* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  URL field will be filled in automatically and option “Use options from QMS” will be activated.
-* Enter the address manually. Works if the QMS flag is unchecked.
+* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
+* Enter the address manually. 
 
-.. figure:: _static/ngweb_admin_basemap_param_eng_2.png
+.. figure:: _static/create_basemap_settings_en.jpg
    :name: ngweb_admin_basemap_param
    :align: center
    :width: 20cm
