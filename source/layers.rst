@@ -52,10 +52,10 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 На вкладке "Подложка веб-карты" задается URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
 
-* Использовать настройки из `QMS <https://qms.nextgis.com/>`_. Если установлен данный флаг, то необходимо найти нужный сервис в строке поиска.
-* Ввести адрес вручную. Работает, если флаг QMS снят.
+* Найти нужный сервис в строке поиска. Остальные поля будут заполнены автоматически.
+* Ввести адрес вручную. 
 
-.. figure:: _static/ngweb_admin_basemap_param_rus_2.png
+.. figure:: _static/create_basemap_settings_ru.png
    :name: ngweb_admin_basemap_param
    :align: center
    :width: 20cm
