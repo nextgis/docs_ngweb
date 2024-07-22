@@ -576,10 +576,10 @@ In the "Create resource" actions pane click **WMS connection** (see :numref:`adm
    
 Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_name`.
 
-.. figure:: _static/admin_layers_create_wms_connection_name_eng_2.png
+.. figure:: _static/create_wms_connection_name_en.png
    :name: admin_layers_create_wms_connection_name
    :align: center
-   :width: 20cm
+   :width: 15cm
 
    Create resource dialog for WMS connection
 
@@ -587,10 +587,10 @@ Enter the name of the resource that will be displayed in the administrator inter
 
 On the "Description" tab you can add any text describing the content of this connection.
 
-.. figure:: _static/admin_layers_create_wms_connection_description_eng_2.png
+.. figure:: _static/create_wms_connection_description_en.png
    :name: admin_layers_create_wms_connection_description_eng
    :align: center
-   :width: 20cm
+   :width: 15cm
 
    WMS connection description
 
@@ -605,10 +605,10 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 
 Switch to "WMS connection" tab, which is presented on :numref:`admin_layers_create_wms_connection_url`.
 
-.. figure:: _static/admin_layers_create_wms_connection_url_eng_2.png
+.. figure:: _static/create_wms_connection_url_en.png
    :name: admin_layers_create_wms_connection_url
    :align: center
-   :width: 20cm
+   :width: 15cm
 
    WMS connection tab of Create resource dialog
 
@@ -620,7 +620,9 @@ Here enter the following WMS server connection parameters:
 * Version of WMS protocol
 * Capabilities (manages GetCapabilities queries to the WMS Server)
 
+URL field needs to be filled, others are used when necessary. 
 Supported versions of WMS protocol: 1.1.1, 1.3.0
+
 After setting up all necessery parameters, click **Create**.
 
 
@@ -631,7 +633,7 @@ Creating WMS Layer
 
 Now you can add individual WMS layers. Navigate to a group where you want to create WMS layers and in the "Create resource" actions pane select **WMS layer** (see :numref:`admin_layers_create_wms_layer`). 
 
-.. figure:: _static/admin_layers_create_wms_layer_eng_2.png
+.. figure:: _static/create_wms_layer_en.png
    :name: admin_layers_create_wms_layer
    :align: center
    :width: 20cm
@@ -640,10 +642,10 @@ Now you can add individual WMS layers. Navigate to a group where you want to cre
 
 Create resource dialog for WMS layer is presented on :numref:`admin_layers_create_wms_layer_name`
 
-.. figure:: _static/admin_layers_create_wms_layer_name_eng_3.png
+.. figure:: _static/create_wms_layer_name_en.png
    :name: admin_layers_create_wms_layer_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Create resource dialog for WMS layer
 
@@ -656,10 +658,10 @@ Tile cache settings are described in detail in `this section <https://docs.nextg
 
 On the "Description" tab you can add any text describing the content of this layer.
 
-.. figure:: _static/admin_layers_create_wms_layer_description_eng_2.png
+.. figure:: _static/create_wms_layer_descr_en.png
    :name: admin_layers_create_wms_layer_description_eng
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    WMS layer description
 
@@ -678,16 +680,23 @@ Switch to the "WMS layer" tab, which is presented on :numref:`admin_layers_creat
 2. Select the appropriate MIME-type from the dropdown list.
 3. Select the required layers from the list by clicking the underlined names. You can select several layers.
 
-.. figure:: _static/admin_layers_create_wms_layer_parameters_eng_2.png
+.. figure:: _static/create_wms_layer_parameters_en.png
    :name: admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   WMS layer tab of Create resource dialog
+   WMS layer parameters tab of Create resource dialog
+
+.. figure:: _static/create_wms_layer_select_res_en.png
+   :name: create_wms_layer_select resource
+   :align: center
+   :width: 18cm
+
+   Selecting WMS connection
 
 In the last tab you can add vendor parameters. These are special query settings for additional functions. They vary depending on the WMS provider.
 
-.. figure:: _static/admin_layers_create_wms_layer_vendorparameters_eng_2.png
+.. figure:: _static/create_wms_layer_vendorparam_en.png
    :name: admin_layers_create_wms_layer_vendorparameters_eng_2
    :align: center
    :width: 20cm
