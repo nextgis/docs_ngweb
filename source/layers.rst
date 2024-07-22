@@ -1023,10 +1023,10 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 Switch to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url` and add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`).
 For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
 
-.. figure:: _static/admin_layers_create_wfs_service_url_eng_2.png
+.. figure:: _static/create_wfs_service_settings_en.png
    :name: ngweb_admin_layers_create_wfs_service_url
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    WFS service tab of Create resource dialog
 
