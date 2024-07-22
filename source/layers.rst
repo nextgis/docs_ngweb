@@ -619,19 +619,19 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 В открывшемся окне укажите наименование WMS соединения (:numref:`admin_layers_create_wms_connection_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и названия слоёв в базе данных). Поле "Ключ" является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_connection_name_rus_3.png
+.. figure:: _static/create_wms_connection_name_ru.png
    :name: admin_layers_create_wms_connection_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование Соединения WMS
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wms_connection_description`)
 
-.. figure:: _static/admin_layers_create_wms_connection_description_rus_2.png
+.. figure:: _static/create_wms_connection_description_ru.png
    :name: ngweb_admin_layers_create_wms_connection_description
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Описание Соединения WMS
    
@@ -646,18 +646,20 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
    Метаданные Соединения WMS
 
 
-На вкладке "Cоединение WMS" необходимо ввести параметры подключения (:numref:`ngweb_admin_layers_create_wms_connection_url`) к **Серверу WMS**, который предоставляет данные:
+На вкладке "Cоединение WMS" вводятся параметры подключения (:numref:`ngweb_admin_layers_create_wms_connection_url`) к **Серверу WMS**, который предоставляет данные:
 
 * URL
-* Имя пользователя
-* Пароль
+* Имя пользователя 
+* Пароль 
 * Версия WMS
 * Возможности (управление запросом ``GetCapabilites`` к WMS-серверу)
 
-.. figure:: _static/admin_layers_create_wms_connection_url_rus_2.png
+Поле URL является обязательным, остальные используются по необходимости.
+
+.. figure:: _static/create_wms_connection_url_ru.png
    :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Окно параметров Cоединения WMS
 
@@ -670,7 +672,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 Далее можно приступать к добавлению отдельных слоёв WMS. Для этого следует перейти в группу, где необходимо создать слой и в блоке операций выбрать **Слой WMS** (см. :numref:`admin_layers_create_wms_layer`). 
 
-.. figure:: _static/admin_layers_create_wms_layer_rus_2.png
+.. figure:: _static/create_wms_layer_ru.png
    :name: admin_layers_create_wms_layer
    :align: center
    :width: 20cm
@@ -680,19 +682,19 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 На вкладке "Ресурс" указывается наименование слоя WMS (:numref:`ngweb_admin_layers_create_wms_layer_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
 
-.. figure:: _static/admin_layers_create_wms_layer_name_rus_3.png
+.. figure:: _static/create_wms_layer_name_ru.png
    :name: ngweb_admin_layers_create_wms_layer_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование слоя WMS
 
 На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое слоя (:numref:`ngweb_admin_layers_create_wms_layer_description`).
 
-.. figure:: _static/admin_layers_create_wms_layer_description_rus_2.png
+.. figure:: _static/create_wms_layer_descr_ru.png
    :name: ngweb_admin_layers_create_wms_layer_description
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Описание слоя WMS
 
@@ -715,19 +717,26 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 * Формат изображения (список MIME-типов данных, предоставляемых сервером)
 * Выбор слоя из списка (можно выбрать несколько)
 
-.. figure:: _static/admin_layers_create_wms_layer_parameters_rus.png
+.. figure:: _static/create_wms_layer_parameters_ru.png
    :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Окно настройки параметров слоя WMS
 
-На последней вкладке добавляются вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`). Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
-
-.. figure:: _static/admin_layers_create_wms_layer_vendorparameters_rus_2.png
-   :name: ngweb_admin_layers_create_wms_layer_vendorparameters
+.. figure:: _static/create_wms_layer_select_res_ru.png
+   :name: create_wms_layer_select resource
    :align: center
    :width: 20cm
+
+   Выбор соединения WMS
+
+Также на этой вкладке можно добавить вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`). Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
+
+.. figure:: _static/create_wms_layer_vendorparam_ru.png
+   :name: ngweb_admin_layers_create_wms_layer_vendorparameters
+   :align: center
+   :width: 16cm
 
    Вендор параметры слоя WMS
 
