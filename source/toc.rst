@@ -15,6 +15,7 @@
    general   
    admin_interface
    layers
+   edit_resource
    mapstyles
    mapservertemplates
    layers_settings 
