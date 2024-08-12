@@ -103,7 +103,7 @@
 Можно задать название для этого фрагмента, или оставить значение по умолчанию ("Фрагмент").
 
 .. figure:: _static/ngw_name_wm_fragment_fav_ru.png
-   :name: ngw_add_wm_fragment_fav_pic
+   :name: ngw_name_wm_fragment_fav_pic
    :align: center
    :width: 16cm
 
