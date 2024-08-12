@@ -176,7 +176,7 @@
 
 Для просмотра ресурса следует перейти "внутрь" него через блок Дочерних ресурсов.
 
-После выбора ресурса (например, вам нужен векторный слой) откроется окно с его параметрами/атрибутами см. :numref:`ngweb_options_resource_group`
+После выбора ресурса (например, вам нужен векторный слой) откроется окно с его параметрами/атрибутами см. :numref:`ngweb_options_resource_group`. Отсюда можно перейти в режим `редактирования ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>.
 
 .. figure:: _static/options_resource_group_rus_2.png
    :name: ngweb_options_resource_group
@@ -277,6 +277,8 @@ Cформируется таблица объектов, которая позв
    :width: 20cm
 
    Операции над записью в таблице объектов
+
+Также можно `отредактировать атрибуты <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-attributes-edit>`_ векторного слоя, формирующие таблицу объектов.
 
 .. _ngw_feature_table_filter_area:
 
