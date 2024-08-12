@@ -1,7 +1,7 @@
 .. _ngw_update_resource:
 
 Update resource
----------------
+===================
 
 In the group page press the pencil icon opposite the resource.
 
@@ -28,13 +28,17 @@ In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) y
 
    "Update resource" window
 
-On the first tab "Resource" you can edit the next fields:
+On the first tab "Resource" you can edit the following fields:
 
 1. Display name (you can change the resource's name)
 2. Parent (you can change the resource group through moving the resource)
 3. Owner
 4. Keyname
 
+.. _ngw_move_resource:
+
+Move resource
+-------------
 
 You can move resources from one resource group to another. To do it press the arrow at the end of the Parent field and select resource group to move the resource to in the pop-up window (see :numref:`ngw_resource_selection`). Then press **OK** and **Save** button.
 
@@ -58,7 +62,12 @@ If in the selected folder there is already a resource with the same name as the 
 
 Close the alert window, change the name of the resource and try to change the parent again.
 
-The tab "Description" allows to add text, links and images describing the resource.
+.. _ngw_update_info_metada:
+
+Edit description and metadata
+---------------------------------
+
+The "Description" tab allows to add text, links and images describing the resource.
 
 .. figure:: _static/ngw_description_window_eng_3.png
    :name: ngw_description_window
@@ -67,7 +76,7 @@ The tab "Description" allows to add text, links and images describing the resour
   
    "Description" tab
 
-The tab "Metadata" allows to add and delete metadata, and to display them in a table using "Add" (Text, Integer, Float) and "Remove" operations:  
+The "Metadata" tab allows to add and delete metadata, and to display them in a table using **Add** and **Remove** operations:  
 
 .. figure:: _static/ngw_metadata_tab_eng_3.png
    :name: ngw_metadata_tab
@@ -81,6 +90,11 @@ The table contains three columns:
 1. Key. It allows to describe metadata features (author, date, version etc.)
 2. Type: String, Numer, Boolean, Empty (if you select "Empty", the value field will be cleared)
 3. Value. Value corresponds to the key type
+
+.. _ngw_attributes_edit:
+
+Edit vector layer attributes table
+-----------------------------------
 
 "Fields" tab contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`).
 
@@ -140,7 +154,7 @@ To go back to table view, press the arrow in the top row of the form.
 After all edits are made, click **Save**.
 
 
-.. _ngw_attributes_edit:
+.. ngw_delete_resource:
 
 Delete resource
 ---------------
@@ -184,6 +198,8 @@ In the opened "Delete resource" window you need to tick "Confirm deletion of the
    "Delete resource" window
 
 If the resource was deleted successfully, the information about it disappear from the corresponding resource group.
+
+.. ngw_delete_resource_multi:
 
 Deleting several resources at once
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
