@@ -154,7 +154,7 @@ To go back to table view, press the arrow in the top row of the form.
 After all edits are made, click **Save**.
 
 
-.. ngw_delete_resource:
+.. _ngw_delete_resource:
 
 Delete resource
 ---------------
@@ -199,7 +199,7 @@ In the opened "Delete resource" window you need to tick "Confirm deletion of the
 
 If the resource was deleted successfully, the information about it disappear from the corresponding resource group.
 
-.. ngw_delete_resource_multi:
+.. _ngw_delete_resource_multi:
 
 Deleting several resources at once
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
