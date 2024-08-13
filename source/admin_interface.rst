@@ -176,7 +176,7 @@
 
 Для просмотра ресурса следует перейти "внутрь" него через блок Дочерних ресурсов.
 
-После выбора ресурса (например, вам нужен векторный слой) откроется окно с его параметрами/атрибутами см. :numref:`ngweb_options_resource_group`. Отсюда можно перейти в режим `редактирования ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>.
+После выбора ресурса (например, вам нужен векторный слой) откроется окно с его параметрами/атрибутами см. :numref:`ngweb_options_resource_group`. Отсюда можно перейти в режим `редактирования ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_.
 
 .. figure:: _static/options_resource_group_rus_2.png
    :name: ngweb_options_resource_group
