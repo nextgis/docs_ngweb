@@ -151,6 +151,7 @@ Control panel allows to execute the following actions:
 * Create user accounts for Collector projects
 * Set the name of your Web GIS
 * Configure CORS
+* Manage custom fonts
 * Set CSS styles
 * Specify NGW start page (home path)
 * Set Logo (in the upper left corner)
