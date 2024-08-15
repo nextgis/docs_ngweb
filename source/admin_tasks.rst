@@ -701,10 +701,13 @@ In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_
 Identify popup
 ~~~~~~~~~~~~~~~
 
-The section regulates two parameters:
+Feature identification information can be displayed as a pop-up window or as a side panel. To select a display mode, move the switch marked "Use panel instead of popup identification".
 
-* Size of the pop-up window when identifying objects on the Web Map;
-* The radius of the area around the object within which the identification works.
+The section regulates the following parameters:
+
+* The radius of the area around the object within which the identification works;
+* Enabling or disabling geometry info;
+* For the pop-up window you can also set up the dimentions;
 
 Dimensions are in pixels.
 
@@ -763,6 +766,24 @@ The following parameters can be set up:
    :width: 10cm
 
    Web Map search
+
+.. _ngw_fonts:
+
+Font management
+--------------------
+
+To open the font management page, go to the Main menu, open the Control panel and in the Settings section select "Font management".
+
+On this page you can view the list of system and custom fonts, upload or delete custom fonts.
+
+.. figure:: _static/font_manag_en.png
+   :name: font_manag_pic
+   :align: center
+   :width: 20cm
+
+   Font management page. System fonts are shown. A custom font is selected.
+
+`Learn more <https://docs.nextgis.com/docs_ngcom/source/fonts.html>`_ on how to manage fonts.
 
 
 .. _ngw_CSS:
