@@ -157,6 +157,20 @@ Set "New users" flag for a group to automatically assign new user to it.
 .. note:: 
    A name for a group should contain only letters and numbers. 
 
+Global group permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+While creating or editing a user group, you can set for all its members global permissions concerning Web GIS a whole:
+
+* creating users and groups of users, managing access permissions;
+
+* manage spacial reference systems of the Web GIS;
+
+* manage CORS settings.
+
+These global permissions are separate from `access permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ applied to particular resources (vector and raster layers, resource groups, services, Web Maps etc). The latter regulate working with resources, while global permissions allow users to manage Web GIS functions.
+
+
 .. _ngw_create_user:
 
 Create new user
@@ -187,6 +201,8 @@ Then click **"Create"**.
 .. note:: 
    The password is limited in length in the range of 5-25 characters. Login can have symbols of the Latin alphabet, numbers and an underscore, but must begin necessarily with a letter.
 
+You can set up `access permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for particular users and groups of users.
+
 .. _ngw_disable_delete_user:
 
 Disable or delete users
@@ -216,332 +232,6 @@ If you need to **delete a user permanently**, you can do so by pressing the "Del
 
 Alternatively, you can open the editing page and press **Delete**.
 
-
-.. _ngw_access_rights:
-    
-Access management
------------------
-
-NextGIS Web is resource based so each component (layer, group, service) is a resource. NextGIS Web provides extended settings for resource access permissions.
-
-Permissions could be set during resource creation (see. :ref:`ngw_create_layers`), 
-or using resource update (see. :ref:`ngw_change_layers`) To manage permissions use a "Permissions" tab in create/update resource dialog (see. :numref:`ngweb_access_rights_tab`)
-
-.. figure:: _static/access_rights_tab.png
-   :name: ngweb_access_rights_tab
-   :align: center
-   :width: 16cm
-   
-   Permissions tab for resource
-
-You can grant, revoke and update permissions using this tab. You can grant different permissions to a single resource for different users and/or groups.
-A dialog with permission item settings is presented on fig.  :numref:`ngweb_access_rights_dialog`.
-
-.. figure:: _static/access_rights_dialog.png
-   :name: ngweb_access_rights_dialog
-   :align: center
-   :width: 16cm
-   
-   Permission item settings dialog
-
-A dialog has the following elements:
-    
-* Action
-* Principal
-* Permission
-* Resource
-* Propagate
-
-**Action** defines the kind of the rule - allow or deny.
-
-.. note:: By default everything is denied.
-
-**Principal** - a user or a user group who is subject to a rule.
-
-Besides standard users created by administrator, system has special system users:
-
-* administrator - Web GIS user which has administrative rights
-* owner - Web GIS user which created a particular resource
-* guest - Web GIS user which is accessing a particular resource without being authentificated (not logged in)
-* authenticated - authenticated Web GIS user under any account (but not guest)
-* everyone - all users including guests and authenticated
-
-Besides standard groups created by administrator, system has special system user groups:
-
-* Administrators - a group whose users have administrative rights
-* Editors - a group, whose users do not have access to the control panel, but can create, edit and manage data
-
-Adding users to this groups is a convenient way to set appropriate permissions across the whole system. These groups can't be removed.
-
-**Permission** - defines allowed or denied action with the resource. There are the following types of permissions: 
-
-* All resources: All permissions
-* Resource: All permissions
-* Resource: Manage children
-* Resource: Change permissions
-* Resource: Read
-* Resource: Create
-* Resource: Update
-* Resource: Delete
-* Service: All permissions
-* Service: Connect
-* Service: Configure
-* Data structure: All permissions
-* Data structure: Write
-* Data structure: Read
-* Connection: All permissions
-* Connection: Write
-* Connection: Read
-* Connection: Connect
-* Web map: All permissions
-* Web map: Edit annotations
-* Web map: View annotations
-* Web map: Display
-* Collector: All permissions
-* Collector: Read
-* Data: All permissions
-* Data: Write
-* Data: Read
-* Metadata: All permissions
-* Metadata: Write
-* Metadata: Read
-
-**Resource** - type of resource the rule created for. This setting is important for resource groups where it is required to grant permissions only to some types of resources. If there is no need to grant different permissions to different types of resources, select "All resources" for this setting.
-
-**Propagate** checkbox defines if permission rules need to be applied to resources in sub-groups or not. Note, that setting permissions for lower level resource and propagating doesn't cancel the need to set them for upward resources. For example, if you gave read access to a resource group that is contained by other groups, but you didn't give appropriate permissions for higher level resources (up to root) the user will not get access to current resource group.
-
-Permissions could be assigned to resources indirectly. For example permission "Web map: Display" could be assigned for a resource group and if a "Propagate" checkbox is checked this rule will be applied to every web map inside this resource group and inside all the subgroups.
-
-Here is a description for available permission types.
-
-**All resources: All permissions** - allows or denies any actions with resources.
-
-**Resource: All permissions** - allows or denies any actions with resources excluding resource groups.
-
-**Resource: Manage children** - allows or denies update of child resources settings. 
- 
-**Resource: Change permissions** - allows or denies access permissions management for a resource.
-
-**Resource: Read** - allows or denies reading of resources.
-
-**Resource: Create** - allows or denies creation of resources.
-
-**Resource: Update** - allows or denies modification of resources.
-
-**Resource: Delete** - allows or denies deletion of resources.
-
-**Service: All permissions** - allows or denies any actions with a service.
-
-**Service: Connect** - allows or denies connections to a service.
-
-**Service: Configure** - allows or denies modification of service setiings.
-
-**Data structure: All permissions** - allows or denies any actions with data structure.
-
-**Data structure: Write** - allows or denies modification of data structure.
-
-**Data structure: Read** - allows or denies reading of the data structure.
-
-**Connection: All permissions** - allows or denies any actions with connections.
-
-**Connection: Write** - allows or denies modification of connections.
-
-**Connection: Read** - allows or denies reading of connection parameters.
-
-**Connection: Connect** - allows or denies usage of connection (defines if layers and data from the connection will be available for a user).
-
-**Web Map: All permissions** - allows or denies any actions with a Web Map.
-
-**Web Map: Display** - allows or denies display of a Web Map.
-
-**Data: All permissions** - allows or denies any actions with data.
-
-**Data: Write** - allows or denies data modification.
-
-**Data: Read** - allows or denies reading of data.
-
-**Metadata: All permissions** - allows or denies any actions with metadata.
-
-**Metadata: Write** - allows or denies modification of metadata.
-
-**Metadata: Read** - allows or denies reading of metadata.
-
-When you assign rights to a particular resource take into account the rights of its constituent resources. For example to provide access to a WMS service you should grant the following permissions:
-    
-* Service: Connect - to a connection itself.
-* Resource: Read - to all resources (vector and raster layers)  
-  published with WMS service.
-* Data structure: Read - to all resources (vector and raster layers) 
-  published with WMS service.
-* Data: Read - to all resources (vector and raster layers) 
-  published with WMS service.
-
-If you have a complex system with several maps and different users who should work with these maps you can create user groups. You can assign different permissions to every group.
-
-
-Example: Assigning permissions
-------------------------------
-
-Close a group for guests, open it for the user
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: _static/access_rights_group_for_quest_1_eng.png
-   :name: ngweb_access_rights_tab_0_pic
-   :align: center
-   :width: 20cm
-
-   Settings for resourse group
-
-
-.. figure:: _static/access_rights_group_for_quest_2_eng.png
-   :name: ngweb_access_rights_tab_0_pic
-   :align: center
-   :width: 20cm
-
-   Settings for root resource group
-
-You can also allow the user reading all higher resource groups as alternative. 
-
-
-Grant guest user resource display permission
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. note:: 
-	Guest users will be able to see administrative interface and view all folders excluding especially closed ones.
-
-.. figure:: _static/access_rights_group_for_quest_0_eng.png
-   :name: ngweb_access_rights_tab_0_pic
-   :align: center
-   :width: 20cm
-
-   Settings for root resource group
-
-
-.. figure:: _static/access_rights_group_for_quest_webmaps_eng.png
-   :name: ngweb_access_rights_tab_1_pic
-   :align: center
-   :width: 20cm
-
-   Settings for resourse group with maps
-
-
-.. figure:: _static/access_rights_group_for_quest_geodata_eng.png
-   :name: ngweb_access_rights_tab_2_pic
-   :align: center
-   :width: 20cm
-
-   Settings for resource group with geodata
-
-   
-Grant guest user Web Map display permission
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. note:: 
-   Guest users will be able to see only a Web Map with layers
-
-.. figure:: _static/Case2_Main_resource_group.png
-   :name: Case2_Main resource group
-   :align: center
-   :width: 20cm
-
-   Settings for main resource group
-
-
-.. figure:: _static/Case2_mapfolder.png
-   :name: Case2_mapfolder
-   :align: center
-   :width: 20cm
-
-   Settings for resourse group with maps
-
-
-.. figure:: _static/Case2_datafolder.png
-   :name: Case2_datafolder
-   :align: center
-   :width: 20cm
-
-   Settings for resource group with geodata
-
-
-It is important to note that parent resources (if any) also need read permissions for the guest (see. :numref:`Case2_permissions`)
-If there aren't rights to 'read' resource, then the data propagated to it will also be impossible to read.
-
-.. figure:: _static/Case2_permissions.png
-   :name: Case2_permissions
-   :align: center
-   :width: 20cm
-
-   Set in other resource groups
-
-
-
-Grant a single user permissions to a single resource group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-.. figure:: _static/access_rights_group_for_user_1.png
-   :name: ngweb_access_rights_tab_3_pic
-   :align: center
-   :width: 20cm
-
-   Settings for a resource group
-
-.. figure:: _static/access_rights_group_for_user_2.png
-   :name: ngweb_access_rights_tab_4_pic
-   :align: center
-   :width: 20cm
-
-   Settings for root resource group
-
-
-Grant a permission to input data using a mobile application to a group of users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Create a separate group of users ("Contributors" in this example) and a separate resource group.  
-
-
-.. figure:: _static/access_rights_group_for_mobile_import_1.png
-   :name: ngweb_access_rights_tab_mobile_import_1_pic
-   :align: center
-   :width: 20cm
-
-   Settings for a resource group
-
-
-
-.. figure:: _static/access_rights_group_for_mobile_import_2.png
-   :name: ngweb_access_rights_tab_mobile_import_2_pic
-   :align: center
-   :width: 20cm
-
-   Settings for root resource group
-
-
-Disallow view of Web Map to all not authendificated users, grant view to authendificated users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  
-
-
-.. figure:: _static/access_rights_deny_webmap_guests_allow_logined.png
-   :name: access_rights_deny_webmap_guests_allow_logined_pic
-   :align: center
-   :width: 20cm
-
-    Settings for Web Map
-
-
-
-Disallow all access for guest users (without password)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  
-
-
-.. figure:: _static/access_rights_deny_all.png
-   :name: access_rights_deny_all
-   :align: center
-   :width: 20cm
-
-    Settings for root resource group
 
 
 .. _ngw_change_password:
