@@ -39,8 +39,7 @@ Access control list consists of the **rules** which have the following attribute
 * Action  - allow or deny
 * Principal - user or group of users to which this rule applies
 * Permission - permission or permission scope that is prohibited or allowed by the rule
-* Propagate - yes/no checkbox
-* Resource - type of resource to which this rule applies
+* Apply to - scope of application: this resource, this and subresourcer or a particular type of resource to which this rule applies
 
 Regardless of rule’s placement (at the beginning or end of the list) - first, the rules with the action “Allow” are applied, and then the rules “Deny”.
 In other words - **‘Deny’ has a higher priority than ‘Allow’**. The position of the rule doesn't matter.
@@ -64,8 +63,7 @@ Also NextGIS Web has multiple virtual system users to be used in access control 
 * Everyone - the rule will be applied to any user (authenticated or not)
 * Owner - the rule will be applied to user who created a resource
 
-If the **‘Propagate’** checkbox is enabled then the rule applies not only to the current resource but to child resources.
-**‘Resource’** attribute allows you to set rules limitations to specific resource categories. In practice, it only makes sense if the ‘Propagate’ checkbox is enabled.
+If the **‘Apply to’** attribute is set to ‘This and subresources’, then the rule applies not only to the current resource but to child resources. This attribute also allows you to set rules limitations to specific subresource categories.
 
 
 .. _ngw_permissions_relations:
@@ -103,7 +101,7 @@ When accessed, for example via API, NextGIS Web calculates **effective permissio
 The computing is performed in the following sequence:
 
 1. By default user does not have any permissions - the rule is **‘everything is deny except what is not explicitly allowed’**
-2. Applied current resource and parent resources permissions with ‘Propagate’ checkbox.
+2. Applied current resource and parent resources permissions that apply to ‘This and subresources’.
 3. First the ‘Allow’ rules are applied -  permissions from them are added to the computed set of permissions.
 4. After that, ‘Deny’ rules are applied - the permissions from them are subtracted from the calculated set of permissions.
 5. Dependencies are checked, permissions with unsatisfied dependencies are marked as masked.
