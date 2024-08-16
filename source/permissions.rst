@@ -126,3 +126,5 @@ There are two ways how you can do this:
 
 * Preferred method: Assign permissions to some `user group <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#ngw-create-group>`_ by checking the "New Users" flag. The user will be included in this group the first time they log in to NextGIS Web.
 * Alternative way: assign resource permissions for the principal “Authenticated”.
+
+For typical scenarios of permission usage see our `Common cases <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-cases>`_.
