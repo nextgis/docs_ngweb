@@ -845,10 +845,10 @@ Enter the connection name that will be displayed in the administrator interface 
 
 The "Key" field is optional. If needed, you can also add a description and metadata. In the TMS connection tab you need to select the way to connect to the TMS server - custom or via NextGIS geoservices (see :numref:`TMS_connection_type_en`).
 
-.. figure:: _static/TMS_connection_type_en_2.png
+.. figure:: _static/TMS_connection_type_en_3.png
    :name: TMS_connection_type_en
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    Configuring TMS Connection
    
@@ -882,15 +882,14 @@ Caching provides faster rendering of Web Map layers. Tile cache settings are des
 The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_settings_en`):
 
 * TMS connection - select a TMS connection resource that was created earlier
-* Select coordinate system for data display
 * The range of zoom levels for data display
-* Extent in degrees
+* Extent in degrees or from a layer
 * Tile size in pixels
 
-.. figure:: _static/TMS_layer_settings_en_2.png
+.. figure:: _static/TMS_layer_settings_en_3.png
    :name: TMS_layer_settings_en
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    TMS layer settings
    
