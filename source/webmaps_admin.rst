@@ -57,7 +57,7 @@
 .. figure:: _static/admin_webmap_layers_rus_3.png
    :name: admin_webmap_layers
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Вкладка "Слои"
 
@@ -75,7 +75,7 @@
 .. figure:: _static/webmap_layer_settings_ru.png
    :name: admin_webmap_create_layers
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Настройки слоев на веб-карте
  
