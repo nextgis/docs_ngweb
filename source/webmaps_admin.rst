@@ -46,30 +46,30 @@ You can also add resource description and metadata on the corresponding tabs.
 Web Map Layers
 ~~~~~~~~~~~~~~
 
-In the “Layers” tab you can add, group or remove layers and change their order using the buttons “Add layer”, “Add group”, “Remove” and "Layer order" respectively (see :numref:`admin_webmap_layers`). 
+In the “Layers” tab you can add, group or remove layers and change their order using the buttons “Add layer”, “Add group”, "Customize draw order" and "Delete layer" (X at the end of each row). 
 
-.. figure:: _static/admin_webmap_layers_eng_2.png
+.. figure:: _static/admin_webmap_layers_eng_3.png
    :name: admin_webmap_layers
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    "Layers" tab
 
 To view the data of the layer on a map, you need to create at least one layer style. More on creating styles for different layer types :ref:`here <ngcom_styles>`. 
 
-.. figure:: _static/admin_webmap_add_layers_en.png
+.. figure:: _static/admin_webmap_add_layers_en_2.png
    :name: admin_webmap_add_layers_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
    
    Using style to add a layer to the Web Map
 
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
-.. figure:: _static/admin_webmap_create_layers_eng_3.png
+.. figure:: _static/webmap_layer_settings_en.png
    :name: admin_webmap_create_layers
    :align: center
-   :width: 16cm
+   :width: 18cm
    
    Layer settings
  
@@ -84,7 +84,9 @@ You can also set up a scale range. Min scale corresponds to the smaller image, m
 .. note:: 
    Max and min scale can be set not only using the Web Map’s Layers tab, but also in the layer style itself (See an `example <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#osm-water-line>`_). If the layer should not be displayed in a certain range of scales, we recommend to mark it in the Web Map’s layer settings. If the scale limit is only set within the style, empty tiles will be generated in other scales, which is less efficient.
 
-The order of the layers on a map can be different from the order in which they appear in the tree. Click "Layer order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
+To go back to the layer list, press **Hide details**.
+
+The order of the layers on a map can be different from the order in which they appear in the tree. Click "Customize draw order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
 
 .. figure:: _static/admin_webmap_layerorders_1_cut.jpg
    :name: ngweb_admin_webmap_layerorders_1
@@ -99,6 +101,10 @@ The order of the layers on a map can be different from the order in which they a
    :width: 16cm
    
    Different layer arrangement: the layer marking the buildings is above the satellite images, while the layer groups on the left remain unchanged
+
+To go back to the list of layers, press **Back to layers and groups**. To restore the initial layer order, press **Use default draw order**. 
+
+Press **Save** to save the changes.
 
 .. _ngw_map_basemaps:
 
