@@ -88,19 +88,19 @@ To go back to the layer list, press **Hide details**.
 
 The order of the layers on a map can be different from the order in which they appear in the tree. Click "Customize draw order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
 
-.. figure:: _static/admin_webmap_layerorders_1_cut.jpg
+.. figure:: _static/admin_webmap_layerorders_1_cut_en.png
    :name: ngweb_admin_webmap_layerorders_1
    :align: center
-   :width: 16cm
+   :width: 20cm
    
-   Layer order as is: satellite images obscure the layer where the buildings are marked
+   Layer order as is: satellite images obscure the layer where the boundaries are marked
 
-.. figure:: _static/admin_webmap_layerorders_2_cut.jpg
+.. figure:: _static/admin_webmap_layerorders_2_cut_en.png
    :name: ngweb_admin_webmap_layerorders_2
    :align: center
-   :width: 16cm
+   :width: 20cm
    
-   Different layer arrangement: the layer marking the buildings is above the satellite images, while the layer groups on the left remain unchanged
+   Different draw order: the layer marking the boundaries is above the satellite images, while the layer groups on the left remain unchanged
 
 To go back to the list of layers, press **Back to layers and groups**. To restore the initial layer order, press **Use default draw order**. 
 
