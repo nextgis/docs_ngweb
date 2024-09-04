@@ -843,7 +843,7 @@ Enter the connection name that will be displayed in the administrator interface 
    
    TMS Connection Resource Name
 
-The "Key" field is optional. If needed, you can also add a description and metadata. In the TMS connection tab you need to select the way to connect to the TMS server - custom or via NextGIS geoservices (see :numref:`TMS_connection_type_en`).
+The "Key" field is optional. If needed, you can also add a description and metadata. In the TMS connection tab you need to select the way to connect to the TMS server - custom or via NextGIS GeoServices (see :numref:`TMS_connection_type_en`).
 
 .. figure:: _static/TMS_connection_type_en_3.png
    :name: TMS_connection_type_en
@@ -852,7 +852,7 @@ The "Key" field is optional. If needed, you can also add a description and metad
    
    Configuring TMS Connection
    
-In the case of a custom connection method, the user must specify the URL template, API key parameters if needed and the tile scheme used. For NextGIS geoservices, only a custom API key is specified. After filling in all fields press Create to complete the process of creating a **TMS Connection** resource.
+In the case of a custom connection method, the user must specify the URL template, API key parameters if needed and the tile scheme used. For NextGIS GeoServices, only a custom API key is specified. After filling in all fields press Create to complete the process of creating a **TMS Connection** resource.
 
 .. _ngw_tms_layer:
 
