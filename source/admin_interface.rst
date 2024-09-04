@@ -47,7 +47,7 @@ Home page
 After login to administrative interface the user is taken to the home page shown 
 on :numref:`admin_index_pic`
 
-.. figure:: _static/ngweb_main_page_administrative_interface_eng.png
+.. figure:: _static/ngweb_main_page_administrative_interface_en.png
    :name: admin_index_pic
    :align: center
    :width: 25cm
@@ -56,7 +56,7 @@ on :numref:`admin_index_pic`
 
    The numbers indicate: 1 - Main menu; 2 - User settings (Exit and Change language); 3 - Resource search bar in Web GIS 4 – Main resource group description; 5 - Child resources; 6 - User permissions for main resource group; 7 - Types of items that could be added to the main resource group; 8 - Actions that could be performed with main resource group
 
-Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
+Home page includes main menu pane, (see item 1 in :numref:`admin_index_pic`) which has the following links (see :numref:`ngweb_main_page_main_menu_pic`):
 
 * Resources
 * Control Panel
@@ -70,38 +70,19 @@ Home page includes a main menu pane, (see item 1 in :numref:`admin_index_pic`) w
 
    Main menu in NextGIS Web
  
-Description pane (see item 4 in :numref:`admin_index_pic`) displays a main group description (if available).
+Description pane (see item 4 in :numref:`admin_index_pic`) displays type of resource and owner as well as description (if available).
 
 Child resources pane (see item 5 in :numref:`admin_index_pic`) contains a list of all resources placed in a main group.
-In the form of a table, the parameters such as name, type and owner of the resource are available.
-At the same time there are buttons of different actions over resources (edit, delete, preview, open the attribute table).
+The table contains name and type of the resource and action buttons (edit, delete, for some types of resources - preview, open the attribute table).
 
-User permissions pane (see item 6 in :numref:`admin_index_pic`) displays list of permissions the current user granted for the current group.
-Green and red marks indicate that user has/don't have corresponding permission. 
+"Create resoruce" button opens a pop-up window where you can choose the type of resource you want to create.
 
-* A - allow
-* D - deny
-* M - mask (indirectly deny)
-* E - empty (actually deny)
-
-Possible permissions are the following:
-
-* All
-* Read
-* View permissions
-* Create
-* Update (Edit)
-* Delete
-* Manage children
-* Change permissions
-
-Actions pane (see items 7 and 8 in :numref:`admin_index_pic`) contains tools for adding data and executing operations with the root group.
-
-In current version it is possible to add the following types of data:
+In current version it is possible to add the following types of data to the Main resource group:
 
 * Basemap
 * Collector project
 * Lookup table
+* OGC API - Features service
 * PostGIS connection
 * PostGIS layer
 * Raster layer
@@ -116,17 +97,21 @@ In current version it is possible to add the following types of data:
 * WMS layer
 * WMS service
 
-Depending on your NGW version may also be connected:
+Depending on your NGW version you may also add:
 
 * SVG marker library
 * 3D model
 * 3D scene
 * 3D tileset
 
-Possible operations are (see item 8 in :numref:`admin_index_pic`): 
+Actions pane (see item 7 in :numref:`admin_index_pic`) contains tools for adding data and executing operations with the current resource. For the Main resource group the only available operation is Update (i.e. edit).
 
-* Update 
-* Delete
+On the main page there is also a block of extra links:
+
+* `Demo projects <https://docs.nextgis.com/docs_ngcom/source/demoprojects.html>`_;
+* User permissions - show access rights for the logged in user. `Learn more about user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_;
+* JSON view.
+
 
 
 .. _ngw_control_panel:
@@ -171,25 +156,25 @@ Resource view
 
 After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
 
-.. figure:: _static/resource_group_eng_2.png
+.. figure:: _static/resource_group_en.png
    :name: resource_group
    :align: center
    :width: 20cm
 
    Resource groups
 
-To open a resource group and view the contents, click on it in the child resource pane.
+You can open the Update resource dialog by clicking the pencil icon next to the resource, or delete a resource directly from the list. For special types of resources other actions are available (e.g. Preview for vector layers or Open for Web Maps).
 
-Resource parameters are displayed after a click on the name of the resource in the list. User is taken to a page containing properties, attributes, user permissions, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
+To open a resource page click on the corresponding row of the table. The resource page contains properties, attributes, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
 
-.. figure:: _static/resource_details_en.png
+.. figure:: _static/resource_details_en_2.png
    :name: resource_details_pic
    :align: center
    :width: 20cm
  
    Vector layer parameters
 
-Here you can enter the resource `edit mode <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_.
+Here you can also enter the resource `edit mode <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_.
 
 .. _ngw_feature_table:
 
