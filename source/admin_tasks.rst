@@ -331,7 +331,7 @@
 
    Кадастровые сервисы в панели управления
 
-Наличие `Premium-подписки <https://nextgis.ru/pricing-base/>`_ или `NextGIS Web на своем сервере <https://nextgis.ru/pricing/#ngw>`_ позволяет получить API-ключ (через `geoservices <https://geoservices.nextgis.com/settings/profile>`_, API key в разделе Profile) для расширенных функций по работе с веб-картой. Кадастровые сервисы дают возможность пользователю идентифицировать на веб-карте различные кадастровые единицы:
+Наличие `Premium-подписки <https://nextgis.ru/pricing-base/>`_ или `NextGIS Web на своем сервере <https://nextgis.ru/pricing/#ngw>`_ позволяет получить API-ключ (через `GeoServices <https://geoservices.nextgis.com/settings/profile>`_, API key в разделе Profile) для расширенных функций по работе с веб-картой. Кадастровые сервисы дают возможность пользователю идентифицировать на веб-карте различные кадастровые единицы:
 
 - Кварталы
 - Земельные участки
