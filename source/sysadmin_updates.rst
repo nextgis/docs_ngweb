@@ -24,7 +24,7 @@ This section describes the latest changes to the software.
 - Support for upper-case placeholders in TMS connections.
 - Metadata permission scope and webmap display permission removed.
 - Sentry client-side JavaScript integrations.
-- Cache seeding and invalidation removed, use NextGIS Geoservices instead.
+- Cache seeding and invalidation removed, use NextGIS GeoServices instead.
 - Most of resource widgets migrated to Antd and React.
 
 
