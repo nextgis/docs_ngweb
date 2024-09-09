@@ -1279,12 +1279,12 @@ In the SVG marker library tab you need to upload SVG markers from your device.
 You can upload markers as individual files or as a zip-archive. The archive must contain markers only.
 After all icons have been uploaded to the library, you will see the list of the file names. Click **Create** to complete the process (see :numref:`create_svg_lib`).
 
-.. figure:: _static/create_svg_lib_eng.png
+.. figure:: _static/ngweb_upload_svg_en.png
    :name: create_svg_lib
    :align: center
-   :width: 20cm
+   :width: 16cm
    
-   Final steps of creating an SVG marker library
+   Uploading SVG
    
 .. figure:: _static/list_svg_eng.png
    :name: list_svg
