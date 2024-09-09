@@ -14,20 +14,48 @@ For each layer you can create an **unlimited** number of **styles** - ways of vi
 Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
 First, you specify the parameters for the layer, and then you add a style that renders data on the Web Map.
 
+To create a new resource, open the group where you want to add it and press **Create resource** button. Then in the pop-up window select the resource type. The window opens on the full list of available resource types.
+
+.. figure:: _static/ngweb_create_en.png
+   :name: ngweb_create_pic
+   :align: center
+   :width: 20cm
+
+   Create resource window
+
+To find the resource type you need faster, use the search bar. 
+
+.. figure:: _static/ngweb_create_search_en.png
+   :name: ngweb_create_search_pic
+   :align: center
+   :width: 20cm
+
+   Searching for resource type
+
+Resource types are also grouped into categories. You can select a category from the list on the left.
+
+* Layers and styles 
+* Maps and services (Web Map, WMS, WFS and OGC API - Features services)
+* Field data collection (tracker group, tracker, Collector project)
+* External connections (PostGIS, TMS and WMS connections)
+* Miscellaneous (resource group, SVG marker library, lookup table)
+
+See below for details of creating resource of each type.
+
 .. _ngw_create_basemap:
 
 Basemap
 -------
 
-In the "Create resource" actions pane click **Basemap** (:numref:`ngweb_admin_create_basemap`).
+Press **Create resource** button and select **Basemap** (:numref:`ngweb_admin_create_basemap`).
 In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
 
-.. figure:: _static/ngweb_admin_create_basemap_eng_2.png
+.. figure:: _static/ngweb_create_basemap_en.png
    :name: ngweb_admin_create_basemap
    :align: center
    :width: 20cm
 
-   Selection of "Basemap" action
+   Selection of "Basemap" resource type
    
    
 .. figure:: _static/ngweb_admin_basemap_name_eng_3.png
@@ -78,7 +106,7 @@ A visual preview of the uploaded geometries will open without the possibility of
 .. figure:: _static/ngweb_preview_1_en.png
    :name: ngweb_preview_1_en
    :align: center
-   :width: 20cm
+   :width: 24cm
 
    Selecting Data Preview Function
    
@@ -103,14 +131,14 @@ Raster images in NextGIS Web should be loaded using the "Raster Layer" special r
 Creation process
 ^^^^^^^^^^^^^^^^
 
-To add a raster layer navigate to a group where you want to create it. In the "Create resource" actions pane click **Raster layer** (see :numref:`ngweb_admin_layers_create_raster_layer`). 
+To add a raster layer navigate to a group where you want to create it. Press **Create resource** button and select  **Raster layer** (see :numref:`ngweb_admin_layers_create_raster_layer`). 
 
-.. figure:: _static/admin_layers_create_raster_layer_eng_2.png
+.. figure:: _static/ngweb_create_raster_layer_en.png
    :name: ngweb_admin_layers_create_raster_layer
    :align: center
    :width: 20cm
 
-   Selection of "Raster layer" action
+   Selection of "Raster layer" resource type
    
 On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
 The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
@@ -201,14 +229,14 @@ You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :
 Creation process
 ^^^^^^^^^^^^^^^^
 Navigate to the resource group (folder) in which to create a vector layer.
-In the "Create resource" actions pane select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer`).
+Press **Create resource** button and select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer`).
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_eng_2.png
+.. figure:: _static/ngweb_create_vector_layer_en.png
    :name: ngweb_admin_layers_create_vector_layer
    :align: center
    :width: 20cm
 
-   Selection of "Vector layer" action
+   Selection of "Vector layer" resource type
 
 In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
@@ -300,14 +328,14 @@ Empty vector layer
 Creating an empty vector layer allows you to start a data base in your WebGIS without using a desktop app. 
 
 Navigate to the resource group (folder) in which to create a vector layer.
-In the “Create resource” actions pane select Vector layer (see :numref:`ngweb_admin_layers_create_vector_layer_2`). 
+Press **Create resource** button and select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer_2`). 
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_eng_2.png
+.. figure:: _static/ngweb_create_vector_layer_en.png
    :name: ngweb_admin_layers_create_vector_layer_2
    :align: center
    :width: 20cm
 
-   Selecting "Vector layer" action
+   Selecting "Vector layer" resource type
 
 In the opened window use the dropdown menu to select "Create empty layer". In the field below select geometry type for the layer. By default, a point layer will be created.
 
@@ -347,14 +375,14 @@ To add a vector layer from PostgreSQL database with PostGIS extension, you need 
 Creating PostGIS connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the "Create resource" actions pane click **PostGIS connection** (see :numref:`admin_layers_create_postgis_connection_resourse`). 
+Press **Create resource** button and select  **PostGIS connection** (see :numref:`admin_layers_create_postgis_connection_resourse`). 
 
-.. figure:: _static/admin_layers_create_postgis_connection_resourse_eng_2.png
+.. figure:: _static/ngweb_create_PostGIS_conn_en.png
    :name: admin_layers_create_postgis_connection_resourse
    :align: center
    :width: 20cm
 
-   Selection of "PostGIS connection" action
+   Selection of "PostGIS connection" resource type
  
 Enter a display name that will be visible in the administrator interface. Not to be confused with layer name in a database. 
 
@@ -399,14 +427,14 @@ In this tab you should enter connection parameters for the PostGIS database that
 Creating PostGIS layer
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Now you can add individual PostGIS layers. Navigate to a group where you want to create layers and in the  "Create resource" actions pane select **PostGIS layer** (see :numref:`admin_layers_create_postgis_layer`).
+Now you can add individual PostGIS layers. Navigate to a group where you want to create layers. Press **Create resource** button and select **PostGIS layer** (see :numref:`admin_layers_create_postgis_layer`).
 
-.. figure:: _static/admin_layers_create_postgis_layer_eng_2.png
+.. figure:: _static/ngweb_create_PostGIS_layer_en.png
    :name: admin_layers_create_postgis_layer
    :align: center
    :width: 20cm
 
-   Selection of "PostGIS layer" action
+   Selection of "PostGIS layer" resource type
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_name_eng_3.png
    :name: admin_layers_create_postgis_layer_resourse_name_eng
@@ -484,26 +512,26 @@ To do this, you need to click on the **Diagnostics** button on the panel on the 
 .. figure:: _static/diagnostics_start_en.png
    :name: diagnostics_start_en
    :align: center
-   :width: 20cm
+   :width: 24cm
 
 If all fields are filled in correctly when creating a connection to PostGIS - diagnostics will be successful.
 
 .. figure:: _static/diagnostics_successfully_en.png
    :name: diagnostics_successfully_en
    :align: center
-   :width: 20cm
+   :width: 24cm
 
 If any of the entered data is not correct, an error message will appear.
 
 .. figure:: _static/diagnostics_fail1_en.png
    :name: diagnostics_fail1_en
    :align: center
-   :width: 20cm
+   :width: 24cm
 
 .. figure:: _static/diagnostics_fail2_en.png
    :name: diagnostics_fail2_en
    :align: center
-   :width: 20cm
+   :width: 24cm
 
 .. _ngw_postgis_diagnostics:
 
@@ -565,14 +593,14 @@ Creating WMS Connection
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 To add a WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers.
-In the "Create resource" actions pane click **WMS connection** (see :numref:`admin_layers_create_wms_connection`). 
+Press **Create resource** button and select  **WMS connection** (see :numref:`admin_layers_create_wms_connection`). 
 
-.. figure:: _static/admin_layers_create_wms_connection_eng_2.png
+.. figure:: _static/ngweb_create_wms_conn_en.png
    :name: admin_layers_create_wms_connection
    :align: center
    :width: 20cm
 
-   Selection of "WMS connection" action
+   Selection of "WMS connection" resource type
    
 Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_name`.
 
@@ -631,14 +659,14 @@ After setting up all necessery parameters, click **Create**.
 Creating WMS Layer
 ^^^^^^^^^^^^^^^^^^
 
-Now you can add individual WMS layers. Navigate to a group where you want to create WMS layers and in the "Create resource" actions pane select **WMS layer** (see :numref:`admin_layers_create_wms_layer`). 
+Now you can add individual WMS layers. Navigate to a group where you want to create WMS layers. Press **Create resource** button and select **WMS layer** (see :numref:`admin_layers_create_wms_layer`). 
 
-.. figure:: _static/create_wms_layer_en.png
+.. figure:: _static/ngweb_create_wms_layer_en.png
    :name: admin_layers_create_wms_layer
    :align: center
    :width: 20cm
 
-   Selection of "WMS layer" action
+   Selection of "WMS layer" resource type
 
 Create resource dialog for WMS layer is presented on :numref:`admin_layers_create_wms_layer_name`
 
@@ -715,14 +743,14 @@ WMS service
 
 NextGIS Web software can perform as WMS server. This protocol is used to provide images with a requested extent. 
 
-To deploy a WMS service you need to add a resource. In the "Create resource" actions pane click **WMS service** (see :numref:`admin_layers_create_wms_service`). 
+To deploy a WMS service you need to add a resource. Press **Create resource** button and select  **WMS service** (see :numref:`admin_layers_create_wms_service`). 
 
-.. figure:: _static/admin_layers_create_wms_service_eng_2.png
+.. figure:: _static/ngweb_create_wms_service_en.png
    :name: admin_layers_create_wms_service
    :align: center
    :width: 20cm
 
-   Selection of "WMS service" action
+   Selection of "WMS service" resource type
    
 Create resource dialog for WMS service is presented on :numref:`ngweb_admin_layers_create_wms_service_name`. 
 
@@ -825,14 +853,14 @@ TMS layer
 TMS Connection
 ^^^^^^^^^^^^^^
 
-Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_, to add a TMS layer, you first need to create a TMS connection. Select **TMS connection** in the "Create resource" actions pane (see :numref:`TMS_connection_create_en`)
+Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_, to add a TMS layer, you first need to create a TMS connection. Press **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create_en`)
 
-.. figure:: _static/TMS_connection_create_en_2.png
+.. figure:: _static/ngweb_create_tms_conn_en.png
    :name: TMS_connection_create_en
    :align: center
    :width: 20cm
    
-   Selecting a TMS Connection resource
+   Selecting TMS Connection resource type
 
 Enter the connection name that will be displayed in the administrator interface (see :numref:`TMS_connection_name_en`).
 
@@ -859,14 +887,14 @@ In the case of a custom connection method, the user must specify the URL templat
 TMS layer
 ^^^^^^^^^
 
-**TMS layer** resource is created using previously created **TMS Connection**. Select **TMS layer** in the "Create resource" actions pane (see :numref:`TMS_layer_create_en`).
+**TMS layer** resource is created using previously created **TMS Connection**. Press **Create resource** button and select **TMS layer** (see :numref:`TMS_layer_create_en`).
 
-.. figure:: _static/TMS_layer_create_en_2.png
+.. figure:: _static/ngweb_create_tms_layer_en.png
    :name: TMS_layer_create_en
    :align: center
    :width: 20cm
    
-   Selecting of TMS layer action
+   Selecting of TMS layer resource type
    
 Enter the name that will be displayed in the administrator interface (see :numref:`TMS_layer_name_en`).
 
@@ -942,10 +970,12 @@ Tileset
 
 To add a **Tileset**, select a Tileset in the "Create Resource" block of operations.
 
-.. figure:: _static/Tileset_create_en.png
+.. figure:: _static/ngweb_create_tileset_en.png
    :name: Tileset_create_en
    :align: center
-   :width: 16cm
+   :width: 20cm
+
+   Selecting Tileset resource type
 
 Next, you need to enter the name of the tileset, which will be displayed in the administrative web interface.
 
@@ -956,7 +986,9 @@ In the "Tileset" tab, you need to upload a tileset in MBTiles format or a zip ar
 .. figure:: _static/Tileset_add_en.png
    :name: Tileset_add_en
    :align: center
-   :width: 16cm
+   :width: 20cm
+
+   Tileset tab
 
 In the "Tile Cache" tab, the user can set the caching settings:
 
@@ -970,7 +1002,9 @@ In the "Tile Cache" tab, the user can set the caching settings:
 .. figure:: _static/Tileset_settings_en.png
    :name: Tileset_settings_en
    :align: center
-   :width: 16cm
+   :width: 14cm
+
+   Tileset settings
 
 After filling in all the fields, clicking the **Create button** completes the process of creating the resource **Tileset**.
 
@@ -987,14 +1021,14 @@ WFS layer setup is performed the same way as for WMS service but you add layers 
 
 NextGIS Web acts as WFS server and publishes WFS services based on vector layers. Third party software can use these services to edit vector data on server. Supported WFS protocol versions are 1.0, 1.1, 2.0, 2.0.2. 
 
-To deploy a WFS service click **WFS service** in the "Create resource" actions pane (see :numref:`admin_layers_create_wfs_service`). 
+To deploy a WFS service press **Create resource** button and select  **WFS service** (see :numref:`admin_layers_create_wfs_service`). 
 
-.. figure:: _static/admin_layers_create_wfs_service_eng_2.png
+.. figure:: _static/ngweb_create_wfs_service_en.png
    :name: admin_layers_create_wfs_service
    :align: center
    :width: 20cm
 
-   Selection of "WFS service" action
+   Selection of "WFS service" resource type
    
 Create resource dialog for WFS service is presented on :numref:`ngweb_admin_layers_create_wfs_service_name`. 
 
@@ -1063,14 +1097,14 @@ The OGC API Features service is configured in the same way as for a WFS service.
  
 NextGIS Web acts as OGC API Features server and publishes OGC API Features services based on vector layers. Third party software can use these services to edit vector data on server. Supported OGC API Features protocol versions is 1.0.0. 
 
-To deploy a OGC API Features service click **OGC API Features service** in the "Create resource" actions pane (see :numref:`admin_layers_create_ogc_api_features_service_en`). 
+To deploy a OGC API Features service press **Create resource** button and select **OGC API Features service** (see :numref:`admin_layers_create_ogc_api_features_service_en`). 
 
-.. figure:: _static/admin_layers_create_ogc_api_features_service_en.png
+.. figure:: _static/ngweb_create_service_OGC_en.png
    :name: admin_layers_create_ogc_api_features_service_en
    :align: center
    :width: 20cm
 
-   Selection of "OGC API Features service" action
+   Selection of "OGC API Features service" resource type
    
 Create resource dialog for OGC API Features service is presented on :numref:`admin_layers_create_ogc_api_features_service_name_en`. 
 
@@ -1139,14 +1173,14 @@ Resources can be arranged in groups. For example, you can have special groups fo
 
 Groups help organize the layers in the Control panel and make it easier to manage access permissions. 
 
-To create a resource group navigate to the group, where you want to create a new one (root group or another), and in the "Create resource" actions pane click **Resource group** (see :numref:`admin_layers_create_resource_group`). 
+To create a resource group navigate to the group, where you want to create a new one (root group or another). Press **Create resource** button and select  **Resource group** (see :numref:`admin_layers_create_resource_group`). 
 
-.. figure:: _static/admin_layers_create_resource_group_eng_2.png
+.. figure:: _static/admin_layers_create_resource_group_en.png
    :name: admin_layers_create_resource_group
    :align: center
    :width: 20cm
 
-   Selection of "Resource group" action
+   Selection of "Resource group" resource type
     
 Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
 
@@ -1168,14 +1202,14 @@ You can also add resource description and metadata on the corresponding tabs.
 Lookup table
 -------------
 
-To create a lookup table navigate to the group, where you want to create it (root group or another), and in the "Create resource" actions pane click **Lookup table** (see :numref:`admin_layers_create_lookup_table`). 
+To create a lookup table navigate to the group, where you want to create it (root group or another). Press **Create resource** button and select  **Lookup table** (see :numref:`admin_layers_create_lookup_table`). 
 
-.. figure:: _static/admin_layers_create_lookup_table_eng_2.png
+.. figure:: _static/ngweb_create_lookup_en.png
    :name: admin_layers_create_lookup_table
    :align: center
    :width: 20cm
 
-   Selection of "Lookup table" action
+   Selection of "Lookup table" resource type
 
 In the opened dialog enter a display name. "Keyname" field is optional.
 
@@ -1222,14 +1256,14 @@ You can also connect a lookup table to a field of a vector layer. This way while
 SVG Marker Library
 ----------------------
 
-In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. To create a library, select **SVG marker library** in the Create Resource actions pane on the right (see :numref:`select_svg_lib`).
+In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. Press **Create resource** button and select **SVG marker library** (see :numref:`select_svg_lib`).
 
-.. figure:: _static/select_svg_lib_eng.png
+.. figure:: _static/ngweb_create_SVG_lib_en.png
    :name: select_svg_lib
    :align: center
    :width: 20cm
    
-   Selecting SVG marker library
+   Selecting SVG marker library resource type
 
 In the opened window, enter the name of the resource (see :numref:`name_svg_lib`).
 
