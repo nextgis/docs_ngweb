@@ -57,7 +57,7 @@
 
    Цифрами обозначены: 1 - Основное меню; 2 - Пользовательские настройки (Выход, Избранное и Смена языка); 3 – Строка поиска ресурсов в Веб ГИС; 4 - Описание основной группы ресурсов; 5 - Дочерние ресурсы; 6 - Кнопка добавления ресурсов; 7 - Операции, которые можно проводить с основной группой; 8 - кнопка техподдержки.
 
-В блоке основного меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) размещены следующие пункты (см. :numref:`ngweb_main_page_main_menu_pic`):
+В блоке основного меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1) размещены следующие пункты:
 
 * Ресурсы
 * Панель управления
@@ -122,7 +122,7 @@
 Панель управления
 --------------------------------
 
-В панель управления NextGIS Web можно попасть через основное меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1), выбрав соответствующий пункт (см. :numref:`ngweb_main_page_main_menu_pic`). Панель управления представлена на :numref:`ngweb_control_panel`.
+В панель управления NextGIS Web можно попасть через основное меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1), выбрав соответствующий пункт. Панель управления представлена на :numref:`ngweb_control_panel`.
 
 .. figure:: _static/ngweb_control_panel_new_ru.png
    :name: ngweb_control_panel
