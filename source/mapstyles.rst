@@ -38,7 +38,7 @@
 
 Если вы хотите настроить создаваемый стиль, то нужно в блоке операций на правой боковой панели в разделе "Создать ресурс" выбрать "Векторный стиль QGIS" (см. :numref:`select_qgis_style_pic`).
 
-.. figure:: _static/QGIS_style_select_ru_2.png
+.. figure:: _static/ngweb_create_QGIS_style_ru.png
    :name: select_qgis_style_pic
    :align: center
    :width: 20cm
@@ -189,12 +189,12 @@
 3. Удалить слой или группу
 4. Изменить отображемый порядок слоев
   
-.. figure:: _static/admin_webmap_add_layers_rus.png
+.. figure:: _static/admin_webmap_add_layers_rus_2.png
    :name: select_svg_style
    :align: center
    :width: 20cm
    
-   Добавления QGIS стиля на веб-карту
+   Добавление QGIS стиля на веб-карту
 
 Чтобы посмотреть карту, нажмите **Открыть** на правой боковой панели, находясь внутри ресурса *веб-карта*. Откроется окно веб-карты с загруженными стилями. Если в свойствах QML-файлов были прописаны пути до svg-маркеров и в настройках стилей в веб-интерфейсе указаны библиотеки соответствующих маркеров, то слой на карте отобразится соответствующим образом (см. :numref:`webmap_svg`).
   
@@ -213,7 +213,7 @@
 
 Для создания стиля **MapServer** необходимо сначала зайти в слой, для которого вы его создаёте. В окне свойств поля "Создать ресурс" выбрать "Стиль MapServer".
 
-.. figure:: _static/mapserver_style_select_ru.png
+.. figure:: _static/ngweb_create_mapserver_style_ru.png
    :name: mapserver_style_select_pic
    :align: center
    :width: 20cm
