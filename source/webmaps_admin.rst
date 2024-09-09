@@ -17,14 +17,14 @@ Web Map displays layers. They can be turned on or off by the user. You can set t
 Creating a Web Map
 ---------------------
 
-To create a Web Map, open the resource group where you want to add it, then in the actions pane “Create resource” select “Web Map”. (see :numref:`ngweb_admin_layers_create_webmap`). 
+To create a Web Map, open the resource group where you want to add it, press **Create resource** button and in the pop-up window select “Web Map”. (see :numref:`ngweb_admin_layers_create_webmap`). 
 
-.. figure:: _static/admin_layers_create_webmap_eng_2.png
+.. figure:: _static/ngweb_create_webmap_en.png
    :name: ngweb_admin_layers_create_webmap
    :align: center
    :width: 20cm
 
-   Selection of “Web Map” action 
+   Selection of “Web Map” resource type 
    
 Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`. 
 
