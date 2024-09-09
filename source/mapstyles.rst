@@ -35,9 +35,9 @@ Open the properties page of the layer you want create style for. To create a def
    Creating default QGIS style
 
 
-If you want to add a customized style, in the "Create resource" actions pane click "QGIS vector style" (see :numref:`select_qgis_style`).
+If you want to add a customized style, press **Create resource** button and select "QGIS vector style" (see :numref:`select_qgis_style`).
 
-.. figure:: _static/QGIS_style_select_en_2.png
+.. figure:: _static/ngweb_create_QGIS_style_en.png
    :name: select_qgis_style
    :align: center
    :width: 20cm
@@ -173,10 +173,10 @@ Mapserver style
 ---------------
 
 To create **MapServer** style open layer properties of the layer you want create style for.
-In the actions pane "Create resource" click "MapServer style" (see in :numref:`ngweb_window_create_resource_mapserver_pic`).
+Press **Create resource** button and select "MapServer style" (see in :numref:`ngweb_window_create_resource_mapserver_pic`).
 
 
-.. figure:: _static/mapserver_style_select_en.png
+.. figure:: _static/ngweb_create_mapserver_style_en.png
    :name: ngweb_window_create_resource_mapserver_pic
    :align: center
    :width: 20cm
@@ -251,12 +251,12 @@ Here you can do the following actions:
 
 Click "Add layer" and in opened window select the QGIS style of the layer, then click "OK". After that click "Save" 
 
-.. figure:: _static/select_svg_style_en.png
+.. figure:: _static/admin_webmap_add_layers_en_2.png
    :name: select_svg_style
    :align: center
    :width: 20cm
    
-   Adding QGIS style on the map
+   Adding style on the map
    
 
 In the "Web Map" actions pane of the Web Map properties window select "Display". The map will open, layers tree will be on the left. To hide/display a layer place a tick near the layer .
