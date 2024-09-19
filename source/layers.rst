@@ -501,6 +501,27 @@ NextGIS Web может принимать многослойные наборы 
 
 После указания параметров нажмите кнопку **Создать**.   
 
+.. important::
+
+   Чтобы добавить таблицу в NextGIS Web в ней должна быть колонка с уникальными целочисленными значениями. Если такой нет или колонка первичного ключа содержит неуникальные значения, можно добавить дополнительную колонку для этих целей.
+
+Чтобы добавить такую колонку в таблицу, подключитесь к базе данных (используя psql, например, в QGIS) и выполните следующий запрос: 
+
+.. codeblock::
+
+   ALTER TABLE tablename ADD fid serial NOT NULL;
+   ALTER TABLE tablename ADD CONSTRAINT tablename_fid_unique UNIQUE (fid);
+
+Затем эту колонку (fid) можно использовать в качестве колонки ID в NextGIS Web.
+
+.. figure:: _static/postgis_add_fid_qgis_ru.png
+   :name: postgis_add_fid_qgis_pic
+   :align: center
+   :width: 20cm
+
+   Добавление колонки с ID в QGIS
+
+
 .. _ngw_create_postgis_details:
 
 Детали
