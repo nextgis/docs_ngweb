@@ -490,6 +490,26 @@ Then perform the following steps:
 
 After specifying all the necessery parameters, click **Create**.
 
+.. important::
+
+   You need an unique integer column to attach your table to NextGIS Web. If the primary key column of the table is not integer or there is none at all, you can create an auxiliary key. 
+
+To create a key column connect to your database (for example using psql in qgis) and execute the following (replacing 'tablename' with the name of your table):
+
+.. codeblock::
+
+   ALTER TABLE tablename ADD fid serial NOT NULL;
+   ALTER TABLE tablename ADD CONSTRAINT tablename_fid_unique UNIQUE (fid);
+
+And then use this column (fid) an ID column in NextGIS Web.
+
+.. figure:: _static/postgis_add_fid_qgis_en.png
+   :name: postgis_add_fid_qgis_pic
+   :align: center
+   :width: 20cm
+
+   Adding fid column in QGIS
+
 
 Details
 ^^^^^^^
