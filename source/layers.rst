@@ -496,10 +496,10 @@ After specifying all the necessery parameters, click **Create**.
 
 To create a key column connect to your database (for example using psql in qgis) and execute the following (replacing 'tablename' with the name of your table):
 
-.. codeblock::
+.. code-block::
 
-   ALTER TABLE tablename ADD fid serial NOT NULL;
-   ALTER TABLE tablename ADD CONSTRAINT tablename_fid_unique UNIQUE (fid);
+	ALTER TABLE tablename ADD fid serial NOT NULL;
+	ALTER TABLE tablename ADD CONSTRAINT tablename_fid_unique UNIQUE (fid);
 
 And then use this column (fid) an ID column in NextGIS Web.
 
