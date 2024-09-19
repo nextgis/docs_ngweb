@@ -507,7 +507,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Чтобы добавить такую колонку в таблицу, подключитесь к базе данных (используя psql, например, в QGIS) и выполните следующий запрос: 
 
-.. codeblock::
+.. code-block::
 
    ALTER TABLE tablename ADD fid serial NOT NULL;
    ALTER TABLE tablename ADD CONSTRAINT tablename_fid_unique UNIQUE (fid);
