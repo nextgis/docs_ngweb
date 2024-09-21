@@ -7,6 +7,13 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.8.1 released on 20 Sep 2024**
+-----
+
+- Fix audit journal display.
+- Fix WMS service layer adding.
+
+
 **4.8.0 released on 17 Jul 2024**
 -----
 
