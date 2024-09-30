@@ -77,7 +77,7 @@
 
 Вкладка "Описание" позволяет добавить текстовое описание и гибко его настроить, вставить изображение или ссылку на внешний ресурс.
 
-.. figure:: _static/ngw_description_window_rus_3.png
+.. figure:: _static/ngw_description_tab_ru.png
    :name: ngw_description_window
    :align: center
    :width: 20cm
@@ -86,7 +86,7 @@
 
 Вкладка "Метаданные" позволяет заносить, удалять метаданные и отображать их в таблице (Текст, Целое число, Вещественное число):  
 
-.. figure:: _static/ngw_metadata_tab_rus_3.png
+.. figure:: _static/ngw_metadata_tab_ru.png
    :name: ngw_metadata_tab
    :align: center
    :width: 16cm
@@ -106,7 +106,7 @@
 
 Вкладка "Поля" содержит таблицу, в которой перечислены атрибуты выбранного слоя (см. :numref:`ngweb_admin_layers_attr`).
 
-.. figure:: _static/vector_fields_ru.png
+.. figure:: _static/vector_fields_ru_2.png
    :name: ngweb_admin_layers_attr
    :align: center
    :width: 16cm
@@ -126,7 +126,7 @@
 
    Окно идентификации
 
-.. figure:: _static/key_field_name_ru.png
+.. figure:: _static/key_field_name_ru_2.png
    :name: key_field_name_pic
    :align: center
    :width: 20cm    
