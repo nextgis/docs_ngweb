@@ -1316,6 +1316,47 @@ After all icons have been uploaded to the library, you will see the list of the 
 The process of adding marker libraries to vector layer styles is described `here <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_.
 
 
+.. _ngw_create_file_bucket:
+
+File bucket
+----------------------
+
+.. important::
+
+   It is a special type of resource available in `Extended edition of NextGIS on-premise <https://nextgis.com/pricing/>`_. It allows users to create a storage space for any types of files.
+
+On the **Resource** tab enter a name for the file bucket. It will be displayed in the administrator interface. “Keyname” field is optional.
+
+.. figure:: _static/ngw_name_file_bucket_en.png
+   :name: name_file_bucket_pic
+   :align: center
+   :width: 16cm
+   
+   File bucket name
+
+In the **File bucket** tab select files or a ZIP archive to extract files from.
+
+.. figure:: _static/ngw_upload_file_bucket_en.png
+   :name: ngw_upload_file_bucket_pic
+   :align: center
+   :width: 16cm
+
+   Uploading files to bucket
+
+The "Description" and "Metadata" of the resource can be configured on the corresponding tabs.
+
+After a file bucket is created, its contents can be modified. You can add and delete individual files. If you select a new ZIP archive, the files extracted from it will **replace** all files added before.
+
+Files stored in the bucket can be viewed in browser (if the file type allows it), saved one-by-one from the context menu or exported all at once as a ZIP archive.
+
+.. figure:: _static/ngw_file_bucket_result_en.png
+   :name: ngw_file_bucket_result_pic
+   :align: center
+   :width: 20cm
+
+   Resource page of a File bucket with the list of included files
+
+
 Typical structure
 ------------------
 
