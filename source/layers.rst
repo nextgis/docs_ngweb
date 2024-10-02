@@ -81,10 +81,12 @@ In the “Basemap” tab you must enter the URL-address of the TMS service (:num
 * Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
 * Enter the address manually. 
 
-.. figure:: _static/create_basemap_settings_en.jpg
+The basemap will be previewed below. Press **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
+
+.. figure:: _static/create_basemap_settings_en_2.png
    :name: ngweb_admin_basemap_param
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Basemap settings
 
@@ -94,29 +96,54 @@ In the “Basemap” tab you must enter the URL-address of the TMS service (:num
 Data Preview
 ------------
 
-The preview function allows you to see the uploaded data on the basemap without adding it on the Web Map.
+The preview function allows you to see the uploaded data on the basemap or a basemap without adding it on the Web Map.
 
-.. note:: 
-	For vector data, previews are available for both the layer and the style. For rasters - for style only. For TMS and WFS layers, preview is also available.
-	
-While in the corresponding resource, click the "eye" icon opposite the name of the child resource or the **Preview** button in the right menu in the **Extra** section.
+Click the "eye" icon opposite the name of the child resource you want to preview.
 
 A visual preview of the uploaded geometries will open without the possibility of more detailed interaction (viewing attributes, identifying objects, etc).
 
-.. figure:: _static/ngweb_preview_1_en.png
-   :name: ngweb_preview_1_en
+.. figure:: _static/ngweb_preview_basemap_en.png
+   :name: ngweb_preview_2_en
    :align: center
-   :width: 24cm
+   :width: 20cm
 
-   Selecting Data Preview Function
-   
+   Data preview
+
+Click **Open in a new tab** to view a bigger preview on a separate page.
+
+Alternatively, open the resource page and click on the **Preview** button in the right menu in the **Extra** section.
 
 .. figure:: _static/ngweb_preview_2_en.png
    :name: ngweb_preview_2_en
    :align: center
    :width: 20cm
 
-   Data preview
+   Data preview in a separate tab
+
+To preview a style, open the layer page and click on the eye icon next to the style subresource. The "Preview" action in the Extra tab on the right will display the preview of the resource itself, i.e. layer (:numref:`ngweb_preview_vector_pic`).
+
+.. figure:: _static/ngweb_preview_1_en_2.png
+   :name: ngweb_preview_1_en
+   :align: center
+   :width: 20cm
+
+   Selecting Data Preview Function for the layer (top right) or its style (below)
+
+.. figure:: _static/ngweb_preview_vector_en.png
+   :name: ngweb_preview_vector_pic
+   :align: center
+   :width: 20cm
+
+   Preview of a vector layer, features marked by default round markers
+
+.. figure:: _static/ngweb_preview_style_en.png
+   :name: ngweb_preview_2_en
+   :align: center
+   :width: 20cm
+
+   Preview of a style, the same features marked by custom icons
+
+
 
 
 .. _ngw_create_raster_layer:
