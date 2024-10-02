@@ -35,7 +35,7 @@ Create resource dialog for a Web Map will open, see :numref:`admin_webmap_name`.
 
    “Create resource” dialog for Web Map
 
-Enter Web Map display name that will be visible in the administrator interface and in the Web Map viewer.
+Enter Web Map display name that will be visible in the administrator interface and in the Web Map viewer. (You can set up a title to be displayed in Web Map viewer in the `Settings tab <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-settings>`_.)
 
 “Keyname” field is optional.
 
@@ -139,6 +139,7 @@ Settings
 
 In the "Settings" tab you can modify several parameters:
 
+* title that will be displayed on the Web Map instead of resource name;
 * legend visibility (more `here <https://docs.nextgis.com/docs_ngcom/source/legend.html>`_);
 * enable annotations (more on annotations see :ref:`here <ngcom_annotation>`);
 * select measurement spacial reference system;
@@ -146,7 +147,7 @@ In the "Settings" tab you can modify several parameters:
 * set up initial and constraining extent (see below);
 * select bookmark resource.
 
-.. figure:: _static/admin_webmap_settings_tab_en_2.png
+.. figure:: _static/admin_webmap_settings_tab_en_3.png
    :name: admin_webmap_settings_tab_pic
    :align: center
    :width: 16cm
