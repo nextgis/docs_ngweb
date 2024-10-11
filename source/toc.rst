@@ -20,7 +20,8 @@ Contents:
    mapstyles
    mapservertemplates
    layers_settings 
-   webmaps_admin       
+   webmaps_admin   
+   webmap_clone
    webmaps_client
    vect_layer_upload_params
    data_collection_on_premise
