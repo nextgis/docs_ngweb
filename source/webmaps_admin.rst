@@ -3,7 +3,7 @@
 
 .. _ngw_webmaps_admin:
 
-How to administrate Web Maps
+Adding Web Maps
 ============================
 
 There could be several Web Maps in NextGIS Web. For example one map is for work, another is for public access and third is for testing of layer styles.
@@ -41,10 +41,12 @@ Enter Web Map display name that will be visible in the administrator interface a
 
 You can also add resource description and metadata on the corresponding tabs.
 
+If you want to create a copy of an existing Web Map, you can `clone <https://docs.nextgis.com/docs_ngweb/source/webmap_clone.html>`_ it.
+
 .. _ngw_map_layers:
 
 Web Map Layers
-~~~~~~~~~~~~~~
+---------------
 
 In the “Layers” tab you can add, group or remove layers and change their order using the buttons “Add layer”, “Add group”, "Customize draw order" and "Delete layer" (X at the end of each row). 
 
@@ -86,6 +88,33 @@ You can also set up a scale range. Min scale corresponds to the smaller image, m
 
 To go back to the layer list, press **Hide details**.
 
+.. _ngw_map_layer_groups:
+
+Layer groups
+~~~~~~~~~~~~
+
+Layers added to Web Map can be gathered into groups. It will only affect the layer tree displayed on the map itself, making the legend more legible. It does not affect the actual resource group contents.
+
+To add a new group press **+ Group**. To put a layer into a group, drag and drop.
+
+.. figure:: _static/webmap_group_settings_en.png
+   :name: webmap_group_settings_pic
+   :align: center
+   :width: 16cm
+   
+   Layer group settings
+
+**Expanded** option defines the way the layer group is presented in the layer tree when the Web Map is opened.
+
+If **Exclusive** is ticked, layers in the group will only be displayed one at a time. If you activate a layer, all other layers of the group are automatically hidden. It can be handy if you have, for example, a group of satellite data that completely overlaps. 
+
+To go back to the layer list, press **Hide details**.
+
+.. _ngw_map_layer_order:
+
+Layer draw order
+~~~~~~~~~~~~~~~~~
+
 The order of the layers on a map can be different from the order in which they appear in the tree. Click "Customize draw order" in the "Layers" tab of the map settings. It allows to choose the order of the displayed layers without affecting the groups.
 
 .. figure:: _static/admin_webmap_layerorders_1_cut_en.png
@@ -109,7 +138,7 @@ Press **Save** to save the changes.
 .. _ngw_map_basemaps:
 
 Basemaps
-~~~~~~~~~
+--------
 
 "Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" (see :numref:`admin_webmap_basemaps`). 
 
@@ -127,7 +156,7 @@ If “Default basemap” is checked, this basemap will be visible when the Web M
 .. _ngw_map_no_base:
 
 Web Map with no basemap
-~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
 create a new basemap and add it to your Web Map. Then turn this newly created basemap off.
@@ -135,7 +164,7 @@ create a new basemap and add it to your Web Map. Then turn this newly created ba
 .. _ngw_map_settings:
 
 Settings
-~~~~~~~~~
+---------
 
 In the "Settings" tab you can modify several parameters:
 
@@ -158,9 +187,14 @@ In the "Settings" tab you can modify several parameters:
 .. _ngw_map_extent:
 
 Extent
-~~~~~~
+--------
 
-Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :numref:`admin_webmap_bbox`.
+In the Settings tab you can set up:
+
+* Initial extent - part of the Web Map that is shown upon its opening
+* Constraining extent - users will not be able to zoom out or scroll past this extent
+
+Use the four fields to set the extent measured in degrees.
 
 .. figure:: _static/webmap_extent_en.png
    :name: admin_webmap_bbox
@@ -168,13 +202,6 @@ Switch from “Resource” tab to “Extent and bookmarks” tab, presented on :
    :width: 22cm
 
    Extent settings
-
-In this tab you can set up:
-
-* Initial extent - part of the Web Map that is shown upon its opening
-* Constraining extent - users will not be able to zoom out or scroll past this extent
-
-Use the four fields to set the extent measured in degrees.
 
 **Extent from layer** button allows to set Web Map extent from the layer's extent. Click it to open the “Select layer” window, where you can select a layer to use for setting the Web Map extent (see :numref:`ngw_select_resource2`). The four fields for the extent coordinates will be filled in. 
 
@@ -191,9 +218,9 @@ Use the four fields to set the extent measured in degrees.
 .. _ngw_map_bookmarks:
 
 Bookmarks
-~~~~~~~~~
+----------
 
-In the “Bookmark resource” field you can select a vector layer with any type of geometry to use for bookmarks.  The Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” if it is set (see :numref:`bookmark_attribute`).
+In the “Bookmark resource” field of the Settings tab you can select a vector layer with any type of geometry to use for bookmarks.  The Web Map will show bookmarks panel (see :numref:`ngw_bookmarks`) with names defined by “Label attribute” if it is set (see :numref:`bookmark_attribute`).
 
 .. figure:: _static/ngw_bookmarks_en.png
    :name: ngw_bookmarks
@@ -214,7 +241,7 @@ In the “Bookmark resource” field you can select a vector layer with any type
 .. _ngw_map_socials:
 
 Social
-~~~~~~~
+-------
 
 The "Social" tab is used to upload an image to be used as preview in social media.
 
@@ -228,7 +255,7 @@ The "Social" tab is used to upload an image to be used as preview in social medi
 .. _ngw_map_save:
 
 Final steps
-~~~~~~~~~~~
+-----------
 
 After creating the map content and adjusting settings for all the layers, click "Save" button. A saved map will be shown in the list of maps. 
 Click an icon with a map in the list of Web Maps or select "Display" action in the tab on the Web Map properties page to open it in the viewer. While the Web Map resource page is open, you can also open the map by clicking the "View" button on the right. Web Maps viewer is described :ref:`here <ngw_webmaps_client>`.
@@ -238,36 +265,4 @@ A Web Map URL displayed in the viewer may be shared with other users because it 
    After a map is deleted, its URL will no longer be available.
 
 
-.. _ngw_map_clone:
 
-Web Map Cloning
-----------------------
-
-With NextGIS Web you can create a copy of an existing Web Map by cloning it. To copy a Web Map, select "Clone" in the actions pane of its resource page.
-You will be redirected to "Clone Web Map" page to set up the location of the copy in the resource tree and the name for it. 
-
-.. figure:: _static/webmap_clone_page_en.png
-   :name: webmap_clone_page_pic
-   :align: center
-   :width: 20cm
-   
-   "Clone Web Map" page
-
-A magnifying glass icon in the right end of the "Resource group" field opens the group selection pop-up window.
-
-This window contains the following elements:
-
-1. Search bar and path to the resource the copy will be created in
-2. Return to the initial folder (the one containing the original Web Map), refresh the resource tree state and close the window
-3. Option button to select a group (folder)
-4. Open the selected group (folder)
-5. Create new resource group (folder)
-6. Clear selection
-7. Button that complets group selection. If a group (folder) is selected, the button reads "Clone to selected group". If no group is selected, it reads "Clone to this folder", in this case the copy will be created in the group currently open (the path to it is indicated in the top panel of the pop-up window).
-
-.. figure:: _static/webmap_clone_selected_group_elements_en.png
-   :name: webmap_clone_selected_group_elements_pic
-   :align: center
-   :width: 20cm
-   
-   Group selection window
