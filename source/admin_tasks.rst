@@ -89,7 +89,7 @@ On the Favorites page you can edit the list of added resources and modify names 
 .. _ngw_audit:
 
 User activity log
-----------
+------------------
 
 User requests to the Web GIS are logged in a journal. It can be found in the **Info** section of the Control panel of the Web GIS (:numref:`control_panel_audit_pic`).
 
@@ -144,7 +144,7 @@ Create new user group
 A dialog for creation of a new user group presented on  :numref:`ngweb_admin_controlpanel_usergroup_create_pic`
 To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). From the control panel (see :numref:`admin_control_panel`) go to the "Groups" page and click **Create**.
 
-.. figure:: _static/admin_controlpanel_usergroup_create_eng_2.png
+.. figure:: _static/usergroup_create_en.png
    :name: ngweb_admin_controlpanel_usergroup_create_pic
    :align: center
    :width: 16cm
@@ -157,10 +157,10 @@ Set "New users" flag for a group to automatically assign new user to it.
 .. note:: 
    A name for a group should contain only letters and numbers. 
 
-Global group permissions
+Global permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While creating or editing a user group, you can set for all its members global permissions concerning Web GIS a whole:
+While creating or editing a user or user group, you can set global permissions concerning Web GIS a whole:
 
 * creating users and groups of users, managing access permissions;
 
@@ -170,6 +170,15 @@ While creating or editing a user group, you can set for all its members global p
 
 These global permissions are separate from `access permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ applied to particular resources (vector and raster layers, resource groups, services, Web Maps etc). The latter regulate working with resources, while global permissions allow users to manage Web GIS functions.
 
+.. figure:: _static/ngw_group_rights_en.png
+   :name: ngw_group_rights_pic
+   :align: center
+   :width: 16cm
+
+   Setting up global permissions for a group
+
+.. warning:: 
+   If you include Guest to a group that has global permissions, anyone will be able to access Control panel even without logging in.
 
 .. _ngw_create_user:
 
@@ -179,7 +188,7 @@ Create new user
 A dialog for creation of a new user is presented on :numref:`admin_controlpanel_user_create`. 
 To open this window select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`) in the main menu (see item 1 in :numref:`admin_index_pic`). From the control panel (see :numref:`admin_control_panel`) go to the "Users" page and click **Create**.
 
-.. figure:: _static/admin_controlpanel_user_create_eng_2.png
+.. figure:: _static/user_create_en.png
    :name: admin_controlpanel_user_create
    :align: center
    :width: 16cm
@@ -192,6 +201,7 @@ In "Create new user" dialog enter the following information:
 * Login – user login (e.g. smith)
 * Password
 * Group(-s) user belongs to (select from a dropdown menu. If the required group is absent you need to create a new one (see :ref:`ngw_create_group`)).
+* Permissions - `global permissions <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#global-group-permissions>`_ concerning Web GIS as a whole
 * Interface language for the user
 
 You can add some more information about the user in the "Description" field.
