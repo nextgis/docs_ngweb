@@ -583,7 +583,7 @@ You can assigned a new hyperlink for a company website to a just added logo (—Å–
  
 Help page
 ~~~~~~~~~
-By default, help leads to http://nextgis.com/help/. You can set a different hyperlink (see in :numref: `help_whitelabel_en`) to 'Help' (see in :numref:`help_link_en`).
+By default, help leads to http://nextgis.com/help/. You can set a different hyperlink (see in :numref:`help_whitelabel_en`) to 'Help'.
 
 .. figure:: _static/help_whitelabel_en.png
    :name: help_whitelabel_en
@@ -592,10 +592,10 @@ By default, help leads to http://nextgis.com/help/. You can set a different hype
 
    Reroute a link to 'help'
 
-.. figure:: _static/help_link_en.png
+.. figure:: _static/help_link_en_2.png
    :name: help_link_en
    :align: center
-   :width: 7cm
+   :width: 10cm
 
    'Help' in the menu
 
