@@ -107,8 +107,8 @@ Minimum hardware
 Minimum hardware requirements for NextGIS Web software:
 
 * 4 vCPU
-* 8 Gb of RAM
-* 250 Gb HDD (SSD would be much better)
+* 8 GB of RAM
+* 250 GB HDD (SSD would be much better)
 
 .. _ngw_soft_req:
     
