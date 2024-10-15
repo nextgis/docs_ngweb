@@ -361,7 +361,7 @@
 
 Данная настройка показывает в интерфейсе Веб ГИС возможность экспорта (сохранения) данных только для тех категорий пользователей, которые выбраны из соответствующего списка. 
 
-.. figure:: _static/admin_system_res_export.png
+.. figure:: _static/admin_system_res_export_ru.png
    :name: admin_system_res_export
    :align: center
    :width: 20cm
@@ -369,19 +369,21 @@
    Выбор категории пользователей, имеющих право экспортировать данные
 
 
-.. figure:: _static/admin_system_export.png
+.. figure:: _static/action_panel_export_ru.png
    :name: admin_system_export
    :align: center
-   :width: 5cm
+   :width: 20cm
 
-   Экспорт данных
+   Действие "экспорт данных" доступно в панели просматриваемого ресурса
 
 Функцию Экспорта данных могут видеть либо только администраторы, либо пользователи с правом на:
 
 - Чтение данных
-- Запись данных
+- Изменение данных
 
 Все остальные пользователи не смогут сохранить данные из интерфейса Веб ГИС. 
+
+О том, как устанавливаются права на чтение и изменение данных, подробнее `здесь <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. 
 
 .. note:: 
    Эта настройка никак не влияет на возможность получать данные через `REST API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_ в соответствии с установленными `правами доступа <https://docs.nextgis.ru/docs_ngweb/source/permissions.html>`_ к ним.
