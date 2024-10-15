@@ -331,7 +331,7 @@ Resource export
 
 This function shows in the Web GIS interface the ability to export (save) data only for those categories of users that are selected from the list below. 
 
-.. figure:: _static/admin_system_res_export_en.png
+.. figure:: _static/admin_system_res_export_en_2.png
    :name: admin_system_res_export_en
    :align: center
    :width: 20cm
@@ -339,22 +339,24 @@ This function shows in the Web GIS interface the ability to export (save) data o
    Selecting a category of users entitled to export data
 
 
-.. figure:: _static/admin_system_export_en.png
+.. figure:: _static/action_panel_export_en.png
    :name: admin_system_export_en
    :align: center
-   :width: 5cm
+   :width: 20cm
 
-   Data export
+   Data export available in the Features panel
 
 The Data Export function can be seen either only by administrators or by users with the right to:
 
-- Reading data
-- Writing data
+- Read data
+- Modify data
 
 All other users will not be able to save data from the Web GIS interface.
 
+More on how to set up permissions to read and modify data `here <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_.
+
 .. note:: 
-   This setting does not in any way affect the ability to receive data through the `REST API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_ in accordance with the set `permissions <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#access-management>`_ to them.
+   This setting does not in any way affect the ability to receive data through the `REST API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_ in accordance with the set `permissions <https://docs.nextgis.com/docs_ngweb/source/permissions.html>`_ to them.
 
 
 .. _ngw_contr_panel_webmap_settings:
