@@ -81,9 +81,11 @@ In the “Basemap” tab you must enter the URL-address of the TMS service (:num
 * Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
 * Enter the address manually. 
 
-The basemap will be previewed below. Press **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
+The basemap will be previewed below. Press |button_toggle_basemap| **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
 
-.. figure:: _static/create_basemap_settings_en_2.png
+.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
+
+.. figure:: _static/create_basemap_settings_en_3.png
    :name: ngweb_admin_basemap_param
    :align: center
    :width: 16cm
@@ -102,14 +104,17 @@ Click the "eye" icon opposite the name of the child resource you want to preview
 
 A visual preview of the uploaded geometries will open without the possibility of more detailed interaction (viewing attributes, identifying objects, etc).
 
-.. figure:: _static/ngweb_preview_basemap_en.png
+.. figure:: _static/ngweb_preview_basemap_en_2.png
    :name: ngweb_preview_2_en
    :align: center
    :width: 20cm
 
    Data preview
 
-Click **Open in a new tab** to view a bigger preview on a separate page.
+Click |button_open_new_tab| **Open in a new tab** to view a bigger preview on a separate page.
+
+.. |button_open_new_tab| image:: _static/button_open_new_tab.png
+
 
 Alternatively, open the resource page and click on the **Preview** button in the right menu in the **Extra** section.
 
@@ -129,14 +134,14 @@ To preview a style, open the layer page and click on the eye icon next to the st
 
    Selecting Data Preview Function for the layer (top right) or its style (below)
 
-.. figure:: _static/ngweb_preview_vector_en.png
+.. figure:: _static/ngweb_preview_vector_en_2.png
    :name: ngweb_preview_vector_pic
    :align: center
    :width: 20cm
 
    Preview of a vector layer, features marked by default round markers
 
-.. figure:: _static/ngweb_preview_style_en.png
+.. figure:: _static/ngweb_preview_style_en_2.png
    :name: ngweb_preview_2_en
    :align: center
    :width: 20cm
