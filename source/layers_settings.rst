@@ -6,11 +6,13 @@ Vector layer settings
 ================================
 
 Introduction
----------
+-------------
 
 To edit a layer you need to navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`). The window "Update resource" will open, where you can edit the layer properties, clear the layer or upload a new file for it, and modify attributes.
 
 :ref:`Web GIS <ngcom_description>` also allows to edit objects and their attributes and to add descriptions of features and to them attachments (including photos). This works for :ref:`Vector layers <ngcom_vector_layer>` and :ref:`PostGIS layers <ngcom_postgis_layer>`.
+
+.. _ngw_allow_edit:
 
 Allow editing
 ----------------------------------------
@@ -42,7 +44,7 @@ To forbid some users to edit layers add a rule to deny specified users or groups
 .. _ngw_vector_file_replace:
 
 Delete or replace all features
--------------------------
+-------------------------------
 
 NextGIS Web software allows to delete all features of a layer or replace them by uploading a new file.
 
@@ -190,6 +192,8 @@ Move a feature or its vertices
 
 .. note:: 
 	You can edit several layers simultaneously. To do it enter the edit mode in every layer you want to edit. Adhesion will work for features of all these layers.
+
+.. _ngw_vertices:
 
 Add and delete vertices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -358,8 +362,10 @@ To navigate within the panorama, use the mouse. Hold down the left mouse button 
    
 To delete an attachment select it on the "Attachments" tab of the edit window, click **Delete**, and then click **Save** button.
 
+.. _ngw_attachments_imp_exp:
+
 Export and import attachments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To copy feature attachments between different layers or to create a backup you can save them to your device as an archive (Standard layer saving does not include attachments). 
 
