@@ -302,7 +302,7 @@ If a feature has attachments, they will be shown along with description and attr
 (see  :numref:`webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos_eng_2.png
-   :name: ngweb_webmap_identification_photos
+   :name: webmap_identification_photos
    :align: center
    :width: 20cm
 
@@ -323,7 +323,7 @@ You can add attachments from the Web Map or from the features table in the Admin
 4. Upload files. (see :numref:`admin_object_edit_photos1`).
 
 .. figure:: _static/admin_object_edit_photos1_eng_2.png
-   :name: ngweb_admin_object_edit_photos1
+   :name: admin_object_edit_photos1
    :align: center
    :width: 16cm
 
@@ -340,7 +340,7 @@ and user can navigate through them using left and right arrow keys
 on the keyboard (see  :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox_eng_2.png
-   :name: ngweb_webmap_identification_photo_lightbox
+   :name: webmap_identification_photo_lightbox
    :align: center
    :width: 18cm
 
