@@ -253,7 +253,7 @@
 .. figure:: _static/ngweb_tab_attributes_rus_2.png
    :name: ngweb_tab_attributes
    :align: center
-   :width:20cm
+   :width: 20cm
  
    Вкладка "Атрибуты"
 
