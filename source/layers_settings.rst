@@ -311,7 +311,7 @@ If a feature has attachments, they will be shown along with description and attr
 Files in the following formats can be viewed directly in the web client:
 
 * JPEG, PNG images. GIF format not supported.
-* Panoramas complying with the `specification<https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+* Panoramas complying with the `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
 
 Other types of files can be added as attachments, but won't be viewed in the interface.
 
