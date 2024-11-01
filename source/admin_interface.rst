@@ -3,7 +3,7 @@
 
 .. _ngw_admin_interface:
 
-Административный интерфейс
+Основные элементы интерфейса
 ================================
 
 .. _ngw_admin_login:
@@ -116,6 +116,59 @@
 * `Демо-проекты <https://docs.nextgis.ru/docs_ngcom/source/demoprojects.html>`_;
 * Права пользователя - позволяет посмотреть, какие права имеет пользователь в данной ВебГИС. `Подробнее о правах доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_;
 * Представление JSON.
+
+.. _ngw_change_lang:
+
+Переключение языка
+------------------
+
+Любой авторизованный пользователь может переключить язык интерфейса.
+Для этого в правом верхнем углу экрана по иконке пользователя нужно перейти в раздел "Настройки" (:numref:`admin_select_lang_pic`)
+
+.. figure:: _static/admin_settings_lang_rus.png
+   :name: admin_settings_lang_pic
+   :align: center
+   :width: 10cm
+
+   Переход в настройки
+
+Для выбора доступны следующие языки (:numref:`admin_settings_lang_pic`):
+
+* По умолчанию в браузере
+* Русский
+* Английский 
+* Болгарский
+* Итальянский
+* Испанский
+* Китайский
+* Немецкий
+* Португальский
+* Французский
+* Чешский
+
+
+.. figure:: _static/admin_select_lang_rus_2.png
+   :name: admin_select_lang_pic
+   :align: center
+   :width: 16cm
+
+   Изменение языка интерфейса
+
+
+.. _ngw_search_bar:
+
+Поиск ресурсов
+---------------
+
+Для удобного поиска ресурсов и навигации в NextGIS Web существует строка поиска в верхней панели интерфейса (:numref:`admin_search_bar_pic`)
+Поиск осуществляется по всей меющейся базе данных, независимо от того, в какой директории пользователь в данный момент находится.
+
+.. figure:: _static/admin_search_bar_rus.png
+   :name: admin_search_bar_pic
+   :align: center
+   :width: 10cm
+
+   Поиск ресурсов в веб ГИС
 
 .. _ngw_control_panel:
 
