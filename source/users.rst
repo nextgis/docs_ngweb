@@ -1,7 +1,7 @@
 Управление пользователями
 ==========================
 
-
+О добавлении пользователей в Команду см. `здесь <https://docs.nextgis.ru/docs_ngcom/source/create.html#ngcom-team-management>`_.
 
 .. _ngw_create_group:
 
@@ -138,3 +138,6 @@
 
 .. note:: 
    Пароль ограничен по длине в диапазоне 5-25 символов
+
+.. important::
+   Если вы забыли пароль от пользователя administrator, воспользуйтесь `этой инструкцией <https://docs.nextgis.ru/docs_ngcom/source/faq_webgis.html#administrator>`_.
