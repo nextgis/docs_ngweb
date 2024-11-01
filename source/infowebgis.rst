@@ -21,7 +21,7 @@
 .. figure:: _static/admin_system_info1_rus.png
    :name: admin_system_info1_pic
    :align: center
-   :width: 16cm
+   :width: 22cm
 
    Информация о системе и платформе
 
@@ -40,7 +40,7 @@
 .. figure:: _static/admin_storage_panel_settings.png
    :name: admin_storage_panel_settings
    :align: center
-   :width: 18cm
+   :width: 24cm
 
    Раздел "Хранилище"
 
@@ -51,8 +51,77 @@
 ----------------------
 
 .. note::
-   Этот функционал доступен только для Веб ГИС, развёрнутых `на своём сервере <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngw>`_.
+   Этот раздел доступен только для Веб ГИС, развёрнутых `на своём сервере <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngw>`_.
 
 В данном разделе можно посмотреть список имеющихся резервных копий NextGIS Web, а также скачать любую из них.
 Процесс создания бэкапов и восстановления для разработчиков описан `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
 
+.. _ngw_backups_policy:
+
+Политика резервного копирования
+---------------------------------
+
+Резервные копии данных (бэкапы) выполняются для Веб ГИС любых тарифных планов с определенной периодичностью. 
+Периодичность зависит от объемов данных и активности использования Веб ГИС (от 1 до нескольких раз в месяц). 
+
+Предоставление (восстановление) данных из резервных копий доступно только на тарифном плане `Premium <https://nextgis.ru/pricing-base/>`_ по запросу. 
+На остальных планах назначение бэкапов - дополнительная защита пользовательских данных после критических ситуаций, 
+не связанных с действиями пользователей Веб ГИС.
+
+Если вы на Premium и вам необходимо восстановление из резервной копии, напишите нам на support@nextgis.com. 
+Мы сообщим перечень дат, на которые есть резервные копии, и произведем восстановление. Так же, информацию о дате
+последней резервной копии доступна администраторам в разделе Информация о системе вашей Веб ГИС (подраздел 
+Платформа - Последняя резервная копия).
+
+
+.. _ngw_audit:
+
+Регистрация операций пользователей (Аудит)
+---------------------------------------------
+
+.. note::
+   Этот функционал доступен только для Веб ГИС, развёрнутых `на своём сервере <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngw>`_.
+
+История пользовательских запросов к Веб-ГИС регистрируется в журнале. Он располагается в разделе **Информация** Панели управления Веб-ГИС (:numref:`control_panel_audit_pic`).
+
+.. figure:: _static/control_panel_audit_ru_2.png
+   :name: control_panel_audit_pic
+   :align: center
+   :width: 18cm
+   
+   Расположение журнала в панели управления Веб-ГИС
+
+Журнал состоит из верхней панели фильтров и таблицы истории запросов пользователей (:numref:`user_activity_log_pic`). Каждое действие пользователя регистрируется в таблице журнала и содержит следующие параметры:
+
+* Время
+* Запрос (включает в себя `код состояния <https://developer.mozilla.org/ru/docs/Web/HTTP/Status>`_ и `метод <https://developer.mozilla.org/ru/docs/Web/HTTP/Methods>`_ запроса)
+* IP адрес
+* Пользователь
+* Имя маршрута
+* Контекст (тип и ID ресурса)
+
+  
+.. figure:: _static/user_activity_log_ru_2.png
+   :name: user_activity_log_pic
+   :align: center
+   :width: 24cm
+   
+   Журнал пользовательских операций
+
+Существует возможность отфильтровать записи в журнале по временному интервалу и пользователю, который совершал действия (:numref:`audit_filter_pic`). Таблица может быть экспортирована в формате .*CSV с учетом применения фильтров.
+
+.. figure:: _static/audit_filter_ru_2.png
+   :name: audit_filter_pic
+   :align: center
+   :width: 20cm
+   
+   Фильтрация по дате и пользователям
+
+По клику на запись журнала можно посмотреть текст самого запроса (:numref:`audit_log_entry_pic`).
+
+.. figure:: _static/audit_log_entry_ru_2.png
+   :name: audit_log_entry_pic
+   :align: center
+   :width: 20cm
+   
+   Запись в журнале операций
