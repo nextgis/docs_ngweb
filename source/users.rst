@@ -2,58 +2,6 @@
 ==========================
 
 
-.. _ngw_audit:
-
-Регистрация операций пользователей (Аудит)
----------------------------------------------
-
-История пользовательских запросов к Веб-ГИС регистрируется в журнале. Он располагается в разделе **Информация** Панели управления Веб-ГИС (:numref:`control_panel_audit_pic`).
-
-.. figure:: _static/control_panel_audit_ru_2.png
-   :name: control_panel_audit_pic
-   :align: center
-   :width: 18cm
-   
-   Расположение журнала в панели управления Веб-ГИС
-
-Журнал состоит из верхней панели фильтров и таблицы истории запросов пользователей (:numref:`user_activity_log_pic`). Каждое действие пользователя регистрируется в таблице журнала и содержит следующие параметры:
-
-* Время
-* Запрос (включает в себя `код состояния <https://developer.mozilla.org/ru/docs/Web/HTTP/Status>`_ и `метод <https://developer.mozilla.org/ru/docs/Web/HTTP/Methods>`_ запроса)
-* IP адрес
-* Пользователь
-* Имя маршрута
-* Контекст (тип и ID ресурса)
-
-  
-.. figure:: _static/user_activity_log_ru_2.png
-   :name: user_activity_log_pic
-   :align: center
-   :width: 24cm
-   
-   Журнал пользовательских операций
-
-Существует возможность отфильтровать записи в журнале по временному интервалу и пользователю, который совершал действия (:numref:`audit_filter_pic`). Таблица может быть экспортирована в формате .*CSV с учетом применения фильтров.
-
-.. figure:: _static/audit_filter_ru_2.png
-   :name: audit_filter_pic
-   :align: center
-   :width: 20cm
-   
-   Фильтрация по дате и пользователям
-
-По клику на запись журнала можно посмотреть текст самого запроса (:numref:`audit_log_entry_pic`).
-
-.. figure:: _static/audit_log_entry_ru_2.png
-   :name: audit_log_entry_pic
-   :align: center
-   :width: 20cm
-   
-   Запись в журнале операций
-
-
-
-
 
 .. _ngw_create_group:
 
