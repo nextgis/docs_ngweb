@@ -18,3 +18,5 @@ Cross-origin resource sharing (CORS)
    Перечень допустимых источников
 
 Имейте в виду, что разные протоколы (HTTP и HTTPS) и субдомены (example.com и www.example.com) считаются разными источниками. Символ подстановки (*) допустим для доменов третьего уровня и выше.
+
+Также CORS можно настроить `для сервисов NextGIS GeoServices PKK <https://docs.nextgis.ru/docs_geoservices/source/geos_for_dev.html#cors-origins>`_.
