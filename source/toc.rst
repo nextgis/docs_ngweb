@@ -17,15 +17,23 @@
    layers
    edit_resource
    mapstyles
-   mapservertemplates
    layers_settings 
+   vect_layer_upload_params
    webmaps_admin  
    webmap_clone
    webmaps_client
-   vect_layer_upload_params
-   data_collection_on_premise
-   permissions
-   admin_tasks 
+   webmap_set
+   users
+   permissions 
    ngw_srs
+   collector
+   data_collection_on_premise
+   trackers
+   cadaster
+   cors
+   infowebgis
+   analytics
+   look
+   label
    sysadmin_updates   
    
