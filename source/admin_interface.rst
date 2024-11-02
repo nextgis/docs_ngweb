@@ -180,26 +180,30 @@
 .. figure:: _static/ngweb_control_panel_new_ru.png
    :name: ngweb_control_panel
    :align: center
-   :width: 10cm
+   :width: 9cm
 
    Панель управления
 
 Панель управления позволяет выполнять следующие действия:
 
-* Управлять группами и пользователями NextGIS Web
-* Показать информацию о системе
-* Задать название веб ГИС
-* Настроить CORS
-* Задать стилии CSS
-* Настроить пользовательские шрифты
-* Указать стартовую страницу NGW
-* Задать Логотип (в верхнем левом углу)
-* Настроить категорию пользователей, которые имеют права экспортировать данные
-* Завести учетные записи пользователей для проектов Collector
-* Настроить Трекинг
-* Настроить веб-карту
+* `Управлять группами и пользователями NextGIS Web <https://docs.nextgis.ru/docs_ngweb/source/users.html>`_
+* `Показать информацию о системе <https://docs.nextgis.ru/docs_ngweb/source/infowebgis.html>`_
+* `Настроить кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
+* `Добавить учетные записи пользователей <https://docs.nextgis.ru/docs_ngweb/source/collector.html>`_ для проектов Collector
+* `Задать название веб ГИС <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-name>`_
+* `Настроить CORS <https://docs.nextgis.ru/docs_ngweb/source/cors.html>`_
+* `Задать стилии CSS <https://docs.nextgis.ru/docs_ngweb/source/look.html#css>`_
+* `Настроить пользовательские шрифты <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-fonts>`_
+* `Указать стартовую страницу NGW <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-homepage>`_
+* `Задать Логотип (в верхнем левом углу) <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-css-logo>`_
+* `Подключить метрики и аналитику <https://docs.nextgis.ru/docs_ngweb/source/analytics.html>`_
+* Настроить категорию пользователей, которые имеют `права экспортировать данные <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-res-export>`_
+* `Настроить Трекинг <https://docs.nextgis.ru/docs_ngweb/source/trackers.html>`_
+* `Настроить веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html>`_
+* `Управлять системами координат <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html#ngw-srs>`_
+* Персонализировать элементы интерфейса при помощи `модуля White Label <https://docs.nextgis.ru/docs_ngweb/source/label.html>`_ (для Веб ГИС, развёрнутой на своём сервере)
 
-Подробнее эти настройки рассмотрены в разделе :ref:`ngw_admin_tasks`.
+Ряд настроек доступен только для пользователей плана `Premium <http://nextgis.ru/nextgis-com/plans>`_ .
 
 
 
