@@ -23,6 +23,7 @@
    webmap_clone
    webmaps_client
    webmap_set
+   favorites
    users
    permissions 
    ngw_srs
