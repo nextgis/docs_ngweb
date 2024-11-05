@@ -4,7 +4,7 @@
 Проекты сбора данных Collector
 ==============================
 
-В разделе Панели управления "Проекты Collector" настраиваются участники, включенные в `проекты сбора данных <docs.nextgis.ru/docs_ngcom/source/collector.html>`_. Каждый участник должен иметь аккаунт `NextGIS ID <https://docs.nextgis.ru/docs_ngcom/source/create.html#nextgis-id>`_.
+В разделе Панели управления "Проекты Collector" настраиваются участники, включенные в `проекты сбора данных <https://docs.nextgis.ru/docs_ngcom/source/collector.html>`_. Каждый участник должен иметь аккаунт `NextGIS ID <https://docs.nextgis.ru/docs_ngcom/source/create.html#nextgis-id>`_.
 
 
 .. figure:: _static/ngc-stages-004_ru.png
