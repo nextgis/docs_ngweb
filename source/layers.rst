@@ -36,7 +36,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 * Слои и `стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
 * Карты и сервисы (`веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_, сервисы WMS, WFS, OGC API - Features)
-* Сбор данных (группа трекеров, трекер, проект Collector)
+* Сбор данных (`группа трекеров, трекер <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_, проект Collector)
 * Внешние соединения (соединения PostGIS, TMS, WMS)
 * Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-resourses-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/layers.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-lookup-table>`_)
 
