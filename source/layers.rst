@@ -34,11 +34,11 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 Также типы ресурсов сгруппированы по категориям, которые можно выбрать в левой части окна:
 
-* Слои и стили 
-* Карты и сервисы (веб-карта, сервисы WMS, WFS, OGC API - Features)
+* Слои и `стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
+* Карты и сервисы (`веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_, сервисы WMS, WFS, OGC API - Features)
 * Сбор данных (группа трекеров, трекер, проект Collector)
 * Внешние соединения (соединения PostGIS, TMS, WMS)
-* Другие ресурсы (группа ресурсов, библиотека маркеров SVG, справочник)
+* Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-resourses-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/layers.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-lookup-table>`_)
 
 Ниже подробно описан процесс создания разных типов ресурсов.
 
