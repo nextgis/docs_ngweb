@@ -7,6 +7,23 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**4.9.0 released on 06 Okt 2024**
+-----
+
+- New resource creation dialog.
+- Identification panel replaces popup on the webmap.
+- Font management in the control panel.
+- Preview layers with leaving the current page.
+- Preview of the basemap on the resource editing page.
+- Support for empty geometries when importing vector layers.
+- Customizable web map title.
+- WFS client component turned on by default.
+- Data structure permission scope removed.
+- TUS uploader is available using CORS.
+- All of resource widgets migrated to Antd and React.
+- Fix uploading of zero-length files.
+
+
 **4.8.1 released on 20 Sep 2024**
 -----
 
