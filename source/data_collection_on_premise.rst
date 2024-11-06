@@ -45,7 +45,7 @@
 2. Убедиться в наличии настроек NGIDOP (Параметры конфигурации предоставляются по запросу): разделы `Приложения OAuth <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#oauth>`_ и `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#nextgis-id-on-premise>`_ - настройки collector_hub в соответствии с адресом, где он был развернут - **без этого сбор данных будет невозможен**. 
 3. Завести пользователей для сборщиков данных в Разделе `Команда <https://docs.nextgis.ru/docs_ngid/source/ngidop.html#ngidop-teams>`_ NGIDOP
 
-Более полное и развернутое описание есть в `документе <https://docs.google.com/document/d/1fAfL-DqwUKeGQkNHWPRE7sU4N4VRMc4z7xWFShTOCq4/edit?usp=sharing>`_.
+Более полное и развернутое описание есть в `документе <https://docs.google.com/document/d/e/2PACX-1vSMxZbGYBt5ot5_nC1D0_hgX44EqzpTsTOMnPy8gsR--OCP9Ho3_U2ccQ9Og4ilRKrm6TyxyLVy5OTi/pub>`_.
 
 **Администратор проекта**
 
