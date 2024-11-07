@@ -1,6 +1,8 @@
 Customize UI Elements (White label)
 ====================================
 
+.. note:: This functionality is only available `on-premise <https://nextgis.com/pricing/>`_
+
 White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements mentioning NextGIS.
 
 .. figure:: _static/Control_panel_whitelabel.png
