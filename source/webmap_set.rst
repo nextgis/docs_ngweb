@@ -23,7 +23,7 @@ Using the control panel administrator can set a number of general settings for a
 .. _ngw_contr_panel_webmap_no_menu:
 
 Navigation menu vizibility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 You can hide the navigation menu for guests. While veiwing your Web Maps, guests will not have access to the main dropdown menu in the top right corner that has link to the main resource group.
 
@@ -41,7 +41,7 @@ In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_
 .. _ngw_contr_panel_webmap_ident:
 
 Identify popup
-~~~~~~~~~~~~~~~
+---------------
 
 Feature identification information can be displayed as a pop-up window or as a side panel. To select a display mode, move the switch marked "Use panel instead of popup identification".
 
@@ -65,8 +65,8 @@ At the same time you can turn on/off the display of feature attributes.
 
 .. _ngw_contr_panel_webmap_measure:
 
-Measurement
-~~~~~~~~~~~
+Measurements
+------------
 
 The section sets the parameters responsible for various measurements on the Web Map:
 
@@ -79,7 +79,7 @@ The section sets the parameters responsible for various measurements on the Web 
 .. _ngw_contr_panel_webmap_search:
 
 Address search
-~~~~~~~~~~~~~~
+----------------
 
 NextGIS Web address search is performed through one of the two data bases (providers):
 
