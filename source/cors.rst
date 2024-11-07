@@ -7,37 +7,13 @@ Cross-origin resource sharing (CORS)
 If you’re a developer and would like to use your Web GIS as a backend for your own map or an app, you can switch on and set up `CORS <https://wikipedia.org/wiki/Cross-origin_resource_sharing>`_. 
 This mode allows to use data from Web GIS for a map or system on your ogranization's domain, while all geodata uploads and management pains will be taken care of by your Web GIS at nextgis.com.
 
-1. To switch on CORS, first go to your Web GIS Control panel:
-
-.. figure:: _static/Main_menu_eng.png
-   :name: Main_menu
-   :align: center
-   :width: 850px
-   
-   Opening the main menu
-
-.. figure:: _static/Control_panel_eng.png
-   :name: Control_panel
-   :align: center
-   :width: 850px
-   
-   Selecting Control panel
-
-
-2. Select "Cross-origin resource sharing (CORS)" section and enter allowed origins for cross-domain requests on CORS Settings page:
-
-.. figure:: _static/CORS_select_eng.png
-   :name: CORS_select
-   :align: center
-   :width: 850px
-   
-   Selecting CORS in the Control panel
+In your Web GIS Control panel go to "Cross-origin resource sharing (CORS)" section and enter allowed origins for cross-domain requests on CORS Settings page, one origin per line. Press **Save**.
 
 .. figure:: _static/CORS_settings_eng.png
    :name: CORS
    :align: center
-   :width: 850px
+   :width: 20cm
    
    CORS settings page
    
-Press **Save**.
+Please note that different protocols (HTTP and HTTPS) and subdomains (example.com and www.example.com) are different origins. Wildcards are allowed for third-level domains and higher.
