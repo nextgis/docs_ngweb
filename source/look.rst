@@ -1,3 +1,31 @@
+Design customization
+=====================
+
+The look of your Web GIS can be modified. You can customize logos, title, fonts, colors of the header, background, buttons and other elements.
+
+.. note::
+   These settings can only be changed by an administrator. Apart from changing the Web GIS name and fonts, other design settings are only available on the `Premium <https://nextgis.com/pricing-base/>`_ subscription plan.
+
+Web GIS name
+-------------
+
+It's the title displayed next to the logo on the top bar of the page. By default it's the same as the Web GIS URL, but it can be changed.
+
+.. figure:: _static/webgis_name_default_en.png
+   :name: webgis_name_default_pic
+   :align: center
+   :width: 20cm
+
+   Default name
+
+.. figure:: _static/webgis_name_custom_en.png
+   :name: webgis_name_custom_pic
+   :align: center
+   :width: 20cm
+
+   Custom name
+
+
 .. _ngw_fonts:
 
 Font management
@@ -10,12 +38,20 @@ On this page you can view the list of system and custom fonts, upload or delete 
 .. figure:: _static/font_manag_en.png
    :name: font_manag_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Font management page. System fonts are shown. A custom font is selected.
 
 `Learn more <https://docs.nextgis.com/docs_ngcom/source/fonts.html>`_ on how to manage fonts.
 
+
+.. _ngweb_CSS_logo:
+
+Upload a logo
+-------------
+You can change the upper-left logo (present on all pages), you can't change the Web map logo (lower right).
+
+To upload a logo choose :guilabel:`Custom logo` on control panel (see item 1 in :numref:`admin_index_pic`) and in opened window upload a file in PNG format with height up to 45 px, width up to 200 px. Then press "Save".
 
 .. _ngw_CSS:
 
@@ -63,109 +99,14 @@ Affects paths for the displayed resource, parameters etc.
   	--text-secondary: rgb(40 200 40 / .8)
 	}
 	
+How to change the homepage address
+-------------------------------------
+
+By default the starting page of your Web GIS is the main resource page (``/resource/0``). You can change which page will be opened first. If this is a Web map, it might look like this: ``/resource/644/display``.
+
+#. Sign in as the user with administrative privileges and open Control panel, then select :guilabel:`Home path`. 
+#. Enter path to the resource page that should be opened first when you Web GIS is accessed.
+
+After making this setting visiting ``http://yourwebgis.nextgis.com`` will open not the main resource contents page, but the page you've set up. To access main resource content page after this setting you will need to go directly to: ``http://yourwebgis.nextgis.com/resource/0``.
 
 
-Customize NextGIS UI Elements (White label)
-----------------------------------------
-
-White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements mentioning NextGIS.
-
-.. figure:: _static/Control_panel_whitelabel.png
-   :name: Control_panel_whitelabel
-   :align: center
-   :width: 20cm
-   
-   'White label' module in control panel
-
-Company logo on Web Map
-~~~~~~~~~~~~~~~~~~~~~~~
-
-In Control Panel, you can upload your logo in PNG format (see in :numref:`logo_whitelabel_en`) to display in the lower right corner of the map.
-
-.. figure:: _static/logo_whitelabel_en.png
-   :name: logo_whitelabel_en
-   :align: center
-   :width: 25cm
-
-   Upload company logo file
-
-If the file is not loaded, there is no logo (see in :numref:`web-map_logo`).
-
-.. figure:: _static/web-map_logo.png
-   :name: web-map_logo
-   :align: center
-   :width: 25cm
-
-   Web Map with NextGIS logo (left) and without logo (right)
-  
-  
-Company URL
-~~~~~~~~~~~
-  
-You can assigned a new hyperlink for a company website to a just added logo (см. :numref:`url-logo_en`)
-
-.. figure:: _static/url-logo_en.png
-   :name: url-logo_en
-   :align: center
-   :width: 15cm
-
-   Company URL
- 
- 
-Help page
-~~~~~~~~~
-By default, help leads to http://nextgis.com/help/. You can set a different hyperlink (see in :numref:`help_whitelabel_en`) to 'Help'.
-
-.. figure:: _static/help_whitelabel_en.png
-   :name: help_whitelabel_en
-   :align: center
-   :width: 15cm
-
-   Reroute a link to 'help'
-
-.. figure:: _static/help_link_en_2.png
-   :name: help_link_en
-   :align: center
-   :width: 10cm
-
-   'Help' in the menu
-
-
-Support URL
-~~~~~~~~~~~
-
-Also you can set URL for the technical support page (see in :numref:`tech_support`).
-
-This link will appear on error messages:
-
-.. figure:: _static/tech_support.png
-   :name: tech_support
-   :align: center
-   :width: 16cm
-   
-   Support URL in the interface
-   
-
-
-
-Other items
-~~~~~~~~~~~~~~~~~
-
-* The default Web GIS name is specified without mentioning NextGIS.
-* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS**(см. :numref:`WMS_WFS_whitelabel`).
-
-.. figure:: _static/WMS_WFS_whitelabel.png
-   :name: WMS_WFS_whitelabel
-   :align: center
-   :width: 25cm
-
-   Replacing *NextGIS QGIS* (left) with *QGIS* (right) in WMS and WFS services
-   
-* The social networks preview mentioning NextGIS is removed (см. :numref:`Preview_maplinks`).
-
-.. figure:: _static/Preview_maplinks.png
-   :name: Preview_maplinks
-   :align: center
-   :width: 25cm
-
-   Hiding the mention of *NextGIS QGIS* in web GIS links
