@@ -18,15 +18,22 @@ Contents:
    layers
    edit_resource
    mapstyles
-   mapservertemplates
    layers_settings 
+   vect_layer_upload_params
    webmaps_admin   
    webmap_clone
    webmaps_client
-   vect_layer_upload_params
-   data_collection_on_premise
+   webmap_set
+   favorites
+   users
    permissions
-   admin_tasks 
    ngw_srs
+   collector
+   data_collection_on_premise
+   cors 
+   infowebgis
+   analytics
+   look
+   label
    sysadmin_updates    
    extension
