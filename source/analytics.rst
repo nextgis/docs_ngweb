@@ -9,7 +9,7 @@ In this section of the Control panel you can add tracking code to your Web GIS. 
 .. figure:: _static/analytics_empty_en.png
    :name: analytics_empty_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Metrics and analytics
    
@@ -18,7 +18,7 @@ To add new measurement code, press **Add**, select a service you'd like to enabl
 .. figure:: _static/analytics_add_google_en.png
    :name: analytics_add_google_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Adding new measurement
 
