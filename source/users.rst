@@ -1,3 +1,9 @@
+Managing users
+================
+
+If you want to add a user to your team, see the `Team management <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_.
+
+
 .. _ngw_create_group:
 
 Create new user group
@@ -20,7 +26,7 @@ Set "New users" flag for a group to automatically assign new user to it.
    A name for a group should contain only letters and numbers. 
 
 Global permissions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------
 
 While creating or editing a user or user group, you can set global permissions concerning Web GIS a whole:
 
