@@ -182,20 +182,22 @@ NextGIS Web Control panel is available through the main menu (see item 1 in :num
 
 Control panel allows to execute the following actions:
 
-* Manage NextGIS Web groups and users
-* Display information about the system and storage
+* `Manage NextGIS Web groups and users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_
+* `Display information about the system and storage <https://docs.nextgis.com/docs_ngweb/source/infowebgis.html>`_
 * Access cadaster services
-* Create user accounts for Collector projects
-* Set the name of your Web GIS
-* Configure CORS
-* Manage custom fonts
-* Set CSS styles
-* Specify NGW start page (home path)
-* Set Logo (in the upper left corner)
-* Customize a type of users who have permission to export data
-* Customize Tracking
-* Customize Web Map
-* Add spacial reference systems
+* `Add participants of Collector projects <https://docs.nextgis.com/docs_ngweb/source/collector.html>`_
+* `Set the name of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#web-gis-name>`_
+* `Configure CORS <https://docs.nextgis.com/docs_ngweb/source/cors.html>`_
+* `Manage custom fonts <https://docs.nextgis.com/docs_ngweb/source/look.html#font-management>`_
+* `Set CSS styles <https://docs.nextgis.com/docs_ngweb/source/look.html#customize-the-design-with-css>`_
+* `Specify NGW start page (home path) <https://docs.nextgis.com/docs_ngweb/source/look.html#how-to-change-the-homepage-address>`_
+* `Set custom Logo (in the upper left corner) <https://docs.nextgis.com/docs_ngweb/source/look.html#upload-a-logo>`_
+* `Set up Analytics <https://docs.nextgis.com/docs_ngweb/source/analytics.html>`_
+* `Specify which users see the data export button <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#resource-export>`_
+* `Customize display of Tracks <https://docs.nextgis.com/docs_ngweb/source/trackers.html>`_
+* `Customize Web Maps <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html>`_
+* `Add spacial reference systems <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_
+* `Customize UI elements with White Label module (on-premise only) <https://docs.nextgis.com/docs_ngweb/source/label.html>`_
 
 For more information about creation of user groups and users and granting 
 permissions see topic :ref:`ngw_admin_tasks`.
