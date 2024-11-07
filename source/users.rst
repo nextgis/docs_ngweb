@@ -19,7 +19,7 @@ To open this window select "Control panel" (see :numref:`ngweb_main_page_main_me
 
    "Create new group" dialog
 
-In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and click **"Create"**. 
+In "Create new group" dialog enter full name and group name (short name), if necessary enter a group description, set group members and global permissions (see `below <https://docs.nextgis.com/docs_ngweb/source/users.html#global-permissions>`_) and click **"Create"**. 
 Set "New users" flag for a group to automatically assign new user to it.
 
 .. note:: 
@@ -69,7 +69,7 @@ In "Create new user" dialog enter the following information:
 * Login – user login (e.g. smith)
 * Password
 * Group(-s) user belongs to (select from a dropdown menu. If the required group is absent you need to create a new one (see :ref:`ngw_create_group`)).
-* Permissions - `global permissions <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#global-group-permissions>`_ concerning Web GIS as a whole
+* Permissions - `global permissions <https://docs.nextgis.com/docs_ngweb/source/users.html#global-permissions>`_ concerning Web GIS as a whole
 * Interface language for the user
 
 You can add some more information about the user in the "Description" field.
