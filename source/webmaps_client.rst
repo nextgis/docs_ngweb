@@ -70,7 +70,7 @@ The **layer tree** contains a list of all layer styles added to the web map. The
 
 1. Coordinates.
 2. Attributes of layers added to a map.
-3. Address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#address-search>`_). 
+3. Address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#address-search>`_). 
 
 Results are shown as user inputs text and are sorted in this order: points on the map matching the coordinates, then feature numbers for attribute search and finally full addresses.
 After a click on a search result map changes extent to show selected feature.
