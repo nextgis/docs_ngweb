@@ -30,6 +30,7 @@ Contents:
    ngw_srs
    collector
    data_collection_on_premise
+   trackers
    cors 
    infowebgis
    analytics
