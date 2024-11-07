@@ -1,3 +1,27 @@
+Web GIS information
+====================
+
+.. _ngw_system_info:
+
+System information
+------------------
+
+Through the control panel, the administrator can view information about the system and the current version of the platform (see :numref:`admin_system_info_rus_eng`). Using the icon in the upper right corner, you can copy all this data to the clipboard.
+
+.. figure:: _static/admin_system_info_eng_2.png
+   :name: admin_system_info_rus_eng
+   :align: center
+   :width: 16cm
+
+   System information section in the control panel
+
+
+.. figure:: _static/admin_system_info1_rus_eng.png
+   :name: admin_system_info1_rus_eng
+   :align: center
+   :width: 16cm
+
+   System and platform information
 
 .. _ngw_storage:
 
@@ -26,28 +50,15 @@ In this section you can see a list of available NextGIS Web backups, as well as 
 The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
 
 
+Backup policy
+--------------
 
-.. _ngw_system_info:
+Data backups are performed for every Web GIS (any plan). The frequency depends on total data volume and Web GIS use activity (once or several times per month).
 
-System information
-------------------
+Restoring data from backups is available for `Premium <https://nextgis.com/pricing-base/>`_ users only. Other plans Web GIS are backup-ed to mitigate possible infrastructure risks not related to user actions.
 
-Through the control panel, the administrator can view information about the system and the current version of the platform (see :numref:`admin_system_info_rus_eng`). Using the icon in the upper right corner, you can copy all this data to the clipboard.
-
-.. figure:: _static/admin_system_info_eng_2.png
-   :name: admin_system_info_rus_eng
-   :align: center
-   :width: 16cm
-
-   System information section in the control panel
-
-
-.. figure:: _static/admin_system_info1_rus_eng.png
-   :name: admin_system_info1_rus_eng
-   :align: center
-   :width: 16cm
-
-   System and platform information
+If you are on Premium and need a restore - send us a request to support@nextgis.com. We'll let you know which dates are available. Additionally, you can see the last backup date 
+under System information section of your Web GIS' Control panel (subsection Platform - Last backup).
 
 
 .. _ngw_audit:
