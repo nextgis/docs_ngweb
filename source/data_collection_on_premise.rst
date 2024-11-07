@@ -41,7 +41,7 @@ Administrator's check-list
 
 Now you can set up projects for data collection. NGW has a special type of resource for that, **Collector Project**. You need to enter a resource name  (it will be visible for data collectors in NextGIS Collector app and for the administrator in the NGW interface). You also have an option to add description and metadata.
 
-6. Set up parameters in the tabs: **Project, Items, Collectors**. In the **Project** tab the administrator enters the credentials of an NGW user that will be utilized for adding the collected data to the database. By default it can be the *administrator* user given when NGW is deployed. But we recommend `creating <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#ngw-create-user>`_ a special user for the purpose. In the **Items** tab add layers the data will be stored in and basemaps to make the collection process more handy. In the **Collectors** tab from the list (see step 4) select users who will have access to data collection in this project. Save the project parameters.
+6. Set up parameters in the tabs: **Project, Items, Collectors**. In the **Project** tab the administrator enters the credentials of an NGW user that will be utilized for adding the collected data to the database. By default it can be the *administrator* user given when NGW is deployed. But we recommend `creating <https://docs.nextgis.com/docs_ngweb/source/users.html#create-new-user>`_ a special user for the purpose. In the **Items** tab add layers the data will be stored in and basemaps to make the collection process more handy. In the **Collectors** tab from the list (see step 4) select users who will have access to data collection in this project. Save the project parameters.
 
 —--------------------
 
