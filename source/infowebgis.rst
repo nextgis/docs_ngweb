@@ -19,7 +19,7 @@ Through the control panel, the administrator can view information about the syst
 .. figure:: _static/admin_system_info1_rus_eng.png
    :name: admin_system_info1_rus_eng
    :align: center
-   :width: 16cm
+   :width: 22cm
 
    System and platform information
 
@@ -28,6 +28,8 @@ Through the control panel, the administrator can view information about the syst
 Storage
 --------
 
+.. note:: This functionality is only available for cloud Web GIS
+
 The "Storage" section contains information about the volume of data loaded into Web GIS depending on their type.
 The space usage estimate is located below the main table.
 The administrator can forcibly recalculate the amount of storage (for example - immediately after loading big data, if the system has not yet recalculated the occupied space on its own).
@@ -35,7 +37,7 @@ The administrator can forcibly recalculate the amount of storage (for example - 
 .. figure:: _static/admin_storage_panel_settings_eng.png
    :name: admin_storage_panel_settings
    :align: center
-   :width: 18cm
+   :width: 24cm
 
    Storage section
 
@@ -48,6 +50,8 @@ Backups
 
 In this section you can see a list of available NextGIS Web backups, as well as download any of them.
 The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
+
+.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 
 
 Backup policy
@@ -65,6 +69,8 @@ under System information section of your Web GIS' Control panel (subsection Plat
 
 User activity log
 ------------------
+
+.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 
 User requests to the Web GIS are logged in a journal. It can be found in the **Info** section of the Control panel of the Web GIS (:numref:`control_panel_audit_pic`).
 
