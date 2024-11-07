@@ -213,6 +213,10 @@ Click **Create** to finish the process. The window of the created MapServer styl
 
    Mapserver style window
  
+.. toctree::
+   :maxdepth: 1
+
+   mapservertemplates
 
 .. _ngw_create_tile_cache:
 
