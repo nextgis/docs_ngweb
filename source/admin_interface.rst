@@ -7,7 +7,7 @@ Administrator interface (Admin console)
 =========================================
 
 Authorization
------------
+--------------
 
 To open the admin console, open the Web GIS and press "Sign in" in the top right corner.
 
@@ -112,6 +112,58 @@ On the main page there is also a block of extra links:
 * User permissions - show access rights for the logged in user. `Learn more about user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_;
 * JSON view.
 
+.. _ngw_change_lang:
+
+Language change
+---------------
+
+Any authorized user can switch the interface language.
+To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`).
+
+.. figure:: _static/admin_settings_lang_en.png
+   :name: admin_settings_lang_pic
+   :align: center
+   :width: 10cm
+
+   Go to Settings bar
+
+The following languages are available for selection (:numref:`admin_settings_lang_pic`)
+
+* Default browser
+* Russian
+* English
+* Bulgarian
+* Chinese
+* Czech
+* French
+* German
+* Italian
+* Spanish
+* Portuguese
+
+.. figure:: _static/admin_select_lang_en_2.png
+   :name: admin_select_lang_pic
+   :align: center
+   :width: 16cm
+
+   Selecting language
+
+
+
+.. _ngw_search_bar:
+
+Resource search
+---------------
+
+For easy search for resources and navigation, there is a search bar in the top bar (:numref:`admin_search_bar_pic`).
+The search is carried out in the entire existing database, regardless of which directory the user is currently in.
+
+.. figure:: _static/admin_search_bar_en.png
+   :name: admin_search_bar_pic
+   :align: center
+   :width: 12cm
+
+   Finding Resources in Web GIS
 
 
 .. _ngw_control_panel:
@@ -271,7 +323,7 @@ You can also `edit the attributes <https://docs.nextgis.com/docs_ngweb/source/ed
 .. _ngw_feature_table_filter_area:
 
 Filter layer features on the Web Map by area
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 NextGIS Web has a tool in the Feature table that filters all layer features within a selected area. To choose area limits just draw them on the Web Map.
 
