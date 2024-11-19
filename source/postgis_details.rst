@@ -5,7 +5,7 @@
 
 .. _ngw_postgis_multigeo_table:
 
-Совместное хранение геометрии в таблице
+Хранение нескольких геометрий в таблице
 ----------------------------------------
 
 Программное обеспечение NextGIS Web поддерживает добавление таблиц, в которых в 
@@ -47,7 +47,7 @@
 .. figure:: _static/diagnostics_successfully_layer_ru.png
    :name: diagnostics_successfully_layer_ru
    :align: center
-   :width: 16cm
+   :width: 20cm
 
 В случае, если какие-то из введенных данных не корректны - появится сообщение об ошибке.
 
@@ -64,7 +64,7 @@
 .. figure:: _static/diagnostics_fail_layer_ru.png
    :name: diagnostics_fail_layer_ru
    :align: center
-   :width: 16cm
+   :width: 20cm
 
 .. _ngw_postgis_diagnostics:
 
@@ -105,7 +105,7 @@
 .. figure:: _static/pgadmin3_rus.png
    :name: ngweb_pgadmin3
    :align: center
-   :width: 20cm
+   :width: 22cm
 
    Главное окно ПО :program:`pgAdminIII`.
 
