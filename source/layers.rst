@@ -563,7 +563,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Добавление колонки с ID в QGIS
 
-
+С другими особенностями использования PostGIS в NextGIS Web вы можете ознакомиться `здесь <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_.
 
 .. _ngw_create_wms_layer:
 
