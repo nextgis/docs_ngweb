@@ -21,7 +21,7 @@ Custom Spacial Reference Systems
 ----------------------------------
 
 .. note::
-    Custom SRS functionality is available on `Premium <http://nextgis.com/pricing/#premium/>`_ and while using the product `On-premise <https://nextgis.com/pricing/>`_.
+    Custom SRS functionality is available on `Premium <https://nextgis.com/pricing-base/>`_ and while using the product `On-premise <https://nextgis.com/pricing/>`_.
 
 .. note::
     Only users with administrative permissions can add and modify SRS.
@@ -29,7 +29,7 @@ Custom Spacial Reference Systems
 If needed, you can import additional SRS from the catalog or create your own.
 
 Import SRS from catalog
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 To add an SRS from the catalog, go to the Control panel and in the Spacial reference system section press **Catalog** (or, if you are viewing the SRS list, press **Import from catalog**). 
 You will be redirected to the catalog page. Start typing the name of the SRS in the search bar. When you find the desired SRS in the search results, press the icon with the arrow next to it.
