@@ -19,6 +19,7 @@
    mapstyles
    layers_settings 
    vect_layer_upload_params
+   postgis_details
    webmaps_admin  
    webmap_clone
    webmaps_client
