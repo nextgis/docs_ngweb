@@ -1,5 +1,13 @@
+.. _collector:
+
+.. _nextgis.com: http://nextgis.com/
+.. _NextGIS Collector: https://play.google.com/store/apps/details?id=com.nextgis.collector
+
 Collector projects
 ===================
+
+.. note:: You can use described functionality in Web GIS created in nextgis.com_ service on `Premium plan <https://nextgis.com/pricing-base/>`_
+  
 
 In the Collector Projects section of the Control Panel, you can manage the list of `data collectors <https://docs.nextgis.com/docs_ngcom/source/collector.html>`_. Each participant must have a `NextGIS ID account <https://docs.nextgis.com/docs_ngcom/source/create.html#how-to-create-account-nextgis-id>`_.
 
