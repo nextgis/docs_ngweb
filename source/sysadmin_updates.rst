@@ -13,7 +13,7 @@ This section describes the latest changes to the software.
 - New resource creation dialog.
 - Identification panel replaces popup on the webmap.
 - Font management in the control panel.
-- Preview layers with leaving the current page.
+- Preview layers without leaving the current page.
 - Preview of the basemap on the resource editing page.
 - Support for empty geometries when importing vector layers.
 - Customizable web map title.
