@@ -1,5 +1,8 @@
+PostGIS specifics and diagnostic
+===================================
+
 Details
-^^^^^^^
+------------
 
 NextGIS Web software supports tables with point, line and polygon geometries stored in a single geometry column. 
 This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points. In this case, in NextGIS Web you need to add three different layers, one for each type of geometry, and select the appropriate "Geometry type" parameter for each layer.
@@ -11,7 +14,7 @@ If the structure of the database changes (column names, column types, number of 
 .. _ngw_postgis_diagnostics:
 
 PostGIS diagnostics
-^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 You can check the correctness of the entered data when adding the **PostGIS Connection** resource using the **Diagnostics** tool.
 To do this, you need to click on the **Diagnostics** button on the panel on the right.
@@ -43,7 +46,7 @@ If any of the entered data is not correct, an error message will appear.
 .. _ngw_postgis_diagnostics:
 
 PostGIS layer troubleshooting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 You created a connection, but when you try to create a PostGIS layer based on it, you get errors. 
 
@@ -56,7 +59,7 @@ Check the database: is it available, do you have the right credentials? You can 
 Note that databases may be down temporarily and credentials might change.
 
 Create layers with conditions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------------
 
 In :program:`NextGIS Web` you can not define queries using WHERE SQL clause. 
 This provides additional security (prevention of SQL Injection attack). To 
