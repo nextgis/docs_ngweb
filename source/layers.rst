@@ -323,7 +323,7 @@ In the "Metadata" tab you can add information in the "key-value" format (:numref
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a form or data collection.
 
 
 .. _ngw_vector_data_requirements:
@@ -543,90 +543,7 @@ And then use this column (fid) an ID column in NextGIS Web.
    Adding fid column in QGIS
 
 
-Details
-^^^^^^^
 
-NextGIS Web software supports tables with point, line and polygon geometries stored in a single geometry column. 
-This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points. In this case, in NextGIS Web you need to add three different layers, one for each type of geometry, and select the appropriate "Geometry type" parameter for each layer.
-
-After a layer is created, you need to set a label attribute to display labels. Navigate to layer edit dialog and set a checkbox for the required field in the "Label attribute" column.
-
-If the structure of the database changes (column names, column types, number of columns, table names etc.), you need to update the attribute definitions in the layer properties. Select "Update" in the actions pane and then on the "PostGIS layer" tab change "Attribute definitions" to "Reload" and click **Save**.
-
-.. _ngw_postgis_diagnostics:
-
-PostGIS diagnostics
-^^^^^^^^^^^^^^^^^^^
-
-You can check the correctness of the entered data when adding the **PostGIS Connection** resource using the **Diagnostics** tool.
-To do this, you need to click on the **Diagnostics** button on the panel on the right.
-
-.. figure:: _static/diagnostics_start_en.png
-   :name: diagnostics_start_en
-   :align: center
-   :width: 24cm
-
-If all fields are filled in correctly when creating a connection to PostGIS - diagnostics will be successful.
-
-.. figure:: _static/diagnostics_successfully_en.png
-   :name: diagnostics_successfully_en
-   :align: center
-   :width: 24cm
-
-If any of the entered data is not correct, an error message will appear.
-
-.. figure:: _static/diagnostics_fail1_en.png
-   :name: diagnostics_fail1_en
-   :align: center
-   :width: 24cm
-
-.. figure:: _static/diagnostics_fail2_en.png
-   :name: diagnostics_fail2_en
-   :align: center
-   :width: 24cm
-
-.. _ngw_postgis_diagnostics:
-
-PostGIS layer troubleshooting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You created a connection, but when you try to create a PostGIS layer based on it, you get errors. 
-
-If you get:
-
-1. Cannot connect to the database!
-
-Check the database: is it available, do you have the right credentials? You can do it using :program:`pgAdmin` or :program:`NextGIS QGIS`.
-
-Note that databases may be down temporarily and credentials might change.
-
-Create layers with conditions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In :program:`NextGIS Web` you can not define queries using WHERE SQL clause. 
-This provides additional security (prevention of SQL Injection attack). To 
-provide query capability you need to create views with appropriate queries in the database.
-
-To do this connect to PostgreSQL/PostGIS database using :program:`pgAdmin`, 
-then navigate to data schema where you want to create a view, right click tree 
-item "Views" and select "New view" (see item 1 in :numref:`pgadmin3`). Also you can right click on schema name and select "New object" and then "New view". In the opened dialog, enter the following information:
-
-#. View name («Properties» tab).
-#. Data schema where to create a view («Properties» tab).
-#. SQL query («Definition» tab).
-
-.. figure:: _static/pgadmin3_eng.png
-   :name: pgadmin3
-   :align: center
-   :width: 20cm
-
-   Main dialog of :program:`pgAdmin` software
-
-   The numbers indicate: 1. – Database items tree; 2 – a button for  
-   table open (is active if a table is selected in tree); 3 – SQL query for  
-   view.
-
-After that you can display a view to check if the query is correct without closing :program:`pgAdmin` (see  item 2 in :numref:`pgadmin3`). 
 
 .. _ngw_create_wms_layer:
 
@@ -1059,6 +976,99 @@ In the "Tile Cache" tab, the user can set the caching settings:
    Tileset settings
 
 After filling in all the fields, clicking the **Create button** completes the process of creating the resource **Tileset**.
+
+.. _ngw_wfs:
+
+WFS Layer
+------------
+
+WFS allows to get data published on third-party GIS servers (arcgis, geoserver etc), apply custom styles to them and add them to Web Maps.
+
+First you need to create a WFS connection.
+
+.. _ngw_wfs_connection:
+
+WFS connection
+^^^^^^^^^^^^^^^
+
+Press **Create resource** button and select  **WFS connection**.
+
+.. figure:: _static/ngweb_create_wfs_conn_en.png
+   :name: ngweb_create_wfs_conn_pic
+   :align: center
+   :width: 20cm
+
+   Selection of "WFS connection" resource type
+   
+Next you can enter a custom name that will be displayed in the resource list.
+
+.. figure:: _static/wfs_connection_name_en.png
+   :name: wfs_connection_name_pic
+   :align: center
+   :width: 16cm
+
+   Name for WFS connection
+   
+“Keyname” field is optional. The "Description" and "Metadata" of the resource can be configured on the corresponding tabs.
+
+On the "WFS connection" tab enter the parameters that will be used to connect to the **WFS server** providing the data:
+
+* URL
+* Username 
+* Password 
+* WFS version
+
+.. figure:: _static/wfs_connection_set_en.png
+   :name: wfs_connection_set_pic
+   :align: center
+   :width: 16cm
+
+   WFS connection settings
+
+If the version you selected is not supported, you'll get an error message after pressing **Create**:
+
+.. figure:: _static/wfs_connection_error_en.png
+   :name: wfs_connection_error_pic
+   :align: center
+   :width: 16cm
+
+   Error message for incorrect WFS version
+
+Next you can create WFS layer resource.
+
+.. _ngw_wfs_layer:
+
+WFS Layer
+^^^^^^^^^
+
+**WFS Layer** is added using an existing WFS connection. Select the resource type in the **Create resource** menu.
+
+.. figure:: _static/ngweb_create_wfs_layer_en.png
+   :name: ngweb_create_wfs_layer_pic
+   :align: center
+   :width: 20cm
+   
+   Selection of "WFS layer" resource type
+
+In the opened window in the "WFS layer" tab select the WFS connection you created. Next select the layer and the geometry field. SRID will be added automatically.
+
+.. figure:: _static/wfs_layer_settings_en.png
+   :name: wfs_layer_settings_pic
+   :align: center
+   :width: 16cm
+
+   WFS layer settings
+
+In the "Resource" tab you can set a custom name for the layer. You can also enter description and metadata on the corresponding tabs.
+
+To add a WFS layer to a Web Map, you need to create a style for it. You can create a default QGIS style or `a custom QGIS or Mapserver style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ using "Create resource" menu.
+
+.. figure:: _static/wfs_layer_result_en.png
+   :name: wfs_layer_result_pic
+   :align: center
+   :width: 16cm
+
+   Two ways to add a style to WFS layer
 
 
 .. _ngw_wfs_service:
