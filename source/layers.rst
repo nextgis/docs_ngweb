@@ -542,7 +542,7 @@ And then use this column (fid) an ID column in NextGIS Web.
 
    Adding fid column in QGIS
 
-
+More details about PostGIS `here <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html>`_.
 
 
 .. _ngw_create_wms_layer:
