@@ -1,8 +1,8 @@
 PostGIS specifics and diagnostic
 ===================================
 
-Details
-------------
+Multiple geometries in a singe table
+-------------------------------------
 
 NextGIS Web software supports tables with point, line and polygon geometries stored in a single geometry column. 
 This is required for some specific datasets: e.g. if one table stores coordinates for parks as polygons and trash cans as points. In this case, in NextGIS Web you need to add three different layers, one for each type of geometry, and select the appropriate "Geometry type" parameter for each layer.
@@ -16,7 +16,7 @@ If the structure of the database changes (column names, column types, number of 
 PostGIS diagnostics
 -----------------------
 
-You can check the correctness of the entered data when adding the **PostGIS Connection** resource using the **Diagnostics** tool.
+You can check the correctness of the entered data when adding the `PostGIS Connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#creating-postgis-connection>`_ resource using the **Diagnostics** tool.
 To do this, you need to click on the **Diagnostics** button on the panel on the right.
 
 .. figure:: _static/diagnostics_start_en.png
