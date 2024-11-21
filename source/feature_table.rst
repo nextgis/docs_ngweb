@@ -1,6 +1,15 @@
 Managing Feature table
 ========================
 
+Feature table can be displayed in a separate browser tab or on the Web Map.
+
+To edit feature table, log in first.
+
+Feature table on a separate tab
+------------------------------------
+
+Press the "Table" icon opposite the resource name or select an action for a vector layer called "Table" in the features pane.
+
 Feature table allows to perform the following operations with a selected feature  (see :numref:`admin_table_objects1_upload`):
 
 1. Open
@@ -19,6 +28,9 @@ Feature table allows to perform the following operations with a selected feature
    :width: 16cm
 
    Actions for the selected feature in the feature table
+
+Feature table on a Web Map
+------------------------------
 
 There is another way to open Feature table. In the adminitrative interface navigate to a child resource group where resource types are marked and find a resource with a type Web Map. Open it by clicking on the "Display" icon (see :numref:`webmap_open_from_group_pic`):
 
@@ -39,6 +51,13 @@ Alternatively, you can go to the resource page and click "Display" in the Web Ma
    Opening a Web Map from the resouce page
 
 A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select the required layer in layer tree and then select "Feature table" command in the Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
+
+.. figure:: _static/map_and_tree_layers_eng_3.png
+   :name: admin_map_and_tree_layers_upload
+   :align: center
+   :width: 20cm
+
+   Opening feature table from the map
   
 Table allows to perform the following operations with the selected feature  :numref:`admin_table_objects2_upload`:
 
@@ -67,7 +86,7 @@ You can also `edit the attributes <https://docs.nextgis.com/docs_ngweb/source/ed
 .. _ngw_feature_table_filter_area:
 
 Filter layer features on the Web Map by area
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------
 
 NextGIS Web has a tool in the Feature table that filters all layer features within a selected area. To choose area limits just draw them on the Web Map.
 
