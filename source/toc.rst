@@ -17,6 +17,7 @@ Contents:
    admin_interface
    layers
    edit_resource
+   feature_table
    mapstyles
    layers_settings 
    vect_layer_upload_params
