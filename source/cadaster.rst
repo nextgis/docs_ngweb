@@ -107,7 +107,7 @@
 
 Для завершения нажмите **Создать**.
 
-Далее этот слой можно `добавить на веб-карту <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#id2>`_.
+Далее этот слой можно `добавить на веб-карту <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create>`_.
 
 .. figure:: _static/cadaster_basemap_tms_ru.png
    :name: cadaster_basemap_tms_pic
