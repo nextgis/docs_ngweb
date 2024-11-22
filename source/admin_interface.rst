@@ -1,15 +1,35 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
+.. |button_delete| image:: _static/button_delete.png
+   :width: 6mm
+   :alt: trash can
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: magnifying glass on map
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_preview| image:: _static/button_preview.png
+   :width: 6mm
+   :alt: eye
+
 .. _ngw_admin_interface:
 
-Administrator interface (Admin console)
-=========================================
+Main interface
+==================
 
 Authorization
 --------------
 
-To open the admin console, open the Web GIS and press "Sign in" in the top right corner.
+Open the Web GIS and press "Sign in" in the top right corner.
 
 .. figure:: _static/ngweb_before_signin_en.png
    :name: ngweb_before_signin_pic
@@ -44,15 +64,14 @@ After the authorization is completed successfully you will be redirected back to
 Home page
 --------------------------------
 
-After login to administrative interface the user is taken to the home page shown 
-on :numref:`admin_index_pic`
+After login the user is taken to the home page shown on :numref:`admin_index_pic`
 
 .. figure:: _static/ngweb_main_page_administrative_interface_en.png
    :name: admin_index_pic
    :align: center
    :width: 25cm
 
-   Administrator interface home page
+   Home page
 
    The numbers indicate: 1 - Main menu; 2 - User settings (Exit and Change language); 3 - Resource search bar in Web GIS 4 – Main resource group description; 5 - Child resources; 6 - User permissions for main resource group; 7 - Types of items that could be added to the main resource group; 8 - Actions that could be performed with main resource group
 
@@ -217,9 +236,18 @@ After login to administrative interface the user is taken to home page shown on 
 
    Resource groups
 
-You can open the Update resource dialog by clicking the pencil icon next to the resource, or delete a resource directly from the list. For special types of resources other actions are available (e.g. Preview for vector layers or Open for Web Maps).
+The resource list allows users to perform some actions by clicking icons next to the resource name: 
 
-To open a resource page click on the corresponding row of the table. The resource page contains properties, attributes, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
+* |button_edit| open the resource edit page
+* |button_delete| delete resource
+
+Other actions can be available depending on the resource type:
+
+* |button_preview| preview
+* |button_open_web_map| open (for Web Maps)
+* |button_open_feature_table| open feature table (for vector layers)
+
+To open the resource page click on the corresponding row of the table. The resource page contains properties, attributes, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
 
 .. figure:: _static/resource_details_en_2.png
    :name: resource_details_pic
