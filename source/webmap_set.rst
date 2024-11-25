@@ -106,3 +106,68 @@
 
    Поиск по веб-карте
 
+
+.. ngcom_address_search_disable:
+
+Отключение адресного поиска
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Адресный поиск можно отключить. Тогда поиск будет осуществляться только по атрибутивной информации добавленных на карту слоёв (не считая подложки).
+Через панель управления перейдите в `настройки веб-карты <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#web-map-settings>`_ и передвиньте ползунок в пункте «Адресный поиск» в выключенное состояние.
+
+.. figure:: _static/address_search_disabled_ru.png
+   :name: address_search_disabled_pic
+   :align: center
+   :width: 16cm
+   
+   Адресный поиск отключен
+
+.. ngcom_address_search_provider:
+
+Выбор провайдера для поиска
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+NextGIS Web может производить поиск, используя одну из двух баз данных: Nominatim OpenStreetMap или Геокодер API Яндекс.Карт. 
+По умолчанию на веб-карте подключен поиск OSM.
+Для того, чтобы выбрать провайдера, через панель управления перейдите в `настройки веб-карты <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#web-map-settings>`_. В разделе «Адресный поиск» в пункте «Провайдер» выберете необходимый геокодер в выпадающем меню.
+
+.. figure:: _static/address_search_provider_ru.png
+   :name: address_search_provider_pic
+   :align: center
+   :width: 16cm
+   
+   Выбор провайдера для адресного поиска
+
+Для провайдера Яндекс.Карты необходимо ввести Ключ API в поле справа. Пользователь получает ключ самостоятельно через https://developer.tech.yandex.ru.
+
+.. figure:: _static/adress_search_yandex_API_ru.png
+   :name: adress_search_yandex_API_pic
+   :align: center
+   :width: 16cm
+   
+   Введение ключа API для использования базы данных Яндекс.Карт
+
+.. ngcom_address_search_area:
+
+Ограничение зоны поиска
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Можно ограничить зону поиска начальным охватом веб-карты.
+Через панель управления перейдите в `настройки веб-карты <https://docs.nextgis.com/docs_ngweb/source/admin_tasks.html#web-map-settings>`_  и передвиньте ползунок в пункте "Ограничить начальным охватом карты" во включенное состояние.
+
+
+.. figure:: _static/address_search_initial_extent_ru.png
+   :name: address_search_initial_extent_pic
+   :align: center
+   :width: 16cm
+   
+   Поиск ограничен начальным охватом веб-карты
+
+При использовании OSM можно ограничить поиск территорией определенной страны. Для этого в поле «Ограничить поиск странами» введите код страны в формате ru, gb, de и т.п. в соответствии с ISO базы OSM (можно проверить на сайте https://www.openstreetmap.org, введя в строку поиска название страны).
+
+.. figure:: _static/address_search_country_ru.png
+   :name: address_search_country_pic
+   :align: center
+   :width: 16cm
+   
+   Поиск ограничен территорией Франции
