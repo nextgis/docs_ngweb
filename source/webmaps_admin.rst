@@ -166,6 +166,60 @@
 
 Если поставить флажок "По умолчанию", то при открытии страницы карты будет отображаться именно эта подложка.
 
+
+.. _ngw_create_basemap:
+
+Подложка веб-карты
+------------------
+
+Нажмите кнопку **Создать ресурс** и выберите из списка **Подложка веб-карт** (:numref:`ngweb_admin_create_basemap`).
+В открывшемся окне введите название ресурса, которое будет отображаться в административном интерфейсе (:numref:`ngweb_admin_basemap_name`).
+
+.. figure:: _static/ngweb_create_basemap_ru.png
+   :name: ngweb_admin_create_basemap
+   :align: center
+   :width: 20cm
+
+   Выбор типа ресурса "Подложка веб-карты"
+   
+   
+.. figure:: _static/ngweb_admin_basemap_name_rus_3.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 20cm
+
+   Наименование подложки веб-карты
+   
+   
+На соответствующих вкладках можно добавить "Описание" и "Метаданные" ресурса (:numref:`ngweb_admin_basemap_desc`).
+Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
+
+.. figure:: _static/ngweb_admin_basemap_desc_rus_3.png
+   :name: ngweb_admin_basemap_desc
+   :align: center
+   :width: 20cm
+
+   Описание подложки веб-карты
+   
+
+На вкладке "Подложка веб-карты" задается URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
+
+* Найти нужный сервис в строке поиска. Остальные поля будут заполнены автоматически.
+* Ввести адрес вручную. 
+
+Внизу отображается превью подложки. Его можно сравнить со стандартной подложкой OpenStreetMap, нажав на кнопку |button_toggle_basemap| и двигая ползунок прозрачности.
+
+.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
+
+.. figure:: _static/create_basemap_settings_ru_2.png
+   :name: ngweb_admin_basemap_param
+   :align: center
+   :width: 16cm
+
+   Параметры подложки веб-карты
+
+
+
 .. _ngw_map_no_base:
 
 Карта без подложки
