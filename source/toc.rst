@@ -14,10 +14,12 @@
    quick_tutorial
    general   
    admin_interface
+   create_resource
    layers
    edit_resource
    feature_table
    mapstyles
+   create_other
    layers_settings 
    vect_layer_upload_params
    postgis_details
