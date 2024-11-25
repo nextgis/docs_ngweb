@@ -29,11 +29,11 @@ NextGIS Web строится на **ресурсном** подходе - каж
 
 Также типы ресурсов сгруппированы по категориям, которые можно выбрать в левой части окна:
 
-* Слои и `стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
+* Слои и стили (`векторные <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ и `растровые <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ слои и `стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_, `подложки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_)
 * Карты и сервисы (`веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_, сервисы WMS, WFS, OGC API - Features)
 * Сбор данных (`группа трекеров, трекер <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_, `проект Collector <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-project>`_), `форма сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_
 * Внешние соединения (соединения PostGIS, TMS, WMS)
-* Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-resourses-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/layers.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-lookup-table>`_)
+* Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/layers.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-lookup-table>`_)
 
 Нажмите на нужный тип ресурса, чтобы перейти к подробному описанию его создания.
 
