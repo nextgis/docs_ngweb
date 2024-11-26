@@ -248,8 +248,8 @@
 На вкладке "Настройки" можно:
 
 * задать заголовок, который будет отображаться на веб-карте вместо имени ресурса;
-* настроить `легенду <https://docs.nextgis.ru/docs_ngcom/source/legend.html>`_;
-* включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_);
+* настроить `легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_;
+* включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_);
 * выбрать систему координат для измерений;
 * разрешить редактирование слоев;
 * выбрать начальный и ограничивающий охват;
