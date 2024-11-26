@@ -61,7 +61,7 @@
    
    URL слоя на сайте Геосервисов
 
-Создайте в своей ВебГИС новую подложку, добавив этот URL. `Подробнее о создании подложек <https://docs.nextgis.ru/docs_ngcom/source/data_connect.html#ngcom-basemap-layer>`_.
+Создайте в своей ВебГИС новую подложку, добавив этот URL. `Подробнее о создании подложек <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_.
 
 .. figure:: _static/create_basemap_cadaster_ru.png
    :name: create_basemap_cadaster_pic
@@ -107,7 +107,7 @@
 
 Для завершения нажмите **Создать**.
 
-Далее этот слой можно `добавить на веб-карту <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create>`_.
+Далее этот слой можно `добавить на веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
 
 .. figure:: _static/cadaster_basemap_tms_ru.png
    :name: cadaster_basemap_tms_pic
@@ -239,7 +239,7 @@
 
 Скопируйте **ссылку на веб-карту**, например https://demo.nextgis.ru/resource/3931/display?panel=layers, где *demo* - это имя Веб ГИС, а *3931* - ID веб-карты.
 
-Воспользуйтесь `инструментом идентификации <https://docs.nextgis.ru/docs_ngcom/source/cadaster.html#ngcom-cadaster-identify>`_ кадастровых кварталов или земельных участков и скопируйте **кадастровый номер** из карточки объекта.
+Воспользуйтесь `инструментом идентификации <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html#ngw-cadaster-identify>`_ кадастровых кварталов или земельных участков и скопируйте **кадастровый номер** из карточки объекта.
 
 В ссылке на веб-карту замените часть, которая идет после *display* на ``?cadno=`` + кадастровый номер.
 
