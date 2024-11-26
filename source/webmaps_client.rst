@@ -52,7 +52,7 @@
 
 * |panel_layers| Дерево слоев
 * |panel_search| Поиск
-* |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_
+* |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
 * |panel_share| Поделиться
