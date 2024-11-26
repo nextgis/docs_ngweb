@@ -253,7 +253,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
-Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngcom/source/data_edit.html#ngcom-data-create-objects>`_.
+Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_.
 
 .. _ngw_create_postgis:
 
