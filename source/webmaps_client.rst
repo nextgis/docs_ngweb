@@ -51,13 +51,13 @@
 В левой части рабочей области располагаются функциональные панели:
 
 * |panel_layers| Дерево слоев
-* |panel_search| `Поиск <https://docs.nextgis.ru/docs_ngcom/source/address_search.html>`_
+* |panel_search| Поиск
 * |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngcom/source/annotation.html>`_
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
 * |panel_share| Поделиться
 * |panel_print| Печать
-* |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngcom/source/tracking.html>`_
+* |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
 .. |panel_search| image:: _static/panel_search.png
