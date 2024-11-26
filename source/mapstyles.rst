@@ -314,8 +314,12 @@
 Тайловый кэш
 ------------
 
+Кэширование используется для ускорения отрисовки данных и `оптимизации <https://docs.nextgis.ru/docs_ngcom/source/webmap_optimize.html>`_ работы веб-карт.
+Оно может быть применимо для стилей `векторных <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_ и `растровых <https://docs.nextgis.ru/docs_ngweb/source/layers.html#qgis>`_ слоев, а также для слоев `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_.
 
-На вкладке **Тайловый кэш** при создании стиля (слоя для `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_) пользователь имеет возможность задать настройки кэширования стиля (слоя для WMS и TMS) (см. :numref:`tile_cache_settings`):
+Чтобы включить кэширование, нужно перейти на вкладку "Тайловый кэш" в соответствующем ресурсе и активировать чекбокс "Включен".
+
+На вкладке **Тайловый кэш** пользователь имеет возможность задать настройки кэширования стиля (слоя для WMS и TMS) (см. :numref:`tile_cache_settings`):
 
 * *Включен* -включение/выключение кэширования тайлов;
 * *Разрешить тайлы для запросов изображений* - при запросе изображения (не тайла) использовать закэшированные тайлы при их наличии;
