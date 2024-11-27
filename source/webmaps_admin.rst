@@ -285,10 +285,10 @@
 
 На уровне слоя веб-карты видимость легенды задается в настройках веб-карты на вкладке «Слои».
 
-.. figure:: _static/ngw_legend_map_layers_ru.png
+.. figure:: _static/ngw_legend_map_layers_ru_2.png
    :name: ngw_legend_map_layers_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Настройка видимости легенды отдельных слоёв
 
