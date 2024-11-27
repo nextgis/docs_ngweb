@@ -3,8 +3,8 @@
 
 :ref:`Веб ГИС <ngcom_description>` позволяет распечать Веб-карту или сохранить ее как рисунок. Для того, тобы сделать это:
 
-1. Перейдите в окно свойств созданной Веб-карты из соответствующей `Группы ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`;
-2. Выберите :menuselection:`Веб-карта --> Открыть` на правой панели `веб-интерфейса <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-view-resource>` Веб ГИС;
+1. Перейдите в окно свойств созданной Веб-карты из соответствующей `Группы ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_;
+2. Выберите :menuselection:`Веб-карта --> Открыть` на правой панели `веб-интерфейса <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-view-resource>`_ Веб ГИС;
 3. В открывшемся веб-клиенте, через который можно просматривать и редактировать геоданные на веб-карте, нажмите кнопку "Распечатать карту" (см. :numref:`ngweb_webmap_client_print`).
  
 .. figure:: _static/webmap_client_print_ru.png
