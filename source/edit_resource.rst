@@ -83,7 +83,7 @@
 
 Закрыв его, измените имя ресурса и повторите шаги по выбору папки.
 
-Аналогичным образом между родительскими ресурсами (:ref:`Векторными слоями <ngcom_vector_layer>`, :ref:`Растровыми слоями <ngcom_raster_layer>`, :ref:`Слоями PostGIS <ngcom_postgis_layer>`) можно перемещать :ref:`Стили <ngcom_styles>`.
+Аналогичным образом между родительскими ресурсами (`Векторными слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`, `Растровыми слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`, `Слоями PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`) можно перемещать `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`.
 
 .. _ngw_parent_change_multi:
 
