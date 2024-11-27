@@ -1,5 +1,6 @@
 
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>, Юлия Григоренко <grigorenko.j@gmail.com>
+.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>, Юлия Григоренко <grigorenko.j@gmail.com>, Роман Гайнуллов <roman.gainullov@nextgis.ru>
+
 
 .. _ngw_webmaps_admin:
 
