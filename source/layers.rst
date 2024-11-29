@@ -181,6 +181,14 @@ NextGIS Web может принимать многослойные наборы 
 
    Метаданные векторного слоя
 
+На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_.
+
+.. figure:: _static/create_vector_layer_vers_ru.png
+   :name: create_vector_layer_vers_pic
+   :align: center
+   :width: 16cm
+
+   Включение версионирования слоя
 
 После завершения ввода нужных данных нажмите кнопку **Создать**.
 
