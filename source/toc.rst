@@ -41,6 +41,7 @@
    infowebgis
    analytics
    look
+   domain
    label
    sysadmin_updates   
    
