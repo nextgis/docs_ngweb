@@ -118,3 +118,28 @@ Now the feature table only contains the features within the selected area. The t
    Filter actions
 
 You can use quick export to save the filtered features in a variety of common geodata formats. Click **Save as** and select in the dropdown menu Quick export with default settings or Advanced export to modify parameters (see detailed description below).
+
+.. _ngw_feature_table_fields:
+
+Displaying selected fields and feature edit information
+-------------------------------------
+
+You can select which fields of the feature table to display. Press "Open table settings" button in the right corner and untick the fields you want to hide. 
+
+.. figure:: _static/feature_table_display_set_en.png
+   :name: feature_table_display_set_pic
+   :align: center
+   :width: 20cm
+
+   Selecting fields for display
+
+If `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ is enabled, at the bottom of the list you'll find an additional unticked field. It is a virtual "Last changed" field. It contains date and time of the most recent edit made to the feature as well as the username.
+
+The first change logged is the time the versioning is enabled. 
+
+.. figure:: _static/feature_table_changelog_en.png
+   :name: feature_table_changelog_pic
+   :align: center
+   :width: 20cm
+
+   Displaying changes in the feature table
