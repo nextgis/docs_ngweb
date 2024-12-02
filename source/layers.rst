@@ -318,8 +318,14 @@ In the "Metadata" tab you can add information in the "key-value" format (:numref
 
    Vector layer metadata
 
+On the "Settings" tab you can enable feature versioning. It allows the layer to be edited directly `in QGIS via NextGIS Connect <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_ by multiple users at once.
 
+.. figure:: _static/create_vector_layer_vers_en.png
+   :name: create_vector_layer_vers_pic
+   :align: center
+   :width: 16cm
 
+   Vector layer settings
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
