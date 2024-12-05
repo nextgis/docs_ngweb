@@ -47,7 +47,7 @@
 
 
 
-.. figure:: _static/webmap_track_display_ru.png
+.. figure:: _static/webmap_track_display_ru_h.png
    :name: webmap_track_display_pic
    :align: center
    :width: 20cm
@@ -70,7 +70,7 @@
 .. |button_tracker_points| image:: _static/button_tracker_points.png
    :width: 6mm
 
-.. |button_tracker_stops| image:: _static/button_tracker_stops.png
+.. |button_tracker_stops| image:: _static/button_tracker_stops_h.png
    :width: 6mm
 
 Операции, доступные по правому клику на трек:
@@ -80,7 +80,7 @@
 - Показать последнюю активность (посмотреть почасовую активность на выбранную дату)
 
 
-.. figure:: _static/webmap_tracker_menu_ru.png
+.. figure:: _static/webmap_tracker_menu_ru_h.png
    :name: 
    :align: center
    :width: 20cm
