@@ -83,7 +83,7 @@
 
 Закрыв его, измените имя ресурса и повторите шаги по выбору папки.
 
-Аналогичным образом между родительскими ресурсами (`Векторными слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`, `Растровыми слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`, `Слоями PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`) можно перемещать `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`.
+Аналогичным образом между родительскими ресурсами (`Векторными слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_, `Растровыми слоями <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_, `Слоями PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_) можно перемещать `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_.
 
 .. _ngw_parent_change_multi:
 
@@ -198,7 +198,7 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 
 .. note:: 
-	Вы также можете удалять ресурсы из Веб ГИС :ref:`с помощью настольного приложения QGIS <ngcom_ngqgis_connect_resource_delete>`.
+	Вы также можете удалять ресурсы из Веб ГИС `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-delete>`_.
 
 .. _ngw_update_info_metada:
 
