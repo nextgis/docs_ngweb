@@ -390,7 +390,7 @@
 
 https://demo.nextgis.ru/api/resource/4077/export?format=CSV&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8
 
-Также можно выполнить экспорт объектов слоя (всех или некоторых) через `таблицу объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ и  :ref:`с помощью настольного приложения NextGIS QGIS <_ngqgis_connect_data_export>`.
+Также можно выполнить экспорт объектов слоя (всех или некоторых) через `таблицу объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ и  `с помощью настольного приложения NextGIS QGIS <https://docs.nextgis.ru/docs_ngconnect/source/export.html>`_.
 
 
 
