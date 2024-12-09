@@ -205,7 +205,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Метаданные векторного слоя
 
-На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_.
+На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
 
 .. figure:: _static/create_vector_layer_vers_ru.png
    :name: create_vector_layer_vers_pic
@@ -235,7 +235,7 @@ NextGIS Web может принимать многослойные наборы 
 * :term:`GML`
 * :term:`GeoPackage`
 
-Если нужно загрузить данные в другом формате, вы можете использовать :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>`.
+Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
 
 .. note:: 
    В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
