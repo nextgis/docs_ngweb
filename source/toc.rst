@@ -3,7 +3,7 @@
 
 .. NextGIS Web TOC
 
-Документация NextGIS Web
+NextGIS Web
 ========================
 
 
