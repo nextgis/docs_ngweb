@@ -3,10 +3,8 @@
 
 .. NextGIS Web TOC
 
-NextGIS Web documentation
+NextGIS Web
 ============================
-
-Contents:
 
 .. toctree::
    :maxdepth: 2
