@@ -10,7 +10,7 @@ There could be several Web Maps in NextGIS Web. For example one map is for work,
 
 Each Web Map has its own URL address. Different access permissions for Web Map viewing can be set for users and groups. 
 
-Web Map displays layers. They can be turned on or off by the user. You can set the order of the layers, default layer visibility and create layer groups. Groups on a map do not relate to resource groups in the Control Panel. There is no option to transfer layers between groups. Groups may be nested.
+Web Map displays layers. They can be turned on or off by the user. You can set the `order <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#layer-draw-order>`_ of the layers, default layer `visibility <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_ and create layer `groups <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#layer-groups>`_. Groups on a map do not relate to resource groups in the Control Panel. Groups may be nested.
 
 To view Web Map in browser, press |button_open_web_map| next to its name in the resource list or open the resource page and select **Display** in the Actions panel on the right. It will open in a `web viewer <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html>`_.
 
