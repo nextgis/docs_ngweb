@@ -5,7 +5,13 @@
 A viewer for Web Maps
 =============================
 
-A special web application for viewing Web Maps is included with NextGIS Web (see :numref:`webmap_client`).
+A special web application for viewing Web Maps is included in NextGIS Web (see :numref:`webmap_client`).
+
+To view the Web Map press |button_open_web_map| next to its name in the resource list or open the resource page and select **Display** in the Actions panel on the right. The following page will open:
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 8mm
+   :alt: magnifying glass on map
  
 .. figure:: _static/webmap_client_eng_3.png
    :name: webmap_client
