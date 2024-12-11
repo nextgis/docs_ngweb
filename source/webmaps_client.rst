@@ -8,6 +8,14 @@
 
 В составе :program:`NextGIS Web` предусмотрено специальное клиентское веб приложение для 
 просмотра веб-карт (см. :numref:`ngweb_webmap_client`).
+
+Чтобы открыть веб-карту, нажмите значок |button_open_web_map| рядом с названием карты в списке ресурсов. Или зайдите на страницу ресурса карты и выберите "Открыть" в панели действий справа.
+
+Откроется следующая страница:
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 8mm
+   :alt: карта с лупой
  
 .. figure:: _static/webmap_client_rus_3.png
    :name: ngweb_webmap_client
