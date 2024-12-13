@@ -342,12 +342,12 @@ NextGIS Web может принимать многослойные наборы 
 На вкладке "Cоединение PostGIS" необходимо ввести параметры подключения к :abbr:`БД (база данных)` PostGIS, из которой 
 будут забираться ваши данные (:numref:`ngweb_admin_layers_create_postgis_connection_db_logins`).
 
-.. figure:: _static/admin_layers_create_postgis_connection_db_logins_rus.png
+.. figure:: _static/create_postgis_connection_settings_ru.png
    :name: ngweb_admin_layers_create_postgis_connection_db_logins
    :align: center
-   :width: 20cm
+   :width: 19cm
 
-   Окно параметров соединения PostGIS.
+   Окно параметров соединения PostGIS
    
 После указания параметров нажмите кнопку **Создать**.   
 
