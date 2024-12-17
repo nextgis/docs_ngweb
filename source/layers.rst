@@ -453,14 +453,25 @@ You can also add resource description and metadata on the corresponding tabs.
 
 Switch from "Resource" to "PostGIS connection" tab, which is presented on :numref:`admin_layers_create_postgis_connection_db_logins`. 
 
-.. figure:: _static/admin_layers_create_postgis_connection_db_logins_eng_2.png
+.. figure:: _static/create_postgis_connection_settings_en.png
    :name: admin_layers_create_postgis_connection_db_logins
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   PostGIS connection tab of Create resource dialog
+   PostGIS connection settings
 
-In this tab you should enter connection parameters for the PostGIS database that you are going to take data from. Then click **Create**.
+In this tab you should enter connection parameters for the PostGIS database that you are going to take data from. 
+
+* disable - use an unencrypted connection.
+* allow	- attempt to connect whithout encryption, falling back to an encrypted connection if an unencrypted  connection cannot be established.
+* prefer -  attempt to connect using encryption, falling back to an unencrypted connection if an encrypted connection cannot be established.
+* require - require an encrypted connection and fail if one cannot be established.
+* verify-ca - require an encrypted connection, and also perform verification against the server CA certificate.
+* verify-full - require an encrypted connection, and also perform verification against the server CA certificate and against the server host name in its certificate.
+
+More about `SSL modes <https://www.postgresql.org/docs/current/libpq-ssl.html#LIBPQ-SSL-PROTECTION>`_.
+
+After configuring all the neccessary settings click **Create**.
 
 Creating PostGIS layer
 ^^^^^^^^^^^^^^^^^^^^^^
