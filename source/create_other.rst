@@ -62,7 +62,13 @@
 
 Справочник можно также подключить к векторному слою, это позволит выбирать значение атрибута из списка. Для этого перейдите в редактирование векторного слоя, во вкладке Атрибуты выберите нужную строку и нажмите на стрелку вниз в колонке Справочник.
 
+Процесс работы со справочниками также представлен в видео:
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/44079b285c89950cfb831e69d60822db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть на `youtube <https://youtu.be/4geb-lbE81g>`_, `rutube <https://rutube.ru/video/44079b285c89950cfb831e69d60822db/>`_.
 
 
 .. _ngw_create_file_bucket:
