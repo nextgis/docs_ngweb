@@ -97,6 +97,14 @@ NextGIS Web позволяет добавить дополнительные ш�
 
    Пользовательский шрифт успешно добавлен
 
+Процесс добавления шрифта в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/b3d216159f519ca836d0528c1279f497/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть на `youtube <https://youtu.be/adS8Oi3Xtfg>`_, `rutube <https://rutube.ru/video/b3d216159f519ca836d0528c1279f497/>`_.
+
 .. _ngw_fonts_del:
 
 Как удалить пользовательский шрифт
