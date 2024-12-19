@@ -415,6 +415,14 @@
 .. tip:: 
    Координаты охвата вы можете сгенерировать на сторонних веб-сайтах, например http://boundingbox.klokantech.com/ (выберите в списке csv).
 
+Посмотреть, как настраивается и работает начальный и ограничивающий охват карты, можно в нашем видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/62a7266ee8bc054f85b675e74314644b/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/KkihLvSYWmc>`_, `rutube <https://rutube.ru/video/62a7266ee8bc054f85b675e74314644b/>`_.
+
 .. _ngw_map_bookmarks:
 
 Закладки
