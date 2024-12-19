@@ -327,6 +327,12 @@
 
 По умолчанию экспорт будет произведён в формат GeoPackage в кодировке UTM-8 с включением всех полей.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/90d560f23df007b4d4b376eb0100d260/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/cGKK5crJCKo>`_, `rutube <https://rutube.ru/video/90d560f23df007b4d4b376eb0100d260/>`_.
+
 .. _ngw_vector_export_settings:
 
 Параметры экспорта
