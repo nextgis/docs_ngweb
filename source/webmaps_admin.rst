@@ -372,6 +372,15 @@
 * Одноканальное серое - растр представляет собой непрерывный градиент, но в легенде отображается заданное количество символов (по умолчанию 5), для каждого из которых обозначено пороговое значение;
 * Одноканальное псевдоцветное - аналогично одноканальному серому отображает символы с диапазоном значений.
 
+
+Процесс и результат настройки легенды также демонстрируются в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/b13377cbe4f79b985ebbda2469295438/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть на `youtube <https://youtu.be/AToQmohz6QQ>`_, `rutube <https://rutube.ru/video/b13377cbe4f79b985ebbda2469295438/>`_.
+
 .. _ngw_map_extent:
 
 Охват
