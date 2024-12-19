@@ -391,6 +391,14 @@
 
 Загружаемые панорамные снимки должны соответствовать спецификации `Google XMP Photo Sphere <https://developers.google.com/streetview/spherical-metadata?hl=ru>`_.
 
+Работа с панорамами представлена в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/d1f08ddae9780ce93246f8e81748d4c4/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть на `youtube <https://youtu.be/X5c2Wy1CItw>`_, `rutube <https://rutube.ru/video/d1f08ddae9780ce93246f8e81748d4c4/>`_.
+
 
 .. _ngw_attachments_imp_exp:
 
