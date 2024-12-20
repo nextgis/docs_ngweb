@@ -47,7 +47,7 @@
 
 
 
-.. figure:: _static/webmap_track_display_ru_h.png
+.. figure:: _static/webmap_track_display_ru_2.png
    :name: webmap_track_display_pic
    :align: center
    :width: 20cm
@@ -80,7 +80,7 @@
 - Показать последнюю активность (посмотреть почасовую активность на выбранную дату)
 
 
-.. figure:: _static/webmap_tracker_menu_ru_h.png
+.. figure:: _static/webmap_tracker_menu_ru_2.png
    :name: 
    :align: center
    :width: 20cm
