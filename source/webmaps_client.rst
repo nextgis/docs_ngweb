@@ -123,7 +123,16 @@
     79.068493 43.079920
     79.068 W 43.08 N
 
-Также при открытии таблицы объектов слоя доступна фильтрация по области (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_).
+Посмотрите, как работает поиск по координатам, в нашем видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/81464ac6a48a81bb05c74bcb9f11c875/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/7nfXFrCSru0>`_, `rutube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`_.
+
+
+Также при открытии таблицы объектов слоя доступна **фильтрация по области** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_).
 
 С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается окно подготовки к печати (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_). 
 
