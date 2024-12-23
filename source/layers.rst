@@ -912,6 +912,14 @@ NextGIS Web является сервером TMS. Соответственно 
 
 После заполнения всех полей нажатие кнопки **Создать** завершает процесс создания ресурса **Набор тайлов**.
 
+Процесс создания также представлен в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/824fbfb5c0d10a2977e3e828f6c4fd9a/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/5ccduELAk3Y>`_, `rutube <https://rutube.ru/video/824fbfb5c0d10a2977e3e828f6c4fd9a/>`_.
+
 .. _ngw_wfs:
 
 Слой WFS
