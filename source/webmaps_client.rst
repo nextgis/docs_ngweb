@@ -76,6 +76,7 @@
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
+С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается окно подготовки к печати (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_). 
 
 В **дереве слоев** находится список всех стилей слоев, добавленных на веб-карту. 
 
@@ -88,6 +89,11 @@
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e13ac386c9c16068f5110c938dd17683/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`_, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`_. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+
+.. _ngw_webmaps_client_search:
+
+Поиск на веб-карте
+--------------------
 
 **Поиск** на веб-карте производится по:
 
@@ -105,9 +111,20 @@
    
    Результаты поиска по запросу «трамвайный». На карте открыты атрибуты объекта #10 векторного слоя, где содержится запрашиваемое слово
 
+Возможности текстового поиска также показаны в видео:
 
-.. note::
-   Для того, чтобы найти точку по координатам, в строку поиска следует ввести значения долготы и широты в градусах, минутах и секундах (используйте только прямые кавычки и прямой апостроф) или в десятичном формате, например: 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/6c2f59f025c88d7c533bf34bef3d3f17/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/_isl86FjG6U>`_, `rutube <https://rutube.ru/video/6c2f59f025c88d7c533bf34bef3d3f17/>`_.
+
+.. _ngw_webmaps_search_coord:
+
+Поиск по координатам
+~~~~~~~~~~~~~~~~~~~~~
+
+Для того, чтобы найти точку по координатам, в строку поиска следует ввести значения долготы и широты в градусах, минутах и секундах (используйте только прямые кавычки и прямой апостроф) или в десятичном формате, например: 
    
 .. code-block:: bash
 
@@ -134,7 +151,7 @@
 
 Также при открытии таблицы объектов слоя доступна **фильтрация по области** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_).
 
-С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается окно подготовки к печати (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_). 
+
 
 
 .. _ngw_webmaps_client_layer_menu:
