@@ -81,6 +81,14 @@
 
 Вы можете отключать видимость не только слоёв, но и отдельных элементов этих слоёв, снимая галочки соответствующих элементов легенды. Это актуально для больших картографических проектов, где слои содержат множество объектов с различными значениями определённого столбца таблицы атрибутов.
 
+Возможности панели слоёв также представлены в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/e13ac386c9c16068f5110c938dd17683/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`_, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`_. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+
 **Поиск** на веб-карте производится по:
 
 1. Координатам
