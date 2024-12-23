@@ -195,7 +195,15 @@
 
    Созданный ресурс QGIS стиля
 
-Созданный стиль QGIS можно редактировать.
+Процесс создания пользовательского стиля также представлен на видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/e6b097a20efa3882b27907096490393e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`_, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`_.
+
+Созданный стиль QGIS можно **редактировать**.
 
 .. _ngw_qgis_style_custom_edit:
 
