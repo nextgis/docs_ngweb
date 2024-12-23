@@ -81,7 +81,7 @@ Cформируется таблица объектов, которая позв
 
    Операции над записью в таблице объектов
 
-Также можно `отредактировать атрибуты <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-attributes-edit>`_ векторного слоя, формирующие таблицу объектов.
+Также можно `отредактировать атрибуты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ векторного слоя, формирующие таблицу объектов.
 
 .. _ngw_feature_table_filter_area:
 
