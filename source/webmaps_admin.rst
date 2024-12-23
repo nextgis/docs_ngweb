@@ -24,6 +24,16 @@
    :width: 8mm
    :alt: карта с лупой
 
+Вы можете посмотреть два основных сценария создания веб-карты в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/abfd6750a23b013af6221caa6b7a6863/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/yd34OMKEED4>`_, `rutube <https://rutube.ru/video/abfd6750a23b013af6221caa6b7a6863/>`_.
+
+Ниже более подробно описываются этапы создания веб-карты и доступные настройки.
+
 .. _ngw_map_create:
     
 Создание веб-карты
