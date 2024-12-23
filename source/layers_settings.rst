@@ -442,3 +442,11 @@
    :width: 16cm
 
    Импорт вложений из архива
+
+Процесс импорта и экспорта вложений также представлен в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/62233baae1d2c10e21ad4709ecffe5cc/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/8R4uY5CCE3w>`_, `rutube <https://rutube.ru/video/62233baae1d2c10e21ad4709ecffe5cc/>`_.
