@@ -375,6 +375,14 @@
 
 Для удаления вложения следует выделить его в окне редактирования атрибутов слоя на вкладке "Вложения", нажать кнопку "Удалить", а затем нажать кнопку "Сохранить".
 
+Процесс загрузки вложений также представлен в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/9f0d58e1850b6740b1823763da6dfc97/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть на `youtube <https://youtu.be/MMPhQeLXZDQ>`_, `rutube <https://rutube.ru/video/9f0d58e1850b6740b1823763da6dfc97/>`_.
+
 .. _ngw_attachments_panoramas:
 
 Использование панорам
