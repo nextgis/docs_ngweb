@@ -26,7 +26,9 @@
 
    Выбор действия "Изменить" на странице ресурса
 
-После этого откроется окно "Изменить ресурс" (см. :numref:`ngw_window_update_resource1`), в котором можно добавить описание, редактировать родителя, метаданные и атрибуты выбранного ресурса.
+После этого откроется окно "Изменить ресурс" (см. :numref:`ngw_window_update_resource1`), в котором можно добавить `описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, редактировать `родителя <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-parent-change-update>`_ выбранного ресурса. 
+
+Также в зависимости от типа ресурса доступны для редактирования другие вкладки, например, `поля (атрибуты) <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
 
 .. figure:: _static/ngw_window_update_resource1_rus_4.png
    :name: ngw_window_update_resource1
@@ -41,6 +43,7 @@
 2. Родитель (можно изменить группу ресурсов, переместив свой ресурс)
 3. Владелец
 4. Ключ
+
 
 .. _ngw_move_resource:
 
@@ -229,70 +232,5 @@ NextGIS Web позволяет удалять созданные ресурсы.
 2. Тип. Типы данных: Строка, число, логический, пусто (если выбрать "Пусто", поле значения очистится)
 3. Значение. Значение соответствует типу ключа
 
-.. _ngw_attributes_edit:
 
-Редактирование атрибутов векторного слоя
--------------------------------------------
-
-Вкладка "Поля" содержит таблицу, в которой перечислены атрибуты выбранного слоя (см. :numref:`ngweb_admin_layers_attr`).
-
-.. figure:: _static/vector_fields_ru_2.png
-   :name: ngweb_admin_layers_attr
-   :align: center
-   :width: 16cm
-
-   Вкладка "Поля"
-
-При клике на строку таблицы откроется форма редактирования атрибута. Можно настроить следующие параметры:
-
-
-* Наименование - можно поставить соответствующий псевдоним для отображения вместо технического ключа поля в окне идентификации.
-
-
-.. figure:: _static/webmap_identification_rus_2.png
-   :name: ngweb_webmap_identification
-   :align: center
-   :width: 20cm
-
-   Окно идентификации
-
-.. figure:: _static/key_field_name_ru_2.png
-   :name: key_field_name_pic
-   :align: center
-   :width: 20cm    
-
-   Наименование поля с верхним индексом и его ключ
-
-* Ключ
-* Тип
-* Справочник - позволяет подключить к полю справочник, из которого будут браться значения атрибута при добавлении или редактировании объектов. Для того, чтобы добавить справочник, нажмите на поле и выберите во всплывающем окне соответствующий ресурс.
-
-.. figure:: _static/update_add_lookup_ru.png
-   :name: update_add_lookup_pic
-   :align: center
-   :width: 20cm
-
-   Добавление справочника
-
-.. |attr_label_symbol| image:: _static/attr_label_symbol.png
-   :width: 6mm
-
-.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
-   :width: 6mm
-
-.. |attr_table_symbol| image:: _static/attr_table_symbol.png
-   :width: 6mm
-
-
-* |attr_table_symbol| Таблица объектов - обозначает, что атрибут выводится в окне идентификации.
-* |attr_text_search_symbol| Текстовый поиск - можно отключить поиск по значениям этого атрибута.
-* |attr_label_symbol| Атрибут наименование - из этого атрибута формируется список закладок.
-
-Для этих трех параметров темный значок в таблице означает "включен", светлый - "выключен".
-
-* Удалить объект
-
-Чтобы вернуться в режим таблицы, нажмите стрелочку в верхнем ряду.
-
-После внесения изменений нажмите **Сохранить**.
 
