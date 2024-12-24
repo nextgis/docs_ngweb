@@ -14,6 +14,14 @@
 
 Примеры стилей можно посмотреть в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_.
 
+.. figure:: _static/style_gallery_1_ru.png
+   :name: style_gallery_pic
+   :align: center
+   :width: 20cm
+
+   Галеря стилей
+
+
 .. _ngw_style_formats:
 
 Форматы
