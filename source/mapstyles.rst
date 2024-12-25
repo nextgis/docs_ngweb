@@ -69,8 +69,6 @@
 
 Для того, чтобы загрузить готовый стиль, на вкладке **Стиль QGIS** необходимо выбрать QML-файл стиля на устройстве или перетащить его в эту область (см. :numref:`upload_svg_qgis_style`).
 
-Если вы хотите использовать нестандартные маркеры, можно выбрать ресурс библиотеки SVG, в которой находится иконка для отображения на веб-карте.
-
 .. figure:: _static/QGIS_style_upload_ru_2.png
    :name: upload_svg_qgis_style
    :align: center
@@ -78,9 +76,39 @@
 
    Загрузка файла QML
 
+На вкладке «Ресурс» вы можете задать пользовательское наименование стиля. Можно также ввести описание и метаданные на соответствующих вкладках. Настройки тайлового кэша подробно описаны в `данном <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-tile-cache>`_ разделе.
 
-.. warning::   
-   Необходимый для загрузки файл может быть получен с помощью `NextGIS QGIS <https://nextgis.ru/nextgis-qgis/>`_ и сохранен на компьютере (см. :numref:`save_svg_qgis_style`). Для создания стиля, использующего SVG-маркеры, необходимо указать в свойствах слоя тип **SVG-маркер** и прописать полный путь до **файла** на машине (см. :numref:`svg_qgis_style`). Название файла должно совпадать с тем, что загружен в ресурс *Библиотека маркеров SVG*, который пользователь выбирает при загрузке файла QML.
+После загрузки файла QML нажмите на кнопку "Создать". После обработки запроса откроется окно ресурса QGIS стиля (см. :numref:`svg_res_style_1`).
+
+.. figure:: _static/svg_res_style_ru.png
+   :name: svg_res_style_1
+   :align: center
+   :width: 20cm
+
+   Созданный ресурс QGIS стиля
+    
+Загруженный файл QML стиля можно :ref:`заменить <ngw_qgis_style_custom_edit>`.
+
+.. _ngw_qgis_style_svg:
+
+SVG-маркеры
+~~~~~~~~~~~~~~~
+
+Для добавления своего значка в стиль для слоя NextGIS Web есть следующие варианты:
+
+1. `Встроить файл <https://docs.nextgis.ru/docs_ngqgis/source/styling.html#svg>`_ в стиль в QGIS.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/54bb3f579a298355233b59ec8c9efce1/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`_, `rutube <https://rutube.ru/video/54bb3f579a298355233b59ec8c9efce1/>`_.
+
+2. Разместить файл в интернете и поставить его URL в качестве пути к значку SVG.
+
+3. Добавить маркер через `библиотеку маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-svg-marker-lib>`_ в своей Веб ГИС.
+
+Для создания стиля, использующего SVG-маркеры из библиотеки, необходимо в QGIS указать в свойствах слоя тип **SVG-маркер** и прописать полный путь до **файла** на машине (см. :numref:`svg_qgis_style`). Название файла должно совпадать с тем, что загружен в ресурс *Библиотека маркеров SVG*, который пользователь выбирает при загрузке файла QML.
 
 .. figure:: _static/save_svg_qgis_style.png
    :name: save_svg_qgis_style
@@ -96,18 +124,7 @@
 
    Настройка свойств стиля в NextGIS QGIS
 
-На вкладке «Ресурс» вы можете задать пользовательское наименование стиля. Можно также ввести описание и метаданные на соответствующих вкладках. Настройки тайлового кэша подробно описаны в `данном <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-tile-cache>`_ разделе.
 
-После загрузки файла QML нажмите на кнопку "Создать". После обработки запроса откроется окно ресурса QGIS стиля (см. :numref:`svg_res_style_1`).
-
-.. figure:: _static/svg_res_style_ru.png
-   :name: svg_res_style_1
-   :align: center
-   :width: 20cm
-
-   Созданный ресурс QGIS стиля
-    
-Загруженный файл QML стиля можно :ref:`заменить <ngw_qgis_style_custom_edit>`.
 
 .. _ngw_create_svg_marker_lib:
 
@@ -135,6 +152,7 @@
    
 При необходимости добавьте описание и метаданные на соответствующих вкладках.
 Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
+
 На вкладке "Библиотека SVG маркеров" необходимо загрузить svg-маркеры с вашего устройства (см. :numref:`upload_svg`). Маркеры можно загрузить как отдельными файлами, так и zip-архивом.
 В архиве не должно быть ничего, кроме маркеров.
 
@@ -157,7 +175,7 @@
    
 Процесс добавления библиотек маркеров к стилю векторного слоя описан `здесь <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_.
 
-
+SVG-маркеры также можно `встроить <https://docs.nextgis.ru/docs_ngqgis/source/styling.html#svg>`_ в стиль QGIS, тогда не будет необходимости в создании отдельного ресурса библиотеки.
 
 .. _ngw_qgis_style_custom:
 
