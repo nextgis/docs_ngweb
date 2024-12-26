@@ -28,6 +28,12 @@ NextGIS Web позволяет:
 6. Гибко настраивать права доступа к слоям, группам слоёв, картам и ресурсам других видов.
 7. Взаимодействовать посредством API.
 
+.. raw:: html
+
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/9323ef11a606d852933f080c48e9ed1d/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/GzReGU2oACI>`_, `rutube <https://rutube.ru/video/9323ef11a606d852933f080c48e9ed1d/>`_.
+
 NextGIS Web состоит из серверной и клиентской части.
 
 Серверная часть занимается хранением и отрисовкой геоданных. Она написана на
