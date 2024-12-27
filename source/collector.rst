@@ -20,7 +20,7 @@
 
 
 .. figure:: _static/ngc-stages-004_ru.png
-   :name: ngc-stages-004
+   :name: list_of_collectors_empty_pic
    :align: center
    :width: 20cm
 
@@ -36,7 +36,7 @@
     большом количестве участников.
 
 .. figure:: _static/ngc-stages-005_ru.png
-   :name: ngc-stages-005
+   :name: create_collector_pic
    :align: center
    :width: 20cm
 
@@ -46,7 +46,7 @@
 команды по сбору данных.
 
 .. figure:: _static/ngc-stages-006_ru.png
-   :name: ngc-stages-006
+   :name: list_of_collectors_pic
    :align: center
    :width: 20cm
 
@@ -80,10 +80,10 @@
 
 2. Создать подложку, если сборщику на мобильном устройстве нужно будет видеть карту.
 
-3. Выбрать в панели «Создать ресурс» ссылку «Проект Collector»:
+3. Нажать «Создать ресурс» и выбрать тип ресурса «Проект Collector»:
 
 .. figure:: _static/select_create_collector_project_ru.png
-   :name: ngc-stages-007
+   :name: create_collector_project_pic
    :align: center
    :width: 20cm
 
@@ -92,7 +92,7 @@
 4. Ввести наименование проекта. Это наименование будет доступно в мобильном приложении `NextGIS Collector`_:
 
 .. figure:: _static/ngc_proj_name_ru.png
-   :name: ngc-stages-008
+   :name: ngc_proj_name_pic
    :align: center
    :width: 20cm
 
@@ -109,7 +109,7 @@
 
 
 .. figure:: _static/ngc_proj_tab_ru.png
-   :name: ngc-stages-009
+   :name: ngc_proj_tab_pic
    :align: center
    :width: 16cm
 
@@ -130,7 +130,7 @@
 При нажатии на элемент можно посмотреть и отредактировать его параметры.
 
 .. figure:: _static/ngc_items_tab_ru.png
-   :name: ngc-stages-010
+   :name: ngc_items_tab_pic
    :align: center
    :width: 20cm
 
@@ -153,7 +153,7 @@
 путем установления галок выбираем тех участников сбора данных, которые должны участвовать в этом проекте:
 
 .. figure:: _static/ngc_list_collectors_ru.png
-   :name: ngc-stages-011
+   :name: ngc_list_collectors_pic
    :align: center
    :width: 18cm
 
