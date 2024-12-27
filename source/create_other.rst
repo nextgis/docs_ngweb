@@ -7,7 +7,7 @@
 Справочник
 ----------------------------
 
-Для создания справочника необходимо перейти в ту группу ресурсов (корневая или др.), где будет создана справочник. Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Справочник** (см. :numref:`admin_layers_create_lookup_table`). 
+Для создания справочника необходимо перейти в ту группу ресурсов (корневая или др.), где будет создан справочник. Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Справочник** (см. :numref:`admin_layers_create_lookup_table`). 
 
 .. figure:: _static/ngweb_create_lookup_ru.png
    :name: admin_layers_create_lookup_table
@@ -29,7 +29,7 @@
 На вкладке "Справочник" введите данные в виде "ключ - значение". Также можно добавить справочник, импортировав его из файла.
 
 .. figure:: _static/ngweb_creating_a_new_directory_rus_2.png
-   :name: ngweb_creating_a_new_directory_group
+   :name: ngweb_creating_a_new_lookup_pic
    :align: center
    :width: 17cm
 
@@ -40,10 +40,10 @@
 
 
 После ввода необходимых данных следует нажать на кнопку **Сохранить**. 
-Окно примет вид :numref:`ngweb_new_resource_lookup`.
+Окно примет вид :numref:`ngweb_new_resource_lookup_pic`.
 
 .. figure:: _static/ngweb_new_resource_lookup.png
-   :name: ngweb_new_resource_lookup
+   :name: ngweb_new_resource_lookup_pic
    :align: center
    :width: 20cm
 
