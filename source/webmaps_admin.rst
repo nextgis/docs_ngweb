@@ -159,13 +159,85 @@ If “Default basemap” is checked, this basemap will be visible when the Web M
 
 "Opacity" field sets basemap transparency on a map in a range between 0 and 100%.
 
+.. _ngw_create_basemap:
+
+Basemap
+~~~~~~~~~~~~
+
+Press **Create resource** button and select **Basemap** (:numref:`ngweb_admin_create_basemap`).
+In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
+
+.. figure:: _static/ngweb_create_basemap_en.png
+   :name: ngweb_admin_create_basemap
+   :align: center
+   :width: 20cm
+
+   Selection of "Basemap" resource type
+   
+   
+.. figure:: _static/ngweb_admin_basemap_name_eng_3.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 20cm
+
+   Basemap name
+   
+   
+The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
+
+.. figure:: _static/ngweb_admin_basemap_desc_eng_3.png
+   :name: ngweb_admin_basemap_desc
+   :align: center
+   :width: 20cm
+
+   Basemap description
+   
+
+In the “Basemap” tab you must enter the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to do so:
+
+* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
+* Enter the address manually. 
+
+The basemap will be previewed below. Press |button_toggle_basemap| **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
+
+.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
+
+.. figure:: _static/create_basemap_settings_en_3.png
+   :name: ngweb_admin_basemap_param
+   :align: center
+   :width: 16cm
+
+   Basemap settings
+
+
 .. _ngw_map_no_base:
 
 Web Map with no basemap
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
 create a new basemap and add it to your Web Map. Then turn this newly created basemap off.
+
+See how it works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/KUAzaL15TvI?si=Za1Lrfqvo6IHcuIp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/KUAzaL15TvI?si=8dy3RS3YgCUBiBEC>`_.
+
+.. _ngcom_layer_as_basemap:
+
+How to use any layer in your Web GIS as a basemap
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Any layer (style) created in Web GIS can be used as a source of a tile service and connected as a **basemap**.
+To do this, you should:
+
+1. Create the required `layer <https://docs.nextgis.com/docs_ngweb/source/layers.html>`_ (vector or raster) and a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ for it. Inside the style you'll find a link marked **TMS service** - you will need it for step 3;
+2. Enable `caching <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_ (to speed up Web Map processing, for `Premium plan <https://nextgis.com/pricing-base/>`_ only);
+3. Create "Basemap" resource with unchecked "Use options from QMS" and the URL of the above-created TMS layer.
+
 
 .. _ngw_map_settings:
 
