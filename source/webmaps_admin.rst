@@ -161,8 +161,8 @@ If “Default basemap” is checked, this basemap will be visible when the Web M
 
 .. _ngw_create_basemap:
 
-Basemap
-~~~~~~~~~~~~
+Creating Basemap
+~~~~~~~~~~~~~~~~~~~
 
 Press **Create resource** button and select **Basemap** (:numref:`ngweb_admin_create_basemap`).
 In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
