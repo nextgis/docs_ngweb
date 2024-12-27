@@ -143,4 +143,40 @@ With NextGIS Web application experience we recommend the following typical struc
 
 Typical structure ::
 
+  Main resource group
+	Web Maps
+		Master Web Map
+		Test Web Map
+	PostGIS connections
+		PostGIS on server
+	Data layers
+		Base data
+			Borders
+			Infrastructure - linear features
+			Accounting area
+		Thematic data
+			Results of measurements on accounting area
+			Results of measurements on accounting routes
+			Observation points for rare species
+		Relief
+			ASTER DEM
+				DEM
+				Isolines
+		Topographic data
+			Openstreetmap
+				Roads
+				Administrative borders
+				Hydrology
+				Railway stations
+				Railway roads
+				Landuse
+			1 : 100000
+				M-37-015
+				M-37-016
+				M-37-017
+		Satellite imagery
+			Landsat-8
+			Ikonos
+
+
 
