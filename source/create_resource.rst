@@ -86,7 +86,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Откроется окно визуального предварительного просмотра загруженных геометрий без возможности более детального взаимодействия (просмотра атрибутов, идентификации объектов и др.).
 
 .. figure:: _static/ngweb_preview_1_ru.png
-   :name: /ngweb_preview_1_rus
+   :name: /ngweb_preview_1_pic
    :align: center
    :width: 20cm
 
@@ -99,7 +99,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Также вы можете перейти на отдельную страницу предпросмотра, нажав на кнопку **Просмотр** в правом меню в разделе *Дополнительно* на странице ресурса.
 
 .. figure:: _static/ngweb_preview_2_rus.png
-   :name: ngweb_preview_2_rus
+   :name: ngweb_preview_2_pic
    :align: center
    :width: 20cm
 
@@ -108,7 +108,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Чтобы посмотреть превью стиля, зайдите в ресурс слоя и нажмите на значок глаза рядом со стилем в списке дочерних ресурсов. Пункт "Предпросмотр" в меню справа откроет просмотр самого слоя на отдельной странице.
 
 .. figure:: _static/ngweb_preview_styleandlayer_ru.png
-   :name: ngweb_preview_1_en
+   :name: ngweb_preview_1_pic
    :align: center
    :width: 20cm
 
@@ -123,7 +123,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Предварительный просмотр слоя, объекты отмечены стандартными символами
 
 .. figure:: _static/ngweb_preview_style_ru.png
-   :name: ngweb_preview_2_en
+   :name: ngweb_preview_2_pic
    :align: center
    :width: 20cm
 
