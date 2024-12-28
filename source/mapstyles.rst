@@ -49,23 +49,53 @@ After the selection of "QGIS vector style" create resource dialog will open.
 
 You can upload a file or create a simple vector style in the dialog.
 
+.. _ngw_qgis_style_file:
+
 QGIS style from file
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
-To upload a pre-made style click "Select a style" or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
+To upload a pre-made style click **Select a style** on the "QGIS style" tab or drag a file to this field (see in :numref:`upload_svg_qgis_style`).
 
-If you need to use specially-made markers, you can select the SVG marker library resource, which contains the icon to be displayed on the Web Map.
-
-.. figure:: _static/upload_svg_qgis_style_en_2.png
+.. figure:: _static/upload_qgis_style_en.png
    :name: upload_svg_qgis_style
    :align: center
    :width: 16cm
 
-   Upload QML file
+   Uploading QML file
 
-.. warning::
-   QML file to upload should be created in :program:`NextGIS QGIS` and saved on the PC (:numref:`save_svg_qgis_style`).
-   To create a style using SVG markers, you need to specify the **SVG marker** type in the layer properties and write the **full path to the file** on the local machine (:numref:`svg_qgis_style`). The file name must match the one loaded in the *SVG Marker Library* resource that the user selects when loading the QML file.
+You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
+
+After the QML file is uploaded click **Create**. After the style is created, its resource page opens (see :numref:`svg_res_style`).
+
+.. figure:: _static/svg_res_style_en_2.png
+   :name: svg_res_style
+   :align: center
+   :width: 20cm
+
+   QGIS style resource page
+    
+You can `replace <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom-edit>`_ the QML file of a style.
+
+.. _ngw_qgis_style_svg:
+
+SVG markers
+~~~~~~~~~~~~~~~
+
+There are several ways to add custom markers to a style for NextGIS Web:
+
+1. Embed marker file into QGIS style.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/bJLuYp73u_E?si=Sv-VJrEWh5RZzjTh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/bJLuYp73u_E?si=6vMNCQUz45DJfE79>`_.
+
+2. Publish the image file online and use its URL as the path to SVG marker.
+
+3. Add `SVG marker library <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-create-svg-marker-lib>`_ to your Web GIS.
+
+To create a style using SVG markers from a library resource, you need to specify the **SVG marker** type in the layer properties in QGIS and enter the **full path to the file** on the local machine (:numref:`svg_qgis_style`). The file name must match the one loaded in the *SVG Marker Library* resource that the user selects when loading the QML file.
 
 .. figure:: _static/save_svg_qgis_style_en.png
    :name: save_svg_qgis_style
@@ -81,18 +111,66 @@ If you need to use specially-made markers, you can select the SVG marker library
 
    Layer properties settings in NextGIS QGIS
 
-You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
-Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
-After QML file is uploaded click **Create**. Then the window of QGIS style will open and will look like :numref:`svg_res_style`. 
-You can see here a TMS link to connect data to external applications.
 
-.. figure:: _static/svg_res_style_en_2.png
-   :name: svg_res_style
+.. _ngw_create_svg_marker_lib:
+
+SVG Marker Library
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers.
+Press **Create resource** button and select **SVG marker library** (see :numref:`select_svg_lib`). 
+
+.. figure:: _static/ngweb_create_SVG_lib_en.png
+   :name: select_svg_lib
    :align: center
    :width: 20cm
+   
+   Selecting SVG marker library resource type
 
-   QGIS style window
+In the opened window, enter the name of the resource (see :numref:`name_svg_lib`).
+
+.. figure:: _static/name_svg_lib_eng_2.png
+   :name: name_svg_lib
+   :align: center
+   :width: 20cm
+   
+   SVG marker library name
+   
+Add description and metadata on the corresponding tabs if you need them.
+Metadata is used in external apps working with `API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_.
+
+In the SVG marker library tab you need to upload SVG markers from your device. You can upload markers as individual files or as a zip-archive.
+The archive must contain only markers.
+
+.. figure:: _static/ngweb_upload_svg_en.png
+   :name: upload_svg
+   :align: center
+   :width: 16cm
+   
+   Uploading SVG markers
+
+After all icons have been uploaded to the library, you will see the list of the file names. Click **Create** to complete the process (see :numref:`create_svg_lib`). 
+
+  
+.. figure:: _static/list_svg_eng.png
+   :name: list_svg
+   :align: center
+   :width: 20cm
+   
+   List of SVG markers uploaded to the library
+
+Then create a style with the QML file and select the SVG library resource.
+
+.. figure:: _static/upload_svg_qgis_style_en_2.png
+   :name: upload_svg_lib_qgis_style
+   :align: center
+   :width: 16cm
+
+   QGIS style using SVG marker library
+
+SVG markers can also be embedded in a QGIS style. That way you wouldn't need to create a separate library resource.
+
 
 .. _ngw_qgis_style_custom:
 
