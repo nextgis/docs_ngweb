@@ -80,7 +80,7 @@ Table allows to perform the following operations with the selected feature  :num
 
    Actions for the selected record in feature table
 
-You can also `edit the attributes <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-vector-layer-attributes-table>`_ themselves.
+You can also `edit the attributes <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`_ themselves.
 
 
 .. _ngw_feature_table_filter_area:
