@@ -3,153 +3,8 @@
 
 .. _ngw_create_layers:
 
-Adding resources
-================
-
-NextGIS Web is built on a **resource-based** approach - each component of the system (layer, group, service) is a resource.
-One of these resources is a **layer** - a raster image or vector file (database table).
-
-For each layer you can create an **unlimited** number of **styles** - ways of visualizing geodata on a Web Map.
-
-Interface for adding of PostGIS layers, vector and raster layers is practically the same. 
-First, you specify the parameters for the layer, and then you add a style that renders data on the Web Map.
-
-To create a new resource, open the group where you want to add it and press **Create resource** button. Then in the pop-up window select the resource type. The window opens on the full list of available resource types.
-
-.. figure:: _static/ngweb_create_en.png
-   :name: ngweb_create_pic
-   :align: center
-   :width: 20cm
-
-   Create resource window
-
-To find the resource type you need faster, use the search bar. 
-
-.. figure:: _static/ngweb_create_search_en.png
-   :name: ngweb_create_search_pic
-   :align: center
-   :width: 20cm
-
-   Searching for resource type
-
-Resource types are also grouped into categories. You can select a category from the list on the left.
-
-* Layers and styles 
-* Maps and services (Web Map, WMS, WFS and OGC API - Features services)
-* Field data collection (tracker group, tracker, Collector project)
-* External connections (PostGIS, TMS and WMS connections)
-* Miscellaneous (resource group, SVG marker library, lookup table)
-
-See below for details of creating resource of each type.
-
-.. _ngw_create_basemap:
-
-Basemap
--------
-
-Press **Create resource** button and select **Basemap** (:numref:`ngweb_admin_create_basemap`).
-In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
-
-.. figure:: _static/ngweb_create_basemap_en.png
-   :name: ngweb_admin_create_basemap
-   :align: center
-   :width: 20cm
-
-   Selection of "Basemap" resource type
-   
-   
-.. figure:: _static/ngweb_admin_basemap_name_eng_3.png
-   :name: ngweb_admin_basemap_name
-   :align: center
-   :width: 20cm
-
-   Basemap name
-   
-   
-The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
-
-.. figure:: _static/ngweb_admin_basemap_desc_eng_3.png
-   :name: ngweb_admin_basemap_desc
-   :align: center
-   :width: 20cm
-
-   Basemap description
-   
-
-In the “Basemap” tab you must enter the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to do so:
-
-* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
-* Enter the address manually. 
-
-The basemap will be previewed below. Press |button_toggle_basemap| **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
-
-.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
-
-.. figure:: _static/create_basemap_settings_en_3.png
-   :name: ngweb_admin_basemap_param
-   :align: center
-   :width: 16cm
-
-   Basemap settings
-
-
-.. _ngw_data_preview:
-
-Data Preview
-------------
-
-The preview function allows you to see the uploaded data on the basemap or a basemap without adding it on the Web Map.
-
-Click the "eye" icon opposite the name of the child resource you want to preview.
-
-A visual preview of the uploaded geometries will open without the possibility of more detailed interaction (viewing attributes, identifying objects, etc).
-
-.. figure:: _static/ngweb_preview_basemap_en_2.png
-   :name: ngweb_preview_2_en
-   :align: center
-   :width: 20cm
-
-   Data preview
-
-Click |button_open_new_tab| **Open in a new tab** to view a bigger preview on a separate page.
-
-.. |button_open_new_tab| image:: _static/button_open_new_tab.png
-
-
-Alternatively, open the resource page and click on the **Preview** button in the right menu in the **Extra** section.
-
-.. figure:: _static/ngweb_preview_2_en.png
-   :name: ngweb_preview_2_en
-   :align: center
-   :width: 20cm
-
-   Data preview in a separate tab
-
-To preview a style, open the layer page and click on the eye icon next to the style subresource. The "Preview" action in the Extra tab on the right will display the preview of the resource itself, i.e. layer (:numref:`ngweb_preview_vector_pic`).
-
-.. figure:: _static/ngweb_preview_1_en_2.png
-   :name: ngweb_preview_1_en
-   :align: center
-   :width: 20cm
-
-   Selecting Data Preview Function for the layer (top right) or its style (below)
-
-.. figure:: _static/ngweb_preview_vector_en_2.png
-   :name: ngweb_preview_vector_pic
-   :align: center
-   :width: 20cm
-
-   Preview of a vector layer, features marked by default round markers
-
-.. figure:: _static/ngweb_preview_style_en_2.png
-   :name: ngweb_preview_2_en
-   :align: center
-   :width: 20cm
-
-   Preview of a style, the same features marked by custom icons
-
-
-
+Add layers
+===========
 
 .. _ngw_create_raster_layer:
 
@@ -994,6 +849,14 @@ In the "Tile Cache" tab, the user can set the caching settings:
 
 After filling in all the fields, clicking the **Create button** completes the process of creating the resource **Tileset**.
 
+See how to add a tileset in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/eCeptUacIRM?si=3sIwP6nZJBHB9g7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`_.
+
 .. _ngw_wfs:
 
 WFS Layer
@@ -1159,7 +1022,7 @@ Using WFS service
 
 After the resource is created, a URL for the WFS service is available. You can use it in other software, for example :program:`NextGIS QGIS`. 
 
-You can set access permissions for WFS service if needed. See section :ref:`ngw_access_rights`.
+You can set access permissions for WFS service if needed. See `this section <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for details.
 
 WFS services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
 
@@ -1170,7 +1033,7 @@ WFS services can also be accessed with links of the following type (`basic auth 
 .. _ngw_OGC_API_Features:
 
 OGC API Features service
------------
+-------------------------
 
 The OGC API Features service is configured in the same way as for a WFS service.
  
@@ -1243,217 +1106,3 @@ OGC API Features services can also be accessed with links of the following type 
 
    hhttps://yourwebgis.nextgis.com/api/resource/208/ogcf
 
-.. _ngw_resources_group:
-
-Creation of a Resource group
-----------------------------
-
-Resources can be arranged in groups. For example, you can have special groups for base layers, satellite images and topical data.
-
-Groups help organize the layers in the Control panel and make it easier to manage access permissions. 
-
-To create a resource group navigate to the group, where you want to create a new one (root group or another). Press **Create resource** button and select  **Resource group** (see :numref:`admin_layers_create_resource_group`). 
-
-.. figure:: _static/admin_layers_create_resource_group_en.png
-   :name: admin_layers_create_resource_group
-   :align: center
-   :width: 20cm
-
-   Selection of "Resource group" resource type
-    
-Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
-
-.. figure:: _static/admin_layers_create_group_eng_3.png
-   :name: admin_layers_create_group
-   :align: center
-   :width: 20cm
-
-   Create resource dialog for resource group
-
-In the opened dialog enter the name of the resource that will be displayed in the administrator interface and in the map layer tree, and then click **Create**. 
-
-"Keyname" field is optional.
-
-You can also add resource description and metadata on the corresponding tabs.
-
-.. _ngw_create_lookup_table:
-
-Lookup table
--------------
-
-To create a lookup table navigate to the group, where you want to create it (root group or another). Press **Create resource** button and select  **Lookup table** (see :numref:`admin_layers_create_lookup_table`). 
-
-.. figure:: _static/ngweb_create_lookup_en.png
-   :name: admin_layers_create_lookup_table
-   :align: center
-   :width: 20cm
-
-   Selection of "Lookup table" resource type
-
-In the opened dialog enter a display name. "Keyname" field is optional.
-
-.. figure:: _static/ngweb_admin_layers_create_lookup_eng_3.png
-   :name: ngweb_admin_layers_create_lookup
-   :align: center
-   :width: 20cm
-
-   Create resource dialog for lookup table
-
-
-You can also add resource description and metadata on the corresponding tabs.
-
-Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_directory_group`. Add data in the “key-value” format. You can also import a pre-made lookup table from a CSV file.
-
-.. figure:: _static/ngweb_creating_a_new_lookuptable_en.png
-   :name: ngweb_creating_a_new_directory_group
-   :align: center
-   :width: 18cm
-
-   Lookup table tab of Create resource dialog
-   
-Then click **Save**. The window will then look as on :numref:`ngweb_new_resource_group`
-
-.. figure:: _static/ngweb_new_resource_eng_2.png
-   :name: ngweb_new_resource_group
-   :align: center
-   :width: 20cm
-
-   Newly created lookup table
-
-To change anything in a lookup table click **Update** in the "Action" pane. The resource update dialog will open. Switch to "Lookup table" tab where you can change the table's contents:
-
-* add a new key-value pair
-* change a current key-value pair
-* delete a key-value pair
-
-A lookup table can be exported to a CSV file.
-
-You can also connect a lookup table to a field of a vector layer. This way while editing the layer you can choose attribute values from the list. To add a lookup table to the layer, open the Edit dialog for the layer and go to the Attributes tab. In the row of the attribute click on the downward arrow in the Lookup table column to select the table.
-
-.. _ngw_create_svg_marker_lib:
-
-SVG Marker Library
-----------------------
-
-In Web GIS you can create SVG marker libraries to be displayed using QGIS styles of vector layers. Press **Create resource** button and select **SVG marker library** (see :numref:`select_svg_lib`).
-
-.. figure:: _static/ngweb_create_SVG_lib_en.png
-   :name: select_svg_lib
-   :align: center
-   :width: 20cm
-   
-   Selecting SVG marker library resource type
-
-In the opened window, enter the name of the resource (see :numref:`name_svg_lib`).
-
-.. figure:: _static/name_svg_lib_eng_2.png
-   :name: name_svg_lib
-   :align: center
-   :width: 20cm
-
-   SVG marker library name
-
-Add description and metadata on the corresponding tabs if you need them.
-In the SVG marker library tab you need to upload SVG markers from your device.
-You can upload markers as individual files or as a zip-archive. The archive must contain markers only.
-After all icons have been uploaded to the library, you will see the list of the file names. Click **Create** to complete the process (see :numref:`create_svg_lib`).
-
-.. figure:: _static/ngweb_upload_svg_en.png
-   :name: create_svg_lib
-   :align: center
-   :width: 16cm
-   
-   Uploading SVG
-   
-.. figure:: _static/list_svg_eng.png
-   :name: list_svg
-   :align: center
-   :width: 20cm
-      
-   List of SVG markers uploaded to the library
-
-The process of adding marker libraries to vector layer styles is described `here <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_.
-
-
-.. _ngw_create_file_bucket:
-
-File bucket
-----------------------
-
-.. important::
-
-   It is a special type of resource available in `Extended edition of NextGIS on-premise <https://nextgis.com/pricing/>`_. It allows users to create a storage space for any types of files.
-
-On the **Resource** tab enter a name for the file bucket. It will be displayed in the administrator interface. “Keyname” field is optional.
-
-.. figure:: _static/ngw_name_file_bucket_en.png
-   :name: name_file_bucket_pic
-   :align: center
-   :width: 16cm
-   
-   File bucket name
-
-In the **File bucket** tab select files or a ZIP archive to extract files from.
-
-.. figure:: _static/ngw_upload_file_bucket_en.png
-   :name: ngw_upload_file_bucket_pic
-   :align: center
-   :width: 16cm
-
-   Uploading files to bucket
-
-The "Description" and "Metadata" of the resource can be configured on the corresponding tabs.
-
-After a file bucket is created, its contents can be modified. You can add and delete individual files. If you select a new ZIP archive, the files extracted from it will **replace** all files added before.
-
-Files stored in the bucket can be viewed in browser (if the file type allows it), saved one-by-one from the context menu or exported all at once as a ZIP archive.
-
-.. figure:: _static/ngw_file_bucket_result_en.png
-   :name: ngw_file_bucket_result_pic
-   :align: center
-   :width: 20cm
-
-   Resource page of a File bucket with the list of included files
-
-
-Typical structure
-------------------
-
-With NextGIS Web application experience we recommend the following typical structure for organizing resources.
-
-Typical structure ::
-
-  Main resource group
-	Web Maps
-		Master Web Map
-		Test Web Map
-	PostGIS connections
-		PostGIS on server
-	Data layers
-		Base data
-			Borders
-			Infrastructure - linear features
-			Accounting area
-		Thematic data
-			Results of measurements on accounting area
-			Results of measurements on accounting routes
-			Observation points for rare species
-		Relief
-			ASTER DEM
-				DEM
-				Isolines
-		Topographic data
-			Openstreetmap
-				Roads
-				Administrative borders
-				Hydrology
-				Railway stations
-				Railway roads
-				Landuse
-			1 : 100000
-				M-37-015
-				M-37-016
-				M-37-017
-		Satellite imagery
-			Landsat-8
-			Ikonos
