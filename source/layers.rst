@@ -200,6 +200,14 @@ Source files could be in the following formats:
 * :term:`GML`
 * :term:`GeoPackage`
 
+Point layers can also be created from CSV and XLSX files, the coordinates should be in the 'lat' and 'lon' columns. Watch the process of creating such a layer in the video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-Yb4_GQugfQ?si=GUIXGZJQraiIg3vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/-Yb4_GQugfQ?si=_6akhHxlIURO6AEL>`_.
+
 Use :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>` if you need to upload data in other formats.
 
 .. note:: 
