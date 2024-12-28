@@ -67,10 +67,10 @@
 Стиль QGIS из файла
 ~~~~~~~~~~~~~~~~~~~~~
 
-Для того, чтобы загрузить готовый стиль, на вкладке **Стиль QGIS** необходимо выбрать QML-файл стиля на устройстве или перетащить его в эту область (см. :numref:`upload_svg_qgis_style`).
+Для того, чтобы загрузить готовый стиль, на вкладке **Стиль QGIS** необходимо выбрать QML-файл стиля на устройстве или перетащить его в эту область (см. :numref:`upload_qgis_style`).
 
 .. figure:: _static/QGIS_style_upload_ru_2.png
-   :name: upload_svg_qgis_style
+   :name: upload_qgis_style
    :align: center
    :width: 20cm
 
@@ -172,8 +172,15 @@ SVG-маркеры
    :width: 22cm
    
    Список загруженных в библиотеку SVG-маркеров
-   
-Процесс добавления библиотек маркеров к стилю векторного слоя описан `здесь <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_.
+
+Затем создайте в Веб ГИС стиль, добавив в него ранее созданную библиотеку маркеров:
+
+.. figure:: _static/QGIS_style_svg_upload_ru.png
+   :name: upload_svg_qgis_style
+   :align: center
+   :width: 16cm
+
+   Создание стиля с использованием библиотеки маркеров
 
 SVG-маркеры также можно `встроить <https://docs.nextgis.ru/docs_ngqgis/source/styling.html#svg>`_ в стиль QGIS, тогда не будет необходимости в создании отдельного ресурса библиотеки.
 
