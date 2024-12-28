@@ -33,11 +33,11 @@ To find the resource type you need faster, use the search bar.
 
 Resource types are also grouped into categories. You can select a category from the list on the left.
 
-* Layers and styles (`raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ and`vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_  layers and `styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_, `basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_)
+* Layers and styles (`raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_  layers and `styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_, `basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_)
 * Maps and services (`Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html>`_, WMS, WFS, OGC API - Features services)
 * Field data collection (`tracker group, tracker <https://docs.nextgis.com/docs_ngcom/source/tracking.html#tracking-create>`_, `Collector project <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-project>`_), `form for data collection <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_
 * External connections (PostGIS, TMS and WMS connections)
-* Miscellaneous (`resource group <https://docs.nextgis.com/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_, `SVG marker library <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#svg>`_, `lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_, `file bucket <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_)
+* Miscellaneous (`resource group <https://docs.nextgis.com/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_, `SVG marker library <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-create-svg-marker-lib>`_, `lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_, `file bucket <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_)
 
 Click on the resource type to see the detailed description of the process.
 
