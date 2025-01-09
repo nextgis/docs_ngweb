@@ -1,65 +1,63 @@
 .. sectionauthor:: Maxim Dubinin <maxim.dubinin@nextgis.com>
 
-Как изменить домен
-==================
+How to change Web GIS domain
+============================
 
 .. note:: 
-	Эта функциональность доступна только для пользователей плана `Premium <http://nextgis.ru/nextgis-com/plans>`_.
+	This functionality is available only to nextgis.com `Premium users <http://nextgis.com/nextgis-com/plans>`_.
 
-Создав Веб ГИС, по умолчанию вы получаете домен вида *mywebgis.nextgis.com*. 
+After you created a Web GIS you get a domain at nextgis.com, for example *mywebgis.nextgis.com*. You can rename it to something else, i.e. *mywebgis2.nextgis.com* by contacting support.
 
-* Вы можете заменить его на *mywebgis2.nextgis.com* (то есть **переименовать** домен) через запрос в техническую поддержку.
-
-* Вы также можете сменить его на **дочерний домен внутри домена своей организации**, например *gis.example.com*, где example.com - домен организации. Далее для примеров будут использоваться эти два адреса.
+You can also change it to a subdomain  under the domain of your organization, for example *gis.example.com* where example.com is the domain of your organization. We will use these two addresses in the examples below.
 
 .. note::
-	Вы не сможете использовать сам домен организации (example.com) в качестве адреса Веб ГИС. Это связано с невозможностью добавления CNAME записи в корне DNS-зоны у большинства провайдеров.
+	You can't use your organization domain itself (mycompany.com) as Web GIS domain.  It is impossible to add CNAME record in the DNS zone root with most of the providers.
 
-Для изменения домена необходимо выполнить несколько шагов. Эти шаги должны производиться вашим системным администратором или лицом имеющим доступ к управлению доменами вашей организации.
+Follow these steps to change the domain name. The described actions are done by the system administrator of your company or another authorized person who has access to DNS records.
 
-**Шаг 1. Внести в DNS запись для получения сертификатов HTTPS**
+**Step 1. Add DNS record to get HTTPS certificates**
 
 .. code-block:: bash
 
    _acme-challenge.gis.example.com. CNAME _acme-challenge.nimbo.nextgis.net.
    
-замените gis.example.com на домен для Веб ГИС вашей организации.
+change *gis.example.com* in this record to the needed domain under the domain of your organization.
 
-**Проверка 1**
+**Check 1**
 
-Администратор организации должен проверить, что изменения были внесены правильно. Используйте `Dig <https://toolbox.googleapps.com/apps/dig/#CNAME/>`_. 
+Your system administrator needs to check that changes took effect. Use `Dig <https://toolbox.googleapps.com/apps/dig/#CNAME/>`_. 
 
-1. В поиске введите: _acme-challenge.gis.example.com. 
+Enter: _acme-challenge.gis.example.com. 
 
-Ожидаемый ответ: возвращается запись CNAME (TTL и TARGET). 
-TARGET должно быть равно: _acme-challenge.nimbo.nextgis.net.
+Expected answer: CNAME (TTL and TARGET). 
+TARGET must have the following value: _acme-challenge.nimbo.nextgis.net.
 
-Обратите внимание, что применение изменений DNS может занять время, пожалуйста, дождитесь пока это произойдет.
+Give some time for DNS changes to take effect.
 
-**Шаг 2. Внести в DNS запись для перенаправления запросов к Веб ГИС**
+**Step 2. Add DNS record 2 to redirect requests to Web GIS**
 
 .. code-block:: bash
 
    gis.example.com. CNAME example.nextgis.com.
 
-замените gis.example.com на домен для Веб ГИС вашей организации, a example.nextgis.com на адрес вашей Веб ГИС в домене \*.nextgis.com.
+change *gis.example.com* to the needed domain under the domain of your organization, change *example.nextgis.com* to your Web GIS address at *.nextgis.com
 
-**Проверка 2**
+**Check 2**
 
-Администратор организации должен проверить, что изменения были внесены правильно. Используйте `Dig <https://toolbox.googleapps.com/apps/dig/#CNAME/>`_. 
+Your system administrator needs to check that changes took effect. Use `Dig <https://toolbox.googleapps.com/apps/dig/#CNAME/>`_. 
 
-1. В поиске введите: gis.example.com
+Enter: gis.example.com
 
-Ожидаемый ответ: возвращается запись CNAME (TTL и TARGET). 
-TARGET должно быть равно: mywebgis.nextgis.com.
+Expected answer: CNAME (TTL and TARGET). 
+TARGET must have the following value: mywebgis.nextgis.com.
 
-Обратите внимание, что применение изменений DNS может занять время, пожалуйста, дождитесь пока это произойдет.
+Give some time for DNS changes to take an effect.
 
-**Шаг 3. Сообщите нам**
+**Step 3. Inform us**
 
-Когда обе проверки проходят успешно, сообщите нам об этом на support@nextgis.com. Формат запроса:
+After both checks are successful, let us know at support@nextgis.com. Please use the following template:
 
-1. Адрес вашей Веб ГИС: mywebgis.nextgis.com
-2. Адрес, на который хотите переключиться: gis.example.com
+1. Your Web GIS URL: *mywebgis.nextgis.com*
+2. Domain you want to switch to: *gis.example.com*
 
-Мы произведем финальные настройки, дождитесь ответа в поддержке.
+We will finalize the setup and contact you when everything is ready.
