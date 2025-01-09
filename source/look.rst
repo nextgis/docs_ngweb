@@ -135,7 +135,7 @@ More on how to set up permissions to read and modify data `here <https://docs.ne
    This setting does not in any way affect the ability to receive data through the `REST API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_ in accordance with the set `permissions <https://docs.nextgis.com/docs_ngweb/source/permissions.html>`_ to them.
 
 
-
+.. _ngw_homepage:
 
 How to change the homepage address
 -------------------------------------
