@@ -27,6 +27,7 @@ NextGIS Web
    webmaps_client
    webmap_set
    favorites
+   annotation
    users
    permissions
    ngw_srs
