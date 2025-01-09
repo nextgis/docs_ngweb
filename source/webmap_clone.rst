@@ -66,7 +66,7 @@ If a group (folder) is selected, the button reads "Clone to selected group". If 
 .. figure:: _static/webmap_clone_into_this_group_en.png
    :name: webmap_clone_into_this_group_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    A opened group in the group selection window
 
@@ -82,7 +82,7 @@ If you need to create a new group, click on the folder icon with a plus in the b
 .. figure:: _static/webmap_clone_group_create_en.png
    :name: webmap_clone_group_create_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    Selecting "Create group" action
    
@@ -91,7 +91,7 @@ A field will appear where you need to enter the name for the new group. To confi
 .. figure:: _static/webmap_clone_new_group_en.png
    :name: webmap_clone_new_group_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    Creating new group
    
