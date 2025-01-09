@@ -1,7 +1,7 @@
-.. _ngcom_webmap_print:
+.. _ngw_webmap_print:
 
-How to print a Web Map
-=========================
+Print a Web Map or save as image
+================================
 
 :ref:`Web GIS <ngcom_description>` allows to print a Web Map or save it as a picture. To do it: 
 
