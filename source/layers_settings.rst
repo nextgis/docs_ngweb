@@ -362,14 +362,15 @@ When editing a layer based on a Shapefile attribute all changes are saved to a l
 Geodata with changed attributes could be downloaded by link :guilabel:`Download as 
 GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
 
-.. _ngw_add_photos:
 
-Adding attachments to geodata
-----------------------------------
+
+.. _ngw_attachments:
+
+Attachments
+------------
 
 NextGIS Web software supports adding photos, panoramas and other files to the features. 
-If a feature has attachments, they will be shown along with description and attributes in the identify window 
-(see  :numref:`webmap_identification_photos`).
+If a feature has attachments, they will be shown along with description and attributes in the identify window  (see  :numref:`webmap_identification_photos`).
 
 .. figure:: _static/webmap_identification_photos_eng_2.png
    :name: webmap_identification_photos
@@ -378,41 +379,22 @@ If a feature has attachments, they will be shown along with description and attr
 
    Identify window for a feature with attached photos
 
+
+
 Files in the following formats can be viewed directly in the web client:
 
 * JPEG, PNG images. GIF format not supported.
-* Panoramas complying with the `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+* Panoramas complying with the `specification<https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
 
 Other types of files can be added as attachments, but won't be viewed in the interface.
 
-You can add attachments from the Web Map or from the features table in the Administrator interface. To add attachments from the Web Map:
-
-1. Click on the feature with the identify tool.
-2. Press Edit button (see :numref:`ngweb_editing_when_viewing_map`).
-3. In the edit tab navigate to the **Attachments** tab (see :numref:`ngweb_tab_attachment`).
-4. Upload files. (see :numref:`admin_object_edit_photos1`).
-
-.. figure:: _static/admin_object_edit_photos1_eng_2.png
-   :name: admin_object_edit_photos1
-   :align: center
-   :width: 16cm
-
-   Uploading photos in the "Attachments" tab
-
-Enter description and click **Save**.
-
-After uploading you can see previews of photos and panoramas on the "Attachments" tab  
-of the identify window (see  :numref:`webmap_identification_photos`).
-
 After a click on a photo preview a lightbox window is open (a  
-javascript powered window in browser). Hoto size is adjusted to fit the window.  Photos have descriptions  
-and user can navigate through them using left and right arrow keys  
-on the keyboard (see  :numref:`webmap_identification_photo_lightbox`).
+javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_identification_photo_lightbox_eng_2.png
-   :name: webmap_identification_photo_lightbox
+   :name: ngweb_webmap_identification_photo_lightbox
    :align: center
-   :width: 18cm
+   :width: 20cm
 
    A lightbox with uploaded photo for the identified feature 
 
@@ -425,17 +407,76 @@ To navigate within the panorama, use the mouse. Hold down the left mouse button 
 
    Panorama opened from Web Map
 
+
+.. _ngw_add_photos:
+
+Add attachments to a feature
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add an attachment to a feature, go to the edit window. There are several ways to open it:
+
+* Click on the feature on the Web Map, then in the pop-up window press the **Edit** button.
+* Open the feature table on the Web Map, select the feature and click **Edit** in the toolbar.
+* Open the feature table from the resource page,  select the feature and click **Edit** in the toolbar.
+
+On the Edit page open the Attachments tab and upload the files. 
+
+.. figure:: _static/add_attachment_en.png
+   :name: manage_att_add_pic
+   :align: center
+   :width: 20cm
+
+   Adding file as attachment
+
+
+Enter titles for the attachments and press **Save**.
+
+After uploading you can see previews of photos and panoramas on the "Attachments" tab of the identify window (see :numref:`webmap_identification_photos`).
+
 .. note:: 
-   By default attachments could be added by any user but there is an option  
-   to limit number of users who can upload photos (see  
-   `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
-   
+   By default attachments could be added by any user but there is an option      to limit number of users who can upload photos (see      `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
+
+You can edit file names and descriptions of the added attachments. To delete an attachment, press the cross icon to its right. If you've made an error during editing, press **Reset**, all modifications will be cancelled.   
+
 To delete an attachment select it on the "Attachments" tab of the edit window, click **Delete**, and then click **Save** button.
+
+See the process of adding attachments in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/t1c1GT2myD4?si=q-zfGXgUifTx_62U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/t1c1GT2myD4?si=2SZsLHOYH_lfnNAx>`_.
+
+.. _ngw_attachments_panoramas:
+
+How to use panoramas
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Not only photos, but also panoramas can be added as attachments. They allow to immerse explore new locations or find new details in familiar places.
+
+.. figure:: _static/popup_attachm_panor_en.png
+   :name: popup_attachm_panor_pic
+   :align: center
+   :width: 16cm
+
+   Panorama preview in the identify pop-up
+
+Uploaded panoramic images must comply with the Google XMP Photo Sphere `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+
+See how to work with panoramas in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/MeZ0jJAbZ5I?si=czq1-hdAKBZpfabA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/MeZ0jJAbZ5I?si=F6s_wScaTeEjfpPl>`_.
+
 
 .. _ngw_attachments_imp_exp:
 
 Export and import attachments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To copy feature attachments between different layers or to create a backup you can save them to your device as an archive (Standard layer saving does not include attachments). 
 
@@ -466,4 +507,7 @@ The resulting archive can be imported to add the attachments to the layer featur
    :width: 16cm
 
    Importing attachments from ZIP archive
+
+.. to do:: See the process of importing and exporting attachments in our video:
+
 
