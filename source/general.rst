@@ -20,6 +20,12 @@ NextGIS Web allows:
 6. Manage access rights for layers, groups of layers, maps and other resources.
 7. Interaction through API.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/dsx-xo3McIo?si=_KFU0eLsNLv4MdMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/dsx-xo3McIo?si=Oo7lX8_FXiCdM2Nz>`_.
+
 NextGIS Web has server and client sides. 
 
 Server side stores and renders geodata. It's written in Python using Pyramid framework. Client side is a user interface for interactive :term:`geodata <geodata>` management as maps and separate resources.
