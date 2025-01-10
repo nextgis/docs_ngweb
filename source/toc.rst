@@ -25,6 +25,7 @@ NextGIS Web
    webmaps_admin   
    webmap_clone
    webmaps_client
+   print
    webmap_set
    favorites
    annotation
@@ -38,6 +39,7 @@ NextGIS Web
    infowebgis
    analytics
    look
+   domain
    label
    sysadmin_updates    
    extension
