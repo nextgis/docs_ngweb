@@ -81,4 +81,10 @@ Also from this page you can modify the name of the added Web Map fragments.
 
 To exit the editing mode, press **Done**.
 
-See how to use Favorites in our `video <https://youtu.be/Nk42wbopjBk>`_.
+See how to use Favorites in our video: 
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Nk42wbopjBk?si=-Ta58YrUl1CdoUAL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/Nk42wbopjBk?si=mK0uk6t6c4lE0i-z>`_.
