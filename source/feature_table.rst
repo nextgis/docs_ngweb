@@ -119,6 +119,14 @@ Now the feature table only contains the features within the selected area. The t
 
 You can use quick export to save the filtered features in a variety of common geodata formats. Click **Save as** and select in the dropdown menu Quick export with default settings or Advanced export to modify parameters (see detailed description below).
 
+See feature filtering in action:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/q946UruxUb0?si=ryJmDXIuD8aYPSGH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/q946UruxUb0?si=gXo0OMG3x-2dIsac>`_.
+
 .. _ngw_feature_table_fields:
 
 Displaying selected fields and feature edit information
