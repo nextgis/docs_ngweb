@@ -427,7 +427,7 @@
 В окне редактирования откройте вкладку "Вложения" и загрузите файлы. 
 
 .. figure:: _static/add_attachment_ru.png
-   :name: manage_att_select_pic
+   :name: manage_att_add_pic
    :align: center
    :width: 16cm
 
