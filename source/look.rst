@@ -31,9 +31,11 @@ It's the title displayed next to the logo on the top bar of the page. By default
 Font management
 --------------------
 
-To open the font management page, go to the Main menu, open the Control panel and in the Settings section select "Font management".
+NestGIS Web allows to upload custom fonts in addition to system ones.
 
-On this page you can view the list of system and custom fonts, upload or delete custom fonts.
+To open the font management page, go to the Main menu, open the Control panel and in the Settings section select "Font management". If no additional fonts have been uploaded, the list is empty.
+
+To view the pre-installed fonts, tick "Show system fonts".
 
 .. figure:: _static/font_manag_en.png
    :name: font_manag_pic
@@ -42,7 +44,80 @@ On this page you can view the list of system and custom fonts, upload or delete 
 
    Font management page. System fonts are shown. A custom font is selected.
 
-`Learn more <https://docs.nextgis.com/docs_ngcom/source/fonts.html>`_ on how to manage fonts.
+On this page you can view the list of system and custom fonts, upload or delete custom fonts.
+
+.. _ngw_fonts_add:
+
+How to add a font
+~~~~~~~~~~~~~~~~~~~~~~
+
+Users can add custom fonts.
+
+.. important::
+	The font must be used as labels in the appropriate QGIS style for the layer to which you want to apply this font. More about `labels <https://docs.qgis.org/3.34/en/docs/training_manual/vector_classification/label_tool.html>`_ in QGIS.
+
+Technical requirements:
+
+* TTF or OTF format;
+* File size up to 10MB;
+* Filename only has basic latin characters, numbers, underscore (_) and dash (-).
+
+To add a custom font, on the Font management page press **Upload** and select the font file from your device.
+
+.. figure:: _static/font_upload_en.png
+   :name: font_upload_pic
+   :align: center
+   :width: 18cm
+
+   Uploading custom font
+
+
+To install the font the Web GIS needs to restart. Make sure there are no ongoing requests, restarting Web GIS aborts them.
+
+.. figure:: _static/font_upload_refresh_alert_en.png
+   :name: font_upload_refresh_alert_pic
+   :align: center
+   :width: 12cm
+
+   Web GIS restart alert
+
+Press **Ok** to complete font uploading.
+
+After the installation is complete, the new font will appear in the list, marked as "Custom".
+
+.. figure:: _static/font_upload_result_en.png
+   :name: font_upload_result_pic
+   :align: center
+   :width: 18cm
+
+   Custom font added successfully
+
+See the process in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/4TFxD9hz9i8?si=jVYizefJ7TTXmZCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/4TFxD9hz9i8?si=jYtMc9kM1h4B_8hV>`_.
+
+.. _ngw_fonts_del:
+
+How to delete a custom font
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Only custom fonts added by users can be deleted.
+
+To delete a font, go to Font management page of the Control panel. Tick the font you'd like to delete.
+
+Press **Delete**. While deleting a font, as while installing one, Web GIS needs to be restarted.
+
+.. figure:: _static/font_delete_en.png
+   :name: font_delete_pic
+   :align: center
+   :width: 18cm
+
+   Deleting custom font
+
 
 
 .. _ngweb_CSS_logo:
