@@ -311,6 +311,8 @@
 * AutoCAD DXF
 * Mapinfo TAB
 * MapInfo MIF/MID
+* KML
+* KMZ
 
 При экспорте в некоторые форматы создаются дополнительные файлы, например CSVT (описание полей) и PRJ (описание проекции) для CSV, CPG (кодовая страница) для ESRI Shapefile.
 
