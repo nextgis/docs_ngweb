@@ -124,3 +124,22 @@ The added SRS can be used for various purposes:
 Custom SRS identifier (990002 in this example) can be known by editing a created SRS, for example:
 
 /srs/990002/edit
+
+
+.. _ngw_srs_external_db:
+
+Custom SRS support for external PostGIS Databases
+-------------------------------------------------
+
+A common case for Web GIS users is adding an external PostGIS/PostgreSQL database while `creating a PosGIS layer <https://docs.nextgis.com/docs_ngcom/source/data_connect.html#external-postgis-databases>`_. These layers often get incorrectly displayed 
+in the Web GIS. It happens when the spacial reference system has incorrect definition in the external 
+database. To make the Web GIS-DB complex work efficiently, here's what you need:
+
+1. External database must have a table of SRS descriptions spacial_ref_sys.
+2. In the geometry column (usually called "geom") a SRS must be assigned.
+3. The ID of the assigned SRS must be included in  spacial_ref_sys.
+4. Data in the external DB must actually be in that coordinate system, a.i. the SRS definition must correspond to the data.
+
+If all the above requirements are met, then whatever SRS you use in your database, layers created in Web GIS will be reprojected "on the fly" and displayed correctly along any other data you have in your Web GIS.
+
+To check if everything works correctly use `PostGIS diagnostics <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#postgis-diagnostics>`_.
