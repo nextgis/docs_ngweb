@@ -311,7 +311,7 @@ You can also set default legend visibility for the Web GIS: Control panel – We
 
 Options for legend visibility are:
 
-* Expand – the legend is displayed in the layer tree. If the style has multiple marker types or colors, a full list will be shown. * To collapse the list click on the ^ symbol next to the layer menu.
+* Expand – the legend is displayed in the layer tree. If the style has multiple marker types or colors, a full list will be shown. To collapse the list click on the ^ symbol next to the layer menu.
 
 .. figure:: _static/ngw_legend_full_view_en.png
    :name: ngw_legend_full_view_pic
