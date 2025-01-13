@@ -43,8 +43,8 @@ Click on the resource type to see the detailed description of the process.
 
 .. _ngw_resourses_group:
 
-Creation of a Resource group
-------------------------
+Create Resource group to manage data
+--------------------------------------
 
 Resources can be arranged into groups. For example, you can have special groups for base layers, satellite images and topical data. 
  
