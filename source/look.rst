@@ -180,7 +180,12 @@ Affects paths for the displayed resource, parameters etc.
 Resource export
 ------------------
 
-This function shows in the Web GIS interface the ability to export (save) data only for those categories of users that are selected from the list below. 
+To hide the ability to export data from Web GIS from certain categories of users, you need to:
+
+* Go to Control Panel -> Settings -> Resource export
+* Select the type of users that **will be able** to export data (only administrators / users with Data:Read or Data:Modify permissions)
+
+Users who do not fit the selected list will not see the "Save as" link in the interface.
 
 .. figure:: _static/admin_system_res_export_en_2.png
    :name: admin_system_res_export_en
@@ -197,7 +202,11 @@ This function shows in the Web GIS interface the ability to export (save) data o
 
    Data export available in the Features panel
 
-The Data Export function can be seen either only by administrators or by users with the right to:
+The categories of users you can select to have access to "Save as" action:
+
+- administrators 
+
+or users with the permission to:
 
 - Read data
 - Modify data
