@@ -41,7 +41,7 @@ Resource types are also grouped into categories. You can select a category from 
 
 Click on the resource type to see the detailed description of the process.
 
-.. _ngw_resourses_group:
+.. _ngw_resourse_group:
 
 Create Resource group to manage data
 --------------------------------------
@@ -73,10 +73,16 @@ Create resource dialog for resource group is presented on :numref:`admin_layers_
 In the opened dialog enter the name of the resource that will be displayed in the administrator interface and in the map layer tree, and then click **Create**.  
 
 
-“Keyname” field is optional.
-
-You can also add resource description and metadata on the corresponding tabs. 
+“Keyname” field is optional. You can also add resource description and metadata on the corresponding tabs. 
 Metadata is used in external apps working with `API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_.
+
+Now you can access newly created Resource group and create new resources in it.
+
+Resources can be `transfered from one group to another <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#move-resource>`_.
+
+.. note:: 
+	You can also create new Resource groups in Web GIS :ref:`with desktop app QGIS <ngcom_ngqgis_connect_resource_group>`.
+
 
 .. _ngw_data_preview:
 
