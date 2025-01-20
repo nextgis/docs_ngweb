@@ -87,6 +87,8 @@ The “Transparency” field sets the layer transparency on a map between 0% (op
 
 We recommend setting the "Adapter" field to "Image" (a single image for the entire map), unless there are some special requirements. Alternatively, you can choose “Tiles” (images of 256 x 256 pixels).
 
+.. tip:: Use "Tiles" adapter to display correctly features crossing the 180th meridian.
+
 You can also set up a scale range. Min scale corresponds to the smaller image, max scale - to the larger, more detailed image. For example, if you want a layer to be displayed in scales between 1 : 250,000 and 1 : 5,000, the higher number (250,000) is the minimal scale.
    
 .. note:: 
