@@ -109,7 +109,7 @@ Indexed Color raster files are uploaded just like the RGB raster files. If the f
 
 Vector layer from file
 -----------------------
-You can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, CSV, :term:`GML` and :term:`GeoPackage` formats in NextGIS Web.
+In NextGIS WebYou can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` and :term:`GeoPackage` formats as well as CSV or XLSX. For CSV and XLSX only points are supported, coordinates must be put in lat and lot columns.
 
 .. _ngw_process_create_vector_layer:
 
@@ -125,7 +125,9 @@ Press **Create resource** button and select **Vector layer** (see :numref:`ngweb
 
    Selection of "Vector layer" resource type
 
-In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
+In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. For CSV and XLSX only points are supported, coordinates must be put in lat and lot columns. 
+
+The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
 
