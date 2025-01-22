@@ -145,7 +145,7 @@
 Векторный слой из файла
 -----------------------
 
-В NextGIS Web можно создавать векторные слои на основе геоданных в форматах :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` и :term:`GeoPackage`. 
+В NextGIS Web можно создавать векторные слои на основе геоданных в форматах :term:`ESRI Shapefile` (zip-архив), :term:`GeoJSON`, :term:`KML`, :term:`GML` и :term:`GeoPackage`, а также CSV или XLSX. Для CSV и XLSX поддерживаются только точки, координаты должны быть в колонках lat и lon.
 
 .. _ngw_process_create_vector_layer:
 
@@ -162,7 +162,9 @@
 
    Выбор типа ресурса "Векторный слой"
  
-На открывшейся вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoJSON, GML, KML или GeoPackage. В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+На открывшейся вкладке "Векторный слой" необходимо загрузить файл геоданных в формате ESRI Shapefile (zip-архив), GeoPackage, GeoJSON, GML, KML, CSV или XLSX. Для CSV и XLSX поддерживаются только точки, координаты должны быть в колонках lat и lon.
+
+В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
 
 .. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_rus_3.png
