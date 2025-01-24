@@ -12,7 +12,7 @@ Using the control panel administrator can set a number of general settings for a
 * Address search parameters;
 * Legend visibility.
 
-.. figure:: _static/admin_webmap_panel_settings_eng_3.png
+.. figure:: _static/admin_webmap_panel_settings_eng_4.png
    :name: admin_webmap_panel_settings_pic
    :align: center
    :width: 15cm
@@ -43,7 +43,7 @@ In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_
 Identify popup
 ---------------
 
-Feature identification information can be displayed as a pop-up window or as a side panel. To select a display mode, move the switch marked "Use panel instead of popup identification".
+Feature identification information can be displayed as a pop-up window or as a side panel. To select a display mode, move the switch marked "Use panel instead of popup identification" (:nuref:`admin_webmap_panel_settings_pic`).
 
 The section regulates the following parameters:
 
