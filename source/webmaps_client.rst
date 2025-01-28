@@ -59,19 +59,23 @@
 В левой части рабочей области располагаются функциональные панели:
 
 * |panel_layers| Дерево слоев
+* |panel_ident| Панель идентификации
 * |panel_search| Поиск
 * |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
+* Кадастровые сервисы
 * |panel_share| Поделиться
 * |panel_print| Печать
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
+.. |panel_ident| image:: _static/panel_ident.png
 .. |panel_search| image:: _static/panel_search.png
 .. |panel_annot| image:: _static/panel_annot.png
 .. |panel_info| image:: _static/panel_info.png
 .. |panel_bookmarks| image:: _static/panel_bookmarks.png
+.. |panel_cadaster| image:: _static/panel_cadaster.png
 .. |panel_share| image:: _static/panel_share.png
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
@@ -80,7 +84,7 @@
 
 В **дереве слоев** находится список всех стилей слоев, добавленных на веб-карту. 
 
-Вы можете отключать видимость не только слоёв, но и отдельных элементов этих слоёв, снимая галочки соответствующих элементов легенды. Это актуально для больших картографических проектов, где слои содержат множество объектов с различными значениями определённого столбца таблицы атрибутов.
+Вы можете отключать видимость не только слоёв, но и отдельных элементов этих слоёв, снимая галочки соответствующих элементов легенды. Это актуально для больших картографических проектов, где слои содержат множество объектов с различными значениями определённого столбца таблицы атрибутов. Также слои можно перетаскивать внутри дерева, меняя порядок их отображения. При перезагрузке страницы отображение слоёв будет сброшено к изначальному.
 
 Возможности панели слоёв также представлены в видео:
 
@@ -233,23 +237,28 @@
 
 .. _ngw_webmaps_client_tools_swipe:
 
-Вертикальная шторка
-~~~~~~~~~
+Шторка
+~~~~~~~~~~~~~~~~~~~~
 
-Вертикальная шторка |button_swipe| делает прозрачной ту область выбранного слоя на карте, которая находится справа от неё (см. :numref:`ngweb_webmap_swyped`).
+Шторка делает прозрачной ту область выбранного слоя на карте, которая находится справа от неё (см. :numref:`ngweb_webmap_swyped`).
 
 .. |button_swipe| image:: _static/button_swipe.png
+   :width: 8mm
 
-Выбранный слой - это слой, который выбран щелчком по нему в дереве слоёв (подсвечен голубым цветом) (см. :numref:`ngweb_webmap_choose_layer`).
+Выберите слой щелчком в дереве слоёв (он будет подсвечен голубым цветом) и нажмите |button_swipe| в нижней части карты (см. :numref:`ngweb_webmap_choose_layer`). 
    
-.. figure:: _static/choose_layer_swipe_ru.png
+.. figure:: _static/choose_layer_swipe_ru_2.png
    :name: ngweb_webmap_choose_layer
    :width: 20cm
    :align: center
    
    Выбор слоя для использования вертикальной шторки
 
-Это дает возможность “заглянуть” под выбранный слой и сравнить его с подложкой или другим слоем на карте. Например, инструмент будет полезен, если мы хотим сравнить изменения на местности по космическим снимкам за разные даты.
+Шторку можно сдвигать, зажимая квадрат по центру, или поворачивать на 90 градусов кликом по кружку на линии.
+
+
+Шторка дает возможность “заглянуть” под выбранный слой и сравнить его с подложкой или другим слоем на карте. Например, инструмент будет полезен, если мы хотим сравнить изменения на местности по космическим снимкам за разные даты.
+
 
 .. figure:: _static/swiped_satellite_ru.png
    :name: ngweb_webmap_swyped
@@ -266,6 +275,7 @@
 В интерфейсе карты можно включить поле, где будут показаны текущие координаты курсора или охват видимого участка карты. Для этого нажмите кнопку |button_extent_coord| в инструментах карты.
 
 .. |button_extent_coord| image:: _static/button_extent_coord.png
+   :width: 8mm
 
 Иконка справа показывает, что в данный момент отображается в поле и переключает между режимами.
 
