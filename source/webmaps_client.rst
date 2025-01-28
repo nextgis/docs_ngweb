@@ -17,14 +17,14 @@
    :width: 8mm
    :alt: карта с лупой
  
-.. figure:: _static/webmap_client_rus_3.png
+.. figure:: _static/webmap_client_rus_5.png
    :name: ngweb_webmap_client
    :align: center
    :width: 20cm
    
    Внешний вид веб-клиента
 
-   Цифрами обозначено: 1 - карта; 2 - панели карты; 3 - дерево слоёв с кнопками вызова меню; 4 - выпадающий список выбора подложек; 5 - кнопки управления масштабом карты; 6 - инструменты карты; 7 - инструменты работы с кадастром; 8 - строка статуса и копирайт
+   Цифрами обозначено: 1 - карта; 2 - панели карты; 3 - дерево слоёв с кнопками вызова меню; 4 - выпадающий список выбора подложек; 5 - кнопки управления масштабом карты; 6 - инструменты карты; 7 - строка статуса и копирайт
 
 
 Веб-клиент включает в себя три основных компонента: карту, `панели <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_, `инструменты карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_. 
@@ -60,13 +60,13 @@
 
 * |panel_layers| Дерево слоев
 * |panel_ident| Панель идентификации
-* |panel_search| Поиск
+* |panel_search| `Поиск <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_
 * |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
-* |panel_cadaster| Кадастровые сервисы
-* |panel_share| Поделиться
-* |panel_print| Печать
+* |panel_cadaster| `Кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
+* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-feature-link>`_
+* |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
@@ -108,7 +108,7 @@
 Результаты появляются по мере ввода и сортируются в этом порядке (координаты - аттрибутивная информация - адресная база).
 При выборе результата поиска из списка карта осуществляет переход к нему.
 
-.. figure:: _static/webmap_search_results_ru.png
+.. figure:: _static/webmap_search_results_tram_ru.png
    :name: webmap_search_results_pic
    :align: center
    :width: 20cm
@@ -298,7 +298,8 @@
 Ссылка на объект карты
 ------------------------
 
-Самый простой вариант - дать ссылку на область карты с нужными объектами. Это можно сделать через панель **Поделиться** (see :numref:`ngweb_webmap_client`).
+Самый простой вариант - дать ссылку на область карты с нужными объектами. Это можно сделать через панель 
+|panel_share| **Поделиться** (see :numref:`ngweb_webmap_client`).
 
 С помощью специально сгенерированных GET-запросов можно поделиться ссылкой на конкретный объект веб-карты в конкретном слое. Ссылка будет открываться в географическом контексте, который вы можете настроить через веб-карты.
 
