@@ -6,12 +6,11 @@
 Через панель управления администратор может задать ряд общих настроек для всех веб-карт в NextGIS Web (:numref:`admin_webmap_panel_settings`):
 
 * Видимость меню навигации для гостя
-* Размер окна идентификации
 * Параметры измерений
 * Параметры адресного поиска
 * Параметры видимости легенды
 
-.. figure:: _static/admin_webmap_panel_settings_rus_3.png
+.. figure:: _static/admin_webmap_panel_settings_rus_2.png
    :name: admin_webmap_panel_settings
    :align: center
    :width: 20cm
@@ -37,27 +36,23 @@
 
 .. _ngw_contr_panel_webmap_ident:
 
-Окно идентификации
+Панель идентификации
 --------------------
-
-Может быть в формате всплывающего окна или панели. Переключение между этими режимами осуществляется ползунком "Использовать панель вместо всплывающего окна для идентификаци" в настройках веб-карты в Панели управления (:numref:`admin_webmap_panel_settings`).
 
 Можно настроить следующие параметры:
 
 * Радиус области вокруг объекта, в рамках которой индентификация работает.
+* Включить показ атрибутов.
 * Включить показ информации о геометрии.
-* Для всплывающего окна можно задать размеры. 
 
-Размеры задаются в пикселях (:numref:`admin_webmap_panel_indentify`)
 
-.. figure:: _static/admin_webmap_panel_indentify_rus.png
+.. figure:: _static/webmap_panel_indentify_ru.png
    :name: admin_webmap_panel_indentify
    :align: center
-   :width: 14cm
+   :width: 20cm
 
    Идентификация объекта на веб-карте
 
-Одновременно с этим можно включить/выключить отображение атрибутов объектов слоя.
 
 
 .. _ngw_contr_panel_webmap_measure:
