@@ -321,14 +321,14 @@
   
   - Открыть веб-карту.
   - Выбрать объект и нажать на него инструментом идентификации. 
-  - Нажать на кнопку редактирования (последняя вкладка, см. :numref:`ngweb_editing_when_viewing_map`).
+  - В панели идентификации нажать на кнопку редактирования (см. :numref:`ngweb_editing_when_viewing_map`).
 
-.. figure:: _static/ngweb_editing_when_viewing_map_rus_2.png
+.. figure:: _static/editing_when_viewing_map_open_ru.png
    :name: ngweb_editing_when_viewing_map
    :align: center
    :width: 20cm
 
-   Редактирование атрибутов при просмотре карты
+   Переход к редактированию атрибутов при просмотре карты
 
 В открывшемся всплывающем окне можно изменять значения атрибутов. Описание, заданное на вкладке "Описание", будет видно при просмотре карты в окне идентификации. 
 
@@ -386,13 +386,13 @@
 ------------
 
 Программное обеспечение NextGIS Web позволяет прикреплять к записям фотографии, панорамы и другие файлы. 
-При этом, при идентификации объекта на карте во всплывающем окне будет отображены 
-как атрибуты объекта, так и вложения, которые были ему сопоставлены (см. :numref:`ngweb_webmap_identification_photos`).
+При этом, при идентификации объекта на карте в панели идентификации будет отображены 
+как атрибуты объекта, так и вложения, которые были ему сопоставлены (см. :numref:`attachm_tab_pic`).
 
-.. figure:: _static/popup_attachm_tab_ru.png
-   :name: popup_attachm_tab_pic
+.. figure:: _static/attachm_tab_ru.png
+   :name: attachm_tab_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Вложения на карточке объекта
 
@@ -408,7 +408,7 @@
 пользователю можно переходить между фотографиями, используя клавиши вправо-влево 
 на клавиатуре (см. :numref:`ngweb_webmap_identification_photo_lightbox`).
 
-.. figure:: _static/webmap_identification_photo_lightbox_rus_2.png
+.. figure:: _static/webmap_identification_photo_lightbox_rus_3.png
    :name: ngweb_webmap_identification_photo_lightbox
    :align: center
    :width: 20cm
@@ -420,7 +420,7 @@
 .. figure:: _static/panorama_opened_ru.png
    :name: panorama_opened_pic
    :align: center
-   :width: 18cm
+   :width: 20cm
 
    Панорама, открытая с веб-карты
 
@@ -441,7 +441,7 @@
 .. figure:: _static/add_attachment_ru.png
    :name: manage_att_add_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Добавление вложения
 
@@ -474,10 +474,10 @@
 
 К объектам можно добавлять не только фографии, но и панорамы. Они дают возможность погружаться в новые локации и изучать детали уже знакомых мест.
 
-.. figure:: _static/popup_attachm_panor_ru.png
+.. figure:: _static/identpanel_attachm_panor_ru.png
    :name: popup_attachm_panor_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Превью панорамы в карточке объекта
 
@@ -504,7 +504,7 @@
 .. figure:: _static/manage_att_select_ru.png
    :name: manage_att_select_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Управление вложениями
 
@@ -513,7 +513,7 @@
 .. figure:: _static/manage_att_export_ru.png
    :name: manage_att_export_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Экспорт вложений на устройство
 
@@ -523,7 +523,7 @@
 .. figure:: _static/manage_att_import_ru.png
    :name: manage_att_import_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Импорт вложений из архива
 
