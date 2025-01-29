@@ -1,6 +1,10 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 8mm
+   :alt: three lines
+
 .. |button_delete| image:: _static/button_delete.png
    :width: 6mm
    :alt: trash can
@@ -190,7 +194,9 @@ The search is carried out in the entire existing database, regardless of which d
 Control panel
 --------------------------------
 
-NextGIS Web Control panel is available through the main menu (see item 1 in :numref:`admin_index_pic`), where you need to select "Control panel" (see :numref:`ngweb_main_page_main_menu_pic`). It is presented on  :numref:`admin_control_panel`.
+NextGIS Web Control panel is available through the main menu. Press the |button_main_menu| button in the top right corner (see item 1 in :numref:`admin_index_pic`) and select "Control panel".
+
+Control panel has several sections, see :numref:`admin_control_panel`.
 
 .. figure:: _static/admin_control_panel_eng_2.png
    :name: admin_control_panel
