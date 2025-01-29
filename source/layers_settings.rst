@@ -61,7 +61,7 @@
 
    Диалог редактирования атрибутивного поля. Наименование поля с верхним индексом и его ключ выделены
 
-.. figure:: _static/webmap_identification_rus_2.png
+.. figure:: _static/webmap_identification_rus_3.png
    :name: ngweb_webmap_identification
    :align: center
    :width: 20cm
