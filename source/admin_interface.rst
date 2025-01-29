@@ -1,6 +1,10 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Роман Гайнуллов <roman.gainullov@nextgis.ru>
 
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 8mm
+   :alt: три горизонтальные синие полоски
+
 .. |button_delete| image:: _static/button_delete.png
    :width: 6mm
    :alt: мусорная корзина
@@ -195,7 +199,7 @@
 Панель управления
 --------------------------------
 
-В панель управления NextGIS Web можно попасть через основное меню (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1), выбрав соответствующий пункт. Панель управления представлена на :numref:`ngweb_control_panel`.
+В панель управления NextGIS Web можно попасть через основное меню, которое вызывается кнопкой |button_main_menu| в правом верхнем углу (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1). Панель управления представлена на :numref:`ngweb_control_panel`.
 
 .. figure:: _static/ngweb_control_panel_new_ru.png
    :name: ngweb_control_panel
