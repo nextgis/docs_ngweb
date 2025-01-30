@@ -48,6 +48,7 @@ Panels
 On the left side of the workspace are the functional panels:
 
 * |panel_layers| Layers 
+* |panel_ident| Feature identification 
 * |panel_search| `Search <https://docs.nextgis.com/docs_ngcom/source/address_search.html>`_
 * |panel_annot| `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
 * |panel_info| `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
@@ -57,6 +58,7 @@ On the left side of the workspace are the functional panels:
 * |panel_trackers| `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
+.. |panel_ident| image:: _static/panel_ident.png
 .. |panel_search| image:: _static/panel_search.png
 .. |panel_annot| image:: _static/panel_annot.png
 .. |panel_info| image:: _static/panel_info.png
@@ -73,6 +75,7 @@ The **layer tree** contains a list of all layer styles added to the web map. The
 * Open layer attribute table
 * Zoom map to layer
 * Open layer description
+* Change the order of the layers by dragging them within the layer tree. Refresh the page to restore the original order.
 
 Functionality of the layer panel is presented in our video:
 
@@ -95,6 +98,13 @@ Search
 
 Results are shown as user inputs text and are sorted in this order: points on the map matching the coordinates, then feature numbers for attribute search and finally full addresses.
 After a click on a search result map changes extent to show selected feature.
+
+.. figure:: _static/webmap_search_results_en.png
+   :name: webmap_search_results_pic
+   :align: center
+   :width: 20cm
+
+   Feature selected in search results is displayed on the map
 
 
 .. _ngw_webmaps_search_coord:
@@ -201,25 +211,53 @@ Tools to work with the Web Map (see :numref:`webmap_client` item 6) named from l
 
    Map tools
 
+.. _ngw_webmaps_client_tools_measure:
+
+Measuring tools
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Map tools allow to measure distance (straight or segmented line) and area. Activate the tool and draw a line by clicking on the map. Double-click to finish line creation. You can draw multiple measuring lines on a map and compare results. To delete one of the measurement lines, press X on the measurement results lable. To clear selection, press the tool button again.
+
+.. figure:: _static/ngw_map_measure_line_en.png
+   :name: ngw_map_measure_line_pic
+   :align: center
+   :width: 20cm
+
+   Measuring distance on the Web Map
+
+To measure area draw a custom polygon on the map.  Double-click to finish the polygon.
+
+.. figure:: _static/ngw_map_measure_area_en.png
+   :name: ngw_map_measure_area_pic
+   :align: center
+   :width: 20cm
+
+   Measuring areas on the Web Map
+
+Measurement units are selected in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-measure>`_
+
+
 .. _ngw_webmaps_client_tools_swipe:
 
-Vertical swipe
+Swipe
 ~~~~~~~~~~~~~~~~~~
 
-Vertical swipe |button_swipe| makes the selected layer transparent to the right of it.
+Swipe  makes the selected layer transparent to one side of the line.
 
 .. |button_swipe| image:: _static/button_swipe.png
 
-To select a layer click on it in the layer tree (it will be highlighted in blue) (see :numref:`ngweb_webmap_choose_layer`).
+To select a layer click on it in the layer tree (it will be highlighted in blue), then press the swipe button |button_swipe| (see :numref:`ngweb_webmap_choose_layer`).
    
-.. figure:: _static/choose_layer_swipe_en.png
+.. figure:: _static/choose_layer_swipe_en_2.png
    :name: ngweb_webmap_choose_layer
    :width: 20cm
    :align: center
    
-   Selecting layer to use the vertical swipe on
+   Horizontal swipe. Selected layer is marked in blue
 
-This makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map. The tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
+Use the square in the center to move the swipe and the circle on the line to rotate it 90 degrees.
+
+Swipe makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map. The tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
 
 .. figure:: _static/swiped_satellite_en.png
    :name: ngweb_webmap_swyped
