@@ -323,7 +323,7 @@ NextGIS Web software allows to edit attributes for geographical features. Editin
 .. figure:: _static/editing_when_viewing_map_open_en.png
    :name: ngweb_editing_when_viewing_map
    :align: center
-   :width: 16cm
+   :width: 20cm
 
    Editing attributes from the map
 
@@ -385,8 +385,8 @@ Attachments
 NextGIS Web software supports adding photos, panoramas and other files to the features. 
 If a feature has attachments, they will be shown along with description and attributes in the identify window  (see  :numref:`webmap_identification_photos`).
 
-.. figure:: _static/webmap_identification_photos_eng_2.png
-   :name: webmap_identification_photos
+.. figure:: _static/attachm_tab_en.png
+   :name: attachm_tab_pic
    :align: center
    :width: 20cm
 
@@ -404,10 +404,10 @@ Other types of files can be added as attachments, but won't be viewed in the int
 After a click on a photo preview a lightbox window is open (a  
 javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
 
-.. figure:: _static/webmap_identification_photo_lightbox_eng_2.png
+.. figure:: _static/webmap_ident_photo_lightbox.png
    :name: ngweb_webmap_identification_photo_lightbox
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    A lightbox with uploaded photo for the identified feature 
 
@@ -468,12 +468,12 @@ How to use panoramas
 
 Not only photos, but also panoramas can be added as attachments. They allow to immerse explore new locations or find new details in familiar places.
 
-.. figure:: _static/popup_attachm_panor_en.png
+.. figure:: _static/identpanel_attachm_panor_en.png
    :name: popup_attachm_panor_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Panorama preview in the identify pop-up
+   Panorama preview in the identify panel
 
 Uploaded panoramic images must comply with the Google XMP Photo Sphere `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
 
@@ -498,7 +498,7 @@ Navigate to the layer resource page and select **Manage attachments**.
 .. figure:: _static/manage_att_select_en.png
    :name: manage_att_select_pic
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Managing attachments
 
@@ -507,7 +507,7 @@ To save the attachments, go to the **Export** tab and press **Export attachments
 .. figure:: _static/manage_att_export_en.png
    :name: manage_att_export_pic
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Exporting attachments as ZIP archive
 
@@ -517,7 +517,7 @@ The resulting archive can be imported to add the attachments to the layer featur
 .. figure:: _static/manage_att_import_en.png
    :name: manage_att_import_pic
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Importing attachments from ZIP archive
 
