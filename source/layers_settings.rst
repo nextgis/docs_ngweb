@@ -61,12 +61,12 @@ At the end of each row there is a button:
 
    Display name with superscript symbol and keyname of the field
 
-.. figure:: _static/webmap_identification_eng_2.png
+.. figure:: _static/webmap_identification_eng_3.png
    :name: ngweb_webmap_identification
    :align: center
    :width: 20cm
 
-   The identification window
+   The identification window. Names of the fields are displayed with superscript symbols
 
 In the attribute editing mode you can also add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_. It allows to select values of the attribute when you add or edit features. To add a lookup table, click on the field in the form, then in the pop-up window select the resource.
 
@@ -194,10 +194,23 @@ Create a new feature (point, line, polygon)
    "Create features" button on the editing toolbar
 
 2. A blue circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. You can add several new features one after another. While creating a line you need to indicate its start and end points by clicking on the map. While creating a polygon each new click on the map will indicate its new vertice, to finish a polygon you need to click on its start point. You can use adhesion while creating vertices.
-3. To finish creation of the new feature press "Stop editing" in the layer menu.
-4. In the opened dialog select "Save" to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
 
-.. figure:: _static/webgis_finish_editting_eng_2.png
+
+3. In the opened pop-up window enter value for at least one attribute and press **Ok**. To clear the form, press **Reset**. 
+
+.. figure:: _static/webgis_attr_new_objects_en.png
+   :name: webgis_attr_new_objects_pic
+   :align: center
+   :width: 20cm
+
+   Entering attribute values for a new feature
+
+You can add multiple features in one go. To create a straight line click on the map to indicate its beginning and end. To create a polygon, click on the map to mark its vertices, then click on the first point to complete the polygon. Snapping is used while adding vertices.
+
+4. To finish creation of the new feature press "Stop editing" in the layer menu.
+5. In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
+
+.. figure:: _static/webgis_finish_editting_eng_3.png
    :name: webmap_finish_edit
    :align: center
    :width: 20cm
@@ -307,7 +320,7 @@ NextGIS Web software allows to edit attributes for geographical features. Editin
   - Click on the map with Identify tool active.
   - Click edit button in the Identify window (the last tab, see :numref:`ngweb_editing_when_viewing_map`).
 
-.. figure:: _static/ngweb_editing_when_viewing_map_eng_2.png
+.. figure:: _static/editing_when_viewing_map_open_en.png
    :name: ngweb_editing_when_viewing_map
    :align: center
    :width: 16cm
