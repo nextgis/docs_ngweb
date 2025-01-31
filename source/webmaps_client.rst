@@ -3,7 +3,7 @@
 
 .. _ngw_webmaps_client:
 
-Веб-клиент для просмотра карт
+Просмотр веб-карты
 =============================
 
 В составе :program:`NextGIS Web` предусмотрено специальное клиентское веб приложение для 
@@ -340,18 +340,17 @@
 
 Пример:
 
-https://demo.nextgis.ru/resource/6144/display?panel=layers&hl_lid=6145&hl_attr=NID&hl_val=12
-
+https://demo.nextgis.ru/resource/6144/display?panel=layers&hl_lid=9213&hl_attr=NID&hl_val=32104
 
 Можно создать такую ссылку и **вручную**, для этого вам понадобятся:
 
-* "Чистая" ссылка на веб-карту: https://experimental.nextgis.com/resource/147/display?panel=layers
+* "Чистая" ссылка на веб-карту: https://demo.nextgis.ru/resource/7111/display?panel=layers
 
 Параметры объекта и их значения:
 
-* hl_lid – ID слоя (зайдите в ресурс слоя и посмотрите число, включенное в URL, например https://experimental.nextgis.com/resource/142 --> ``hl_lid=142``);
+* hl_lid – ID слоя (зайдите в ресурс слоя и посмотрите число, включенное в URL, например https://demo.nextgis.ru/resource/6209 --> ``hl_lid=6209``);
 
-* hl_attr – атрибут слоя (название поля атрибутов, из которого берётся значение);
+* hl_attr – атрибут слоя (название поля атрибутов, из которого берётся значение, например ``name``);
 
 * hl_val – значение атрибута.
 
@@ -361,11 +360,11 @@ https://demo.nextgis.ru/resource/6144/display?panel=layers&hl_lid=6145&hl_attr=N
 
 Итоговая ссылка:
 
-https://experimental.nextgis.com/resource/147/display?panel=layers&hl_lid=142&hl_attr=ngw_id&hl_val=4&zoom=14
+https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=name&hl_val=19-14&zoom=17
 
-.. figure:: _static/webmap_feature_lik_ID_ru.png
+.. figure:: _static/webmap_feature_lik_ID_ru_2.png
    :name: webmap_feature_lik_ID_pic
    :width: 20cm
    :align: center
 
-   Карта, открывающаяся по такой ссылке. В ссылку включен ID выделенного слоя и аттрибут и его значения, отмеченные в карточке объекта
+   Карта, открывающаяся по такой ссылке. В ссылку включен ID выделенного слоя и аттрибут и его значение, отмеченные в карточке объекта
