@@ -383,7 +383,7 @@ Attachments
 ------------
 
 NextGIS Web software supports adding photos, panoramas and other files to the features. 
-If a feature has attachments, they will be shown along with description and attributes in the identify window  (see  :numref:`webmap_identification_photos`).
+If a feature has attachments, they will be shown along with description and attributes in the identify window  (see  :numref:`attachm_tab_pic`).
 
 .. figure:: _static/attachm_tab_en.png
    :name: attachm_tab_pic
@@ -397,7 +397,7 @@ If a feature has attachments, they will be shown along with description and attr
 Files in the following formats can be viewed directly in the web client:
 
 * JPEG, PNG images. GIF format not supported.
-* Panoramas complying with the `specification<https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+* Panoramas complying with the `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
 
 Other types of files can be added as attachments, but won't be viewed in the interface.
 
@@ -405,7 +405,7 @@ After a click on a photo preview a lightbox window is open (a
 javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_ident_photo_lightbox.png
-   :name: ngweb_webmap_identification_photo_lightbox
+   :name: webmap_identification_photo_lightbox
    :align: center
    :width: 18cm
 
