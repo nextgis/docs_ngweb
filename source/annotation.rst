@@ -1,4 +1,4 @@
-.. _ngcom_annotation:
+.. _ngw_annotation:
 
 .. _nextgis.com: http://nextgis.com/
 .. _WYSIWYG: https://en.wikipedia.org/wiki/WYSIWYG
@@ -14,7 +14,7 @@ Web Map annotations
 Annotation. What is it?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Annotations are text messages attached to the points, which you can create and display on any :ref:`Web Map <ngcom_webmap_create>`. You can create your own set of annotations for each Web Map.
+Annotations are text messages attached to the points, which you can create and display on any :ref:`Web Map <ngw_webmap_create>`. You can create your own set of annotations for each Web Map.
 
 Annotation consists of a point and a message attached to this point.
 
@@ -46,7 +46,7 @@ At the same time, you can use annotations as a simple tool to create point data 
 .. note::
     In contrast to a full vector layer, annotation tool does not allow to export data, search for it etc. Therefore, we recommend using `vector layers <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ to create the bulk of the data.
 
-.. _ngcom_annotation_enable:
+.. _ngw_annotation_enable:
 
 How to enable Web Map annotations?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ There are two parameters in the Settings tab of a Web Map:
 - *Yes* - the annotation symbols are visible on the Web Map when it opens
 - *With messages* - both symbols and text are shown on the Web Map
 
-.. _ngcom_annotation_panel:
+.. _ngw_annotation_panel:
 
 Web Map: Annotations panel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,7 +104,7 @@ If the *"Enable annotations"* option is active, the "Annotations" panel appears 
    Three color-coded types of annotations: 1 - public, 2 - my private, 3 - other private
 
 
-.. _ngcom_annotation_edit:
+.. _ngw_annotation_edit:
 
 Web Map: annotation editting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ After clicking **Save**, a drop-down menu appears. In it you need to select the 
 To **edit** annotations you need to activate annotation edit mode, point to an annotation and click the pictogram on it with the left mouse button. The dialog window for annotation editting looks like a dialog window of annotation creation, but has a **"Delete"** button, which allows to delete the chosen annotation. In order to change the font size of the message or its part, you need to select the text first. 
 You can edit both your own private annotations and those created by other users if you have the necessary permissions. The type of the annotation is marked at the top of the edit window. For private annotations of other users you will see the creator's name in brackets.
 
-.. _ngcom_annotation_perm:
+.. _ngw_annotation_perm:
 
 Web Map: user's permissions associated with annotations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
