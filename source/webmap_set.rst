@@ -12,7 +12,7 @@ Using the control panel administrator can set a number of general settings for a
 * Address search parameters;
 * Legend visibility.
 
-.. figure:: _static/admin_webmap_panel_settings_eng_4.png
+.. figure:: _static/admin_webmap_panel_settings_eng_3.png
    :name: admin_webmap_panel_settings_pic
    :align: center
    :width: 15cm
@@ -40,27 +40,27 @@ In the Control panel of your Web GIS go to the Web Map settings (:numref:`admin_
 
 .. _ngw_contr_panel_webmap_ident:
 
-Identify popup
+Identify panel
 ---------------
 
-Feature identification information can be displayed as a pop-up window or as a side panel. To select a display mode, move the switch marked "Use panel instead of popup identification" (:nuref:`admin_webmap_panel_settings_pic`).
+
 
 The section regulates the following parameters:
 
 * The radius of the area around the object within which the identification works;
 * Enabling or disabling geometry info;
-* For the pop-up window you can also set up the dimentions;
 
-Dimensions are in pixels.
 
-.. figure:: _static/admin_webmap_panel_indentify_eng.png
+
+
+.. figure:: _static/webmap_identification_eng_3.png
    :name: admin_webmap_panel_indentify_eng
    :align: center
    :width: 20cm
 
-   Object identification on the Web Map
+   Feature identification on the Web Map
 
-At the same time you can turn on/off the display of feature attributes.
+
 
 
 .. _ngw_contr_panel_webmap_measure:
