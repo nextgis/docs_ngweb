@@ -344,7 +344,7 @@ https://demo.nextgis.ru/resource/6144/display?panel=layers&hl_lid=9213&hl_attr=N
 
 Можно создать такую ссылку и **вручную**, для этого вам понадобятся:
 
-* "Чистая" ссылка на веб-карту: https://demo.nextgis.ru/resource/7111/display?panel=layers
+* "Чистая" ссылка на веб-карту: https://demo.nextgis.ru/resource/6211/display?panel=layers
 
 Параметры объекта и их значения:
 
