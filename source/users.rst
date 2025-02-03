@@ -1,7 +1,7 @@
 Управление пользователями
 ==========================
 
-О добавлении пользователей в Команду см. `здесь <https://docs.nextgis.ru/docs_ngcom/source/create.html#ngcom-team-management>`_.
+О добавлении пользователей в Команду см. `здесь <https://docs.nextgis.ru/docs_ngcom/source/teams.html#ngcom-team-management>`_.
 
 .. _ngw_create_group:
 
