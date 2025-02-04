@@ -1,7 +1,7 @@
 Managing users
 ================
 
-If you want to add a user to your team, see the `Team management <https://docs.nextgis.com/docs_ngcom/source/create.html#team-management>`_.
+If you want to add a user to your team, see the `Team management <https://docs.nextgis.com/docs_ngcom/source/teams.html#team-management>`_.
 
 
 .. _ngw_create_group:
