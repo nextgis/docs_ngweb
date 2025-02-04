@@ -122,12 +122,12 @@ To **create** an annotation you need to click the left mouse button on the Web M
 
 Then a dialog window of annotation creation will be opened:
 
-.. figure:: _static/ann_create_eng_2.png
+.. figure:: _static/ann_create_en.png
    :name: ann_create
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Dialog window of annotation creation
+   Dialog window of annotation creation. Point geometry type is selected
 
 Dialog of annotation creation consists of:
 
