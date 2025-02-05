@@ -48,6 +48,27 @@ These global permissions are separate from `access permissions <https://docs.nex
 .. warning:: 
    If you include Guest to a group that has global permissions, anyone will be able to access Control panel even without logging in.
 
+.. _ngcw_find_id:
+
+How to find user identification number
+--------------------------------------------
+
+To learn user ID, in the Web GIS go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-control-panel>`_, open `Users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_ section, find the user you need and enter the Edit mode (or just hover the cursor over the pencil icon to see the link without opening the page, if your browser allows it).
+
+.. figure:: _static/ngw_user_id_en.png
+   :name: ngw_user_id_pic
+   :align: center
+   :width: 20cm
+
+   User ID for "Someone Else" is 8
+
+.. figure:: _static/ngw_user_id_list_en.png
+   :name: ngw_user_id_list_pic
+   :align: center
+   :width: 16cm
+
+   Hovering over the Edit button you can see the link to the profile editing. The ID of the user "My_username" is 13
+
 .. _ngw_create_user:
 
 Create new user
@@ -110,7 +131,8 @@ If you need to **delete a user permanently**, you can do so by pressing the "Del
 
 Alternatively, you can open the editing page and press **Delete**.
 
-
+If the user is the owner of Web GIS resources, a warning appears: *Validation error.
+User is referenced with resources*. Click on **Technical information** to see ID of the resources owned by the user. Delete these resources or `change their owner <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_ to delete the user.
 
 .. _ngw_change_password:
 
@@ -139,3 +161,5 @@ Also there is an option to change user password using command line:
 
 .. note:: 
    The password is limited in length in the range of 5-25 characters.
+
+If you forgot the password to your NexGIS ID, follow `this instruction <https://docs.nextgis.com/docs_ngcom/source/faq_webgis.html#i-forgot-my-account-password-nextgis-id-what-to-do>`_.
