@@ -196,7 +196,7 @@ Create a new feature (point, line, polygon)
 2. A blue circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. You can add several new features one after another. While creating a line you need to indicate its start and end points by clicking on the map. While creating a polygon each new click on the map will indicate its new vertice, to finish a polygon you need to click on its start point. You can use adhesion while creating vertices.
 
 
-3. In the opened pop-up window enter value for at least one attribute and press **Ok**. To clear the form, press **Reset**. 
+3. In the opened pop-up window you can enter attribute values, then and press **Ok** to complete feature creation. To clear the form, press **Reset**. 
 
 .. figure:: _static/webgis_attr_new_objects_en.png
    :name: webgis_attr_new_objects_pic
