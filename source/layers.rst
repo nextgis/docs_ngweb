@@ -151,7 +151,40 @@
 Векторный слой из файла
 -----------------------
 
-В NextGIS Web можно создавать векторные слои на основе геоданных в форматах :term:`ESRI Shapefile` (zip-архив), :term:`GeoJSON`, :term:`KML`, :term:`GML` и :term:`GeoPackage`, а также CSV или XLSX. Для CSV и XLSX поддерживаются только точки, координаты должны быть в колонках lat и lon.
+В NextGIS Web можно создавать векторные слои на основе геоданных в различны `форматах <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_ и соединений `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_, а также `пустые слои <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_, которые имеют определённую структуру атрибутов, но не содержат объектов.
+
+.. _ngw_vector_data_requirements:
+
+Требования к исходным данным
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+В качестве исходного файла можно загружать следующие форматы:
+
+* :term:`ESRI Shapefile`
+* :term:`GeoJSON`
+* :term:`KML`
+* :term:`GML`
+* :term:`GeoPackage`
+
+Точечные слои также можно создать из файлов :term:`CSV` и :term:`XLSX`, координаты должны быть в колонках lat и lon. Посмотрите процесс создания такого слоя в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/5302afb00e3af93dbd9adccf848d84db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/LcGco1nclM8>`_, `rutube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
+
+Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
+
+.. note:: 
+   В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
+   упакованы в архив формата Zip. 
+
+.. note:: 
+   Мы рекомендуем **не** использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
+
+Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
+
 
 .. _ngw_process_create_vector_layer:
 
@@ -237,37 +270,6 @@ NextGIS Web может принимать многослойные наборы 
 
 .. todo: ссылка на создание формы
 
-.. _ngw_vector_data_requirements:
-
-Требования к исходным данным
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-В качестве исходного файла можно загружать следующие форматы:
-
-* :term:`ESRI Shapefile`
-* :term:`GeoJSON`
-* :term:`KML`
-* :term:`GML`
-* :term:`GeoPackage`
-
-Точечные слои также можно создать из файлов :term:`CSV` и :term:`XLSX`, координаты должны быть в колонках lat и lon. Посмотрите процесс создания такого слоя в видео:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/5302afb00e3af93dbd9adccf848d84db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Смотреть на `youtube <https://youtu.be/LcGco1nclM8>`_, `rutube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
-
-Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
-
-.. note:: 
-   В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
-   упакованы в архив формата Zip. 
-
-.. note:: 
-   Мы рекомендуем **не** использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
-
-Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
 
 
 .. _ngw_create_empty_vector_layer:
