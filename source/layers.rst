@@ -6,6 +6,11 @@
 Add layers
 ===========
 
+Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating :ref:`Raster layer <ngcom_raster_layer>` and :ref:`Vector layer <ngcom_vector_layer>` resources respectively.
+
+.. note:: 
+	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. For rasters, this limit corresponds to uncompressed files in EPSG: 3857.
+
 .. _ngw_create_raster_layer:
 
 Raster layer
