@@ -18,6 +18,16 @@ Raster layer
 
 Raster images in NextGIS Web should be loaded using the "Raster Layer" special resource.
 
+.. _ngw_raster_requirements:
+
+Requirements for uploaded files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Supported format: GeoTIFF;
+* Data must be georeferenced and have valid reference system description in GeoTIFF tags.
+
+
+
 .. _ngw_process_create_raster_layer:
 
 Creation process
@@ -75,6 +85,21 @@ In the "Metadata" tab you can enter information in the "key-value" format (:numr
    Raster layer metadata 
    
 To complete click the **Create** button.
+
+.. _ngw_raster_volume:
+
+Uploading big rasters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Satellite images of high resulution and other rasters may be very large. The file size is not representative because data is compressed. The actual data size may be much bigger. To make sure that raster data is quickly rendered on a Web Map and services work fast raser files must be converted before uploading them o Web GIS.
+
+There are three limitation for uploading big rasters:
+
+#. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
+#. Max size of extracted file in the cloud can be up to **4 GiB**. To calculate the size of he decompressed raster multiply: pixel count * number of bands * bytes per pixel. 
+#. Overall data storage - on Premium you can upload up to **50 GiB** of data  (this limit `can be expanded <https://nextgis.com/pricing-base/#storage>`_);
+
+There is no time limit for uploading raster files. 
 
 .. _ngw_process_create_raster_style:
 
