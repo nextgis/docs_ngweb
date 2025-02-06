@@ -11,7 +11,7 @@ Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by 
 .. note:: 
 	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. For rasters, this limit corresponds to uncompressed files in EPSG: 3857.
 
-See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and vector layers below.
+See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_ layers below.
 
 .. _ngw_create_raster_layer:
 
