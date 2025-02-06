@@ -6,12 +6,12 @@
 Добавление слоёв
 ==================
 
-Загрузка растровых и векторных геоданных в :ref:`Веб ГИС <ngcom_description>` происходит путем создания ресурсов :ref:`Растровый слой <ngcom_raster_layer>` и :ref:`Векторный слой <ngcom_vector_layer>`.
+Загрузка растровых и векторных геоданных в :ref:`Веб ГИС <ngcom_description>` происходит путем создания ресурсов `Растровый слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ и `Векторный слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_.
 
 .. note:: 
 	Ограничение на размер загружаемых файлов зависит от выбранного тарифного плана. Для **Premium** - 2 GiB, для **Free** - 128 MiB, для **Mini** - 256 MiB. Для растров это ограничение соответствует файлам без сжатия в EPSG:3857.
 
-
+См. также поддерживаемые форматы и другие требования к исходным данным: `для растровых слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-raster-requirements>`_, `для векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_.
 
 .. _ngw_create_raster_layer:
 
