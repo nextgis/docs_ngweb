@@ -6,10 +6,12 @@
 Add layers
 ===========
 
-Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating :ref:`Raster layer <ngcom_raster_layer>` and :ref:`Vector layer <ngcom_vector_layer>` resources respectively.
+Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_ and `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ resources respectively.
 
 .. note:: 
 	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. For rasters, this limit corresponds to uncompressed files in EPSG: 3857.
+
+See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and vector layers below.
 
 .. _ngw_create_raster_layer:
 
@@ -139,7 +141,43 @@ Indexed Color raster files are uploaded just like the RGB raster files. If the f
 
 Vector layer from file
 -----------------------
-In NextGIS WebYou can create vector layers based on :term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`KML`, :term:`GML` and :term:`GeoPackage` formats as well as CSV or XLSX. For CSV and XLSX only points are supported, coordinates must be put in lat and lot columns.
+
+In NextGIS WebYou can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
+
+.. _ngw_vector_data_requirements:
+
+Input data requirements
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Source files could be in the following formats: 
+
+* :term:`ESRI Shapefile`
+* :term:`GeoJSON`
+* :term:`KML`
+* :term:`GML`
+* :term:`GeoPackage`
+
+Point layers can also be created from CSV and XLSX files, the coordinates should be in the 'lat' and 'lon' columns. Watch the process of creating such a layer in the video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-Yb4_GQugfQ?si=GUIXGZJQraiIg3vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/-Yb4_GQugfQ?si=_6akhHxlIURO6AEL>`_.
+
+Use :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>` if you need to upload data in other formats.
+
+.. note:: 
+   In case of ESRI Shapefile, all components (dbf, shp, shx, prj and other files) 
+   should be compressed to a zip-archive.
+
+File size limits depend on your `subscription plan <https://nextgis.com/pricing-base/>`_.
+   
+.. warning:: 
+	Avoid using Unicode symbols in data field names. While such data can be uploaded to the Web GIS and displayed on Web Maps, you can experience problems working with it in NextGIS Mobile or visualization (especially if labels are using such fields). Use plain Latin for field names and set up field aliases to show Unicode names.
+	
+	
+If input data layer contains fields named id (ID) or geom (GEOM), they will be renamed on import. If id has meaningful identifiers, they will automatically be turned into internal FIDs.
 
 .. _ngw_process_create_vector_layer:
 
@@ -219,38 +257,7 @@ After uploading the file and specifying the parameters, click the **Create** but
 Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a form or data collection.
 
 
-.. _ngw_vector_data_requirements:
 
-Input data requirements
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Source files could be in the following formats: 
-
-* :term:`ESRI Shapefile`
-* :term:`GeoJSON`
-* :term:`KML`
-* :term:`GML`
-* :term:`GeoPackage`
-
-Point layers can also be created from CSV and XLSX files, the coordinates should be in the 'lat' and 'lon' columns. Watch the process of creating such a layer in the video:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/-Yb4_GQugfQ?si=GUIXGZJQraiIg3vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Watch on `youtube <https://youtu.be/-Yb4_GQugfQ?si=_6akhHxlIURO6AEL>`_.
-
-Use :ref:`NextGIS Connect <ngcom_ngqgis_connect_data_upload>` if you need to upload data in other formats.
-
-.. note:: 
-   In case of ESRI Shapefile, all components (dbf, shp, shx, prj and other files) 
-   should be compressed to a zip-archive.
-   
-.. warning:: 
-	Avoid using Unicode symbols in data field names. While such data can be uploaded to the Web GIS and displayed on Web Maps, you can experience problems working with it in NextGIS Mobile or visualization (especially if labels are using such fields). Use plain Latin for field names and set up field aliases to show Unicode names.
-	
-	
-If input data layer contains fields named id (ID) or geom (GEOM), they will be renamed on import. If id has meaningful identifiers, they will automatically be turned into internal FIDs.
 
 
 .. _ngw_create_empty_vector_layer:
