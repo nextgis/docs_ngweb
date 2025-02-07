@@ -203,6 +203,25 @@ In the opened "Delete resource" window you need to tick "Confirm deletion of the
 
 If the resource was deleted successfully, the information about it disappear from the corresponding resource group.
 
+When a resource is deleted, all its subresources also get deleted. Before confirming deletion you'll see a warning about the number of resources of each type that are about to be deleted:
+
+.. figure:: _static/ngw_delete_subres_warning_group_en.png
+   :name: ngw_delete_subres_warning_group_pic
+   :align: center
+   :width: 14cm
+
+   Warning when deleting a resource group
+
+If you selected "Delete" action from the resource page and not from the resource list, the name of the selected resource will be in the path above.
+
+.. figure:: _static/ngw_delete_subres_warning_layer_en.png
+   :name: ngw_delete_subres_warning_layer_pic
+   :align: center
+   :width: 16cm
+
+   Warning when deleting a layer
+
+
 .. _ngw_delete_resource_multi:
 
 Deleting several resources at once
