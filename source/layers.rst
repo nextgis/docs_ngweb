@@ -9,7 +9,7 @@ Add layers
 Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_ and `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ resources respectively.
 
 .. note:: 
-	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. For rasters, this limit corresponds to uncompressed files in EPSG: 3857.
+	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. 
 
 See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_ layers below.
 
