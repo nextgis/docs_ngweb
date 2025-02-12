@@ -1,7 +1,7 @@
 .. sectionauthor:: Maxim Dubinin <maxim.dubinin@nextgis.com>
 
-Как изменить домен
-==================
+Как изменить адрес Веб ГИС
+============================
 
 .. note:: 
 	Эта функциональность доступна только для пользователей плана `Premium <http://nextgis.ru/nextgis-com/plans>`_.
