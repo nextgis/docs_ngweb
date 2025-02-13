@@ -100,9 +100,9 @@ SVG-маркеры
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/54bb3f579a298355233b59ec8c9efce1/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/c6375a06276f864079b8f5bfc2e7dba9/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`_, `rutube <https://rutube.ru/video/54bb3f579a298355233b59ec8c9efce1/>`_.
+Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`_, `rutube <https://rutube.ru/video/c6375a06276f864079b8f5bfc2e7dba9/?r=wd>`_.
 
 2. Разместить файл в интернете и поставить его URL в качестве пути к значку SVG.
 
