@@ -41,7 +41,7 @@ Resource types are also grouped into categories. You can select a category from 
 
 Click on the resource type to see the detailed description of the process.
 
-.. _ngw_resourse_group:
+.. _ngw_resource_group:
 
 Create Resource group to manage data
 --------------------------------------
@@ -144,7 +144,13 @@ To preview a style, open the layer page and click on the eye icon next to the st
 Typical structure
 -----------------
 
-With NextGIS Web application experience we recommend the following typical structure for organizing resources. 
+With NextGIS Web application experience we recommend creating separate `resource groups <https://docs.nextgis.com/docs_ngweb/source/create_resource.html#ngw-resource-group>`_ (folders) for:
+
+* Web Maps
+* Data layers
+* External connections
+
+Such structure makes it easier to manage access permissions.
 
 
 Typical structure ::
