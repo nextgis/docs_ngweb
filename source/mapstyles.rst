@@ -93,6 +93,12 @@ Watch on `youtube <https://youtu.be/bJLuYp73u_E?si=6vMNCQUz45DJfE79>`_.
 
 2. Publish the image file online and use its URL as the path to SVG marker.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/lLlKx2FTuE4?si=8tOlWjJowqewiEiq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/lLlKx2FTuE4?si=wYoDJ9QUtl-4eUXm>`_.
+
 3. Add `SVG marker library <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-create-svg-marker-lib>`_ to your Web GIS.
 
 To create a style using SVG markers from a library resource, you need to specify the **SVG marker** type in the layer properties in QGIS and enter the **full path to the file** on the local machine (:numref:`svg_qgis_style`). The file name must match the one loaded in the *SVG Marker Library* resource that the user selects when loading the QML file.
