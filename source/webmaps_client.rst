@@ -39,6 +39,17 @@ There are some options to work with map:
 * if you click on ``alt + shift`` simultaneously and execute round cursor movements around a monitor, a map will turn for a certain degrees to the right or to the left,
 * if you simultaneously click on ``shift`` and select of the necessary part of a map on a monitor by a cursor, you will highlight this part and zoom in it on the map.
 
+To view your current location on the map, press |button_my_location|. See how it works in our video:
+
+.. |button_my_location| image:: _static/button_my_location.png
+   :width: 6mm
+
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/HVvuDMX1pEo?si=u4ALUrxkaUHGzqcB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/HVvuDMX1pEo?si=YzQcqFMw-ge50qPA>`_.
 
 .. _ngw_webmaps_client_panels:
 
