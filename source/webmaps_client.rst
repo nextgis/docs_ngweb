@@ -40,7 +40,6 @@
 
 Масштаб карты можно изменять с помощью кнопок управления масштабом (см. :numref:`ngweb_webmap_client`, п.5), а также вернуть его к изначальному состоянию с помощью кнопки "Начальный охват" с иконкой в виде домика. 
 
-
 Для работы с картой приложение имеет следующие возможности: 
 
 * при одновременном нажатии клавиш ``alt + shift`` и осуществлении круговых движений 
@@ -50,6 +49,17 @@
   изображения на экране монитора происходит выделение, а потом изменение масштаба 
   (увеличение) этой выделенной области на карте.
 
+Также вы можете отобразить на карте своё текущее местоположение, нажав на кнопку |button_my_location|. Посмотрите, как это работает, в видео:
+
+.. |button_my_location| image:: _static/button_my_location.png
+   :width: 6mm
+
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/1243c460657d47068a053714497dd390/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Посмотреть видео на `youtube <https://youtu.be/YLoUFO8ZywI>`_, `rutube <https://rutube.ru/video/1243c460657d47068a053714497dd390/>`_.
 
 .. _ngw_webmaps_client_panels:
 
