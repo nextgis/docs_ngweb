@@ -164,6 +164,15 @@ Using **"Description"** option you can view the description of the selected laye
 
 **"Zoom to layer"** option allows you to zoom a map so that the selected layer takes up all the visible map area.
 
+See how it works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/M4cThWxdaZg?si=VtCw4Coh2Lg1E5BV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`_.
+
+
 After a click on **"Feature table"** option you will see feature table of the selected layer under the map. 
 
 .. figure:: _static/ngweb_webmap_layer_menu_en.png
