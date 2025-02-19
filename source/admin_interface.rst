@@ -144,7 +144,7 @@ Any authorized user can switch the interface language.
 To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`).
 
 .. figure:: _static/admin_settings_lang_en.png
-   :name: admin_settings_lang_pic
+   :name: admin_select_lang_pic
    :align: center
    :width: 10cm
 
@@ -188,6 +188,13 @@ The search is carried out in the entire existing database, regardless of which d
 
    Finding Resources in Web GIS
 
+See how the search works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/q6h-zL4yg0c?si=1_xkTl5GRvpu1DJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/q6h-zL4yg0c?si=FKHlTbneOmen5O5k>`_.
 
 .. _ngw_control_panel:
 
