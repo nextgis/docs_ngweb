@@ -48,6 +48,14 @@ These global permissions are separate from `access permissions <https://docs.nex
 .. warning:: 
    If you include Guest to a group that has global permissions, anyone will be able to access Control panel even without logging in.
 
+See how it works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/pp137N12-B4?si=pQym6oOO-3ezdrSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/pp137N12-B4?si=r-Kb92HSVI2tbfHl>`_.
+
 .. _ngcw_find_id:
 
 How to find user identification number
