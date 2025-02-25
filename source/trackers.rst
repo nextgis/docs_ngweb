@@ -152,3 +152,9 @@ Next select the trackers that you want to get information about and press The re
     
 Also you can export reports in GPX format.
 
+.. figure:: _static/export_as_gpx_en.png
+   :name: export_as_gpx_pic
+   :align: center
+   :width: 16cm
+
+   Export as GPX
