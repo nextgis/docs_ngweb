@@ -151,6 +151,13 @@ HDOP (показатель снижения точности в горизонт
 
 
 .. note::
-    Чтобы получить отчет по израсходованному топливу, необходимо в Веб ГИС в настройках трекера `установить <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#id9>`_ значение расхода топлива (л/100 км).
+    Чтобы получить отчет по израсходованному топливу, необходимо в Веб ГИС в настройках трекера `установить <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracker-settings-pic>`_ значение расхода топлива (л/100 км).
     
 Также существует возможность экспорта отчета в формате GPX-файла.
+
+.. figure:: _static/export_as_gpx_ru.png
+   :name: export_as_gpx_pic
+   :align: center
+   :width: 16cm
+
+   Экспорт трека в GPX
