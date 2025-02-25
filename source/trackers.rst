@@ -112,7 +112,7 @@ Horizontal dilution of precision or HDOP is a parameter showing how precise the 
 .. _tracking_report:
 
 Reports
-------
+--------
 
 By clicking the ‘Reports’ button you can create various types of reports depending on selected tracker and parameters. 
 
@@ -126,7 +126,7 @@ By clicking the ‘Reports’ button you can create various types of reports dep
 A separate page for creating tracking reports opens. 
 
 .. figure:: _static/tracking_report_settings_en.png
-   :name: tracking_report_settings_en
+   :name: tracking_report_settings_pic
    :align: center
    :width: 16cm
    
@@ -134,23 +134,31 @@ A separate page for creating tracking reports opens.
 
 In the first block, you need to select the trackers for which you want to get an information summary.
 
-- report type (mileage, top speed, average speed, spent fuel, stops, GPX-file);
+- report type (mileage, top speed, average speed, spent fuel, stops, `GPX-file <https://docs.nextgis.com/docs_ngweb/source/trackers.html#track-export>`_);
 - time range;
 - grouping by days/hours.
 
 Next select the trackers that you want to get information about and press The report will appear on the same page below.
 
 .. figure:: _static/tracking_report_mileage_en.png
-   :name: tracking_report_settings_en
+   :name: tracking_report_settings_pic
    :align: center
    :width: 6cm
 
    Tracker report
 
+
+
+
 .. note::
     For getting the spent fuel report you need to set up `fuel consumption <https://docs.nextgis.com/docs_ngcom/source/tracking.html#tracker-settings>`_ parameter in NextGIS Web settings (l/100 km)
-    
-Also you can export reports in GPX format.
+
+.. _track_export:
+
+Export to GPX
+----------------
+
+You can use the `report page <https://docs.nextgis.com/docs_ngweb/source/trackers.html#tracker-report-icon-pic>`_ to export track with the selected parameters as a GPX file.
 
 .. figure:: _static/export_as_gpx_en.png
    :name: export_as_gpx_pic
