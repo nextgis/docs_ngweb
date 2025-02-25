@@ -118,7 +118,7 @@ HDOP (показатель снижения точности в горизонт
 Есть возможность сформировать различные вариации отчетов в зависимости от выбранного трекера и выбранных параметров. Нажмите иконку "Отчеты":
 
 .. figure:: _static/tracker_report_icon_ru.png
-   :name: Иконка инструмента для составления отчетов
+   :name: tracker_report_icon_pic
    :align: center
    :width: 8cm
    
@@ -127,7 +127,7 @@ HDOP (показатель снижения точности в горизонт
 Открывается отдельная страница получения отчетов по трекингу. 
 
 .. figure:: _static/tracking_report_settings_ru.png
-   :name: Настройки отчета по трекеру
+   :name: tracking_report_settings_pic
    :align: center
    :width: 16cm
    
@@ -142,7 +142,7 @@ HDOP (показатель снижения точности в горизонт
 Далее выберите трекеры, по которым нужно получить информационную сводку и нажмите **Построить отчет**. На этой же странице внизу отобразится отчет по заданным параметрам.
 
 .. figure:: _static/tracking_report_mileage_ru.png
-   :name: Настройки отчета по трекеру
+   :name: tracking_report_mileage_pic
    :align: center
    :width: 6cm
 
@@ -152,8 +152,14 @@ HDOP (показатель снижения точности в горизонт
 
 .. note::
     Чтобы получить отчет по израсходованному топливу, необходимо в Веб ГИС в настройках трекера `установить <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracker-settings-pic>`_ значение расхода топлива (л/100 км).
-    
-Также существует возможность экспорта отчета в формате GPX-файла.
+
+
+.. _track_export:
+
+Экспорт в GPX
+----------------
+
+Также на `странице отчётов <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracker-report-icon-pic>`_ существует возможность экспорта трека в формате GPX-файла.
 
 .. figure:: _static/export_as_gpx_ru.png
    :name: export_as_gpx_pic
