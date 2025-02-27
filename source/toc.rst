@@ -11,7 +11,6 @@ NextGIS Web
    :maxdepth: 2
 
    intro
-   quick_tutorial
    general   
    admin_interface
    create_resource
