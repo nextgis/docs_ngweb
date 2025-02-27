@@ -20,13 +20,13 @@ Web поддерживает протоколы открытого обмена 
 
 NextGIS Web позволяет:
 
-1. Создавать и отображать карты.
-2. Выполнять навигацию по карте (увеличение, уменьшение, перемещение).
+1. `Создавать <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_ и `отображать <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html>`_ карты.
+2. Выполнять `навигацию <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ по карте (увеличение, уменьшение, перемещение).
 3. Управлять наполнением карты через веб-интерфейс.
-4. Подключать векторные (:term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`PostGIS` и др. ) и растровые данные (:term:`GeoTIFF`).
-5. Использовать стандартные протоколы (:term:`WMS`, :term:`WFS-T`, :term:`TMS`).
-6. Гибко настраивать права доступа к слоям, группам слоёв, картам и ресурсам других видов.
-7. Взаимодействовать посредством API.
+4. Подключать `векторные <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ (:term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`PostGIS` и др. ) и `растровые <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ данные (:term:`GeoTIFF`).
+5. Использовать `стандартные протоколы <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ (:term:`WMS`, :term:`WFS-T`, :term:`TMS`, OGC API Features).
+6. Гибко `настраивать права доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ к слоям, группам слоёв, картам и ресурсам других видов.
+7. Взаимодействовать `посредством API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
 
 .. raw:: html
 
@@ -74,25 +74,32 @@ Server). Подробнее см. подраздел :ref:`ngw_soft_req`. NextGI
 
 NextGIS Web обладает следующими основными возможностями:
 
+.. _ngw_keyfeatures_layers:
+
 Слои данных
 ~~~~~~~~~~~
 
-* Создание растровых и векторных слоев и загрузка данных для них через веб-интерфейс.
-* Создание и подключение :term:`WMS` и :term:`TMS` слоев.
-* Создание и подключение :term:`PostGIS` слоев из внешних баз данных.
+* Создание `растровых <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ и `векторных <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ слоев и загрузка данных для них через веб-интерфейс.
+* Создание и подключение `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_ слоев.
+* Создание и подключение `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis>`_ слоев из внешних баз данных.
 * Выбор из базовых подложек: OpenStreetMap, Google, Bing и иных, доступных в каталоге `QuickMapServices <https://qms.nextgis.com/>`_.
-* Сервис WFS.
-* Сервис WMS.
-* Справочник (при наличии модуля расширения).
-* Набор файлов (при наличии модуля расширения).
-* Поддержка метаданных (в виде "ключ-значение").
+* Сервис `WFS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wfs>`_.
+* Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-wms-service>`_.
+* Сервис `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-ogc-api-features>`_.
+* `Справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ (при наличии модуля расширения).
+* `Набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_ (при наличии модуля расширения).
+* Поддержка `метаданных <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_ (в виде "ключ-значение").
 * Экспорт в различные форматы (см. `список доступных форматов <https://docs.nextgis.ru/docs_ngcom/source/data_export.html#ngcom-data-export>`_).
+
+.. _ngw_keyfeatures_access:
 
 Управление доступом
 ~~~~~~~~~~~~~~~~~~~
 
-* Детальная настройка прав доступа для всех подключаемых слоев.
-* Настройка прав доступа для ресурсов и групп ресурсов.
+* Детальная `настройка прав доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ для всех ресурсов и групп ресурсов.
+* Глобальные права доступа к Веб ГИС `для пользователей и групп пользователей <https://docs.nextgis.ru/docs_ngweb/source/users.html#ngw-group-rights>`_.
+
+.. _ngw_keyfeatures_render:
 
 Отрисовка и символика
 ~~~~~~~~~~~~~~~~~~~~~
@@ -102,31 +109,37 @@ NextGIS Web обладает следующими основными возмо�
   проекта из ПО NextGIS QGIS c сохранением состава слоев, стилей и др.).
 * Несколько вариантов символики для одного слоя данных.
 
+.. _ngw_keyfeatures_webmap:
+
 Веб-карты
 ~~~~~~~~~
 
 * Неограниченное количество веб-карт.
-* Свой набор слоев и управление деревом слоев для каждой карты.
+* Свой набор слоев и `управление деревом слоев <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_ для каждой карты.
 * Повторное использование одного и того же представления слоя в разных картах.
+
+.. _ngw_keyfeatures_ui:
 
 Интерфейс пользователя
 ~~~~~~~~~~~~~~~~~~~~~~
 
-* Дерево слоев.
-* Группы слоев.
-* Панель инструментов навигации.
-* Поиск по атрибутам.
+* `Дерево слоев <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-view-resource>`_.
+* `Группы слоев <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_.
+* Панель `инструментов навигации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_.
+* `Поиск по атрибутам <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_.
 * Закладки для быстрого перехода на нужные участки карты.
 * Просмотр описания слоя.
 * Просмотр таблицы атрибутов объектов слоя с быстрым переходом от таблицы к карте.
-* Аннотации.
+* `Аннотации <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_.
+
+.. _ngw_keyfeatures_edit:
 
 Редактирование
 ~~~~~~~~~~~~~~
 
-* Редактирование атрибутов объектов.
-* Редактирование описания слоя.
-* Прикрепление фотографий и других вложений.
+* Редактирование `значений атрибутов объектов <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes>`_.
+* Редактирование `описания слоя <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
+* Прикрепление `фотографий и других вложений <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_.
 * Редактирование по протоколу WFS-T.
 
 .. _ngw_sys_req:
