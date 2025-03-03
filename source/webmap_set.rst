@@ -12,10 +12,10 @@ Using the control panel administrator can set a number of general settings for a
 * Address search parameters;
 * Legend visibility.
 
-.. figure:: _static/admin_webmap_panel_settings_eng_3.png
+.. figure:: _static/admin_webmap_panel_settings_eng_5.png
    :name: admin_webmap_panel_settings_pic
    :align: center
-   :width: 15cm
+   :width: 16cm
 
    Web Map Settings Page
 
