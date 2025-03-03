@@ -8,9 +8,6 @@
 Web Map annotations
 ===================
 
-.. note:: 
-	You can use the described functionality in Web GIS created in nextgis.com_ service on `Premium plan <https://nextgis.com/pricing-base/>`_
-
 Annotation. What is it?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
