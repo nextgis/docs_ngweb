@@ -10,10 +10,10 @@
 * Параметры адресного поиска
 * Параметры видимости легенды
 
-.. figure:: _static/admin_webmap_panel_settings_rus_2.png
+.. figure:: _static/admin_webmap_panel_settings_rus_4.png
    :name: admin_webmap_panel_settings
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Страница настроек веб-карты
 
