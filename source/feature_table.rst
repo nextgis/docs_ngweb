@@ -61,16 +61,16 @@ A Web Map will be opened with a layer tree (left) and a map (right). To view a f
   
 Table allows to perform the following operations with the selected feature  :numref:`admin_table_objects2_upload`:
 
-1. Open in a new tab
-2. Edit 
-3. Delete
-4. Go to (after a click the selected feature will be displayed on the map)
-5. Save as (advanced or quick export available)
-6. Zoom to filtered features
-7. Filter features by area
-5. Use Search Box
-6. Refresh the table
-7. Open table settings
+#. Open in a new tab
+#. Edit 
+#. Delete
+#. Go to (after a click the selected feature will be displayed on the map)
+#. Save as (advanced or quick export available)
+#. Zoom to filtered features
+#. Filter features by area
+#. Use Search Box
+#. Refresh the table
+#. Open table settings
 
  
 .. figure:: _static/table_objects2_eng_3.png
