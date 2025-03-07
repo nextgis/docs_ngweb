@@ -7,6 +7,29 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+**5.0.0 released on 05 Mar 2025**
+-----
+
+- Webmap migrated to React with many new features.
+- The identification panel enabled by default, replacing webmap popups.
+- Resource editing interface fully migrated to React.
+- New feature display page and modal dialog with vector tile geometries.
+- Enhanced resource deletion confirmation with details of resources to delete.
+- On-demand webmap legend symbol loading, optimizing webmap opening time.
+- Configurable SSL mode for PostGIS connections.
+- Handling of invalid geometries for MVT vector tiles.
+- Better support for date and time fields in WFS clients.
+- Expanded JSON output format capabilities in WMS services.
+- Improved handling of `fid` fields in feature layers.
+- Extended resource search HTTP API.
+- Pre-calculated and cached style scale ranges for faster webmap opening.
+- Chrome 118+, Safari 17+, Edge 116+, or Firefox 115+ is required.
+- All legacy AMD modules migrated to TypeScript, and Dojo dependency removed.
+- Experimental support for Python 3.10.
+- Improved track display with a distinguishable style.
+- Fixed rounding of speed, direction, and HDOP in webmap popup.
+
+
 **4.9.0 released on 06 Okt 2024**
 -----
 
