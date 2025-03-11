@@ -84,7 +84,7 @@ NextGIS Web обладает следующими основными возмо�
 * Создание и подключение `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis>`_ слоев из внешних баз данных.
 * Выбор из базовых подложек: OpenStreetMap, Google, Bing и иных, доступных в каталоге `QuickMapServices <https://qms.nextgis.com/>`_.
 * Сервис `WFS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wfs>`_.
-* Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-wms-service>`_.
+* Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-wms-service>`__.
 * Сервис `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-ogc-api-features>`_.
 * `Справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ (при наличии модуля расширения).
 * `Набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_ (при наличии модуля расширения).
