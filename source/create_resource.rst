@@ -123,7 +123,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
    Предварительный просмотр слоя, объекты отмечены стандартными символами
 
 .. figure:: _static/ngweb_preview_style_ru.png
-   :name: ngweb_preview_2_pic
+   :name: ngweb_preview_style_pic
    :align: center
    :width: 20cm
 
