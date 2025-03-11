@@ -71,7 +71,7 @@
 Кнопка **Изменить** переводит в режим редактирования списка.
 
 .. figure:: _static/ngw_edit_favorites_ru.png
-   :name: ngw_favorites_pic
+   :name: ngw_edit_favorites_pic
    :align: center
    :width: 16cm
 
