@@ -29,7 +29,7 @@
 Визуально аннотация состоит из символа (точки, линии или полигона) и сообщения, привязанного к этому символу.
 
 .. figure:: _static/ann_annotation_structure_new.png
-   :name: ann_messages_example
+   :name: ann_annotation_structure_pic
    :align: center
    :width: 20cm
 
