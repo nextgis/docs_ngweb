@@ -52,10 +52,10 @@
    Операция открытия веб-карты со страницы ресурса
    
 Для формирования таблицы объектов необходимо выделить нужный слой карты в дереве слоев, после чего 
-в меню слоя выбрать "Таблица объектов" :numref:`ngweb_admin_map_and_tree_layers_upload`:
+в меню слоя выбрать "Таблица объектов" :numref:`ngweb_admin_map_and_tree_layers_pic`:
 
 .. figure:: _static/map_and_tree_layers_rus_3.png
-   :name: ngweb_admin_map_and_tree_layers_upload
+   :name: ngweb_admin_map_and_tree_layers_pic
    :align: center
    :width: 20cm
 
