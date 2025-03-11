@@ -66,7 +66,6 @@
    :align: center
    :width: 20cm
 
-.. _ngw_postgis_diagnostics:
 
 .. _ngw_create_postgis_problems:
 
