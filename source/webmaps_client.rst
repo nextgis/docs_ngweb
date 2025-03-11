@@ -90,7 +90,7 @@
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
-С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается окно подготовки к печати (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_). 
+С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается `окно подготовки к печати <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_. 
 
 В **дереве слоев** находится список всех стилей слоев, добавленных на веб-карту. 
 
@@ -102,7 +102,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e13ac386c9c16068f5110c938dd17683/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`_, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`_. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`__, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`__. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
 
 .. _ngw_webmaps_client_search:
 
@@ -131,7 +131,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/6c2f59f025c88d7c533bf34bef3d3f17/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/_isl86FjG6U>`_, `rutube <https://rutube.ru/video/6c2f59f025c88d7c533bf34bef3d3f17/>`_.
+Посмотреть видео на `youtube <https://youtu.be/_isl86FjG6U>`__, `rutube <https://rutube.ru/video/6c2f59f025c88d7c533bf34bef3d3f17/>`__.
 
 .. _ngw_webmaps_search_coord:
 
@@ -160,10 +160,10 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/81464ac6a48a81bb05c74bcb9f11c875/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/7nfXFrCSru0>`_, `rutube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`_.
+Смотреть на `youtube <https://youtu.be/7nfXFrCSru0>`__, `rutube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`__.
 
 
-Также при открытии таблицы объектов слоя доступна **фильтрация по области** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_).
+Также при открытии таблицы объектов слоя доступна `**фильтрация по области** <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
 
 
 
@@ -175,7 +175,7 @@
 
 В выпадающем меню слоя можно настроить его непрозрачность при помощи ползунка.
 
-Пункт **Редактировать** позволяет начать вносить изменения в выбранный слой. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_).
+Пункт **Редактировать** позволяет начать вносить изменения в выбранный слой. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`__).
 
 При выборе пункта **"Описание"** отображается описание выбранного слоя, которое вводится при создании или редактировании слоя. 
 
@@ -190,7 +190,7 @@
    
    Меню слоя на веб-карте
 
-При выделении в таблице отдельной записи происходит переход к соответствующей геометрии на карте, данная геометрия будет подсвечена на карте (см. :numref:`ngweb_webmap_attribute_table`). Для выбранного объекта можно открыть окно с его свойствами, редактировать его или удалить. При нажатии на кнопку **"Перейти"** карта масштабируется таким образом, чтобы выбранный объект оказался в центре (см. :numref:`ngweb_webmap_attribute_table`). В окне просмотра атрибутов можно выполнять поиск по текущим атрибутам. По мере ввода, содержимое окна фильтруется и остаются только записи, которые удовлетворяют критериям поиска. Также можно осуществлять фильтрацию объектов, входящих в заданную область (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_).
+При выделении в таблице отдельной записи происходит переход к соответствующей геометрии на карте, данная геометрия будет подсвечена на карте (см. :numref:`ngweb_webmap_attribute_table`). Для выбранного объекта можно открыть окно с его свойствами, редактировать его или удалить. При нажатии на кнопку **"Перейти"** карта масштабируется таким образом, чтобы выбранный объект оказался в центре (см. :numref:`ngweb_webmap_attribute_table`). В окне просмотра атрибутов можно выполнять поиск по текущим атрибутам. По мере ввода, содержимое окна фильтруется и остаются только записи, которые удовлетворяют критериям поиска. Также можно осуществлять `фильтрацию объектов, входящих в заданную область <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
  
 .. figure:: _static/ngweb_webmap_attribute_table_rus_3.png
    :name: ngweb_webmap_attribute_table
