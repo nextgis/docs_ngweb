@@ -34,7 +34,7 @@
 
 
 .. figure:: _static/trackers_panel_select_ru.png
-   :name: trackers_panel_select_pic
+   :name: ngw_trackers_panel_select_pic
    :align: center
    :width: 20cm
 
@@ -52,7 +52,7 @@
 
 
 .. figure:: _static/webmap_track_display_ru_2.png
-   :name: webmap_track_display_pic
+   :name: ngw_track_display_pic
    :align: center
    :width: 20cm
 
