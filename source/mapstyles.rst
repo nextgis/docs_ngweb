@@ -102,7 +102,7 @@ SVG-маркеры
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/c6375a06276f864079b8f5bfc2e7dba9/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`_, `rutube <https://rutube.ru/video/c6375a06276f864079b8f5bfc2e7dba9/?r=wd>`_.
+Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`__, `rutube <https://rutube.ru/video/c6375a06276f864079b8f5bfc2e7dba9/?r=wd>`__.
 
 2. Разместить файл в интернете и поставить его URL в качестве пути к значку SVG.
 
@@ -204,7 +204,7 @@ SVG-маркеры также можно `встроить <https://docs.nextgis
    Настройка пользовательского стиля для точечного слоя
 
 .. figure:: _static/QGIS_style_custom_line_ru.png
-   :name: QGIS_style_custom_polygon_pic
+   :name: QGIS_style_custom_line_pic
    :align: center
    :width: 15cm
 
@@ -234,7 +234,7 @@ SVG-маркеры также можно `встроить <https://docs.nextgis
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e6b097a20efa3882b27907096490393e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`_, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`_.
+Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`__, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`__.
 
 Созданный стиль QGIS можно **редактировать**.
 
