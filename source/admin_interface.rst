@@ -38,7 +38,7 @@
 Для того, чтобы авторизоваться, откройте Веб ГИС и нажмите **Войти** в правом верхнем углу.
 
 .. figure:: _static/ngweb_before_signin_ru.png
-   :name: ngweb_before_signin_pic
+   :name: ngw_before_signin_pic
    :align: center
    :width: 20cm
    
@@ -388,7 +388,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/3c2ff0e798f391f91cc8e4c1dc01a701/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/7dvCIbl_psc>`_, `rutube <https://rutube.ru/video/3c2ff0e798f391f91cc8e4c1dc01a701/>`_.
+Посмотреть видео на `youtube <https://youtu.be/7dvCIbl_psc>`__, `rutube <https://rutube.ru/video/3c2ff0e798f391f91cc8e4c1dc01a701/>`__.
 
 Опция *Ограничить охватом* позволяет экспортировать не все объекты слоя, а только те, которые находятся в нужной области. Охват задается в градусах.
 
