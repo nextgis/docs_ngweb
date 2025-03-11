@@ -41,7 +41,7 @@ TARGET должно быть равно: _acme-challenge.nimbo.nextgis.net.
 
    gis.example.com. CNAME example.nextgis.com.
 
-замените gis.example.com на домен для Веб ГИС вашей организации, a example.nextgis.com на адрес вашей Веб ГИС в домене *.nextgis.com.
+замените gis.example.com на домен для Веб ГИС вашей организации, a example.nextgis.com на адрес вашей Веб ГИС в домене \*.nextgis.com.
 
 **Проверка 2**
 
