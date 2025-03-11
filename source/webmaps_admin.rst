@@ -105,7 +105,7 @@
 
 В поле "Адаптер" рекомендуется выставить значение "Изображения" (отрисовка в виде единой картинки на всю карту), если нет каких-либо особых требований. Также в этом поле можно выбрать значение "Тайлы" (изображения размером 256 x 256 пикселов). 
 
-.. tip:: Адаптер "Тайлы" используется, например, для того чтобы корректно отображались объекты, пересекающие 180 мередиан. Посмотреть видео на `rutube <https://rutube.ru/video/8c7d98d7332b1483d731eb70645ca3f2/>`_.
+.. tip:: Адаптер "Тайлы" используется, например, для того чтобы корректно отображались объекты, пересекающие 180 мередиан. Посмотреть видео на `rutube <https://rutube.ru/video/8c7d98d7332b1483d731eb70645ca3f2/>`__.
 
 Можно также указать диапазон масштабов, в которых будет отбражаться слой, при помощи полей "Мин. масштаб" и "Макс. масштаб". Минимальный масштаб соответствует более мелкомасштабному отображению, а максимальный - более крупномасштабному. Например, для отображения слоя в диапазоне от 1 : 250 000 до 1 : 5 000, первое значение должно соответствовать минимальному масштабу, а второе - максимальному.  Минимальный и максимальный масштаб можно указывать в стиле слоя и в настройках слоя.
    
@@ -251,7 +251,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/57ace793b43f9c145be6924b98f174c2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/yFYByTiybMU>`_, `rutube <https://rutube.ru/video/57ace793b43f9c145be6924b98f174c2/>`_.
+Смотреть на `youtube <https://youtu.be/yFYByTiybMU>`__, `rutube <https://rutube.ru/video/57ace793b43f9c145be6924b98f174c2/>`__.
 
 .. _ngw_layer_as_basemap:
 
@@ -274,7 +274,7 @@
 
 * задать заголовок, который будет отображаться на веб-карте вместо имени ресурса;
 * настроить `легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_;
-* включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_);
+* включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`__);
 * выбрать систему координат для измерений;
 * разрешить редактирование слоев;
 * выбрать начальный и ограничивающий охват;
@@ -399,7 +399,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/b13377cbe4f79b985ebbda2469295438/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть на `youtube <https://youtu.be/AToQmohz6QQ>`_, `rutube <https://rutube.ru/video/b13377cbe4f79b985ebbda2469295438/>`_.
+Посмотреть на `youtube <https://youtu.be/AToQmohz6QQ>`__, `rutube <https://rutube.ru/video/b13377cbe4f79b985ebbda2469295438/>`__.
 
 .. _ngw_map_extent:
 
@@ -441,7 +441,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/62a7266ee8bc054f85b675e74314644b/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/KkihLvSYWmc>`_, `rutube <https://rutube.ru/video/62a7266ee8bc054f85b675e74314644b/>`_.
+Посмотреть видео на `youtube <https://youtu.be/KkihLvSYWmc>`__, `rutube <https://rutube.ru/video/62a7266ee8bc054f85b675e74314644b/>`__.
 
 .. _ngw_map_bookmarks:
 
@@ -490,7 +490,7 @@
 
 На вкладке "Описание вы можете задать текстовое описание, гиперссылки, вставить изображение легенды с помощью URL или сохраненного в буфере обмена изображения.
 
-`Пример <https://demo.nextgis.ru/resource/5467/display?panel=info>`_  Веб-карты с легендой в описании.
+`Пример <https://demo.nextgis.ru/resource/5467/display?panel=info>`__  Веб-карты с легендой в описании.
 
 .. figure:: _static/Legend_1_ru.png
    :name: Legend_1
