@@ -713,7 +713,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 После создания ресурса выведется сообщение с URL WMS-сервиса, который можно 
 использовать в других программах, например :program:`NextGIS QGIS`, или :program:`JOSM`. 
-Далее необходимо настроить права доступа к WMS-сервису (см. :ref:`ngw_access_rights`) для стороннего использования различными пользователями.
+Далее необходимо `настроить права доступа к WMS-сервису <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-cases>`_ для стороннего использования различными пользователями.
 
 Cлой NextGIS Web можно добавлять в настольные, мобильные и Веб ГИС различными способами.
 
@@ -1184,7 +1184,7 @@ NextGIS Web является сервером OGC API Features - может пу
 
 После создания ресурса вам будет доступен URL сервиса OGC API Features, который вы можете использовать в других программах, например :program:`QGIS`. 
 
-Если это необходимо, можно настроить права доступа к сервису OGC API Features (см. главу :ref:`ngw_access_rights`).
+Если это необходимо, можно `настроить права доступа к сервису OGC API Features <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-cases>`_.
 
 Программно подключаться к созданным сервисам OGC API Features можно по ссылкам следующего вида (также `поддерживается <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/auth.html>`_ basic auth):
 
