@@ -18,6 +18,7 @@ NextGIS Web
    feature_table
    mapstyles
    create_other
+   version
    layers_settings 
    vect_layer_upload_params
    postgis_details
