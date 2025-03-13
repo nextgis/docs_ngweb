@@ -42,7 +42,7 @@ Versioning in NextGIS Web API
 
 The main options for obtaining information about versioned layers are now available only in the NextGIS Web API. Through API queries, you can get the states of layers and features for different time periods, the difference between different states, and so on. Here are some examples of API methods for versioned layers:
 
- - ``/api/resource/{id}`` you can get the information on the versioning status and the current version of the data in the general layer query ('versioning' property).
+- ``/api/resource/{id}`` you can get the information on the versioning status and the current version of the data in the general layer query ('versioning' property).
 - ``/api/resource/{id}/feature/`` add layer version to get its state at a particular moment
 - ``/api/resource/{id}/feature/changes/check`` to get information about the difference between two given versions of the layer
 - ``/api/resource/{id}/feature/version/{vid}`` get metadata for a given version
