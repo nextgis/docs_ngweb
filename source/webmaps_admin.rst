@@ -23,6 +23,8 @@ To view Web Map in browser, press |button_open_web_map| next to its name in the 
 Creating a Web Map
 ---------------------
 
+First upload the data to your Web GIS as `layers <https://docs.nextgis.com/docs_ngweb/source/layers.html>`_.
+
 To create a Web Map, open the resource group where you want to add it, press **Create resource** button and in the pop-up window select “Web Map”. (see :numref:`ngweb_admin_layers_create_webmap`). 
 
 .. figure:: _static/ngweb_create_webmap_en.png
