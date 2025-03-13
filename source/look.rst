@@ -177,8 +177,8 @@ Affects paths for the displayed resource, parameters etc.
 
 .. _ngw_res_export:
 
-Resource export
-------------------
+Hide resource export
+---------------------
 
 To hide the ability to export data from Web GIS from certain categories of users, you need to:
 
