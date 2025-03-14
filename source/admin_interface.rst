@@ -47,7 +47,7 @@
 В открывшемся диалоговом окне нажмите синюю кнопку **Войти через NextGIS ID**.
 
 .. figure:: _static/ngweb_signin_nextgisid_ru.png
-   :name: ngweb_signin_nextgisid_pic
+   :name: ngw_signin_nextgisid_pic
    :align: center
    :width: 20cm
    
@@ -56,7 +56,7 @@
 Вы будете перенаправлены на страницу авторизации my.nextgis.com. Введите имя пользователя или емейл, использованный при регистрации аккаунта, и пароль. 
 
 .. figure:: _static/ngweb_nextgisid_ru.png
-   :name: ngweb_nextgisid_pic
+   :name: ngw_nextgisid_pic
    :align: center
    :width: 12cm
    
