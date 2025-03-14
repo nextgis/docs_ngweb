@@ -15,7 +15,7 @@
 Примеры стилей можно посмотреть в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_. Посмотреть видео о ней можно на `youtube <https://youtu.be/QE0koNP1i6c>`_, `rutube <https://rutube.ru/video/40ce27f141592df374ae3bb90b2f4f45/>`_.
 
 .. figure:: _static/style_gallery_1_ru.png
-   :name: style_gallery_pic
+   :name: styles_gallery_pic
    :align: center
    :width: 20cm
 
