@@ -495,7 +495,7 @@
 `Пример <https://demo.nextgis.ru/resource/5467/display?panel=info>`__  Веб-карты с легендой в описании.
 
 .. figure:: _static/Legend_1_ru.png
-   :name: Legend_1
+   :name: legend_description_pic
    :align: center
    :width: 20cm
    
