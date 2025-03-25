@@ -307,16 +307,16 @@
   
 Веб ГИС позволяет экспортировать данные в следующие форматы:
 
-* GeoPackage
+* :term:`GeoPackage`
 * :term:`GeoJSON`
 * :term:`CSV`
 * CSV для Microsoft Excel
-* ESRI Shapefile
-* AutoCAD DXF
-* Mapinfo TAB
-* MapInfo MIF/MID
-* KML
-* KMZ
+* :term:`ESRI Shapefile`
+* :term:`AutoCAD DXF`
+* :term:`Mapinfo TAB`
+* :term:`MapInfo MIF/MID`
+* :term:`KML`
+* :term:`KMZ`
 
 При экспорте в некоторые форматы создаются дополнительные файлы, например CSVT (описание полей) и PRJ (описание проекции) для CSV, CPG (кодовая страница) для ESRI Shapefile.
 
@@ -403,7 +403,7 @@
 
    Активный флажок "Zip архив" при выборе формата GeoJSON
 
-Для разработчиков все параметры экспорта доступны через HTTP API.
+Для разработчиков все параметры экспорта доступны через HTTP :term:`API`.
 Например, такой запрос выдаст данные слоя в формате CSV, системе координат EPSG:4326, кодировке UTF-8:
 
 https://demo.nextgis.ru/api/resource/4077/export?format=CSV&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8
