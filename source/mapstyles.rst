@@ -1,5 +1,6 @@
 .. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
 .. sectionauthor:: Роман Гайнуллов <roman.gainullov@nextgis.ru>
+.. sectionauthor:: Юлия Григоренко <yulia.grigorenko@nextgis.com>
 
 .. _ngw_style_create:
     
@@ -194,26 +195,27 @@ SVG-маркеры также можно `встроить <https://docs.nextgis
 * Форму символа (для точечных слоев): круг, квадрат, треугольник, звезда, крест;
 * Размер символа (для точечных слоев). Можно ввести с клавиатуры или увеличить/уменьшить стрелочками;
 * Ширину контура;
-* Цвет и прозрачность заливки и контура. Можно выбрать пипеткой, настроить ползунками или ввести значения в системе :term:`HEX`, :term:`HSB` или :term:`RGB`.
+* Цвет и прозрачность заливки и контура. Можно выбрать пипеткой, настроить ползунками или ввести значения в системе :term:`HEX`, :term:`HSB` или :term:`RGB`;
+* Характер линии/контура полигона: сплошная линия, пунктир, точечный пунктир, переменный пунктир (можно настроить комбинацию из штрихов и пропусков разной длины).
 
-.. figure:: _static/QGIS_style_custom_ru.png
+.. figure:: _static/QGIS_style_custom_ru_2.png
    :name: QGIS_style_custom_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Настройка пользовательского стиля для точечного слоя
 
-.. figure:: _static/QGIS_style_custom_line_ru.png
+.. figure:: _static/QGIS_style_custom_line_ru_2.png
    :name: QGIS_style_custom_line_pic
    :align: center
-   :width: 15cm
+   :width: 16cm
 
    Настройка пользовательского стиля для слоя линий
 
-.. figure:: _static/QGIS_style_custom_polygon_ru.png
+.. figure:: _static/QGIS_style_custom_polygon_ru_2.png
    :name: QGIS_style_custom_polygon_pic
    :align: center
-   :width: 15cm
+   :width: 16cm
 
    Настройка пользовательского стиля для слоя полигонов
 
