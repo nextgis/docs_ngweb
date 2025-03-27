@@ -30,12 +30,17 @@
 
 Также в зависимости от типа ресурса доступны для редактирования другие вкладки, например, `поля (атрибуты) <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
 
-.. figure:: _static/ngw_window_update_resource1_rus_4.png
+.. figure:: _static/ngw_update_resource_ru.png
    :name: ngw_window_update_resource1
    :align: center
-   :width: 20cm
+   :width: 17cm
 
    Окно "Изменить ресурс"
+
+На некоторых вкладках серым отмечено количество элементов (правил доступа, полей векторного слоя и т.п.).
+
+Вкладки, в которые внесены изменения, отмечены синим кружком.
+
 
 На первой вкладке "Ресурс" доступны к редактированию следующие поля:
 
