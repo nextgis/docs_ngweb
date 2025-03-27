@@ -19,14 +19,18 @@ Alternatively, open the resource properties page and then select "Update" in the
 
    Selection of "Update" action in the actions pane
 
-In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add description, metadata and attributes of the resource.
+In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add `description, metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_ and configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attributes <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`.
 
-.. figure:: _static/ngw_window_update_resource1_eng_3.png
+.. figure:: _static/ngw_update_resource_en.png
    :name: ngw_window_update_resource1
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    "Update resource" window
+
+Some tabs have grey numbers on them indicated the number of items (i.e. permission rules, layer fields etc).
+
+Tabs that were modified are marked by blue dots.
 
 On the first tab "Resource" you can edit the following fields:
 
@@ -47,7 +51,7 @@ There are two ways to do so.
 .. _ngcom_parent_change_update:
 
 Using resource update
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 This is a good way if you only need to move one resource.
 
@@ -68,7 +72,7 @@ In the same way you can transfer :ref:`Styles <ngcom_styles>` between parent res
 .. _ngcom_parent_change_multi:
 
 Using multiple selection
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This way allows you to move several resources at once.
 
