@@ -128,7 +128,7 @@
 .. figure:: _static/webmap_group_settings_ru.png
    :name: webmap_group_settings_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    Настройки группы слоев на веб-карте
 
@@ -279,13 +279,14 @@
 * включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`__);
 * выбрать систему координат для измерений;
 * разрешить редактирование слоев;
-* выбрать начальный и ограничивающий охват;
-* выбрать ресур закладок.
+* выбрать начальный и ограничивающий `охват <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-extent>`_;
+* выбрать ресурс `закладок <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_;
+* установить видимость панелей и элементов идентификации объектов.
 
-.. figure:: _static/admin_webmap_settings_tab_ru_3.png
+.. figure:: _static/admin_webmap_settings_tab_ru_4.png
    :name: admin_webmap_settings_tab_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    Вкладка "Настройки" 
 
@@ -467,6 +468,25 @@
    
    Установка Атрибута наименования для векторного слоя границ районов
 
+.. _ngw_map_additional:
+
+Отображение панелей и элементов идентификации
+----------------------------------------------
+
+В разделе "Дополнительные опции" настроек веб-карты можно включить или выключить отображение следующих элементов:
+
+* панель `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_;
+* атрибуты объектов в панели идентификации;
+* информация о геометрии в панели идентификации.
+
+Можно установить один из трёх вариантов: "Да" - показывать, "Нет" - не показывать, "Авто" - будет применяться `настройка <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-settings>`_, установленная для Веб ГИС в целом. Чтобы поставить режим "Авто", нажмите на крестик в правой части поля.
+
+.. figure:: _static/ngw_additional_opt_ru.png
+   :name: ngw_additional_opt_pic
+   :align: center
+   :width: 20cm
+
+   Дополнительные опции веб-карты
 
 .. _ngw_map_socials:
 
