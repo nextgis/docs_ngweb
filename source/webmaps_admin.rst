@@ -255,8 +255,9 @@ In the "Settings" tab you can modify several parameters:
 * enable annotations (more on annotations see :ref:`here <ngcom_annotation>`);
 * select measurement spacial reference system;
 * allow layer editing;
-* set up initial and constraining extent (see below);
-* select bookmark resource.
+* set up initial and constraining `extent <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#extent>`_;
+* select `bookmark <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_ resource;
+* set visibility of panels and feature identification elements.
 
 .. figure:: _static/admin_webmap_settings_tab_en_3.png
    :name: admin_webmap_settings_tab_pic
@@ -419,6 +420,25 @@ In the “Bookmark resource” field of the Settings tab you can select a vector
    
    Setting attributes for the vector layer containing boundaries
 
+.. _ngw_map_additional:
+
+Hide or show panels and identification sections
+-----------------------------------------------
+
+In the "Additional options" of the Web Map settings you can set up visibility for the following elements:
+
+* `Trackers <https://docs.nextgis.com/docs_ngweb/source/trackers.html#tracking-web-map>`_ panel;
+* feature attributes in the identification panel;
+* feature geometry info in the identification panel.
+
+For each of them you can choose one of three options: "Yes" - show, "No" - do not show, "Auto" - applies the default `option <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-settings>`_ set up for the Web GIS a whole. To set the "Auto" option, click on the cross on the right side of the option field.
+
+.. figure:: _static/ngw_additional_opt_en.png
+   :name: ngw_additional_opt_pic
+   :align: center
+   :width: 20cm
+
+   Additional Web Map options
 
 
 .. _ngw_map_socials:
