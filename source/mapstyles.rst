@@ -1,4 +1,5 @@
 .. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+.. sectionauthor:: Yulia Grigorenko <yulia.grigorenko@nextgis.com>
 
 .. _ngw_style_create:
     
@@ -164,7 +165,7 @@ The archive must contain only markers.
    
    Uploading SVG markers
 
-After all icons have been uploaded to the library, you will see the list of the file names. Click **Create** to complete the process (see :numref:`create_svg_lib`). 
+After all icons have been uploaded to the library, you will see the list of the file names. Click **Create** to complete the process. 
 
   
 .. figure:: _static/list_svg_eng.png
@@ -193,9 +194,10 @@ Custom QGIS style
 
 If you want to create a simple custom style, select "User-defined style" in the drop-down menu. You can set up:
 
-* Marker shape
-* Marker size and stroke width
-* Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format)
+* Marker shape: square, circle, triangle, star, cross;
+* Marker size and stroke width. Enter a number or use the arrows in the field;
+* Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format);
+* The style of the line / polygon outline: solid, dotted, dashed, dash-dotted.
 
 
 .. figure:: _static/QGIS_style_custom_en.png
@@ -206,14 +208,14 @@ If you want to create a simple custom style, select "User-defined style" in the 
    Custom QGIS style for points
 
 
-.. figure:: _static/QGIS_style_custom_line_en.png
+.. figure:: _static/QGIS_style_custom_line_en_2.png
    :name: QGIS_style_custom_polygon_pic
    :align: center
    :width: 15cm
 
    Custom QGIS style for lines
 
-.. figure:: _static/QGIS_style_custom_polygon_en.png
+.. figure:: _static/QGIS_style_custom_polygon_en_2.png
    :name: QGIS_style_custom_polygon_pic
    :align: center
    :width: 15cm
