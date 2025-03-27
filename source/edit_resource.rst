@@ -19,7 +19,7 @@ Alternatively, open the resource properties page and then select "Update" in the
 
    Selection of "Update" action in the actions pane
 
-In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add `description, metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_ and configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attributes <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`.
+In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add `description, metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_ and configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attributes <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`_.
 
 .. figure:: _static/ngw_update_resource_en.png
    :name: ngw_window_update_resource1
