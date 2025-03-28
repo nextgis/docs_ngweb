@@ -74,6 +74,28 @@ To view the data of the layer on a map, you need to create at least one layer st
    
    Using style to add a layer to the Web Map
 
+You can add multiple styles at once. The layers containing selected styles are marked with blue dots. Navigate between resource groups and tick the styles of various layers you want to add. The **Pick selected** button displays the total number of selected styles. To clear the selection press the  |button_clear_selection| button next to it.
+
+.. |button_clear_selection| image:: _static/button_clear_selection.png
+   :alt: X
+   :width: 8mm
+
+.. figure:: _static/webmap_add_layers_multi_en.png
+   :name: webmap_add_layers_multi_pic
+   :align: center
+   :width: 18cm
+   
+   Adding multiple layer styles to a WebMap. Three styles are selected (two styles of one layer + one style of another layer)
+
+You don't need to go the style list of the layer to select the style. Press the |button_pick_first| button to the right of the layer name to auto-select the first style.
+
+.. |button_pick_first| image:: _static/button_pick_first.png
+   :alt: editor's choice
+   :width: 8mm
+
+
+
+
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
 .. figure:: _static/webmap_layer_settings_en.png
