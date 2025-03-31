@@ -144,7 +144,7 @@ To select a provider, go to control panel and open `Web Map settings <https://do
 To use Yandex.Maps enter your API key in the field on the right. API keys can be obtained by users signed up on https://developer.tech.yandex.ru.
 
 .. figure:: _static/adress_search_yandex_API_en.png
-   :name: adress_search_yandex_API_pic
+   :name: adress_search_yandex_API_key_pic
    :align: center
    :width: 16cm
    
