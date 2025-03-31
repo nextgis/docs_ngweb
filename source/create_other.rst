@@ -4,7 +4,7 @@
 
 
 Creating other types of resources
-================================
+=================================
 
 
 .. _ngw_create_lookup_table:
