@@ -133,7 +133,7 @@ To preview a style, open the layer page and click on the eye icon next to the st
    Preview of a vector layer, features marked by default round markers 
 
 .. figure:: _static/ngweb_preview_style_en_2.png
-   :name: ngweb_preview_2_pic
+   :name: ngweb_preview_style_pic
    :align: center
    :width: 20cm
 
