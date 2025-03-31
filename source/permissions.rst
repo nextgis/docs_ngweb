@@ -14,7 +14,7 @@ Mechanism of permission management of resources is similar to the principle of t
 .. _ngw_permissions_categories:
 
 Permissions and its types (scopes)
----------------------------------
+----------------------------------
 
 **Permission** - the ability to make various actions with resources. For example, ‘Read’ permission allows you to get man information about resources (e.g. name).
 ‘Update’ permission allows you to update this info.
