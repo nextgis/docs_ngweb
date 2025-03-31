@@ -68,7 +68,7 @@ To open the page of a resource, press  **Go to** button on the right end of the 
 Press **Edit** button to modify the list.
 
 .. figure:: _static/ngw_edit_wm_fragment_name_en.png
-   :name: ngw_edit_wm_fragment_name_pic
+   :name: ngw_edit_wm_fragment_list_pic
    :align: center
    :width: 16cm
 
