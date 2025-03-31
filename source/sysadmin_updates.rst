@@ -7,8 +7,8 @@ Latest changes
 
 This section describes the latest changes to the software.
 
-**5.0.0 released on 05 Mar 2025**
------
+5.0.0 released on 05 Mar 2025
+----------------------------------
 
 - Webmap migrated to React with many new features.
 - The identification panel enabled by default, replacing webmap popups.
@@ -30,8 +30,8 @@ This section describes the latest changes to the software.
 - Fixed rounding of speed, direction, and HDOP in webmap popup.
 
 
-**4.9.0 released on 06 Okt 2024**
------
+4.9.0 released on 06 Okt 2024
+--------------------------------
 
 - New resource creation dialog.
 - Identification panel replaces popup on the webmap.
@@ -47,15 +47,15 @@ This section describes the latest changes to the software.
 - Fix uploading of zero-length files.
 
 
-**4.8.1 released on 20 Sep 2024**
------
+4.8.1 released on 20 Sep 2024
+----------------------------------
 
 - Fix audit journal display.
 - Fix WMS service layer adding.
 
 
-**4.8.0 released on 17 Jul 2024**
------
+4.8.0 released on 17 Jul 2024
+-------------------------------
 
 - Customizable print layout including legend.
 - Exclusive layer groups on webmaps.
@@ -75,8 +75,8 @@ This section describes the latest changes to the software.
 - Most of resource widgets migrated to Antd and React.
 
 
-**4.7.0 released on 04 Apr 2024**
------
+4.7.0 released on 04 Apr 2024
+------------------------------
 
 * Turn legend categories on/off for a better experience on webmaps.
 * Lots of customization options for embedded webmaps: map tools and panels.
@@ -92,18 +92,18 @@ This section describes the latest changes to the software.
 * Fix permission dependencies on QGIS style parent resources.
 * Copying QGIS styles from one to another.
 
-**4.6.2 released on 02 Mar 2023**
------
+4.6.2 released on 02 Mar 2023
+---------------------------------
 
 * Expanded list of allowed CORS headers.
 
-**4.6.1 released on 27 Dec 2023 and 29 Dec 2023**
------
+4.6.1 released on 27 Dec 2023 and 29 Dec 2023
+------------------------------------------------
 
 * Fix styles for WFS layers.
 
-**4.6.0 released on 27 Dec 2023 and 29 Dec 2023**
------
+4.6.0 released on 27 Dec 2023 and 29 Dec 2023
+---------------------------------------------
 
 * Support for lookup tables for feature layer attributes.
 * Print to TIFF format in addition to PDF, JPEG and PNG.
@@ -118,6 +118,8 @@ This section describes the latest changes to the software.
 * Fix NextGIS ID configuration issue.
 * Support for PostgreSQL 12.
 
+Earlier releases
+-----------------
 
 **4.5.1 released on 17 Nov 2023**
 
@@ -224,7 +226,7 @@ This section describes the latest changes to the software.
 * Improved handling of vector layer sources with id and geom fields.
 * Reprojection into different coordinate systems in WMS and WFS services.
 * Export feature layer using field display names (aliases) instead of keynames.
-* Support for CORS domain wildcards (like https://*.csb.app).
+* Support for CORS domain wildcards (like https://\*.csb.app).
 * WFS client and server simple filters support.
 * Improved handling of coordinates outside boundaries of coordinate systems.
 * Support for 25D geometries in PostGIS layers.
