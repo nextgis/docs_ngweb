@@ -141,10 +141,10 @@ Language change
 ---------------
 
 Any authorized user can switch the interface language.
-To do this, in the upper right corner on the user icon, go to the "Settings" section (:numref:`admin_select_lang_pic`).
+To do this, in the upper right corner on the user icon, go to the "Settings" section.
 
 .. figure:: _static/admin_settings_lang_en.png
-   :name: admin_select_lang_pic
+   :name: admin_settings_lang_pic
    :align: center
    :width: 10cm
 
@@ -402,7 +402,7 @@ Next you can chose which of the *fields* of the data to keep in the file. By def
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hukt3lD-JyQ?si=aZH_hwK3z655jwvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/Hukt3lD-JyQ?si=c8Cbut245FWU7LMQ>`_.
+Watch on `youtube <https://youtu.be/Hukt3lD-JyQ?si=c8Cbut245FWU7LMQ>`__.
 
 If you need to export only the features within a particular area, you can *Limit by extent*. The extent is set in degrees.
 
