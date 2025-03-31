@@ -50,10 +50,10 @@ Alternatively, you can go to the resource page and click "Display" in the Web Ma
 
    Opening a Web Map from the resouce page
 
-A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select the required layer in layer tree and then select "Feature table" command in the Layer drop down menu at the top of layer tree :numref:`admin_map_and_tree_layers_upload`:
+A Web Map will be opened with a layer tree (left) and a map (right). To view a feature table select the required layer in layer tree and then select "Feature table" command in the Layer drop down menu at the top of layer tree :numref:`map_and_tree_layers_pic`:
 
 .. figure:: _static/map_and_tree_layers_eng_3.png
-   :name: admin_map_and_tree_layers_upload
+   :name: map_and_tree_layers_pic
    :align: center
    :width: 20cm
 
@@ -130,7 +130,7 @@ Watch on `youtube <https://youtu.be/q946UruxUb0?si=gXo0OMG3x-2dIsac>`_.
 .. _ngw_feature_table_fields:
 
 Displaying selected fields and feature edit information
--------------------------------------
+----------------------------------------------------------
 
 You can select which fields of the feature table to display. Press "Open table settings" button in the right corner and untick the fields you want to hide. 
 
