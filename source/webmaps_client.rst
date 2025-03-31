@@ -78,7 +78,7 @@ On the left side of the workspace are the functional panels:
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
-To share a link to a map or generate embed code use the function **"Share"** (see item 9 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/webmap_print.html>`_).
+To share a link to a map or generate embed code use the function **"Share"** (see item 9 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/webmap_print.html>`__).
 
 The **layer tree** contains a list of all layer styles added to the web map. The panel allows:
 
@@ -94,7 +94,7 @@ Functionality of the layer panel is presented in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pd5AKtoR2g?si=-PsdgClPwYiUyNvh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/4Pd5AKtoR2g?si=0lMooDE3ZzpO0xxz>`_.
+Watch on `youtube <https://youtu.be/4Pd5AKtoR2g?si=0lMooDE3ZzpO0xxz>`__.
 
 .. _ngw_webmaps_client_search:
 
@@ -145,7 +145,7 @@ See how it works in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/tjPHvUWtpKs?si=Nbod2AQEUzjQZU01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/tjPHvUWtpKs?si=Od-yUzIhM0yr4JwM>`_.
+Watch on `youtube <https://youtu.be/tjPHvUWtpKs?si=Od-yUzIhM0yr4JwM>`__.
 
 When the feature table is opened on the Web Map, you can filter features by area (`read more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-feature-table-filter-area>`_).
 
@@ -170,7 +170,7 @@ See how it works in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/M4cThWxdaZg?si=VtCw4Coh2Lg1E5BV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`_.
+Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
 
 
 After a click on **"Feature table"** option you will see feature table of the selected layer under the map. 
