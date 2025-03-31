@@ -88,7 +88,7 @@ Other items
 -----------
 
 * The default Web GIS name is specified without mentioning NextGIS.
-* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS**(см. :numref:`WMS_WFS_whitelabel`).
+* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS** (см. :numref:`WMS_WFS_whitelabel`).
 
 .. figure:: _static/WMS_WFS_whitelabel.png
    :name: WMS_WFS_whitelabel
