@@ -16,7 +16,7 @@ Annotations are text messages attached to the points, which you can create and d
 Annotation consists of a point and a message attached to this point.
 
 .. figure:: _static/ann_annotation_structure_new_eng.png
-   :name: ann_messages_example
+   :name: ann_annotation_structure_new_pic
    :align: center
    :width: 20cm
 
@@ -141,7 +141,7 @@ You can edit both your own private annotations and those created by other users 
 .. _ngw_annotation_perm:
 
 Web Map: user's permissions associated with annotations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To further manage the work with annotations you can use access permissions (you can read more in :ref:`Setting permissions <ngw_access_rights>` of NextGIS Web documentation).
 
