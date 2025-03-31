@@ -9,7 +9,7 @@ Collector projects
 .. note::
     You can use described functionality in Web GIS created in nextgis.com_ service on `Premium plan <https://nextgis.com/pricing-base/>`_
 
-.. _collector_add_members:
+.. _ngw_collector_add_members:
 
 List of participants
 -------------------------------
@@ -56,10 +56,10 @@ Users with a registration in your Web GIS can access data collection projects fr
 However you can control the access of different users to each individual project. 
 It is described in details below.
 
-.. _collector_create_project:
+.. _ngw_collector_create_project:
 
 Creating data collection project
-------------------------------
+---------------------------------
 
 Data collection project is a resource in your Web GIS, it is a set of layers for editing. 
 In a Web GIS "data collection project" is called "Collector Project".
