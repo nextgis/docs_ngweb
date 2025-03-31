@@ -19,7 +19,7 @@ Here are the parameters that can be modified:
 .. note::
     The number of trackers available depends on your `subscription plan <https://nextgis.com/pricing-base/>`_. On Free and Mini you can add 1 tracker, on Premium the default limit is 5 trackers, but it can be extended.
 
-.. _tracking_web_map:
+.. _ngw_tracking_web_map:
 
 Viewing tracks on a Web Map
 --------------------------------
@@ -33,7 +33,7 @@ To view the tracks open any Web Map or create a new one. On the left panel bar y
 
 
 .. figure:: _static/trackers_panel_select_en.png
-   :name: trackers_panel_select_pic
+   :name: ngw_trackers_panel_select_pic
    :align: center
    :width: 20cm
 
@@ -51,7 +51,7 @@ By default the tracks are hidden. To view a track on the Web Map, find the track
 
 
 .. figure:: _static/webmap_track_display_en.png
-   :name: webmap_track_display_pic
+   :name: ngw_webmap_track_display_pic
    :align: center
    :width: 20cm
 
@@ -141,7 +141,7 @@ In the first block, you need to select the trackers for which you want to get an
 Next select the trackers that you want to get information about and press The report will appear on the same page below.
 
 .. figure:: _static/tracking_report_mileage_en.png
-   :name: tracking_report_settings_pic
+   :name: tracking_report_mileage_pic
    :align: center
    :width: 6cm
 
