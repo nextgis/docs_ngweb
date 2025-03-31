@@ -509,7 +509,7 @@ This will allow you to avoid requesting data outside this range and showing exce
 
 **Сaching**
 
-Set up `caching <https://docs.nextgis.com/docs_ngweb/source/layers.html#tms-layer>`_ for your layer styles.
+Set up `caching <https://docs.nextgis.com/docs_ngweb/source/layers.html#tms-layer>`__ for your layer styles.
 In this case, already rendered data will not be re-requested. Note that, while technically it's possible to turn on caching for rasters, this is not recommended.
 
 **Services**
