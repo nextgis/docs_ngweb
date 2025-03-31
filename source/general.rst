@@ -139,6 +139,4 @@ Recomended browsers are:
 
 Microsoft Internet Explorer browser is no suppoted.
 
-.. warning::
-
-NextGIS Web would probably work with other versions, but this is not garanteed.
+.. warning:: NextGIS Web would probably work with other versions, but this is not garanteed.
