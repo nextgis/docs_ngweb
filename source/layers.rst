@@ -254,7 +254,7 @@ On the "Settings" tab you can enable feature versioning. It allows the layer to 
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a form or data collection.
+Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a form or data collection.
 
 
 
@@ -295,7 +295,7 @@ In the “Metadata” tab you can add information in the “key-value” format 
 
 After uploading the file and specifying the parameters, click the Create button. 
 
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`__ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 To add features to the newly created layer you can use the `editing toolbar <https://docs.nextgis.com/docs_ngcom/source/data_edit.html#create-a-new-feature-point-line-polygon>`_.
 
@@ -347,7 +347,7 @@ You can also add resource description and metadata on the corresponding tabs.
    PostGIS connection description
    
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_metadata_eng_3.png
-   :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
+   :name: create_postgis_layer_resourse_metadata
    :align: center
    :width: 20cm
 
@@ -402,7 +402,7 @@ layer tree.
 You can also add resource description and metadata on the corresponding tabs.
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_eng_3.png
-   :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
+   :name: create_postgis_layer_resourse_metadata_pic
    :align: center
    :width: 20cm
 
@@ -902,7 +902,7 @@ See how to add a tileset in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/eCeptUacIRM?si=3sIwP6nZJBHB9g7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`_.
+Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`__.
 
 .. _ngw_wfs:
 
@@ -1069,7 +1069,7 @@ Using WFS service
 
 After the resource is created, a URL for the WFS service is available. You can use it in other software, for example :program:`NextGIS QGIS`. 
 
-You can set access permissions for WFS service if needed. See `this section <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for details.
+You can set access permissions for WFS service if needed. See `this section <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`__ for details.
 
 WFS services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
 
