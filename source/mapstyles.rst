@@ -98,7 +98,7 @@ There are several ways to add custom markers to a style for NextGIS Web:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/bJLuYp73u_E?si=Sv-VJrEWh5RZzjTh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/bJLuYp73u_E?si=6vMNCQUz45DJfE79>`_.
+Watch on `youtube <https://youtu.be/bJLuYp73u_E?si=6vMNCQUz45DJfE79>`__.
 
 2. Publish the image file online and use its URL as the path to SVG marker.
 
@@ -209,7 +209,7 @@ If you want to create a simple custom style, select "User-defined style" in the 
 
 
 .. figure:: _static/QGIS_style_custom_line_en_2.png
-   :name: QGIS_style_custom_polygon_pic
+   :name: QGIS_style_custom_line_pic
    :align: center
    :width: 15cm
 
