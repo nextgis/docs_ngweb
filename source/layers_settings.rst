@@ -294,7 +294,7 @@ To add a vertice, click on the line between two existing vertices and drag it to
 
 
 
-.. _ngw_attributes_edit:
+.. _ngw_attr_values_edit:
 
 Edit attribute values
 ----------------------------------
@@ -367,13 +367,12 @@ Dates also can be typed in or selected in the calender. To open the calender cli
 
 .. note::
 
-When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
-When editing a layer based on a Shapefile attribute all changes are saved to a local database. 
+   When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
+   When editing a layer based on a Shapefile attribute all changes are saved to a local database. 
 
 .. note::
 
-Geodata with changed attributes could be downloaded by link :guilabel:`Download as 
-GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
+   Geodata with changed attributes could be downloaded by link :guilabel:`Download as GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
 
 
 
@@ -483,13 +482,13 @@ See how to work with panoramas in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/MeZ0jJAbZ5I?si=czq1-hdAKBZpfabA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/MeZ0jJAbZ5I?si=F6s_wScaTeEjfpPl>`_.
+Watch on `youtube <https://youtu.be/MeZ0jJAbZ5I?si=F6s_wScaTeEjfpPl>`__.
 
 
 .. _ngw_attachments_imp_exp:
 
 Export and import attachments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To copy feature attachments between different layers or to create a backup you can save them to your device as an archive (Standard layer saving does not include attachments). 
 
