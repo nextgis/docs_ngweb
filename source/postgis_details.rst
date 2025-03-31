@@ -43,7 +43,7 @@ If any of the entered data is not correct, an error message will appear.
    :align: center
    :width: 24cm
 
-.. _ngw_postgis_diagnostics:
+.. _ngw_postgis_troubleshooting:
 
 PostGIS layer troubleshooting
 -------------------------------
