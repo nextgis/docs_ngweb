@@ -40,7 +40,7 @@ Give some time for DNS changes to take effect.
 
    gis.example.com. CNAME example.nextgis.com.
 
-change *gis.example.com* to the needed domain under the domain of your organization, change *example.nextgis.com* to your Web GIS address at *.nextgis.com
+change *gis.example.com* to the needed domain under the domain of your organization, change *example.nextgis.com* to your Web GIS address at \*.nextgis.com
 
 **Check 2**
 
