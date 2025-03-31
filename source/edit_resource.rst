@@ -181,7 +181,7 @@ In the group page press the cross icon opposite the resource.
 A pop-up window for confirmation will appear. Click **Delete** to confirm.
 
 .. figure:: _static/ngw_delete_from_group_confirmation_en.png
-   :name: ngw_delete_resource_from_group_pic
+   :name: ngw_del_res_from_group_confirm_pic
    :align: center
    :width: 20cm
    
@@ -229,7 +229,7 @@ If you selected "Delete" action from the resource page and not from the resource
 .. _ngw_delete_resource_multi:
 
 Deleting several resources at once
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the parent resource open the child resources list menu and enable multiple selection.
 
