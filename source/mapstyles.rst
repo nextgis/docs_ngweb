@@ -344,7 +344,7 @@ Caching provides faster rendering of Web Map layers. The **tile cache** settings
 .. _ngw_add_map_style:
 
 Adding a style on the map
-------------------------
+--------------------------
 
 To edit a Web Map click pencil icon near it or click the Web Map and in actions pane "Action" select "Update". In "Update resource" layer select **Layers** tab (see in :numref:`select_svg_style`).
 
