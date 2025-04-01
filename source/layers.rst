@@ -682,7 +682,7 @@ Switch to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_c
    WMS service tab of Create resource dialog
 
 After the resource is created, you will see a message with the WMS service URL which you can use in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`. 
-Then you need to set access permissions for the WMS service (see :ref:`ngw_access_rights`).
+Then you need to `set access permissions for the WMS service <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_.
 
 NextGIS Web layer can be added to desktop, mobile and Web GIS in different ways.
 
@@ -1145,7 +1145,7 @@ Using OGC API Features service
 
 After the resource is created, a URL for the OGC API Features service is available. You can use it in other software, for example :program:`QGIS`. 
 
-You can set access permissions for OGC API Features service if needed. See section :ref:`ngw_access_rights`.
+You can `set access permissions for OGC API Features service <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_ if needed.
 
 OGC API Features services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
 
