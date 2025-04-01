@@ -443,7 +443,7 @@ On the Edit page open the Attachments tab and upload the files.
 
 Enter titles for the attachments and press **Save**.
 
-After uploading you can see previews of photos and panoramas on the "Attachments" tab of the identify window (see :numref:`webmap_identification_photos`).
+After uploading you can see previews of photos and panoramas on the "Attachments" tab of the identify window (see :numref:`attach_tab_en`).
 
 .. note:: 
    By default attachments could be added by any user but there is an option      to limit number of users who can upload photos (see      `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
