@@ -232,7 +232,7 @@ Control panel allows to execute the following actions:
 * `Customize UI elements with White Label module (on-premise only) <https://docs.nextgis.com/docs_ngweb/source/label.html>`_
 
 For more information about creation of user groups and users and granting 
-permissions see topic :ref:`ngw_admin_tasks`.
+permissions see `this section <https://docs.nextgis.com/docs_ngweb/source/users.html`_.
 
 
 .. _ngw_view_resource:
