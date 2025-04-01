@@ -274,7 +274,7 @@ In the "Settings" tab you can modify several parameters:
 
 * title that will be displayed on the Web Map instead of resource name;
 * legend visibility (more `here <https://docs.nextgis.com/docs_ngcom/source/legend.html>`_);
-* enable annotations (more on annotations see :ref:`here <ngcom_annotation>`);
+* enable annotations (`more on annotations <https://docs.nextgis.com/docs_ngweb/source/annotation.html>`_);
 * select measurement spacial reference system;
 * allow layer editing;
 * set up initial and constraining `extent <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#extent>`_;
