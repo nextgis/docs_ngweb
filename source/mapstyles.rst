@@ -106,7 +106,7 @@ Watch on `youtube <https://youtu.be/bJLuYp73u_E?si=6vMNCQUz45DJfE79>`__.
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/lLlKx2FTuE4?si=8tOlWjJowqewiEiq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/lLlKx2FTuE4?si=wYoDJ9QUtl-4eUXm>`_.
+Watch on `youtube <https://youtu.be/lLlKx2FTuE4?si=wYoDJ9QUtl-4eUXm>`__.
 
 3. Add `SVG marker library <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-create-svg-marker-lib>`_ to your Web GIS.
 
@@ -234,7 +234,7 @@ See how it works in our video:
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/bujOcAhJskI?si=MRxjkPLHGI_MjIqe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Watch on `youtube <https://youtu.be/bujOcAhJskI?si=wCRz_Wgk7ymIXSvC>`_.
+Watch on `youtube <https://youtu.be/bujOcAhJskI?si=wCRz_Wgk7ymIXSvC>`__.
 
 .. _ngw_qgis_style_custom_edit:
 
