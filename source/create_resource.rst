@@ -61,7 +61,7 @@ To create a resource group navigate to the group, where you want to create a new
 
    Selection of "Resource group" resource type
    
-Create resource dialog for resource group is presented on :numref:`admin_layers_create_group`.
+Create resource dialog for resource group is presented on :numref:`ngweb_admin_layers_create_group`.
 
 .. figure:: _static/admin_layers_create_group_eng_3.png
    :name: ngweb_admin_layers_create_group
