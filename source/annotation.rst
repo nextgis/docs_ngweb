@@ -11,7 +11,7 @@ Web Map annotations
 Annotation. What is it?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Annotations are text messages attached to the points, which you can create and display on any :ref:`Web Map <ngw_webmap_create>`. You can create your own set of annotations for each Web Map.
+Annotations are text messages attached to the points, which you can create and display on any `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html>`_. You can create your own set of annotations for each Web Map.
 
 Annotation consists of a point and a message attached to this point.
 
@@ -143,7 +143,7 @@ You can edit both your own private annotations and those created by other users 
 Web Map: user's permissions associated with annotations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To further manage the work with annotations you can use access permissions (you can read more in :ref:`Setting permissions <ngw_access_rights>` of NextGIS Web documentation).
+To further manage the work with annotations you can use access permissions (you can read more about `setting permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#types-of-rules-what-can-be-allowed-or-denied>`_).
 
 There are three permissions associated with annotations:
 
