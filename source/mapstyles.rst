@@ -23,10 +23,10 @@ Watch on `youtube <https://youtu.be/f9SGpeopJ4A?si=O3jxtvEhMWxBf6vD>`_.
 Formats
 ----------------------------------
 
-By now NextGIS Web supports two rendering libraries: "QGIS" and "Mapserver" . 
+By now NextGIS Web supports two rendering libraries: QGIS and :term:`MapServer`. 
 
 * QGIS style can be uploaded from a QML file or created in Web GIS, it has much more settings. 
-* You can write Mapserver style yourself as a text. 
+* You can write MapServer style yourself as a text. 
 
 
 .. _ngw_qgis_style:
@@ -271,7 +271,7 @@ To do so, in the "QGIS style" tab select "User-defined style" in the dropdown me
 
 .. _ngw_mapserver_style:
 
-Mapserver style
+MapServer style
 ---------------
 
 To create **MapServer** style open layer properties of the layer you want create style for.
@@ -313,7 +313,7 @@ Click **Create** to finish the process. The window of the created MapServer styl
    :align: center
    :width: 20cm
 
-   Mapserver style window
+   MapServer style window
  
 .. toctree::
    :maxdepth: 1
