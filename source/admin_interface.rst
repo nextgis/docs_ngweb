@@ -314,12 +314,12 @@ Web GIS allows to export data from Vector layers and PostGIS layer in the follow
 * :term:`GeoPackage`
 * :term:`CSV` and CSV for Microsoft Excel
 * :term:`ESRI Shapefile`
-* AutoCAD DXF
-* Mapinfo TAB
-* MapInfo MIF/MID
+* :term:`AutoCAD DXF`
+* :term:`Mapinfo TAB`
+* :term:`MapInfo MIF/MID`
 * :term:`GeoJSON`
-* KML
-* KMZ
+* :term:`KML`
+* :term:`KMZ`
 
 Depending on the format, additional file components are exported making further use of the exported data more convenient. For example CSVT (field structure description) and PRJ (coordinate system description) are added to CSV and CPG (codepage) to ESRI Shapefile.
 
