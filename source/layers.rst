@@ -193,7 +193,7 @@ Press **Create resource** button and select **Vector layer** (see :numref:`ngweb
 
    Selection of "Vector layer" resource type
 
-In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. For CSV and XLSX only points are supported, coordinates must be put in lat and lot columns. 
+In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (zip-archive), :term:`GeoJSON`, :term:`KML`, :term:`GML` or :term:`GeoPackage` format. For :term:`CSV` and :term:`XLSX` only points are supported, coordinates must be put in lat and lot columns. 
 
 The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
@@ -741,7 +741,7 @@ TMS layer
 TMS Connection
 ^^^^^^^^^^^^^^
 
-Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_, to add a TMS layer, you first need to create a TMS connection. Press **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create_en`)
+Similarly to `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer/>`_, to add a TMS layer, you first need to create a :term:`TMS` connection. Press **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create_en`)
 
 .. figure:: _static/ngweb_create_tms_conn_en.png
    :name: TMS_connection_create_en
@@ -909,7 +909,7 @@ Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`__.
 WFS Layer
 ------------
 
-WFS allows to get data published on third-party GIS servers (arcgis, geoserver etc), apply custom styles to them and add them to Web Maps.
+:term:`WFS` allows to get data published on third-party GIS servers (arcgis, geoserver etc), apply custom styles to them and add them to Web Maps.
 
 First you need to create a WFS connection.
 
@@ -1082,7 +1082,7 @@ WFS services can also be accessed with links of the following type (`basic auth 
 OGC API Features service
 -------------------------
 
-The OGC API Features service is configured in the same way as for a WFS service.
+The :term:`OGC API Features` service is configured in the same way as for a WFS service.
  
 NextGIS Web acts as OGC API Features server and publishes OGC API Features services based on vector layers. Third party software can use these services to edit vector data on server. Supported OGC API Features protocol versions is 1.0.0. 
 
