@@ -19,7 +19,7 @@ Introduction
 * `NextGIS Formbuilder <https://nextgis.com/nextgis-formbuilder>`_ - desktop app for creating unique forms for field data collection projects.
 * `NextGIS Collector <https://nextgis.com/nextgis-collector/>`_ - specialized mobile app for field data collection.
 * `NextGIS Web <https://nextgis.com/nextgis-web/>`_ (NGW) - Web GIS deployed on your server to synchronize the data gathered in the field, store it, process, visualize and analyze it.
-* `NextGIS ID on-premise <https://docs.nextgis.com/docs_ngid/source/toc.html>`_ (NGIDOP) - user authorization server for managing access to data collection process.
+* `NextGIS ID on-premise <https://docs.nextgis.com/docs_ngid/source/index.html>`_ (NGIDOP) - user authorization server for managing access to data collection process.
 
 **Roles (users):** Administrator and Data Collectors. **Administrator** sets up and organizes data collection (:underline:`Formbuilder, NGW`). **Data Collectors** only use :underline:`NextGIS Collector` app.
 
@@ -35,7 +35,7 @@ Administrator's check-list
 2. Check NGIDOP settings (configuration provided on demand): sections `OAuth Applications <https://docs.nextgis.com/docs_ngid/source/ngidop.html#oauth-applications>`_ and `NextGIS ID on-premise <https://docs.nextgis.com/docs_ngid/source/ngidop.html#nextgis-id-on-premise-identificator>`__ - make sure collector_hub is set to the address of the server where the GIS is deployed, **otherwise data collection will be impossible**. 
 3. Create users for data collectors in the `Team <https://docs.nextgis.com/docs_ngid/source/ngidop.html#ngidop-teams>`_ section of NGIDOP.
 4. Open NextGIS Web. In `Control panel <https://docs.nextgis.com/docs_ngcom/source/collector.html#collector-add-members>`_ create a list of data collectors using names of the Team members added on step 3. Later when the data collection projects are set up, data collectors will be added from that list.
-5. In NextGIS Web create a point vector layers that will store collected data. It can be done in the `web interface <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ or with `NextGIS Formbuilder <https://nextgis.com/nextgis-formbuilder>`_ by creating a data collection form. For more detailed description of form creation see `Formbuilder documentation <https://docs.nextgis.com/docs_formbuilder/source/toc.html>`_. Remember that at this point you'll need to change the authorization `endpoint <https://docs.nextgis.com/docs_formbuilder/source/gui.html#on-premise-authorization>`_ from cloud (my.nextgis.com) to the on-premise deployment server.
+5. In NextGIS Web create a point vector layers that will store collected data. It can be done in the `web interface <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ or with `NextGIS Formbuilder <https://nextgis.com/nextgis-formbuilder>`_ by creating a data collection form. For more detailed description of form creation see `Formbuilder documentation <https://docs.nextgis.com/docs_formbuilder/source/index.html>`_. Remember that at this point you'll need to change the authorization `endpoint <https://docs.nextgis.com/docs_formbuilder/source/gui.html#on-premise-authorization>`_ from cloud (my.nextgis.com) to the on-premise deployment server.
 
 —--------------------
 
@@ -45,7 +45,7 @@ Now you can set up projects for data collection. NGW has a special type of resou
 
 —--------------------
 
-7. **Data Collector's work** in `NextGIS Collector <https://docs.nextgis.com/docs_collector/source/toc.html>`__. First, as for Formbuilder, data collector must change `authorization server <https://docs.nextgis.com/docs_collector/source/auth.html#via-on-premise-ngidop>`_ to NGIDOP. After that the process is pretty standard for field data collection - log in using credentials given by the administrator (see Team section) and collect data. More on the functionality of the app in the `documentation <https://docs.nextgis.com/docs_collector/source/toc.html>`_.
+7. **Data Collector's work** in `NextGIS Collector <https://docs.nextgis.com/docs_collector/source/index.html>`__. First, as for Formbuilder, data collector must change `authorization server <https://docs.nextgis.com/docs_collector/source/auth.html#via-on-premise-ngidop>`_ to NGIDOP. After that the process is pretty standard for field data collection - log in using credentials given by the administrator (see Team section) and collect data. More on the functionality of the app in the `documentation <https://docs.nextgis.com/docs_collector/source/index.html>`_.
 
 —--------------------
 
