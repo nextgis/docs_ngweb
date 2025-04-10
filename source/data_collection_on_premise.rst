@@ -21,7 +21,7 @@
 * `NextGIS Formbuilder <https://nextgis.ru/nextgis-formbuilder>`_ - настольное приложение для создания форм при подготовке к сбору геоданных.
 * `NextGIS Mobile <https://nextgis.ru/nextgis-mobile/>`_ (NGM) - мобильная ГИС для ОС Android.
 * `NextGIS Web <https://nextgis.ru/nextgis-web/>`_ (NGW) - серверная Веб ГИС для синхронизации полученных в полевых условиях пространственных данных, их дальнейшего хранения, обработки, визуализации и анализа.
-* `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/toc.html>`_ (NGIDOP) - сервер авторизации пользователей для управления доступом к процессу сбора геоданных.
+* `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/index.html>`_ (NGIDOP) - сервер авторизации пользователей для управления доступом к процессу сбора геоданных.
 * `NextGIS QGIS <https://nextgis.ru/nextgis-qgis/>`_ - полнофункциональная настольная ГИС для создания и редактирования данных, производства карт, выполнения аналитических операций.
 * `NextGIS Rosreestr Tools <https://nextgis.ru/rosreestr-tools/>`_ - дополнительный модуль в составе NextGIS QGIS для работы с кадастровыми данными и ПКК.
 
@@ -51,7 +51,7 @@
 **Администратор проекта**
 
 4. Перейти в NextGIS Web. Через `Панель управления <https://docs.nextgis.ru/docs_ngcom/source/collector.html#collector-add-members>`_ создать список участников сбора данных с именами пользователей, аналогичными пользователям в Команде на предыдущем шаге. В дальнейшем при настройке всех проектов сбора данных пользователи (сборщики) будут браться из этого списка.
-5. Создать точечные векторные слои в NextGIS Web, в которые данные будут собираться. Это можно сделать как из `интерфейса <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_, так и с помощью `NextGIS Formbuilder <https://nextgis.ru/nextgis-formbuilder>`_, создав специальную форму для сбора данных. Более подробный процесс создания форм описан в `документации <https://docs.nextgis.ru/docs_formbuilder/source/toc.html>`_. Заметим, что здесь нужно будет поменять `endpoint авторизации <https://docs.nextgis.ru/docs_formbuilder/source/gui.html#ngidop>`_ с облака (my.nextgis.com) на сервер авторизации NextGIS ID on-premise, развернутый внутри вашей организации.
+5. Создать точечные векторные слои в NextGIS Web, в которые данные будут собираться. Это можно сделать как из `интерфейса <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_, так и с помощью `NextGIS Formbuilder <https://nextgis.ru/nextgis-formbuilder>`_, создав специальную форму для сбора данных. Более подробный процесс создания форм описан в `документации <https://docs.nextgis.ru/docs_formbuilder/source/index.html>`_. Заметим, что здесь нужно будет поменять `endpoint авторизации <https://docs.nextgis.ru/docs_formbuilder/source/gui.html#ngidop>`_ с облака (my.nextgis.com) на сервер авторизации NextGIS ID on-premise, развернутый внутри вашей организации.
 
 После этого можно начинать настраивать конкретные проекты для дальнейшего сбора данных. Для этого в NGW существует специальный ресурс - **Проект Collector** (проект сбора данных). Потребуется указать название нового ресурса (его будут видеть сборщики данных в приложении NextGIS Collector и администратор в интерфейсе NGW), по желанию описание и метаданные.
 
@@ -59,6 +59,6 @@
 
 **Сборщики данных**
 
-7. Работа сборщиков в мобильном приложении `NextGIS Collector <https://docs.nextgis.ru/docs_collector/source/toc.html>`__. В первую очередь (аналогично Formbuilder) сборщик данных должен поменять `сервер авторизации <https://docs.nextgis.ru/docs_collector/source/auth.html#ngidop>`_ на NGIDOP. Далее работа происходит стандартная работа сборщика в поле - авторизация под выданными администратором логином и паролем (из раздела Команда) и сбор данных. Основные моменты по работе с приложением описаны в `документации <https://docs.nextgis.ru/docs_collector/source/toc.html>`__.
+7. Работа сборщиков в мобильном приложении `NextGIS Collector <https://docs.nextgis.ru/docs_collector/source/index.html>`__. В первую очередь (аналогично Formbuilder) сборщик данных должен поменять `сервер авторизации <https://docs.nextgis.ru/docs_collector/source/auth.html#ngidop>`_ на NGIDOP. Далее работа происходит стандартная работа сборщика в поле - авторизация под выданными администратором логином и паролем (из раздела Команда) и сбор данных. Основные моменты по работе с приложением описаны в `документации <https://docs.nextgis.ru/docs_collector/source/index.html>`__.
 
 P.S. Дополнительно можно ознакомиться с процессом сбора данных `для облака nextgis.com <https://docs.nextgis.ru/docs_ngcom/source/collector.html>`_.
