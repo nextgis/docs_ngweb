@@ -1,7 +1,3 @@
-
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>, Юлия Григоренко <grigorenko.j@gmail.com>, Роман Гайнуллов <roman.gainullov@nextgis.ru>
-
-
 .. _ngw_webmaps_admin:
 
 Добавление веб-карты
@@ -495,13 +491,13 @@
 
 В разделе "Дополнительные опции" настроек веб-карты можно включить или выключить отображение следующих элементов:
 
-* панель `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_;
+* панели: `Кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html#ngw-cadaster-identify>`_ и `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_;
 * атрибуты объектов в панели идентификации;
 * информация о геометрии в панели идентификации.
 
 Можно установить один из трёх вариантов: "Да" - показывать, "Нет" - не показывать, "Авто" - будет применяться `настройка <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-settings>`_, установленная для Веб ГИС в целом. Чтобы поставить режим "Авто", нажмите на крестик в правой части поля.
 
-.. figure:: _static/ngw_additional_opt_ru.png
+.. figure:: _static/ngw_additional_opt_ru_2.png
    :name: ngw_additional_opt_pic
    :align: center
    :width: 20cm
