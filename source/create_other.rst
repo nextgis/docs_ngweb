@@ -1,7 +1,3 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
-.. sectionauthor:: Yulia Grigorenko <yulia.grigorenko@nextgis.com>
-
 
 Creating other types of resources
 =================================
@@ -33,12 +29,22 @@ In the opened dialog enter a display name. It will be displayed in the resource 
 
 Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_lookup_pic`. Add data in the “key-value” format. You can also import a pre-made lookup table from a CSV file.
 
-.. figure:: _static/ngweb_creating_a_new_lookuptable_en.png
+.. figure:: _static/ngweb_creating_a_new_lookup_en.png
    :name: ngweb_creating_a_new_lookup_pic
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    Lookup table contents
+
+The entries can be sorted in a variety of ways:
+
+* By key, ascending (lower to higher);
+* By key, descending (higher to lower);
+* By value, ascending;
+* By value, descending;
+* Custom - drag the six dot icon on the left (:numref:`ngweb_creating_a_new_lookup_pic`) to move the entry.
+
+Numbers with separators are treated like decimals, i.e. "1.12" is before "1.7". If you need to fix it, sort by key first, then switch to "Custom" and move the entries to the correct position.
 
 You can also add resource description and metadata on the corresponding tabs.
 Metadata is used in external apps working with `API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_.
@@ -47,7 +53,7 @@ Metadata is used in external apps working with `API <https://docs.nextgis.com/do
 Then click **Save**. 
 The window will then look as on :numref:`ngweb_new_resource_lookup_pic`
 
-.. figure:: _static/ngweb_new_resource_eng_2.png
+.. figure:: _static/ngweb_lookup_result_en.png
    :name: ngweb_new_resource_lookup_pic
    :align: center
    :width: 20cm
