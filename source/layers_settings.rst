@@ -1,85 +1,18 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-
 .. _ngw_change_layers:
 
-Vector layer settings
+Edit vector layer on a Web Map
 ================================
 
 Introduction
 -------------
 
-To edit a layer you need to navigate to a child resource group (see item 4 in :numref:`admin_index_pic`), where would be displayed resource types. Then select from child resources a resource with type vector layer and press the "Pencil" icon opposite the resource or select the layer and then select an action called "Update" in actions pane (see :numref:`ngw_window_update_edit_resource`). The window "Update resource" will open, where you can edit the layer properties, clear the layer or upload a new file for it, and modify attributes.
+To edit a layer `log in to the Web GIS  <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-admin-login>`_.
 
-:ref:`Web GIS <ngcom_description>` also allows to edit objects and their attributes and to add descriptions of features and to them attachments (including photos). This works for :ref:`Vector layers <ngcom_vector_layer>` and :ref:`PostGIS layers <ngcom_postgis_layer>`.
+To modify layer settings, open the group containing the layer (see :numref:`ngweb_main_page_administrative_interface_pic`, item 5), find the layer in the list and click on the pencil icon next to it. It opens the `Update resource <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_ page. On this page you can edit the settings standard for all types of resources (parent, description, metadata, access permission) and specific for vector layers: `delete or replace all the features <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, edit `fields and their aliases <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ and `enable editing <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-allow-edit>`_ for vector features and annotations on the map. 
 
-.. _ngw_attributes_edit:
-
-Edit vector layer attributes table
------------------------------------
-
-"Fields" tab contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`). Click on a table row to open the attribute edit form. 
-
-.. figure:: _static/vector_fields_en.png
-   :name: ngweb_admin_layers_attr
-   :align: center
-   :width: 16cm
-
-   "Fields" tab
-
-The table contains the following columns:
-
-* Name of the attribute - display name to use in the identification window instead of the keyname
-* Key - technical name of the attribute, can be comprised only of plain latin symbols
-* Type
-
-For the next three parameters a dark symbol means "on" and a light symbol means "off".
-
-.. |attr_label_symbol| image:: _static/attr_label_symbol.png
-   :width: 6mm
-.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
-   :width: 6mm
-.. |attr_table_symbol| image:: _static/attr_table_symbol.png
-   :width: 6mm
-.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
-   :width: 6mm
-
-* |attr_table_symbol| Feature table - the attribute is displayed in the identification window.
-* |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
-* |attr_label_symbol| Label attribute - the attribute is used for bookmarks.
+:ref:`Web GIS <ngcom_description>` interface allows to `edit <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html>`_ geometries on the map and feature attribute values, add description and `attachments <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (photos etc) to features of Vector layers and `PostGIS layers <https://docs.nextgis.com/docs_ngweb/source/layers.html#postgis>`_.
 
 
-At the end of each row there is a button:
-
-* |attr_delete_symbol| Delete
-
-
-
-.. figure:: _static/key_field_name_en.png
-   :name: key_field_name_pic
-   :align: center
-   :width: 16cm    
-
-   Display name with superscript symbol and keyname of the field
-
-.. figure:: _static/webmap_identification_eng_3.png
-   :name: ngweb_webmap_identification
-   :align: center
-   :width: 20cm
-
-   The identification window. Names of the fields are displayed with superscript symbols
-
-In the attribute editing mode you can also add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_. It allows to select values of the attribute when you add or edit features. To add a lookup table, click on the field in the form, then in the pop-up window select the resource.
-
-.. figure:: _static/update_add_lookup_en.png
-   :name: update_add_lookup_pic
-   :align: center
-   :width: 20cm
-
-   Adding lookup table to a field
-
-To go back to table view, press the arrow in the top row of the form.
-
-After all edits are made, click **Save**.
 
 
 .. _ngw_allow_edit:
@@ -111,48 +44,6 @@ To forbid some users to edit layers add a rule to deny specified users or groups
    Changes of editing permission for particular users
 
 
-.. _ngw_vector_file_replace:
-
-Delete or replace all features
--------------------------------
-
-NextGIS Web software allows to delete all features of a layer or replace them by uploading a new file.
-
-Click on the pencil icon next to the layer. 
-
-In the "Vector layer" tab select the action from the dropdown menu.
-
-.. figure:: _static/ngw_update_vector_file_options_en.png
-   :name: ngw_update_vector_file_options_pic
-   :align: center
-   :width: 15cm
-   
-   Options to edit the layer file
-
-You can delete all the features. This will result in an empty layer of the same structure that you can add new features to. To do so, select "Delete all features from layer", tick to confirm and press **Save**.
-
-.. figure:: _static/ngw_update_vector_file_clear_en.png
-   :name: ngw_update_vector_file_clear_pic
-   :align: center
-   :width: 15cm
-   
-   Deleting all features from the layer
-
-You can replace all the features by uploading a previously prepared file. Select "Replace layer features from file". Open the file or drag and drop it into the frame. 
-
-.. figure:: _static/ngw_update_vector_file_replace_en.png
-   :name: ngw_update_vector_file_replace_pic
-   :align: center
-   :width: 15cm
-   
-   Replacing layer file
-
-If the file has multiple layers, select the one you need in the "Source layer" field. You can also set up other properties, as while creating a new vector layer.
-
-If you replace the file, not only the features, but the structure of the attributes and other properties will be changed to match the new file.
-
-.. note:
-   You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
 
 .. _ngw_edit_objects:
 
@@ -523,3 +414,115 @@ The resulting archive can be imported to add the attachments to the layer featur
 .. to do:: See the process of importing and exporting attachments in our video:
 
 
+.. _ngw_attributes_edit:
+
+Edit vector layer attributes table
+-----------------------------------
+
+"Fields" tab contains a table with vector layer attributes (see :numref:`ngweb_admin_layers_attr`). Click on a table row to open the attribute edit form. 
+
+.. figure:: _static/vector_fields_en.png
+   :name: ngweb_admin_layers_attr
+   :align: center
+   :width: 16cm
+
+   "Fields" tab
+
+The table contains the following columns:
+
+* Name of the attribute - display name to use in the identification window instead of the keyname
+* Key - technical name of the attribute, can be comprised only of plain latin symbols
+* Type
+
+For the next three parameters a dark symbol means "on" and a light symbol means "off".
+
+.. |attr_label_symbol| image:: _static/attr_label_symbol.png
+   :width: 6mm
+.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
+   :width: 6mm
+.. |attr_table_symbol| image:: _static/attr_table_symbol.png
+   :width: 6mm
+.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
+   :width: 6mm
+
+* |attr_table_symbol| Feature table - the attribute is displayed in the identification window.
+* |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
+* |attr_label_symbol| Label attribute - the attribute is used for bookmarks.
+
+
+At the end of each row there is a button:
+
+* |attr_delete_symbol| Delete
+
+
+
+.. figure:: _static/key_field_name_en.png
+   :name: key_field_name_pic
+   :align: center
+   :width: 16cm    
+
+   Display name with superscript symbol and keyname of the field
+
+.. figure:: _static/webmap_identification_eng_3.png
+   :name: ngweb_webmap_identification
+   :align: center
+   :width: 20cm
+
+   The identification window. Names of the fields are displayed with superscript symbols
+
+In the attribute editing mode you can also add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_. It allows to select values of the attribute when you add or edit features. To add a lookup table, click on the field in the form, then in the pop-up window select the resource.
+
+.. figure:: _static/update_add_lookup_en.png
+   :name: update_add_lookup_pic
+   :align: center
+   :width: 20cm
+
+   Adding lookup table to a field
+
+To go back to table view, press the arrow in the top row of the form.
+
+After all edits are made, click **Save**.
+
+
+.. _ngw_vector_file_replace:
+
+Delete or replace all features
+-------------------------------
+
+NextGIS Web software allows to delete all features of a layer or replace them by uploading a new file.
+
+Click on the pencil icon next to the layer. 
+
+In the "Vector layer" tab select the action from the dropdown menu.
+
+.. figure:: _static/ngw_update_vector_file_options_en.png
+   :name: ngw_update_vector_file_options_pic
+   :align: center
+   :width: 15cm
+   
+   Options to edit the layer file
+
+You can delete all the features. This will result in an empty layer of the same structure that you can add new features to. To do so, select "Delete all features from layer", tick to confirm and press **Save**.
+
+.. figure:: _static/ngw_update_vector_file_clear_en.png
+   :name: ngw_update_vector_file_clear_pic
+   :align: center
+   :width: 15cm
+   
+   Deleting all features from the layer
+
+You can replace all the features by uploading a previously prepared file. Select "Replace layer features from file". Open the file or drag and drop it into the frame. 
+
+.. figure:: _static/ngw_update_vector_file_replace_en.png
+   :name: ngw_update_vector_file_replace_pic
+   :align: center
+   :width: 15cm
+   
+   Replacing layer file
+
+If the file has multiple layers, select the one you need in the "Source layer" field. You can also set up other properties, as while creating a new vector layer.
+
+If you replace the file, not only the features, but the structure of the attributes and other properties will be changed to match the new file.
+
+.. note:
+   You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
