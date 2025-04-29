@@ -7,7 +7,7 @@
 .. figure:: _static/ngweb_create_vector_layer_upload_ru.png
    :name: ngweb_vect_layer_upload_params
    :align: center
-   :width: 20cm
+   :width: 16cm
    
    Дополнительные параметры загрузки векторного слоя
 
