@@ -1,6 +1,3 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
-
 .. _ngw_create_layers:
 
 Add layers
@@ -197,18 +194,12 @@ In the opened tab you need to upload a geodata file in :term:`ESRI Shapefile` (z
 
 The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_vector_layer_upload`). Web GIS can process multi-layer datasets. If an archive contains several layers, then after it is uploaded, you will be asked to select which layer will be used for creating Vector layer resource.
 
-Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can handle geometry errors when uploading a file as follows:
+Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can define how to handle geometry errors when uploading a file, select the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field). `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-* Not fix errors 
-* Fix whatever is possible
-* Fix without losing data
-
-Next - the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field) are indicated. `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_upload_eng_3.png
+.. figure:: _static/ngweb_create_vector_layer_upload_en.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
-   :width: 14cm
+   :width: 16cm
 
    Vector file upload tab
 
