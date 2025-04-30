@@ -1,5 +1,3 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
 
 .. |button_main_menu| image:: _static/button_main_menu.png
    :width: 8mm
@@ -51,12 +49,12 @@ In the opened dialog press the blue button that reads **Sign in with NextGIS ID*
    
    Selecting sign-in via NextGIS
 
-You will be redirected to my.nextgis.com authorization page. Enter your username or email you used for registration and your password. 
+You will be redirected to my.nextgis.com authorization page. Enter your username or email you used for registration, then on the next page enter your password. 
 
-.. figure:: _static/ngweb_nextgisid_en.png
+.. figure:: _static/ngid_signup_signin_en.png
    :name: ngweb_nextgisid_pic
    :align: center
-   :width: 12cm
+   :width: 16cm
    
    Signing in with NextGIS
 
