@@ -22,27 +22,28 @@ Allow editing
 
 By default editing of a Web Map is disabled. To allow users to modify the layers of the map, enable editing in the Web Map settings. To find out how to open the "Update resource" dialog, see  :ref:`this chapter<ngw_update_resource>`. 
 
-You can allow or deny editing of all map layers on the “Settings” tab by ticking or clearing a box next to “Enable layers editing” field (see :numref:`webmap_allow_editting`)
+You can enable or disable editing of all Web Map layers on the “Settings” tab by selecting the corresponding option in the dropdown menu (see :numref:`webmap_allow_editting`).
 
-.. figure:: _static/webgis_allow_editting_eng_2.png
+.. figure:: _static/webgis_allow_editting_en.png
    :name: webmap_allow_editting
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    "Enable layers editing" is turned on
 
 .. note:: 
 	By default layer editing is turned off.
 	
-To forbid some users to edit layers add a rule to deny specified users or groups of users to write data (permission ``"Data:Write"``) on the "Permissions" tab of the "Update resorce" dialog (see :numref:`webmap_forbid_editting`).  For user without permission the edit mode is unavailable.
+Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. The "Modify data" permission can be set for the entire resource group where the data is stored or for individual layers.
 
-.. figure:: _static/webgis_forbid_editting_eng_3.png
-   :name: webmap_forbid_editting
+Users who do not have "Modify data" permission won't be able to activate the edit mode. `How to check user permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
+
+.. figure:: _static/webgis_permiss_editing_en.png
+   :name: webgis_permiss_editing_pic
    :align: center
    :width: 16cm
 
-   Changes of editing permission for particular users
-
+   Permissions set for the Data resource group to allow editing
 
 
 .. _ngw_edit_objects:
