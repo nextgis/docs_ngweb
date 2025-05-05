@@ -311,6 +311,27 @@ The icon on the right indicates what is displayed. Click on it to switch between
 
    Extent mode
 
+.. _ngw_webmaps_client_share:
+
+Share
+-----------
+
+In the |panel_share_intext| "Share" panel you can:
+
+.. |panel_share_intext| image:: _static/panel_share.png
+   :width: 6mm
+
+* copy a link to the Web Map (the link includes zoom level and layer visibility);
+* add the visible fragment of the Web Map to `favorites <https://docs.nextgis.com/docs_ngweb/source/favorites.html#ngw-favorites-wm-fragment>`_;
+* configure and copy the code for embedding the Web Map to a Web site.
+
+.. figure:: _static/web_client_share_en.png
+   :name: web_client_share_pic
+   :width: 20cm
+   :align: center
+
+   "Share" panel
+
 
 .. _ngw_webmaps_client_feature_link:
 
