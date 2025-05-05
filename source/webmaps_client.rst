@@ -73,7 +73,7 @@
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
 * |panel_cadaster| `Кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
-* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-feature-link>`_
+* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_
 * |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
