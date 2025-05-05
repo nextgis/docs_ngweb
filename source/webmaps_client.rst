@@ -1,4 +1,4 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+
 
 .. _ngw_webmaps_client:
 
@@ -64,7 +64,7 @@ On the left side of the workspace are the functional panels:
 * |panel_annot| `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
 * |panel_info| `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
 * |panel_bookmarks| `Bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_
-* |panel_share| Share
+* |panel_share| `Share <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_
 * |panel_print| Print
 * |panel_trackers| `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
 
