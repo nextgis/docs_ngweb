@@ -100,15 +100,7 @@ There are three limitation for uploading big rasters:
 
 There is no time limit for uploading raster files. 
 
-.. _ngw_process_create_raster_style:
-
-Raster style (QGIS)
-^^^^^^^^^^^^^^^^^^^
-
-After a raster file is successfully uploaded and a raster layer is created, you need to create a QGIS style.
-This procedure is similar to adding a vector layer `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style>`_. You can create one in NextGIS QGIS.
-You will need this style to add the raster to a Web Map when creating one (for more information see subsection :ref:`ngw_map_create`).
-
+.. _ngw_raster_alpha:
 
 Raster layer with transparency (clip or alpha channel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -123,15 +115,63 @@ To transform NoData value to an alpha channel use the command line utility
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
    
+.. _ngw_raster_index:
 
-Uploading Indexed Color Rasters
+Uploading indexed color rasters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Indexed Color raster files are uploaded just like the RGB raster files. If the file is not in GeoTIFF format, you can convert it as follows:
 
 .. code-block:: shell
 
-    gdal_translate yaroslavl.map  yaroslavl.tif
+    gdal_translate madison.map  madison.tif
+
+
+
+.. _ngw_process_create_raster_style:
+
+Raster style
+------------------
+
+After a raster file is successfully uploaded and a raster layer is created, you need to create a style to display it on a Web Map. There are several ways to create a raster style:
+
+* Create default QGIS raster style on the layer's page.
+
+.. todo:: _static/ngw_create_def_raster_style_en.png
+   :name: ngw_create_def_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Creating default QGIS style for the raster layer
+
+* Create default Raster style via **Create resource** button;
+
+.. figure:: _static/ngweb_create_raster_style_en.png
+   :name: ngweb_create_raster_style_pic
+   :align: center
+   :width: 20cm
+
+   Creating Raster style
+
+On the Tile cache tab you can enable cache, allow using tiles in non-tile requests, set up time after which the tiles expire (TTL) and max zoom level. To delete all previously created tiles of the style, check "Flush".
+
+* Create QGIS raster style using **Create resource** button. In the dropdown menu you can select:
+
+   * Style from file - select a QML or SLD file. 
+   * User-defined style - pick three channels, the values of these channels will be used to calculate a color in RGB model. You can set up min and max values for each channel;
+   * Default style - allows to add a default QGIS style to a layer that already has styles;
+   * Copy from resource - select a QGIS style of another raster layer to copy it.
+
+.. figure:: _static/ngweb_copy_raster_style_en.png
+   :name: ngweb_copy_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Copying QGIS raster style
+
+You will need this style to `add the raster to a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
+
+
 
 
 .. _ngw_create_vector_layer:
