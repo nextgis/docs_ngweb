@@ -87,6 +87,8 @@
 
 После указания всех необходимых параметров нажмите кнопку **Создать**.
 
+Чтобы добавить созданный слой на веб-карту, нужно сначала `создать для него стиль <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-process-create-raster-style>`_.
+
 .. _ngw_raster_volume:
 
 Замечания по загрузке растров большого объёма
@@ -102,23 +104,7 @@
 
 Время загрузки растра на сервер не ограничено. 
 
-
-.. _ngw_process_create_raster_style:
-
-Стиль QGIS (для растров)
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-После удачной загрузки растра необходимо создать стиль QGIS. Эта процедура аналогична добавлению `стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_ для векторного слоя. Создать его можно в NextGIS QGIS.
-При создании веб-карты (подробнее см. :ref:`ngw_map_create`) можно добавить загруженный растр на карту, выбрав данный стиль.
-
-Посмотреть примеры стилей можно в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_.
-
-.. figure:: _static/style_gallery_2_ru.png
-   :name: style_gallery_pic
-   :align: center
-   :width: 20cm
-
-   Галеря стилей
+.. _ngw_raster_alpha:
 
 Растровый слой с прозрачностью (обрезкой, альфа-каналом)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -133,15 +119,72 @@
    "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
    d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
 
+.. _ngw_raster_index:
+
 Загрузка растров с индексированными цветами
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Загрузка растров с индексированными цветами происходит так же, как и растров в RGB.
-Если файл находится не в GeoTIFF, то его можно сконвертировать так
+Если файл находится не в GeoTIFF, то его можно сконвертировать в `NextGIS Command Prompt <https://docs.nextgis.ru/docs_howto/source/command_prompt.html>`_ при помощи команды
 
 .. code-block:: shell
 
     gdal_translate yaroslavl.map  yaroslavl.tif
+
+
+
+.. _ngw_process_create_raster_style:
+
+Стиль для растров
+------------------
+
+После удачной загрузки растра необходимо создать стиль для его отображения на карте. Есть несколько вариантов, как это сделать:
+
+* Создать стиль QGIS по умолчанию, зайдя на страницу слоя:
+
+.. figure:: _static/ngw_create_def_raster_style_ru.png
+   :name: ngw_create_def_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Создание стиля QGIS по умолчанию для растрового слоя
+
+* Создать растровый стиль по умолчанию при помощи кнопки **Создать ресурс**:
+
+.. figure:: _static/ngweb_create_raster_style_ru.png
+   :name: ngweb_create_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Создание растрового стиля
+
+В настройках ресурса "Растровый стиль" можно разрешить тайлы для запросов изображений, задать время жизни тайлов и максимальный зум.
+
+* Создать растровый стиль QGIS при помощи кнопки **Создать ресурс**. В выпадающем меню можно выбрать:
+
+   * Стиль из файла - выберите файл стиля в формате QML или SLD. Создать его можно в `NextGIS QGIS <https://docs.nextgis.ru/docs_ngqgis/source/ngq_raster_styles.html#ngq-raster-styles>`_;
+   * Пользовательский стиль - этот вариант позволяет выбрать три канала, значения которых будут использоваться для формирования цвета в формате RGB, и задать для каждого минимальное и максимальное значение;
+   * Стиль по умолчанию - позволяет добавить стиль по умолчанию к слою, у которого уже есть стили;
+   * Скопировать из ресурса - выберите стиль QGIS другого растрового слоя, чтобы создать его копию.
+
+.. figure:: _static/ngweb_copy_raster_style_ru.png
+   :name: ngweb_copy_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Копирование стиля QGIS
+
+При создании веб-карты (подробнее см. :ref:`ngw_map_create`) выберите стиль, чтобы `добавить загруженный растр на карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
+
+Посмотреть примеры стилей можно в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_.
+
+.. figure:: _static/style_gallery_2_ru.png
+   :name: style_gallery_pic
+   :align: center
+   :width: 20cm
+
+   Галеря стилей
+
 
 
 .. _ngw_create_vector_layer:
