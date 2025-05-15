@@ -1,6 +1,6 @@
 .. _ngw_embed_webmap:
 
-How to embed a Web Map on your website
+Embed Web Map on a Web page
 ======================================
 
 All Web Maps created on nextgis.com can be easily embedded into your website.
@@ -11,10 +11,13 @@ All Web Maps created on nextgis.com can be easily embedded into your website.
 To embed a Web Map:
 
 * Open Web Map 
-* Click on the “Share” panel on the left sidebar
+* Click on the |panel_share| “Share” panel on the left sidebar
 * If you wish to, customize map width and height and `other parameters <https://docs.nextgis.com/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap-settings>`_.
 * Copy the code 
 * Paste this code to your site
+
+.. |panel_share| image:: _static/panel_share.png
+   :width: 6mm
 
 .. figure:: _static/embed_webmap_en_2.png
    :name: embed_webmap
