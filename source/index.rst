@@ -27,6 +27,7 @@ NextGIS Web
    webmap_clone
    webmaps_client
    print
+   embed_webmap
    webmap_set
    favorites
    annotation
