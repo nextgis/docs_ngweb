@@ -3,6 +3,8 @@
 Map styles examples 
 ===================================
 
+If you wish to edit the templates, see the use of the `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapstyles>`_ below.
+
 Polygon layer with scale range and labels
 -----------------------------------------------
 
@@ -1330,3 +1332,163 @@ Now that you have a vector layer with `OGR_STYLE` field containing the style for
        </class>
      </layer>
    </map>
+
+.. _ngw_mapstyles:
+
+Map style tags
+----------------------------------
+
+To change a style or to create a new one it is recommended you take a code of some existing style and then modify it, so there is no need to start creating a style from scratch.
+  
+Common tags
+~~~~~~~~~~~~~~~~~ 
+  
+* <color red="255" green="170" blue="127"/> - the color of a fill or a line
+* <outlinecolor red="106" green="106" blue="106"/> - outline color
+* <width>0.5</width> - a width of a line or an outline of the polygon.
+* <outlinewidth>3</outlinewidth> - outline width
+* <minscaledenom>1</minscaledenom> - do not display a feature if the map scale is larger than value \
+* <maxscaledenom>100000</maxscaledenom> - do not display a feature is the map scale is less than value 
+
+Markers
+~~~~~~~~~~~~~~~~~
+
+.. figure:: _static/mapstyle_hatch_demo.png
+   :name: ngweb_mapstyle_hatch_demo_pic
+   :align: center
+   :width: 16cm
+
+   A demo for different hatches.
+
+
+
+* <symbol>std:circle</symbol> - marker type
+* std:rectangle - rectangle
+* std:circle - circle
+* std:diamond - diamong
+* std:triangle - triangle with peak at the top
+* std:triangle-equilateral - triangle with peak at the bottom
+* std:star - five-pointed star
+* std:pentagon - pentagon
+* std:arrow - arrow (by default is top oriented. Rotation could be set using a tag <angle>45</angle>)
+* std:cross - +
+* std:xcross - x
+* std:line - short line
+* std:hatch - long line texture
+
+These markers could be used to draw a line, to fill a polygon or to display points. 
+Also they may be combined to a complex symbol:
+
+.. code-block:: xml
+
+        <class>
+            <expression>"industrial"</expression>
+            <!-- Industrial areas -->
+            <style> <!-- hatch with a right slope -->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>45</angle>
+            </style>
+            <style> <!-- hatch with a left slope-->
+                <color red="255" green="50" blue="50"/>
+                <width>1.4</width>
+                <symbol>std:hatch</symbol>
+                <gap>10</gap>
+                <size>5</size>
+                <angle>-45</angle>
+            </style>
+            <style> <!-- Outline -->
+                <outlinecolor red="255" green="50" blue="50"/>
+                <width>0.5</width>
+            </style>
+ </class>
+
+
+
+
+* <size>2</size> - marker size in pixels
+
+Line features
+~~~~~~~~~~~~~~~~
+
+* <gap>10</gap> - a step size for dashed line (used with <symbol>std:circle</symbol>)
+* <width>8</width> - width of line in pixels
+* <classitem>PLACE</classitem> - filter by attribute PLACE. Also see example in #Filtering.
+  The following operators are supported:
+  
+  * attribute name
+  * !=
+  * >=
+  * <=
+  * <
+  * >
+  * =* - case insensitive string comparison.
+
+  * =
+  * lt - less than
+  * gt - greater than
+  * ge - greater or equal
+  * le - less or equal
+  * eq - equal
+  * ne - not equal
+  * and - AND
+  * && - AND
+  * or - OR
+  * || - OR
+  
+* <linejoin>round</linejoin> - line draw at corners
+* <linecap>round</linecap> - line draw at the beginning and at the end
+
+.. figure:: _static/admin_mapstyles_linecap.png
+   :name: admin_mapstyles_linecap.png
+   :align: center
+   :width: 10cm
+
+   <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
+
+* <pattern>2.5 4.5</pattern> - dash template 
+
+.. todo:: check for numbers
+
+* <angle> - marker rotation angle. Hatch could also be rotated.
+
+Labels
+~~~~~~~~
+
+* <labelitem>a_hsnmbr</labelitem> - attribute name for labelling.
+* <minscaledenom>100</minscaledenom> - do not show a label if a scale is larger than 1:1000
+* <maxscaledenom>100000</maxscaledenom> - do not show a label if a scale is smaller than1:100000
+                
+                        
+
+* LABELCACHE [on|off] - specifies whether labels should be drawn as the features for this layer are drawn, or whether they should be cached and drawn after all layers have been drawn. Default is on. Label overlap removal, auto placement etc... are only available when the label cache is active.
+* <position>ur</position> - label offset direction.
+
+   * ur - ↗ up and right (recommended).
+   * ul - ↖
+   * uc - ↑
+   * cl - ←
+   * cc - centered
+   * cr - →
+   * ll - ↙
+   * lc - ↓
+   * lr - ↘
+   * auto
+
+
+
+Some other useful tags
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* MAXGEOWIDTH - Maximum width, in the map’s geographic units, at which this LAYER is drawn. If MAXSCALEDENOM is also specified then MAXSCALEDENOM will be used instead.
+* MINGEOWIDTH - Minimum width, in the map’s geographic units, at which this LAYER is drawn. If MINSCALEDENOM is also specified then MINSCALEDENOM will be used instead.
+* OFFSITE - Sets the color index to treat as transparent for raster layers.
+* OPACITY [integer|alpha] - opacity of the layer
+* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - Sets the unit of CLASS object SIZE values (default is pixels). Useful for simulating buffering.
+* SYMBOLSCALEDENOM [double] - The scale at which symbols and/or text appear full size. This allows for dynamic scaling of objects based on the scale of the map. If not set then this layer will always appear at the same size. Scaling only takes place within the limits of MINSIZE and MAXSIZE as described above. Scale is given as the denominator of the actual scale fraction, for example for a map at a scale of 1:24,000 use 24000.
+* TYPE [chart|circle|line|point|polygon|raster|query] - Specifies how the data should be drawn. Need not be the same as the feature geometry type. For example polygons or polylines may be drawn as a point layer.
+
+See MapServer templates `here <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_.

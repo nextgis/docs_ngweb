@@ -250,7 +250,7 @@ To edit a style click on the pencil icon by the style's name in the layer tree.
 
    Opening the Update resource dialog
 
-In the opened window you can **replace** the style by uploading a new file from your device. To do so, in the "QGIS style" tab select "Style from file" in the dropdown menu, then add a new QML file and click **Save**.
+In the opened window you can **replace** the style by uploading a new file from your device. To do so, in the "QGIS style" tab select "Style from file" in the dropdown menu, then add a new :term:`QML` or :term:`SLD` file and click **Save**.
 
 A simple QGIS vector style, the default style, for example, can be **edited** directly in NextGIS Web.
 
@@ -296,7 +296,9 @@ You can type a custom display name for the new style in the :guilabel:`Resource`
 
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
-In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). Otherwise default values are used.
+In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). See MapServer  `templates <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_ and `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapstyles>`_.
+
+Otherwise default values are used.
 
 .. figure:: _static/ngweb_create_resource_mapsrev_eng.png
    :name: ngweb_create_resource_mapsrev_pic
@@ -325,7 +327,12 @@ Click **Create** to finish the process. The window of the created MapServer styl
 Tile cache
 ------------
 
-Caching provides faster rendering of Web Map layers. The **tile cache** settings tab while creating styles consists of the following settings (см. :numref:`tile_cache_settings`):
+Caching provides faster rendering of Web Map layers. It can be enabled for `vector <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ and `raster layer styles <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-raster-style>`_ as well as for `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer>`_ and `TMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#tms>`_ layers.
+
+To enable caching go to the Tile cache tab of the resource and check "Enabled".
+
+
+In the **tile cache** settings you can also configure the following parameters (see :numref:`tile_cache_settings`):
 
 * *Enabled* checkbox;
 * *Allow using tiles in non-tile requests* checkbox - the requested image (not a tile) will be prepared from previously cached tiles (if available);
@@ -375,162 +382,6 @@ In the "Web Map" actions pane of the Web Map properties window select "Display".
    Layer with special SVG markers in the QGIS style on a Web Map    
 
 
-Map style tags
-----------------------------------
 
-To change a style or to create a new one it is recommended you take a code of some existing style and then modify it, so there is no need to start creating a style from scratch.
-  
-Common tags
-~~~~~~~~~~~~~~~~~ 
-  
-* <color red="255" green="170" blue="127"/> - the color of a fill or a line
-* <outlinecolor red="106" green="106" blue="106"/> - outline color
-* <width>0.5</width> - a width of a line or an outline of the polygon.
-* <outlinewidth>3</outlinewidth> - outline width
-* <minscaledenom>1</minscaledenom> - do not display a feature if the map scale is larger than value \
-* <maxscaledenom>100000</maxscaledenom> - do not display a feature is the map scale is less than value 
-
-Markers
-~~~~~~~~~~~~~~~~~
-
-.. figure:: _static/mapstyle_hatch_demo.png
-   :name: ngweb_mapstyle_hatch_demo_pic
-   :align: center
-   :width: 16cm
-
-   A demo for different hatches.
-
-
-
-* <symbol>std:circle</symbol> - marker type
-* std:rectangle - rectangle
-* std:circle - circle
-* std:diamond - diamong
-* std:triangle - triangle with peak at the top
-* std:triangle-equilateral - triangle with peak at the bottom
-* std:star - five-pointed star
-* std:pentagon - pentagon
-* std:arrow - arrow (by default is top oriented. Rotation could be set using a tag <angle>45</angle>)
-* std:cross - +
-* std:xcross - x
-* std:line - short line
-* std:hatch - long line texture
-
-These markers could be used to draw a line, to fill a polygon or to display points. 
-Also they may be combined to a complex symbol:
-
-.. code-block:: xml
-
-        <class>
-            <expression>"industrial"</expression>
-            <!-- Industrial areas -->
-            <style> <!-- hatch with a right slope -->
-                <color red="255" green="50" blue="50"/>
-                <width>1.4</width>
-                <symbol>std:hatch</symbol>
-                <gap>10</gap>
-                <size>5</size>
-                <angle>45</angle>
-            </style>
-            <style> <!-- hatch with a left slope-->
-                <color red="255" green="50" blue="50"/>
-                <width>1.4</width>
-                <symbol>std:hatch</symbol>
-                <gap>10</gap>
-                <size>5</size>
-                <angle>-45</angle>
-            </style>
-            <style> <!-- Outline -->
-                <outlinecolor red="255" green="50" blue="50"/>
-                <width>0.5</width>
-            </style>
- </class>
-
-
-
-
-* <size>2</size> - marker size in pixels
-
-Line features
-~~~~~~~~~~~~~~~~
-
-* <gap>10</gap> - a step size for dashed line (used with <symbol>std:circle</symbol>)
-* <width>8</width> - width of line in pixels
-* <classitem>PLACE</classitem> - filter by attribute PLACE. Also see example in #Filtering.
-  The following operators are supported:
-  
-  * attribute name
-  * !=
-  * >=
-  * <=
-  * <
-  * >
-  * =* - case insensitive string comparison.
-
-  * =
-  * lt - less than
-  * gt - greater than
-  * ge - greater or equal
-  * le - less or equal
-  * eq - equal
-  * ne - not equal
-  * and - AND
-  * && - AND
-  * or - OR
-  * || - OR
-  
-* <linejoin>round</linejoin> - line draw at corners
-* <linecap>round</linecap> - line draw at the beginning and at the end
-
-.. figure:: _static/admin_mapstyles_linecap.png
-   :name: admin_mapstyles_linecap.png
-   :align: center
-   :width: 10cm
-
-   <linecap>butt</linecap> / <linecap>round</linecap> / <linecap>square</linecap>
-
-* <pattern>2.5 4.5</pattern> - dash template 
-
-.. todo:: check for numbers
-
-* <angle> - marker rotation angle. Hatch could also be rotated.
-
-Labels
-~~~~~~~~
-
-* <labelitem>a_hsnmbr</labelitem> - attribute name for labelling.
-* <minscaledenom>100</minscaledenom> - do not show a label if a scale is larger than 1:1000
-* <maxscaledenom>100000</maxscaledenom> - do not show a label if a scale is smaller than1:100000
-                
-                        
-
-* LABELCACHE [on|off] - specifies whether labels should be drawn as the features for this layer are drawn, or whether they should be cached and drawn after all layers have been drawn. Default is on. Label overlap removal, auto placement etc... are only available when the label cache is active.
-* <position>ur</position> - label offset direction.
-
-   * ur - ↗ up and right (recommended).
-   * ul - ↖
-   * uc - ↑
-   * cl - ←
-   * cc - centered
-   * cr - →
-   * ll - ↙
-   * lc - ↓
-   * lr - ↘
-   * auto
-
-
-
-Some other useful tags
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* MAXGEOWIDTH - Maximum width, in the map’s geographic units, at which this LAYER is drawn. If MAXSCALEDENOM is also specified then MAXSCALEDENOM will be used instead.
-* MINGEOWIDTH - Minimum width, in the map’s geographic units, at which this LAYER is drawn. If MINSCALEDENOM is also specified then MINSCALEDENOM will be used instead.
-* OFFSITE - Sets the color index to treat as transparent for raster layers.
-* OPACITY [integer|alpha] - opacity of the layer
-* SIZEUNITS [feet|inches|kilometers|meters|miles|nauticalmiles|pixels] - Sets the unit of CLASS object SIZE values (default is pixels). Useful for simulating buffering.
-* SYMBOLSCALEDENOM [double] - The scale at which symbols and/or text appear full size. This allows for dynamic scaling of objects based on the scale of the map. If not set then this layer will always appear at the same size. Scaling only takes place within the limits of MINSIZE and MAXSIZE as described above. Scale is given as the denominator of the actual scale fraction, for example for a map at a scale of 1:24,000 use 24000.
-* TYPE [chart|circle|line|point|polygon|raster|query] - Specifies how the data should be drawn. Need not be the same as the feature geometry type. For example polygons or polylines may be drawn as a point layer.
-
-See MapServer templates `here <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_.
 
 
