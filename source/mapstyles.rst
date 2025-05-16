@@ -296,7 +296,7 @@ You can type a custom display name for the new style in the :guilabel:`Resource`
 
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
 
-In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). See MapServer  `templates <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_ and `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapstyles>`_.
+In the "MapServer style" tab you can write a style manually (see in :numref:`ngweb_create_resource_mapsrev_pic`). See MapServer  `templates <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html>`_ and `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapserver-tags>`_.
 
 Otherwise default values are used.
 

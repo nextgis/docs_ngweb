@@ -3,7 +3,7 @@
 Map styles examples 
 ===================================
 
-If you wish to edit the templates, see the use of the `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapstyles>`_ below.
+If you wish to edit the templates, see the use of the `tags <https://docs.nextgis.com/docs_ngweb/source/mapservertemplates.html#ngw-mapserver-tags>`_ below.
 
 Polygon layer with scale range and labels
 -----------------------------------------------
@@ -1333,7 +1333,7 @@ Now that you have a vector layer with `OGR_STYLE` field containing the style for
      </layer>
    </map>
 
-.. _ngw_mapstyles:
+.. _ngw_mapserver_tags:
 
 Map style tags
 ----------------------------------
