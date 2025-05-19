@@ -66,15 +66,15 @@
 
 В левой части рабочей области располагаются функциональные панели:
 
-* |panel_layers| Дерево слоев
-* |panel_ident| Панель идентификации
+* |panel_layers| `Дерево слоев <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_
+* |panel_ident| `Панель идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_
 * |panel_search| `Поиск <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_
 * |panel_annot| `Аннотации <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
 * |panel_cadaster| `Кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
-* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_ - здесь формируется `ссылка на карту и код для встраивания <https://docs.nextgis.ru/docs_ngweb/source/embed_webmap.html>`_
-* |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_  открывает `окно подготовки к печати <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_. 
+* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_ - здесь формируется ссылка на карту и `код для встраивания <https://docs.nextgis.ru/docs_ngweb/source/embed_webmap.html>`_
+* |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_  открывает окно подготовки к печати. 
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
