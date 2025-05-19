@@ -42,7 +42,7 @@
 
 Для того, чтобы создать стиль QGIS с настройками по умолчанию, достаточно нажать кнопку на странице слоя.
 
-.. figure:: _static/default_style_select_ru.png
+.. figure:: _static/default_style_select_ru_2.png
    :name: default_style_select_pic
    :align: center
    :width: 20cm
