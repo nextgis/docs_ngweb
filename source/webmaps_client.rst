@@ -58,14 +58,14 @@ Panels
 
 On the left side of the workspace are the functional panels:
 
-* |panel_layers| Layers 
-* |panel_ident| Feature identification 
-* |panel_search| `Search <https://docs.nextgis.com/docs_ngcom/source/address_search.html>`_
-* |panel_annot| `Annotations <https://docs.nextgis.com/docs_ngcom/source/annotation.html>`_
+* |panel_layers| `Layers <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_
+* |panel_ident| `Feature identification <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_
+* |panel_search| `Search <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_
+* |panel_annot| `Annotations <https://docs.nextgis.com/docs_ngweb/source/annotation.html>`_
 * |panel_info| `Description <https://docs.nextgis.com/docs_ngcom/source/webmap_create.html#add-a-description-and-map-legend>`_
 * |panel_bookmarks| `Bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_
-* |panel_share| `Share <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_
-* |panel_print| Print
+* |panel_share| `Share <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_ here you can generate a link to the Web Map or an `embed code <https://docs.nextgis.com/docs_ngweb/source/embed_webmap.html>`_
+* |panel_print| `Print <https://docs.nextgis.com/docs_ngweb/source/print.html>`_ 
 * |panel_trackers| `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
@@ -78,15 +78,26 @@ On the left side of the workspace are the functional panels:
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
-To share a link to a map or generate embed code use the function **"Share"** (see item 9 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), to print a map use the function **"Print map"** (see item 10 in :numref:`webmap_client`, `learn more <https://docs.nextgis.com/docs_ngcom/source/webmap_print.html>`__).
+.. _ngw_webmaps_client_layers:
 
-The **layer tree** contains a list of all layer styles added to the web map. The panel allows:
+Legend in the layers tree
+------------------------
+
+The **Layer tree** panel |panel_layers_small| contains a list of all layer styles added to the Web Map.
+
+.. |panel_layers_small| image:: _static/panel_layers.png
+   :width: 5mm
+
+
+The panel allows to:
 
 * Disable/Enable layer visibility. You can also hide parts of a layer by selecting items in the Web Map lengend. It's helpful for big projects where one layer may contain a variety of features grouped by value of an attribute.
 * Open layer attribute table
 * Zoom map to layer
 * Open layer description
 * Change the order of the layers by dragging them within the layer tree. Refresh the page to restore the original order.
+
+How to `configure the legend <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
 
 Functionality of the layer panel is presented in our video:
 
@@ -95,6 +106,30 @@ Functionality of the layer panel is presented in our video:
    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pd5AKtoR2g?si=-PsdgClPwYiUyNvh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Watch on `youtube <https://youtu.be/4Pd5AKtoR2g?si=0lMooDE3ZzpO0xxz>`__.
+
+.. _ngw_webmaps_client_ident:
+
+Feature identification
+-----------------------
+
+.. |panel_ident_small| image:: _static/panel_ident.png
+   :width: 5mm
+
+To get information about features on the Web Map activate the |panel_ident_small| identify panel. Click anywhere on the map to get info on vector features and raster pixels.
+
+If there are multiple features (for example a point and a line going through it), the identify panel will show the feature of the topmost layer. To view information on the other features click on the downward arrow to the right of the feature name and select the feature from the dropdown list.
+
+.. figure:: _static/ngw_panel_id_select_feature_en.png
+   :name: 
+   :align: center
+   :width: 20cm
+
+   Selecting feature in the identification panel
+
+To configure how far from the clicks the features can be to be identified and what parameters are displayed in the panel go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
+
+You can disable identification for individual layers and modify their order in the `Web Map settings <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
+
 
 .. _ngw_webmaps_client_search:
 
