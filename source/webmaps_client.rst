@@ -73,8 +73,8 @@
 * |panel_info| `Описание <https://docs.nextgis.ru/docs_ngcom/source/webmap_create.html#ngcom-webmap-create-info>`_
 * |panel_bookmarks| `Закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_
 * |panel_cadaster| `Кадастровые сервисы <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
-* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_
-* |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_
+* |panel_share| `Поделиться <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-share>`_ - здесь формируется `ссылка на карту и код для встраивания <https://docs.nextgis.ru/docs_ngweb/source/embed_webmap.html>`_
+* |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_  открывает `окно подготовки к печати <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_. 
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
 .. |panel_layers| image:: _static/panel_layers.png
@@ -88,9 +88,15 @@
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
-С помощью функции **"Поделиться"** формируется ссылка на карту и код для встраивания (`подробнее <https://docs.nextgis.ru/docs_ngcom/source/embed_webmap.html#ngcom-embed-webmap>`_), а с помощью функции **"Печать"**  открывается `окно подготовки к печати <https://docs.nextgis.ru/docs_ngcom/source/webmap_print.html>`_. 
+.. _ngw_webmaps_client_layers:
 
-В **дереве слоев** находится список всех стилей слоев, добавленных на веб-карту. 
+Легенда в дереве слоёв
+------------------------
+
+В панели |panel_layers_small| **дерево слоёв** находится список всех стилей слоёв, добавленных на веб-карту. 
+
+.. |panel_layers_small| image:: _static/panel_layers.png
+   :width: 5mm
 
 Вы можете отключать видимость не только слоёв, но и отдельных элементов этих слоёв, снимая галочки соответствующих элементов легенды. Это актуально для больших картографических проектов, где слои содержат множество объектов с различными значениями определённого столбца таблицы атрибутов. Также слои можно перетаскивать внутри дерева, меняя порядок их отображения. При перезагрузке страницы отображение слоёв будет сброшено к изначальному.
 
@@ -101,6 +107,29 @@
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e13ac386c9c16068f5110c938dd17683/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`__, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`__. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+
+.. _ngw_webmaps_client_ident:
+
+Идентификация объектов
+-----------------------
+
+.. |panel_ident_small| image:: _static/panel_ident.png
+   :width: 5mm
+
+Чтобы получить информацию об объектах, расположенных на веб-карте, активируйте |panel_ident_small| панель идентификации. Теперь по клику на любом месте карты вы получите информацию о расположенных в этой точке векторных объектах или пикселе растра.
+
+Если объектов в месте клика несколько (например, линия и лежащая на этой линии точка), то в панели будет отображён объект из слоя, находящегося выше всего в дереве слоёв. Чтобы получить информацию по остальным объектам, кликните на стрелочку вниз рядом с именем объекта и выберите нужный из списка.
+
+.. figure:: _static/ngw_panel_id_select_feature_ru.png
+   :name: 
+   :align: center
+   :width: 20cm
+
+   Выбор объекта из списка найденных при идентификации
+
+Задать, какой радиус вокруг клика учитывается при идентификации и какие параметры объектов отображаются, можно `через панель управления <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
+
+Вы можете отключить идентификацию для отдельных слоёв и изменить их порядок в `настройках веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
 
 .. _ngw_webmaps_client_search:
 
