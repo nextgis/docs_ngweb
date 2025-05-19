@@ -36,7 +36,7 @@ QGIS Style
 
 Open the properties page of the layer you want create style for. To create a default QGIS style, just press the blue button on the resource page of the layer.
 
-.. figure:: _static/default_style_select_en.png
+.. figure:: _static/default_style_select_en_2.png
    :name: mapserver_style_select
    :align: center
    :width: 20cm
