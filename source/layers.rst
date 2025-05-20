@@ -1034,7 +1034,7 @@ To add a WFS layer to a Web Map, you need to create a style for it. You can crea
 WFS service
 -----------
 
-WFS layer setup is performed the same way as for WMS service but you add layers instead of styles.
+WFS service works similarly to WMS layer, but you add layers instead of styles.
  
 .. note::
      Currently supported filters are Intersects, ResourceId (ObjectId, FeatureId).
@@ -1050,17 +1050,19 @@ To deploy a WFS service press **Create resource** button and select  **WFS servi
 
    Selection of "WFS service" resource type
    
-Create resource dialog for WFS service is presented on :numref:`ngweb_admin_layers_create_wfs_service_name`. 
 
-.. figure:: _static/admin_layers_create_wfs_service_name_eng_3.png
-   :name: ngweb_admin_layers_create_wfs_service_name
+On the "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url` and add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`).
+For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
+
+.. figure:: _static/create_wfs_service_settings_en.png
+   :name: ngweb_admin_layers_create_wfs_service_url
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   Create resource dialog for WFS service
+   WFS service tab of Create resource dialog
 
-Enter the name of the resource that will be displayed in the administrator interface. Do not 
-confuse this name with a name of layers in a database. 
+On the "Resource" tab you can enter the name that will be displayed in the list of resources. Do not 
+confuse this name with the names of layers in a database. 
 
 "Keyname" field is optional.
 
@@ -1082,15 +1084,7 @@ On the "Metadata" tab you can enter information in the "key-value" format.
 
    WFS service metadata
  
-Switch to "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url` and add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`).
-For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
 
-.. figure:: _static/create_wfs_service_settings_en.png
-   :name: ngweb_admin_layers_create_wfs_service_url
-   :align: center
-   :width: 16cm
-
-   WFS service tab of Create resource dialog
 
 
 .. _ngw_service_using_wfs:
