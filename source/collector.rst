@@ -170,9 +170,9 @@ You can have unlimited number of projects in your Web GIS. In each of them you c
 Data collection form
 ---------------------
 
-Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_. If you have a pre-made NGFP file you can create a form in the Web interface of your Web GIS.
+Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_ and create a layer with it (plus, optionally, a Web Map and and a Collector project). 
 
-Open the resource page of the layer for which you want to add a form.
+Also you can add a form to the layer in the Web interface. Open the resource page of the layer for which you want to add a form.
 
 Press **Create resource** and select "Form".
 
@@ -183,18 +183,33 @@ Press **Create resource** and select "Form".
 
    Selecting "Form" resource type
 
-In the opened dialog on the "Form" tab upload a NGFP file.
+In the opened window on the Form tab you have two options:
 
-.. figure:: _static/form_upload_en.png
+* upload a NGFP file made in Formbuilder;
+* build a form by selecting  
+
+.. figure:: _static/form_upload_en_2.png
    :name: form_upload_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Uploading form as a file
+   Uploading form file
+
+To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
+
+.. figure:: _static/form_build_en.png
+   :name: form_build_pic
+   :align: center
+   :width: 20cm
+
+   Building a form online. Properties of the "Text box" element are displayed
+
+If you tick **Add absent fields to layer**, fields for the added elements will be added automatically. This allows users to create an empty layer, then set its structure by creating a form.
 
 You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
 
-In the Web interface you can also replace an existing data collection form of a layer with a new one. Create a new form resource inside the layer. Then delete the old form. 
+In the Web interface you can also replace an existing data collection form of a layer with a new one. Create a new form resource inside the layer. Then delete the old form. Form built via online builder can be later edited in the same tab.
 
-In the Collector app start synchronization. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+After replacing or modifying the form launch synchronization in the Collector app. The new form will be uploaded, allowing you to continue collecting data to the same layer. 
+
 
