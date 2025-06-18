@@ -222,12 +222,14 @@ More on how to set up permissions to read and modify data `here <https://docs.ne
 .. _ngw_homepage:
 
 How to change the homepage address
--------------------------------------
+----------------------------------
 
-By default the starting page of your Web GIS is the main resource page (``/resource/0``). You can change which page will be opened first. If this is a Web map, it might look like this: ``/resource/644/display``.
+By default the starting page of your Web GIS is the main resource group page (``/resource/0``). The starting page is the page that gets open first wherenever some visit your Web GIS or clicks on the logo in top left corver.
+
+You can change which page will be opened first to any other resource of the system. For example, if you'd like your visitors to always start from a map, you can change this setting to this map.
 
 #. Sign in as the user with administrative privileges and open Control panel, then select :guilabel:`Home path`. 
-#. Enter path to the resource page that should be opened first when you Web GIS is accessed.
+#. Enter path to the resource page that should be opened first when you Web GIS is accessed. For example: ``/resource/644/display``
 
 After making this setting visiting ``http://yourwebgis.nextgis.com`` will open not the main resource contents page, but the page you've set up. To access main resource content page after this setting you will need to go directly to: ``http://yourwebgis.nextgis.com/resource/0``.
 
