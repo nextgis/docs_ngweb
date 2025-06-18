@@ -22,8 +22,12 @@ Raster images in NextGIS Web should be loaded using the "Raster Layer" special r
 Requirements for uploaded files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Supported format: :term:`GeoTIFF` or ZIP-archived GeoTIFF;
-* Data must be georeferenced and have valid reference system description in GeoTIFF tags.
+Data must be georeferenced and have valid reference system description in GeoTIFF tags.
+
+Supported format: 
+
+* :term:`GeoTIFF` or ZIP-archived GeoTIFF;
+* georeferenced JPEG or PNG in a ZIP-archive containing the image file and the \*.aux.xml file.
 
 
 

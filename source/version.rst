@@ -1,4 +1,3 @@
-.. sectionauthor:: Eduard Kazakov, Yulia Grigorenko <yulia.grigorenko@nextgis.com>
 
 .. _versioning:
 
@@ -28,9 +27,10 @@ When the versioning is turned off, all the logged information about the changes 
 Versioning in the NextGIS Web interface
 -----------------------------------------------------
 
-At the moment in the user interface of NextGIS Web you can access two functions:
+At the moment in the user interface of NextGIS Web you can access the following functions:
 
 * Enable and disable versioning in the vector layer settings;
+* View versioning status (yes/no) on the Vector layer resource page;
 * Additional virtual field "Last changed" in the attribute table of the versioned layer. It allows to see the time and author of the latest change for each feature of the layer.
 
 It is planned to gradually expand the tools for working with versioned layers through the GUI.
