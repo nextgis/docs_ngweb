@@ -7,6 +7,30 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+5.1.0 released on 23 Jun 2025
+----------------------------------
+
+- Identification of raster layers on webmaps.
+- Improved webmap links, preserving legend symbols in URLs.
+- Ability to configure panels and tools individually for each webmap.
+- Refined resource picker behavior for single and multi-selection.
+- Configurable lookup table item order, including manual ordering.
+- Experimental adaptive layouts for webmaps on mobile and tablet devices.
+- Initial experimental support for UI form designer.
+- Handle rendering artifacts at tile boundaries for QGIS styles.
+- Fix `@map_scale` variable and area calculations for QGIS styles.
+- Support for dash patterns in user-defined styles.
+- Support for adding fields to layers with versioning enabled.
+- Creation of raster layers from ZIP archives and PAM support. 
+- Support for GDAL PAM georeferenced (.aux.xml) JPEG and PNG rasters.
+- Configurable default basemaps for on-premises installations.
+- Improved handling of date and bigint fields in UI and HTTP API.
+- Improved handling of `geom` fields in feature layers.
+- Clean up unreferenced file objects during maintenance by default.
+- Python 3.10+ is now the minimum required version.
+- OpenLayers library upgraded to 10.4.
+
+
 5.0.0 released on 05 Mar 2025
 ----------------------------------
 
