@@ -159,6 +159,7 @@ The following languages are available for selection (:numref:`admin_settings_lan
 * French
 * German
 * Italian
+* Polish
 * Spanish
 * Portuguese
 
