@@ -1,4 +1,4 @@
-.. sectionauthor:: Роман Гайнуллов <roman.gainullov@nextgis.ru>
+
 
 .. role:: underline
     :class: underline
@@ -23,7 +23,7 @@
 * `NextGIS Web <https://nextgis.ru/nextgis-web/>`_ (NGW) - серверная Веб ГИС для синхронизации полученных в полевых условиях пространственных данных, их дальнейшего хранения, обработки, визуализации и анализа.
 * `NextGIS ID on-premise <https://docs.nextgis.ru/docs_ngid/source/index.html>`_ (NGIDOP) - сервер авторизации пользователей для управления доступом к процессу сбора геоданных.
 * `NextGIS QGIS <https://nextgis.ru/nextgis-qgis/>`_ - полнофункциональная настольная ГИС для создания и редактирования данных, производства карт, выполнения аналитических операций.
-* `NextGIS Rosreestr Tools <https://nextgis.ru/rosreestr-tools/>`_ - дополнительный модуль в составе NextGIS QGIS для работы с кадастровыми данными и ПКК.
+* `NextGIS Rosreestr Tools <https://nextgis.ru/rosreestr-tools/>`_ - дополнительный модуль в составе NextGIS QGIS для работы с кадастровыми данными и НСПД.
 
 Редакция **Extended**. Standard +:
 
