@@ -98,9 +98,12 @@ Satellite images of high resulution and other rasters may be very large. The fil
 
 There are three limitation for uploading big rasters:
 
-#. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
-#. Max size of extracted file in the cloud can be up to **4 GiB**. To calculate the size of he decompressed raster multiply: pixel count * number of bands * bytes per pixel. 
-#. Overall data storage - on Premium you can upload up to **50 GiB** of data  (this limit `can be expanded <https://nextgis.com/pricing-base/#storage>`_);
+1. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
+2. Max size of extracted raster in the cloud can be up to **4 GiB**. GeoTIFF uses a compression algorithm and the file size may be drastically smaller than the size of the unpacked data. To calculate the size of he decompressed raster multiply the three parameters: pixel count * number of bands * bytes per pixel. 
+
+.. note:: If the raster file does not have alpha channel, it will be added during uploading, further expanding the raster size, so for calculating the data size add +1 channel to the equasion.
+
+3. Overall data storage of the Web GIS - on Premium you can upload up to **50 GiB** of data  (this limit `can be expanded <https://nextgis.com/pricing-base/#storage>`_);
 
 There is no time limit for uploading raster files. 
 
