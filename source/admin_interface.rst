@@ -259,6 +259,29 @@ Other actions can be available depending on the resource type:
 * |button_open_web_map| open (for Web Maps)
 * |button_open_feature_table| open feature table (for vector layers)
 
+Press three dots in the right corner of the table title to open the resource list menu.
+
+.. figure:: _static/options_resource_list_en.png
+   :name: options_resource_list_pic
+   :align: center
+   :width: 20cm
+
+   Resource list menu
+
+This menu allows to:
+
+* Select multiple resource to be `moved <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#using-multiple-selection>`_ or `deleted <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#deleting-several-resources-at-once>`_;
+* View additional columns in the resource list table: creation date and resource volume.
+
+Additional columns allow to sort the resource list by date or size:
+
+.. figure:: _static/sorted_by_size_en.png
+   :name: sorted_by_size_pic
+   :align: center
+   :width: 22cm
+
+   Resource list sorted by volume
+
 To open the resource page click on the corresponding row of the table. The resource page contains properties, attributes, a link for external access and a list of child resources if there are any (see  :numref:`resource_details_pic`).
 
 .. figure:: _static/resource_details_en_2.png
