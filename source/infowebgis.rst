@@ -70,7 +70,7 @@ under System information section of your Web GIS' Control panel (subsection Plat
 User activity log
 ------------------
 
-.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
+.. note:: This functionality is available only for `on-premise Web GIS Extended Edition <https://nextgis.com/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=en#ngwextended>`_.
 
 User requests to the Web GIS are logged in a journal. It can be found in the **Info** section of the Control panel of the Web GIS (:numref:`control_panel_audit_pic`).
 
