@@ -1,5 +1,3 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-
 .. _ngw_general:
 
 General Information
@@ -137,6 +135,6 @@ Recomended browsers are:
 * Safari (version 17 or newer)
 * Opera (version 104 or newer)
 
-Microsoft Internet Explorer browser is no suppoted.
+Microsoft Internet Explorer browser is not suppoted.
 
 .. warning:: NextGIS Web would probably work with other versions, but this is not garanteed.
