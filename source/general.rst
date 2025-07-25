@@ -119,14 +119,6 @@ Minimum hardware requirements for NextGIS Web software:
 Recommended software versions
 -----------------------------
 
-* Ubuntu Server 20.04 LTS
-* Python >= 3.8
-* PostgreSQL >= 10
-* PostGIS >= 2.5
-* GDAL >= 3
-* Node.js >= 14.x
-* Yarn >= 1.x 
-
 Recomended browsers are:
 
 * Google Chrome (version 118 or newer)
@@ -138,3 +130,5 @@ Recomended browsers are:
 Microsoft Internet Explorer browser is not suppoted.
 
 .. warning:: NextGIS Web would probably work with other versions, but this is not garanteed.
+
+Technical requirements for on-premise installations are listed `here <https://docs.nextgis.com/docs_ngweb_dev/doc/admin/install.html#system-requirements>`_.
