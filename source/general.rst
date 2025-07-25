@@ -1,5 +1,3 @@
-.. sectionauthor:: Артём Светлов <artem.svetlov@nextgis.ru>
-
 .. _ngw_general:
 
 Общие сведения
@@ -159,14 +157,6 @@ NextGIS Web обладает следующими основными возмо�
 Рекомендуемые версии базового ПО
 ---------------------------------
 
-* Ubuntu Server 20.04 LTS
-* Python >= 3.8
-* PostgreSQL >= 10
-* PostGIS >= 2.5
-* GDAL >= 3
-* Node.js >= 14.x
-* Yarn >= 1.x 
-
 В качестве браузеров рекомендуется использовать:
 
 * Google Chrome (версия 118 и выше)
@@ -179,3 +169,5 @@ NextGIS Web обладает следующими основными возмо�
 
 .. warning::
    Работа с другими версиями основного ПО возможна, но не гарантирована.
+
+Технические требования для установки на своём сервере см. `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/install.html#system-requirements>`_.
