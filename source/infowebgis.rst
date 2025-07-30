@@ -80,7 +80,7 @@
 ---------------------------------------------
 
 .. note::
-   Этот функционал доступен только для Веб ГИС, развёрнутых `на своём сервере <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngw>`_.
+   Этот функционал доступен только для Веб ГИС, развёрнутых `на своём сервере в редакции Extended <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngwextended>`_.
 
 История пользовательских запросов к Веб-ГИС регистрируется в журнале. Он располагается в разделе **Информация** Панели управления Веб-ГИС (:numref:`control_panel_audit_pic`).
 
