@@ -29,9 +29,7 @@ It will redirect you to the "Create new collector" page. Make sure to type in fu
 
 .. note::
     We recommend filling up the field "Description" with the name and the surname of the team participant in order to have data about all NextGIS Collector users in one place. 
-
-You can always find the participant you need with a search tool in a table of Collector users, which is quite suitable when there are a lot of participants. 
- 
+    You can always find the participant you need with a search tool in a table of Collector users, which is quite suitable when there are a lot of participants. 
  
 
 .. figure:: _static/ngc-stages-005_eng_2.png
@@ -65,7 +63,6 @@ Data collection project is a resource in your Web GIS, it is a set of layers for
 In a Web GIS "data collection project" is called "Collector Project".
 Data collection project allows a data collection team participant to edit its layers. 
 Web GIS owner can restrain access to the project for separate participants. 
- 
 
 You can create a Collector project via NextGIS Formbuilder (the simplest way, described `here <https://docs.nextgis.com/docs_formbuilder/source/workflow.html#nextgis-web>`_) or in your Web GIS.
 
@@ -91,14 +88,14 @@ To do it:
 4. Name your project. This name will be displayed in the `NextGIS Collector`_ mobile app :
 
 .. figure:: _static/ngc_proj_name_en.png
-   :name: ngc_project_name
+   :name: ngc_proj_name_pic
    :align: center
    :width: 20cm
 
    Adding name for Collector project
 
 
-In the "Project" tab select "Starting screen" and fill in "NextGIS Collector user credentials".
+In the "Project" tab select "Starting screen" and fill in "NextGIS Collector user credentials". 
 
 
 The starting screen in the `NextGIS Collector`_ mobile app could be a list of forms or a map. 
@@ -114,18 +111,42 @@ The starting screen in the `NextGIS Collector`_ mobile app could be a list of fo
 
    "Project" tab
 
-6. The next stage is adding necessary items to the project on the "Items" tab.
+6. On the Items tab you can Add items, Group them, Delete (X symbol on the right) and change the order by dragging items in the list. 
 
-An item of Collector project could be an editable data layer, display-only data layer, basemap or a form for data collection. 
+Items that can be added to a Collector project are: editable vector layer, display-only layer, basemap or data collection form.
 
 
-.. note::
-            You could add PostGIS layers in Collector project, but the NextGIS Collector mobile app does not support work with them for now
+Click "+ Layer" to add an item.
 
-Adding of items is like adding layers when creating a Web Map. Press the **+ Layer** button to add a layer or a data collection form. 
+* To add an **editable data layer** select the *layer* (If a layer has two or more forms, you can select one or several of them);
+* To add a *display-only layer* select its *style*;
+* To add a **basemap** select the resource.
 
-Select the vector layer in the resource list, not the form. Press **+ Group** to create a group of items. 
-Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
+You can add multiple items at once.
+
+Items selected to be added are marked with a tick. A layer that has a style or form(s) selected is marked with a blue dot. 
+
+Navigate between resource groups and tick the items you want to add. The **Add selected** button displays the total number of selected resources. To clear the selection press the  |button_clear_selection| button next to it.
+
+.. |button_clear_selection| image:: _static/button_clear_selection.png
+   :alt: X
+   :width: 8mm 
+
+.. figure:: _static/ngc_items_tab_add_en.png
+   :name: ngc_items_tab_add_pic
+   :align: center
+   :width: 20cm
+
+   Adding several items to a project. Four items selected: a basemap, a layer, a form and a style
+
+To add display-only layer you don't need to open it and select the style.  Press the |button_pick_first| button to the right of the layer name to auto-select the first style.
+
+.. |button_pick_first| image:: _static/button_pick_first.png
+   :alt: editor's choice
+   :width: 8mm
+
+Press **+ Group** to create a group of items. 
+ Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
 
 Click on the item to see its attributes.
 
@@ -147,19 +168,17 @@ Each item of Collector project has the following attributes:
 
 To go back to the list of items, press **Hide details**.
 
-7. Add basemap if necessary.
-
-8. Then on the "Collectors" tab tick the users participating in the project to give them permissions: 
+7. Then on the "Collectors" tab tick the users participating in the project to give them permissions: 
 
 
 .. figure:: _static/ngc_list_collectors_en.png
    :name: ngc_list_collectors_pic
    :align: center
-   :width: 18cm
+   :width: 16cm
 
    «Collectors» tab
 
-9. Press "Create".
+8. Press "Create".
 
 As a result a Collector project (data collection project) will be created.
 
@@ -172,7 +191,8 @@ Data collection form
 
 Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_ and create a layer with it (plus, optionally, a Web Map and and a Collector project). 
 
-Also you can add a form to the layer in the Web interface. Open the resource page of the layer for which you want to add a form.
+Also you can add a form to the layer in the Web interface.
+Open the resource page of the layer for which you want to add a form.
 
 Press **Create resource** and select "Form".
 
@@ -208,8 +228,8 @@ If you tick **Add absent fields to layer**, fields for the added elements will b
 
 You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
 
-In the Web interface you can also replace an existing data collection form of a layer with a new one. Create a new form resource inside the layer. Then delete the old form. Form built via online builder can be later edited in the same tab.
+Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
 
-After replacing or modifying the form launch synchronization in the Collector app. The new form will be uploaded, allowing you to continue collecting data to the same layer. 
+You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
 
-
+After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
