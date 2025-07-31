@@ -119,7 +119,7 @@ Items that can be added to a Collector project are: editable vector layer, displ
 Click "+ Layer" to add an item.
 
 * To add an **editable data layer** select the *layer* (If a layer has two or more forms, you can select one or several of them);
-* To add a *display-only layer* select its *style*;
+* To add a **display-only layer** select its *style*;
 * To add a **basemap** select the resource.
 
 You can add multiple items at once.
@@ -146,7 +146,7 @@ To add display-only layer you don't need to open it and select the style.  Press
    :width: 8mm
 
 Press **+ Group** to create a group of items. 
- Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
+Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
 
 Click on the item to see its attributes.
 
