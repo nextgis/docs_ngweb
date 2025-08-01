@@ -107,7 +107,7 @@ NextGIS Web является сервером TMS. Соответственно 
 
 Эта ссылка располагается на странице ресурса **стиля** в разделе "Внешний доступ":
 
-.. figure:: _static/tms_link_style_ru.jpg
+.. figure:: _static/tms_link_style_ru.png
    :name: tms_link_style_pic
    :align: center
    :width: 20cm
