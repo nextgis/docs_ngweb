@@ -818,6 +818,10 @@ URL сервиса WMS. Эти параметры нужно подставит�
 Слой TMS
 --------
 
+Чтобы подключить данные из внешних источников по протоколу :term:`TMS`, сначала нужно создать соединение TMS.
+
+.. note:: Данные, загруженные в NextGIS Web, также можно `подключать во внешние приложения по TMS <https://docs.nextgis.ru/docs_ngweb/source/external.html>`_.
+
 .. _ngw_create_tms_connection:
 
 Соединение TMS
@@ -896,45 +900,6 @@ URL сервиса WMS. Эти параметры нужно подставит�
 
 После создания слоя пользователь может добавить его на веб-карту для отображения. Добавляется именно **слой** TMS, стиль для него не нужен.
    
-.. _ngw_connect_tms_gdal:
-
-Использование сервиса TMS
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-NextGIS Web является сервером TMS. Соответственно подключить созданные в нем слои/стили можно 
-в любом клиентском ПО, поддерживающем протокол TMS. Для этого нужно знать URL сервиса TMS. 
-
-Ссылка формируется следующим образом, пример:
-
-.. code-block:: html
-
-   https://demo.nextgis.ru/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
-
-Для использования TMS через утилиты GDAL нужно создать для него файл XML. Для создания такого файла нужно знать URL TMS. Эти параметры нужно подставить в строку ServerUrl примера ниже. Все остальное 
-остается неизменным.
-
-.. code-block:: xml
-
-   <GDAL_WMS>
-    <Service name="TMS">
-        <ServerUrl>https://demo.nextgis.ru/api/component/render/tile?z={z}&x={x}&y={y}&resource=234</ServerUrl>
-    </Service>
-    <DataWindow>
-        <UpperLeftX>-20037508.34</UpperLeftX>
-        <UpperLeftY>20037508.34</UpperLeftY>
-        <LowerRightX>20037508.34</LowerRightX>
-        <LowerRightY>-20037508.34</LowerRightY>
-        <TileLevel>18</TileLevel>
-        <TileCountX>1</TileCountX>
-        <TileCountY>1</TileCountY>
-        <YOrigin>top</YOrigin>
-    </DataWindow>
-    <Projection>EPSG:3857</Projection>
-    <BlockSizeX>256</BlockSizeX>
-    <BlockSizeY>256</BlockSizeY>
-    <BandsCount>4</BandsCount>
-    <Cache />
-   </GDAL_WMS> 
 
 .. _ngw_tile_set:
 

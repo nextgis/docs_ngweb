@@ -30,7 +30,9 @@ MVT поддерживается различными библиотеками �
 
 При создании векторного слоя в NextGIS Web автоматически генерируется ссылка типа:
 
-https://**demo.nextgis.ru**/api/component/feature_layer/mvt?resource=**5826**&z={z}&x={x}&y={y}
+.. raw:: html
+
+    <code><strong>https://demo.nextgis.ru/</strong>api/component/feature_layer/mvt?resource=<strong>6503</strong>&amp;z={z}&amp;x={x}&amp;y={y}</code>
 
 Жирным выделены URL-адрес Веб ГИС и номер ресурса (векторного слоя). 
 
@@ -94,3 +96,49 @@ URL Веб ГИС и номер ресурса указываются в соо�
 Такой слой можно использовать как подложку, для него можно настраивать стиль. 
 
 Работает идентификация объектов с описанием атрибутов.
+
+
+.. _ngw_connect_tms_gdal:
+
+Использование сервиса TMS
+==========================
+
+NextGIS Web является сервером TMS. Соответственно подключить созданные в нем слои/стили можно в любом клиентском ПО, поддерживающем протокол TMS. Для этого нужно знать URL сервиса TMS.
+
+Эта ссылка располагается на странице ресурса **стиля** в разделе "Внешний доступ":
+
+.. figure:: _static/tms_link_style_ru.jpg
+   :name: tms_link_style_pic
+   :align: center
+   :width: 20cm
+
+Ссылка формируется следующим образом, пример:
+
+.. raw:: html
+
+    <code><strong>https://demo.nextgis.ru/</strong>api/component/render/tile?z={z}&x={x}&y={y}&resource=<strong>234</strong></code>
+
+Для использования TMS через утилиты GDAL нужно создать для него файл XML и подставить эту ссылку в строку ``ServerUrl`` примера ниже. Всё остальное остаётся неизменным.
+
+.. code-block:: xml
+
+   <GDAL_WMS>
+    <Service name="TMS">
+        <ServerUrl>https://demo.nextgis.ru/api/component/render/tile?z={z}&x={x}&y={y}&resource=234</ServerUrl>
+    </Service>
+    <DataWindow>
+        <UpperLeftX>-20037508.34</UpperLeftX>
+        <UpperLeftY>20037508.34</UpperLeftY>
+        <LowerRightX>20037508.34</LowerRightX>
+        <LowerRightY>-20037508.34</LowerRightY>
+        <TileLevel>18</TileLevel>
+        <TileCountX>1</TileCountX>
+        <TileCountY>1</TileCountY>
+        <YOrigin>top</YOrigin>
+    </DataWindow>
+    <Projection>EPSG:3857</Projection>
+    <BlockSizeX>256</BlockSizeX>
+    <BlockSizeY>256</BlockSizeY>
+    <BandsCount>4</BandsCount>
+    <Cache />
+   </GDAL_WMS> 
