@@ -15,6 +15,7 @@ NextGIS Web
    admin_interface
    create_resource
    layers
+   services
    edit_resource
    feature_table
    mapstyles
