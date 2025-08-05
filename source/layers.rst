@@ -11,6 +11,218 @@
 
 См. также поддерживаемые форматы и другие требования к исходным данным: `для растровых слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-raster-requirements>`_, `для векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_.
 
+
+.. _ngw_create_vector_layer:
+
+Векторный слой
+-----------------------
+
+В NextGIS Web можно создавать векторные слои на основе геоданных в различных `форматах <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_ и соединений `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_, а также `пустые слои <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_, которые имеют определённую структуру атрибутов, но не содержат объектов.
+
+.. _ngw_vector_data_requirements:
+
+Требования к исходным данным
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+В качестве исходного файла можно загружать следующие форматы:
+
+* :term:`ESRI Shapefile`
+* :term:`GeoJSON`
+* :term:`KML`
+* :term:`GML`
+* :term:`GeoPackage`
+
+Точечные слои также можно создать из файлов :term:`CSV` и :term:`XLSX`, координаты должны быть в колонках lat и lon. Посмотрите процесс создания такого слоя в видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/5302afb00e3af93dbd9adccf848d84db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/LcGco1nclM8>`_, `rutube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
+
+Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
+
+.. note:: 
+   В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
+   упакованы в архив формата Zip. 
+
+.. note:: 
+   Мы рекомендуем **не** использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
+
+Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
+
+
+.. _ngw_process_create_vector_layer:
+
+Создание слоя из файла
+^^^^^^^^^^^^^^^^^^^^^^
+
+Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
+Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
+
+.. figure:: _static/ngweb_create_vector_layer_ru.png
+   :name: ngweb_admin_layers_create_vector_layer
+   :align: center
+   :width: 20cm
+
+   Выбор типа ресурса "Векторный слой"
+ 
+На открывшейся вкладке "Векторный слой" необходимо загрузить файл геоданных в формате :term:`ESRI Shapefile` (zip-архив), :term:`GeoPackage`, :term:`GeoJSON`, :term:`GML`, :term:`KML`, :term:`CSV` или :term:`XLSX`. Для CSV и XLSX поддерживаются только точки, координаты должны быть в колонках lat и lon.
+
+В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
+NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
+
+.. figure:: _static/ngweb_create_vector_layer_upload_ru.png
+   :name: ngweb_admin_layers_create_vector_layer_upload
+   :align: center
+   :width: 15cm
+
+   Окно загрузки векторного файла
+
+Ниже предлагается определить дополнительные параметры создания векторного слоя (обработка геометрий, поле FID). 
+Подробнее о дополнительных параметрах можно прочитать `здесь <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_.
+
+Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. 
+
+
+Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
+
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_4.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_name
+   :align: center
+   :width: 20cm
+
+   Наименование векторного слоя
+   
+   
+На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus_3.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_description
+   :align: center
+   :width: 20cm
+
+   Описание векторного слоя
+
+В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus_3.png
+   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
+   :align: center
+   :width: 20cm
+
+   Метаданные векторного слоя
+
+На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
+
+.. figure:: _static/create_vector_layer_vers_ru.png
+   :name: create_vector_layer_vers_pic
+   :align: center
+   :width: 16cm
+
+   Включение версионирования слоя
+
+После завершения ввода нужных данных нажмите кнопку **Создать**.
+
+Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+Также внутри ресурса "Векторный слой" можно `создать из готового файла Форму <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_, которая будет использоваться для сбора данных. Однако более удобно создавать и загружать формы при помощи `NextGIS Formbuilder <https://docs.nextgis.ru/docs_formbuilder/source/workflow.html#nextgis-web>`_.
+
+
+
+
+
+.. _ngw_create_empty_vector_layer:
+
+Пустой векторный слой
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Создание пустого векторного слоя позволяет начать вести базу данных в ВебГИС без использования настольного приложения. 
+
+Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
+Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой**. 
+
+.. figure:: _static/ngweb_create_vector_layer_ru.png
+   :name: ngweb_admin_layers_create_vector_layer_2
+   :align: center
+   :width: 20cm
+
+   Выбор типа ресурса "Векторный слой"
+
+В открывшемся окне в выпадающем меню выберите "Создать пустой слой". Ниже появится поле выбора типа геометрии слоя. По умолчанию создается точечный слой.
+
+.. figure:: _static/ngweb_admin_layers_create_vector_layer_blank_ru.png
+   :name: ngweb_admin_layers_create_vector_layer_blank_pic
+   :align: center
+   :width: 15cm
+
+   Окно выбора геометрии пустого слоя
+
+Поддерживаются **точки, линии и полигоны**. Можно выбрать модификации этих типов с поддержкой **мультигеометрий** и **Z-координаты**.
+
+
+Во вкладке "Ресурс" можно указать название векторного слоя, которое будет отображаться в списке ресурсов. По умолчанию в качестве названия используется тип ресурса.
+
+Затем нажмите на три точки рядом с кнопкой **Создать** и выберите **Создать и изменить**.
+
+.. figure:: _static/create_and_edit_vector_layer_ru.png
+   :name: create_and_edit_vector_layer_pic
+   :align: center
+   :width: 16cm
+
+   Создание и переход к редактированию
+
+Слой будет создан и откроется окно добавления атрибутов (полей).
+
+.. figure:: _static/empty_vector_layer_fields_ru.png
+   :name: empty_vector_layer_fields_pic
+   :align: center
+   :width: 16cm
+
+   Вкладка добавления полей
+
+Нажмите |button_plus_layer| **Добавить**. Появится первое поле. Нажав на поле, вы откроете его свойства. 
+
+Задайте для поля тип данных (числовые: INTEGER, BIGIN, REAL, строка STRING, дата/время DATE, TIME, DATETIME)
+
+Также при желании можно поменять наименование поля.
+
+.. figure:: _static/vector_layer_field_settings_ru.png
+   :name: vector_layer_field_settings_pic
+   :align: center
+   :width: 16cm
+
+   Поле с заданным типом данных строка (string) и наименованием "Адрес"
+
+Нажмите |button_hide_details| **Скрыть детали**, чтобы увидеть весь список полей.
+
+.. figure:: _static/vector_layer_field_list_ru.png
+   :name: vector_layer_field_list_pic
+   :align: center
+   :width: 16cm
+
+   Список полей слоя
+
+После добавления всех необходимых полей нажмите **Сохранить**.
+
+В дальнейшем вы можете `редактировать поля слоя <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+
+.. |button_hide_details| image:: _static/button_hide_details.png
+   :width: 6mm
+
+
+Теперь можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_.
+
+
+
+
 .. _ngw_create_raster_layer:
 
 Растровый слой
@@ -60,7 +272,7 @@
 
 
 Во вкладке "Ресурс" укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
-Оно будет отображаться в административном интерфейсе. Поле "Ключ" является необязательным к заполнению.
+Оно будет отображаться в административном интерфейсе. 
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
@@ -195,167 +407,6 @@
 
 
 
-.. _ngw_create_vector_layer:
-
-Векторный слой
------------------------
-
-В NextGIS Web можно создавать векторные слои на основе геоданных в различных `форматах <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_ и соединений `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_, а также `пустые слои <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_, которые имеют определённую структуру атрибутов, но не содержат объектов.
-
-.. _ngw_vector_data_requirements:
-
-Требования к исходным данным
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-В качестве исходного файла можно загружать следующие форматы:
-
-* :term:`ESRI Shapefile`
-* :term:`GeoJSON`
-* :term:`KML`
-* :term:`GML`
-* :term:`GeoPackage`
-
-Точечные слои также можно создать из файлов :term:`CSV` и :term:`XLSX`, координаты должны быть в колонках lat и lon. Посмотрите процесс создания такого слоя в видео:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/5302afb00e3af93dbd9adccf848d84db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Смотреть на `youtube <https://youtu.be/LcGco1nclM8>`_, `rutube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
-
-Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
-
-.. note:: 
-   В случае ESRI Shapefile все составляющие его части (dbf, shp, shx, prj и др.) должны быть 
-   упакованы в архив формата Zip. 
-
-.. note:: 
-   Мы рекомендуем **не** использовать кириллицу в названиях полей атрибутов. Несмотря на то, что в большинстве случаев такие данные могут быть загружены в Веб ГИС и показаны на картах, в некоторых случаях вы можете испытывать проблемы с работой с такими данными в NextGIS Mobile и визуализацией (особенно если условные обозначения сформированы на базе одного из таких полей). Переименуйте поля латиницей перед загрузкой и используйте синонимы полей (алиасы) для их отображения кириллицей на картах.
-
-Если во входном файле есть поля с названиями: id (ID) или geom (GEOM), то при загрузке они будут переименованы или превращены во внутренние идентификаторы (поле id).
-
-
-.. _ngw_process_create_vector_layer:
-
-Создание слоя из файла
-^^^^^^^^^^^^^^^^^^^^^^
-
-Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
-Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
-
-.. figure:: _static/ngweb_create_vector_layer_ru.png
-   :name: ngweb_admin_layers_create_vector_layer
-   :align: center
-   :width: 20cm
-
-   Выбор типа ресурса "Векторный слой"
- 
-На открывшейся вкладке "Векторный слой" необходимо загрузить файл геоданных в формате :term:`ESRI Shapefile` (zip-архив), :term:`GeoPackage`, :term:`GeoJSON`, :term:`GML`, :term:`KML`, :term:`CSV` или :term:`XLSX`. Для CSV и XLSX поддерживаются только точки, координаты должны быть в колонках lat и lon.
-
-В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
-NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
-
-.. figure:: _static/ngweb_create_vector_layer_upload_ru.png
-   :name: ngweb_admin_layers_create_vector_layer_upload
-   :align: center
-   :width: 15cm
-
-   Окно загрузки векторного файла
-
-Ниже предлагается определить дополнительные параметры создания векторного слоя (обработка геометрий, поле FID). 
-Подробнее о дополнительных параметрах можно прочитать `здесь <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_.
-
-Если в ESRI Shapefile присутствует файл с описанием кодировки [расширение .cpg], то он будет учитываться при загрузке. 
-
-
-Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
-Поле "Ключ" является необязательным к заполнению.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_rus_4.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_name
-   :align: center
-   :width: 20cm
-
-   Наименование векторного слоя
-   
-   
-На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_rus_3.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_description
-   :align: center
-   :width: 20cm
-
-   Описание векторного слоя
-
-В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_rus_3.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
-   :align: center
-   :width: 20cm
-
-   Метаданные векторного слоя
-
-На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
-
-.. figure:: _static/create_vector_layer_vers_ru.png
-   :name: create_vector_layer_vers_pic
-   :align: center
-   :width: 16cm
-
-   Включение версионирования слоя
-
-После завершения ввода нужных данных нажмите кнопку **Создать**.
-
-Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
-
-Также внутри ресурса "Векторный слой" можно `создать из готового файла Форму <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_, которая будет использоваться для сбора данных. Однако более удобно создавать и загружать формы при помощи `NextGIS Formbuilder <https://docs.nextgis.ru/docs_formbuilder/source/workflow.html#nextgis-web>`_.
-
-
-
-
-
-.. _ngw_create_empty_vector_layer:
-
-Пустой векторный слой
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Создание пустого векторного слоя позволяет начать вести базу данных в ВебГИС без использования настольного приложения. 
-
-Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
-Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer_2`). 
-
-.. figure:: _static/ngweb_create_vector_layer_ru.png
-   :name: ngweb_admin_layers_create_vector_layer_2
-   :align: center
-   :width: 20cm
-
-   Выбор типа ресурса "Векторный слой"
-
-В открывшемся окне в выпадающем меню выберите "Создать пустой слой". Ниже появится поле выбора типа геометрии слоя. По умолчанию создается точечный слой.
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_blank_ru.png
-   :name: ngweb_admin_layers_create_vector_layer_blank_pic
-   :align: center
-   :width: 15cm
-
-   Окно выбора геометрии пустого слоя
-
-Во вкладке "Ресурс" укажите название векторного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`). Оно будет отображаться в административном интерфейсе.
-Поле "Ключ" является необязательным к заполнению.
-
-На вкладке "Описание" можно добавить произвольный текст, описывающий содержимое данного слоя (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
-
-В "Метаданные" слоя можно записать информацию в формате "ключ-значение" (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-После завершения ввода нужных данных нажмите кнопку **Создать**.
-
-Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
-
-Для добавления объектов на пустой слой можно использовать `инструменты редактирования веб-карты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_.
 
 .. _ngw_create_postgis:
 
@@ -379,7 +430,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Выбор типа ресурса "Соединение PostGIS"
 
-В открывшемся окне укажите наименование PostGIS соединения (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и название слоёв в базе данных). Поле "Ключ" является необязательным к заполнению.
+В открывшемся окне укажите наименование PostGIS соединения (:numref:`ngweb_admin_layers_create_postgis_connection_resourse_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и название слоёв в базе данных). 
 
 .. figure:: _static/admin_layers_create_postgis_connection_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_postgis_connection_resourse_name
@@ -445,7 +496,7 @@ NextGIS Web может принимать многослойные наборы 
    Выбор типа ресурса "Слой PostGIS"
    
    
-На вкладке "Ресурс" указывается наименование слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
+На вкладке "Ресурс" указывается наименование слоя PostGIS (:numref:`ngweb_admin_layers_create_postgis_layer_resourse_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. 
    
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_name_rus_3.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_name
@@ -566,7 +617,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
    Выбор типа ресурса "Cоединение WMS"
    
 
-В открывшемся окне укажите наименование WMS соединения (:numref:`admin_layers_create_wms_connection_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и названия слоёв в базе данных). Поле "Ключ" является необязательным к заполнению.
+В открывшемся окне укажите наименование WMS соединения (:numref:`admin_layers_create_wms_connection_name`). Оно будет отображаться в административном интерфейсе (не путайте это наименование и названия слоёв в базе данных). 
 
 .. figure:: _static/create_wms_connection_name_ru.png
    :name: admin_layers_create_wms_connection_name
@@ -629,7 +680,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
    Выбор типа ресурса "Слой WMS"
    
 
-На вкладке "Ресурс" указывается наименование слоя WMS (:numref:`ngweb_admin_layers_create_wms_layer_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. Поле Ключ является необязательным к заполнению.
+На вкладке "Ресурс" указывается наименование слоя WMS (:numref:`ngweb_admin_layers_create_wms_layer_name`). Оно будет отображаться в административном интерфейсе и дереве слоев веб-карты после добавления. 
 
 .. figure:: _static/create_wms_layer_name_ru.png
    :name: ngweb_admin_layers_create_wms_layer_name
@@ -729,7 +780,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Наименование ресурса Соединение TMS
    
-Поле "Ключ" является необязательным к заполнению. На соответствующих вкладках можно добавить описание ресурса и метаданные.
+На соответствующих вкладках можно добавить описание ресурса и метаданные.
 Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
 Вкладка "Соединение TMS" отвечает за выбор и настройку одного из способов подключения к TMS серверу - настраиваемый или из геосервисов NextGIS (см. :numref:`TMS_connection_type`).
 
@@ -863,7 +914,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Наименование ресурса Соединение WFS
    
-Поле "Ключ" является необязательным к заполнению. На соответствующих вкладках можно добавить описание ресурса и метаданные.
+На соответствующих вкладках можно добавить описание ресурса и метаданные.
 
 На вкладке "Cоединение WFS" вводятся параметры подключения к **Серверу WFS**, который предоставляет данные:
 
