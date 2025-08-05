@@ -59,10 +59,10 @@ NextGIS Web строится на **ресурсном** подходе - каж
    
 При этом откроется окно, представленное на :numref:`ngweb_admin_layers_create_group`.
 
-.. figure:: _static/admin_layers_create_group_rus_3.png
+.. figure:: _static/admin_layers_create_group_ru.png
    :name: ngweb_admin_layers_create_group
    :align: center
-   :width: 20cm
+   :width: 12cm
 
    Окно создания группы ресурсов
 
