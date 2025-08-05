@@ -3,14 +3,14 @@
 
 При создании ресурсов автоматически генерируются ссылки, по которым можно подключить данные в сторонние приложения:
 
-* Для векторного слоя создаётся ссылка на `MVT тайлы <>`_;
-* Для стиля векторного или растрового слоя, веб-карты и WMS-слоя создаётся ссылка на `TMS <>`_;
+* Для векторного слоя создаётся ссылка на `MVT тайлы <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-mvt>`_;
+* Для стиля векторного или растрового слоя, веб-карты и WMS-слоя создаётся ссылка на `TMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-tms-service>`_;
 
 Также можно создавать сервисы, которые обеспечивают доступ к данным по стандартным протоколам:
 
-* `WMS <>`_
-* `WFS <>`_
-* `OGC API Features <>`_`
+* `WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`_
+* `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_`
+* `WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`_
 
 .. _ngw_mvt:
 
@@ -98,7 +98,7 @@ URL Веб ГИС и номер ресурса указываются в соо�
 .. _mvt_qgis:
 
 Подключение MVT из NextGIS Web в QGIS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Предоставляемую NextGIS Web ссылку на векторные тайлы можно добавить в QGIS. Таким образом вы сможете использовать представление векторного слоя из вашей Веб ГИС в настольном приложении.
 
@@ -115,7 +115,7 @@ URL Веб ГИС и номер ресурса указываются в соо�
 
 
 
-.. _ngw_connect_tms_gdal:
+.. _ngw_tms_service:
 
 Сервис TMS
 -------------
@@ -325,7 +325,7 @@ NextGIS Web является сервером WFS - может публиков�
 
    https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
 
-.. _ngw_create_wms_service:
+.. _ngw_wms_service:
 
 Сервис WMS
 ----------
