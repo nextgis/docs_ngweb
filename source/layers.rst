@@ -96,7 +96,7 @@ NextGIS Web может принимать многослойные наборы 
    Наименование векторного слоя
    
    
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_", описывающие содержимое данного слоя.
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя.
 
 На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
 
@@ -264,7 +264,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Наименование растрового слоя
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_", описывающие содержимое данного слоя.
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя.
 
 
 .. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus_3.png
@@ -411,7 +411,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Наименование соединения PostGIS
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
    
    
 На вкладке "Cоединение PostGIS" необходимо ввести параметры подключения к :abbr:`БД (база данных)` PostGIS, из которой 
@@ -460,7 +460,7 @@ NextGIS Web может принимать многослойные наборы 
    Наименование Слоя PostGIS
    
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_", описывающие содержимое данного слоя.
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя.
 
 .. figure:: _static/admin_layers_create_postgis_layer_resourse_metadata_rus_2.png
    :name: ngweb_admin_layers_create_postgis_layer_resourse_metadata
@@ -569,7 +569,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Наименование Соединения WMS
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 
 .. figure:: _static/admin_layers_create_wms_connection_metadata_rus_2.png
@@ -659,7 +659,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Вендор параметры слоя WMS
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 После указания параметров нажмите кнопку **Создать**.   
 
@@ -700,7 +700,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Наименование ресурса Соединение TMS
    
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 Вкладка "Соединение TMS" отвечает за выбор и настройку одного из способов подключения к TMS серверу - настраиваемый или из геосервисов NextGIS (см. :numref:`TMS_connection_type`).
 
@@ -770,7 +770,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 Далее необходимо ввести наименование набора тайлов, которое будет отображаться в административном веб интерфейсе.
 
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_". 
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
 Во вкладке «Набор тайлов» необходимо загрузить набор тайлов в формате MBTiles или zip-архив. Тайлы должны быть в формате PNG или JPEG и иметь размер 256х256 пикселей.
 
@@ -834,7 +834,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Наименование ресурса Соединение WFS
    
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 На вкладке "Cоединение WFS" вводятся параметры подключения к **Серверу WFS**, который предоставляет данные:
 
@@ -884,7 +884,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Настройки слоя WFS
 
-На вкладке "Ресурс" можно указать пользовательское название ресурса. Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_".
+На вкладке "Ресурс" можно указать пользовательское название ресурса. Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 Для того, чтобы добавить слой WFS на веб-карту, у него должен быть стиль. Вы можете создать стиль QGIS по умолчанию или `добавить свой стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_ QGIS или Mapserver через меню "Создать ресурс".
 
