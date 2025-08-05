@@ -48,7 +48,7 @@ MVT поддерживается различными библиотеками �
 
 .. raw:: html
 
-    <code><strong>https://demo.nextgis.ru/</strong>api/component/feature_layer/mvt?resource=<strong>6503</strong>&amp;z={z}&amp;x={x}&amp;y={y}</code>
+    <code><strong>https://demo.nextgis.ru/</strong>api/component/feature_layer/mvt?resource=<strong>6503</strong>&amp;z={z}&amp;x={x}&amp;y={y}<br></code>
 
 Жирным выделены URL-адрес Веб ГИС и номер ресурса (векторного слоя). 
 
@@ -135,8 +135,9 @@ NextGIS Web является сервером TMS. Соответственно 
 
     <code><strong>https://demo.nextgis.ru/</strong>api/component/render/tile?z={z}&x={x}&y={y}&resource=<strong>234</strong></code>
 
+.. todo::
 
-Благодаря этому любой слой (стиль), созданный в Веб ГИС, можно использовать как источник тайлового сервиса и `подключать его как подложку (базовую карту) <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_.
+Благодаря такой ссылке любой слой (стиль), созданный в Веб ГИС, можно использовать как источник тайлового сервиса и `подключать его как подложку (базовую карту) <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_.
 
 Для использования TMS через утилиты GDAL нужно создать для него файл XML и подставить эту ссылку в строку ``ServerUrl`` примера ниже. Всё остальное остаётся неизменным.
 
