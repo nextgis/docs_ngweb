@@ -48,7 +48,8 @@ MVT поддерживается различными библиотеками �
 
 .. raw:: html
 
-    <code><strong>https://demo.nextgis.ru/</strong>api/component/feature_layer/mvt?resource=<strong>6503</strong>&amp;z={z}&amp;x={x}&amp;y={y}<br></code>
+    <div><strong>https://demo.nextgis.ru/</strong>api/component/feature_layer/mvt?resource=<strong>6503</strong>&amp;z={z}&amp;x={x}&amp;y={y}</div>
+    <br>
 
 Жирным выделены URL-адрес Веб ГИС и номер ресурса (векторного слоя). 
 
@@ -122,7 +123,14 @@ URL Веб ГИС и номер ресурса указываются в соо�
 
 NextGIS Web является сервером TMS. Соответственно подключить созданные в нем слои/стили можно в любом клиентском ПО, поддерживающем протокол TMS. Для этого нужно знать URL сервиса TMS.
 
-Эта ссылка располагается на странице ресурса **стиля** в разделе "Внешний доступ":
+Сервис TMS автоматически создаётся для следующих типов ресурсов:
+
+* Векторный стиль
+* Растровый стиль
+* Слой WMS
+* Веб-карта
+
+Ссылка располагается на странице ресурса в разделе "Внешний доступ":
 
 .. figure:: _static/tms_link_style_ru.png
    :name: tms_link_style_pic
@@ -133,11 +141,12 @@ NextGIS Web является сервером TMS. Соответственно 
 
 .. raw:: html
 
-    <code><strong>https://demo.nextgis.ru/</strong>api/component/render/tile?z={z}&x={x}&y={y}&resource=<strong>234</strong></code>
+    <div><strong>https://demo.nextgis.ru/</strong>api/component/render/tile?z={z}&x={x}&y={y}&resource=<strong>234</strong></div>
+    <p></p>
 
-.. todo::
 
-Благодаря такой ссылке любой слой (стиль), созданный в Веб ГИС, можно использовать как источник тайлового сервиса и `подключать его как подложку (базовую карту) <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_.
+
+Благодаря такой ссылке любой слой (стиль), созданный в Веб ГИС, можно `подключать как подложку (базовую карту) <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_.
 
 Для использования TMS через утилиты GDAL нужно создать для него файл XML и подставить эту ссылку в строку ``ServerUrl`` примера ниже. Всё остальное остаётся неизменным.
 
