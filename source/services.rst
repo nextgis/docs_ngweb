@@ -9,7 +9,7 @@
 Также можно создавать сервисы, которые обеспечивают доступ к данным по стандартным протоколам:
 
 * `WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`_
-* `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_`
+* `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_
 * `WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`_
 
 .. _ngw_mvt:
