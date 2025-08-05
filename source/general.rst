@@ -22,7 +22,7 @@ NextGIS Web позволяет:
 2. Выполнять `навигацию <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ по карте (увеличение, уменьшение, перемещение).
 3. Управлять наполнением карты через веб-интерфейс.
 4. Подключать `векторные <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ (:term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`PostGIS` и др. ) и `растровые <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ данные (:term:`GeoTIFF`).
-5. Использовать `стандартные протоколы <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ (:term:`WMS`, :term:`WFS-T`, :term:`TMS`, OGC API Features).
+5. Использовать стандартные протоколы (:term:`WMS`, :term:`WFS-T`, :term:`TMS`, OGC API Features), чтобы `подключать загруженные данные в сторонние приложения <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_ и `добавлять данные из внешних источников <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_.
 6. Гибко `настраивать права доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ к слоям, группам слоёв, картам и ресурсам других видов.
 7. Взаимодействовать `посредством API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
 
@@ -81,9 +81,9 @@ NextGIS Web обладает следующими основными возмо�
 * Создание и подключение `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_ слоев.
 * Создание и подключение `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis>`_ слоев из внешних баз данных.
 * Выбор из базовых подложек: OpenStreetMap, Google, Bing и иных, доступных в каталоге `QuickMapServices <https://qms.nextgis.com/>`_.
-* Сервис `WFS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wfs>`_.
-* Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-wms-service>`__.
-* Сервис `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-ogc-api-features>`_.
+* Сервис `WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`_.
+* Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`__.
+* Сервис `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_.
 * `Справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ (при наличии модуля расширения).
 * `Набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_ (при наличии модуля расширения).
 * Поддержка `метаданных <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_ (в виде "ключ-значение").

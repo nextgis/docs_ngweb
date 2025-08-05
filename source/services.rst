@@ -135,6 +135,9 @@ NextGIS Web является сервером TMS. Соответственно 
 
     <code><strong>https://demo.nextgis.ru/</strong>api/component/render/tile?z={z}&x={x}&y={y}&resource=<strong>234</strong></code>
 
+
+Благодаря этому любой слой (стиль), созданный в Веб ГИС, можно использовать как источник тайлового сервиса и `подключать его как подложку (базовую карту) <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_.
+
 Для использования TMS через утилиты GDAL нужно создать для него файл XML и подставить эту ссылку в строку ``ServerUrl`` примера ниже. Всё остальное остаётся неизменным.
 
 .. code-block:: xml
