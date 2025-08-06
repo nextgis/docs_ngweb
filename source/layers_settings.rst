@@ -7,41 +7,17 @@
 
 Для изменения основных параметров слоя необходимо `авторизоваться в Веб ГИС <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-admin-login>`_.
 
-Чтобы изменить настройки слоя, перейдите к группе, где он находится (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5) и нажмите на значок карандаша напротив нужного слоя. При этом откроется окно `изменения ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_. Помимо стандартных для всех типов ресурсов настроек (родитель, описание, метаданные, права доступа) здесь можно `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, включить `возможность редактирования объектов и аннотаций <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-allow-edit>`_. 
+Чтобы изменить настройки слоя, перейдите к группе, где он находится (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5) и нажмите на значок карандаша напротив нужного слоя. При этом откроется окно `изменения ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_.
 
-:ref:`Веб ГИС <ngcom_description>` позволяет `редактировать <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ объекты на карте и их атрибуты,  добавлять описания отдельных объектов и `вложения <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (в том числе фотографии) в Векторных слоях  и `Слоях PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_.
+ Помимо стандартных для всех типов ресурсов настроек (родитель, описание, метаданные, права доступа) здесь можно 
+ 
+ * `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
+ * `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
+ * изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
 
 
+:ref:`Веб ГИС <ngcom_description>` позволяет `редактировать <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ объекты на карте и их атрибуты,  добавлять описания отдельных объектов и `вложения <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (в том числе фотографии) в Векторных слоях  и `Слоях PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_.  `Включить возможность редактирования <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-allow-edit>`_ объектов и аннотаций можно в настройках веб-карты. 
 
-.. _ngw_allow_edit:
-
-Возможность редактирования объектов на веб-карте и аннотаций
-----------------------------------------------------------------------
-
-По умолчанию редактирование веб-карты всегда отключено. Чтобы пользователь смог вносить изменения в слои на карте, редактирование нужно включить в настройках веб-карты. Изменить доступность возможности редактирования можно в окне "Изменить ресурс" Веб-карты. Как открыть это окно, описано в разделе :ref:`Изменение ресурса <ngw_update_resource>`.
-
-На вкладке "Настройки" включите редактирование слоёв, выбрав соответствующую опцию в выпадающем меню (см. :numref:`webmap_allow_editting`):
-
-.. figure:: _static/webgis_allow_editting_ru_2.png
-   :name: webmap_allow_editting
-   :align: center
-   :width: 16cm
-
-   Включение редактирования слоёв на веб-карте
-
-.. note:: 
-	По умолчанию редактирование слоев отключено.
-	
-Редактирование будет доступно для пользователей, у которых есть `право на чтение и изменение данных <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Право на изменение данных может быть установлено для всей папки, где лежат данные, или для отдельных слоёв.
-
-Если у пользователя недостаточно прав, он не сможет перейти в режим редактирования. `Как проверить права пользователя <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
-
-.. figure:: _static/webgis_permiss_editting_ru.png
-   :name: webgis_permiss_editting_pic
-   :align: center
-   :width: 16cm
-
-   Для папки с данными установлен набор прав, необходимый для доступа к редактированию
 
 
 
@@ -176,4 +152,5 @@
 
 .. note:
    При перезаписи можно выбрать файл с другим типом геометрии. При этом скорее всего перестанут работать все связанные с векторным слоем стили, поскольку в них задано отображение данных другой геометрии.
+
 

@@ -19,9 +19,8 @@ NextGIS Web
 * `Векторные и растровые слои <https://docs.nextgis.ru/docs_ngweb/source/layers.html>`_
 * `Версионирование <https://docs.nextgis.ru/docs_ngweb/source/version.html>`_
 * `Особенности загрузки векторных файлов <https://docs.nextgis.ru/docs_ngweb/source/vect_layer_upload_params.html>`_
-* `Слои PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis>`_
-* `Особенности и диагностика PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_
-* `Слои WFS, WMS, TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_
+* `Слои PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_
+* `Слои WFS, WMS, TMS <https://docs.nextgis.ru/docs_ngweb/source/connections.html>`_
 * `Таблица объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_
 * `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
 * `Сервисы <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_
@@ -30,7 +29,7 @@ NextGIS Web
 
 * `Веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_
 * `Просмотр веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html>`_
-* `Редактирование данных на веб-карте <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_
+* `Редактирование данных на веб-карте <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_
 * `Печать и экспорт веб-карты <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_
 * `Встраивание веб-карты <https://docs.nextgis.ru/docs_ngweb/source/embed_webmap.html>`_
 * `Аннотации веб-карты <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`_
