@@ -294,10 +294,10 @@
 * настроить `легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_;
 * включить аннотации (о работе с аннотациями  см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/annotation.html>`__);
 * выбрать систему координат для измерений;
-* разрешить редактирование слоев;
+* разрешить `редактирование слоев <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_;
 * выбрать начальный и ограничивающий `охват <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-extent>`_;
 * выбрать ресурс `закладок <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_;
-* установить видимость панелей и элементов идентификации объектов.
+* `установить видимость <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-additional>`_ панелей и элементов идентификации объектов.
 
 .. figure:: _static/admin_webmap_settings_tab_ru_4.png
    :name: admin_webmap_settings_tab_pic
