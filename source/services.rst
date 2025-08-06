@@ -332,7 +332,10 @@ NextGIS Web является сервером WFS - может публиков�
 Для этого нужно `настроить права доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_ к сервису WFS.
 Подключение при помощи WFS позволяет редактировать данные на сервере из настольного приложения. 
 
-.. tip:: Если вы работаете в QGIS, редактировать данные Веб ГИС можно также помощи модуля `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/ngconnect.html>`_.
+.. tip:: 
+   :collapsible: closed
+   
+   Если вы работаете в QGIS, редактировать данные Веб ГИС можно также помощи модуля `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/ngconnect.html>`_.
 
 Программно подключаться к созданным сервисам WFS можно по ссылкам следующего вида (также `поддерживается <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/auth.html>`_ basic auth):
 
