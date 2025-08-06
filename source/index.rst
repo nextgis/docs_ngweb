@@ -79,6 +79,7 @@ NextGIS Web
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    intro
    general   
