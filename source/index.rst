@@ -88,12 +88,14 @@ NextGIS Web
       services
       edit_resource
       feature_table
+      feature_edit
       mapstyles
       create_other
       version
       layers_settings 
       vect_layer_upload_params
       postgis_details
+      connections
       webmaps_admin  
       webmap_clone
       webmaps_client
@@ -130,12 +132,14 @@ NextGIS Web
       services
       edit_resource
       feature_table
+      feature_edit
       mapstyles
       create_other
       version
       layers_settings 
       vect_layer_upload_params
       postgis_details
+      connections
       webmaps_admin  
       webmap_clone
       webmaps_client
@@ -157,7 +161,7 @@ NextGIS Web
       look
       domain
       label
-      sysadmin_updates  
+      sysadmin_updates
 
 
 
