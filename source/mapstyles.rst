@@ -11,7 +11,7 @@
 
 Для векторного слоя можно создать стиль:
 
-* `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#default-style-select-pic>_
+* `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#default-style-select-pic>`_
 * `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_
 * `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе
 * `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_
@@ -19,7 +19,7 @@
 Для растрового слоя можно создать стиль:
 
 * `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-def-raster-style-pic>`_;
-* из файла - в формате QML или SLD;
+* `из файла <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngweb-create-raster-style-pic>`_ - в формате QML или SLD;
 * пользовательский - задав настройки каналов в интерфейсе.
 
 
