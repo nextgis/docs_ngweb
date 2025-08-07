@@ -346,7 +346,7 @@ SVG-маркеры также можно `встроить <https://docs.nextgis
 ------------
 
 Кэширование используется для ускорения отрисовки данных и `оптимизации <https://docs.nextgis.ru/docs_ngcom/source/webmap_optimize.html>`_ работы веб-карт.
-Оно может быть применимо для стилей `векторных <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_ и `растровых <https://docs.nextgis.ru/docs_ngweb/source/layers.html#qgis>`_ слоев, а также для слоев `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_.
+Оно может быть применимо для стилей `векторных <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_ и `растровых <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-process-create-raster-style>`_ слоев, а также для слоев `WMS <https://docs.nextgis.ru/docs_ngweb/source/connections.html#ngw-wms-in>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/connections.html#ngw-tms-in>`_.
 
 Чтобы включить кэширование, нужно перейти на вкладку "Тайловый кэш" в соответствующем ресурсе и активировать чекбокс "Включен".
 

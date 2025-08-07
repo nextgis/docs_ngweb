@@ -16,7 +16,7 @@
  * изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
 
 
-:ref:`Веб ГИС <ngcom_description>` позволяет `редактировать <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ объекты на карте и их атрибуты,  добавлять описания отдельных объектов и `вложения <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (в том числе фотографии) в Векторных слоях  и `Слоях PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#postgis>`_.  `Включить возможность редактирования <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-allow-edit>`_ объектов и аннотаций можно в настройках веб-карты. 
+:ref:`Веб ГИС <ngcom_description>` позволяет `редактировать <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ объекты на карте и их атрибуты,  добавлять описания отдельных объектов и `вложения <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (в том числе фотографии) в Векторных слоях  и `Слоях PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_.  `Включить возможность редактирования <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_ объектов и аннотаций можно в настройках веб-карты. 
 
 
 

@@ -168,7 +168,7 @@ PostGIS
 Диагностика PostGIS
 ---------------------
 
-Проверить корректность введенных данных при добавлении ресурса `Соединение PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis-connection>`_ или `Слой PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis-layer>`_ можно при помощи инструмента **Диагностика**. 
+Проверить корректность введенных данных при добавлении ресурса `Соединение PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html#ngw-create-postgis-connection>`_ или `Слой PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html#ngw-create-postgis-layer>`_ можно при помощи инструмента **Диагностика**. 
 Для этого вам необходимо нажать на кнопку  **Диагностика** на панели справа.
 
 .. figure:: _static/diagnostics_start_ru.png

@@ -22,7 +22,7 @@ NextGIS Web позволяет:
 2. Выполнять `навигацию <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ по карте (увеличение, уменьшение, перемещение).
 3. Управлять наполнением карты через веб-интерфейс.
 4. Подключать `векторные <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ (:term:`ESRI Shapefile`, :term:`GeoJSON`, :term:`PostGIS` и др. ) и `растровые <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ данные (:term:`GeoTIFF`).
-5. Использовать стандартные протоколы (:term:`WMS`, :term:`WFS-T`, :term:`TMS`, OGC API Features), чтобы `подключать загруженные данные в сторонние приложения <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_ и `добавлять данные из внешних источников <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_.
+5. Использовать стандартные протоколы (:term:`WMS`, :term:`WFS-T`, :term:`TMS`, OGC API Features), чтобы `подключать загруженные данные в сторонние приложения <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_ и `добавлять данные из внешних источников <https://docs.nextgis.ru/docs_ngweb/source/connections.html>`_.
 6. Гибко `настраивать права доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ к слоям, группам слоёв, картам и ресурсам других видов.
 7. Взаимодействовать `посредством API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
 
@@ -78,8 +78,8 @@ NextGIS Web обладает следующими основными возмо�
 ~~~~~~~~~~~
 
 * Создание `растровых <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ и `векторных <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ слоев и загрузка данных для них через веб-интерфейс.
-* Создание и подключение `WMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#c-wms>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#tms>`_ слоев.
-* Создание и подключение `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-postgis>`_ слоев из внешних баз данных.
+* Создание и подключение `WMS <https://docs.nextgis.ru/docs_ngweb/source/connections.html#ngw-wms-in>`_ и `TMS <https://docs.nextgis.ru/docs_ngweb/source/connections.html#ngw-tms-in>`_ слоев.
+* Создание и подключение `PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_ слоев из внешних баз данных.
 * Выбор из базовых подложек: OpenStreetMap, Google, Bing и иных, доступных в каталоге `QuickMapServices <https://qms.nextgis.com/>`_.
 * Сервис `WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`_.
 * Сервис `WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`__.
