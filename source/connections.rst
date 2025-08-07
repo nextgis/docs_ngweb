@@ -7,7 +7,7 @@ NextGIS Web позволяет добавлять данные из внешни
 
 Также можно создать слой на основе базы данных PostGIS.
 
-.. _ngw_wfs:
+.. _ngw_wfs_in:
 
 WFS
 --------
@@ -102,7 +102,7 @@ WFS
 
 
 
-.. _ngw_create_wms_layer:
+.. _ngw_wms_in:
 
 WMS
 --------
@@ -242,7 +242,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
 
 
-.. _ngw_create_tms_layer:
+.. _ngw_tms_in:
 
 TMS
 --------
