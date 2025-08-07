@@ -73,11 +73,12 @@ NextGIS Web
 * :ref:`glossary`
 
 
-.. only:: html
+Развёрнутое оглавление
+----------------------
 
    .. toctree::
       :maxdepth: 2
-      :hidden:
+
 
       intro
       general   
@@ -117,52 +118,6 @@ NextGIS Web
       domain
       label
       sysadmin_updates  
-
-.. only:: latex
-
-   .. toctree::
-      :maxdepth: 2
-
-      intro
-      general   
-      admin_interface
-      create_resource
-      layers
-      services
-      edit_resource
-      feature_table
-      feature_edit
-      mapstyles
-      create_other
-      version
-      layers_settings 
-      vect_layer_upload_params
-      postgis_details
-      connections
-      webmaps_admin  
-      webmap_clone
-      webmaps_client
-      print
-      embed_webmap
-      webmap_set
-      favorites
-      annotation
-      users
-      permissions 
-      ngw_srs
-      collector
-      data_collection_on_premise
-      trackers
-      cadaster
-      cors
-      infowebgis
-      analytics
-      look
-      domain
-      label
-      sysadmin_updates
-
-
 
 
 
