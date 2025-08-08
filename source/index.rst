@@ -72,12 +72,13 @@ NextGIS Web
 
 * :ref:`glossary`
 
+.. raw:: html
 
-Развёрнутое оглавление
-----------------------
+   <h2>Развёрнутое оглавление<a class="headerlink" href="#id36" title="Permalink to this heading">¶</a></h2>
 
-   .. toctree::
-      :maxdepth: 2
+
+.. toctree::
+   :maxdepth: 2
 
 
       intro
