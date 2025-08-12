@@ -111,7 +111,7 @@ NextGIS Web может принимать многослойные наборы 
 
 Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
-Также внутри ресурса "Векторный слой" можно `создать из готового файла Форму <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_, которая будет использоваться для сбора данных. Однако более удобно создавать и загружать формы при помощи `NextGIS Formbuilder <https://docs.nextgis.ru/docs_formbuilder/source/workflow.html#nextgis-web>`_.
+Также внутри ресурса "Векторный слой" можно `создать Форму <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_, которая будет использоваться для сбора данных.
 
 
 
