@@ -175,7 +175,7 @@
 .. |button_swipe| image:: _static/button_swipe.png
    :width: 8mm
 
-Выберите слой щелчком в дереве слоёв (он будет подсвечен голубым цветом) и нажмите |button_swipe| в нижней части карты (см. :numref:`ngweb_webmap_choose_layer`). 
+Выберите слой щелчком в дереве слоёв (он будет подсвечен голубым цветом) и нажмите |button_swipe_off| в нижней части карты (см. :numref:`ngweb_webmap_choose_layer`). 
    
 .. figure:: _static/choose_layer_swipe_ru_2.png
    :name: ngweb_webmap_choose_layer
