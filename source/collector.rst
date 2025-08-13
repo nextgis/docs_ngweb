@@ -66,7 +66,7 @@ Web GIS owner can restrain access to the project for separate participants.
 
 You can create a Collector project via NextGIS Formbuilder (the simplest way, described `here <https://docs.nextgis.com/docs_formbuilder/source/workflow.html#nextgis-web>`_) or in your Web GIS.
 
-If you want to use your Web GIS to create a Collector project, first you need to create necessary data layers in NextGIS Formbuilder or upload them from a file.
+If you want to use your Web GIS to create a Collector project, first you need to `create necessary data layers <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_  or `upload them from a file <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_.
 
 Let's suppose that layers with data are already uploaded to your Web GIS, and you want to create a project and allow data collection team participants to collect or edit data in your Web GIS. 
 
@@ -189,12 +189,9 @@ You can have unlimited number of projects in your Web GIS. In each of them you c
 Data collection form
 ---------------------
 
-Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_ and create a layer with it (plus, optionally, a Web Map and and a Collector project). 
+For a vector layer you can create a data collection form as a child resource.
 
-Also you can add a form to the layer in the Web interface.
-Open the resource page of the layer for which you want to add a form.
-
-Press **Create resource** and select "Form".
+Open the resource page of the layer, click **Create resource** and select "Form".
 
 .. figure:: _static/ngweb_create_form_en.png
    :name: ngweb_create_form_pic
@@ -205,15 +202,10 @@ Press **Create resource** and select "Form".
 
 In the opened window on the Form tab you have two options:
 
-* upload a NGFP file made in Formbuilder;
-* build a form by selecting  
+* build a form;  
+* upload a NGFP file made in Formbuilder.
 
-.. figure:: _static/form_upload_en_2.png
-   :name: form_upload_pic
-   :align: center
-   :width: 20cm
 
-   Uploading form file
 
 To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
 
@@ -230,6 +222,17 @@ You can set a display name on the Resource tab and add description and metadata 
 
 Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
 
+Alternatively, you can edit the form in Formbuilder and upload a new file.
+
+.. figure:: _static/form_upload_en_2.png
+   :name: form_upload_pic
+   :align: center
+   :width: 20cm
+
+   Uploading form file
+
 You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
 
 After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+
+.. note:: Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_. A vector layer is created automatically. Optionally, you can add a Web Map and a Collector project. 
