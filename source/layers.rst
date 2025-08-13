@@ -186,7 +186,7 @@ You will need this style to `add the raster to a Web Map <https://docs.nextgis.c
 Vector layer from file
 -----------------------
 
-In NextGIS WebYou can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
+In NextGIS Web you can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
 
 .. _ngw_vector_data_requirements:
 
@@ -292,7 +292,7 @@ On the "Settings" tab you can enable feature versioning. It allows the layer to 
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
-Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a form or data collection.
+Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a `form or data collection <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_.
 
 
 
