@@ -10,174 +10,6 @@ Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by 
 
 See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_ layers below.
 
-.. _ngw_create_raster_layer:
-
-Raster layer
-------------
-
-Raster images in NextGIS Web should be loaded using the "Raster Layer" special resource.
-
-.. _ngw_raster_requirements:
-
-Requirements for uploaded files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Data must be georeferenced and have valid reference system description in GeoTIFF tags.
-
-Supported format: 
-
-* :term:`GeoTIFF` or ZIP-archived GeoTIFF;
-* georeferenced JPEG or PNG in a ZIP-archive containing the image file and the \*.aux.xml file.
-
-
-
-.. _ngw_process_create_raster_layer:
-
-Creation process
-^^^^^^^^^^^^^^^^
-
-To add a raster layer navigate to a group where you want to create it. Press **Create resource** button and select  **Raster layer** (see :numref:`ngweb_admin_layers_create_raster_layer`). 
-
-.. figure:: _static/ngweb_create_raster_layer_en.png
-   :name: ngweb_admin_layers_create_raster_layer
-   :align: center
-   :width: 20cm
-
-   Selection of "Raster layer" resource type
-   
-On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
-The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
-
-If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
-
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
-   :name: ngweb_admin_layers_create_raster_layer_upload
-   :align: center
-   :width: 20cm
-
-   Uploading raster file  
-
-In the "Resource" tab specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
-It will be displayed in the admin interface. The "Key" field is optional.
-
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_3.png
-   :name: ngweb_admin_layers_create_raster_layer_resourse_name
-   :align: center
-   :width: 20cm
-
-   Raster layer name
-
-
-On the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_raster_layer_resourse_description`).
-
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_eng_2.png
-   :name: ngweb_admin_layers_create_raster_layer_resourse_description
-   :align: center
-   :width: 20cm
-
-   Raster layer description 
-
-
-In the "Metadata" tab you can enter information in the "key-value" format (:numref:`ngweb_admin_layers_create_raster_layer_resourse_metadata`).
-
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_eng_2.png
-   :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
-   :align: center
-   :width: 20cm
-
-   Raster layer metadata 
-   
-To complete click the **Create** button.
-
-.. _ngw_raster_volume:
-
-Uploading big rasters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Satellite images of high resulution and other rasters may be very large. The file size is not representative because data is compressed. The actual data size may be much bigger. To make sure that raster data is quickly rendered on a Web Map and services work fast raser files must be converted before uploading them o Web GIS.
-
-There are three limitation for uploading big rasters:
-
-1. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
-2. Max size of extracted raster in the cloud can be up to **4 GiB**. GeoTIFF uses a compression algorithm and the file size may be drastically smaller than the size of the unpacked data. To calculate the size of he decompressed raster multiply the three parameters: pixel count * number of bands * bytes per pixel. 
-
-.. note:: If the raster file does not have alpha channel, it will be added during uploading, further expanding the raster size, so for calculating the data size add +1 channel to the equasion.
-
-3. Overall data storage of the Web GIS - on Premium you can upload up to **50 GiB** of data  (this limit `can be expanded <https://nextgis.com/pricing-base/#storage>`_);
-
-There is no time limit for uploading raster files. 
-
-.. _ngw_raster_alpha:
-
-Raster layer with transparency (clip or alpha channel)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Most of utilities do not create an alpha channel and only add a NoData value. 
-To transform NoData value to an alpha channel use the command line utility 
-:program:`gdalwarp`. Here is an example of this command.
-
-.. code:: shell
-
-   gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
-   "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
-   d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
-   
-.. _ngw_raster_index:
-
-Uploading indexed color rasters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Indexed Color raster files are uploaded just like the RGB raster files. If the file is not in GeoTIFF format, you can convert it as follows:
-
-.. code-block:: shell
-
-    gdal_translate madison.map  madison.tif
-
-
-
-.. _ngw_process_create_raster_style:
-
-Raster style
-------------------
-
-After a raster file is successfully uploaded and a raster layer is created, you need to create a style to display it on a Web Map. There are several ways to create a raster style:
-
-* Create default QGIS raster style on the layer's page.
-
-.. todo:: _static/ngw_create_def_raster_style_en.png
-   :name: ngw_create_def_raster_style_pic
-   :align: center
-   :width: 16cm
-
-   Creating default QGIS style for the raster layer
-
-* Create default Raster style via **Create resource** button;
-
-.. figure:: _static/ngweb_create_raster_style_en.png
-   :name: ngweb_create_raster_style_pic
-   :align: center
-   :width: 20cm
-
-   Creating Raster style
-
-On the Tile cache tab you can enable cache, allow using tiles in non-tile requests, set up time after which the tiles expire (TTL) and max zoom level. To delete all previously created tiles of the style, check "Flush".
-
-* Create QGIS raster style using **Create resource** button. In the dropdown menu you can select:
-
-   * Style from file - select a QML or SLD file. 
-   * User-defined style - pick three channels, the values of these channels will be used to calculate a color in RGB model. You can set up min and max values for each channel;
-   * Default style - allows to add a default QGIS style to a layer that already has styles;
-   * Copy from resource - select a QGIS style of another raster layer to copy it.
-
-.. figure:: _static/ngweb_copy_raster_style_en.png
-   :name: ngweb_copy_raster_style_pic
-   :align: center
-   :width: 16cm
-
-   Copying QGIS raster style
-
-You will need this style to `add the raster to a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
-
 
 
 
@@ -186,7 +18,7 @@ You will need this style to `add the raster to a Web Map <https://docs.nextgis.c
 Vector layer from file
 -----------------------
 
-In NextGIS Web you can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
+In NextGIS Web you can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
 
 .. _ngw_vector_data_requirements:
 
@@ -262,25 +94,6 @@ It will be displayed in the admin interface. The "Key" field is optional.
    Vector layer name
 
 
-In the "Description" tab you can add any text describing the content of this layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`).
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_description_eng_2.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_description
-   :align: center
-   :width: 20cm
-
-   Vector layer description
-
-
-In the "Metadata" tab you can add information in the "key-value" format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
-
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_metadata_eng_2.png
-   :name: ngweb_admin_layers_create_vector_layer_resourse_metadata
-   :align: center
-   :width: 20cm
-
-   Vector layer metadata
-
 On the "Settings" tab you can enable feature versioning. It allows the layer to be edited directly `in QGIS via NextGIS Connect <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_ by multiple users at once.
 
 .. figure:: _static/create_vector_layer_vers_en.png
@@ -289,6 +102,8 @@ On the "Settings" tab you can enable feature versioning. It allows the layer to 
    :width: 16cm
 
    Vector layer settings
+
+Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
@@ -327,9 +142,7 @@ In the opened window use the dropdown menu to select "Create empty layer". In th
 In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-In the “Description” tab you can add any text describing the content (:numref:`ngweb_admin_layers_create_vector_layer_resourse_description`). 
-
-In the “Metadata” tab you can add information in the “key-value” format (:numref:`ngweb_admin_layers_create_vector_layer_resourse_metadata`).
+Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
 After uploading the file and specifying the parameters, click the Create button. 
 
@@ -339,168 +152,114 @@ To add features to the newly created layer you can use the `editing toolbar <htt
 
 
 
+.. _ngw_create_raster_layer:
 
-
-
-.. _ngw_create_wms_layer:
-
-WMS layer
----------
-
-.. note:: 
-	Currently supported WMS versions 1.1.1 and 1.3.0.
-
-NextGIS Web is a WMS client. To connect a WMS layer you need to know its address. WMS server should be able to serve it using a coordinate system EPSG:3857. You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response. For example a WMS layer provided by Geofabrik (GetCapabilities), responds in EPSG:4326 and EPSG:900913. While EPSG:900913 and EPSG:3857 are technically the same, NextGIS Web requests data in EPSG:3857 and this particular server does not support that coordinate system.
-
-
-
-.. _ngw_create_wms_service:
-
-WMS service
+Raster layer
 ------------
 
-NextGIS Web software can perform as WMS server. This protocol is used to provide images with a requested extent. 
+Raster images in NextGIS Web should be loaded using the "Raster Layer" special resource.
 
-To deploy a WMS service you need to add a resource. Press **Create resource** button and select  **WMS service** (see :numref:`admin_layers_create_wms_service`). 
+.. _ngw_raster_requirements:
 
-.. figure:: _static/ngweb_create_wms_service_en.png
-   :name: admin_layers_create_wms_service
+Requirements for uploaded files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Data must be georeferenced and have valid reference system description in GeoTIFF tags.
+
+Supported format: 
+
+* :term:`GeoTIFF` or ZIP-archived GeoTIFF;
+* georeferenced JPEG or PNG in a ZIP-archive containing the image file and the \*.aux.xml file.
+
+
+
+.. _ngw_process_create_raster_layer:
+
+Creation process
+^^^^^^^^^^^^^^^^
+
+To add a raster layer navigate to a group where you want to create it. Press **Create resource** button and select  **Raster layer** (see :numref:`ngweb_admin_layers_create_raster_layer`). 
+
+.. figure:: _static/ngweb_create_raster_layer_en.png
+   :name: ngweb_admin_layers_create_raster_layer
    :align: center
    :width: 20cm
 
-   Selection of "WMS service" resource type
+   Selection of "Raster layer" resource type
    
-Create resource dialog for WMS service is presented on :numref:`ngweb_admin_layers_create_wms_service_name`. 
+On the "Raster layer" tab you need to upload a geodata file in GeoTIFF format.
+The upload dialog indicates the maximum file size allowed on your subscription plan (:numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
-.. figure:: _static/admin_layers_create_wms_service_name_eng_3.png
-   :name: ngweb_admin_layers_create_wms_service_name
+If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
+
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
+   :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
    :width: 20cm
 
-   Create resource dialog for WMS service
+   Uploading raster file  
 
-Enter the name of the resource that will be displayed in the administrator interface. Do not 
-confuse this name with a name of layers in a database. 
+In the "Resource" tab specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
+It will be displayed in the admin interface. The "Key" field is optional.
 
-"Keyname" field is optional.
-
-On the "Description" tab you can add any text describing the content of this service.
-
-.. figure:: _static/admin_layers_create_wms_service_description_eng_2.png
-   :name: admin_layers_create_wms_service_description_eng
+.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_3.png
+   :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
    :width: 20cm
 
-   WMS service description
-
-On the "Metadata" tab you can enter information in the "key-value" format.
-
-.. figure:: _static/admin_layers_create_wms_service_metadata_eng_2.png
-   :name: admin_layers_create_wms_service_metadata_eng
-   :align: center
-   :width: 20cm
-
-   WMS service metadata
- 
-Switch to "WMS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wms_service_url`. Here add links to required layers or layer styles. You can also set the min and max scale for the data visualisation.
-
-.. figure:: _static/admin_layers_create_wms_service_url_eng_2.png
-   :name: ngweb_admin_layers_create_wms_service_url
-   :align: center
-   :width: 20cm
-
-   WMS service tab of Create resource dialog
-
-After the resource is created, you will see a message with the WMS service URL which you can use in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`. 
-Then you need to `set access permissions for the WMS service <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_.
-
-NextGIS Web layer can be added to desktop, mobile and Web GIS in different ways.
+   Raster layer name
 
 
-Using WMS service connection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
+   
+To complete click the **Create** button.
 
-NextGIS Web acts as a WMS server: WMS services created in NextGIS Web can be added to any software that supports WMS protocol. For that you need to know the WMS service URL. You can get it on the WMS service page. The link may look like this:
+.. _ngw_raster_volume:
 
-.. code:: html
+Uploading big rasters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   https://demo.nextgis.com/api/resource/4817/wms?
+Satellite images of high resulution and other rasters may be very large. The file size is not representative because data is compressed. The actual data size may be much bigger. To make sure that raster data is quickly rendered on a Web Map and services work fast raser files must be converted before uploading them o Web GIS.
 
-To use WMS service through GDAL utilities you need to create an XML file for the required layer.
-Enter these parameters to the ServerUrl string in example below. The rest remains unchanged.
+There are three limitation for uploading big rasters:
 
-.. code:: xml
+1. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
+2. Max size of extracted raster in the cloud can be up to **4 GiB**. GeoTIFF uses a compression algorithm and the file size may be drastically smaller than the size of the unpacked data. To calculate the size of he decompressed raster multiply the three parameters: pixel count * number of bands * bytes per pixel. 
 
-   <GDAL_WMS>
-    <Service name="WMS">
-        <Version>1.1.1</Version>
-        <ServerUrl>https://demo.nextgis.com/api/resource/4817/wms?</ServerUrl>
-        <SRS>EPSG:3857</SRS>
-        <ImageFormat>image/png</ImageFormat>
-        <Layers>moscow_boundary_multipolygon</Layers>
-        <Styles></Styles>
-    </Service>
-    <DataWindow>
-      <UpperLeftX>-20037508.34</UpperLeftX>
-      <UpperLeftY>20037508.34</UpperLeftY>
-      <LowerRightX>20037508.34</LowerRightX>
-      <LowerRightY>-20037508.34</LowerRightY>
-      <SizeY>40075016</SizeY>
-      <SizeX>40075016.857</SizeX>
-    </DataWindow>
-    <Projection>EPSG:3857</Projection>
-    <BandsCount>3</BandsCount>
-   </GDAL_WMS>
+.. note:: If the raster file does not have alpha channel, it will be added during uploading, further expanding the raster size, so for calculating the data size add +1 channel to the equasion.
 
-If you need an image with transparency (alpha channel) set ``<BandsCount>4</BandsCount>``.
+3. Overall data storage of the Web GIS - on Premium you can upload up to **50 GiB** of data  (this limit `can be expanded <https://nextgis.com/pricing-base/#storage>`_);
 
-Here is an example of a GDAL command. The utility gets an image by WMS from NextGIS Web and saves it to a GeoTIFF format.
+There is no time limit for uploading raster files. 
 
-.. code:: bash
+.. _ngw_raster_alpha:
 
-   $ gdal_translate -of "GTIFF" -outsize 1000 0  -projwin  4143247 7497160 \
-   4190083 7468902   ngw.xml test.tiff
+Raster layer with transparency (clip or alpha channel)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Most of utilities do not create an alpha channel and only add a NoData value. 
+To transform NoData value to an alpha channel use the command line utility 
+:program:`gdalwarp`. Here is an example of this command.
+
+.. code:: shell
+
+   gdalwarp -t_srs EPSG:3857 -multi -dstalpha -dstnodata none -wo \
+   "UNIFIED_SRC_NODATA=YES" -co COMPRESS=JPEG \ 
+   d:\temp\o\ast_20010730_010043_rgb.tif d:\temp\o\ast_20010730_010043_rgba.tif
+   
+.. _ngw_raster_index:
+
+Uploading indexed color rasters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Indexed Color raster files are uploaded just like the RGB raster files. If the file is not in GeoTIFF format, you can convert it as follows:
+
+.. code-block:: shell
+
+    gdal_translate madison.map  madison.tif
 
 
-.. _ngw_connect_tms_gdal:
 
-Using TMS service
-^^^^^^^^^^^^^^^^^
-
-NextGIS Web is a TMS server. Layers and styles created in it can be accessed via any software supporting TMS protocol. You will need the URL for the TMS service.
-
-The link should look like this:
-
-.. code:: html
-
-   https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
-
-To use TMS service through GDAL utilities you need to create an XML file. You will need the TMS link.
-Enter these parameters to ServerUrl string in example below. The rest remains unchanged.
-
-.. code:: xml
-
-   <GDAL_WMS>
-    <Service name="TMS">
-        <ServerUrl>https://demo.nextgis.com/api/component/render/tile?z={z}&x={x}&y={y}&resource=234
-        </ServerUrl>
-    </Service>
-    <DataWindow>
-        <UpperLeftX>-20037508.34</UpperLeftX>
-        <UpperLeftY>20037508.34</UpperLeftY>
-        <LowerRightX>20037508.34</LowerRightX>
-        <LowerRightY>-20037508.34</LowerRightY>
-        <TileLevel>18</TileLevel>
-        <TileCountX>1</TileCountX>
-        <TileCountY>1</TileCountY>
-        <YOrigin>top</YOrigin>
-    </DataWindow>
-    <Projection>EPSG:3857</Projection>
-    <BlockSizeX>256</BlockSizeX>
-    <BlockSizeY>256</BlockSizeY>
-    <BandsCount>4</BandsCount>
-    <Cache />
-   </GDAL_WMS> 
 
 .. _ngw_tile_set:
 
@@ -558,152 +317,4 @@ Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`__.
 
 
 
-.. _ngw_wfs_service:
-
-WFS service
------------
-
-WFS service works similarly to WMS layer, but you add layers instead of styles.
- 
-.. note::
-     Currently supported filters are Intersects, ResourceId (ObjectId, FeatureId).
-
-NextGIS Web acts as WFS server and publishes WFS services based on vector layers. Third party software can use these services to edit vector data on server. Supported WFS protocol versions are 1.0, 1.1, 2.0, 2.0.2. 
-
-To deploy a WFS service press **Create resource** button and select  **WFS service** (see :numref:`admin_layers_create_wfs_service`). 
-
-.. figure:: _static/ngweb_create_wfs_service_en.png
-   :name: admin_layers_create_wfs_service
-   :align: center
-   :width: 20cm
-
-   Selection of "WFS service" resource type
-   
-
-On the "WFS service" tab, which is presented on :numref:`ngweb_admin_layers_create_wfs_service_url` and add required layers to a list (see :numref:`ngweb_admin_layers_create_wfs_service_url`).
-For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
-
-.. figure:: _static/create_wfs_service_settings_en.png
-   :name: ngweb_admin_layers_create_wfs_service_url
-   :align: center
-   :width: 16cm
-
-   WFS service tab of Create resource dialog
-
-On the "Resource" tab you can enter the name that will be displayed in the list of resources. Do not 
-confuse this name with the names of layers in a database. 
-
-"Keyname" field is optional.
-
-On the "Description" tab you can add any text describing the content of this service.
-
-.. figure:: _static/admin_layers_create_wfs_description_eng_2.png
-   :name: admin_layers_create_wfs_description_eng
-   :align: center
-   :width: 20cm
-
-   WFS service description
-
-On the "Metadata" tab you can enter information in the "key-value" format.
-
-.. figure:: _static/admin_layers_create_wfs_metadata_eng_2.png
-   :name: admin_layers_create_wfs_metadata_eng
-   :align: center
-   :width: 20cm
-
-   WFS service metadata
- 
-
-
-
-.. _ngw_service_using_wfs:
-
-Using WFS service
-^^^^^^^^^^^^^^^^^
-
-After the resource is created, a URL for the WFS service is available. You can use it in other software, for example :program:`NextGIS QGIS`. 
-
-You can set access permissions for WFS service if needed. See `this section <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`__ for details.
-
-WFS services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
-
-.. sourcecode:: http
-
-   https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
-
-.. _ngw_OGC_API_Features:
-
-OGC API Features service
--------------------------
-
-The :term:`OGC API Features` service is configured in the same way as for a WFS service.
- 
-NextGIS Web acts as OGC API Features server and publishes OGC API Features services based on vector layers. Third party software can use these services to edit vector data on server. Supported OGC API Features protocol versions is 1.0.0. 
-
-To deploy a OGC API Features service press **Create resource** button and select **OGC API Features service** (see :numref:`admin_layers_create_ogc_api_features_service_en`). 
-
-.. figure:: _static/ngweb_create_service_OGC_en.png
-   :name: admin_layers_create_ogc_api_features_service_en
-   :align: center
-   :width: 20cm
-
-   Selection of "OGC API Features service" resource type
-   
-Create resource dialog for OGC API Features service is presented on :numref:`admin_layers_create_ogc_api_features_service_name_en`. 
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_name_en_2.png
-   :name: admin_layers_create_ogc_api_features_service_name_en
-   :align: center
-   :width: 20cm
-
-   Create resource dialog for OGC API Features service
-
-Enter the name of the resource that will be displayed in the administrator interface. Do not 
-confuse this name with a name of layers in a database. 
-
-"Keyname" field is optional.
-
-On the "Description" tab you can add any text describing the content of this service.
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_description_en.png
-   :name: admin_layers_create_ogc_api_features_service_description_en
-   :align: center
-   :width: 20cm
-
-   OGC API Features service description
-
-On the "Metadata" tab you can enter information in the "key-value" format.
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_en.png
-   :name: admin_layers_create_ogc_api_features_service_metadata_en
-   :align: center
-   :width: 20cm
-
-   OGC API Features service metadata
- 
-Switch to "OGC API Features service" tab, which is presented on :numref:`admin_layers_create_ogc_api_features_service_settings_en` and add required layers to a list (see :numref:`admin_layers_create_ogc_api_features_service_settings_en`).
-For each layer you can set a limit for the number of features returned from the vector layer. By default the value is 1000. If this parameter is set to empty, the limit will be disabled and all features will be returned to the client. This may result in high server load and significant timeouts in case of large data volume.
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_settings_en.png
-   :name: admin_layers_create_ogc_api_features_service_settings_en
-   :align: center
-   :width: 20cm
-
-   OGC API Features service tab of Create resource dialog
-
-
-.. _ngw_service_using_OGC_API_Features:
-
-Using OGC API Features service
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-After the resource is created, a URL for the OGC API Features service is available. You can use it in other software, for example :program:`QGIS`. 
-
-You can `set access permissions for OGC API Features service <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_ if needed.
-
-OGC API Features services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
-
-.. sourcecode:: http
-
-   hhttps://yourwebgis.nextgis.com/api/resource/208/ogcf
 

@@ -1,9 +1,6 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Yulia Grigorenko <yulia.grigorenko@nextgis.com>
-
 .. _ngw_style_create:
     
-Vector layer styles
+Styles
 =====================
 
 Style is a type of NextGIS resource that describes a way to render the geodata.
@@ -384,4 +381,48 @@ In the "Web Map" actions pane of the Web Map properties window select "Display".
 
 
 
+
+
+.. _ngw_process_create_raster_style:
+
+Raster style
+------------------
+
+After a raster file is successfully uploaded and a raster layer is created, you need to create a style to display it on a Web Map. There are several ways to create a raster style:
+
+* Create default QGIS raster style on the layer's page.
+
+.. todo:: _static/ngw_create_def_raster_style_en.png
+   :name: ngw_create_def_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Creating default QGIS style for the raster layer
+
+* Create default Raster style via **Create resource** button;
+
+.. figure:: _static/ngweb_create_raster_style_en.png
+   :name: ngweb_create_raster_style_pic
+   :align: center
+   :width: 20cm
+
+   Creating Raster style
+
+On the Tile cache tab you can enable cache, allow using tiles in non-tile requests, set up time after which the tiles expire (TTL) and max zoom level. To delete all previously created tiles of the style, check "Flush".
+
+* Create QGIS raster style using **Create resource** button. In the dropdown menu you can select:
+
+   * Style from file - select a QML or SLD file. 
+   * User-defined style - pick three channels, the values of these channels will be used to calculate a color in RGB model. You can set up min and max values for each channel;
+   * Default style - allows to add a default QGIS style to a layer that already has styles;
+   * Copy from resource - select a QGIS style of another raster layer to copy it.
+
+.. figure:: _static/ngweb_copy_raster_style_en.png
+   :name: ngweb_copy_raster_style_pic
+   :align: center
+   :width: 16cm
+
+   Copying QGIS raster style
+
+You will need this style to `add the raster to a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
 
