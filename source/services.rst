@@ -267,7 +267,7 @@ This may result in high server load and significant timeouts in case of large da
 .. figure:: _static/create_wfs_service_settings_en.png
    :name: ngweb_admin_layers_create_wfs_service_url
    :align: center
-   :width: 16cm
+   :width: 14cm
 
    WFS service tab of Create resource dialog
 
@@ -287,7 +287,8 @@ WFS allows to edit data in desktop apps.
 WFS services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
 
 .. sourcecode:: http
-        https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
+
+    https://mywebgis.nextgis.com/api/resource/2413/wfs?SERVICE=WFS&TYPENAME=ngw_id_2412&username=administrator&password=mypassword&srsname=EPSG:3857&VERSION=1.0.0&REQUEST=GetFeature
 
 .. _ngw_wms_service:
 
