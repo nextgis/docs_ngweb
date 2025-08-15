@@ -113,15 +113,16 @@ Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyl
 
 
 
+
 .. _ngw_create_empty_vector_layer:
 
 Empty vector layer
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Creating an empty vector layer allows you to start a data base in your WebGIS without using a desktop app. 
 
 Navigate to the resource group (folder) in which to create a vector layer.
-Press **Create resource** button and select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer_2`). 
+Click **Create resource** button and select  **Vector layer**. 
 
 .. figure:: _static/ngweb_create_vector_layer_en.png
    :name: ngweb_admin_layers_create_vector_layer_2
@@ -139,16 +140,66 @@ In the opened window use the dropdown menu to select "Create empty layer". In th
 
    Selecting geometry type for an empty layer
 
-In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
-It will be displayed in the admin interface. The "Key" field is optional.
+**Points, lines and polygons** are supported. For any of these geometry types you can select an option with **multigeometries** and/or **Z-coordinate**.
 
-Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
-After uploading the file and specifying the parameters, click the Create button. 
+On the "Resource" tab enter the name of the vector layer. It will be displayed in the resource list. By default the resource type is used as its display name.
 
-Then you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`__ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+Next, click on the three dots next to the **Create** button and select **Create and edit**.
 
-To add features to the newly created layer you can use the `editing toolbar <https://docs.nextgis.com/docs_ngcom/source/data_edit.html#create-a-new-feature-point-line-polygon>`_.
+.. figure:: _static/create_and_edit_vector_layer_en.png
+   :name: create_and_edit_vector_layer_pic
+   :align: center
+   :width: 16cm
+
+   Opening the resource update page immediately after creating the resource
+
+The layer is created and a new tab opens where you can add attributes (fields).
+
+.. figure:: _static/empty_vector_layer_fields_en.png
+   :name: empty_vector_layer_fields_pic
+   :align: center
+   :width: 16cm
+
+   Fields tab
+
+Click |button_plus_layer| **Add**. A field is created. Click on it to open the properties dialog. 
+
+Select the data type for the field (numbers: INTEGER, BIGIN, REAL, text: STRING, date and/or time: DATE, TIME, DATETIME).
+
+The name of the field can also be edited.
+
+.. figure:: _static/vector_layer_field_settings_en.png
+   :name: vector_layer_field_settings_pic
+   :align: center
+   :width: 16cm
+
+   A new field with string data type and "Address" as a custom name
+
+Click |button_hide_details| **Hide detaild** to return to the list of fields.
+
+.. figure:: _static/vector_layer_field_list_en.png
+   :name: vector_layer_field_list_pic
+   :align: center
+   :width: 16cm
+
+   Field list
+
+When all the necessary fields are added, click **Save**.
+
+Later you can `edit the fields <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+
+.. |button_hide_details| image:: _static/button_hide_details.png
+   :width: 6mm
+
+
+Now you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
+
+To add features to the newly created layer you can use the `editing toolbar <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html>`_.
+
 
 
 
