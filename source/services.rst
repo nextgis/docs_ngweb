@@ -207,24 +207,7 @@ NextGIS Web является сервером OGC API Features - может пу
    Наименование Сервиса OGC API Features
    
    
-На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`admin_layers_create_ogc_api_features_service_description_rus`)
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_description_rus_2.png
-   :name: admin_layers_create_ogc_api_features_service_description_rus
-   :align: center
-   :width: 20cm
-
-   Описание Сервиса OGC API Features
-   
-В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_ogc_api_features_service_metadata_rus`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-.. figure:: _static/admin_layers_create_ogc_api_features_service_metadata_rus_2.png
-   :name: admin_layers_create_ogc_api_features_service_metadata_rus
-   :align: center
-   :width: 20cm
-
-   Метаданные Сервиса OGC API Features
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 Вкладка "Сервис OGC API Features" отвечает за слои, включаемые в сервис (:numref:`admin_layers_create_ogc_api_features_service_settings_rus`). Для каждого 
 добавленного слоя нужно указать число возвращаемых из базы объектов. По умолчанию это значение равно 1000.
@@ -291,24 +274,7 @@ NextGIS Web является сервером WFS - может публиков�
    Наименование Сервиса WFS
    
    
-На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`ngweb_admin_layers_create_wfs_description`)
-
-.. figure:: _static/admin_layers_create_wfs_description_rus_2.png
-   :name: ngweb_admin_layers_create_wfs_description
-   :align: center
-   :width: 20cm
-
-   Описание Сервиса WFS
-   
-В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_wfs_metadata`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-.. figure:: _static/admin_layers_create_wfs_metadata_rus_2.png
-   :name: admin_layers_create_wfs_metadata
-   :align: center
-   :width: 20cm
-
-   Метаданные Сервиса WFS
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 Вкладка "Сервис WFS" отвечает за слои, включаемые в сервис (:numref:`ngweb_admin_layers_create_wfs_service_settings`). 
 Для каждого добавленного слоя нужно указать число возвращаемых из базы объектов. По умолчанию это значение равно 1000.
@@ -375,24 +341,7 @@ NextGIS Web является сервером WFS - может публиков�
    
    Наименование сервиса WMS
 
-На вкладке "Описание" можно добавить произвольный текст, описывающий текущий ресурс (:numref:`admin_layers_create_wms_description`)
-
-.. figure:: _static/admin_layers_create_wms_description_rus_2.png
-   :name: admin_layers_create_wms_description
-   :align: center
-   :width: 20cm
-
-   Описание Сервиса WMS
-   
-В "Метаданные" ресурса можно записать информацию в формате "ключ-значение" (:numref:`admin_layers_create_wms_metadata`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-.. figure:: _static/admin_layers_create_wms_metadata_rus_2.png
-   :name: admin_layers_create_wms_metadata
-   :align: center
-   :width: 20cm
-
-   Метаданные Сервиса WMS
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
    
 
 На вкладке "Сервис WMS" необходимо добавить ссылки на нужные слои или стили. (:numref:`ngweb_admin_layers_create_wms_service_url`). Также можно указать диапазон масштабных уровней отображения данных.
