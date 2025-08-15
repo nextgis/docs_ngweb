@@ -19,7 +19,13 @@ Alternatively, open the resource properties page and then select "Update" in the
 
    Selection of "Update" action in the actions pane
 
-In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can edit parent of the selected resource, add `description, metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_ and configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attributes <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`_.
+In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) you can 
+
+* move the resource to a different parent resource, 
+* add `description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_;
+* configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. 
+
+Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attribute fields <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`_.
 
 .. figure:: _static/ngw_update_resource_en.png
    :name: ngw_window_update_resource1
@@ -131,37 +137,6 @@ See how it works in our video:
 
 Watch on `youtube <https://youtu.be/-87-azrgakw?si=xO3STGS1DgZiiQR_>`_.
 
-.. _ngw_update_info_metada:
-
-Edit description and metadata
----------------------------------
-
-The "Description" tab allows to add text, links and images describing the resource.
-
-.. figure:: _static/ngw_description_window_eng_3.png
-   :name: ngw_description_window
-   :align: center
-   :width: 20cm
-  
-   "Description" tab
-
-The "Metadata" tab allows to add and delete metadata, and to display them in a table using **Add** and **Remove** operations:  
-
-.. figure:: _static/ngw_metadata_tab_eng_3.png
-   :name: ngw_metadata_tab
-   :align: center
-   :width: 16cm
-
-   "Metadata" tab
-
-The table contains three columns: 
-
-1. Key. It allows to describe metadata features (author, date, version etc.)
-2. Type: String, Numer, Boolean, Empty (if you select "Empty", the value field will be cleared)
-3. Value. Value corresponds to the key type
-
-
-
 .. _ngw_delete_resource:
 
 Delete resource
@@ -241,3 +216,49 @@ Tick the resources and select "Delete" from the same menu. Confirm the operation
    :width: 20cm
    
    Deleting multiple resources
+
+
+.. _ngw_update_info_metada:
+
+Edit description and metadata
+---------------------------------
+
+The "Description" tab allows to add text, links and images describing the resource.
+
+.. figure:: _static/ngw_description_window_eng_3.png
+   :name: ngw_description_window
+   :align: center
+   :width: 20cm
+  
+   "Description" tab
+
+The "Metadata" tab allows to add and delete metadata, and to display them in a table using **Add** and **Remove** operations:  
+
+.. figure:: _static/ngw_metadata_tab_eng_3.png
+   :name: ngw_metadata_tab
+   :align: center
+   :width: 16cm
+
+   "Metadata" tab
+
+The table contains three columns: 
+
+1. Key. It allows to describe metadata features (author, date, version etc.)
+2. Type: String, Numer, Boolean, Empty (if you select "Empty", the value field will be cleared)
+3. Value. Value corresponds to the key type
+
+Typically, metadata is used to develop third-party applications using `API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_.
+
+.. _ngw_resource_key:
+
+Keyname for API integrations
+-----------------------------
+
+On the Resource tab you can enter a unique Key for the resource to identify the resource in program code.
+
+Key requirements:
+
+* Plain latin symbols and numbers;
+* The first symbol must be a letter.
+
+In QGIS you can search a resource by its key via `NextGIS Connect <https://docs.nextgis.com/docs_ngconnect/source/filter.html#ngc-filter-expression>`_.
