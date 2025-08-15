@@ -385,7 +385,7 @@ You will need this style to `add the raster to a Web Map <https://docs.nextgis.c
 Tile cache
 ------------
 
-Caching provides faster rendering of Web Map layers. It can be enabled for `vector <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ and `raster layer styles <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-raster-style>`_ as well as for `WMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#wms-layer>`_ and `TMS <https://docs.nextgis.com/docs_ngweb/source/layers.html#tms>`_ layers.
+Caching provides faster rendering of Web Map layers. It can be enabled for `vector <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ and `raster layer styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-process-create-raster-style>`_ as well as for `WMS <https://docs.nextgis.com/docs_ngweb/source/connections.html#wms>`_ and `TMS <https://docs.nextgis.com/docs_ngweb/source/connections.html#tms>`_ layers.
 
 To enable caching go to the Tile cache tab of the resource and check "Enabled".
 

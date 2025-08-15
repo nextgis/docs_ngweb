@@ -179,7 +179,7 @@ If the structure of the database changes (column names, column types, number of 
 PostGIS diagnostics
 -----------------------
 
-You can check the correctness of the entered data when adding the `PostGIS Connection <https://docs.nextgis.com/docs_ngweb/source/layers.html#creating-postgis-connection>`_ resource using the **Diagnostics** tool.
+You can check the correctness of the entered data when adding the `PostGIS Connection <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#creating-postgis-connection>`_ resource using the **Diagnostics** tool.
 To do this, you need to click on the **Diagnostics** button on the panel on the right.
 
 .. figure:: _static/diagnostics_start_en.png
