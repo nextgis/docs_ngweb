@@ -182,7 +182,7 @@ OGC API – Features service
 Vector data uploaded to Web GIS can be published via OGC API Features protocol. This allows editing data with external applications.
 
 The :term:`OGC API Features` service is configured in the same way as for a WFS service.
-   
+
 NextGIS Web acts as OGC API Features server and publishes OGC API Features services based on vector layers. Third party software can use these services to edit vector data on server.  Supported OGC API Features protocol versions is 1.0.0. 
 
 To deploy a OGC API Features service press **Create resource** button and select **OGC API Features service** (see :numref:`admin_layers_create_ogc_api_features_service_en`).  
