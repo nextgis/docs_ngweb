@@ -81,17 +81,18 @@ NextGIS Web
    admin_interface
    create_resource
    layers
-   connections
    services
    edit_resource
    feature_table
+   feature_edit
    mapstyles
    create_other
    version
    layers_settings 
    vect_layer_upload_params
    postgis_details
-   webmaps_admin   
+   connections
+   webmaps_admin  
    webmap_clone
    webmaps_client
    print
@@ -100,19 +101,18 @@ NextGIS Web
    favorites
    annotation
    users
-   permissions
+   permissions 
    ngw_srs
    collector
    data_collection_on_premise
    trackers
-   cors 
+   cors
    infowebgis
    analytics
    look
    domain
    label
-   sysadmin_updates    
-   extension
+   sysadmin_updates 
 
 
 * :ref:`genindex`
