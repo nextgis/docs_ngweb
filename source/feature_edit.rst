@@ -1,0 +1,407 @@
+.. _ngw_edit_objects:
+
+Edit vector features
+====================================
+
+You can modify **geometries and attributes** of vector features via Web interface or `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
+
+
+.. _ngw_allow_edit:
+
+
+Allow editing
+----------------------------------------
+
+By default editing of a Web Map is disabled. To allow users to modify the layers of the map, enable editing in the Web Map settings. To find out how to open the "Update resource" dialog, see  :ref:`this chapter<ngw_update_resource>`. 
+
+You can enable or disable editing of all Web Map layers on the “Settings” tab by selecting the corresponding option in the dropdown menu (see :numref:`webmap_allow_editting`).
+
+.. figure:: _static/webgis_allow_editting_en.png
+   :name: webmap_allow_editting
+   :align: center
+   :width: 16cm
+
+   "Enable layers editing" is turned on
+
+.. note:: 
+	By default layer editing is turned off.
+	
+Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. The "Modify data" permission can be set for the entire resource group where the data is stored or for individual layers.
+
+Users who do not have "Modify data" permission won't be able to activate the edit mode. `How to check user permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
+
+.. figure:: _static/webgis_permiss_editing_en.png
+   :name: webgis_permiss_editing_pic
+   :align: center
+   :width: 16cm
+
+   Permissions set for the Data resource group to allow editing
+
+
+.. _ngw_edit_objects:
+
+Edit mode on a Web Map 
+------------------------
+
+1. Open :ref:`Web Map <ngcom_webmap_create>` and select the layer with the feature you need to edit.
+2. Open dropdown menu by pressing the three dots to the right of the layer name (see :numref:`webmap_edit`), then select "Edit".
+
+.. figure:: _static/webgis_edit_objects_eng_3.png
+   :name: webmap_edit
+   :align: center
+   :width: 20cm
+
+   Entering the editing mode
+
+3. Editing toolbar will appear on the Web Map (see :numref:`webmap_edit_panel`):
+
+.. figure:: _static/webgis_edit_objects_panel_eng_2.png
+   :name: webmap_edit_panel
+   :align: center
+   :width: 20cm
+
+   Editing toolbar
+   
+
+.. _ngw_create_objects:
+
+Create a new feature (point, line, polygon)
+--------------------------------------------
+
+1. On the editing toolbar activate "Create features" button (see :numref:`webmap_create_objects`):
+
+.. figure:: _static/webgis_create_new_objects_eng_2.png
+   :name: webmap_create_objects
+   :align: center
+   :width: 20cm
+
+   "Create features" button on the editing toolbar
+
+2. A blue circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. You can add several new features one after another. While creating a line you need to indicate its start and end points by clicking on the map. While creating a polygon each new click on the map will indicate its new vertice, to finish a polygon you need to click on its start point. You can use adhesion while creating vertices.
+
+
+3. In the opened pop-up window you can enter attribute values, then and press **Ok** to complete feature creation. To clear the form, press **Reset**. 
+
+.. figure:: _static/webgis_attr_new_objects_en.png
+   :name: webgis_attr_new_objects_pic
+   :align: center
+   :width: 20cm
+
+   Entering attribute values for a new feature
+
+You can add multiple features in one go. To create a straight line click on the map to indicate its beginning and end. To create a polygon, click on the map to mark its vertices, then click on the first point to complete the polygon. Snapping is used while adding vertices.
+
+4. To finish creation of the new feature press "Stop editing" in the layer menu.
+5. In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
+
+.. figure:: _static/webgis_finish_editting_eng_3.png
+   :name: webmap_finish_edit
+   :align: center
+   :width: 20cm
+
+   Dialog window of finishing edits
+
+
+.. _ngw_delete_objects:
+
+Delete a feature
+-----------------
+
+1. On the editing toolbar activate "Delete features" button (see :numref:`webmap_delete_objects`):
+
+.. figure:: _static/webgis_delete_objects_eng_2.png
+   :name: webmap_delete_objects
+   :align: center
+   :width: 20cm
+
+   "Delete features" button on the editing toolbar
+
+2. Features you can modify will reduce their color intensity and have a blue outline. The pointer will become a black cross.
+
+3. Left-click to select the features you would like to delete. Selected features will become dark again.
+
+.. figure:: _static/webgis_delete_objects_select_en.png
+   :name: webgis_delete_objects_select
+   :align: center
+   :width: 20cm
+   
+   The layer with the purple points is active. The marked points have been selected to be deleted
+   
+4. Select "Stop editing" in the layer dropdown menu.
+5. In the opened dialog select "Save" (see :numref:`webmap_finish_edit`).
+
+.. _ngw_move_objects:
+
+Move a feature or its vertices
+-------------------------------
+
+1. On the editing toolbar activate "Modify features" button (pencil icon, see :numref:`webmap_change_objects`):
+
+.. figure:: _static/webgis_change_objects_eng_2.png
+   :name: webmap_change_objects
+   :align: center
+   :width: 20cm
+
+   "Modify features" button on the editing toolbar
+
+2. Features you can modify will reduce their color intensity and have a blue outline.
+3. Select a feature (point) or one of its vertices (line, polygon) with the pointer and drag it,  then release on a new place. For vertices modifying an adhesion will work.
+
+.. figure:: _static/webgis_move_objects_en.png
+   :name: webgis_move_objects
+   :align: center
+   :width: 20cm
+   
+   Moving a point. Before you confirm the edit, both its initial and its final location will be visible on the map
+
+4. Select "Stop editing" in the layer dropdown menu.
+5. In the opened dialog select "Save" (see :numref:`webmap_finish_edit`).
+
+.. note:: 
+	You can edit several layers simultaneously. To do it enter the edit mode in every layer you want to edit. Adhesion will work for features of all these layers.
+
+.. _ngw_vertices:
+
+Add and delete vertices
+-------------------------
+
+To delete a vertice enter the editing mode, hold **Shift** and click on the vertice. 
+
+To add a vertice, click on the line between two existing vertices and drag it to the desired location.
+
+.. figure:: _static/ngw_new_vertice_en.png
+   :name: ngw_new_vertice_pic
+   :align: center
+   :width: 16cm
+   
+   Creating a new vertice
+
+
+
+.. _ngw_attr_values_edit:
+
+Edit attribute values
+----------------------------------
+
+NextGIS Web software allows to edit attributes for geographical features. Editing could be launched from the administrator interface or from the map display. 
+
+* Editing attributes from administrator interface: 
+
+  - Click the table icon opposite the resource or select an action for a vector layer called "Feature table" in the actions pane (see :numref:`admin_table_objects_upload`).
+  - A feature table for the layer will open. Select the row you want to edit. It will be highlighted in yellow.
+  - Click **Edit** button (see :numref:`ngweb_editing_attributes2.7`).
+
+.. figure:: _static/ngweb_editing_attributes_eng_2.png
+   :name: ngweb_editing_attributes2.7
+   :align: center
+   :width: 16cm
+   
+   Editing attributes from administrator interface
+  
+* Editing attributes from the map display: 
+
+  - Open a Web Map.
+  - Click on the map with Identify tool active.
+  - Click edit button in the Identify window (the last tab, see :numref:`ngweb_editing_when_viewing_map`).
+
+.. figure:: _static/editing_when_viewing_map_open_en.png
+   :name: ngweb_editing_when_viewing_map
+   :align: center
+   :width: 20cm
+
+   Editing attributes from the map
+
+You can change attribute values in the opened window. Description made on "Description" tab will be visible on the map display in the indentify window. 
+
+Editing page has following tabs:
+
+* "Attributes" tab (see :numref:`ngweb_tab_attributes`).
+
+.. figure:: _static/ngweb_tab_attributes_eng_2.png
+   :name: ngweb_tab_attributes
+   :align: center
+   :width: 16cm
+ 
+   "Attributes" tab
+
+To edit an attribute click on the field.
+
+Numbers can be typed in or modified with errows that appear on the right end of the field.
+
+Dates also can be typed in or selected in the calender. To open the calender click the icon on the right end of the field.
+
+
+* "Description" tab (see :numref:`ngweb_tab_description`).
+
+.. figure:: _static/ngweb_tab_description_eng_2.png
+   :name: ngweb_tab_description
+   :align: center
+   :width: 20cm
+
+   "Description" tab
+
+* "Attachments" tab (see :numref:`ngweb_tab_attachment`).
+
+.. figure:: _static/ngweb_tab_attachment_eng_2.png
+   :name: ngweb_tab_attachment
+   :align: center
+   :width: 16cm
+ 
+   "Attachments" tab
+
+.. note::
+
+   When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
+   When editing a layer based on a Shapefile attribute all changes are saved to a local database. 
+
+.. note::
+
+   Geodata with changed attributes could be downloaded by link :guilabel:`Download as GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
+
+
+
+.. _ngw_attachments:
+
+Attachments
+------------
+
+NextGIS Web software supports adding photos, panoramas and other files to the features. 
+If a feature has attachments, they will be shown along with description and attributes in the identify window  (see  :numref:`attachm_tab_pic`).
+
+.. figure:: _static/attachm_tab_en.png
+   :name: attachm_tab_pic
+   :align: center
+   :width: 20cm
+
+   Identify window for a feature with attached photos
+
+
+
+Files in the following formats can be viewed directly in the web client:
+
+* JPEG, PNG images. GIF format not supported.
+* Panoramas complying with the `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+
+Other types of files can be added as attachments, but won't be viewed in the interface.
+
+After a click on a photo preview a lightbox window is open (a  
+javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
+
+.. figure:: _static/webmap_ident_photo_lightbox.png
+   :name: webmap_identification_photo_lightbox
+   :align: center
+   :width: 18cm
+
+   A lightbox with uploaded photo for the identified feature 
+
+To navigate within the panorama, use the mouse. Hold down the left mouse button to rotate the camera. Use the wheel to zoom in and out. Panorama mode can be disabled by clicking on the blue round button in the upper right corner.
+
+.. figure:: _static/panorama_opened_en.png
+   :name: panorama_opened_pic
+   :align: center
+   :width: 18cm
+
+   Panorama opened from Web Map
+
+
+.. _ngw_add_photos:
+
+Add attachments to a feature
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add an attachment to a feature, go to the edit window. There are several ways to open it:
+
+* Click on the feature on the Web Map, then in the pop-up window press the **Edit** button.
+* Open the feature table on the Web Map, select the feature and click **Edit** in the toolbar.
+* Open the feature table from the resource page,  select the feature and click **Edit** in the toolbar.
+
+On the Edit page open the Attachments tab and upload the files. 
+
+.. figure:: _static/add_attachment_en.png
+   :name: manage_att_add_pic
+   :align: center
+   :width: 20cm
+
+   Adding file as attachment
+
+
+Enter titles for the attachments and press **Save**.
+
+After uploading you can see previews of photos and panoramas on the "Attachments" tab of the identify window (see :numref:`attach_tab_pic`).
+
+.. note:: 
+   By default attachments could be added by any user but there is an option      to limit number of users who can upload photos (see      `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
+
+You can edit file names and descriptions of the added attachments. To delete an attachment, press the cross icon to its right. If you've made an error during editing, press **Reset**, all modifications will be cancelled.   
+
+To delete an attachment select it on the "Attachments" tab of the edit window, click **Delete**, and then click **Save** button.
+
+See the process of adding attachments in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/t1c1GT2myD4?si=q-zfGXgUifTx_62U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/t1c1GT2myD4?si=2SZsLHOYH_lfnNAx>`_.
+
+.. _ngw_attachments_panoramas:
+
+How to use panoramas
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Not only photos, but also panoramas can be added as attachments. They allow to immerse explore new locations or find new details in familiar places.
+
+.. figure:: _static/identpanel_attachm_panor_en.png
+   :name: popup_attachm_panor_pic
+   :align: center
+   :width: 20cm
+
+   Panorama preview in the identify panel
+
+Uploaded panoramic images must comply with the Google XMP Photo Sphere `specification <https://developers.google.com/streetview/spherical-metadata?hl=en>`_.
+
+See how to work with panoramas in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/MeZ0jJAbZ5I?si=czq1-hdAKBZpfabA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/MeZ0jJAbZ5I?si=F6s_wScaTeEjfpPl>`__.
+
+
+.. _ngw_attachments_imp_exp:
+
+Export and import attachments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To copy feature attachments between different layers or to create a backup you can save them to your device as an archive (Standard layer saving does not include attachments). 
+
+Navigate to the layer resource page and select **Manage attachments**.
+
+.. figure:: _static/manage_att_select_en.png
+   :name: manage_att_select_pic
+   :align: center
+   :width: 18cm
+
+   Managing attachments
+
+To save the attachments, go to the **Export** tab and press **Export attachments to ZIP archive**. The resulting ZIP archive will contain all of the attachments put in directories named after feature IDs. Attachment metadata are put into a separate JSON file.
+
+.. figure:: _static/manage_att_export_en.png
+   :name: manage_att_export_pic
+   :align: center
+   :width: 18cm
+
+   Exporting attachments as ZIP archive
+
+The resulting archive can be imported to add the attachments to the layer features. Open the **Import** tab, click **Import attachments from ZIP archive** and select the archive on your device. An archive must contain directories named after feature IDs. Each folder can contain one or many attachments. Duplicates will be ignored. If you need to replace the current attachments, tick "Delete existing attachments".
+
+
+.. figure:: _static/manage_att_import_en.png
+   :name: manage_att_import_pic
+   :align: center
+   :width: 18cm
+
+   Importing attachments from ZIP archive
+
+.. to do:: See the process of importing and exporting attachments in our video:

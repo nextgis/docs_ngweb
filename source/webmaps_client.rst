@@ -193,7 +193,7 @@ Layer menu
 
 To change the transparency of the layer use the slider in the dropdown menu of the layer.
 
-Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-edit-objects>`_).
+Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_).
 
 Using **"Description"** option you can view the description of the selected layer, added during creation or editing of the layer. 
 
