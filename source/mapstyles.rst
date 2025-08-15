@@ -11,20 +11,18 @@
 
 Для векторного слоя можно создать стиль:
 
-* `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#default-style-select-pic>`_
-* `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_
-* `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе
-* `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_
+* `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#default-style-select-pic>`_;
+* `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_;
+* `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе;
+* `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_;
+* создав копию другого ресурса стиля.
 
 Для растрового слоя можно создать стиль:
 
 * `по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-def-raster-style-pic>`_;
 * `из файла <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngweb-create-raster-style-pic>`_ - в формате QML или SLD;
-* пользовательский - задав настройки каналов в интерфейсе.
-
-
-
-Скопировать из ресурса
+* пользовательский - задав настройки каналов в интерфейсе;
+* создав копию другого ресурса стиля.
 
 Примеры стилей можно посмотреть в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_. Посмотреть видео о ней можно на `youtube <https://youtu.be/QE0koNP1i6c>`_, `rutube <https://rutube.ru/video/40ce27f141592df374ae3bb90b2f4f45/>`_.
 
