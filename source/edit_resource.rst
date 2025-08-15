@@ -73,7 +73,7 @@ This is a good way if you only need to move one resource.
 
    Selecting the target group
 
-In the same way you can transfer :ref:`Styles <ngcom_styles>` between parent resources (:ref:`Vector layers <ngcom_vector_layer>`, :ref:`Raster layers <ngcom_raster_layer>`, :ref:`PostGIS layers <ngcom_postgis_layer>`).
+In the same way you can transfer `Styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_ between parent resources (`Vector and raster layers <https://docs.nextgis.com/docs_ngweb/source/layers.html>`_, `PostGIS layers <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html>`_).
 
 .. _ngcom_parent_change_multi:
 
