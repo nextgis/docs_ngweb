@@ -20,9 +20,14 @@ To view the Web Map press |button_open_web_map| next to its name in the resource
    
    The interface of viewer client application
 
-   Numbers indicate: 1 – map; 2 – map panels; 3 - layer tree with layer menu buttons; 4 – dropdown list of basemaps; 5 - zoom tools; 6 - map tools;  7 - status bar and copyright.
+Numbers indicate: 
 
-Web client includes three main components: a map, `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_, `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_. 
+* 1 – map;
+* 2 – map `panels <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_;
+* 3 - `layer tree <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
+* 4 – `dropdown list of basemaps <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
+* 5 and 6 - `map tools <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
+*  7 - `status bar <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
 
 
 .. _ngw_webmaps_client_scale:
@@ -78,10 +83,205 @@ On the left side of the workspace are the functional panels:
 .. |panel_print| image:: _static/panel_print.png
 .. |panel_trackers| image:: _static/panel_trackers.png
 
+.. _ngw_webmaps_client_tools:
+
+Map tools
+----------
+
+Tools to work with the Web Map (see :numref:`webmap_client` item 6) named from left to the right:
+
+Top left:
+
+* |button_zoom| zoom;
+* |button_home| back to initial extent;
+* |button_my_location| show my location.
+
+.. |button_zoom| image:: _static/button_zoom.png
+   :width: 5mm
+
+.. |button_home| image:: _static/button_home.png
+   :width: 6mm
+
+
+Bottom left:
+
+* |button_zoom_in| Zoom in
+* |button_zoom_out| Zoom out
+* |button_measure_distance| Measure distance
+* |button_measure_area_map| Measure area
+* |button_swipe_off| Vertical swipe
+* |button_extent_coord| Show cursor coordinates/extent
+
+.. |button_zoom_in| image:: _static/button_zoom_in.png
+   :width: 6mm
+
+.. |button_zoom_out| image:: _static/button_zoom_out.png
+   :width: 6mm
+
+.. |button_measure_distance| image:: _static/button_measure_distance.png
+   :width: 6mm
+
+.. |button_measure_area_map| image:: _static/button_measure_area_map.png
+   :width: 6mm
+
+.. |button_swipe_off| image:: _static/button_swipe_off.png
+   :width: 6mm
+
+.. |button_extent_coord| image:: _static/button_extent_coord.png
+   :width: 6mm
+
+See detailed descriptions below.
+
+.. _ngw_webmaps_client_tools_measure:
+
+Measuring tools
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Map tools allow to measure distance (straight or segmented line) and area. Activate the tool and draw a line by clicking on the map. Double-click to finish line creation. You can draw multiple measuring lines on a map and compare results. To delete one of the measurement lines, press X on the measurement results lable. To clear selection, press the tool button again.
+
+.. figure:: _static/ngw_map_measure_line_en.png
+   :name: ngw_map_measure_line_pic
+   :align: center
+   :width: 20cm
+
+   Measuring distance on the Web Map
+
+To measure area draw a custom polygon on the map.  Double-click to finish the polygon.
+
+.. figure:: _static/ngw_map_measure_area_en.png
+   :name: ngw_map_measure_area_pic
+   :align: center
+   :width: 20cm
+
+   Measuring areas on the Web Map
+
+Measurement units are selected in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-measure>`_
+
+
+.. _ngw_webmaps_client_tools_swipe:
+
+Swipe
+~~~~~~~
+
+Swipe  makes the selected layer transparent to one side of the line.
+
+To select a layer click on it in the layer tree (it will be highlighted in blue), then press the swipe button |button_swipe_off| (see :numref:`ngweb_webmap_choose_layer`).
+   
+.. figure:: _static/choose_layer_swipe_en_2.png
+   :name: ngweb_webmap_choose_layer
+   :width: 20cm
+   :align: center
+   
+   Horizontal swipe. Selected layer is marked in blue
+
+Use the square in the center to move the swipe and the circle on the line to rotate it 90 degrees.
+
+Swipe makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map. The tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
+
+.. figure:: _static/swiped_satellite_en.png
+   :name: ngweb_webmap_swyped
+   :width: 20cm
+   :align: center
+   
+   Satellite image after applying the vertical swipe
+
+.. _ngw_webmaps_client_tools_coord_extent:
+ 
+Show extent or cursor coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A field can be added to the Web Map interface to show the coordinates of the current cursor position or the extent of the visible map area. To activate it, press the |button_extent_coord| button in the map tools panel.
+
+
+
+The icon on the right indicates what is displayed. Click on it to switch between modes. 
+
+.. figure:: _static/web_client_coordinates.png
+   :name: web_client_coordinates_pic
+   :width: 20cm
+   :align: center
+
+   Cursor coordinates mode
+
+.. figure:: _static/web_client_extent.png
+   :name: web_client_extent_pic
+   :width: 20cm
+   :align: center
+
+   Extent mode
+
+.. _ngw_webmaps_client_share:
+
+Share
+-------
+
+In the |panel_share_intext| "Share" panel you can:
+
+.. |panel_share_intext| image:: _static/panel_share.png
+   :width: 6mm
+
+* copy a link to the Web Map (the link includes zoom level and layer visibility);
+* add the visible fragment of the Web Map to `favorites <https://docs.nextgis.com/docs_ngweb/source/favorites.html#ngw-favorites-wm-fragment>`_;
+* configure and copy the code for embedding the Web Map to a Web site.
+
+.. figure:: _static/web_client_share_en.png
+   :name: web_client_share_pic
+   :width: 20cm
+   :align: center
+
+   "Share" panel
+
+
+.. _ngw_webmaps_client_feature_link:
+
+Link to a Web Map feature
+--------------------------
+
+The easiest way is to zoom in on the area and copy the link via the **Share** panel (:numref:`webmap_client`)
+
+Using specially generated GET queries you can share a link to a particular feature of a layer. The link will open with the geographical context that you can select in the Web Map settings.
+
+All you need to do is create links in the information systems. By clicking on them users will be directed to the map with the selected feature and context.
+
+Such links can be automatically generated by your system integrated with NextGIS Web.
+
+Example:
+
+https://demo.nextgis.com/resource/6118/display?panel=layers&hl_lid=6108&hl_attr=OSM_ID&hl_val=230629285&zoom=17
+
+
+You can make such a link **manually**. Here's what you need:
+
+* Link to the Web Map: https://demo.nextgis.com/resource/6118/display?panel=layers
+
+For the feature:
+
+* hl_lid - layer ID (open the layer resource page and see the number in the URL, for example https://demo.nextgis.com/resource/6114, here ``hl_lid=6114``
+
+* hl_attr – the name of the ID attribute field, for example ``OSM_ID``;
+
+* hl_val – the value of the ID field.
+
+You can also add:
+
+* zoom - value in numbers with 1 being the minimum.
+
+Here's the resulting link:
+
+https://demo.nextgis.com/resource/6118/display?panel=layers&hl_lid=6114&hl_attr=OSM_ID&hl_val=1058246738&zoom=17
+
+.. figure:: _static/webmap_feature_lik_ID_en_2.png
+   :name: webmap_feature_lik_ID_pic
+   :width: 20cm
+   :align: center
+
+   Web Map opened via the link. The link contains the ID of the layer and the ID field name and value for the selected feature
+
+
 .. _ngw_webmaps_client_layers:
 
 Legend in the layers tree
-------------------------
+--------------------------
 
 The **Layer tree** panel |panel_layers_small| contains a list of all layer styles added to the Web Map.
 
@@ -245,170 +445,3 @@ You can add other basemaps, see the instructions in `Adding resources <https://d
 .. note:: 
    If the Web Map is supposed to work without Internet access, edit the file with `basemap settings <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ and delete records about Google basemaps.
 
-
-.. _ngw_webmaps_client_tools:
-
-Map tools
-----------------------
-
-Tools to work with the Web Map (see :numref:`webmap_client` item 6) named from left to the right:
-
-* Zoom in
-* Zoom out
-* Measure distance
-* Measure area
-* Vertical swipe
-* Show cursor coordinates/extent
-
-.. figure:: _static/ngw_map_instruments.png
-   :name: ngw_map_instruments
-   :align: center
-
-   Map tools
-
-.. _ngw_webmaps_client_tools_measure:
-
-Measuring tools
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Map tools allow to measure distance (straight or segmented line) and area. Activate the tool and draw a line by clicking on the map. Double-click to finish line creation. You can draw multiple measuring lines on a map and compare results. To delete one of the measurement lines, press X on the measurement results lable. To clear selection, press the tool button again.
-
-.. figure:: _static/ngw_map_measure_line_en.png
-   :name: ngw_map_measure_line_pic
-   :align: center
-   :width: 20cm
-
-   Measuring distance on the Web Map
-
-To measure area draw a custom polygon on the map.  Double-click to finish the polygon.
-
-.. figure:: _static/ngw_map_measure_area_en.png
-   :name: ngw_map_measure_area_pic
-   :align: center
-   :width: 20cm
-
-   Measuring areas on the Web Map
-
-Measurement units are selected in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-measure>`_
-
-
-.. _ngw_webmaps_client_tools_swipe:
-
-Swipe
-~~~~~~~~~~~~~~~~~~
-
-Swipe  makes the selected layer transparent to one side of the line.
-
-.. |button_swipe| image:: _static/button_swipe.png
-
-To select a layer click on it in the layer tree (it will be highlighted in blue), then press the swipe button |button_swipe| (see :numref:`ngweb_webmap_choose_layer`).
-   
-.. figure:: _static/choose_layer_swipe_en_2.png
-   :name: ngweb_webmap_choose_layer
-   :width: 20cm
-   :align: center
-   
-   Horizontal swipe. Selected layer is marked in blue
-
-Use the square in the center to move the swipe and the circle on the line to rotate it 90 degrees.
-
-Swipe makes it possible to “peek” under the selected layer and compare it with the substrate or another layer on the map. The tool will be useful if we want to compare changes in the terrain by satellite images for different dates (for example, to identify forest felling or floods).
-
-.. figure:: _static/swiped_satellite_en.png
-   :name: ngweb_webmap_swyped
-   :width: 20cm
-   :align: center
-   
-   Satellite image after applying the vertical swipe
-
-.. _ngw_webmaps_client_tools_coord_extent:
- 
-Show extent or cursor coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A field can be added to the Web Map interface to show the coordinates of the current cursor position or the extent of the visible map area. To activate it, press the |button_extent_coord| button in the map tools panel.
-
-.. |button_extent_coord| image:: _static/button_extent_coord.png
-
-The icon on the right indicates what is displayed. Click on it to switch between modes. 
-
-.. figure:: _static/web_client_coordinates.png
-   :name: web_client_coordinates_pic
-   :width: 20cm
-   :align: center
-
-   Cursor coordinates mode
-
-.. figure:: _static/web_client_extent.png
-   :name: web_client_extent_pic
-   :width: 20cm
-   :align: center
-
-   Extent mode
-
-.. _ngw_webmaps_client_share:
-
-Share
------------
-
-In the |panel_share_intext| "Share" panel you can:
-
-.. |panel_share_intext| image:: _static/panel_share.png
-   :width: 6mm
-
-* copy a link to the Web Map (the link includes zoom level and layer visibility);
-* add the visible fragment of the Web Map to `favorites <https://docs.nextgis.com/docs_ngweb/source/favorites.html#ngw-favorites-wm-fragment>`_;
-* configure and copy the code for embedding the Web Map to a Web site.
-
-.. figure:: _static/web_client_share_en.png
-   :name: web_client_share_pic
-   :width: 20cm
-   :align: center
-
-   "Share" panel
-
-
-.. _ngw_webmaps_client_feature_link:
-
-Link to a Web Map feature
---------------------------
-
-The easiest way is to zoom in on the area and copy the link via the **Share** panel (:numref:`webmap_client`)
-
-Using specially generated GET queries you can share a link to a particular feature of a layer. The link will open with the geographical context that you can select in the Web Map settings.
-
-All you need to do is create links in the information systems. By clicking on them users will be directed to the map with the selected feature and context.
-
-Such links can be automatically generated by your system integrated with NextGIS Web.
-
-Example:
-
-https://demo.nextgis.com/resource/6118/display?panel=layers&hl_lid=6108&hl_attr=OSM_ID&hl_val=230629285&zoom=17
-
-
-You can make such a link **manually**. Here's what you need:
-
-* Link to the Web Map: https://demo.nextgis.com/resource/6118/display?panel=layers
-
-For the feature:
-
-* hl_lid - layer ID (open the layer resource page and see the number in the URL, for example https://demo.nextgis.com/resource/6114, here ``hl_lid=6114``
-
-* hl_attr – the name of the ID attribute field, for example ``OSM_ID``;
-
-* hl_val – the value of the ID field.
-
-You can also add:
-
-* zoom - value in numbers with 1 being the minimum.
-
-Here's the resulting link:
-
-https://demo.nextgis.com/resource/6118/display?panel=layers&hl_lid=6114&hl_attr=OSM_ID&hl_val=1058246738&zoom=17
-
-.. figure:: _static/webmap_feature_lik_ID_en_2.png
-   :name: webmap_feature_lik_ID_pic
-   :width: 20cm
-   :align: center
-
-   Web Map opened via the link. The link contains the ID of the layer and the ID field name and value for the selected feature
