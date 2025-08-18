@@ -1,5 +1,5 @@
 .. important::
 
-   Оглавление раздела находится здесь:
+   Table of contents is moved here:
 
-   `NextGIS Web <https://docs.nextgis.ru/docs_ngweb/source/index.html>`_
+   `NextGIS Web <https://docs.nextgis.com/docs_ngweb/source/index.html>`_
