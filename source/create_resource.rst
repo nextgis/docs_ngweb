@@ -33,7 +33,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 * Карты и сервисы (`веб-карта <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_, сервисы WMS, WFS, OGC API - Features)
 * Сбор данных (`группа трекеров, трекер <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_, `проект Collector <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-project>`_), `форма сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_
 * Внешние соединения (соединения PostGIS, TMS, WMS)
-* Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_, `набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_)
+* Другие ресурсы (`группа ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resource-group>`_, `библиотека маркеров SVG <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#svg>`_, `справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_, `набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_)
 
 Нажмите на нужный тип ресурса, чтобы перейти к подробному описанию его создания.
 
@@ -134,7 +134,7 @@ NextGIS Web строится на **ресурсном** подходе - каж
 Типовая структура
 -----------------
 
-С учетом опыта использования NextGIS Web рекомендуется создавать отдельные `группы ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_ (папки) для:
+С учетом опыта использования NextGIS Web рекомендуется создавать отдельные `группы ресурсов <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resource-group>`_ (папки) для:
 
 * Веб-карт
 * Данных

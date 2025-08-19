@@ -122,7 +122,7 @@ NextGIS Web обладает следующими основными возмо�
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * `Дерево слоев <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-view-resource>`_.
-* `Группы слоев <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resourses-group>`_.
+* `Группы слоев <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html#ngw-resource-group>`_.
 * Панель `инструментов навигации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_.
 * `Поиск по атрибутам <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_.
 * Закладки для быстрого перехода на нужные участки карты.
