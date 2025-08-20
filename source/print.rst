@@ -3,6 +3,11 @@
 Print a Web Map or save as image
 ================================
 
+.. seealso:: 
+
+   Features of a layer can be `exported as data in various format <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_.
+
+
 :ref:`Web GIS <ngcom_description>` allows to print a Web Map or save it as a picture. To do it: 
 
 1. Go to the Properties window of Web Map from the relevant Resource group;
