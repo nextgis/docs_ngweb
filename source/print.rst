@@ -3,7 +3,7 @@
 
 .. seealso:: 
 
-   Объекты отдельных слоёв можно `экспортировать как данные в разных форматах <https://support.nextgis.com/#ticket/zoom/26536>`_.
+   Объекты отдельных слоёв можно `экспортировать как данные в разных форматах <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_.
 
 :ref:`Веб ГИС <ngcom_description>` позволяет распечать Веб-карту или сохранить ее как рисунок. Для того, тобы сделать это:
 
