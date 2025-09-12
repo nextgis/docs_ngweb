@@ -231,7 +231,7 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 
 .. note:: 
-	Вы также можете удалять ресурсы из Веб ГИС `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#connect-resource-delete>`_.
+	Вы также можете удалять ресурсы из Веб ГИС `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
 
 .. _ngw_update_info_metada:
 
