@@ -1,4 +1,4 @@
-.. sectionauthor:: Наталья Барышникова <nshelekhova@gmail.com>
+
 
 .. _ngw_extension:
 

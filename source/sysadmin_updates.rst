@@ -1,4 +1,4 @@
-.. sectionauthor:: Максим Дубинин <maxim.dubinin@nextgis.com>
+
 
 .. _sysadmin_updates:
 

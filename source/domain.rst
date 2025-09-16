@@ -1,4 +1,4 @@
-.. sectionauthor:: Maxim Dubinin <maxim.dubinin@nextgis.com>
+
 
 Как изменить адрес Веб ГИС
 ============================
