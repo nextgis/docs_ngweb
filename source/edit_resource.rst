@@ -200,6 +200,7 @@ If you selected "Delete" action from the resource page and not from the resource
 
    Warning when deleting a layer
 
+You can also delete resources in your Web GIS `from QGIS using NextGIS Connect plugin <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
 
 .. _ngw_delete_resource_multi:
 
