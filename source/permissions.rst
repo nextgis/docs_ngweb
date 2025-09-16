@@ -1,4 +1,4 @@
-.. sectionauthor:: Roman Gainullov <roman.gaynullov@nextgis.com>
+
 
 .. _ngw_permissions_system:
 

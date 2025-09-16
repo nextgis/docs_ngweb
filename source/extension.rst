@@ -1,4 +1,4 @@
-.. sectionauthor:: Natalia Baryshnikova <nshelekhova@gmail.com>
+
 
 .. _ngw_extension:
 

@@ -1,5 +1,5 @@
 
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+
 
 .. _ngw_webmaps_admin:
 

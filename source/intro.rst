@@ -1,4 +1,4 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
+
 
 .. _ngw_intro:
 

@@ -1,6 +1,6 @@
-.. sectionauthor:: Artem Svetlov <artem.svetlov@nextgis.ru>
-.. sectionauthor:: Roman Gainullov <roman.gainullov@nextgis.com>
-.. sectionauthor:: Yulia Grigorenko <yulia.grigorenko@nextgis.com>
+
+
+
 
 Adding resources
 ===================
