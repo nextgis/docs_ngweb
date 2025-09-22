@@ -24,6 +24,7 @@ NextGIS Web
 * `Таблица объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_
 * `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
 * `Сервисы <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_
+* `Подложки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_
 
 **Веб-карты**
 
