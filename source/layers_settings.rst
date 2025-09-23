@@ -96,18 +96,64 @@ For the next three parameters a dark symbol means "on" and a light symbol means 
 * |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
 * |attr_label_symbol| Label attribute - the attribute is used for bookmarks.
 
-You can also add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_. It allows to select values of the attribute when you add or edit features. To add a lookup table, click on the field in the form, then select the lookup table resource in the pop-up window .
-
-.. figure:: _static/update_add_lookup_en.png
-   :name: update_add_lookup_pic
-   :align: center
-   :width: 20cm
-
-   Adding lookup table to a field
+You can also `add a Lookup table <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_. It allows to select values of the attribute when you add or edit features. 
 
 To go back to the table view, click |button_hide_details| **Hide details** in the top row of the form.
 
 After all edits are made, click **Save**.
+
+
+.. _lookup_add_to_field:
+
+Connect lookup table to a field
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+First create a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ resource with the desired list of key-value pairs.
+
+To connect a lookup table to the layer, open the Edit dialog and to to the Attributes tab. Select the attribute, then click on the downward arrow in the Lookup table field.
+
+.. figure:: _static/layer_add_lookup_en.png
+   :name: layer_add_lookup_pic
+   :align: center
+   :width: 16cm
+
+   Connecting lookup table to a field
+
+Then select the lookup table resource in the pop-up window.
+
+.. figure:: _static/update_add_lookup_en_2.png
+   :name: update_add_lookup_pic
+   :align: center
+   :width: 16cm
+
+   Adding lookup table to a field
+
+In the feature table you'll see the detailed name, while the short key will be stored in the data.
+
+.. figure:: _static/lookup_feature_table_en.png
+   :name: lookup_feature_table_pic
+   :align: center
+   :width: 16cm
+
+   Feature table with connected Lookup table: names displayed
+
+.. figure:: _static/no_lookup_feature_table_en.png
+   :name: no_lookup_feature_table_pic
+   :align: center
+   :width: 16cm
+
+   Feature table without the Lookup table: numeric code displayed
+
+In the feature preview as well as in the Identify panel on the Web Map you'll see both parts of the key-value pair: first the key enclosed in square brackets, then the longer value.
+
+.. figure:: _static/lookup_feature_preview_en.png
+   :name: lookup_feature_preview_pic
+   :align: center
+   :width: 20cm
+
+   Feature preview. Both the code and the name are displayed
+
+To use the same list of values while gathering data in the field, export the Lookup table as CSV and `add it to the field <https://docs.nextgis.com/docs_formbuilder/source/controls.html#fb-edit-combobox-pic>`_ of the data collection form.
 
 
 .. _ngw_vector_file_replace:
@@ -150,5 +196,6 @@ If the file has multiple layers, select the one you need in the "Source layer" f
 
 If you replace the file, not only the features, but the structure of the attributes and other properties will be changed to match the new file.
 
-.. note:
+.. note::
+
    You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
