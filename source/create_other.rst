@@ -69,9 +69,10 @@ Switch to "Lookup table" tab where you can change the table's contents:
 * change a current key-value pair
 * delete a key-value pair
 
-A lookup table can be exported to a CSV file.
+A lookup table can be exported to a CSV file. It comes in handy if you want to use to create a `data collection form <https://docs.nextgis.com/docs_formbuilder/source/controls.html#fb-edit-combobox-pic>`_.
 
-You can also connect a lookup table to a field of a vector layer. This way while editing the layer you can choose attribute values from the list. To add a lookup table to the layer, open the Edit dialog and to to the Attributes tab. In the row of the attribute click on the downward arrow in the Lookup table column.
+You can also link a connect a lookup table `to a vector layer field <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_, This way while editing the layer you can choose attribute values from the list.
+
 
 See how to work with lookup tables in our video:
 
