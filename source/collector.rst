@@ -19,6 +19,8 @@
 Участники проекта сбора данных
 -------------------------------
 
+.. todo:: Частично дублирует https://docs.nextgis.ru/docs_ngcom/source/collector.html#collector-add-members
+
 В разделе Панели управления "Проекты Collector" настраивается список участников, которые могут быть включены в `проекты сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngc-list-collectors-pic>`_. Каждый участник должен иметь аккаунт `NextGIS ID <https://docs.nextgis.ru/docs_ngcom/source/create.html#nextgis-id>`_.
 
 
@@ -57,6 +59,8 @@
 
 Создание проекта сбора данных
 ------------------------------
+
+.. todo:: Дублирует https://docs.nextgis.ru/docs_ngcom/source/collector.html#collector-create-project
 
 Проект сбора данных - это ресурс в вашей Веб ГИС, который представляет собой набор слоев данных для редактирования. 
 В Веб ГИС «проект сбора данных» сокращенно называется «Проект Collector». 
