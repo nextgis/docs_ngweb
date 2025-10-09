@@ -9,6 +9,7 @@ NextGIS Web
 **Общие сведения**
 
 * `Возможности NextGIS Web <https://docs.nextgis.ru/docs_ngweb/source/general.html>`_
+* `Авторизация <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#authorization>`_
 * `Основные элементы интерфейса <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html>`_
 * `Ресурсы <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html>`_
 * `Настройки ресурсов <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_
