@@ -5,6 +5,7 @@ NextGIS Web
 **General**
 
 * `Functionality overview of NextGIS Web <https://docs.nextgis.com/docs_ngweb/source/general.html>`_
+* `Authorization <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#authorization>`_
 * `User interface <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html>`_
 * `Resources <https://docs.nextgis.com/docs_ngweb/source/create_resource.html>`_
 * `Resource settings <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_
