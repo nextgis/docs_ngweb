@@ -10,6 +10,7 @@ Resources are the main entities in NextGIS Web and access permissions are manage
 
 Mechanism of permission management of resources is similar to the principle of the file system access permissions.
 
+.. note:: Available on `Premium <https://nextgis.com/pricing-base/>`_ subscription plan.
 
 .. _ngw_permissions_categories:
 
