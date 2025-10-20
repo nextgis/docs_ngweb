@@ -7,6 +7,25 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+5.2.0 released on 14 Oct 2025
+----------------------------------
+
+- Many new feature editing tools on webmaps.
+- Improved swipe tool: vertical and horizontal swipes in any direction.
+- Maximum webmap zoom level increased to 24.
+- Geometry editing on feature pages.
+- Geometry tab on feature pages.
+- Zoom support for attachment preview.
+- Automatic HEIF-to-JPEG conversion for feature attachments.
+- Improved handling of image dimensions in descriptions.
+- Improved WMS client compatibility and performance.
+- Improved MVT generation performance.
+- GeoPackage 1.4 compatibility improvements.
+- Dropped support for GeoJSON response streaming.
+- Dropped support for GeoJSON range requests.
+- React library upgraded to 19.
+
+
 5.1.0 released on 23 Jun 2025
 ----------------------------------
 
