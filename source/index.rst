@@ -15,6 +15,7 @@ NextGIS Web
 * `Настройки ресурсов <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_
 * `Избранное <https://docs.nextgis.ru/docs_ngweb/source/favorites.html>`_
 
+
 **Слои, сервисы**
 
 * `Векторные и растровые слои <https://docs.nextgis.ru/docs_ngweb/source/layers.html>`_
@@ -26,6 +27,7 @@ NextGIS Web
 * `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
 * `Сервисы <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_
 * `Подложки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_
+* `Экспорт <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_
 
 **Веб-карты**
 
