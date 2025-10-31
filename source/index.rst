@@ -21,6 +21,7 @@ NextGIS Web
 * `Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_
 * `Styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_
 * `Services <https://docs.nextgis.com/docs_ngweb/source/services.html>`_
+* `Экспорт <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_
 
 **Web Maps**
 
