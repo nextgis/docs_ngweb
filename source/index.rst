@@ -9,10 +9,12 @@ NextGIS Web
 **Общие сведения**
 
 * `Возможности NextGIS Web <https://docs.nextgis.ru/docs_ngweb/source/general.html>`_
+* `Авторизация <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-admin-login>`_
 * `Основные элементы интерфейса <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html>`_
 * `Ресурсы <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html>`_
 * `Настройки ресурсов <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_
 * `Избранное <https://docs.nextgis.ru/docs_ngweb/source/favorites.html>`_
+
 
 **Слои, сервисы**
 
@@ -25,6 +27,7 @@ NextGIS Web
 * `Стили <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
 * `Сервисы <https://docs.nextgis.ru/docs_ngweb/source/services.html>`_
 * `Подложки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_
+* `Экспорт <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_
 
 **Веб-карты**
 
