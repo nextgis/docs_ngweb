@@ -10,7 +10,7 @@ Additionally, you can create services that allow to access data via standard pro
 
 * `WFS <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-wfs-service>`_
 * `OGC API Features <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_
-* `WMS <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-wms-service>`_
+* `WMS|WMTS <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-wms-service>`_
 
 .. _ngw_mvt:
 
@@ -239,13 +239,14 @@ OGC API Features services can also be accessed with links of the following type 
 WFS service
 ------------
 
-WFS service works similarly to WMS layer, but you add layers instead of styles.
+NextGIS Web acts as WFS server and publishes WFS services based on vector layers. Third party software can use these services to edit vector data on server.  
+
+Supported WFS protocol versions are 1.0, 1.1, 2.0, 2.0.2. 
    
 .. note::
     Currently supported filters are Intersects, ResourceId (ObjectId, FeatureId).
 
-NextGIS Web acts as WFS server and publishes WFS services based on vector layers. Third party software can use these services to edit vector data on server.  
- Supported WFS protocol versions are 1.0, 1.1, 2.0, 2.0.2. 
+
 
 To deploy a WFS service press **Create resource** button and select  **WFS service** (see :numref:`admin_layers_create_wfs_service`). 
 
@@ -328,7 +329,13 @@ Switch to "WMS service" tab and add links to required layers or layer styles.  Y
 
    WMS service tab of Create resource dialog
 
-After the resource is created, you will see a message with the WMS service URL which you can use in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`.   
+After the resource is created, on its page you'll find three URLs:
+
+WMS service
+:term:`WMTS` service (KVP) 
+:term:`WMTS` service (REST) 
+
+You can use these URS to access the data in other software, e.g. :program:`NextGIS QGIS` or :program:`JOSM`.   
   
 Then you need to `set access permissions for the WMS service <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-auth-wms>`_.
 
