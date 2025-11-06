@@ -10,7 +10,7 @@
 
 * `WFS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wfs-service>`_
 * `OGC API Features <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-OGC-API-Features>`_
-* `WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`_
+* `WMS/WMTS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-wms-service>`_
 
 .. _ngw_mvt:
 
@@ -247,13 +247,13 @@ Cервис WFS
 Создание сервиса WFS
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Настройка сервиса WFS осуществляется так же, как для WMS-сервиса, только добавляется не стиль, а слой.
+NextGIS Web является сервером WFS - может публиковать сервисы WFS на базе векторных слоёв. Используя эти сервисы, сторонние программы 
+могут изменять векторные данные на сервере. Поддерживаемые версии протокола WFS: 1.0, 1.1, 2.0, 2.0.2.
    
 .. note::
     На данный момент поддерживаются фильтры Intersects, ResourceId (ObjectId, FeatureId).
 
-NextGIS Web является сервером WFS - может публиковать сервисы WFS на базе векторных слоёв. Используя эти сервисы, сторонние программы 
-могут изменять векторные данные на сервере. Поддерживаемые версии протокола WFS: 1.0, 1.1, 2.0, 2.0.2.
+
 
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Сервис WFS** (:numref:`admin_layers_create_wfs_service`). 
 
@@ -353,8 +353,13 @@ NextGIS Web является сервером WFS - может публиков�
 
    Окно параметров соединения WMS
 
-После создания ресурса выведется сообщение с URL WMS-сервиса, который можно 
-использовать в других программах, например :program:`NextGIS QGIS`, или :program:`JOSM`. 
+Когда ресурс будет создан, на его страницы вы найдёте три URL:
+
+* Сервис WMS 
+* Сервис :term:`WMTS` (KVP) 
+* Сервис :term:`WMTS` (REST) 
+
+Их использовать в других программах, например :program:`NextGIS QGIS`, или :program:`JOSM`. 
 Далее необходимо `настроить права доступа к WMS-сервису <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-cases>`_ для стороннего использования различными пользователями.
 
 Cлой NextGIS Web можно добавлять в настольные, мобильные и Веб ГИС различными способами.
