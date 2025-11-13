@@ -226,7 +226,7 @@ In the “Basemap” tab you must enter the URL-address of the TMS service (:num
 
 The basemap will be previewed below. Press |button_toggle_basemap| **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
 
-.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
+
 
 .. figure:: _static/create_basemap_settings_en_3.png
    :name: ngweb_admin_basemap_param
@@ -393,33 +393,54 @@ The way the legend is formed depends on the raster type:
 .. _ngw_map_extent:
 
 Extent
---------
+------
 
-In the Settings tab you can set up:
+On the Settings tab you can set up:
 
-* Initial extent - part of the Web Map that is shown upon its opening
-* Constraining extent - users will not be able to zoom out or scroll past this extent
+* Initial extent - part of the Web Map that is shown upon its opening;
+* Constraining extent - users will not be able to zoom out or scroll past this extent.
 
-Use the four fields to set the extent measured in degrees.
+Extent is determined by four parameters in degrees.
 
-.. figure:: _static/webmap_extent_en.png
-   :name: admin_webmap_bbox
+There are several ways to set them up.
+
+.. figure:: _static/webmap_extent_en_2.png
+   :name: ngweb_admin_webmap_bbox
    :align: center
    :width: 22cm
 
-   Extent settings
+   Extent in Settings
 
-**Extent from layer** button allows to set Web Map extent from the layer's extent. Click it to open the “Select layer” window, where you can select a layer to use for setting the Web Map extent (see :numref:`ngw_select_resource2`). The four fields for the extent coordinates will be filled in. 
 
-.. figure:: _static/ngw_select_resource2_eng_3.png
+**From layers** button allows to so use the bounding box of layer or layers to set up the map extent. 
+Click it, then in the pop-up window select layer or layers. The four coordinate fields will be filled automatically.
+
+.. figure:: _static/ngw_extent_from_layers_en.png
    :name: ngw_select_resource2
    :align: center
    :width: 20cm
 
    “Select layer” window
 
-.. tip::
-   Extent coordinates could be generated using third-party services, for example http://boundingbox.klokantech.com/ (select csv in a list).
+Click on the |button_extent_all| button to set the extent by the combined extents of all the layers added to the Web Map.
+
+.. |button_extent_all| image:: _static/button_extent_all.png
+   :width: 5mm
+
+Click |button_toggle_basemap| to draw a custom bounding box on a map.
+
+.. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
+   :width: 6mm
+
+.. figure:: _static/ngw_extent_from_map_en.png
+   :name: ngw_extent_from_map_pic
+   :align: center
+   :width: 16cm
+
+   Entering extent from a map
+
+Also you can enter the four coordinates manually.
+
 
 .. _ngw_map_bookmarks:
 
