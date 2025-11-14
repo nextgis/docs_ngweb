@@ -304,7 +304,7 @@ Enter the name that will be displayed in the administrator interface (see :numre
 
 Caching provides faster rendering of Web Map layers. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
    
-The main display settings are on the TMS layer tab (см. :numref:`TMS_layer_settings_en`):
+The main display settings are on the TMS layer tab (see :numref:`TMS_layer_settings_en`):
 
 * TMS connection - select a TMS connection resource that was created earlier;
 * The range of zoom levels for data display;
