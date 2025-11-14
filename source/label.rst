@@ -3,7 +3,7 @@ Customize UI Elements (White label)
 
 .. note:: This functionality is only available `on-premise <https://nextgis.com/pricing/>`_
 
-White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately. The module adds a new section to the Control Panel (см. :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements mentioning NextGIS.
+White label is a special module that allows you to remove or replace NextGIS logos and names with your company logos and names. The module is purchased and installed separately. The module adds a new section to the Control Panel (see :numref:`Control_panel_whitelabel`), which allows you to disable or override various interface elements mentioning NextGIS.
 
 .. figure:: _static/Control_panel_whitelabel.png
    :name: Control_panel_whitelabel
@@ -37,7 +37,7 @@ If the file is not loaded, there is no logo (see in :numref:`web-map_logo`).
 Company URL
 -------------
   
-You can assigned a new hyperlink for a company website to a just added logo (см. :numref:`url-logo_en`)
+You can assigned a new hyperlink for a company website to a just added logo (see :numref:`url-logo_en`)
 
 .. figure:: _static/url-logo_en.png
    :name: url-logo_en
@@ -88,7 +88,7 @@ Other items
 -----------
 
 * The default Web GIS name is specified without mentioning NextGIS.
-* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS** (см. :numref:`WMS_WFS_whitelabel`).
+* In WMS and WFS services resources, **NextGIS QGIS** is replaced with **QGIS** (see :numref:`WMS_WFS_whitelabel`).
 
 .. figure:: _static/WMS_WFS_whitelabel.png
    :name: WMS_WFS_whitelabel
@@ -97,7 +97,7 @@ Other items
 
    Replacing *NextGIS QGIS* (left) with *QGIS* (right) in WMS and WFS services
    
-* The social networks preview mentioning NextGIS is removed (см. :numref:`Preview_maplinks`).
+* The social networks preview mentioning NextGIS is removed (see :numref:`Preview_maplinks`).
 
 .. figure:: _static/Preview_maplinks.png
    :name: Preview_maplinks
