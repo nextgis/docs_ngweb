@@ -56,6 +56,22 @@ If you want to create a copy of an existing Web Map, you can `clone <https://doc
 Web Map Layers
 ---------------
 
+.. |button_open_resource| image:: _static/button_open_resource.png
+   :width: 6mm
+   :alt: square with arrow
+
+.. |button_refresh| image:: _static/button_refresh.png
+   :width: 6mm
+   :alt: circular arrows
+
+.. |button_clear_selection| image:: _static/button_clear_selection.png
+   :alt: X
+   :width: 8mm
+
+.. |button_pick_first| image:: _static/button_pick_first.png
+   :alt: editor's choice
+   :width: 8mm
+
 In the “Layers” tab you can add, group or remove layers and change their order using the buttons “Add layer”, “Add group”, "Customize draw order" and "Delete layer" (X at the end of each row). 
 
 .. figure:: _static/admin_webmap_layers_eng_3.png
@@ -74,11 +90,19 @@ To view the data of the layer on a map, you need to create at least one layer st
    
    Using style to add a layer to the Web Map
 
-You can add multiple styles at once. The layers containing selected styles are marked with blue dots. Navigate between resource groups and tick the styles of various layers you want to add. The **Pick selected** button displays the total number of selected styles. To clear the selection press the  |button_clear_selection| button next to it.
+If the layer you want to add doesn't have a style yet, you click on the |button_open_resource| icon next to its name. The layer resource opens in a separate tab where you can create a style for it. 
 
-.. |button_clear_selection| image:: _static/button_clear_selection.png
-   :alt: X
-   :width: 8mm
+.. figure:: _static/open_layer_from_picker_en.png
+   :name: open_layer_from_picker_pic
+   :align: center
+   :width: 20cm
+
+   Opening resource page from the picker dialog
+
+Then return to the tab where the layer picker is open, click |button_refresh| Refresh and select the newly created style.
+
+
+You can add multiple styles at once. The layers containing selected styles are marked with blue dots. Navigate between resource groups and tick the styles of various layers you want to add. The **Pick selected** button displays the total number of selected styles. To clear the selection press the  |button_clear_selection| button next to it.
 
 .. figure:: _static/webmap_add_layers_multi_en.png
    :name: webmap_add_layers_multi_pic
@@ -88,13 +112,6 @@ You can add multiple styles at once. The layers containing selected styles are m
    Adding multiple layer styles to a WebMap. Three styles are selected (two styles of one layer + one style of another layer)
 
 You don't need to go the style list of the layer to select the style. Press the |button_pick_first| button to the right of the layer name to auto-select the first style.
-
-.. |button_pick_first| image:: _static/button_pick_first.png
-   :alt: editor's choice
-   :width: 8mm
-
-
-
 
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
