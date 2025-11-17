@@ -5,6 +5,8 @@ NextGIS Web позволяет управлять базой геоданных 
 
 Таблицу объектов можно открыть `на отдельной странице <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-blank>`_ или `на веб-карте <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_.
 
+.. seealso:: `Отредактировать сами атрибуты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ векторного слоя, формирующие таблицу объектов.
+
 .. _ngw_feature_table_blank:
 
 Таблица объектов на отдельной странице
@@ -20,10 +22,10 @@ NextGIS Web позволяет управлять базой геоданных 
 #. `Редактировать запись <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-edit>`_ 
 #. `Удалить запись <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-delete>`_
 #. `Показать общее количество объектов слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
-#. Искать по значениям атрибутов и фильтровать таблицу по выражению
+#. `Искать по значениям атрибутов и фильтровать таблицу по выражению <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#table-search-filter>`_
 #. Сохранить в файл (доступен расширенный и `быстрый экспорт <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-export>`_)
 #. `Обновить таблицу <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
-#. Выбрать отображаемые полня в `настройках таблицы <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-fields>`_
+#. Выбрать отображаемые поля в `настройках таблицы <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-fields>`_
 
 .. figure:: _static/feature_table_tools_ru.png
    :name: ngweb_operations_on_writing_in_object_table
@@ -71,12 +73,12 @@ NextGIS Web позволяет управлять базой геоданных 
 
    Операции над записью в таблице объектов
 
-#. Перейти (при нажатии на кнопку происходит переход к выбранному объекту на карте)
-#. Приблизить к найденным объектам
-#. Отфильтровать объекты по местности
+#. |button_go_to| Перейти (при нажатии на кнопку происходит переход к выбранному объекту на карте)
+#. |button_zoom_to_filtered| Приблизить к найденным объектам (в охват карты будут включены все объекты, видимые в таблице атрибутов)
+#. `Отфильтровать объекты по местности <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_
 
 
-.. seealso:: `Отредактировать сами атрибуты <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ векторного слоя, формирующие таблицу объектов.
+
 
 .. |button_open_resource| image:: _static/button_open_resource.png
    :width: 6mm
@@ -102,6 +104,13 @@ NextGIS Web позволяет управлять базой геоданных 
    :width: 6mm
    :alt: таблица
 
+.. |button_go_to| image:: _static/button_go_to.png
+   :width: 6mm
+   :alt: рамка с точкой
+
+.. |button_zoom_to_filtered| image:: _static/button_zoom_to_filtered.png
+   :width: 6mm
+   :alt: стрелки, направленные в центр
 
 
 
@@ -118,6 +127,8 @@ NextGIS Web позволяет управлять базой геоданных 
    :name: feature_text_search_pic
    :align: center
    :width: 20cm
+
+   Текстовый поиск
 
 Также вы можете создавать более сложные фильтры. Для этого нажмите значок воронки |button_filter| рядом с окном поиска и задайте правила фильтрации, соединяемые через логические операторы «и» (все), «или» (любое). 
 
@@ -136,6 +147,56 @@ NextGIS Web позволяет управлять базой геоданных 
    :width: 20cm
 
    Отфильтрованные записи
+
+
+.. _ngw_feature_table_filter_area:
+
+Фильтрация объектов по области карты
+--------------------------------------
+
+В NextGIS Web предусмотрена возможность отфильтровать объекты, входящие в выделенную область карты. Обозначить границы области можно, нарисовав их непосредственно на карте.
+
+Откройте таблицу объектов и нажмите на кнопку с пунктирной рамкой. В выпадающем меню выберите форму геометрии очертаний области фильтрации:
+
+* окружность (задаётся двумя кликами по карте, первый клик обозначит центр окружности, второй - желаемый радиус, он будет показываться в метрах)
+* линия (отфильтрованы будут все объекты, пересекаемые заданной линией)
+* прямоугольник (задаётся двумя вершинами)
+* произвольный полигон (каждый клик создаёт вершину полигона, охватываемая им область высветляется; чтобы завершить рисование, кликните в точке дважды, полигон замкнётся автоматически)
+
+.. figure:: _static/ngweb_filter_by_area_geometry_ru.png
+   :name: ngweb_filter_by_area_geometry_pic
+   :align: center
+   :width: 20cm
+
+   Выбор геометрии области фильтрации
+
+Теперь таблица объектов содержит только те из них, которые попадают в выделенную область. На кнопке будет отображена форма геометрии выделения. В выпадающем меню появятся следующие пункты:
+
+* Скрыть/Показать границы и заливку выделенной области
+* Увеличить до выделенной области
+* Очистить фильтр
+
+.. figure:: _static/ngweb_filter_by_area_actions_ru.png
+   :name: ngweb_filter_by_area_actions_pic
+   :align: center
+   :width: 20cm
+
+   Действия с фильтром
+
+Чтобы установить охват карты по всем отфильтрованным объектам слоя, нажмите |button_zoom_to_filtered|.
+
+
+Отфильтрованные объекты можно экспортировать в большинстве распространенных форматов геоданных. В меню кнопки **Сохранить как** можно выбрать `быстрый экспорт <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-export>`_ с настройками по умолчанию или `расширенный экспорт <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_, где можно задать пользовательские настройки.
+
+Посмотрите, как фильтровать объекты на карте, в нашем видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/ccf892bf5f763632c7fd77498a642eb8/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/F039ufZM_RU>`_, `rutube <https://rutube.ru/video/ccf892bf5f763632c7fd77498a642eb8/>`_.
+
+
 
 
 .. _feature_view:
@@ -213,6 +274,8 @@ NextGIS Web позволяет управлять базой геоданных 
 
 Чтобы завершить редактирование, нажмите **Сохранить**. Все внесённые изменения будут записаны в слой.
 
+Редактировать объекты можно также `на веб-карте <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_ или в настольном приложении QGIS, используя `модуль NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html#connect-data-export>`_.
+
 .. _feature_delete:
 
 Удаление объекта
@@ -279,52 +342,7 @@ NextGIS Web позволяет управлять базой геоданных 
 
 Нажмите |button_refresh_single|, чтобы обновить таблицу объектов, если в неё были внесены изменения в другом месте.
 
-Если таблица объектов открыта на веб-карте, то доступны также специфические функции.
 
 
-
-.. _ngw_feature_table_filter_area:
-
-Фильтрация объектов по области карты
---------------------------------------
-
-В NextGIS Web предусмотрена возможность отфильтровать объекты, входящие в выделенную область карты. Обозначить границы области можно, нарисовав их непосредственно на карте.
-
-Откройте таблицу объектов и нажмите на кнопку с пунктирной рамкой. В выпадающем меню выберите форму геометрии очертаний области фильтрации:
-
-* окружность (задаётся двумя кликами по карте, первый клик обозначит центр окружности, второй - желаемый радиус, он будет показываться в метрах)
-* линия (отфильтрованы будут все объекты, пересекаемые заданной линией)
-* прямоугольник (задаётся двумя вершинами)
-* произвольный полигон (каждый клик создаёт вершину полигона, охватываемая им область высветляется; чтобы завершить рисование, кликните в точке дважды, полигон замкнётся автоматически)
-
-.. figure:: _static/ngweb_filter_by_area_geometry_ru.png
-   :name: ngweb_filter_by_area_geometry_pic
-   :align: center
-   :width: 20cm
-
-   Выбор геометрии области фильтрации
-
-Теперь таблица объектов содержит только те из них, которые попадают в выделенную область. На кнопке будет отображена форма геометрии выделения. В выпадающем меню появятся следующие пункты:
-
-* Скрыть/Показать границы и заливку выделенной области
-* Увеличить до выделенной области
-* Очистить фильтр
-
-.. figure:: _static/ngweb_filter_by_area_actions_ru.png
-   :name: ngweb_filter_by_area_actions_pic
-   :align: center
-   :width: 20cm
-
-   Действия с фильтром
-
-Отфильтрованные объекты можно экспортировать в большинстве распространенных форматов геоданных. В меню кнопки **Сохранить как** можно выбрать быстрый экспорт с настройками по умолчанию или расширенный экспорт, где можно задать пользовательские настройки (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_).
-
-Посмотрите, как фильтровать объекты на карте, в нашем видео:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/ccf892bf5f763632c7fd77498a642eb8/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Смотреть на `youtube <https://youtu.be/F039ufZM_RU>`_, `rutube <https://rutube.ru/video/ccf892bf5f763632c7fd77498a642eb8/>`_.
 
 
