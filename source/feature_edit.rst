@@ -3,7 +3,7 @@
 Edit vector features
 ====================
 
-You can modify **geometries and attributes** of vector features via Web interface or `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
+You can modify **geometries and attributes** of vector features via Web interface: `in the Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or on a Web Map (see below), - as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
 
 .. _ngw_allow_edit:
