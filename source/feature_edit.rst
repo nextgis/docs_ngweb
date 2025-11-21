@@ -1,7 +1,7 @@
 .. _ngw_edit_objects:
 
 Edit vector features
-====================================
+====================
 
 You can modify **geometries and attributes** of vector features via Web interface or `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
@@ -10,7 +10,7 @@ You can modify **geometries and attributes** of vector features via Web interfac
 
 
 Allow editing
-----------------------------------------
+---------------
 
 By default editing of a Web Map is disabled. To allow users to modify the layers of the map, enable editing in the Web Map settings. To find out how to open the "Update resource" dialog, see  :ref:`this chapter<ngw_update_resource>`. 
 
@@ -38,15 +38,17 @@ Users who do not have "Modify data" permission won't be able to activate the edi
    Permissions set for the Data resource group to allow editing
 
 
-.. _ngw_edit_objects:
 
-Edit mode on a Web Map 
-------------------------
 
-1. Open :ref:`Web Map <ngcom_webmap_create>` and select the layer with the feature you need to edit.
+.. _edit_mode:
+
+Edit mode on a Web Map
+----------------------
+
+1. Open `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html>`_ and select the layer with the feature you need to edit.
 2. Open dropdown menu by pressing the three dots to the right of the layer name (see :numref:`webmap_edit`), then select "Edit".
 
-.. figure:: _static/webgis_edit_objects_eng_3.png
+.. figure:: _static/webgis_edit_objects_en_2.png
    :name: webmap_edit
    :align: center
    :width: 20cm
@@ -55,208 +57,312 @@ Edit mode on a Web Map
 
 3. Editing toolbar will appear on the Web Map (see :numref:`webmap_edit_panel`):
 
-.. figure:: _static/webgis_edit_objects_panel_eng_2.png
+.. figure:: _static/webmap_edit_panel_en.png
    :name: webmap_edit_panel
    :align: center
    :width: 20cm
 
    Editing toolbar
    
+* |button_maptool_add| `Create feature <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-create-objects>`_ - this tool is active when you first enter the edit mode;
+* |button_maptool_edit| `Edit <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#webmap-edit-vertices>`_;
+* |button_maptool_move| `Move <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-move-objects>`_ an entire feature;
+* |button_maptool_attrib| `Edit attribute values <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attributes>`_;
+* |button_maptool_delete| `Delete <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-delete-objects>`_;
+* |button_maptool_save| Leave Edit mode;
+* |button_maptool_undo| Undo the last action.
+
+Also, for polygons one more tool is available:
+
+* |button_maptool_hole| `Cut a hole <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#webmap-hole>`_.
+
+Below you can find detailed description of these operations.
+
+Features available for editing are highlighed. You can edit multiple layers at once, each is highlighted with a different color.
+
+.. |button_maptool_add| image:: _static/button_maptool_add.png
+   :width: 6mm
+   :alt: + in a circle
+
+.. |button_maptool_edit| image:: _static/button_maptool_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_maptool_move| image:: _static/button_maptool_move.png
+   :width: 6mm
+   :alt: outward arrows
+
+.. |button_maptool_attrib| image:: _static/button_maptool_attrib.png
+   :width: 6mm
+   :alt: three lines
+
+.. |button_maptool_delete| image:: _static/button_maptool_delete.png
+   :width: 6mm
+   :alt: trash can
+
+.. |button_maptool_save| image:: _static/button_maptool_save.png
+   :width: 6mm
+   :alt: floppy disc
+
+.. |button_maptool_undo| image:: _static/button_maptool_undo.png
+   :width: 6mm
+   :alt: U-shaped arrow
+
+.. |button_maptool_hole| image:: _static/button_maptool_hole.png
+   :width: 6mm
+   :alt: scissors
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: map and magnifying glass
+
+
 
 .. _ngw_create_objects:
 
 Create a new feature (point, line, polygon)
---------------------------------------------
+-----------------------------------------------
 
-1. On the editing toolbar activate "Create features" button (see :numref:`webmap_create_objects`):
+1. Enter Edit mode. The |button_maptool_add| "Create" tool is active by default (the button is blue). If you used some other tool before that, click on the button to activate feature creation.
 
-.. figure:: _static/webgis_create_new_objects_eng_2.png
-   :name: webmap_create_objects
+.. figure:: _static/webmap_create_point_en.png
+   :name: webmap_create_point_pic
    :align: center
    :width: 20cm
 
-   "Create features" button on the editing toolbar
+   "Create feature" button on the toolbar and the mark by the mouse pointer
 
-2. A blue circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. You can add several new features one after another. While creating a line you need to indicate its start and end points by clicking on the map. While creating a polygon each new click on the map will indicate its new vertice, to finish a polygon you need to click on its start point. You can use adhesion while creating vertices.
+2. A colored circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. 
 
+3. A dialog opens where you can add attribute values. 
 
-3. In the opened pop-up window you can enter attribute values, then and press **Ok** to complete feature creation. To clear the form, press **Reset**. 
+Click **OK** to finish creating a feature. To clear the attribute form, click **Reset**.
 
-.. figure:: _static/webgis_attr_new_objects_en.png
+.. figure:: _static/webgis_attr_new_objects_en_2.png
    :name: webgis_attr_new_objects_pic
    :align: center
    :width: 20cm
 
-   Entering attribute values for a new feature
+   Entering attribute values for the new feature
 
-You can add multiple features in one go. To create a straight line click on the map to indicate its beginning and end. To create a polygon, click on the map to mark its vertices, then click on the first point to complete the polygon. Snapping is used while adding vertices.
+You can enter multiple features one after the other. 
 
-4. To finish creation of the new feature press "Stop editing" in the layer menu.
-5. In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
+When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. To finish a polygon you need to click on its starting point. You can use adhesion while creating vertices.
 
-.. figure:: _static/webgis_finish_editting_eng_3.png
+.. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to cut the hole.
+
+4. To save created features to the layer, click |button_maptool_save| "Stop editing". 
+4. In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
+
+.. figure:: _static/webgis_finish_editting_en.png
    :name: webmap_finish_edit
    :align: center
-   :width: 20cm
+   :width: 10cm
 
-   Dialog window of finishing edits
+   Dialog for finishing the edits
 
 
 .. _ngw_delete_objects:
 
-Delete a feature
------------------
+Delete feature
+----------------
 
-1. On the editing toolbar activate "Delete features" button (see :numref:`webmap_delete_objects`):
+1. Enter the edit mode. On the editing toolbar click on the |button_maptool_delete| "Delete" button.
 
-.. figure:: _static/webgis_delete_objects_eng_2.png
-   :name: webmap_delete_objects
-   :align: center
-   :width: 20cm
+2. Click on the features you want to delete. The highlighted contour of the editable features disappears.
 
-   "Delete features" button on the editing toolbar
-
-2. Features you can modify will reduce their color intensity and have a blue outline. The pointer will become a black cross.
-
-3. Left-click to select the features you would like to delete. Selected features will become dark again.
-
-.. figure:: _static/webgis_delete_objects_select_en.png
+.. figure:: _static/webmap_delete_polygon_en.png
    :name: webgis_delete_objects_select
    :align: center
    :width: 20cm
    
-   The layer with the purple points is active. The marked points have been selected to be deleted
+   Editing polygon layer. Polygons highlighted in red, remain in the layer, polygon without the red contour is deleted.
    
-4. Select "Stop editing" in the layer dropdown menu.
-5. In the opened dialog select "Save" (see :numref:`webmap_finish_edit`).
+4. To finish deleting features, click |button_maptool_save| "Stop editing". 
+4. In the opened dialog select "Save" to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode (see :numref:`webmap_finish_edit`).
 
 .. _ngw_move_objects:
 
-Move a feature or its vertices
--------------------------------
+Move feature
+-------------
 
-1. On the editing toolbar activate "Modify features" button (pencil icon, see :numref:`webmap_change_objects`):
+1. To move en etire feature, enter the Edit mode and activate |button_maptool_move| "Move" tool.
 
-.. figure:: _static/webgis_change_objects_eng_2.png
-   :name: webmap_change_objects
+2. Click on the feature to select it, then drag to a new location.
+
+Both the old position (style colors) and the new position (selection color) are shown.
+
+
+.. figure:: _static/webmap_move_point_en.png
+   :name: webmap_move_point_pic
    :align: center
    :width: 20cm
 
-   "Modify features" button on the editing toolbar
+   Moving a point. The new position is marked in blue
 
-2. Features you can modify will reduce their color intensity and have a blue outline.
-3. Select a feature (point) or one of its vertices (line, polygon) with the pointer and drag it,  then release on a new place. For vertices modifying an adhesion will work.
-
-.. figure:: _static/webgis_move_objects_en.png
-   :name: webgis_move_objects
+.. figure:: _static/webmap_move_polygon_en.png
+   :name: webmap_move_polygon_pic
    :align: center
    :width: 20cm
-   
-   Moving a point. Before you confirm the edit, both its initial and its final location will be visible on the map
 
-4. Select "Stop editing" in the layer dropdown menu.
-5. In the opened dialog select "Save" (see :numref:`webmap_finish_edit`).
+   Moving a polygon feature. The new position is marked in red
+
+3. Click |button_maptool_save| "Stop editing" and save the changes.
+
+Also you can move individual vertices of lines and polygons.
+
+.. _webmap_edit_vertices:
+
+Edit vertices
+---------------
+
+1. On the toolbar click on the |button_maptool_edit| "Edit" button.
+
+Editable features are highlighted.
+
+3. Click on a vertex and drag it to a new position by holding the left mouse button. Snapping is active by default.
+
+.. figure:: _static/webgis_edit_vertices_en.png
+   :name: webgis_edit_vertices_pic
+   :align: center
+   :width: 20cm
+
+   Editing polygon vertices. The changed geometry is shown in red
+
+3. To finish editing click |button_maptool_save| "Stop editing" and save the changes (see :numref:`webmap_finish_edit`).
 
 .. note:: 
-	You can edit several layers simultaneously. To do it enter the edit mode in every layer you want to edit. Adhesion will work for features of all these layers.
+	You can edit several layers simultaneously. To do it enter the edit mode in every layer you want to edit. Snapping works for features of all these layers.
 
 .. _ngw_vertices:
 
 Add and delete vertices
--------------------------
+-----------------------
 
-To delete a vertice enter the editing mode, hold **Shift** and click on the vertice. 
+To **delete** a vertice enter the Edit mode, then activate the |button_maptool_edit| "Edit" tool, hold **Shift** and click on the vertex. 
 
-To add a vertice, click on the line between two existing vertices and drag it to the desired location.
+To **add** a vertex, click on the line between two existing vertices and drag it to the desired location.
 
-.. figure:: _static/ngw_new_vertice_en.png
+.. figure:: _static/ngw_new_vertex_en.png
    :name: ngw_new_vertice_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
    
-   Creating a new vertice
+   Creating a new vertex
 
+.. _webmap_hole:
 
+Create holes
+--------------
 
-.. _ngw_attr_values_edit:
+If you need to create a polygon that has one or seleral areas cut from it:
 
-Edit attribute values
-----------------------------------
+1. First add the outer contour using the |button_maptool_add| Create tool.
 
-NextGIS Web software allows to edit attributes for geographical features. Editing could be launched from the administrator interface or from the map display. 
+2. Activate the |button_maptool_hole| Cut hole tool and draw a closed boundary of the hole.
 
-* Editing attributes from administrator interface: 
+.. figure:: _static/cutting_hole_en.png
+   :name: cutting_hole_pic
+   :align: center
+   :width: 20cm
 
-  - Click the table icon opposite the resource or select an action for a vector layer called "Feature table" in the actions pane (see :numref:`admin_table_objects_upload`).
-  - A feature table for the layer will open. Select the row you want to edit. It will be highlighted in yellow.
-  - Click **Edit** button (see :numref:`ngweb_editing_attributes2.7`).
+   Polygon with a hole
 
-.. figure:: _static/ngweb_editing_attributes_eng_2.png
+3. To finish editing click |button_maptool_save| "Stop editing" and save the changes (see :numref:`webmap_finish_edit`).
+
+.. _ngw_attributes:
+
+Edit feature's attributes
+---------------------------
+
+NextGIS Web software allows users to edit attributes of geographical features. There are several ways to open the dialog: 
+
+* From the resource list: 
+
+  - Click on the |button_open_feature_table| table symbol by the vector layer (or open the layer resource page and select "Feature table" in the actions pane), see :numref:`ngweb_Object_table`).
+  - Feature table opens. Click on the entry in the table to select it. 
+  - Click on the **Edit** button in the table toolbar (see :numref:`ngweb_editing_attributes2.7`).
+
+.. figure:: _static/ngweb_editing_attributes_en.png
    :name: ngweb_editing_attributes2.7
    :align: center
    :width: 16cm
    
-   Editing attributes from administrator interface
-  
-* Editing attributes from the map display: 
+   Editing attributes using Feature table
 
-  - Open a Web Map.
-  - Click on the map with Identify tool active.
-  - Click edit button in the Identify window (the last tab, see :numref:`ngweb_editing_when_viewing_map`).
+If you are in the Web Map |button_open_web_map| display mode.
+
+* From the Feature table:
+
+   - In the layer's context menu select "Feature table" and then follow the steps described above.
+  
+* In the Edit mode:
+
+   - In the layer's context menu select "Edit". 
+   - In the toolbar on the map select |button_maptool_attrib|.
+   - Click on the feature on the map.
+
+* From the Identify panel:
+
+   - Click on the feature on the map. 
+   - In the Identify panel click on the "Edit" symbol (see :numref:`ngweb_editing_when_viewing_map`).
 
 .. figure:: _static/editing_when_viewing_map_open_en.png
    :name: ngweb_editing_when_viewing_map
    :align: center
    :width: 20cm
 
-   Editing attributes from the map
+   Editing attribute values from the Identify panel
 
-You can change attribute values in the opened window. Description made on "Description" tab will be visible on the map display in the indentify window. 
 
-Editing page has following tabs:
 
-* "Attributes" tab (see :numref:`ngweb_tab_attributes`).
+Editing dialog has the following tabs: 
+
+* "Attributes" tab:
 
 .. figure:: _static/ngweb_tab_attributes_eng_2.png
    :name: ngweb_tab_attributes
    :align: center
-   :width: 16cm
+   :width: 14cm
  
-   "Attributes" tab
+   Attributes tab
 
-To edit an attribute click on the field.
+To edit an attribute click on the field. 
 
-Numbers can be typed in or modified with errows that appear on the right end of the field.
+Numbers can be typed in or modified with arrows that appear on the right end of the field. 
 
 Dates also can be typed in or selected in the calender. To open the calender click the icon on the right end of the field.
 
+Add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ to a field to be able to pick a value from a dropdown list.
 
-* "Description" tab (see :numref:`ngweb_tab_description`).
-
-.. figure:: _static/ngweb_tab_description_eng_2.png
-   :name: ngweb_tab_description
-   :align: center
-   :width: 20cm
-
-   "Description" tab
-
-* "Attachments" tab (see :numref:`ngweb_tab_attachment`).
+* "Attachments" tab (`more on managing attachments <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments>`_);
 
 .. figure:: _static/ngweb_tab_attachment_eng_2.png
    :name: ngweb_tab_attachment
    :align: center
-   :width: 16cm
+   :width: 14cm
  
-   "Attachments" tab
+   Attachments tab
 
-.. note::
+* "Description" tab - the description is displayed in the Identify panel when you click on a featre.
 
-   When editing a PostGIS layer attribute changes are saved to PostGIS database and descriptions are saved to a local database. 
-   When editing a layer based on a Shapefile attribute all changes are saved to a local database. 
+.. figure:: _static/ngweb_tab_description_eng_2.png
+   :name: ngweb_tab_description
+   :align: center
+   :width: 16cm
 
-.. note::
+   Description tab
 
-   Geodata with changed attributes could be downloaded by link :guilabel:`Download as GeoJSON` or published as WFS service. Download of descriptions is currently unavailable.
+.. note:: If you opened the feature attributes dialog from the Feature table on a separate page, you can edit the feature's geometry in the fourth tab. If you opened the edit dialog from a Web Map, to edit the geometry activate `Edit mode <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_.
+
 
 
 
