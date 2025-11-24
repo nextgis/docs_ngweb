@@ -69,7 +69,7 @@ Edit mode on a Web Map
 * |button_maptool_move| `Move <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-move-objects>`_ an entire feature;
 * |button_maptool_attrib| `Edit attribute values <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attributes>`_;
 * |button_maptool_delete| `Delete <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-delete-objects>`_;
-* |button_maptool_save| Leave Edit mode;
+* |button_maptool_save| Stop editing and leave Edit mode;
 * |button_maptool_undo| Undo the last action.
 
 Also, for polygons one more tool is available:
@@ -160,7 +160,7 @@ When creating a line, click on the map to indicate its start and end points. Whi
 .. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to cut the hole.
 
 4. To save created features to the layer, click |button_maptool_save| "Stop editing". 
-4. In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
+In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
 
 .. figure:: _static/webgis_finish_editting_en.png
    :name: webmap_finish_edit
@@ -187,7 +187,7 @@ Delete feature
    Editing polygon layer. Polygons highlighted in red, remain in the layer, polygon without the red contour is deleted.
    
 4. To finish deleting features, click |button_maptool_save| "Stop editing". 
-4. In the opened dialog select "Save" to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode (see :numref:`webmap_finish_edit`).
+In the opened dialog select "Save" to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode (see :numref:`webmap_finish_edit`).
 
 .. _ngw_move_objects:
 
@@ -287,7 +287,7 @@ NextGIS Web software allows users to edit attributes of geographical features. T
 
 * From the resource list: 
 
-  - Click on the |button_open_feature_table| table symbol by the vector layer (or open the layer resource page and select "Feature table" in the actions pane), see :numref:`ngweb_Object_table`).
+  - Click on the |button_open_feature_table| table symbol by the vector layer (or open the layer resource page and select "Feature table" in the actions pane), see :numref:`admin-table-objects-upload`).
   - Feature table opens. Click on the entry in the table to select it. 
   - Click on the **Edit** button in the table toolbar (see :numref:`ngweb_editing_attributes2.7`).
 
