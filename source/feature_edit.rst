@@ -289,7 +289,7 @@ NextGIS Web software allows users to edit attributes of geographical features. T
 
   - Click on the |button_open_feature_table| table symbol by the vector layer (or open the layer resource page and select "Feature table" in the actions pane), see :numref:`admin-table-objects-upload`).
   - Feature table opens. Click on the entry in the table to select it. 
-  - Click on the **Edit** button in the table toolbar (see :numref:`ngweb_editing_attributes2.7`).
+  - Click on the **Edit** button in the table toolbar.
 
 .. figure:: _static/ngweb_editing_attributes_en.png
    :name: ngweb_editing_attributes2.7
