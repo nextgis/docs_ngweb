@@ -108,12 +108,13 @@
 
 .. |button_home| image:: _static/button_home.png
    :width: 6mm
+   :alt: домик
 
 
 Слева внизу:
 
 
-
+* |panel_ident_small| / |button_maptool_clear| Идентификация / Очистить выделение
 * |button_zoom_in| Приблизить
 * |button_zoom_out| Отодвинуть
 * |button_measure_distance| Измерение расстояния
@@ -123,22 +124,30 @@
 
 .. |button_zoom_in| image:: _static/button_zoom_in.png
    :width: 6mm
+   :alt: лупа с плюсом
 
 .. |button_zoom_out| image:: _static/button_zoom_out.png
    :width: 6mm
+   :alt: лупа с минусом
 
 .. |button_measure_distance| image:: _static/button_measure_distance.png
    :width: 6mm
+   :alt: линейка
 
 .. |button_measure_area_map| image:: _static/button_measure_area_map.png
    :width: 6mm
+   :alt: угольник
 
 .. |button_swipe_off| image:: _static/button_swipe_off.png
    :width: 6mm
+   :alt: прямоугольник, рассечённый по вертикали
 
 .. |button_extent_coord| image:: _static/button_extent_coord.png
    :width: 6mm
 
+.. |button_maptool_clear| image:: _static/button_maptool_clear.png
+   :width: 6mm
+   :alt: X
 
 .. _ngw_webmaps_client_tools_measure:
 
@@ -280,22 +289,43 @@
 -----------------------
 
 .. |panel_ident_small| image:: _static/panel_ident.png
-   :width: 5mm
+   :width: 6mm
 
 Чтобы получить информацию об объектах, расположенных на веб-карте, активируйте |panel_ident_small| панель идентификации. Теперь по клику на любом месте карты вы получите информацию о расположенных в этой точке векторных объектах или пикселе растра.
 
+В панели идентификации отображаются значения атрибутов объекта, сведения о геометрии, описание (если задано) и вложения.
+
+.. figure:: _static/ngw_panel_id_ru.png
+   :name: ngw_panel_id_pic
+   :align: center
+   :width: 20cm
+
+   Панель идентификации с информацией об объекте
+
 Если объектов в месте клика несколько (например, линия и лежащая на этой линии точка), то в панели будет отображён объект из слоя, находящегося выше всего в дереве слоёв. Чтобы получить информацию по остальным объектам, кликните на стрелочку вниз рядом с именем объекта и выберите нужный из списка.
 
-.. figure:: _static/ngw_panel_id_select_feature_ru.png
-   :name: 
+.. figure:: _static/ngw_panel_id_select_feature_ru_2.png
+   :name: ngw_panel_id_select_feature_pic
    :align: center
    :width: 20cm
 
    Выбор объекта из списка найденных при идентификации
 
+Чтобы снять выделение, нажмите кнопку |button_maptool_clear| в левом нижнем углу карты. Когда ни один объект не выделен, эта кнопка имеет вид |panel_ident_small|.
+
 Задать, какой радиус вокруг клика учитывается при идентификации и какие параметры объектов отображаются, можно `через панель управления <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
 
 Вы можете отключить идентификацию для отдельных слоёв и изменить их порядок в `настройках веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
+
+Чтобы изменить атрибуты объекта, нажмите значок карандаша в правом верхнем углу панели (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngweb-editing-when-viewing-map>`_).
+
+.. figure:: _static/ngw_panel_id_edit_ru.png
+   :name: ngw_panel_id_edit_pic
+   :align: center
+   :width: 20cm
+
+   Вызов окна редактирования атрибутов объекта
+
 
 .. _ngw_webmaps_client_search:
 
@@ -444,7 +474,7 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
 
 Для смены картографических подложек служит выпадающий список (см. :numref:`ngweb_webmap_client`). По умолчанию имеются следующие подложки:
 
-* None
+* No basemap - без подложки
 * OpenStreetMap
 
 Подложка - это изображение карты, которое предоставляется другими, независимыми сервисами в сети Интернет. 
