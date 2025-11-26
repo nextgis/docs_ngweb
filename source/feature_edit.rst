@@ -69,6 +69,7 @@ Edit mode on a Web Map
 * |button_maptool_move| `Move <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-move-objects>`_ an entire feature;
 * |button_maptool_attrib| `Edit attribute values <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attributes>`_;
 * |button_maptool_delete| `Delete <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-delete-objects>`_;
+* |button_maptool_snap| Snapping: blue = enabled, white = disabled;
 * |button_maptool_save| Stop editing and leave Edit mode;
 * |button_maptool_undo| Undo the last action.
 
@@ -116,6 +117,10 @@ Features available for editing are highlighed. You can edit multiple layers at o
    :width: 6mm
    :alt: scissors
 
+.. |button_maptool_snap| image:: _static/button_maptool_snap.png
+   :width: 6mm
+   :alt: frame with a dot
+
 .. |button_open_feature_table| image:: _static/button_open_feature_table.png
    :width: 6mm
    :alt: table
@@ -155,7 +160,11 @@ Click **OK** to finish creating a feature. To clear the attribute form, click **
 
 You can enter multiple features one after the other. 
 
-When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. To finish a polygon you need to click on its starting point. You can use adhesion while creating vertices.
+When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. To finish a polygon you need to click on its starting point. 
+
+If you accidentally click on a wrong place, press **Backspace** to delete the last vertex and place it elsewhere.
+
+Snapping is enabled by default for lines and polygons. To disable it, click |button_maptool_snap|.
 
 .. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to cut the hole.
 
@@ -228,7 +237,7 @@ Edit vertices
 
 Editable features are highlighted.
 
-3. Click on a vertex and drag it to a new position by holding the left mouse button. Snapping is active by default.
+3. Click on a vertex and drag it to a new position by holding the left mouse button. Snapping is active by default. To disable it, click |button_maptool_snap|.
 
 .. figure:: _static/webgis_edit_vertices_en.png
    :name: webgis_edit_vertices_pic
