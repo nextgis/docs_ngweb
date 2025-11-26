@@ -59,7 +59,7 @@ Watch on `youtube <https://youtu.be/HVvuDMX1pEo?si=YzQcqFMw-ge50qPA>`_.
 .. _ngw_webmaps_client_panels:
 
 Panels
-----------------------
+--------
 
 On the left side of the workspace are the functional panels:
 
@@ -105,12 +105,13 @@ Top left:
 
 Bottom left:
 
-* |button_zoom_in| Zoom in
-* |button_zoom_out| Zoom out
-* |button_measure_distance| Measure distance
-* |button_measure_area_map| Measure area
-* |button_swipe_off| Vertical swipe
-* |button_extent_coord| Show cursor coordinates/extent
+* |panel_ident_small| `Identify <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_
+* |button_zoom_in| `Zoom in <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#zoom-and-rotation>`_
+* |button_zoom_out| `Zoom out <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#zoom-and-rotation>`_
+* |button_measure_distance| `Measure distance <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#measuring-tools>`_
+* |button_measure_area_map| `Measure area <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#measuring-tools>`_
+* |button_swipe_off| `Swipe <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#swipe>`_
+* |button_extent_coord| `Show cursor coordinates/extent <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#show-extent-or-cursor-coordinates>`_
 
 .. |button_zoom_in| image:: _static/button_zoom_in.png
    :width: 6mm
