@@ -114,13 +114,13 @@
 Слева внизу:
 
 
-* |panel_ident_small| / |button_maptool_clear| Идентификация / Очистить выделение
-* |button_zoom_in| Приблизить
-* |button_zoom_out| Отодвинуть
-* |button_measure_distance| Измерение расстояния
-* |button_measure_area_map| Измерение площади
-* |button_swipe_off| Шторка
-* |button_extent_coord| Показ координат/охвата
+* |panel_ident_small| / |button_maptool_clear| `Идентификация / Очистить выделение <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_
+* |button_zoom_in| `Приблизить <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_
+* |button_zoom_out| `Отодвинуть <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_
+* |button_measure_distance| `Измерение расстояния <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-measure>`_
+* |button_measure_area_map| `Измерение площади <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-measure>`_
+* |button_swipe_off| `Шторка <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-swipe>`_
+* |button_extent_coord| `Показ координат/охвата <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-coord-extent>`_
 
 .. |button_zoom_in| image:: _static/button_zoom_in.png
    :width: 6mm
