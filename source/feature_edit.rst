@@ -129,7 +129,9 @@ Features available for editing are highlighed. You can edit multiple layers at o
    :width: 6mm
    :alt: map and magnifying glass
 
-
+.. |button_maptool_confirm| image:: _static/button_maptool_confirm.png
+   :width: 6mm
+   :alt: tick
 
 .. _ngw_create_objects:
 
@@ -160,13 +162,15 @@ Click **OK** to finish creating a feature. To clear the attribute form, click **
 
 You can enter multiple features one after the other. 
 
-When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. To finish a polygon you need to click on its starting point. 
+When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. 
+
+To finish creating geometry, press **Enter**, click twice on the last vertex or click |button_maptool_confirm|. To finish a polygon you can also click on its starting point. 
 
 If you accidentally click on a wrong place, press **Backspace** to delete the last vertex and place it elsewhere.
 
 Snapping is enabled by default for lines and polygons. To disable it, click |button_maptool_snap|.
 
-.. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to cut the hole.
+.. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to `cut the hole <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#webmap-hole>`_.
 
 4. To save created features to the layer, click |button_maptool_save| "Stop editing". 
 In the opened dialog select **"Save"** to save changes, "Don't save" to discard them, or "Cancel" to stay in the edit mode:
