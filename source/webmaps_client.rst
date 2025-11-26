@@ -317,18 +317,38 @@ Feature identification
 
 To get information about features on the Web Map activate the |panel_ident_small| identify panel. Click anywhere on the map to get info on vector features and raster pixels.
 
+.. figure:: _static/ngw_panel_id_en.png
+   :name: ngw_panel_id_pic
+   :align: center
+   :width: 20cm
+
+   Identify panel with feature information
+
 If there are multiple features (for example a point and a line going through it), the identify panel will show the feature of the topmost layer. To view information on the other features click on the downward arrow to the right of the feature name and select the feature from the dropdown list.
 
-.. figure:: _static/ngw_panel_id_select_feature_en.png
-   :name: 
+.. figure:: _static/ngw_panel_id_select_feature_en_2.png
+   :name: ngw_panel_id_select_feature_pic
    :align: center
    :width: 20cm
 
    Selecting feature in the identification panel
 
+To clear selection, click on |button_maptool_clear| in the bottom left corner. When no feature is selected, this button looks like this: |panel_ident_small|.
+
 To configure how far from the clicks the features can be to be identified and what parameters are displayed in the panel go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
 
 You can disable identification for individual layers and modify their order in the `Web Map settings <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
+
+To modify attribute values of the feature, click on the pencil icon in the top right corner of the panel (`more details <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngweb-editing-when-viewing-map>`_).
+
+.. figure:: _static/ngw_panel_id_edit_en.png
+   :name: ngw_panel_id_edit_pic
+   :align: center
+   :width: 20cm
+
+   Opening attribute editing window from the panel
+
+
 
 
 .. _ngw_webmaps_client_search:
