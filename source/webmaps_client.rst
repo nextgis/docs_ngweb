@@ -386,7 +386,7 @@
 Смотреть на `youtube <https://youtu.be/7nfXFrCSru0>`__, `rutube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`__.
 
 
-Также при открытии таблицы объектов слоя доступна `**фильтрация по области** <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
+Также при открытии таблицы объектов слоя доступна `фильтрация по области <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
 
 
 
