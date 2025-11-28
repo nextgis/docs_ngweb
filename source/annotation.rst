@@ -50,27 +50,24 @@ How to enable Web Map annotations?
 
 You can enable creation of annotations and set the display options in the Settings tab of the "Create resource" or "Update resource" windows for the Web Map (see :ref:`Update resource <ngw_update_resource>`). By default the annotation tool is inactive.
 
-.. figure:: _static/ann_settings_eng_3.png
+.. figure:: _static/ann_settings_en.png
    :name: ann_settings
    :align: center
-   :width: 16cm
+   :width: 15cm
 
    Settings tab of a Web Map for managing annotations (annotations are enabled and are shown on a Web Map when it opens)
 
-There are two parameters in the Settings tab of a Web Map:
+The options are:
 
-**Enable annotations** - enable or forbid working with annotations while working with the Web Map.
 
-**Show annotations**:
-
-- *No* - annotations are hidden
-- *Yes* - the annotation symbols are visible on the Web Map when it opens
-- *With messages* - both symbols and text are shown on the Web Map
+- *Hide by default* - annotations are hidden;
+- *Show without messages* - the annotation symbols are visible on the Web Map when it opens;
+- *Show with messages* - both symbols and text are shown on the Web Map.
 
 .. _ngw_annotation_panel:
 
 Web Map: Annotations panel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the *"Enable annotations"* option is active, the "Annotations" panel appears on the Web Map:
 
@@ -152,26 +149,6 @@ There are three permissions associated with annotations:
 - **Web Map: Manage annotations** - determines whether the selected user can edit all types of annotation, included those created by other users. If it is set to Deny value, the “Other private annotations” option is not shown on the “Annotations” panel and the other users' private annotations can not be viewed on the Web Map.
 
 Using above-mentioned permissions you can set annotations as following.
-
-In the Settings tab of the Web Map
-
-.. list-table::
-
-   * - Settings
-     - Result
-   * - | Enable annotations - No
-     - | Annotations panel is not shown on the Web Map.
-       | Annotations can not be shown on the Web Map.
-   * - | Enable annotations - Yes
-       | Show annotations by default - No
-     - | Annotations panel is available on the Web Map.
-       | No tick for "Show annotations layer".
-       | Annotations are not displayed on the Web Map when it opens but can be viewed.
-   * - | Enable annotations - Yes
-       | Show annotations by default - Yes
-     - | Annotations panel is available on the Web Map.
-       | "Show annotations layer" is ticked.
-       | Annotations are displayed on the Web Map when it opens.
        
 In the Permissions tab of the Web Map
 If annotations are enabled in the Web Map settings, a particular user can have certain permissions:
