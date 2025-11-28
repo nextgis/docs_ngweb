@@ -203,9 +203,7 @@ Open the resource page of the layer, click **Create resource** and select "Form"
 In the opened window on the Form tab you have two options:
 
 * build a form;  
-* upload a NGFP file made in Formbuilder.
-
-
+* upload a NGFP file.
 
 To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
 
@@ -216,7 +214,7 @@ To create a new form in the online builder, drag the elements from the list on t
 
    Building a form online. Properties of the "Text box" element are displayed
 
-If you tick **Add absent fields to layer**, fields for the added elements will be added automatically. This allows users to create an empty layer, then set its structure by creating a form.
+If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
 
 You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
 
