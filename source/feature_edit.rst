@@ -406,12 +406,14 @@ Other types of files can be added as attachments, but won't be viewed in the int
 After a click on a photo preview a lightbox window is open (a  
 javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
 
-.. figure:: _static/webmap_ident_photo_lightbox.png
+.. figure:: _static/webmap_ident_photo_lightbox_2.png
    :name: webmap_identification_photo_lightbox
    :align: center
    :width: 18cm
 
    A lightbox with uploaded photo for the identified feature 
+
+You can zoom in and out, turn the image or save it to your device.
 
 To navigate within the panorama, use the mouse. Hold down the left mouse button to rotate the camera. Use the wheel to zoom in and out. Panorama mode can be disabled by clicking on the blue round button in the upper right corner.
 
