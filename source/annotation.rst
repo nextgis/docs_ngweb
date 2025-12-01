@@ -142,69 +142,17 @@ Web Map: user's permissions associated with annotations
 
 To further manage the work with annotations you can use access permissions (you can read more about `setting permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#types-of-rules-what-can-be-allowed-or-denied>`_).
 
-There are three permissions associated with annotations:
+By default only the Administrator can view the Annotations panel and manage annotations.
 
-- **Web Map: View annotations** - allows or forbids annotations viewing by selected users for particular resources. If it is set to Deny value, "Annotations" panel is inactive.
-- **Web Map: Edit annotations** - determines whether the selected user can edit public annotations and their own private annotations in a particular resource. If it is set to Deny value, "Edit annotations" option on the "Annotations" panel is inactive.
-- **Web Map: Manage annotations** - determines whether the selected user can edit all types of annotation, included those created by other users. If it is set to Deny value, the “Other private annotations” option is not shown on the “Annotations” panel and the other users' private annotations can not be viewed on the Web Map.
+There are three permissions associated with annotations that you can use to allow other users to work with annotations. 
 
-Using above-mentioned permissions you can set annotations as following.
-       
-In the Permissions tab of the Web Map
-If annotations are enabled in the Web Map settings, a particular user can have certain permissions:
+You can set one of them (view), two (view+draw) or all three (view+draw+manage), only in these combinations. So, for example, if "Draw" permission is set without "view" permission, it will not work.
 
-.. list-table::
+#. **Web Map: View annotations** - "Annotations" panel is active. Public annotations are visible.
+#. **Web Map: Draw annotations** - "Edit annotations" option on the "Annotations" panel is active. User can create public and private annotations.
+#. **Web Map: Manage annotations** - User can view and edit private annotations created by other users.
 
-   * - Settings
-     - Result for **administrator**
-     - Result for other users
-   * - | Web-map: View annotations - **Deny**
-       | annotation_read - Deny
-     - | Annotations panel is not shown on the Web Map.
-       | No annotations are displayed on the Web Map, even the public annotations that are shown to unlogged users are hidden.
-     - | Annotations panel is not shown on the Web Map.
-       | No annotations are displayed on the Web Map, even the public annotations that are shown to unlogged users are hidden.
-   * - | Web-map: View annotations - **Allow**
-       | annotation_read - Allow
-     - | Annotations panel is available on the Web Map.
-       | Annotations can be viewed.
-       | *Editing of annotations is possible*.
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and *this user's annotations* can be displayed.
-       | *Annotations created by other users can not be displayed.*
-       | *Annotation editing tools are unavailable*.
-   * - | Web-map: View annotations - **Allow**
-       | Web-map: Edit annotations - **Deny**
-       | annotation_read - Allow
-       | annotation_write - Deny
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and this user's annotations can be displayed.
-       | Annotations created by other users can not be displayed.
-       | Annotation editing tools are unavailable.
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and this user's annotations can be displayed.
-       | Annotations created by other users can not be displayed.
-       | Annotation editing tools are unavailable.
-   * - | Web-map: View annotations - **Allow**
-       | Web-map: Edit annotations - **Allow**
-       | annotation_read - Allow
-       | annotation_write - Allow
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and annotations created by all users can be displayed.
-       | Editing of annotations is possible.
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and *this user's annotations* can be displayed.
-       | *Annotations created by other users can not be displayed*.
-       | Editing of annotations is possible.
-   * - | Web-map: View annotations - **Allow**
-       | Web-map: Edit annotations - **Allow**
-       | Web-map: Manage annotations - **Allow**
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and annotations created by all users can be displayed.
-       | Editing of annotations is possible.
-     - | Annotations panel is available on the Web Map.
-       | Public annotations and annotations *created by all users* can be displayed.
-       | Editing of annotations is possible.
+
 
 
 
