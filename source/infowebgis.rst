@@ -23,6 +23,9 @@ Through the control panel, the administrator can view information about the syst
 
    System and platform information
 
+For NextGIS Web on-premise you can also see if there are `updates available <https://docs.nextgis.com//docs_ngweb/source/infowebgis.html#onpremise-updates>`_.
+
+
 .. _ngw_storage:
 
 Storage
@@ -41,6 +44,49 @@ The administrator can forcibly recalculate the amount of storage (for example - 
 
    Storage section
 
+.. _onpremise_updates:
+
+Available updates
+-----------------
+
+.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
+
+For NextGIS Web on-premise on the System information page you can check for available updates. If an update is available, you'll see a message at the top of the page.
+
+Click on "Show details" to view the list of changes.
+
+.. figure:: _static/ngwop_update_details_en.png
+   :name: ngwop_update_details_pic
+   :align: center
+   :width: 20cm
+
+   Details of the available update
+
+
+If an update is available, you'll also get a notification a short while after opening your Web GIS.
+
+A green dot on the main menu icon indicates that there's a notification.
+
+.. figure:: _static/ngwop_update_marker_en.png
+   :name: ngwop_update_marker_pic
+   :align: center
+   :width: 20cm
+
+   Notification marker
+
+
+After opening the menu you'll see the mesage: "Updates are available". Click on it to go to the System information page and check the details. 
+
+
+.. figure:: _static/ngwop_update_message_en.png
+   :name: ngwop_update_message_pic
+   :align: center
+   :width: 20cm
+
+   Notification message in the main menu
+
+To install the update, contact the system administrator.
+
 
 
 .. _ngw_backups:
@@ -53,6 +99,8 @@ The process of creating backups and restoring for developers is described in `th
 
 .. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 
+
+.. _ngw_backup_policy:
 
 Backup policy
 --------------
@@ -115,6 +163,4 @@ To view the complete text of the request click on the corresponding entry (:numr
    :width: 20cm
    
    Log entry
-
-
 
