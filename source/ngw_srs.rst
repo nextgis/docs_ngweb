@@ -117,14 +117,28 @@ The added SRS can be used for various purposes:
    
 2. To export vector layers.  All custom SRS are also available for data export. See `this section <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#data-export-to-csv-and-geojson-formats>`_ for details.
 
-3. To extend API requests. Support for custom SRS is gradually added to NextGIS Web API too.  For example, this request will return a feature in a required SRS:
+3. To extend API requests. Support for custom SRS is gradually added to NextGIS Web API too.  For example, this request will return a feature in a required SRS (in example we use custom SRS identifier 990002)
 
 /api/resource/{id}/feature/{fid}?srs=990002
 
-Custom SRS identifier (990002 in this example) can be known by editing a created SRS, for example:
 
-/srs/990002/edit
+.. _ngw_srs_id:
 
+SRS identifier
+~~~~~~~~~~~~~~~~~
+
+For API or some Toolbox tools (e.g. `Web Map into QGIS project <https://toolbox.nextgis.com/t/webmap2qgis>`_) you need to know the identifier of the SRS.
+
+If it's a standard SRS that has **EPSG** code, just use the numbers of the code, e.g. ``3857`` for EPSG:3857.
+
+If it's a custom SRS `added via definition <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#ngw-srs-create>`_ that does not has EPSG code, it gets a unique code within a specific Web GIS. To view it, open the SRS in the edit mode, the identifier is at the end of the URL:
+
+.. figure:: _static/user_srs_id_en.png
+   :name: user_srs_id_pic
+   :align: center
+   :width: 20cm 
+
+   Identifier of a custom SRS
 
 .. _ngw_srs_external_db:
 
