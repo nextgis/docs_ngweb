@@ -293,10 +293,21 @@ The **Layer tree** panel |panel_layers_small| contains a list of all layer style
 The panel allows to:
 
 * Disable/Enable layer visibility. You can also hide parts of a layer by selecting items in the Web Map lengend. It's helpful for big projects where one layer may contain a variety of features grouped by value of an attribute.
-* Open layer attribute table
-* Zoom map to layer
-* Open layer description
+
 * Change the order of the layers by dragging them within the layer tree. Refresh the page to restore the original order.
+
+Click on the three dots next to the panel title to open the menu. In this menu you can:
+
+* Zoom to all layers;
+* Hide all layers;
+* Reset layers to the initial visibility setting without reloading the page.
+
+.. figure:: _static/webmap_layers_panel_menu_en.png
+   :name: webmap_layers_panel_menu_pic
+   :align: center
+   :width: 20cm
+
+   Layer panel menu
 
 How to `configure the legend <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
 
@@ -307,6 +318,49 @@ Functionality of the layer panel is presented in our video:
    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pd5AKtoR2g?si=-PsdgClPwYiUyNvh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Watch on `youtube <https://youtu.be/4Pd5AKtoR2g?si=0lMooDE3ZzpO0xxz>`__.
+
+.. _ngw_webmaps_client_layer_menu:
+
+Layer menu
+------------
+
+To change the transparency of the layer use the slider in the dropdown menu of the layer.
+
+Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_).
+
+Using **"Description"** option you can view the description of the selected layer, added during creation or editing of the layer. 
+
+**"Zoom to layer"** option allows you to zoom a map so that the selected layer takes up all the visible map area.
+
+See how it works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/M4cThWxdaZg?si=VtCw4Coh2Lg1E5BV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
+
+
+After a click on **"Feature table"** option you will see feature table of the selected layer under the map. 
+
+.. figure:: _static/ngweb_webmap_layer_menu_en.png
+   :name: ngweb_webmap_layer_menu_pic
+   :align: center
+   :width: 19cm
+   
+   Layer menu on the Web Map
+
+Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. **"Go to"** button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#filter-layer-features-on-the-web-map-by-area>`_).
+ 
+
+.. figure:: _static/ngweb_webmap_attribute_table_eng_3.png
+   :name: ngweb_webmap_attribute_table
+   :align: center
+   :width: 20cm
+   
+   Feature table of the selected layer on a Web Map
+   
+
 
 .. _ngw_webmaps_client_ident:
 
@@ -407,47 +461,7 @@ When the feature table is opened on the Web Map, you can filter features by area
 
  
 
-.. _ngw_webmaps_client_layer_menu:
 
-Layer menu
-------------
-
-To change the transparency of the layer use the slider in the dropdown menu of the layer.
-
-Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_).
-
-Using **"Description"** option you can view the description of the selected layer, added during creation or editing of the layer. 
-
-**"Zoom to layer"** option allows you to zoom a map so that the selected layer takes up all the visible map area.
-
-See how it works in our video:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/M4cThWxdaZg?si=VtCw4Coh2Lg1E5BV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
-
-
-After a click on **"Feature table"** option you will see feature table of the selected layer under the map. 
-
-.. figure:: _static/ngweb_webmap_layer_menu_en.png
-   :name: ngweb_webmap_layer_menu_pic
-   :align: center
-   :width: 19cm
-   
-   Layer menu on the Web Map
-
-Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. **"Go to"** button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#filter-layer-features-on-the-web-map-by-area>`_).
- 
-
-.. figure:: _static/ngweb_webmap_attribute_table_eng_3.png
-   :name: ngweb_webmap_attribute_table
-   :align: center
-   :width: 20cm
-   
-   Feature table of the selected layer on a Web Map
-   
 .. _ngw_webmaps_client_basemap:
 
 Basemap
