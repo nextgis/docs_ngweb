@@ -89,15 +89,6 @@ To install the update, contact the system administrator.
 
 
 
-.. _ngw_backups:
-
-Backups
--------
-
-In this section you can see a list of available NextGIS Web backups, as well as download any of them.
-The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
-
-.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 
 
 .. _ngw_backup_policy:
@@ -107,10 +98,23 @@ Backup policy
 
 Data backups are performed for every Web GIS (any plan). The frequency depends on total data volume and Web GIS use activity (once or several times per month).
 
-Restoring data from backups is available for `Premium <https://nextgis.com/pricing-base/>`_ users only. Other plans Web GIS are backup-ed to mitigate possible infrastructure risks not related to user actions.
+.. note:: Restoring data from backups is available for `Premium <https://nextgis.com/pricing-base/>`_ users only.
+
+For other plans Web GIS backups are made to mitigate possible infrastructure risks not related to user actions.
 
 If you are on Premium and need a restore - send us a request to support@nextgis.com. We'll let you know which dates are available. Additionally, you can see the last backup date 
 under System information section of your Web GIS' Control panel (subsection Platform - Last backup).
+
+
+.. _ngw_backups:
+
+Backups
+-------
+
+In this section you can see a list of available NextGIS Web backups, as well as download any of them.
+The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
+
+.. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 
 
 .. _ngw_audit:
