@@ -68,9 +68,9 @@
 
 Список участников сбора данных `создаётся в Панели управления <fhttps://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_
 
-Вы можете создать проект сбора данных в Веб ГИС или `в настольном приложении NextGIS Formbuilder <https://docs.nextgis.ru/docs_formbuilder/source/workflow.html#nextgis-web>`_.
 
-Если вы хотите создать проект сбора данных в Веб ГИС:
+
+Чтобы создать проект сбора данных в Веб ГИС:
 
 1. Сначала нужно `создать необходимые слои данных <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ или `загрузить имеющиеся <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_. 
 
