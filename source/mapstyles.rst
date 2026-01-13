@@ -31,7 +31,7 @@
    :align: center
    :width: 20cm
 
-   Галеря стилей
+   Галерея стилей
 
 
 .. _ngw_style_formats:
