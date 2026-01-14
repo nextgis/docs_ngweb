@@ -107,6 +107,9 @@ NextGIS Web может принимать многослойные наборы 
 
    Включение версионирования слоя
 
+В Панели управления вы можете настроить, чтобы версионирование было включено по умолчанию `для всех создаваемых Веб ГИС векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_.
+
+
 После завершения ввода нужных данных нажмите кнопку **Создать**.
 
 Далее можно создавать `стиль <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_, который в последующем будет визуализировать данные слоя на `веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
