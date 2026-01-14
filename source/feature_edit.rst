@@ -3,7 +3,14 @@
 Редактирование векторных объектов
 ====================================
 
-Вы можете редактировать **геометрии и атрибуты** объектов в Векторных слоях через веб-интерфейс: `в таблице объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ или на веб-карте (подробнее описано ниже), - а также `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_.
+Вы можете редактировать **геометрии и атрибуты** объектов в Векторных слоях через веб-интерфейс: 
+
+* `в таблице объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ 
+* или на веб-карте (подробнее описано ниже), 
+
+- а также `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_.
+
+Если для слоя `включено версионирование <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, внесённые изменения записываются в `историю <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
 
 
 .. _ngw_allow_edit:

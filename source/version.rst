@@ -32,11 +32,12 @@
 На данный момент в графический интерфейс NextGIS Web вынесено:
 
 * Включение и выключение версионирования в `свойствах векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_;
+* Включение версионирование объектов по умолчанию `для всей Веб ГИС <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_;
 * Отображение информации о версионировании на странице ресурса Векторный слой;
-* Просмотр истории версионируемого слоя;
+* `Просмотр истории версионируемого слоя <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-view-history>`_;
 * Дополнительное виртуальное поле `“Последнее изменение” <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-fields>`_ в таблице атрибутов версионируемого слоя. Оно позволяет для каждого объекта слоя увидеть автора и время последнего изменения;
-* Откат версионируемого слоя к версии;
-* Создание копии определенной версии слоя.
+* `Откат версионируемого слоя к версии <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-revert>`_;
+* `Создание копии определенной версии слоя <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-copy>`_.
 
 .. _vers_ngw_view_history:
 
@@ -145,6 +146,25 @@
 
 Нажмите **Создать копию** для завершения.
 
+.. _vers_ngw_default:
+
+Включение версионирования по умолчанию
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Если вы хотите, чтобы для всех векторных слоёв вашей Веб ГИС сохранялась история изменений, вы можете сделать версионирование включённым по умолчанию.
+
+Для этого зайдите в `Панель управления <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-control-panel>`_ и выберите пункт "Версионирование объектов".
+
+На странице настройки версионирования переведите переключатель в положение "вкл" и нажмите **Сохранить**.
+
+.. figure:: _static/version_default_ru.png
+   :name: version_default_pic
+   :align: center
+   :width: 10cm
+
+   Версионирование объектов по умолчанию выключено
+
+Также вы можете включать и выключать версионирование для отдельных слоёв `в настройках слоя <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_.
 
 
 
