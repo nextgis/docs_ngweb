@@ -204,10 +204,10 @@ NextGIS Web Control panel is available through the main menu. Press the |button_
 
 Control panel has several sections, see :numref:`admin_control_panel`.
 
-.. figure:: _static/admin_control_panel_eng_2.png
+.. figure:: _static/admin_control_panel_eng_3.png
    :name: admin_control_panel
    :align: center
-   :width: 9cm
+   :width: 7cm
 
    Control panel
 
@@ -226,6 +226,7 @@ Control panel allows to execute the following actions:
 * `Set up Analytics <https://docs.nextgis.com/docs_ngweb/source/analytics.html>`_
 * `Specify which users see the data export button <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#resource-export>`_
 * `Customize display of Tracks <https://docs.nextgis.com/docs_ngweb/source/trackers.html>`_
+* Set up `Feature versioning by default <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_
 * `Customize Web Maps <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html>`_
 * `Add spacial reference systems <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_
 * `Customize UI elements with White Label module (on-premise only) <https://docs.nextgis.com/docs_ngweb/source/label.html>`_
