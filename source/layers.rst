@@ -103,6 +103,8 @@ On the "Settings" tab you can enable feature versioning. It allows the layer to 
 
    Vector layer settings
 
+If you want all vector layers added to your Web GIS to be versioned by default, it can be set in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_.
+
 Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
 After uploading the file and specifying the parameters, click the **Create** button.
