@@ -25,6 +25,41 @@ Through the control panel, the administrator can view information about the syst
 
 For NextGIS Web on-premise you can also see if there are `updates available <https://docs.nextgis.com//docs_ngweb/source/infowebgis.html#onpremise-updates>`_.
 
+.. _ngw_plan_features:
+
+Plan and features
+--------------
+
+.. note::
+   This functionality is only available for cloud-based Web GIS.
+
+To access the section, select it in the |button_main_menu| Main menu
+
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 6mm
+
+
+On this page you can check the current subscription plan of the Web GIS owner and go to your `account <https://docs.nextgis.com/docs_ngcom/source/subscription.html>`_ to upgrade it.
+
+Below that is a list of platform features and limits available on the `current subscription plan <https://nextgis.com/pricing-base/>`_.
+
+* Number of maps and layers that can be created on the current plan (for Premium there's no limit);
+* Storage limit	- used and overall available storage in GiB;
+* User limit	- number of users added to the Web GIS and max number available (the limit `can be increased <https://nextgis.com/pricing-base/#users>`_);
+* Use on other websites (CORS)	- yes/no;
+* GPS trackers	- number of added trackers and max number available;
+* Access management	- is this functionality available: yes/no;
+* Custom SRS - can you add more SRS to the Web GIS: yes/no;	
+* Custom domain and branding	- is `customizing the look <https://docs.nextgis.com/docs_ngweb/source/look.html#ngweb-css-logo>`_ of the Web GIS available: yes/no;
+* Tile caching	- is this functionality available: yes/no;
+* Improved performance	- is this functionality available: yes/no;
+* Maximum file upload - max file size in MiB;
+* Maximum raster layer size in MiB;
+* Technical support	- is this functionality available: yes/no;
+* `On-demand backup restore <https://docs.nextgis.com/docs_ngweb/source/infowebgis.html#backup-policy>`_	- is this functionality available: yes/no.
+
+If the subscription is cancelled, then after it expires the Web GIS may be blocked. On this page you can check if your Web GIS fits the limits of the Free plan and make changes to prevent it from being blocked.
+
 
 .. _ngw_storage:
 
