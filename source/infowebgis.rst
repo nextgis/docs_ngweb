@@ -27,7 +27,7 @@
 
 Для Веб ГИС, развёрнутых на своём сервере, также показывается `информация о доступных обновлениях <https://docs.nextgis.ru/docs_ngweb/source/infowebgis.html#onpremise-updates>`_.
 
-.. _ngw_plan_functions:
+.. _ngw_plan_features:
 
 План и функции
 --------------
