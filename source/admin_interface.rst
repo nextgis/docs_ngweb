@@ -223,7 +223,7 @@
 * `Подключить метрики и аналитику <https://docs.nextgis.ru/docs_ngweb/source/analytics.html>`_
 * Настроить категорию пользователей, которые имеют `права экспортировать данные <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-res-export>`_
 * `Настроить Трекинг <https://docs.nextgis.ru/docs_ngweb/source/trackers.html>`_
-* Включить `версионирование по умолчанию <>`_
+* Включить `версионирование по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_
 * `Настроить веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html>`_
 * `Управлять системами координат <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html#ngw-srs>`_
 * Персонализировать элементы интерфейса при помощи `модуля White Label <https://docs.nextgis.ru/docs_ngweb/source/label.html>`_ (для Веб ГИС, развёрнутой на своём сервере)
