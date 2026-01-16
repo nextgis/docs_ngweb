@@ -18,9 +18,9 @@ It allows NextGIS Web administrator to:
 
 etc. Changes in both **attributes** and **geometry** are logged.
 
-Versioning is **disabled by default**. You can `turn it on <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ for a specific vector layer if needed. Logging activates when the versioning is turned on, the changes made before that are not registered anywhere.
+Versioning is **disabled by default**. You can `turn it on <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ for a specific vector layer or `for all subsequently created layers <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_ if needed. Logging activates when the versioning is turned on, the changes made before that are not registered anywhere.
 
-When the versioning is turned off, all the logged information about the changes in the layer is **deleted**.
+.. important:: When the versioning is turned off, all the logged information about the changes in the layer is **deleted**.
 
 .. _vers_ngw_ui:
 
@@ -32,10 +32,10 @@ At the moment in the user interface of NextGIS Web you can access the following 
 * Enable and disable versioning `in the vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_;
 * Enable `feature versioning by default <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_ for your Web GIS;
 * View versioning status (yes/no) on the Vector layer resource page;
-* View history of a vector layer;
-* Additional virtual field "Last changed" in the attribute table of the versioned layer. It allows to see the time and author of the latest change for each feature of the layer;
-* Revert vector layer to the selected version;
-* Copy selected version to a new layer.
+* `View history of a vector layer <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-view-history>`_;
+* Additional `virtual field "Last changed" <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-fields>`_ in the attribute table of the versioned layer. It allows to see the time and author of the latest change for each feature of the layer;
+* `Revert vector layer to the selected version <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-revert>`_;
+* `Copy selected version to a new layer <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-copy>`_.
 
 .. _vers_ngw_view_history:
 
@@ -116,7 +116,7 @@ All the previously recorded history entries are preserved. You can restore the l
 Create a copy of the selected version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Versioning allows to undo the latest changes by reverting to an earlier version of the layer, or save a version of a layer recorded in its history as a separate resource.
+Versioning allows to undo the latest changes by `reverting to an earlier version <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-revert>`_ of the layer, or save a version of a layer recorded in its history as a separate resource.
 
 Open the layer resource page. Click **Version history** in the right panel.
 
