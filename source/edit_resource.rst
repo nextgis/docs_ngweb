@@ -23,7 +23,7 @@ In opened window "Update resource" (see :numref:`ngw_window_update_resource1`) y
 
 * move the resource to a different parent resource, 
 * add `description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-description-and-metadata>`_;
-* configure `access permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. 
+* configure `access permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. 
 
 Depending on the resource type there are other tabs, e.g. for vector layers you can edit `attribute fields <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#edit-vector-layer-attributes-table>`_.
 
@@ -200,7 +200,7 @@ If you selected "Delete" action from the resource page and not from the resource
 
    Warning when deleting a layer
 
-You can also delete resources in your Web GIS `from QGIS using NextGIS Connect plugin <https://docs.nextgis.ru/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
+You can also delete resources in your Web GIS `from QGIS using NextGIS Connect plugin <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
 
 .. _ngw_delete_resource_multi:
 

@@ -23,11 +23,11 @@ To view the Web Map press |button_open_web_map| next to its name in the resource
 Numbers indicate: 
 
 * 1 – map;
-* 2 – map `panels <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_;
-* 3 - `layer tree <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
-* 4 – `dropdown list of basemaps <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
-* 5 and 6 - `map tools <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
-*  7 - `status bar <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
+* 2 – map `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_;
+* 3 - `layer tree <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
+* 4 – `dropdown list of basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
+* 5 and 6 - `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
+*  7 - `status bar <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
 
 
 .. _ngw_webmaps_client_scale:

@@ -10,7 +10,7 @@ You can modify **geometries and attributes** of vector features via Web interfac
 
 - as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
-If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
+If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
 
 
 .. _ngw_allow_edit:
@@ -35,7 +35,7 @@ You can enable or disable editing of all Web Map layers on the “Settings” ta
 	
 Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. The "Modify data" permission can be set for the entire resource group where the data is stored or for individual layers.
 
-Users who do not have "Modify data" permission won't be able to activate the edit mode. `How to check user permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
+Users who do not have "Modify data" permission won't be able to activate the edit mode. `How to check user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
 
 .. figure:: _static/webgis_permiss_editing_en.png
    :name: webgis_permiss_editing_pic

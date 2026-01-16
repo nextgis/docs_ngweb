@@ -147,7 +147,7 @@ Backups
 -------
 
 In this section you can see a list of available NextGIS Web backups, as well as download any of them.
-The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
+The process of creating backups and restoring for developers is described in `this section <https://docs.nextgis.com/docs_ngweb_dev/doc/admin/backup_restore.html>`_.
 
 .. note:: This functionality is available only for `on-premise <https://nextgis.com/pricing/>`_ Web GIS.
 

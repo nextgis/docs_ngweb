@@ -283,7 +283,7 @@ You can set access permissions for WFS service if needed. See `this section <htt
 WFS allows to edit data in desktop apps. 
 
 .. tip:: 
-   If you use QGIS to edit your data stored in Web GIS, you can also access it directly via `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/ngconnect.html>`_.
+   If you use QGIS to edit your data stored in Web GIS, you can also access it directly via `NextGIS Connect <https://docs.nextgis.com/docs_ngconnect/source/ngconnect.html>`_.
 
 WFS services can also be accessed with links of the following type (`basic auth <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/auth.html>`_ is supported):
 
