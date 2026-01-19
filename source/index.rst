@@ -117,8 +117,8 @@ NextGIS Web
    sysadmin_updates 
 
 
-* :ref:`genindex`
-* :ref:`search`
+
+
 * :ref:`glossary`
 
 
