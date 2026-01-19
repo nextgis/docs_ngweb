@@ -1,7 +1,7 @@
 Приложения
 ==========
 
-Примеры файлов ``docker-compose.yaml``
+Примеры файлов docker-compose.yaml
 --------------------------------------
 
 Standard Edition 3.1.0
