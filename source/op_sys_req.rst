@@ -1,7 +1,7 @@
 System requirements
 ====================
 
-To install NextGIS GeoServices On-Premise you need a physical or virtual server based on x86_64 (amd64) with the following parameters:
+To install NextGIS Web On-Premise you need a physical or virtual server based on x86_64 (amd64) with the following parameters:
 
 ======= =========== =============
 \       Minimum     Recommended
@@ -18,8 +18,6 @@ The server must have a Linux-based operational system allowing to install Docker
 -  Ubuntu LTS 24.04, 22.04
 -  Debian 12, 11
 -  CentOS Stream 11, 10
- 
-
 
 If you use a different Linux distribution, make sure that the Linux kernel version on the server is 5.10 or above, which corresponds to the current LTS version.
 
