@@ -9,7 +9,10 @@ The Administrator can check what the current version of NextGIS Web On-Premise i
 
 To update from one version to another follow these steps:
 
-**Step 1.** Find your current version in this document and check the algorithm for it, it may contain important additional steps and requirements.
+**Step 1.** Review the actions and requirements listed below for the specific version.
+
+.. toctree::
+   :maxdepth: 1
 
 **Step 2.** Create an off-line backup of the system as described in the "Backup" section.
 
