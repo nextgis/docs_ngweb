@@ -9,7 +9,7 @@ The Administrator can check what the current version of NextGIS Web On-Premise i
 
 To update from one version to another follow these steps:
 
-**Step 1.** Review the actions and requirements listed below for the specific version.
+**Step 1.** Review the actions and requirements listed below for the specific version:
 
 .. contents::
    :local:
