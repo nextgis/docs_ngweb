@@ -11,8 +11,9 @@ To update from one version to another follow these steps:
 
 **Step 1.** Review the actions and requirements listed below for the specific version.
 
-.. toctree::
-   :maxdepth: 1
+.. contents::
+   :local:
+   :depth: 1
 
 **Step 2.** Create an off-line backup of the system as described in the "Backup" section.
 
