@@ -3,7 +3,7 @@ Installation
 
 Before installation make sure that you've contacted NextGIS company and obtained:
 
--  File ``docker-compose.yaml`` - see Additional for an example, but the sample file doesn't contain all the necessary parameters.
+- File ``docker-compose.yaml`` - see Additional information for examples, but they don't contain all the necessary parameters.
 - Access to NextGIS Container Registry (if installation is done using Internet access) or archived Docker images (if installation is done without Internet).
 
 Endpoints
@@ -11,17 +11,15 @@ Endpoints
 
 NextGIS Web On-Premise uses several HTTP (or HTTPS) endpoints: 
 
-- NextGIS Web - the main address for user interaction with the system. Default value:
-   ``http://server.example.com:8080``, where ``server.example.com`` is the domain name or IP address of the server where the system is installed.
+- NextGIS Web - the main address for user interaction with the system. Default value: ``http://server.example.com:8080``, where ``server.example.com`` is the domain name or IP address of the server where the system is installed.
 
-- NextGIS ID - authentication service used by NextGIS Web as well as by other NextGIS products. Default value:
-   ``http://server.example.com:8081``.
+- NextGIS ID - authentication service used by NextGIS Web as well as by other NextGIS products. Default value: ``http://server.example.com:8081``.
 
--  NextGIS Collector Hub (only for Extended edition) - an additional service for NextGIS Collector mobile app. Default value:  ``http://server.example.com:8082``.
+- NextGIS Collector Hub (only for Extended edition) - additional service for NextGIS Collector mobile app. Default value: ``http://server.example.com:8082``.
 
--  NextGIS Tracker Hub (only Extended edition) - additional service for tracking apps. Default value: ``http://server.example.com:8083``.
+- NextGIS Tracker Hub (only for Extended edition) - additional service for tracking apps. Default value: ``http://server.example.com:8083``.
 
-If your IT infrastructure allows for it, it is recommended to set up a reverse proxy for TLS encryption and using HTTPS. It is especially important if the software is to be accessed not just from the local network, but also from the Internet. In that case the addresses of the entry points depend on the settings of the reverse proxy. The recommended parameters are:
+If your IT infrastructure allows for it, it is recommended to set up a reverse proxy for TLS encryption and using HTTPS. It is especially important if the software is to be accessed not just from the local network, but also from the Internet. In that case the endpoints depend on the settings of the reverse proxy. The recommended values are:
 
 -  NextGIS Web - ``https://ngw.example.com``
 -  NextGIS ID - ``https://ngid.example.com``
@@ -46,7 +44,7 @@ Install and configure Docker
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
-You need to install latest versions of Docker Engine and Docker Compose. We recommend using the official `installation manual from the Docker Web site <https://docs.docker.com/engine/install/>`__, or the manual for your installation package, provided that it answers the minimum required version. Minimum required versions:
+You need to install latest versions of Docker Engine and Docker Compose. We recommend using the official `installation manual from the Docker Web site <https://docs.docker.com/engine/install/>`__, or the manual for your distribution, provided that it answers the minimum required version. Minimum required versions:
 
 -  Docker Engine >= 23
 -  Docker Compose >= 2
@@ -63,7 +61,7 @@ Deploy Docker stack
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
-On the server create a directory ``/srv/ngwdocker``, copy to it the file ``docker-compose.yaml`` you've got from NextGIS and open it in a text processor, for example, use ``nano``:
+On the server create a directory ``/srv/ngwdocker``, copy to it the file ``docker-compose.yaml`` you've got from NextGIS and open it in a text editor, for example, use ``nano``:
 
 .. code:: bash
 
@@ -72,7 +70,7 @@ On the server create a directory ``/srv/ngwdocker``, copy to it the file ``docke
    $ cp /path/to/your/docker-compose.yaml .
    $ nano docker-compose.yaml
 
-At the start of the  ``docker-compose.yaml`` file you'll find a section called  ``x-shared``. It contains varables where you need to enter the previously chosen endpoints (keep in mind that the addresses are entered without ``/`` at the end), e.g.:
+At the start of the ``docker-compose.yaml`` file you'll find a section called  ``x-shared``. It contains varables where you need to enter the previously chosen endpoints (keep in mind that the addresses are entered without ``/`` at the end), e.g.:
 
 .. code:: yaml
 
@@ -85,7 +83,7 @@ At the start of the  ``docker-compose.yaml`` file you'll find a section called  
      NEXTGISID_INSTANCE_NGID: "00000000-0000-0000-0000-000000000000"
      NEXTGISID_ADMINISTRATOR_NGID: "00000000-0000-0000-0000-000000000000"
 
-Keep in mind that ``COLLECTOR_HUB_URL`` and ``TRACKER_HUB_URL`` variables are used only in the Extended edition. If they are not present, you don't have to add them. Variables ``NEXTGISID_INSTANCE_NGID`` and ``NEXTGISID_ADMINISTRATOR_NGID`` are pre-filled in the docker-compose.yaml file provided by NextGIS. After making all the edits save the file and close the text processor.
+Keep in mind that ``COLLECTOR_HUB_URL`` and ``TRACKER_HUB_URL`` variables are used only in the Extended edition. If they are not present, you don't have to add them. Variables ``NEXTGISID_INSTANCE_NGID`` and ``NEXTGISID_ADMINISTRATOR_NGID`` are pre-filled in the docker-compose.yaml file provided by NextGIS. After making all the edits save the file and close the text editor.
 
 If the software is deployed to a server without Internet access, at this stage you need to upload all the necessary Docker images to your server. Contact NextGIS support team to get image archives, upload them to the server, then run the command to load the images from the archives: 
 
@@ -105,7 +103,7 @@ Now you can start the containers. If you have Internet access, all the necessary
     ✔ Container ngwdocker-archivist-1 Created
     ✔ Container ngwdocker-app-1       Created
 
-If you use a reverse proxy server for HTTPS, configure it to reroute the traffic to the corresponding NextGIS Web ports. See an example of Nginx configuration in the `Additional information <https://docs.nextgis.com/docs_ngweb/source/op_additional.html>`_ section. 
+If you use a reverse proxy server for HTTPS, configure it to forward the traffic to the corresponding NextGIS Web ports. See an example of Nginx configuration in the `Additional information <https://docs.nextgis.com/docs_ngweb/source/op_additional.html>`_ section. 
 
 After a little while (up to 1 minute normally) you can access NextGIS Web by entering the browser address bar the the URL you set up in the ``NEXTGISWEB_URL`` variable. To log into the system use the default Administrator credentials: ``administrator`` / ``admin``.
 

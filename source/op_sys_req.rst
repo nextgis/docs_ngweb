@@ -21,7 +21,7 @@ The server must have a Linux-based operational system allowing to install Docker
  
 
 
-If you use a different Linux installation package, make sure that the Linux core version on the server is 5.10 or above, which corresponds to the current LTS version.
+If you use a different Linux distribution, make sure that the Linux kernel version on the server is 5.10 or above, which corresponds to the current LTS version.
 
 To avoid conflicts the server must not be used for other purposes: as a file or mail server, PostGIS server etc.
 

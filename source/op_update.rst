@@ -1,20 +1,19 @@
 Update
 ==========
 
-The version code for NextGIS Web On-Premise contains three numbers in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Updates between the main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patched versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patched version of the main version.
+The version number for NextGIS Web On-Premise contains three parts in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Updates between main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patch versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patch version of the main version.
 
 The Administrator can check what the current version of NextGIS Web On-Premise is by viewing the System information section of the Control panel. Also it is present in the ``docker-compose.yaml`` file in the image names (``services.<service_name>.image``). 
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
-To update from one version to another follow these steps: 
+To update from one version to another follow these steps:
+
 **Step 1.** Find your current version in this document and check the algorithm for it, it may contain important additional steps and requirements.
 
 **Step 2.** Create an off-line backup of the system as described in the "Backup" section.
 
 **Step 3.** Create a backup of the file ``docker-compose.yaml`` (replace ``A.B.C`` in the command with the number of your current version): 
-
-
 
 .. code:: bash
 
@@ -44,7 +43,7 @@ If you don't have Internet access, contact NextGIS support team to get image arc
    $ docker compose run --rm app nextgisweb migration upgrade --no-dry-run
    $ docker compose run --rm app nextgisweb maintenance
 
-**Step 7.** Restart the updated containers, it completes the update process:
+**Step 7.** Start the updated containers, it completes the update process:
 
 .. code:: bash
 
