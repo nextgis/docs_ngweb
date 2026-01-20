@@ -11,8 +11,7 @@ Endpoints
 
 NextGIS Web On-Premise uses several HTTP (or HTTPS) endpoints: 
 
-- NextGIS Web - the main address for user interaction with the system. Default value:
-   ``http://server.example.com:8080``, where ``server.example.com`` is the domain name or IP address of the server where the system is installed.
+- NextGIS Web - the main address for user interaction with the system. Default value:    ``http://server.example.com:8080``, where ``server.example.com`` is the domain name or IP address of the server where the system is installed.
 
 - NextGIS ID - authentication service used by NextGIS Web as well as by other NextGIS products. Default value:
    ``http://server.example.com:8081``.
