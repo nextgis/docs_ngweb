@@ -15,7 +15,7 @@ To update from one version to another follow these steps:
    :local:
    :depth: 1
 
-**Step 2.** Create an off-line backup of the system as described in the "Backup" section.
+**Step 2.** Create an offline backup of the system as described in the "Backups" section.
 
 **Step 3.** Create a backup of the file ``docker-compose.yaml`` (replace ``A.B.C`` in the command with the number of your current version): 
 
