@@ -57,7 +57,11 @@ If you don't have Internet access, contact NextGIS support team to get image arc
 Update to 3.1.x from 3.0.x
 -----------------------------------------
 
-Before starting the update check that the server where the system is installed answers the system requirements.
+In version 3.1.0, the system requirements have changed. Ensure that your system meets the requirements listed below:
+
+- Minimum Docker Engine version - 23.0.0. If you have a lower version installed, you need to update Docker Engine.
+- Minimum Docker Compose version - 2.x. If you have a lower version installed, you need to update Docker Compose.
+- Minimum Linux kernel version - 5.10, support for Ubuntu 20.04 has been discontinued.
 
 Before updating check the collation of the PostgreSQL databases by running the following command:
 
