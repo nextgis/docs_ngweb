@@ -1,17 +1,17 @@
-Create backup
+Backups
 ================
 
 NextGIS Web On-Premise has two options for creating backup: 
 
-- Off-line - requires shutting down all services and is performed outside the application container. It is recommended for creating full backups to be transferred to a different server.
+- Offline - requires shutting down all services and is performed outside the application container. It is recommended for creating full backups to be transferred to a different server.
 
-- On-line - does not require shutting down the services and is performed within the app container. Recommended for regular backups.
+- Online - does not require shutting down the services and is performed within the app container. Recommended for regular backups.
 
 ..
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
-Path to backups
+Backups location
 ----------------------------
 
 Both methods create backups in the ``backup`` volume mounted in the ``/opt/ngw/backup`` directory inside the containers. Depending on the configuration, physically the backup files may be stored either in ``/var/lib/docker/volumes/ngwdocker_backup/_data``, or in ``/srv/ngwdocker/backup``, if the file ``docker-compose.yaml`` has a mounted path for ``backup``.
@@ -60,7 +60,6 @@ To view the list of all the files in the archive you can use:
 Restore from backup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To restore data use the same ``archivist`` service.
 To restore data, first shut down all the services of the stack:
 
 .. code:: bash
@@ -127,7 +126,7 @@ To restore from an online backup, shut down all the services of the stack, then 
    $ docker compose down
    $ docker compose up -d postgres
 
-Wait for ``postgres`` to launch, it takes between 10 and 30 seconds normally, then delete the ``nextgisweb`` database and restart ``postgres`` to create a blanck database. Also you need to delete the volume containing NextGIS Web data files:
+Wait for ``postgres`` to launch, it takes between 10 and 30 seconds normally, then delete the ``nextgisweb`` database and restart ``postgres`` to create a blank database. Also you need to delete the volume containing NextGIS Web data files:
 
 .. code:: bash
 
