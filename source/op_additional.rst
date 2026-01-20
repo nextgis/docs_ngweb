@@ -111,7 +111,7 @@ Extended Edition 3.1.0
          - 8080:8080
        environment:
          <<: *shared
-         NEXTGISWEB__CORE__LOCALE__DEFAULT: "ru"
+         NEXTGISWEB__CORE__LOCALE__DEFAULT: "en"
 
      postgres:
        image: cr.nextgis.com/nextgisweb/ext/postgres:3.1.0
@@ -192,7 +192,7 @@ Configuring reverse proxy: Nginx
        ''      close;
    }
 
-   # Virtual server for NextGIS Web
+   # Virtual host for NextGIS Web
    server {
        server_name ngw.example.com;
 
