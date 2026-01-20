@@ -66,7 +66,9 @@ Before updating check the collation of the PostgreSQL databases by running the f
    ---------+------------+----------
    (0 rows)
 
-If the result is empty (0 strings, as in the example), you can continue with the update. Otherwise you must not continue. Contact NextGIS support instead. It may happen if the initial installation had the version below 1.7.0 (released in August 2021).
+If the result is empty (0 rows, as in the example), you can continue with the update. 
+
+If it's not empty, you must not continue. Contact NextGIS support instead. It may happen if the initial installation had the version below 1.7.0 (released in August 2021).
 
 Update to 3.0.x from 2.9.x
 -----------------------------------------
