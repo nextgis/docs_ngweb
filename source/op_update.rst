@@ -1,7 +1,7 @@
-Update
+Upgrade
 ==========
 
-The version number for NextGIS Web On-Premise contains three parts in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Updates between main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patch versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patch version of the main version.
+The version number for NextGIS Web On-Premise contains three parts in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Upgrades between main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patch versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patch version of the main version.
 
 The Administrator can check what the current version of NextGIS Web On-Premise is by viewing the System information section of the Control panel. Also it is present in the ``docker-compose.yaml`` file in the image names (``services.<service_name>.image``). 
 
@@ -54,7 +54,7 @@ If you don't have Internet access, contact NextGIS support team to get image arc
    $ cd /srv/ngwdocker
    $ docker compose up -d
 
-Update to 3.1.x from 3.0.x
+Upgrade to 3.1.x from 3.0.x
 -----------------------------------------
 
 In version 3.1.0, the system requirements have changed. Ensure that your system meets the requirements listed below:
@@ -78,12 +78,12 @@ If the result is empty (0 rows, as in the example), you can continue with the up
 
 If it's not empty, you must not continue. Contact NextGIS support instead. It may happen if the initial installation had the version below 1.7.0 (released in August 2021).
 
-Update to 3.0.x from 2.9.x
+Upgrade to 3.0.x from 2.9.x
 -----------------------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
-Update to 2.9.x from 2.8.x
+Upgrade to 2.9.x from 2.8.x
 -----------------------------------------
 
 After creating a backup of the current version you need to update PostGIS by running the commands cited below. As a result an interactive PostgreSQL console opens inside the container of the NextGIS Web database:
@@ -106,17 +106,17 @@ and you don't have to add it, only the commands that follow):
    nextgisweb=# ALTER USER nextgisweb NOSUPERUSER;
    nextgisweb=# \q
 
-Update to 2.8.x from 2.7.x
+Upgrade to 2.8.x from 2.7.x
 -----------------------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
-Update to 2.7.x from 2.6.x
+Upgrade to 2.7.x from 2.6.x
 -----------------------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
-Update to 2.6.x from 2.5.x
+Upgrade to 2.6.x from 2.5.x
 -----------------------------------------
 
 No additional steps needed, proceed with the standard steps to update.
