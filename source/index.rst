@@ -122,6 +122,7 @@ NextGIS Web
    look
    domain
    label
+   changelog
    sysadmin_updates  
 
 
