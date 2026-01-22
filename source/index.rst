@@ -123,7 +123,7 @@ NextGIS Web
    domain
    label
    changelog
-   sysadmin_updates  
+
 
 
 

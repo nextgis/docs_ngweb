@@ -10,3 +10,4 @@ NextGIS Web on-premise
    op_upgrade
    op_setup
    op_additional
+   sysadmin_updates
