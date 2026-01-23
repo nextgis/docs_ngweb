@@ -7,6 +7,23 @@ Latest changes
 
 This section describes the latest changes to the software.
 
+3.1.0 released on 21 Jan 2026
+-----------------------------
+
+* Advanced feature table filtering capabilities.
+* Viewing feature versioning history in the UI.
+* Reverting versioned feature layers to previous states.
+* Ability to create vector layers from existing layers and versions.
+* Improved extent selector widget in webmap settings.
+* Display total and filtered feature counts in feature tables.
+* Dimmed out-of-scale-range layers in the tree on webmaps.
+* Improvements to the printable webmap legend.
+* Display measurement spatial reference system on webmaps.
+* Transactional HTTP API for feature attachments and descriptions.
+* Fixed PostGIS layer editing on webmaps.
+* SQLAlchemy library upgraded to 2.0.
+
+
 3.0.0 released on 14 Oct 2025
 ----------------------------------
 
