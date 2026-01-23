@@ -7,7 +7,7 @@ Latest changes
 
 This section describes the latest changes to the software.
 
-5.2.0 released on 14 Oct 2025
+3.0.0 released on 14 Oct 2025
 ----------------------------------
 
 - Many new feature editing tools on webmaps.
@@ -26,7 +26,7 @@ This section describes the latest changes to the software.
 - React library upgraded to 19.
 
 
-5.1.0 released on 23 Jun 2025
+2.9.9 released on 23 Jun 2025
 ----------------------------------
 
 - Identification of raster layers on webmaps.
@@ -50,7 +50,7 @@ This section describes the latest changes to the software.
 - OpenLayers library upgraded to 10.4.
 
 
-5.0.0 released on 05 Mar 2025
+2.8.0 released on 05 Mar 2025
 ----------------------------------
 
 - Webmap migrated to React with many new features.
@@ -73,7 +73,7 @@ This section describes the latest changes to the software.
 - Fixed rounding of speed, direction, and HDOP in webmap popup.
 
 
-4.9.0 released on 06 Okt 2024
+2.7.0 released on 06 October 2024
 --------------------------------
 
 - New resource creation dialog.
@@ -90,14 +90,14 @@ This section describes the latest changes to the software.
 - Fix uploading of zero-length files.
 
 
-4.8.1 released on 20 Sep 2024
+2.6.1 released on 20 Sep 2024
 ----------------------------------
 
 - Fix audit journal display.
 - Fix WMS service layer adding.
 
 
-4.8.0 released on 17 Jul 2024
+2.6.0 released on 17 Jul 2024
 -------------------------------
 
 - Customizable print layout including legend.
@@ -118,7 +118,7 @@ This section describes the latest changes to the software.
 - Most of resource widgets migrated to Antd and React.
 
 
-4.7.0 released on 04 Apr 2024
+2.5.0 released on 04 Apr 2024
 ------------------------------
 
 * Turn legend categories on/off for a better experience on webmaps.
@@ -135,17 +135,22 @@ This section describes the latest changes to the software.
 * Fix permission dependencies on QGIS style parent resources.
 * Copying QGIS styles from one to another.
 
-4.6.2 released on 02 Mar 2023
+2.4.3 released on 02 Mar 2023
 ---------------------------------
 
 * Expanded list of allowed CORS headers.
 
-4.6.1 released on 27 Dec 2023 and 29 Dec 2023
+2.4.2 released on 27 Dec 2023 and 29 Dec 2023
 ------------------------------------------------
 
 * Fix styles for WFS layers.
 
-4.6.0 released on 27 Dec 2023 and 29 Dec 2023
+2.4.1 released on 17 Nov 2023
+-------------------------------
+
+* Fix print to TIFF format in addition to PDF, JPEG and PNG.
+
+2.4.0 released on 27 Dec 2023 and 29 Dec 2023
 ---------------------------------------------
 
 * Support for lookup tables for feature layer attributes.
@@ -164,11 +169,9 @@ This section describes the latest changes to the software.
 Earlier releases
 -----------------
 
-**4.5.1 released on 17 Nov 2023**
 
-* Fix print to TIFF format in addition to PDF, JPEG and PNG.
 
-**4.5.0 released on 29 Sep 2023**
+**2.3.0 released on 29 Sep 2023**
 
 * New tileset resource for storing and serving prerendered tiles.
 * New OGC API Features service with read and write support.
@@ -185,7 +188,7 @@ Earlier releases
 * React library upgraded to 18.
 * Ant Design library upgraded to 5.
 
-**4.4.0 released on 30 Jun 2023**
+**2.2.0 released on 30 Jun 2023**
 
 * Auto-generated and configurable legends for webmaps.
 * Reordering layers via drag-and-drop while viewing webmaps.
@@ -213,12 +216,12 @@ Earlier releases
 * User permissions section is moved to a separate page.
 * OAuth-based automatic group assignment.
 
-**4.3.1 released on 14 Dec 2022**
+**2.1.1 released on 14 Dec 2022**
 
 * Fix resource group selection issue while cloning webmaps
 
 
-**4.3.0 released on 21 Nov 2022**
+**2.1.0 released on 21 Nov 2022**
 
 * Support for webmap cloning via UI.
 * Search by coordinates on web maps.
@@ -237,7 +240,7 @@ Earlier releases
 * Ability to search through resources recursively in REST API.
 * OpenLayers library upgraded to 6.15.1.
 
-**4.2.0 released on 18 Jul 2022**
+**2.0.0 released on 18 Jul 2022**
 
 * "Locate me" tool on web maps.
 * Identifiable setting for web map layers.
@@ -258,7 +261,7 @@ Earlier releases
 * Fast JSON serialization and deserialization based on orjson library.
 * Completed control panel migration to Antd and React.
 
-**4.1.0 released on 16 Feb 2022**
+**1.9.0 released on 16 Feb 2022**
 
 * Cloud-optimized GeoTIFF (COG) support for raster layers.
 * Browser compatibility test and Internet Explorer deprecation.
@@ -278,7 +281,7 @@ Earlier releases
 * Improved handling of external services errors and timeouts.
 * Upgraded dependencies: Pyramid 2.0, SQLAlchemy 1.4, and OpenLayers 6.10
 
-**4.0.0 released on 18 Nov 2021**
+**1.8.0 released on 18 Nov 2021**
 
 * Source layer selection while creating vector layers from multi-layer sources, such as ZIP-archives or Mapinfo TABs.
 * On-the-fly reprojection for WMS and WFS services.
@@ -297,7 +300,7 @@ Earlier releases
 * Synchronization of translations with POEditor.
 * Yandex Maps-based address search on the webmap.
 
-**3.9.0 released on 11 Aug 2021**
+**1.7.0 released on 11 Aug 2021**
 
 * Simple tool for previewing resources on the map.
 * Resource quick search tool in the page header.
@@ -312,7 +315,7 @@ Earlier releases
 * Information about available distribution versions in the control panel.
 * Experimental storage accounting and estimation subsystem.
 
-**3.8.0 released on 12 May 2021**
+**1.6.0 released on 12 May 2021**
 
 * Ability to constraint a web map to the default extent.
 * More length and area units in web map settings.
@@ -329,7 +332,7 @@ Earlier releases
 * OpenLayers library upgraded to 6.5.0.
 * OAuth server logout support via logout redirect endpoint.
 
-**3.7.0**
+**1.5.0**
 
 * Add database migrations framework and automatic migrations applying.
 * External access links for styles, web maps (TMS), and feature layers (MVT).
@@ -344,7 +347,7 @@ Earlier releases
 * Vector layer export to MapInfo MIF/MID format.
 * Vector layer export to Panorama SXF format.
 
-**3.6.0**
+**1.4.0**
 
 * Major improvements and bug fixes in WFS protocol implementation.
 * Permission model changes: now any action on resource requires read permission from scope resource on the resource and its parent.
@@ -363,7 +366,7 @@ Earlier releases
 * Fix GDAL > 3 compability issues, including axis orientation.
 * SVG marker library resource available to renderers.
 
-**3.5.0**
+**1.3.0**
 
 * Raster layer export to GeoTIFF, ERDAS IMAGINE and Panorama RMF formats.
 * Customizable link preview for resources.
@@ -381,15 +384,15 @@ Earlier releases
 * Fix coordinates display format in web map identification popup.
 * Fix tile distortion issue for raster styles
 
-**3.4.2**
+**1.2.2**
 
 * Fix WMS layer creation.
 
-**3.4.1**
+**1.2.1**
 
 * Fix layout scroll bug in vector layer fields editing.
 
-**3.4.0**
+**1.2.0**
 
 * New tus-based file uploader. Check for size limits before starting an upload.
 * Server-side TMS-client. New resource types: TMS connection and TMS layer.
