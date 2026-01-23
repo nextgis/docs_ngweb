@@ -2,8 +2,8 @@
 
 .. _sysadmin_tasks:
     
-Latest changes
-==============
+Latest changes of NextGIS Web On-premise
+========================================
 
 This section describes the latest changes to the software.
 
