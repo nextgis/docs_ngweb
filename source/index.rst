@@ -114,7 +114,6 @@ NextGIS Web
    look
    domain
    label
-   sysadmin_updates 
 
 
 
