@@ -27,112 +27,130 @@ This section describes the latest changes to the software.
 **3.0.0 released on 14 Oct 2025**
 
 
-- Many new feature editing tools on webmaps.
-- Improved swipe tool: vertical and horizontal swipes in any direction.
-- Maximum webmap zoom level increased to 24.
-- Geometry editing on feature pages.
-- Geometry tab on feature pages.
-- Zoom support for attachment preview.
-- Automatic HEIF-to-JPEG conversion for feature attachments.
-- Improved handling of image dimensions in descriptions.
-- Improved WMS client compatibility and performance.
-- Improved MVT generation performance.
-- GeoPackage 1.4 compatibility improvements.
-- Dropped support for GeoJSON response streaming.
-- Dropped support for GeoJSON range requests.
-- React library upgraded to 19.
+* Many new feature editing tools on webmaps.
+* Improved swipe tool: vertical and horizontal swipes in any direction.
+* Maximum webmap zoom level increased to 24.
+* Geometry editing on feature pages.
+* Geometry tab on feature pages.
+* Zoom support for attachment preview.
+* Automatic HEIF-to-JPEG conversion for feature attachments.
+* Improved handling of image dimensions in descriptions.
+* Improved WMS client compatibility and performance.
+* Improved MVT generation performance.
+* GeoPackage 1.4 compatibility improvements.
+* Dropped support for GeoJSON response streaming.
+* Dropped support for GeoJSON range requests.
+* React library upgraded to 19.
 
 
-**2.9.9 released on 23 Jun 2025**
+**2.9.0 released on 23 Jun 2025**
 
 
-- Identification of raster layers on webmaps.
-- Improved webmap links, preserving legend symbols in URLs.
-- Ability to configure panels and tools individually for each webmap.
-- Refined resource picker behavior for single and multi-selection.
-- Configurable lookup table item order, including manual ordering.
-- Experimental adaptive layouts for webmaps on mobile and tablet devices.
-- Initial experimental support for UI form designer.
-- Handle rendering artifacts at tile boundaries for QGIS styles.
-- Fix `@map_scale` variable and area calculations for QGIS styles.
-- Support for dash patterns in user-defined styles.
-- Support for adding fields to layers with versioning enabled.
-- Creation of raster layers from ZIP archives and PAM support. 
-- Support for GDAL PAM georeferenced (.aux.xml) JPEG and PNG rasters.
-- Configurable default basemaps for on-premises installations.
-- Improved handling of date and bigint fields in UI and HTTP API.
-- Improved handling of `geom` fields in feature layers.
-- Clean up unreferenced file objects during maintenance by default.
-- Python 3.10+ is now the minimum required version.
-- OpenLayers library upgraded to 10.4.
+* Identification of raster layers on webmaps.
+* Improved webmap links, preserving legend symbols in URLs.
+* Ability to configure panels and tools individually for each webmap.
+* Refined resource picker behavior for single and multi-selection.
+* Configurable lookup table item order, including manual ordering.
+* Experimental adaptive layouts for webmaps on mobile and tablet devices.
+* Initial experimental support for UI form designer.
+* Handle rendering artifacts at tile boundaries for QGIS styles.
+* Fix `@map_scale` variable and area calculations for QGIS styles.
+* Support for dash patterns in user-defined styles.
+* Support for adding fields to layers with versioning enabled.
+* Creation of raster layers from ZIP archives and PAM support. 
+* Support for GDAL PAM georeferenced (.aux.xml) JPEG and PNG rasters.
+* Configurable default basemaps for on-premises installations.
+* Improved handling of date and bigint fields in UI and HTTP API.
+* Improved handling of `geom` fields in feature layers.
+* Clean up unreferenced file objects during maintenance by default.
+* Python 3.10+ is now the minimum required version.
+* OpenLayers library upgraded to 10.4.
+* Support for adding specific Formbuilder forms to Collector projects.
+* Support for using PostGIS layers as data sources in Collector projects.
+* Export stops as waypoints in GPX files.
 
+**2.8.2 released on 22 mar 2025**
+
+* Fix NextGIS QGIS authentication.
+
+**2.8.1 released on 6 Jun 2025**
+
+* Fix layer symbols toggling.
 
 **2.8.0 released on 05 Mar 2025**
 
 
-- Webmap migrated to React with many new features.
-- The identification panel enabled by default, replacing webmap popups.
-- Resource editing interface fully migrated to React.
-- New feature display page and modal dialog with vector tile geometries.
-- Enhanced resource deletion confirmation with details of resources to delete.
-- On-demand webmap legend symbol loading, optimizing webmap opening time.
-- Configurable SSL mode for PostGIS connections.
-- Handling of invalid geometries for MVT vector tiles.
-- Better support for date and time fields in WFS clients.
-- Expanded JSON output format capabilities in WMS services.
-- Improved handling of `fid` fields in feature layers.
-- Extended resource search HTTP API.
-- Pre-calculated and cached style scale ranges for faster webmap opening.
-- Chrome 118+, Safari 17+, Edge 116+, or Firefox 115+ is required.
-- All legacy AMD modules migrated to TypeScript, and Dojo dependency removed.
-- Experimental support for Python 3.10.
-- Improved track display with a distinguishable style.
-- Fixed rounding of speed, direction, and HDOP in webmap popup.
+* Webmap migrated to React with many new features.
+* The identification panel enabled by default, replacing webmap popups.
+* Resource editing interface fully migrated to React.
+* New feature display page and modal dialog with vector tile geometries.
+* Enhanced resource deletion confirmation with details of resources to delete.
+* On-demand webmap legend symbol loading, optimizing webmap opening time.
+* Configurable SSL mode for PostGIS connections.
+* Handling of invalid geometries for MVT vector tiles.
+* Better support for date and time fields in WFS clients.
+* Expanded JSON output format capabilities in WMS services.
+* Improved handling of `fid` fields in feature layers.
+* Extended resource search HTTP API.
+* Pre-calculated and cached style scale ranges for faster webmap opening.
+* Chrome 118+, Safari 17+, Edge 116+, or Firefox 115+ is required.
+* All legacy AMD modules migrated to TypeScript, and Dojo dependency removed.
+* Experimental support for Python 3.10
+* Improved track display with a distinguishable style.
+* Fixed rounding of speed, direction, and HDOP in webmap popup.
 
 
 **2.7.0 released on 06 October 2024**
 
 
-- New resource creation dialog.
-- Identification panel replaces popup on the webmap.
-- Font management in the control panel.
-- Preview layers without leaving the current page.
-- Preview of the basemap on the resource editing page.
-- Support for empty geometries when importing vector layers.
-- Customizable web map title.
-- WFS client component turned on by default.
-- Data structure permission scope removed.
-- TUS uploader is available using CORS.
-- All of resource widgets migrated to Antd and React.
-- Fix uploading of zero-length files.
+* New resource creation dialog.
+* Identification panel replaces popup on the webmap.
+* Font management in the control panel.
+* Preview layers with leaving the current page.
+* Preview of the basemap on the resource editing page.
+* Support for empty geometries when importing vector layers.
+* Customizable web map title.
+* WFS client component turned on by default.
+* Data structure permission scope removed.
+* TUS uploader is available using CORS.
+* All of resource widgets migrated to Antd and React.
+* Fix uploading of zero-length files.
 
 
 **2.6.1 released on 20 Sep 2024**
 
 
-- Fix audit journal display.
-- Fix WMS service layer adding.
+* Fix audit journal display.
+* Fix WMS service layer adding.
 
 
 **2.6.0 released on 17 Jul 2024**
 
+* Support for raster style legends.
+* Customizable print layout including legend.
+* Exclusive layer groups on webmaps.
+* User-defined favorite resource pages.
+* Measurement SRS configuration per-webmap.
+* Experimental support for feature versioning.
+* Better handling of incomplete geometry parts.
+* Show feature attachment descriptions in the viewer.
+* Extent information in PostGIS layer diagnostics.
+* Transparent annotation polygons for better visibility.
+* Switch to nearest neighbor resampling for raster pyramids.
+* Experimental support for NULL geometries.
+* Support for upper-case placeholders in TMS connections.
+* Metadata permission scope and webmap display permission removed.
+* Sentry client-side JavaScript integrations.
+* Cache seeding and invalidation removed, use NextGIS Geoservices instead.
+* Most of resource widgets migrated to Antd and React.
 
-- Customizable print layout including legend.
-- Exclusive layer groups on webmaps.
-- User-defined favorite resource pages.
-- Measurement SRS configuration per-webmap.
-- Experimental support for feature versioning.
-- Better handling of incomplete geometry parts.
-- Show feature attachment descriptions in the viewer.
-- Extent information in PostGIS layer diagnostics.
-- Transparent annotation polygons for better visibility.
-- Switch to nearest neighbor resampling for raster pyramids.
-- Experimental support for NULL geometries.
-- Support for upper-case placeholders in TMS connections.
-- Metadata permission scope and webmap display permission removed.
-- Sentry client-side JavaScript integrations.
-- Cache seeding and invalidation removed, use NextGIS GeoServices instead.
-- Most of resource widgets migrated to Antd and React.
+**2.5.2 released on 26 Jun 2024**
+
+* Authorization fixes.
+
+**2.5.1 released on 26 Arp 2024**
+
+* Fix rendering of legend categories disabled by default.
 
 
 **2.5.0 released on 04 Apr 2024**
@@ -162,8 +180,8 @@ This section describes the latest changes to the software.
 
 **2.4.1 released on 29 Dec 2023**
 
-- Fix NextGIS ID configuration issue.
-- Support for PostgreSQL 12.
+* Fix NextGIS ID configuration issue.
+* Support for PostgreSQL 12.
 
 
 **2.4.0 released on 28 Dec 2023**
@@ -179,14 +197,12 @@ This section describes the latest changes to the software.
 * Passing a zoom level to webmaps via ``zoom`` attribute.
 * Support for OpenID Connect UserInfo endpoint.
 * Extraction of scale ranges from QML styles.
-* Fix NextGIS ID configuration issue.
-* Support for PostgreSQL 12.
 
 **2.3.1 released on 17 Oct 2023**
 
-- Fix layers visibility when printing a web map.
-- Fix SLD marker preview size.
-- Fix IP addresses adding to CORS settings.
+* Fix layers visibility when printing a web map.
+* Fix SLD marker preview size.
+* Fix IP addresses adding to CORS settings.
 
 
 
@@ -237,12 +253,12 @@ This section describes the latest changes to the software.
 
 **2.1.3 released on 17 Mar 2023**
 
-- Исправлены ошибки Collector.
+* Fix Collector issues.
 
 
 **2.1.2 released on 1 Jul 2023**
 
-- Fix feature attachment download issues.
+* Fix feature attachment download issues.
 
 
 **2.1.1 released on 23 Nov 2022**
@@ -262,7 +278,7 @@ This section describes the latest changes to the software.
 * Experimental support for authorization links.
 * Use resource SRS by default while exporting raster and vector layers.
 * Support for booleans and nulls in resource metadata.
-* Support for fixed length character columns in PostGIS layers.
+* Support for fixed length ``character`` columns in PostGIS layers.
 * Support for materialized views and 25D geometries in PostGIS layers.
 * Ability to turn off user password and keep only OAuth authentication.
 * Check for disk free space in the healthcheck.
@@ -285,7 +301,7 @@ This section describes the latest changes to the software.
 * In-place conversion between COG and non-COG rasters.
 * Hide empty groups and groups with no accessible layers on web maps.
 * M dimension stripping while creating vector layers in LOSSY mode.
-* Selecting features on web maps via hl_* URL parameters.
+* Selecting features on web maps via ``hl_*`` URL parameters.
 * Ability to inject some HTML into the base template for metrics and counters.
 * Fast JSON serialization and deserialization based on orjson library.
 * Completed control panel migration to Antd and React.
@@ -294,28 +310,28 @@ This section describes the latest changes to the software.
 
 * Cloud-optimized GeoTIFF (COG) support for raster layers.
 * Browser compatibility test and Internet Explorer deprecation.
-* Experimental support for long-runnning requests for raster and vector layers creation using lunkwill extension.
+* Experimental support for long-runnning requests for raster and vector layers creation using ``lunkwill`` extension.
 * Private annotations on web maps, visible only for authors.
 * Wrapping around the dateline for tile-based layers on web maps.
 * A lot of improvements for the control panel: filters, batch operations, etc.
-* Improved handling of vector layer sources with id and geom fields.
+* Improved handling of vector layer sources with ``id`` and ``geom`` fields.
 * Reprojection into different coordinate systems in WMS and WFS services.
 * Export feature layer using field display names (aliases) instead of keynames.
-* Support for CORS domain wildcards (like https://\*.csb.app).
+* Support for CORS domain wildcards (like ``https://*.csb.app``).
 * WFS client and server simple filters support.
 * Improved handling of coordinates outside boundaries of coordinate systems.
 * Support for 25D geometries in PostGIS layers.
 * Ability to filter NULL values in feature REST API.
 * Unknown fields in REST API filters return an error.
 * Improved handling of external services errors and timeouts.
-* Upgraded dependencies: Pyramid 2.0, SQLAlchemy 1.4, and OpenLayers 6.10
+* Upgraded dependencies: Pyramid 2.0, SQLAlchemy 1.4, and OpenLayers 6.10.
 
 **1.8.0 released on 18 Nov 2021**
 
 * Source layer selection while creating vector layers from multi-layer sources, such as ZIP-archives or Mapinfo TABs.
 * On-the-fly reprojection for WMS and WFS services.
 * Ability to restrict address search by a country if using Nominatim.
-* Hide inaccessible layers while displaying web maps.
+* Hide inaccessible layers while displaying webmaps.
 * Highlight feature when selecting from search results.
 * Display emails as active mailto: links in the webmap popup.
 * Ability to delete users and groups from the control panel.
@@ -329,6 +345,20 @@ This section describes the latest changes to the software.
 * Synchronization of translations with POEditor.
 * Yandex Maps-based address search on the webmap.
 
+**1.7.3 released on 8 Oct 2021**
+
+* Fix vector layer loading with error feature skip.
+* Fix exception handling of tile cache writing.
+
+**1.7.2 released on 1 Oct 2021**
+
+* Use SameSite=None for the session cookie to support iframe authentication.
+
+**1.7.1 released on 25 Aug 2021**
+
+* Fix MapServer Python 3 compability issue.
+* Fix critical Webpack compability error.
+
 **1.7.0 released on 11 Aug 2021**
 
 * Simple tool for previewing resources on the map.
@@ -340,7 +370,7 @@ This section describes the latest changes to the software.
 * Automatic downsampling of a social preview image to 1600x630 pixels.
 * Better support for KML: LIBKML GDAL driver is used when available.
 * Filtering features by ID in feature REST API.
-* Layers with an "id" field can be loaded if the field has an integer type.
+* Layers with an "id" field can be loaded if the field has an int32 type.
 * Information about available distribution versions in the control panel.
 * Experimental storage accounting and estimation subsystem.
 
