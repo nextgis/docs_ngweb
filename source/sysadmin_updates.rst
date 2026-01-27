@@ -43,7 +43,7 @@ This section describes the latest changes to the software.
 - React library upgraded to 19.
 
 
-2.9.9 released on 23 Jun 2025
+**2.9.9 released on 23 Jun 2025**
 
 
 - Identification of raster layers on webmaps.
@@ -183,7 +183,6 @@ This section describes the latest changes to the software.
 * Fix NextGIS ID configuration issue.
 * Support for PostgreSQL 12.
 
-Earlier releases
 
 **2.3.0 released on 29 Sep 2023**
 
