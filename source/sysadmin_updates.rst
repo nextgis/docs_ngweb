@@ -2,13 +2,13 @@
 
 .. _sysadmin_tasks:
     
-Latest changes of NextGIS Web On-premise
-========================================
+Changelog
+==========
 
 This section describes the latest changes to the software.
 
-3.1.0 released on 21 Jan 2026
------------------------------
+**3.1.0 released on 21 Jan 2026**
+
 
 * Advanced feature table filtering capabilities.
 * Viewing feature versioning history in the UI.
@@ -24,8 +24,8 @@ This section describes the latest changes to the software.
 * SQLAlchemy library upgraded to 2.0.
 
 
-3.0.0 released on 14 Oct 2025
-----------------------------------
+**3.0.0 released on 14 Oct 2025**
+
 
 - Many new feature editing tools on webmaps.
 - Improved swipe tool: vertical and horizontal swipes in any direction.
@@ -44,7 +44,7 @@ This section describes the latest changes to the software.
 
 
 2.9.9 released on 23 Jun 2025
-----------------------------------
+
 
 - Identification of raster layers on webmaps.
 - Improved webmap links, preserving legend symbols in URLs.
@@ -67,8 +67,8 @@ This section describes the latest changes to the software.
 - OpenLayers library upgraded to 10.4.
 
 
-2.8.0 released on 05 Mar 2025
-----------------------------------
+**2.8.0 released on 05 Mar 2025**
+
 
 - Webmap migrated to React with many new features.
 - The identification panel enabled by default, replacing webmap popups.
@@ -90,8 +90,8 @@ This section describes the latest changes to the software.
 - Fixed rounding of speed, direction, and HDOP in webmap popup.
 
 
-2.7.0 released on 06 October 2024
---------------------------------
+**2.7.0 released on 06 October 2024**
+
 
 - New resource creation dialog.
 - Identification panel replaces popup on the webmap.
@@ -107,15 +107,15 @@ This section describes the latest changes to the software.
 - Fix uploading of zero-length files.
 
 
-2.6.1 released on 20 Sep 2024
-----------------------------------
+**2.6.1 released on 20 Sep 2024**
+
 
 - Fix audit journal display.
 - Fix WMS service layer adding.
 
 
-2.6.0 released on 17 Jul 2024
--------------------------------
+**2.6.0 released on 17 Jul 2024**
+
 
 - Customizable print layout including legend.
 - Exclusive layer groups on webmaps.
@@ -135,8 +135,8 @@ This section describes the latest changes to the software.
 - Most of resource widgets migrated to Antd and React.
 
 
-2.5.0 released on 04 Apr 2024
-------------------------------
+**2.5.0 released on 04 Apr 2024**
+
 
 * Turn legend categories on/off for a better experience on webmaps.
 * Lots of customization options for embedded webmaps: map tools and panels.
@@ -152,23 +152,23 @@ This section describes the latest changes to the software.
 * Fix permission dependencies on QGIS style parent resources.
 * Copying QGIS styles from one to another.
 
-2.4.3 released on 02 Mar 2023
----------------------------------
+**2.4.3 released on 02 Mar 2023**
+
 
 * Expanded list of allowed CORS headers.
 
-2.4.2 released on 27 Dec 2023 and 29 Dec 2023
-------------------------------------------------
+**2.4.2 released on 27 Dec 2023 and 29 Dec 2023**
+
 
 * Fix styles for WFS layers.
 
-2.4.1 released on 17 Nov 2023
--------------------------------
+**2.4.1 released on 17 Nov 2023**
+
 
 * Fix print to TIFF format in addition to PDF, JPEG and PNG.
 
-2.4.0 released on 27 Dec 2023 and 29 Dec 2023
----------------------------------------------
+**2.4.0 released on 27 Dec 2023 and 29 Dec 2023**
+
 
 * Support for lookup tables for feature layer attributes.
 * Print to TIFF format in addition to PDF, JPEG and PNG.
@@ -184,9 +184,6 @@ This section describes the latest changes to the software.
 * Support for PostgreSQL 12.
 
 Earlier releases
------------------
-
-
 
 **2.3.0 released on 29 Sep 2023**
 
