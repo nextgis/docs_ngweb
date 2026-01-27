@@ -152,22 +152,21 @@ This section describes the latest changes to the software.
 * Fix permission dependencies on QGIS style parent resources.
 * Copying QGIS styles from one to another.
 
-**2.4.3 released on 02 Mar 2023**
-
+**2.4.3 released on 02 Mar 2024**
 
 * Expanded list of allowed CORS headers.
 
-**2.4.2 released on 27 Dec 2023 and 29 Dec 2023**
-
+**2.4.2 released on 2 Feb 2024**
 
 * Fix styles for WFS layers.
 
-**2.4.1 released on 17 Nov 2023**
+**2.4.1 released on 29 Dec 2023**
+
+- Fix NextGIS ID configuration issue.
+- Support for PostgreSQL 12.
 
 
-* Fix print to TIFF format in addition to PDF, JPEG and PNG.
-
-**2.4.0 released on 27 Dec 2023 and 29 Dec 2023**
+**2.4.0 released on 28 Dec 2023**
 
 
 * Support for lookup tables for feature layer attributes.
@@ -183,8 +182,15 @@ This section describes the latest changes to the software.
 * Fix NextGIS ID configuration issue.
 * Support for PostgreSQL 12.
 
+**2.3.1 released on 17 Oct 2023**
 
-**2.3.0 released on 29 Sep 2023**
+- Fix layers visibility when printing a web map.
+- Fix SLD marker preview size.
+- Fix IP addresses adding to CORS settings.
+
+
+
+**2.3.0 released on 28 Sep 2023**
 
 * New tileset resource for storing and serving prerendered tiles.
 * New OGC API Features service with read and write support.
@@ -229,7 +235,17 @@ This section describes the latest changes to the software.
 * User permissions section is moved to a separate page.
 * OAuth-based automatic group assignment.
 
-**2.1.1 released on 14 Dec 2022**
+**2.1.3 released on 17 Mar 2023**
+
+- Исправлены ошибки Collector.
+
+
+**2.1.2 released on 1 Jul 2023**
+
+- Fix feature attachment download issues.
+
+
+**2.1.1 released on 23 Nov 2022**
 
 * Fix resource group selection issue while cloning webmaps
 
@@ -345,7 +361,7 @@ This section describes the latest changes to the software.
 * OpenLayers library upgraded to 6.5.0.
 * OAuth server logout support via logout redirect endpoint.
 
-**1.5.0**
+**1.5.0 released on 14 Feb 2021**
 
 * Add database migrations framework and automatic migrations applying.
 * External access links for styles, web maps (TMS), and feature layers (MVT).
