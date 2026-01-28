@@ -6,6 +6,10 @@ Before installation make sure that you've contacted NextGIS company and obtained
 - File ``docker-compose.yaml`` - see Additional information for examples, but they don't contain all the necessary parameters.
 - Access to NextGIS Container Registry (if installation is done using Internet access) or archived Docker images (if installation is done without Internet).
 
+.. note:: NextGIS team can perform the installation remotely, if you provide remote access that fits the `requirements <https://docs.nextgis.com/docs_ngweb/source/remote.html>`_.
+
+
+
 Endpoints
 -----------
 

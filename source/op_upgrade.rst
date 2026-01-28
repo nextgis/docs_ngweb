@@ -1,6 +1,8 @@
 Upgrade
 ==========
 
+.. note:: NextGIS team can perform the upgrade remotely, if you provide remote access that fits the `requirements <https://docs.nextgis.com/docs_ngweb/source/remote.html>`_.
+
 The version number for NextGIS Web On-Premise contains three parts in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Upgrades between main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patch versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patch version of the main version.
 
 The Administrator can check what the current version of NextGIS Web On-Premise is by viewing the System information section of the Control panel. Also it is present in the ``docker-compose.yaml`` file in the image names (``services.<service_name>.image``). 
