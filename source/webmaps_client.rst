@@ -337,13 +337,13 @@ After a click on **Feature table** option you will see feature table of the sele
 
 Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_).
 
-**Filter** allows to display only the features fitting a given rule.
+**Filter** allows to display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
 
 Using **Description** option you can view the description of the selected layer, added during creation or editing of the layer. 
 
 **Zoom to layer** option allows you to zoom a map so that the selected layer takes up all the visible map area.
 
-When the **Identifiable** flag is on, a click on the map opens the Identify panel with the information about the layer feature. Untick it to have the layer ignored by the identification.
+When the **Identifiable** flag is on, a click on the map opens the `Identify panel <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ with the information about the layer feature. Untick it to have the layer ignored by the identification.
 
 See how it works in our video:
 
@@ -352,12 +352,6 @@ See how it works in our video:
    <iframe width="560" height="315" src="https://www.youtube.com/embed/M4cThWxdaZg?si=VtCw4Coh2Lg1E5BV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
-
-
-
-
-
-
 
 Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. **"Go to"** button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#filter-layer-features-on-the-web-map-by-area>`_).
  
@@ -369,7 +363,30 @@ Select a row in feature table to navigate to the feature on a map, it will be hi
    
    Feature table of the selected layer on a Web Map
    
+.. _ngw_webmaps_client_filter:
 
+Filter
+------
+
+For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient.
+
+.. figure:: _static/web_map_filter_add_en.png
+   :name: web_map_filter_add_pic
+   :width: 14cm
+   :align: center
+
+   Filter condition
+
+Click **Apply**. Only the features that answer the conditions are still displayed on the Web Map and in the Feature table.
+
+.. figure:: _static/web_map_filter_result_en.png
+   :name: web_map_filter_result_pic
+   :width: 20cm
+   :align: center
+
+   Filtered features: lakes larger than 400 square kilometers
+
+You can also filter the features within a `selected area <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
 
 .. _ngw_webmaps_client_ident:
 
@@ -468,30 +485,7 @@ Watch on `youtube <https://youtu.be/tjPHvUWtpKs?si=Od-yUzIhM0yr4JwM>`__.
 
 When the feature table is opened on the Web Map, you can filter features by area (`read more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-feature-table-filter-area>`_).
 
- .. _ngw_webmaps_client_filter:
 
-Filter
-------
-
-For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient.
-
-.. figure:: _static/web_map_filter_add_en.png
-   :name: web_map_filter_add_pic
-   :width: 14cm
-   :align: center
-
-   Filter condition
-
-Click **Apply**. Only the features that answer the conditions are still displayed on the Web Map and in the Feature table.
-
-.. figure:: _static/web_map_filter_result_en.png
-   :name: web_map_filter_result_pic
-   :width: 20cm
-   :align: center
-
-   Filtered features: lakes larger than 400 square kilometers
-
-You can also filter the features within a `selected area <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
 
 .. _ngw_webmaps_client_basemap:
 
