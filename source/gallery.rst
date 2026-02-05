@@ -54,9 +54,9 @@
 * Описание: произвольное описание, отображается при наведении курсора на плашку или справа в списке. Работает форматирование.
 
 .. figure:: _static/ngw_gallery_webmap_ru.png
-   :name: 
+   :name: ngw_gallery_webmap_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Настройки веб-карты в галерее
 
@@ -69,9 +69,9 @@
 * Описание.
 
 .. figure:: _static/ngw_gallery_link_ru.png
-   :name: 
+   :name: ngw_gallery_link_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Настройки ссылки в галерее
 
@@ -88,50 +88,57 @@
     * Столбцы
     * Плиточный
 
-.. figure:: _static/ngw_gallery_layout_.png
-   :name: 
+.. figure:: _static/ngw_gallery_layout_grid_ru.png
+   :name: ngw_gallery_layout_grid_pic
    :align: center
    :width: 20cm
 
-    Расположение: сетка
+   Расположение: сетка
 
-.. figure:: _static/ngw_gallery_layout_.png
-   :name: 
+.. figure:: _static/ngw_gallery_layout_list_ru.png
+   :name: ngw_gallery_layout_list_pic
    :align: center
    :width: 20cm
 
-    Расположение: список
+   Расположение: список
 
-.. figure:: _static/ngw_gallery_layout_.png
-   :name: 
+.. figure:: _static/ngw_gallery_layout_rows_ru.png
+   :name: ngw_gallery_layout_rows_pic
    :align: center
    :width: 20cm
 
-    Расположение: строки
+   Расположение: строки
 
-.. figure:: _static/ngw_gallery_layout_.png
-   :name: 
+.. figure:: _static/ngw_gallery_layout_columns_ru.png
+   :name: ngw_gallery_layout_columns_pic
    :align: center
    :width: 20cm
 
-    Расположение: столбцы
+   Расположение: столбцы
 
-.. figure:: _static/ngw_gallery_layout_.png
-   :name: 
+.. figure:: _static/ngw_gallery_layout_masonry_ru.png
+   :name: ngw_gallery_layout_masonry_pic
    :align: center
    :width: 20cm
 
-    Расположение: плиточный
+   Расположение: плиточный
 
 Настройки галереи
 -----------------
 
+.. figure:: _static/ngw_gallery_settings_ru.png
+   :name: ngw_gallery_settings_pic
+   :align: center
+   :width: 16cm
+
+   Настройки галереи
+
 На вкладке "Настройки" можно задать:
 
 * Расположение элементов по умолчанию - оно будет применяться ко всем группам, для которых не задано другое на вкладке "Галерея";
-* Заголовок: показать / скрыть.
+* Показывать или скрывать шапку (полосу наверху с названием Веб ГИС, строкой поиска и меню).
 
-.. figure:: _static/ngw_gallery_no_title_ru.png
+.. todo:: _static/ngw_gallery_no_title_ru.png
    :name: 
    :align: center
    :width: 20cm
@@ -141,7 +148,7 @@
 Также можно добавить описание и метаданные на соответствующих вкладках. Описание галереи отображается как на странице ресурса, так и в самой галереи после заголовка.
 
 .. figure:: _static/ngw_gallery_desc_ru.png
-   :name: 
+   :name: ngw_gallery_desc_pic
    :align: center
    :width: 20cm
 
