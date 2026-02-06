@@ -405,6 +405,19 @@ To get information about features on the Web Map activate the |panel_ident_small
 
    Identify panel with feature information
 
+If a raster layer has raster attribute table, classes from it are displayed alongside the numerical value of the pixel.
+
+..note:: To use this feature, create raster layer via `Web interface <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_. Combine the .TIF and the corresponding .XML file into a ZIP-arhive. Then select this archive while creating a raster layer.
+
+.. figure:: _static/landcover_rat_ident_en.png
+   :name: landcover_rat_ident_pic
+   :align: center
+   :width: 20cm
+
+   Displaying a class from RAT
+
+
+
 If there are multiple features (for example a point and a line going through it), the identify panel will show the feature of the topmost layer. To view information on the other features click on the downward arrow to the right of the feature name and select the feature from the dropdown list.
 
 .. figure:: _static/ngw_panel_id_select_feature_en_2.png
