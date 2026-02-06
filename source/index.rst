@@ -89,6 +89,7 @@ NextGIS Web
    general   
    admin_interface
    create_resource
+   gallery
    layers
    services
    edit_resource
