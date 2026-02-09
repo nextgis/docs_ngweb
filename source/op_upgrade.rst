@@ -88,7 +88,7 @@ No additional steps needed, proceed with the standard steps to update.
 Upgrade to 2.9.x from 2.8.x
 -----------------------------------------
 
-After creating a backup of the current version you need to update PostGIS by running the commands cited below. As a result an interactive PostgreSQL console opens inside the container of the NextGIS Web database:
+After creating a backup (step 3) you need to update PostGIS by running the commands cited below. As a result an interactive PostgreSQL console opens inside the container of the NextGIS Web database:
 
 .. code:: bash
 
