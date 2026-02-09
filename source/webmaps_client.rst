@@ -407,7 +407,7 @@ To get information about features on the Web Map activate the |panel_ident_small
 
 If a raster layer has raster attribute table, classes from it are displayed alongside the numerical value of the pixel.
 
-..note:: To use this feature, create raster layer via `Web interface <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_. Combine the .TIF and the corresponding .XML file into a ZIP-arhive. Then select this archive while creating a raster layer.
+.. note:: To use this feature, create raster layer via `Web interface <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_. Combine the .TIF and the corresponding .XML file into a ZIP-arhive. Then select this archive while creating a raster layer.
 
 .. figure:: _static/landcover_rat_ident_en.png
    :name: landcover_rat_ident_pic
