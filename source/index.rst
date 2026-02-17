@@ -10,6 +10,7 @@ NextGIS Web
 * `Resources <https://docs.nextgis.com/docs_ngweb/source/create_resource.html>`_
 * `Resource settings <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_
 * `Favorites <https://docs.nextgis.com/docs_ngweb/source/favorites.html>`_
+* `Gallery <https://docs.nextgis.ru/docs_ngweb/source/gallery.html>`_
 
 **Layers, services**
 
