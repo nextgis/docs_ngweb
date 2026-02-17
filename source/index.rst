@@ -14,6 +14,7 @@ NextGIS Web
 * `Ресурсы <https://docs.nextgis.ru/docs_ngweb/source/create_resource.html>`_
 * `Настройки ресурсов <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_
 * `Избранное <https://docs.nextgis.ru/docs_ngweb/source/favorites.html>`_
+* `Галерея <https://docs.nextgis.ru/docs_ngweb/source/gallery.html>`_
 
 
 **Слои, сервисы**
