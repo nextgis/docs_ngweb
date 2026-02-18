@@ -3,7 +3,7 @@
 
 1. Заранее загрузите docker-compose
 
-.. code-bloc::
+.. code::
 
     docker-compose pull
 
@@ -13,7 +13,7 @@
 
 3. Запустите bash из app в однократном режиме:
 
-.. code-bloc::
+.. code::
 
     docker-compose run --rm app bash
 
@@ -21,7 +21,7 @@
 4. Внутри app утилита nextgisweb:
 
 
-.. code-bloc::
+.. code::
 
     $ nextgisweb migration upgrade
 
@@ -29,7 +29,7 @@
 Примените:
 
 
-.. code-bloc::
+.. code::
 
     $ nextgisweb migration upgrade --no-dry-run
 
@@ -40,6 +40,6 @@
 5. Выйдите и запустите новое:
 
 
-.. code-bloc::
+.. code::
 
     docker-compose up -d
