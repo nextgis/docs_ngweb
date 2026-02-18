@@ -127,7 +127,7 @@ The added SRS can be used for various purposes:
 SRS identifier
 ~~~~~~~~~~~~~~~~~
 
-For API or some Toolbox tools (e.g. `Web Map into QGIS project <https://toolbox.nextgis.com/t/webmap2qgis>`_) you need to know the identifier of the SRS.
+For API or some Toolbox tools (e.g. `Web Map to QGIS project <https://toolbox.nextgis.com/t/webmap2qgis>`_) you need to know the identifier of the SRS.
 
 If it's a standard SRS that has **EPSG** code, just use the numbers of the code, e.g. ``3857`` for EPSG:3857.
 
