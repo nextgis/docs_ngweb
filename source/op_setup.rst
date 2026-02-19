@@ -15,22 +15,8 @@
 изменения DNS-имени сервера, на котором развернута система, либо при
 изменении настроек обратного прокси-сервера. Для изменения адресов точек
 подключения необходимо внести изменения в файл ``docker-compose.yaml``,
-расположенный в директории ``/srv/ngwdocker``, в секции ``x-shared`` и
+расположенный в директории ``/srv/ngwdocker``, в секции ``x-shared`` в переменных ``EXTGISWEB_URL`` и ``NEXTGISID_URL`` и
 перезапустить стек:
-
-.. code:: bash
-
-   $ cd /srv/ngwdocker
-   $ nano docker-compose.yaml
-   $ docker compose up -d
-
-
-.. _oauth:
-
-Настройка редиректа при авторизации через OAuth
------------------------------------------------
-
-Настройка адресов осуществляется в файле docker-compose.yaml в директории ``/srv/ngwdocker``, нужные параметры находятся в самом начале файла в секции ``x-shared`` в переменных ``EXTGISWEB_URL`` и ``NEXTGISID_URL`` соответственно:
 
 .. code::
 
@@ -38,8 +24,11 @@
     NEXTGISWEB_URL: "https://ngid.example.com"
     NEXTGISID_URL: "https://ngw.example.com"
 
+.. code:: bash
 
-После внесения изменений необходимо в директории ``/srv/ngwdocker`` выполнить команду ``docker compose up -d`` для применения новых настроек.
+   $ cd /srv/ngwdocker
+   $ nano docker-compose.yaml
+   $ docker compose up -d
 
 
 .. _journal:
