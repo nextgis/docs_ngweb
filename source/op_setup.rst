@@ -15,14 +15,8 @@
 изменения DNS-имени сервера, на котором развернута система, либо при
 изменении настроек обратного прокси-сервера. Для изменения адресов точек
 подключения необходимо внести изменения в файл ``docker-compose.yaml``,
-расположенный в директории ``/srv/ngwdocker``, в секции ``x-shared`` в переменных ``EXTGISWEB_URL`` и ``NEXTGISID_URL`` и
+расположенный в директории ``/srv/ngwdocker``, в секции ``x-shared` и
 перезапустить стек:
-
-.. code::
-
-   x-shared: &shared
-    NEXTGISWEB_URL: "https://ngid.example.com"
-    NEXTGISID_URL: "https://ngw.example.com"
 
 .. code:: bash
 
