@@ -186,8 +186,8 @@ You can have unlimited number of projects in your Web GIS. In each of them you c
 
 .. _collector_create_form:
 
-Data collection form
----------------------
+Form for data collection
+------------------------
 
 For a vector layer you can create a data collection form as a child resource.
 
