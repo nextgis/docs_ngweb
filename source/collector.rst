@@ -125,11 +125,11 @@
 
 Перед тем, как создавать проект сбора данных, нужно:
 
-1. Добавить нужных пользователей в Список участников сбора данных `в Панели управления <fhttps://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_.
+1. Добавить нужных пользователей в Список участников сбора данных `в Панели управления <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_.
 
 2. `Создать необходимые слои данных <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ или `загрузить имеющиеся <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_ и при желании добавить к ним `формы <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_.
 
-2. Также вы можете создать `подложку <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_, если сборщику на мобильном устройстве нужно будет видеть карту.
+3. Также вы можете создать `подложку <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_, если сборщику на мобильном устройстве нужно будет видеть карту.
 
 После того, как подготовительные шаги завершены, перейдите в группу ресурсов, где вы хотите создать проект, нажмите **Создать ресурс** и выберите тип ресурса «Проект Collector»:
 
