@@ -14,7 +14,7 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
-Migrating to Another Server
+Migrating to another server
 ---------------------------
 
 Steps:
@@ -31,7 +31,9 @@ Steps:
 
 3. Copy the backup file to the new server, for example::
 
-    scp /var/lib/docker/volumes/ngwdocker_backup/_data/archivist-20260117-002345.tar.zst \
+.. code:: bash
+
+   $ scp /var/lib/docker/volumes/ngwdocker_backup/_data/archivist-20260117-002345.tar.zst \
         root@new-server:/var/lib/docker/volumes/ngwdocker_backup/_data/
 
 4. Restore the data from the backup following the :ref:`Restore from backup <backup_offline_restore>` instructions.
