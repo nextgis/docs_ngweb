@@ -25,23 +25,6 @@
    $ docker compose up -d
 
 
-.. _oauth:
-
-Настройка редиректа при авторизации через OAuth
------------------------------------------------
-
-Настройка адресов осуществляется в файле docker-compose.yaml в директории ``/srv/ngwdocker``, нужные параметры находятся в самом начале файла в секции ``x-shared`` в переменных ``EXTGISWEB_URL`` и ``NEXTGISID_URL`` соответственно:
-
-.. code::
-
-   x-shared: &shared
-    NEXTGISWEB_URL: "https://ngid.example.com"
-    NEXTGISID_URL: "https://ngw.example.com"
-
-
-После внесения изменений необходимо в директории ``/srv/ngwdocker`` выполнить команду ``docker compose up -d`` для применения новых настроек.
-
-
 .. _journal:
 
 Включение модуля Аудита
