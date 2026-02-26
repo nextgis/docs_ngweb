@@ -9,9 +9,16 @@ Collector projects
 .. note::
     You can use described functionality in Web GIS created in nextgis.com_ service on `Premium plan <https://nextgis.com/pricing-base/>`_
 
+To set up data collection:
+
+1. Add users that are going to collect data to the `list of data collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_;
+2. Create `vector layer and data collection form <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_;
+3. Create and configure `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
+
+
 .. _ngw_collector_add_members:
 
-List of participants
+List of collectors
 -------------------------------
 
 In the Collector Projects section of the Control Panel, you can manage the list of `data collectors <https://docs.nextgis.com/docs_ngcom/source/collector.html>`_. Each participant must have a `NextGIS ID account <https://docs.nextgis.com/docs_ngcom/source/create.html#how-to-create-account-nextgis-id>`_. 
@@ -52,31 +59,84 @@ As a result of this stage all data collection team participants will be register
 Users with a registration in your Web GIS can access data collection projects from your Web GIS and begin data collection after they installed the `NextGIS Collector <https://play.google.com/store/apps/details?id=com.nextgis.collector>`_ mobile app and successfully sign in there. 
 
 However you can control the access of different users to each individual project. 
-It is described in details below.
+
+Now you can created the neccessary resources for data collection.
+
+.. _collector_create_form:
+
+Form for data collection
+------------------------
+
+Data collected by field workers is stored in a vector layer.
+
+Create `an empty vector layer with fitting geometry <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ or `upload a vector file <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_.
+
+For a vector layer you can create a data collection form as a child resource. It provides a user-freindly interface viewed in the Collector app.
+
+Open the resource page of the layer, click **Create resource** and select "Form".
+
+.. figure:: _static/ngweb_create_form_en.png
+   :name: ngweb_create_form_pic
+   :align: center
+   :width: 20cm
+
+   Selecting "Form" resource type
+
+In the opened window on the Form tab you have two options:
+
+* build a form;  
+* upload a NGFP file.
+
+To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
+
+.. figure:: _static/form_build_en.png
+   :name: form_build_pic
+   :align: center
+   :width: 20cm
+
+   Building a form online. Properties of the "Text box" element are displayed
+
+If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
+
+If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
+
+You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
+
+Click **Create** to finish the process. Next you need to create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
+
+Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
+
+.. figure:: _static/form_upload_en_2.png
+   :name: form_upload_pic
+   :align: center
+   :width: 20cm
+
+   Uploading form file
+
+You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
+
+After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+
+
 
 .. _ngw_collector_create_project:
 
-Creating data collection project
+Data collection project
 ---------------------------------
 
 Data collection project is a resource in your Web GIS, it is a set of layers for editing. 
-In a Web GIS "data collection project" is called "Collector Project".
+In NextGIS Web a data collection project resource is called "Collector Project".
 Data collection project allows a data collection team participant to edit its layers. 
 Web GIS owner can restrain access to the project for separate participants. 
 
-You can create a Collector project via NextGIS Formbuilder (the simplest way, described `here <https://docs.nextgis.com/docs_formbuilder/source/workflow.html#nextgis-web>`_) or in your Web GIS.
+Before creating a Collector project make sure you've completed the preparation:
 
-If you want to use your Web GIS to create a Collector project, first you need to `create necessary data layers <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_  or `upload them from a file <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_.
+1. Added users who are going to gather data to the `List of collectors in the Control panel <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_;
+2. `Created <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ or `uploaded <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_ vector layers and (optionally) added `forms <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_ for them.
+3. You can also create a `basemap <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_, if data collectors need to view a map while working.
 
-Let's suppose that layers with data are already uploaded to your Web GIS, and you want to create a project and allow data collection team participants to collect or edit data in your Web GIS. 
 
-To do it:
-
-1. Open the Web GIS.
-
-2. Create a basemap if the collector will need to see a map on the mobile app.
-
-3. Press «Create resource» and select «Collector project»:
+When all the preliminary steps are completed, go to the resource group where you want to create a project, click **Create resource** and select «Collector project»:
 
 .. figure:: _static/select_create_collector_project_en.png
    :name: create_collector_project_pic
@@ -85,7 +145,7 @@ To do it:
 
    Select «Collector project»
 
-4. Name your project. This name will be displayed in the `NextGIS Collector`_ mobile app :
+Name your project. This name will be displayed in the `NextGIS Collector`_ mobile app :
 
 .. figure:: _static/ngc_proj_name_en.png
    :name: ngc_proj_name_pic
@@ -111,7 +171,7 @@ The starting screen in the `NextGIS Collector`_ mobile app could be a list of fo
 
    "Project" tab
 
-6. On the Items tab you can Add items, Group them, Delete (X symbol on the right) and change the order by dragging items in the list. 
+On the Items tab you can Add items, Group them, Delete (X symbol on the right) and change the order by dragging items in the list. 
 
 Items that can be added to a Collector project are: editable vector layer, display-only layer, basemap or data collection form.
 
@@ -168,7 +228,7 @@ Each item of Collector project has the following attributes:
 
 To go back to the list of items, press **Hide details**.
 
-7. Then on the "Collectors" tab tick the users participating in the project to give them permissions: 
+Then on the "Collectors" tab tick the users participating in the project to give them permissions: 
 
 
 .. figure:: _static/ngc_list_collectors_en.png
@@ -178,59 +238,10 @@ To go back to the list of items, press **Hide details**.
 
    «Collectors» tab
 
-8. Press "Create".
+Click **Create**.
 
 As a result a Collector project (data collection project) will be created.
 
 You can have unlimited number of projects in your Web GIS. In each of them you can restrain or allow access for a particular set of users from the data collection participants list.
 
-.. _collector_create_form:
-
-Data collection form
----------------------
-
-For a vector layer you can create a data collection form as a child resource.
-
-Open the resource page of the layer, click **Create resource** and select "Form".
-
-.. figure:: _static/ngweb_create_form_en.png
-   :name: ngweb_create_form_pic
-   :align: center
-   :width: 20cm
-
-   Selecting "Form" resource type
-
-In the opened window on the Form tab you have two options:
-
-* build a form;  
-* upload a NGFP file.
-
-To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
-
-.. figure:: _static/form_build_en.png
-   :name: form_build_pic
-   :align: center
-   :width: 20cm
-
-   Building a form online. Properties of the "Text box" element are displayed
-
-If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
-
-You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
-
-Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
-
-Alternatively, you can edit the form in Formbuilder and upload a new file.
-
-.. figure:: _static/form_upload_en_2.png
-   :name: form_upload_pic
-   :align: center
-   :width: 20cm
-
-   Uploading form file
-
-You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
-
-After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
-
-.. note:: Data collection form can be uploaded to Web GIS using `Formbuilder <https://docs.nextgis.com/docs_formbuilder/source/workflow.html>`_. A vector layer is created automatically. Optionally, you can add a Web Map and a Collector project. 
+.. seealso:: Seems confusing? Check out our tutorial `Collect Spatial Data in the Field <https://docs.nextgis.com/docs_howto/source/tutorial_collect.html>`_ that guides you through the whole process step-by-step.
