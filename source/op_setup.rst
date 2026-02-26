@@ -14,3 +14,24 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Migrating to Another Server
+---------------------------
+
+Steps:
+
+1. On the **source server**, create an offline backup following the :ref:`Create backup <backup_offline_create>` instructions.
+
+2. On the **new server**, install NextGIS Web following the :doc:`op_install` instructions.
+
+    .. important::
+
+        The version installed on the new server must match the version on the
+        source server. Restoring a backup across different versions is not
+        supported.
+
+3. Copy the backup file to the new server, for example::
+
+    scp /var/lib/docker/volumes/ngwdocker_backup/_data/archivist-20260117-002345.tar.zst \
+        root@new-server:/var/lib/docker/volumes/ngwdocker_backup/_data/
+
+4. Restore the data from the backup following the :ref:`Restore from backup <backup_offline_restore>` instructions.

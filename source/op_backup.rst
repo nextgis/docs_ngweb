@@ -1,7 +1,7 @@
 Backups
 ================
 
-NextGIS Web On-Premise has two options for creating backup: 
+NextGIS Web On-Premise has two options for creating backup:
 
 - Offline - requires shutting down all services and is performed outside the application container. It is recommended for creating full backups to be transferred to a different server.
 
@@ -22,6 +22,8 @@ Offline backup
 This method uses an additional service ``archivist`` included in the Docker NextGIS Web On-Premise stack. The essence of its work is quite simple: using GNU Tar, it creates an archive with data from all Docker volumes used in the stack.
 
 Backups created using this method are meant to be restored to the same version of NextGIS Web On-Premise where the backup was created.
+
+.. _backup_offline_create:
 
 Create backup
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +58,8 @@ To view the list of all the files in the archive you can use:
 .. code:: bash
 
    $ tar -tvf /var/lib/docker/volumes/ngwdocker_backup/_data/archivist-20260117-002345.tar.zst
+
+.. _backup_offline_restore:
 
 Restore from backup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
