@@ -37,6 +37,7 @@
    NEXTGISWEB__AUDIT__FILE__ENABLED=true
    NEXTGISWEB__AUDIT__DBASE__ENABLED=true
 
+.. _move_server:
 
 Перенос на другой сервер
 ------------------------
