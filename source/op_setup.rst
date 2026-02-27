@@ -14,6 +14,8 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+.. _move_server:
+
 Migrating to another server
 ---------------------------
 
