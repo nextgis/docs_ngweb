@@ -197,7 +197,7 @@ NextGIS Web является сервером OGC API Features - может пу
 
    Выбор действия "Сервис OGC API Features"
    
-На вкладке **Ресурс** указывается наименование сервиса (:numref:`admin_layers_create_ogc_api_features_service_name_rus`). Поле "Ключ" предназначено для разработчиков, заполенять его не обязательно.
+На вкладке **Ресурс** указывается наименование сервиса (:numref:`admin_layers_create_ogc_api_features_service_name_rus`). Поле "Ключ" предназначено для разработчиков, заполнять его не обязательно.
 
 .. figure:: _static/admin_layers_create_ogc_api_features_service_name_rus_2.png
    :name: admin_layers_create_ogc_api_features_service_name_rus
