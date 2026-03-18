@@ -10,7 +10,15 @@ Gallery is a special type of resource that allows to create an overview or a nav
 
    Gallery
 
-Navigate to the resource group (folder) in which to create a gallery.
+See how it works in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/O3T3eiHigp4?si=rSQ6zoGZTyYz4uNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://www.youtube.com/watch?v=O3T3eiHigp4>`_.
+
+To create a gallery navigate to the resource group (folder) in which to add it.
 Click **Create resource** button and select  **Gallery**. 
 
 .. figure:: _static/ngw_create_gallery_en.png
