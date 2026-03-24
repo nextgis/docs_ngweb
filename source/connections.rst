@@ -209,7 +209,7 @@ Switch to the "WMS layer" tab set up the following parameters:
 .. figure:: _static/create_wms_layer_parameters_en_2.png
    :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 14cm
+   :width: 16cm
 
    WMS layer parameters tab
 
@@ -252,7 +252,7 @@ To add data from external sources using :term:`TMS` protocol, first create TMS c
 TMS connection
 ^^^^^^^^^^^^^^
 
-To add a TMS layer, you first need to create a :term:`TMS` connection. Click on **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create_en`).
+To add a TMS layer, you first need to create a :term:`TMS` connection. Click on **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create`).
 
 .. figure:: _static/ngweb_create_tms_conn_en.png
    :name: TMS_connection_create
@@ -261,7 +261,7 @@ To add a TMS layer, you first need to create a :term:`TMS` connection. Click on 
 
    Selecting TMS Connection resource type
    
-Enter the connection name that will be displayed in the administrator interface (see :numref:`TMS_connection_name_en`).
+Enter the connection name that will be displayed in the administrator interface (see :numref:`TMS_connection_name`).
 
 .. figure:: _static/TMS_connection_name_en_3.png
    :name: TMS_connection_name
@@ -272,7 +272,7 @@ Enter the connection name that will be displayed in the administrator interface 
    
 Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
-On the TMS connection tab you need to select the way to connect to the TMS server - custom or via NextGIS GeoServices (see :numref:`TMS_connection_type_en`).
+On the TMS connection tab you need to select the way to connect to the TMS server - custom or via NextGIS GeoServices (see :numref:`TMS_connection_type`).
 
 .. figure:: _static/TMS_connection_type_en_3.png
    :name: TMS_connection_type
@@ -288,7 +288,7 @@ In the case of a custom connection method, the user must specify the URL templat
 TMS layer
 ^^^^^^^^^^
 
-**TMS layer** resource is created using previously created **TMS Connection**. Click on **Create resource** button and select **TMS layer** (see :numref:`TMS_layer_create_en`).
+**TMS layer** resource is created using previously created **TMS Connection**. Click on **Create resource** button and select **TMS layer** (see :numref:`TMS_layer_create`).
 
 .. figure:: _static/ngweb_create_tms_layer_en.png
    :name: TMS_layer_create
@@ -297,7 +297,7 @@ TMS layer
    
    Selecting TMS layer resource type
 
-Enter the name that will be displayed in the administrator interface (see :numref:`TMS_layer_name_en`).
+Enter the name that will be displayed in the administrator interface (see :numref:`TMS_layer_name`).
 
 .. figure:: _static/TMS_layer_name_en_3.png
    :name: TMS_layer_name
@@ -308,7 +308,7 @@ Enter the name that will be displayed in the administrator interface (see :numre
 
 Caching provides faster rendering of Web Map layers. Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
    
-The main display settings are on the TMS layer tab (see :numref:`TMS_layer_settings_en`):
+The main display settings are on the TMS layer tab (see :numref:`TMS_layer_settings_pic`):
 
 * TMS connection - select a TMS connection resource that was created earlier;
 * The range of zoom levels for data display;
@@ -316,7 +316,7 @@ The main display settings are on the TMS layer tab (see :numref:`TMS_layer_setti
 * Tile size in pixels.
 
 .. figure:: _static/TMS_layer_settings_en_3.png
-   :name: TMS_layer_settings_rus
+   :name: TMS_layer_settings_pic
    :align: center
    :width: 16cm
    
