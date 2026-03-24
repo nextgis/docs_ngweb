@@ -198,13 +198,15 @@ Tile cache settings are described in details `in this section <https://docs.next
 
 
 
-Switch to the "WMS layer" tab, which is presented on :numref:`admin_layers_create_wms_layer_parameters` and perform the following steps:
+Switch to the "WMS layer" tab set up the following parameters:
 
-1. Select the WMS connection that was created earlier.
-2. Select the appropriate MIME-type from the dropdown list.
-3. Select the required layers from the list by clicking the underlined names. You can select several layers.
+* WMS connection that was created earlier.
+* MIME-type from the dropdown list.
+* Select the required layers from the list by clicking the underlined names. You can select several layers.
+* Remote SRS - if the server supports serveral SRS, you can pick one from a dropdown list. SRS absent from your Web GIS are displayed in grey. `How to add SRS to Web GIS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#custom-spacial-reference-systems>`_.
+* Vendor parameters - optional
 
-.. figure:: _static/create_wms_layer_parameters_en.png
+.. figure:: _static/create_wms_layer_parameters_en_2.png
    :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
    :width: 14cm
@@ -218,7 +220,7 @@ Switch to the "WMS layer" tab, which is presented on :numref:`admin_layers_creat
 
    Selecting WMS connection
 
-In the last tab you can add vendor parameters. These are special query settings for additional functions. They vary depending on the WMS provider.
+Vendor parameters are special query settings for additional functions. They vary depending on the WMS provider.
 
 .. figure:: _static/create_wms_layer_vendorparam_en.png
    :name: ngweb_admin_layers_create_wms_layer_vendorparameters
