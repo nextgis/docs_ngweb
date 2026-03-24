@@ -23,6 +23,7 @@ NextGIS Web
 * `Styles <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_
 * `Services <https://docs.nextgis.com/docs_ngweb/source/services.html>`_
 * `Export <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#data-export>`_
+* `Attachments <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments>`_
 
 **Web Maps**
 
