@@ -161,13 +161,15 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 * Пароль 
 * Версия WMS
 * Возможности (управление запросом ``GetCapabilites`` к WMS-серверу)
+* Заголовок Referer - можно указать http-заголовок, посылаемый при запросе данных с удаленного сервера, если он необходим для получения доступа
+* Не проверять сертификат SSL/TLS
 
 Поле URL является обязательным, остальные используются по необходимости.
 
-.. figure:: _static/create_wms_connection_url_ru.png
+.. figure:: _static/create_wms_connection_url_ru_2.png
    :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
-   :width: 14cm
+   :width: 16cm
 
    Окно параметров Cоединения WMS
 
