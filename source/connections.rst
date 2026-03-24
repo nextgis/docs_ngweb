@@ -211,11 +211,13 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 * Выбор Соединения WMS (созданного ранее)
 * Формат изображения (список MIME-типов данных, предоставляемых сервером)
 * Выбор слоя из списка (можно выбрать несколько)
+* Удалённая СК - список поддерживаемых сервисом систем координат, по умолчанию выбрана EPSG:3857, если она доступна. Серым показываются СК сервиса, которые не добавлены в Веб ГИС. `Как добавить СК в Веб ГИС <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html#ngw-srs-custom>`_.
+* Вендор параметры
 
-.. figure:: _static/create_wms_layer_parameters_ru.png
+.. figure:: _static/create_wms_layer_parameters_ru_2.png
    :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
-   :width: 14cm
+   :width: 16cm
 
    Окно настройки параметров слоя WMS
 
@@ -226,7 +228,7 @@ NextGIS Web является клиентом :term:`WMS`. Для подключ
 
    Выбор соединения WMS
 
-Также на этой вкладке можно добавить вендор параметры (:numref:`ngweb_admin_layers_create_wms_layer_vendorparameters`). Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
+На этой вкладке можно добавить вендор параметры. Это нестандартные параметры запроса, которые определяются реализацией для обеспечения расширенных возможностей и зависят от поставщика WMS.
 
 .. figure:: _static/create_wms_layer_vendorparam_ru.png
    :name: ngweb_admin_layers_create_wms_layer_vendorparameters
