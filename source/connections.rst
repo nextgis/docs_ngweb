@@ -153,13 +153,15 @@ Here enter the following WMS server connection parameters:
 * Password 
 * Version of WMS protocol
 * Capabilities (manages GetCapabilities queries to the WMS Server)
+* Referer - optional HTTP header field required to access some services
+* Skip SSL/TLS certificate verification
 
 URL field needs to be filled, others are used when necessary.
 
-.. figure:: _static/create_wms_connection_url_en.png
+.. figure:: _static/create_wms_connection_url_en_2.png
    :name: ngweb_admin_layers_create_wms_connection_url
    :align: center
-   :width: 14cm
+   :width: 16cm
 
    WMS connection tab of Create resource dialog
 
