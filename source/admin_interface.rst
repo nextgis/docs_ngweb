@@ -12,9 +12,29 @@
    :width: 6mm
    :alt: карандаш
 
+.. |button_json| image:: _static/button_json.png
+   :width: 6mm
+   :alt: фигурные скобки
+
+.. |button_key| image:: _static/button_key.png
+   :width: 6mm
+   :alt: ключ
+
+.. |button_attachments| image:: _static/button_attachments.png
+   :width: 6mm
+   :alt: скрепка
+
+.. |button_export| image:: _static/button_export.png
+   :width: 6mm
+   :alt: стрелка вниз
+
 .. |button_open_web_map| image:: _static/button_open_web_map.png
    :width: 6mm
    :alt: карта с лупой
+
+.. |button_open_gallery| image:: _static/button_open_gallery.png
+   :width: 6mm
+   :alt: три рамки
 
 .. |button_open_feature_table| image:: _static/button_open_feature_table.png
    :width: 6mm
@@ -237,9 +257,9 @@
 Просмотр ресурсов
 ------------------
 
-После авторизации пользователь попадает на главную страницу :numref:`ngweb_resource_group`
+После авторизации пользователь попадает на главную страницу.
 
-.. figure:: _static/resource_group_ru_2.png
+.. figure:: _static/resource_group_ru_3.png
    :name: ngweb_resource_group
    :align: center
    :width: 20cm
@@ -248,14 +268,19 @@
 
 Из списка ресурсов можно совершать ряд операций, нажимая на иконки в строке:
 
-* |button_edit| перейти в редактирование ресурса
-* |button_delete| удалить ресурс. 
+* |button_edit| перейти в редактирование ресурса;
+* |button_delete| удалить ресурс;
+* |button_key| посмотреть права пользователя для ресурса;
+* |button_json| открыть представление JSON для ресурса.
 
-В зависимости от типа ресурса могут быть доступны другие действия
+В зависимости от типа ресурса могут быть доступны другие действия, в том числе:
 
-* |button_preview| просмотр
-* |button_open_web_map| открыть (для веб-карты)
-* |button_open_feature_table| открыть таблицу атрибутов (для векторных слоёв)
+* |button_preview| предпросмотр;
+* |button_open_web_map| открыть (для веб-карты);
+* |button_open_gallery| перейти к галерее;
+* |button_open_feature_table| открыть таблицу атрибутов (для векторных слоёв);
+* |button_attachments| управление вложениями (для векторных слоёв);
+* |button_export| сохранить объекты векторного слоя в файл.
 
 Три точки в заголовке таблицы вызывают меню списка ресурсов.
 
