@@ -325,7 +325,7 @@ Feature table
 -----------------
 
 Some resources contain a set of features that can be viewed as a table.
-Press the "Table" icon opposite the resource name or select an action for a vector layer called "Table" in the features pane.
+Press the "Table" icon opposite the resource name or, if you are on the layer's resource page, select "Table" in the features pane.
 
 .. figure:: _static/feature_table_choice_from_group_en.png
    :name: feature_table_choice_from_group_pic
@@ -375,29 +375,38 @@ Depending on the format, additional file components are exported making further 
 .. note:: 
 	Geometry and attributes are supported for export. Features' descriptions, metadata and images can't be exported in the described way but can be requested using :ref:`NextGIS API <ngcom_ngapi>`.
 
-To export data:
+To export data, click |button_export|**Save as** in the resource menu or, if you are on the layer's resource page, select "Save as" in the Features pane on the right.
 
-#. Open the Properties page of Vector layer or PostGIS layer from which you want to export data;
-#. Select :menuselection:`Vector layer --> Save as` on the right side of the page;
-#. Select data format and encoding;
-#. If you need to have the file archived, select *ZIP archive* (some multi-file formats are zipped by default);
-#. Save the file to your device.
-
-By default data is exported to a GeoPackage file using UTF-8 encoding with all fields included.
-
-.. figure:: _static/ngweb_data_export_eng_2.png
-   :name: ngweb_data_export
+.. figure:: _static/ngw_data_export_from_list_en.png
+   :name: ngw_data_export_from_list_pic
    :align: center
    :width: 20cm
    
    Selecting "Save as" action to export data
 
-.. figure:: _static/formats_en_2.png
-   :name: formats_pic
+.. figure:: _static/ngweb_data_export_eng_3.png
+   :name: ngweb_data_export
+   :align: center
+   :width: 20cm
+   
+   Selecting "Save as" action on the layer page
+
+On the next page you can configure the export file. By default data is exported to a GeoPackage file using UTF-8 encoding with all fields included. `Learn more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#export-settings>`_ about export settings.
+
+.. figure:: _static/ngw_data_export_set_en.png
+   :name: ngw_data_export_set_en
    :align: center
    :width: 20cm
 
-   Data export in various formats
+   Data export settings
+
+
+
+Click **Save** to save the file to your device.
+
+
+
+
 
 
 
@@ -407,38 +416,14 @@ By default data is exported to a GeoPackage file using UTF-8 encoding with all f
 Export settings
 ~~~~~~~~~~~~~~~~~~~
 
-In the *Format* field select data format you need:
+The parameters of the export are:
 
-.. figure:: _static/formats_en_3.png
-   :name: newformats_pic
-   :align: center
-   :width: 20cm    
-
-   "Format" field
-
-In the *SRS* field (Spatial reference system) in addition to standard coordinate systems Longitude-Latitude (EPSG: 4326) and Mercator (EPSG: 3857) you can select custom coordinate systems created earlier (how to add custom SRS see `this page <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_): 
-
-.. figure:: _static/coordinate_systems_en_3.png
-   :name: coordinate_systems_pic
-   :align: center
-   :width: 20cm    
-
-   "SRS" field
-
-In the *Encoding* field you can choose UTF-8, Windows-1251, or Windows-1252 encoding for your data:
-
-.. figure:: _static/encodings_en_3.png
-   :name: encodings_pic
-   :align: center
-   :width: 20cm    
-
-   "Encoding" field
-
-*FID field* is used for setting a field name to be added to a exported data where the object identifiers will be placed (the default is “ngw_id”).
-
-You can choose to *use field display names instead of keynames*.  Keynames are technical and use only plain Latin symbols.  Display names can be in any language, usually they are seen as column headers or field labels in a form (for more details see `this section <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).
-
-Next you can chose which of the *fields* of the data to keep in the file. By default, all are selected. To remove a field, click on the cross by its name or untick it in the drop-down menu. To add a field again, tick it in the drop-down menu.
+* **Data format** - GeoPackage as the default, select one of supported formats from the dropdown menu;
+* **Spacial reference system** - in addition to standard coordinate systems Longitude-Latitude (EPSG: 4326) and Mercator (EPSG: 3857) you can select custom coordinate systems created earlier (how to add custom SRS see `this page <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_);
+* **Encoding** - UTF-8, Windows-1251, or Windows-1252;
+* **FID field** is used for setting a field name to be added to a exported data where the object identifiers will be placed (the default is “ngw_id”).;
+* You can choose to **Use field display names instead of keynames** Keynames are technical and use only plain Latin symbols.  Display names can be in any language, usually they are seen as column headers or field labels in a form (for more details see `this section <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).;
+* **Fields** - By default, all are selected. To remove a field, click on the cross by its name or untick it in the drop-down menu. To add a field again, tick it in the drop-down menu;
 
 .. figure:: _static/export_fields_en_2.png
    :name: export_fields_pic
@@ -453,23 +438,15 @@ Next you can chose which of the *fields* of the data to keep in the file. By def
 
 Watch on `youtube <https://youtu.be/Hukt3lD-JyQ?si=c8Cbut245FWU7LMQ>`__.
 
-If you need to export only the features within a particular area, you can *Limit by extent*. The extent is set in degrees.
-
-A *text filter* is also available.  Search is performed in all fields that don't have `text search <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-vector-layer-attributes-table>`_ disabled, just like in the feature table. 
-
-Output in ESRI Shapefile or MapInfo TAB results in a Zip archive with necessary files. For single-file formats (like GeoJSON or CSV) creation of Zip archive is optional.  
-
-.. figure:: _static/zip_option_en.png
-   :name: zip_option_pic
-   :align: center
-   :width: 20cm    
-
-   Creation of Zip archive selected for GeoJSON format
+* Limit by extent - If you need to export only the features within a particular area. The extent is set in degrees;
+* Filter text - only export features containing a certain key word. Search is performed in all fields that don't have `text search <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#edit-vector-layer-attributes-table>`_ disabled, just like in the feature table;
+* Filter - here you can set up more complicated conditions (`more on filters <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#search-and-filter>`_); 
+* If you need to have the file archived, select *ZIP archive*. Output in ESRI Shapefile or MapInfo TAB results in a Zip archive with necessary files. For single-file formats (like GeoJSON or CSV) creation of Zip archive is optional.
 
 All export options are available through HTTP API.
 For example, this query will get you data in CSV format, EPSG:4326, UTF-8 encoding, zipped:
 
 https://demo.nextgis.com/api/resource/4077/export?format=csv&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8 
 
-You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or :ref:`with desktop app NextGIS QGIS <ngcom_ngqgis_connect_data_export>`.
+You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or :ref:`with desktop app NextGIS QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
 
