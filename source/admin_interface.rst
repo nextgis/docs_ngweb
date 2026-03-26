@@ -11,6 +11,26 @@
    :width: 6mm
    :alt: pencil
 
+.. |button_json| image:: _static/button_json.png
+   :width: 6mm
+   :alt: curly brackets
+
+.. |button_key| image:: _static/button_key.png
+   :width: 6mm
+   :alt: key
+
+.. |button_attachments| image:: _static/button_attachments.png
+   :width: 6mm
+   :alt: paper clip
+
+.. |button_export| image:: _static/button_export.png
+   :width: 6mm
+   :alt: down arrow
+
+.. |button_open_gallery| image:: _static/button_open_gallery.png
+   :width: 6mm
+   :alt: tree frames
+
 .. |button_open_web_map| image:: _static/button_open_web_map.png
    :width: 6mm
    :alt: magnifying glass on map
@@ -240,9 +260,9 @@ permissions see `this section <https://docs.nextgis.com/docs_ngweb/source/users.
 Resource view
 ------------------
 
-After login to administrative interface the user is taken to home page shown on :numref:`resource_group`.
+After login to administrative interface the user is taken to home page.
 
-.. figure:: _static/resource_group_en.png
+.. figure:: _static/resource_group_en_2.png
    :name: resource_group
    :align: center
    :width: 20cm
@@ -251,14 +271,19 @@ After login to administrative interface the user is taken to home page shown on 
 
 The resource list allows users to perform some actions by clicking icons next to the resource name: 
 
-* |button_edit| open the resource edit page
-* |button_delete| delete resource
+* |button_edit| open the resource edit page;
+* |button_delete| delete resource;
+* |button_key| view user permissions for the resource;
+* |button_json| open JSON view of the resource.
 
-Other actions can be available depending on the resource type:
+Other actions can be available depending on the resource type, including:
 
-* |button_preview| preview
-* |button_open_web_map| open (for Web Maps)
-* |button_open_feature_table| open feature table (for vector layers)
+* |button_preview| preview;
+* |button_open_web_map| open (for Web Maps);
+* |button_open_gallery| view resource gallery;
+* |button_open_feature_table| open feature table (for vector layers);
+* |button_attachments| manage attachments (for vector layers);
+* |button_export| save features of the vector layer as a file, etc.
 
 Press three dots in the right corner of the table title to open the resource list menu.
 
