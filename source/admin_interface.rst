@@ -375,7 +375,7 @@ Depending on the format, additional file components are exported making further 
 .. note:: 
 	Geometry and attributes are supported for export. Features' descriptions, metadata and images can't be exported in the described way but can be requested using :ref:`NextGIS API <ngcom_ngapi>`.
 
-To export data, click |button_export|**Save as** in the resource menu or, if you are on the layer's resource page, select "Save as" in the Features pane on the right.
+To export data, click |button_export| **Save as** in the resource menu or, if you are on the layer's resource page, select "Save as" in the Features pane on the right.
 
 .. figure:: _static/ngw_data_export_from_list_en.png
    :name: ngw_data_export_from_list_pic
@@ -403,13 +403,6 @@ On the next page you can configure the export file. By default data is exported 
 
 
 Click **Save** to save the file to your device.
-
-
-
-
-
-
-
 
 .. _ngw_vector_export_settings:
 
@@ -448,5 +441,5 @@ For example, this query will get you data in CSV format, EPSG:4326, UTF-8 encodi
 
 https://demo.nextgis.com/api/resource/4077/export?format=csv&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8 
 
-You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or :ref:`with desktop app NextGIS QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
+You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or `with desktop app NextGIS QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
 
