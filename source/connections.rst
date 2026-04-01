@@ -118,7 +118,7 @@ NextGIS Web is a :term:`WMS` client. To connect a WMS layer you need to know its
 
 See how to add WMS with local CRS in our video:
 
-.. raw::html
+.. raw:: html
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/dYvOnKSSqBQ?si=l83YINngkAo_dmbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
