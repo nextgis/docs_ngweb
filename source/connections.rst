@@ -3,9 +3,13 @@
 WFS, WMS, TMS layers
 ====================
 
-NextGIS Web allows to add data from external sources using standard protocols: WFS, WMS, TMS.
+NextGIS Web allows to add data from external sources using standard protocols: 
 
-Also, you can make a layer based on a PostGIS database.
+* `WFS <https://docs.nextgis.com/docs_ngweb/source/connections.html#ngw-fws-in>`_, 
+* `WMS <https://docs.nextgis.com/docs_ngweb/source/connections.html#ngw-wms-in>`_, 
+* `TMS <https://docs.nextgis.com/docs_ngweb/source/connections.html#ngw-tms-in>`_.
+
+Also, you can make a `layer based on a PostGIS database <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html>`_.
 
 .. _ngw_wfs_in:
 
@@ -19,7 +23,7 @@ First you need to create a WFS connection.
 .. _ngw_wfs_connection:
 
 WFS connection
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 Click **Create resource** button and select  **WFS connection**.
 
@@ -69,7 +73,7 @@ Next you can create WFS layer resource.
 .. _ngw_wfs_layer:
 
 WFS Layer
-^^^^^^^^^
+~~~~~~~~~
 
 **WFS Layer** is added using an existing WFS connection. Select the resource type in the **Create resource** menu.
 
@@ -110,21 +114,22 @@ WMS
 .. note:: 
 	Currently supported WMS versions are 1.1.1 and 1.3.0.
 
-NextGIS Web is a :term:`WMS` client. To connect a WMS layer you need to know its address. 
+NextGIS Web is a :term:`WMS` client. To connect a WMS layer you need to know its address and coordinate system. Make sure this SRS is `added to your Web GIS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_.
 
-WMS server should be able to serve it using a coordinate system EPSG:3857. 
+See how to add WMS with local CRS in our video:
 
-The code must be 3857, not 900913. 
+.. raw::html
 
-You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response.
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/dYvOnKSSqBQ?si=l83YINngkAo_dmbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Watch on `youtube <https://youtu.be/dYvOnKSSqBQ?si=kXYVFnqFXw3IN3kI>`_.
 
 .. _ngw_create_wms_connection:
 
 WMS Connection
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
-To add a WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers. Click **Create resource** button and select  **WMS connection** (see :numref:`admin_layers_create_wms_connection`). 
+To add a WMS layer you need to create a resource called WMS connection. You may create a single connection for many layers. Click **Create resource** button and select  **WMS connection**. 
 
 .. figure:: _static/ngweb_create_wms_conn_en.png
    :name: admin_layers_create_wms_connection
@@ -134,7 +139,7 @@ To add a WMS layer you need to create a resource called WMS connection. You may 
    Selecting  "WMS connection" resource type
    
 
-Create resource dialog for WMS connection is presented on :numref:`admin_layers_create_wms_connection_name`. Enter the name of the resource that will be displayed in the administrator interface. Not to be confused with layer name in a database. "Keyname" field is optional. 
+Enter the name of the resource that will be displayed in the administrator interface. Not to be confused with layer name in a database. "Keyname" field is optional. 
 
 .. figure:: _static/create_wms_connection_name_en.png
    :name: admin_layers_create_wms_connection_name
@@ -146,7 +151,7 @@ Create resource dialog for WMS connection is presented on :numref:`admin_layers_
 Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_.
 
 
-Here enter the following WMS server connection parameters:
+On the "WMS connection" tab enter the following WMS server connection parameters:
 
 * URL
 * Username 
@@ -170,9 +175,9 @@ After setting up all necessery parameters, click **Create**.
 .. _ngw_create_layer_wms:
 
 WMS layer
-^^^^^^^^^^
+~~~~~~~~~~
 
-Now you can add WMS layers. Open the resource group where you want to create the layer. Click **Create resource** button and select **WMS layer** (see :numref:`admin_layers_create_wms_layer`).  
+Now you can add WMS layers. Open the resource group where you want to create the layer. Click **Create resource** button and select **WMS layer**.  
 
 .. figure:: _static/ngweb_create_wms_layer_en.png
    :name: admin_layers_create_wms_layer
@@ -191,19 +196,14 @@ Enter display name that will be visible in administrator interface and in the ma
 
    WMS layer name
 
-
-
 Tile cache settings are described in details `in this section <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#tile-cache>`_.
-
-
-
 
 Switch to the "WMS layer" tab set up the following parameters:
 
 * WMS connection that was created earlier.
 * MIME-type from the dropdown list.
 * Select the required layers from the list by clicking the underlined names. You can select several layers.
-* Remote SRS - if the server supports serveral SRS, you can pick one from a dropdown list. SRS absent from your Web GIS are displayed in grey. `How to add SRS to Web GIS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#custom-spacial-reference-systems>`_.
+* Remote SRS - if the server supports serveral SRS, you can pick one from a dropdown list. SRS absent from your Web GIS are displayed in grey. `How to add SRS to Web GIS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#custom-spacial-reference-systems>`_. You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response.
 * Vendor parameters - optional
 
 .. figure:: _static/create_wms_layer_parameters_en_2.png
@@ -238,6 +238,7 @@ After setting up all necessery parameters, click **Create**.
 
 
 
+
 .. _ngw_tms_in:
 
 TMS
@@ -250,7 +251,7 @@ To add data from external sources using :term:`TMS` protocol, first create TMS c
 .. _ngw_create_tms_connection:
 
 TMS connection
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 To add a TMS layer, you first need to create a :term:`TMS` connection. Click on **Create resource** button and select **TMS connection** (see :numref:`TMS_connection_create`).
 
@@ -286,7 +287,7 @@ In the case of a custom connection method, the user must specify the URL templat
 .. _ngw_tms_layer:
 
 TMS layer
-^^^^^^^^^^
+~~~~~~~~~~
 
 **TMS layer** resource is created using previously created **TMS Connection**. Click on **Create resource** button and select **TMS layer** (see :numref:`TMS_layer_create`).
 
