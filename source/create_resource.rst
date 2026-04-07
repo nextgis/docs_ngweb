@@ -47,7 +47,8 @@ Create Resource group to manage data
 --------------------------------------
 
 Resources can be arranged into groups. For example, you can have special groups for base layers, satellite images and topical data. 
- 
+
+.. seealso:: `How to move resources to a group <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-move-resource>`_
 
 Groups help organize the layers in the Control panel and make it easier to manage access permissions.  
  
