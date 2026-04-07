@@ -84,6 +84,8 @@
 * |attr_text_search_symbol| Текстовый поиск - можно отключить поиск по значениям этого атрибута.
 * |attr_label_symbol| Атрибут наименование - значение из этого поля будет использоваться как название объекта при `поиске <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ и добавлении в `закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
+.. note:: Если вы хотите задать поле, значение которого будет использоваться в качестве подписи объекта на карте, это можно сделать через `настройки стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_.
+
 .. |attr_label_symbol| image:: _static/attr_label_symbol.png
    :width: 6mm
 
