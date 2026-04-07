@@ -96,6 +96,8 @@ For the next three parameters a dark symbol means "on" and a light symbol means 
 * |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
 * |attr_label_symbol| Label attribute - value from this fielsd is used as feature name for `search results <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `identification <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ and `bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
+.. note:: To modify the labels visisble on the map itself, use `style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_
+
 You can also `add a Lookup table <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_. It allows to select values of the attribute when you add or edit features. 
 
 To go back to the table view, click |button_hide_details| **Hide details** in the top row of the form.

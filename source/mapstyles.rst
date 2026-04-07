@@ -210,10 +210,11 @@ If you want to create a simple custom style, select "User-defined style" in the 
 * Marker shape: square, circle, triangle, star, cross;
 * Marker size and stroke width. Enter a number or use the arrows in the field;
 * Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format);
-* The style of the line / polygon outline: solid, dotted, dashed, dash-dotted.
+* The style of the line / polygon outline: solid, dotted, dashed, dash-dotted;
+* Labels (tick this option to view its settings): size, color and field selection.
 
 
-.. figure:: _static/QGIS_style_custom_en.png
+.. figure:: _static/QGIS_style_custom_en_2.png
    :name: QGIS_style_custom_pic
    :align: center
    :width: 16cm
@@ -228,12 +229,19 @@ If you want to create a simple custom style, select "User-defined style" in the 
 
    Custom QGIS style for lines
 
-.. figure:: _static/QGIS_style_custom_polygon_en_2.png
+.. figure:: _static/QGIS_style_custom_polygon_en_3.png
    :name: QGIS_style_custom_polygon_pic
    :align: center
    :width: 15cm
 
    Custom QGIS style for polygons
+
+.. figure:: _static/QGIS_style_custom_label_en.png
+   :name: QGIS_style_custom_label_pic
+   :align: center
+   :width: 16cm
+
+   Label settings
 
 You can type a custom display name for the new style in the :guilabel:`Resource` tab. You can also add resource description and metadata on the corresponding tabs.
 
