@@ -15,7 +15,7 @@
 * `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_;
 * `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе;
 * `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_;
-* создав копию другого ресурса стиля.
+* создав копию уже существующего ресурса стиля.
 
 Для растрового слоя можно создать стиль:
 
@@ -73,6 +73,69 @@
 После выбора «Векторный стиль QGIS» откроется диалог создания ресурса. 
 
 Вы можете загрузить файл стиля или создать простой векторный стиль самостоятельно.
+
+.. _ngw_qgis_style_custom:
+
+Пользовательский стиль QGIS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Если вы хотите самостоятельно создать простой векторный стиль, выберите в выпадающем меню "Пользовательский стиль". Доступные настройки зависят от типа геометрии слоя. Можно настроить:
+
+* Форму символа (для точечных слоев): круг, квадрат, треугольник, звезда, крест;
+* Размер символа (для точечных слоев). Можно ввести с клавиатуры или увеличить/уменьшить стрелочками;
+* Ширину контура;
+* Цвет и прозрачность заливки и контура. Можно выбрать пипеткой, настроить ползунками или ввести значения в системе :term:`HEX`, :term:`HSB` или :term:`RGB`;
+* Характер линии/контура полигона: сплошная линия, пунктир, точечный пунктир, переменный пунктир (можно настроить комбинацию из штрихов и пропусков разной длины);
+* Простые подписи (настройки появляются при активации флажка "Подписи "): размер в пикселях, цвет и поле, из которого берётся текст подписи.
+
+.. figure:: _static/QGIS_style_custom_ru_3.png
+   :name: QGIS_style_custom_pic
+   :align: center
+   :width: 16cm
+
+   Настройка пользовательского стиля для точечного слоя
+
+.. figure:: _static/QGIS_style_custom_line_ru_2.png
+   :name: QGIS_style_custom_line_pic
+   :align: center
+   :width: 16cm
+
+   Настройка пользовательского стиля для слоя линий
+
+.. figure:: _static/QGIS_style_custom_polygon_ru_3.png
+   :name: QGIS_style_custom_polygon_pic
+   :align: center
+   :width: 16cm
+
+   Настройка пользовательского стиля для слоя полигонов
+
+.. figure:: _static/QGIS_style_custom_label_ru.png
+   :name: QGIS_style_custom_label_pic
+   :align: center
+   :width: 16cm
+
+   Настройка подписей для пользовательского стиля
+
+На вкладке «Ресурс» вы можете задать пользовательское наименование стиля. Можно также ввести описание и метаданные на соответствующих вкладках. Настройки тайлового кэша подробно описаны в `данном <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-tile-cache>`_ разделе.
+
+Задав нужные параметры, нажмите на кнопку "Создать". После обработки запроса откроется окно ресурса QGIS стиля (см. :numref:`svg_res_style_2`).
+
+.. figure:: _static/svg_res_style_ru.png
+   :name: svg_res_style_2
+   :align: center
+   :width: 20cm
+
+   Созданный ресурс QGIS стиля
+
+Процесс создания пользовательского стиля также представлен на видео:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://rutube.ru/play/embed/e6b097a20efa3882b27907096490393e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`__, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`__.
+
+Созданный стиль QGIS можно **редактировать**.
 
 .. _ngw_qgis_style_file:
 
@@ -196,60 +259,7 @@ SVG-маркеры
 
 SVG-маркеры также можно `встроить <https://docs.nextgis.ru/docs_ngqgis/source/styling.html#svg>`_ в стиль QGIS, тогда не будет необходимости в создании отдельного ресурса библиотеки.
 
-.. _ngw_qgis_style_custom:
 
-Пользовательский стиль QGIS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Если вы хотите самостоятельно создать простой векторный стиль, выберите в выпадающем меню "Пользовательский стиль". Доступные настройки зависят от типа геометрии слоя. Можно настроить:
-
-* Форму символа (для точечных слоев): круг, квадрат, треугольник, звезда, крест;
-* Размер символа (для точечных слоев). Можно ввести с клавиатуры или увеличить/уменьшить стрелочками;
-* Ширину контура;
-* Цвет и прозрачность заливки и контура. Можно выбрать пипеткой, настроить ползунками или ввести значения в системе :term:`HEX`, :term:`HSB` или :term:`RGB`;
-* Характер линии/контура полигона: сплошная линия, пунктир, точечный пунктир, переменный пунктир (можно настроить комбинацию из штрихов и пропусков разной длины).
-
-.. figure:: _static/QGIS_style_custom_ru_2.png
-   :name: QGIS_style_custom_pic
-   :align: center
-   :width: 16cm
-
-   Настройка пользовательского стиля для точечного слоя
-
-.. figure:: _static/QGIS_style_custom_line_ru_2.png
-   :name: QGIS_style_custom_line_pic
-   :align: center
-   :width: 16cm
-
-   Настройка пользовательского стиля для слоя линий
-
-.. figure:: _static/QGIS_style_custom_polygon_ru_2.png
-   :name: QGIS_style_custom_polygon_pic
-   :align: center
-   :width: 16cm
-
-   Настройка пользовательского стиля для слоя полигонов
-
-На вкладке «Ресурс» вы можете задать пользовательское наименование стиля. Можно также ввести описание и метаданные на соответствующих вкладках. Настройки тайлового кэша подробно описаны в `данном <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-create-tile-cache>`_ разделе.
-
-Задав нужные параметры, нажмите на кнопку "Создать". После обработки запроса откроется окно ресурса QGIS стиля (см. :numref:`svg_res_style_2`).
-
-.. figure:: _static/svg_res_style_ru.png
-   :name: svg_res_style_2
-   :align: center
-   :width: 20cm
-
-   Созданный ресурс QGIS стиля
-
-Процесс создания пользовательского стиля также представлен на видео:
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/e6b097a20efa3882b27907096490393e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`__, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`__.
-
-Созданный стиль QGIS можно **редактировать**.
 
 .. _ngw_qgis_style_custom_edit:
 
