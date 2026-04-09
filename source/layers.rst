@@ -4,10 +4,12 @@
 Слои
 ======
 
-Загрузка растровых и векторных геоданных в :ref:`Веб ГИС <ngcom_description>` происходит путем создания ресурсов `Растровый слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_ и `Векторный слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_.
+Загрузка растровых и векторных геоданных в :ref:`Веб ГИС <ngcom_description>` происходит путем создания ресурсов `Растровый слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_, `Векторный слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ и `Набор тайлов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-tile-set>`_.
 
 .. note:: 
 	Ограничение на размер загружаемых файлов зависит от выбранного тарифного плана. Для **Premium** - 50 GiB, для **Free** - 5 GiB, для **Mini** - 10 GiB. 
+
+Вы можете хранить растры во внешнем хранилище S3, для соединения с ним нужно создать ресурс `Хранилище векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#raster-storage>`_.
 
 См. также поддерживаемые форматы и другие требования к исходным данным: `для растровых слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-raster-requirements>`_, `для векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_.
 
@@ -256,7 +258,7 @@ NextGIS Web может принимать многослойные наборы 
 
    Окно загрузки растрового файла
 
-Также на этой вкладке можно выбрать внешнее хранилище растровых слоёв, тогда данные будут загружены в него, а не в основное хранилище Веб ГИС. Нажмите на стрелочку вниз в этом поле и выберите ранее созданный ресурс хранилища векторных слоёв:
+Также на этой вкладке можно выбрать внешнее хранилище растровых слоёв , тогда данные будут загружены в него, а не в основное хранилище Веб ГИС. Нажмите на стрелочку вниз в этом поле и выберите ранее созданный ресурс `хранилища векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/layers.html#raster-storage>`_:
 
 .. figure:: _static/ngweb_raster_select_storage_ru.png
    :name: ngweb_raster_select_storage_pic
@@ -375,3 +377,41 @@ NextGIS Web может принимать многослойные наборы 
 * добавить на `веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_,
 * подключить во внешнее приложение, используя `ссылку TMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-tms-service>`_ в разделе "Внешний доступ",
 * опубликовать в составе `сервиса WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#wms>`_.
+
+.. _raster_storage:
+
+Хранилище растровых слоёв
+-------------------------
+
+Если вы хотите использовать внешнее хранилище для своих растров, вы можете создать соединение с ним в Веб ГИС.
+
+Перейдите в группу ресурсов, в которой хотите создать соединение с хранилищем, нажмите **Создать ресурс** и выберите **Хранилище растровых слоёв**.
+
+.. figure:: _static/ngweb_create_raster_storage_ru.png
+   :name: ngweb_create_raster_storage_pic
+   :align: center
+   :width: 20cm
+
+   Выбор типа создаваемого ресурса "Хранилище растровых слоёв"
+
+Заполните данные хранилища значениями соответствующих переменных:
+
+* Тип - AWS S3
+* Адрес сервера (endpoint)
+* Бакет (bucket)
+* Ключ доступа (access_key)
+* Секретный ключ (secret_key)
+* Префикс - не обязательно
+
+.. figure:: _static/ngweb_raster_storage_settings_ru.png
+   :name: ngweb_raster_storage_settings_pic
+   :align: center
+   :width: 16cm
+
+   Создание хранилища растровых слоёв
+
+На вкладке "Ресурс" можно задать пользовательское наименование для хранилища, которое будет отображаться в списке ресурсов.
+
+Нажмите **Сохранить** для завершения.
+
+Теперь при создании растровых слоёв вы сможете выбирать, где их хранить: в облаке самой Веб ГИС или во внешнем хранилище (см. :numref:`ngweb_admin_layers_create_raster_layer_upload`).
