@@ -72,7 +72,7 @@
 В зависимости от `тарифного плана <http://nextgis.ru/nextgis-com/plans>`_ в окне отображается максимально допустимый объем загружаемого файла (:numref:`ngweb_admin_layers_create_vector_layer_upload`).
 NextGIS Web может принимать многослойные наборы данных на входе. Если в архиве содержится несколько слоёв, то после его загрузки пользователю будет предложено выбрать слой, на основе которого будет создан ресурс "Векторный слой".
 
-.. figure:: _static/ngweb_create_vector_layer_upload_ru.png
+.. figure:: _static/ngweb_create_vector_layer_upload_ru_2.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 15cm
@@ -249,33 +249,34 @@ NextGIS Web может принимать многослойные наборы 
 
 Если вы планируете подключать этот растр в QGIS напрямую из Веб ГИС, при загрузке включите режим Загрузить как Cloud Optimized GeoTIFF (COG). Это оптимизирует его специальным образом для более быстрого подключения и отображения.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_rus_2.png
+.. figure:: _static/ngweb_raster_layer_upload_ru.png
    :name: ngweb_admin_layers_create_raster_layer_upload
+   :align: center
+   :width: 16cm
+
+   Окно загрузки растрового файла
+
+Также на этой вкладке можно выбрать внешнее хранилище растровых слоёв, тогда данные будут загружены в него, а не в основное хранилище Веб ГИС. Нажмите на стрелочку вниз в этом поле и выберите ранее созданный ресурс хранилища векторных слоёв:
+
+.. figure:: _static/ngweb_raster_select_storage_ru.png
+   :name: ngweb_raster_select_storage_pic
    :align: center
    :width: 20cm
 
-   Окно загрузки растрового файла
+   Выбор внешнего хранилища растровых слоёв
 
 
 Во вкладке "Ресурс" укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 Оно будет отображаться в административном интерфейсе. 
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_rus_3.png
+.. figure:: _static/ngweb_raster_layer_resourse_name_ru.png
    :name: ngweb_admin_layers_create_raster_layer_resourse_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Наименование растрового слоя
 
 Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя.
-
-
-.. figure:: _static/ngweb_admin_admin_layers_create_raster_layer_resourse_description_metadata_rus_3.png
-   :name: ngweb_admin_layers_create_raster_layer_resourse_metadata
-   :align: center
-   :width: 20cm
-
-   Метаданные растрового слоя
 
 После указания всех необходимых параметров нажмите кнопку **Создать**.
 
@@ -350,25 +351,16 @@ NextGIS Web может принимать многослойные наборы 
 
 Во вкладке «Набор тайлов» необходимо загрузить набор тайлов в формате MBTiles или zip-архив. Тайлы должны быть в формате PNG или JPEG и иметь размер 256х256 пикселей.
 
-.. figure:: _static/Tileset_add_rus.png
+.. figure:: _static/create_tileset_upload_ru.png
    :name: Tileset_add_rus
    :align: center
    :width: 16cm
 
-Во вкладке «Тайловый кэш» пользователь может задать настройки кэширования:
+   Создание набора тайлов
 
-* Включение - включение/выключение кэширования тайлов;
-* Разрешить тайлы для запросов изображений - при запросе изображения (не тайла) использовать закэшированные тайлы при их наличии;
-* Максимальный масштабный уровень - пороговое значение, выше которого обращение к кэшу не происходит, изображение карты рендерится на лету;
-* TTL, сек (Time to live) - “время жизни” или хранения тайлов на сервере в секундах, после которого при следующем запросе изображение будет формироваться заново. Если TTL = 0, то время хранения тайлов не ограничено;
-* Очистить - write only - очищает тайловый кэш при сохранении стиля.
+На вкладке "Ресурс" можно задать пользовательское имя для набора тайлов, под которым он будет отображаться в списке ресурсов.
 
-.. figure:: _static/Tileset_settings_rus.png
-   :name: Tileset_settings_rus
-   :align: center
-   :width: 16cm
-
-После заполнения всех полей нажатие кнопки **Создать** завершает процесс создания ресурса **Набор тайлов**.
+Нажмите кнопку **Создать**, чтобы завершить процесс создания ресурса.
 
 Процесс создания также представлен в видео:
 
@@ -378,4 +370,8 @@ NextGIS Web может принимать многослойные наборы 
 
 Смотреть на `youtube <https://youtu.be/5ccduELAk3Y>`__, `rutube <https://rutube.ru/video/824fbfb5c0d10a2977e3e828f6c4fd9a/>`__.
 
+Набор тайлов вы можете:
 
+* добавить на `веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_,
+* подключить во внешнее приложение, используя `ссылку TMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-tms-service>`_ в разделе "Внешний доступ",
+* опубликовать в составе `сервиса WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#wms>`_.
