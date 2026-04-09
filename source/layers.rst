@@ -6,7 +6,7 @@ Add layers
 Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_ and `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ resources respectively.
 
 .. note:: 
-	The size limit for uploaded files depends on the selected plan. For **Premium** - 2 GiB, for **Free** - 128 MiB and **Mini** - 256 MiB. 
+	The size limit for uploaded files depends on the selected plan. For **Premium** - 50 GiB, for **Free** - 5 GiB and **Mini** - 10 GiB. 
 
 See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_ layers below.
 
@@ -276,8 +276,8 @@ Satellite images of high resulution and other rasters may be very large. The fil
 
 There are three limitation for uploading big rasters:
 
-1. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium by default the limit is **2 GiB**. Max file size can be modified to a certain point for cloud Web GIS and indefinitely for `on-premise <https://nextgis.com/pricing>`_;
-2. Max size of extracted raster in the cloud can be up to **4 GiB**. GeoTIFF uses a compression algorithm and the file size may be drastically smaller than the size of the unpacked data. To calculate the size of he decompressed raster multiply the three parameters: pixel count * number of bands * bytes per pixel. 
+1. Max file size - it depends on your `subscription plan <https://nextgis.com/pricing-base/>`_, on Premium the limit is **50 GiB**. 
+2. Max size of extracted raster is equal to max file size multiplied by 2, so for Premium it's **100 GiB**. GeoTIFF uses a compression algorithm and the file size may be drastically smaller than the size of the unpacked data. To calculate the size of he decompressed raster multiply the three parameters: pixel count * number of bands * bytes per pixel. 
 
 .. note:: If the raster file does not have alpha channel, it will be added during uploading, further expanding the raster size, so for calculating the data size add +1 channel to the equasion.
 
