@@ -288,10 +288,10 @@
 
 * Настройка конфигурации мобильного проекта - тонкие настройки для использования проекта на большом количестве устройств.
 
-.. figure:: _static/ngc_proj_tab_ru_2.png
+.. figure:: _static/ngc_proj_tab_ru_3.png
    :name: ngc_proj_tab_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Внешний вид вкладки «Проект»
 
@@ -321,16 +321,16 @@
 
 Далее необходимо предоставить доступ участникам сбора данных. 
 
-Предварительно список NextGIS ID участников сбора данных должен быть `добавлен в Панели управления <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_.
-
 На вкладке «Участники» отметьте тех участников сбора данных, которые должны участвовать в этом проекте:
 
-.. figure:: _static/ngc_list_collectors_ru.png
+.. figure:: _static/ngc_list_collectors_ru_2.png
    :name: ngc_list_collectors_pic
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Внешний вид вкладки «Участники»
+
+Администратор может редактировать список участников в этой панели или  `в Панели управления <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_.
 
 Нажмите кнопку **Создать**, чтобы сохранить проект.
 
