@@ -13,7 +13,7 @@ To set up data collection:
 
 1. Add users that are going to collect data to the `list of data collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_;
 2. Create `vector layer and data collection form <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_;
-3. Create and configure `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
+3. Create and configure `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#project-wizard>`_.
 
 
 .. _ngw_collector_add_members:
@@ -136,7 +136,136 @@ Before creating a Collector project make sure you've completed the preparation:
 3. You can also create a `basemap <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_, if data collectors need to view a map while working.
 
 
-When all the preliminary steps are completed, go to the resource group where you want to create a project, click **Create resource** and select «Collector project»:
+.. _project_wizard:
+
+Set up Collector project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To create a new data collection project, go to the Main resource group and select **Set up Collector project** in the menu on the right.
+
+.. figure:: _static/select_setup_collector_en.png
+   :name: select_setup_collector_pic
+   :align: center
+   :width: 20cm
+
+   Starting Collector project setup
+
+A wizard page opens, different from the standard resource creating interface. 
+
+.. figure:: _static/collector_pr_create_en.png
+   :name: collector_create_pic
+   :align: center
+   :width: 16cm
+
+   Interface for quick setup
+
+Fill in this form to create a project.
+
+* **Project name** - a resource group is created in your Web GIS. This group contains the Collector project resource as well as a Web Map for data visualisation.
+* **Items**
+
+You can add:
+
+* data collection form,
+* editable vector layer, 
+* display-only layer, 
+* basemap. A default basemap is automatically included in the project, but you can `create another basemap <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_ and add is a separate item.
+
+
+Click "+ Item" to add an item.
+
+* To add an **editable data layer** select the *layer* (If a layer has two or more forms, you can select one or several of them);
+* To add a **display-only layer** select its *style*;
+* To add a **basemap** select the basemap resource. 
+
+You can add multiple items at once, for example, several forms of the same vector layer.
+
+Items selected to be added are marked with a tick. A layer that has a style or form(s) selected is marked with a blue dot. 
+
+Navigate between resource groups and tick the items you want to add. The **Add selected** button displays the total number of selected resources. To clear the selection press the  |button_clear_selection| button next to it.
+
+.. |button_clear_selection| image:: _static/button_clear_selection.png
+   :alt: X
+   :width: 8mm 
+
+.. figure:: _static/project_items_add_en.png
+   :name: project_items_add_pic
+   :align: center
+   :width: 16cm
+
+   Adding several items to a project. Items selected to be added are marked with a tick. A layer that has a style or form(s) selected is marked with a blue dot. 
+
+
+Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
+
+Click on the item to see its attributes.
+
+.. figure:: _static/project_item_set_en.png
+   :name: project_item_set_pic
+   :align: center
+   :width: 20cm
+
+   Item settings
+
+Each item of Collector project has the following settings:
+
+- «Display name» - a layer name which is displayed in the NextGIS Collector mobile app. 
+- «Editable» - allow or deny editing of the layer in the NextGIS Collector mobile app.  
+- «Visible» - controls layer's visibility in the NextGIS Collector mobile app. 
+- «Syncable» - allow or deny synchronization of the layer with your Web GIS.
+- «Zoom level visibility» - defines for which zoom levels the layer is visible. It has two parameters: Min zoom and Max zoom.
+- «Lifetime for tiles (in min)» - time of tiles cashing (for tile layers).
+
+To go back to the list of items, press **Hide details**.
+
+* **Collectors** - select the users that need to enter the data in this project. To give a user access to the project, mark the row with a tick.
+
+.. figure:: _static/pick_collectors_en.png
+   :name: pick_collectors_pic
+   :align: center
+   :width: 20cm
+
+   Selecting collectors for the project
+
+Web GIS administrator can manage the list of available collectors, add or delete them. Keep in mind, that these changes are general Web GIS settings, they are instantly effective, even if you haven't completed the project creation.
+
+Click **Create** to complete the process.
+
+The Collector project resource page opens. It is located inside the resource group with the name you set as the project name.
+
+.. figure:: _static/project_result_en.png
+   :name: project_result_pic
+   :align: center
+   :width: 20cm
+
+   Newly created Collector project
+
+
+By default this project is displayed in the Collector mobile app as "Collector project". To set up a custom display name (it's handy if you have multiple projects going at once), click |button_edit| Update in the right menu and enter a new name (see :numref:`ngc_proj_name_pic`).
+
+.. |button_edit| image:: _static/button_edit.png
+   :alt: pencil
+   :width: 6mm
+
+Click on the group name to navigate to that group, There, you'll find three resource with default names: Collector project, Web Map with the same list of layers as the project, and a standard basemap.
+
+.. figure:: _static/project_group_result_en.png
+   :name: project_group_result_pic
+   :align: center
+   :width: 20cm
+
+   Resource group with Collector project, Basemap and Web Map
+
+If you're an experienced user and with to fine-tune the project as you're creating it, you can use the standard resource creation dialog.
+
+.. _project_manually:
+
+Advanced Collector project creation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+An alternative way to create a Collector project is via the standard resource creation dialog.
+
+Go to the resource group where you want to create a project, click **Create resource** and select «Collector project»:
 
 .. figure:: _static/select_create_collector_project_en.png
    :name: create_collector_project_pic
@@ -155,42 +284,18 @@ Name your project. This name will be displayed in the `NextGIS Collector`_ mobil
    Adding name for Collector project
 
 
-In the "Project" tab select "Starting screen" and fill in "NextGIS Collector user credentials". 
+In the "Project" tab select "Starting screen". The starting screen in the `NextGIS Collector`_ mobile app could be a list of forms or a map. 
 
 
-The starting screen in the `NextGIS Collector`_ mobile app could be a list of forms or a map. 
-
-
-«NextGIS Collector user credentials» - user name and password of a Web GIS user with necessary permissions to access data used in the project. This user is not related to accounts of actual data collectors.
-
-
-.. figure:: _static/ngc_proj_tab_en.png
+.. figure:: _static/ngc_proj_tab_en_2.png
    :name: ngc_proj_tab_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    "Project" tab
 
 On the Items tab you can Add items, Group them, Delete (X symbol on the right) and change the order by dragging items in the list. 
 
-Items that can be added to a Collector project are: editable vector layer, display-only layer, basemap or data collection form.
-
-
-Click "+ Layer" to add an item.
-
-* To add an **editable data layer** select the *layer* (If a layer has two or more forms, you can select one or several of them);
-* To add a **display-only layer** select its *style*;
-* To add a **basemap** select the resource.
-
-You can add multiple items at once.
-
-Items selected to be added are marked with a tick. A layer that has a style or form(s) selected is marked with a blue dot. 
-
-Navigate between resource groups and tick the items you want to add. The **Add selected** button displays the total number of selected resources. To clear the selection press the  |button_clear_selection| button next to it.
-
-.. |button_clear_selection| image:: _static/button_clear_selection.png
-   :alt: X
-   :width: 8mm 
 
 .. figure:: _static/ngc_items_tab_add_en.png
    :name: ngc_items_tab_add_pic
@@ -198,15 +303,6 @@ Navigate between resource groups and tick the items you want to add. The **Add s
    :width: 20cm
 
    Adding several items to a project. Four items selected: a basemap, a layer, a form and a style
-
-To add display-only layer you don't need to open it and select the style.  Press the |button_pick_first| button to the right of the layer name to auto-select the first style.
-
-.. |button_pick_first| image:: _static/button_pick_first.png
-   :alt: editor's choice
-   :width: 8mm
-
-Press **+ Group** to create a group of items. 
-Drag-and-drop to rearrange items within the item tree. To delete an item, press **X** at the end of the row. 
 
 Click on the item to see its attributes.
 
@@ -217,26 +313,16 @@ Click on the item to see its attributes.
 
    "Items" tab
 
-Each item of Collector project has the following attributes:
-
-- «Display name» - a layer name which is displayed in the NextGIS Collector mobile app. 
-- «Editable» - allow or deny editing of the layer in the NextGIS Collector mobile app.  
-- «Visible» - controls layer's visibility in the NextGIS Collector mobile app. 
-- «Syncable» - allow or deny synchronization of the layer with your Web GIS.
-- «Zoom level visibility» - defines for which zoom levels the layer is visible. It has two parameters: Min zoom and Max zoom.
-- «Lifetime for tiles (in min)» - time of tiles cashing (for tile layers).
-
-To go back to the list of items, press **Hide details**.
-
 Then on the "Collectors" tab tick the users participating in the project to give them permissions: 
 
-
-.. figure:: _static/ngc_list_collectors_en.png
+.. figure:: _static/ngc_list_collectors_en_2.png
    :name: ngc_list_collectors_pic
    :align: center
    :width: 16cm
 
    «Collectors» tab
+
+Web GIS administrators can manage the list of available collectors in this section or in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_.
 
 Click **Create**.
 
