@@ -3,10 +3,12 @@
 Add layers
 ===========
 
-Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_ and `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ resources respectively.
+Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_, `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ and `Tileset <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-tile-set>`_ resources.
 
 .. note:: 
 	The size limit for uploaded files depends on the selected plan. For **Premium** - 50 GiB, for **Free** - 5 GiB and **Mini** - 10 GiB. 
+
+If you have an external S3 storage, you can use it to store your rasters by creating a `Raster layer storage <https://docs.nextgis.ru/docs_ngweb/source/layers.html#raster-storage>`_ resource.
 
 See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-raster-requirements>`_ and `vector <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_ layers below.
 
@@ -75,7 +77,7 @@ The upload dialog indicates the maximum file size allowed on your subscription p
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can define how to handle geometry errors when uploading a file, select the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field). `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-.. figure:: _static/ngweb_create_vector_layer_upload_en.png
+.. figure:: _static/ngweb_create_vector_layer_upload_en_2.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 16cm
@@ -245,14 +247,24 @@ The upload dialog indicates the maximum file size allowed on your subscription p
 
 If you plan to use this raster in QGIS directly from your Web GIS, tick the Upload as Cloud Optimized GeoTIFF (COG) checkbox. This will optimize the raster to ensure fast display.
 
-.. figure:: _static/ngweb_admin_layers_create_raster_layer_upload_eng_2.png
+.. figure:: _static/ngweb_raster_layer_upload_en.png
    :name: ngweb_admin_layers_create_raster_layer_upload
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Uploading raster file  
 
-In the "Resource" tab specify the name of the raster layer (see :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
+If you have an external S3 storage for your rasters, select a previously created `Raster layer storage <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-storage>`_:
+
+
+.. figure:: _static/ngweb_raster_select_storage_en.png
+   :name: ngweb_raster_select_storage_pic
+   :align: center
+   :width: 20cm
+
+   Selecting S3 storage for raster layer
+
+In the "Resource" tab you can specify the name of the raster layer.
 It will be displayed in the admin interface. The "Key" field is optional.
 
 .. figure:: _static/ngweb_admin_layers_create_raster_layer_resourse_name_eng_3.png
@@ -334,30 +346,14 @@ The "Key" field is optional. On the appropriate tabs, you can add a resource des
 
 In the "Tileset" tab, you need to upload a tileset in MBTiles format or a zip archive. Tiles must be in PNG or JPEG format and have a size of 256x256 pixels.
 
-.. figure:: _static/Tileset_add_en.png
+.. figure:: _static/create_tileset_upload_en.png
    :name: Tileset_add_en
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Tileset tab
 
-In the "Tile Cache" tab, the user can set the caching settings:
-
-* Enable - enable/disable tile caching;
-* Allow using tiles in non-tile requests - when requesting an image (not a tile), use cached tiles if available;
-* Max zoom level - the threshold value above which the cache is not accessed, the map image is rendered on the fly;
-* TTL, sec (Time to live) - “time to live” or storage of tiles on the server in seconds, after which the image will be re-formed at the next request. If TTL = 0, then the storage time of tiles is not limited;
-
-* Flush - write only - clears the tile cache when saving the style.
-
-.. figure:: _static/Tileset_settings_en.png
-   :name: Tileset_settings_en
-   :align: center
-   :width: 14cm
-
-   Tileset settings
-
-After filling in all the fields, clicking the **Create button** completes the process of creating the resource **Tileset**.
+Click **Create** to complete the process.
 
 See how to add a tileset in our video:
 
@@ -367,7 +363,49 @@ See how to add a tileset in our video:
 
 Watch on `youtube <https://youtu.be/eCeptUacIRM?si=AxMNJO2AtYcJS0EG>`__.
 
+After creating a Tileset you can:
+
+* add it to a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html>`_,
+* add it to an external app using `TMS link <https://docs.nextgis.com/docs_ngweb/source/services.html#ngw-tms-service>`_ from the External access section,
+* publish it as part of a `WMS service <https://docs.nextgis.com/docs_ngweb/source/services.html#wms>`_.
 
 
+.. _raster_storage:
+
+Raster layer storage
+-------------------------
+
+If you want to use an external storage for your raster layers, you can connect it to your Web GIS.
+
+Go to the resource group where you want to create the connection, click **Create resource** and select **Raster layer storage**.
+
+.. figure:: _static/ngweb_create_raster_storage_en.png
+   :name: ngweb_create_raster_storage_pic
+   :align: center
+   :width: 20cm
+
+   Selecting Raster layer storage
+
+Fill in the form with the values of the corresponding variables:
+
+* Type - AWS S3
+* Endpoint
+* Bucket
+* Access key
+* Sercret key
+* Prefix (optional)
+
+.. figure:: _static/ngweb_raster_storage_settings_en.png
+   :name: ngweb_raster_storage_settings_pic
+   :align: center
+   :width: 16cm
+
+   Settings of the raster layer storage
+
+On the "Resource" tab you can enter a custom name for the storage. It will be displayed in the list of resources.
+
+Click **Create** to complete the process.
+
+While creating a raster layer you can choose where to store it: in the Web GIS itself or in the external storage (see :numref:`ngweb_admin_layers_create_raster_layer_upload`).
 
 
