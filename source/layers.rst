@@ -5,7 +5,7 @@ Add layers
 
 .. admonition:: Where to get data?
 
-   `Buy data <https://data.nextgis.com/en/>`_ for any place on Earth on NextGIS Data
+   `Access data <https://data.nextgis.com/en/>`_ for any place on Earth on NextGIS Data
 
 Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_, `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ and `Tileset <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-tile-set>`_ resources.
 
