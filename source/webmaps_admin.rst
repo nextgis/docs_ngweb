@@ -278,6 +278,9 @@
 
    Параметры подложки веб-карты
 
+.. hint:: Не хотите зависеть от доступности внешних сервисов?
+
+   Создавайте свои автономные подложки и управляйте доступом к ним при помощи `NextGIS GeoServices <https://docs.nextgis.ru/docs_geoserv_prem/source/intro.html>`_
 
 
 .. _ngw_map_no_base:
