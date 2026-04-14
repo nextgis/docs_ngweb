@@ -6,6 +6,10 @@
 
 Загрузка растровых и векторных геоданных в :ref:`Веб ГИС <ngcom_description>` происходит путем создания ресурсов `Растровый слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-raster-layer>`_, `Векторный слой <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-create-vector-layer>`_ и `Набор тайлов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-tile-set>`_.
 
+.. hint:: Где взять данные?
+
+   Данные на интересующую вас территорию можно заказать на `NextGIS Data <https://data.nextgis.com/ru/>`_
+
 .. note:: 
 	Ограничение на размер загружаемых файлов зависит от выбранного тарифного плана. Для **Premium** - 50 GiB, для **Free** - 5 GiB, для **Mini** - 10 GiB. 
 
@@ -58,6 +62,10 @@
 
 Создание слоя из файла
 ^^^^^^^^^^^^^^^^^^^^^^
+
+.. hint:: Где взять данные?
+
+   `NextGIS Data <https://data.nextgis.com/ru/>`_
 
 Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
@@ -230,6 +238,9 @@ NextGIS Web может принимать многослойные наборы 
 * :term:`GeoTIFF` или ZIP-архив с таким файлом;
 * геопривязанный JPEG или PNG в виде ZIP-архива, который включает само изображение и файл привязки \*.aux.xml.
 
+.. hint: Где взять данные?
+
+   `Данные рельефа <https://data.nextgis.com/ru/region/custom/dem/>`_, `ландшафты <https://data.nextgis.com/ru/region/custom/landcover/>`_ и `спутниковые снимки <https://data.nextgis.com/ru/region/custom/sat/>`_ на NextGIS Data
 
 .. _ngw_process_create_raster_layer:
 
@@ -339,6 +350,10 @@ NextGIS Web может принимать многослойные наборы 
 
 Набор тайлов
 ------------
+
+.. hint:: Где взять готовые тайлы?
+
+   `NextGIS Data <https://data.nextgis.com/ru/region/custom/tiles/>`_
 
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Набор тайлов**.
 
