@@ -19,6 +19,9 @@ Here are the parameters that can be modified:
 .. note::
     The number of trackers available depends on your `subscription plan <https://nextgis.com/pricing-base/>`_. On Free and Mini you can add 1 tracker, on Premium the default limit is 5 trackers, but it can be extended.
 
+.. seealso::
+   `Tutorial: Track Asset and Team Locations in Real Time <https://docs.nextgis.com/docs_howto/source/tutorial_track.html>`_
+
 .. _ngw_tracking_web_map:
 
 Viewing tracks on a Web Map
