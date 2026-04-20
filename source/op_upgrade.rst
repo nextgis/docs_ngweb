@@ -56,6 +56,11 @@ If you don't have Internet access, contact NextGIS support team to get image arc
    $ cd /srv/ngwdocker
    $ docker compose up -d
 
+Upgrade to 3.2.x from 3.1.x
+-----------------------------------------
+
+No additional steps needed, proceed with the standard steps to update.
+
 Upgrade to 3.1.x from 3.0.x
 -----------------------------------------
 
