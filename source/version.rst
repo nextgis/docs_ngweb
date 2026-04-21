@@ -20,7 +20,7 @@
 
 Регистрируются изменения, связанные как с **атрибутивными**, так и с **пространственными свойствами объектов**.
 
-Версионирование **по умолчанию отключено**. Его можно включить `для отдельного ресурса типа “Векторный слой”  <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, где это требуется или `для всех создаваемых векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_. Модуль NextGIS Connect позволяет также автоматически включать версионирование `для всех загружаемых в QGIS слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#qgis>`_. Накопление изменений активируется с момента включения версионирования, все события, произошедшие со слоем до этого, нигде не регистрируются.
+Версионирование **по умолчанию отключено**. Его можно включить `для отдельного ресурса типа “Векторный слой”  <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, где это требуется или `для всех создаваемых векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_. Модуль NextGIS Connect позволяет также автоматически включать версионирование `для всех загружаемых в QGIS слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#qgis>`_. Накопление изменений активируется с момента включения версионирования, все события, произошедшие со слоем до этого, нигде не регистрируются.
 
 .. important:: При отключении версионирования вся накопленная информация об истории изменений слоя **удаляется**.
 
@@ -31,7 +31,7 @@
 
 На данный момент в графический интерфейс NextGIS Web вынесено:
 
-* Включение и выключение версионирования в `свойствах векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_;
+* Включение и выключение версионирования в `свойствах векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_;
 * Включение версионирование объектов по умолчанию `для всей Веб ГИС <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_;
 * Отображение информации о версионировании на странице ресурса Векторный слой;
 * `Просмотр истории версионируемого слоя <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-view-history>`_;
@@ -170,7 +170,7 @@
 
 После этого для всех новых слоёв, создаваемых через веб-интерфейс или `добавляемых из QGIS при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/ngc_data_transfer.html#vector-data>`_, версионирование будет включено.
 
-Также вы можете включать и выключать версионирование для отдельных слоёв `в настройках слоя <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_.
+Также вы можете включать и выключать версионирование для отдельных слоёв `в настройках слоя <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_.
 
 
 
@@ -206,4 +206,4 @@
 
    Включение версионирования в настройках NextGIS Connect
 
-Уже загруженных в QGIS слоёв это не коснётся, для них версионирование можно включить через `веб-интерфейс <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_.
+Уже загруженных в QGIS слоёв это не коснётся, для них версионирование можно включить через `веб-интерфейс <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_.

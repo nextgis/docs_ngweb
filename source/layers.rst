@@ -106,19 +106,7 @@ NextGIS Web может принимать многослойные наборы 
    Наименование векторного слоя
    
    
-Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя.
-
-На странице "Настройки" можно включить версионирование слоя. Это позволит нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
-
-.. figure:: _static/create_vector_layer_vers_ru.png
-   :name: create_vector_layer_vers_pic
-   :align: center
-   :width: 16cm
-
-   Включение версионирования слоя
-
-В Панели управления вы можете настроить, чтобы версионирование было включено по умолчанию `для всех создаваемых Веб ГИС векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_.
-
+Также можно добавить `Описание и метаданные <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_, описывающие содержимое данного слоя. 
 
 После завершения ввода нужных данных нажмите кнопку **Создать**.
 
@@ -278,6 +266,14 @@ NextGIS Web может принимать многослойные наборы 
 
    Выбор внешнего хранилища растровых слоёв
 
+Если файл растра уже загружен в хранилище, выберите в выпадающем меню **Подключить растр из хранилища**. Затем выберите созданное подключение к хранилищу и введите путь до файла.
+
+.. figure:: _static/ngweb_raster_from_storage_ru.png
+   :name: ngweb_raster_from_storage_pic
+   :align: center
+   :width: 16cm
+
+   Загрузка растра из хранилища
 
 Во вкладке "Ресурс" укажите наименование растрового слоя (см. :numref:`ngweb_admin_layers_create_raster_layer_resourse_name`).
 Оно будет отображаться в административном интерфейсе. 

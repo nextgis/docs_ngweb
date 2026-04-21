@@ -10,7 +10,7 @@
 
 - а также `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_.
 
-Если для слоя `включено версионирование <https://docs.nextgis.ru/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, внесённые изменения записываются в `историю <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
+Если для слоя `включено версионирование <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, внесённые изменения записываются в `историю <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
 
 
 .. _ngw_allow_edit:

@@ -14,7 +14,18 @@
  * `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
  * `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
  * изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
+ * включать и выключать версионирование слоя
 
+Версионирование позволяетт нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
+
+.. figure:: _static/create_vector_layer_vers_ru.png
+   :name: create_vector_layer_vers_pic
+   :align: center
+   :width: 16cm
+
+   Включение версионирования слоя
+
+В Панели управления вы можете настроить, чтобы версионирование было включено по умолчанию `для всех создаваемых Веб ГИС векторных слоёв <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_.
 
 :ref:`Веб ГИС <ngcom_description>` позволяет `редактировать <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ объекты на карте и их атрибуты,  добавлять описания отдельных объектов и `вложения <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attachments>`_ (в том числе фотографии) в Векторных слоях  и `Слоях PostGIS <https://docs.nextgis.ru/docs_ngweb/source/postgis_details.html>`_.  `Включить возможность редактирования <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_ объектов и аннотаций можно в настройках веб-карты. 
 
