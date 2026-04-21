@@ -65,7 +65,7 @@
 
 .. hint:: Где взять данные?
 
-   `NextGIS Data <https://data.nextgis.com/ru/>`_
+   `NextGIS Data <https://data.nextgis.com/ru/?from-docs>`_
 
 Перейдите в группу ресурсов (папку), в которой необходимо создать векторный слой.
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Векторный слой** (см. :numref:`ngweb_admin_layers_create_vector_layer`). 
@@ -228,7 +228,7 @@ NextGIS Web может принимать многослойные наборы 
 
 .. hint: Где взять данные?
 
-   `Данные рельефа <https://data.nextgis.com/ru/region/custom/dem/>`_, `ландшафты <https://data.nextgis.com/ru/region/custom/landcover/>`_ и `спутниковые снимки <https://data.nextgis.com/ru/region/custom/sat/>`_ на NextGIS Data
+   `Данные рельефа <https://data.nextgis.com/ru/region/custom/dem/https://data.nextgis.com/ru/?from-docs>`_, `ландшафты <https://data.nextgis.com/ru/region/custom/landcover/https://data.nextgis.com/ru/?from-docs>`_ и `спутниковые снимки <https://data.nextgis.com/ru/region/custom/sat/https://data.nextgis.com/ru/?from-docs>`_ на NextGIS Data
 
 .. _ngw_process_create_raster_layer:
 
@@ -349,7 +349,7 @@ NextGIS Web может принимать многослойные наборы 
 
 .. hint:: Где взять готовые тайлы?
 
-   `NextGIS Data <https://data.nextgis.com/ru/region/custom/tiles/>`_
+   `NextGIS Data <https://data.nextgis.com/ru/region/custom/tiles/https://data.nextgis.com/ru/?from-docs>`_
 
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Набор тайлов**.
 
