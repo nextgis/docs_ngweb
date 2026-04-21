@@ -26,7 +26,7 @@
 
 * 1 - карта; 
 * 2 - `панели <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_ карты; 
-* 3 - кнопка перехода к `настройкам веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_;
+* 3 - кнопка перехода к `настройкам веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_. Неавторизованные пользователи вместо неё видят кнопку связи с владельцем Веб ГИС;
 * 4 - активная панель `дерево слоёв <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ с кнопками вызова меню; 
 * 5 - выпадающий список `выбора подложек <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
 * 6 и 7 - `инструменты карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_; 
@@ -547,3 +547,28 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
    файле `настроек подложек <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ нужно 
    удалить записи про подложки из сети Интернет.
 
+
+.. _getintouch:
+
+Связь с владельцем Веб ГИС
+--------------------------
+
+Пользователи публично доступных веб-карт могут отправить сообщение владельцу Веб ГИС. 
+
+.. figure:: _static/webmap_getintouch_ru.png
+   :name: webmap_getintouch_pic
+   :width: 20cm
+   :align: center
+
+   Кнопка связи с владельцем Веб ГИС
+
+Нажатие этой кнопки перенаправит вас в личный кабинет (нужно будет авторизоваться по `своему NextGIS ID <https://docs.nextgis.ru/docs_ngcom/source/create.html>`_). После этого откроется форма создания сообщения:
+
+.. figure:: _static/webmap_owner_contact_ru.png
+   :name: webmap_owner_contact_pic
+   :width: 20cm
+   :align: center
+
+   Форма отправки сообщения
+
+Владелец Веб ГИС получит сообщение с указанием адреса электронной почты, на который сможет вам ответить.
