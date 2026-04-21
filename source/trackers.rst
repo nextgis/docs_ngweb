@@ -30,7 +30,12 @@
 Результаты трекинга на Веб карте
 --------------------------------
 
-Данные мониторинга движущихся объектов, собранные при помощи NextGIS Tracker, NextGIS Collector или NextGIS Mobile можно отобразить на любой веб карте в вашей Веб ГИС, если трекер к ней подключен. 
+Данные мониторинга движущихся объектов, собранные при помощи NextGIS Tracker, NextGIS Collector или NextGIS Mobile можно отобразить на любой веб карте в вашей Веб ГИС, если трекер к ней `подключен <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_. 
+
+.. note::
+   Подключить более одного трекера можно на тарифе `Premium <https://nextgis.ru/pricing-base/>`_ или в `NextGIS Web Extended, развёрнутой на своём сервере <https://nextgis.ru/pricing/#ngwextended>`_
+
+   `Перейти на Премиум <https://my.nextgis.com/subscription/update>`_
 
 Чтобы увидеть записанные треки, откройте любую веб-карту или создайте новую. В левой панели отобразится иконка мониторинга движущихся объектов (трекеров) |panel_trackers|.
 
