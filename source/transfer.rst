@@ -10,8 +10,8 @@
 Создание локальной копии данных на компьютере
 -----------------------------------------------
 
-Основной способ сделать это - при помощи модуля NextGIS Connect.
-Создайте соединение с исходной Веб ГИС. Выберите нужные ресурсы или группы ресурсов в панели NextGIS Connect и нажмите **Добавить в QGIS**.
+Основной способ сделать это - при помощи модуля `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/index.html>`_.
+`Создайте соединение <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_ с исходной Веб ГИС. Выберите нужные ресурсы или группы ресурсов в панели NextGIS Connect и нажмите **Добавить в QGIS**.
 
 Если вам важно **перенести данные быстро**, можно выбрать Основную группу ресурсов, добавить её в QGIS, а дальше разбираться со структурой данных.
 
@@ -47,7 +47,7 @@
 Загрузка данных в новую Веб ГИС
 -----------------------------------
 
-В модуле NextGIS Connect создайте новое подключение - к целевой Веб ГИС.
+В модуле NextGIS Connect `создайте новое подключение <https://docs.nextgis.ru/docs_ngconnect/source/ngc_install.html#ng-connect-new-connection>`_ - к целевой Веб ГИС.
 
 Откройте проект QGIS с сохранёнными локально данными.
 
@@ -61,11 +61,11 @@
 
 Какие ресурсы нужно создать вручную:
 
-* Группы трекеров
-* Трекеры
-* Проекты Collector
-* Набор тайлов
-* Набор файлов
+* `Группы трекеров <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_
+* `Трекеры <https://docs.nextgis.ru/docs_ngcom/source/tracking.html#tracking-create>`_
+* `Проекты Collector <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_
+* `Набор тайлов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-tile-set>`_
+* `Набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_
 * Библиотека маркеров SVG - если вы использовали такую библиотеку, рекомендуем встроить значки в стиль слоя или файл проекта, сделать это можно при помощи инструмента Toolbox `Добавление SVG в QGS/QML <https://toolbox.nextgis.com/t/embedsvg>`_
 
 
