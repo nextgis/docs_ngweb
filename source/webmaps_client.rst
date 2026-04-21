@@ -15,7 +15,7 @@
    :width: 8mm
    :alt: карта с лупой
  
-.. figure:: _static/webmap_client_rus_5.png
+.. figure:: _static/webmap_client_rus_6.png
    :name: ngweb_webmap_client
    :align: center
    :width: 20cm
@@ -26,10 +26,11 @@
 
 * 1 - карта; 
 * 2 - `панели <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_ карты; 
-* 3 - активная панель `дерево слоёв <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ с кнопками вызова меню; 
-* 4 - выпадающий список `выбора подложек <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
-* 5 и 6 - `инструменты карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_; 
-* 7 - `строка статуса <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ и копирайт.
+* 3 - кнопка перехода к `настройкам веб-карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_;
+* 4 - активная панель `дерево слоёв <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ с кнопками вызова меню; 
+* 5 - выпадающий список `выбора подложек <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
+* 6 и 7 - `инструменты карты <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_; 
+* 8 - `строка статуса <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ и копирайт.
 
 
 .. _ngw_webmaps_client_scale:
