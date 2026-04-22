@@ -260,13 +260,21 @@ If you plan to use this raster in QGIS directly from your Web GIS, tick the Uplo
 
 If you have an external S3 storage for your rasters, select a previously created `Raster layer storage <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-storage>`_:
 
-
 .. figure:: _static/ngweb_raster_select_storage_en.png
    :name: ngweb_raster_select_storage_pic
    :align: center
    :width: 20cm
 
    Selecting S3 storage for raster layer
+
+You can upload the raster to the storage or select a file that's already stored there.
+
+.. figure:: _static/ngweb_raster_from_storage_en.png
+   :name: ngweb_raster_from_storage_pic
+   :align: center
+   :width: 16cm
+
+   Adding a raster file from storage
 
 In the "Resource" tab you can specify the name of the raster layer.
 It will be displayed in the admin interface. The "Key" field is optional.
