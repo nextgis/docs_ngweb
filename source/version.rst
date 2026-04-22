@@ -18,7 +18,7 @@ It allows NextGIS Web administrator to:
 
 etc. Changes in both **attributes** and **geometry** are logged.
 
-Versioning is **disabled by default**. You can `turn it on <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ for a specific vector layer or `for all subsequently created layers <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_ if needed. Logging activates when the versioning is turned on, the changes made before that are not registered anywhere.
+Versioning is **disabled by default**. You can `turn it on <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_ for a specific vector layer or `for all subsequently created layers <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_ if needed. Logging activates when the versioning is turned on, the changes made before that are not registered anywhere.
 
 .. important:: When the versioning is turned off, all the logged information about the changes in the layer is **deleted**.
 
@@ -29,7 +29,7 @@ Versioning in the NextGIS Web interface
 
 At the moment in the user interface of NextGIS Web you can access the following functions:
 
-* Enable and disable versioning `in the vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_;
+* Enable and disable versioning `in the vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_;
 * Enable `feature versioning by default <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_ for your Web GIS;
 * View versioning status (yes/no) on the Vector layer resource page;
 * `View history of a vector layer <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-view-history>`_;
@@ -167,7 +167,7 @@ On the opened page switch the slider and click **Save**.
 
 For all the layers you subsequently create in the Web GIS via web interface or `add from QGIS with NextGIS Connect <https://docs.nextgis.com/docs_ngconnect/source/ngc_data_transfer.html#vector-data>`_ the versioning is on by default. 
 
-You can also enable and disable versioning for individual layers `in the layer setttings <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_.
+You can also enable and disable versioning for individual layers `in the layer setttings <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_.
 
 
 .. _vers_ngw_api:

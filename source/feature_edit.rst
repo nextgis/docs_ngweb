@@ -10,7 +10,7 @@ You can modify **geometries and attributes** of vector features via Web interfac
 
 - as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
-If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
+If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
 
 
 .. _ngw_allow_edit:

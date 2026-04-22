@@ -330,7 +330,7 @@ You can select which fields of the feature table to display. Press "Open table s
 
    Selecting fields for display
 
-If `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers.html#create-vector-layer-vers-pic>`_ is enabled, at the bottom of the list you'll find an additional unticked field. It is a virtual "Last changed" field. It contains date and time of the most recent edit made to the feature as well as the username.
+If `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_ is enabled, at the bottom of the list you'll find an additional unticked field. It is a virtual "Last changed" field. It contains date and time of the most recent edit made to the feature as well as the username.
 
 The first change logged is the time the versioning is enabled. 
 
