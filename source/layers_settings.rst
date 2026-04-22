@@ -12,7 +12,20 @@ It opens the `Update resource <https://docs.nextgis.com/docs_ngweb/source/edit_r
 
 * `delete or replace all the features <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_;
 *  edit `fields and their aliases <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_;
-* `enable editing <https://docs.nextgis.com/docs_ngweb/source/.feature_edit.html#ngw-allow-edit>`_ for vector features and annotations on the map. 
+* `enable editing <https://docs.nextgis.com/docs_ngweb/source/.feature_edit.html#ngw-allow-edit>`_ for vector features and annotations on the map; 
+* enable and disable feature versioning.
+
+Versioning allows the layer to be edited directly `in QGIS via NextGIS Connect <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_ by multiple users at once.
+
+.. figure:: _static/create_vector_layer_vers_en.png
+   :name: create_vector_layer_vers_pic
+   :align: center
+   :width: 16cm
+
+   Vector layer settings
+
+If you want all vector layers added to your Web GIS not to be versioned by default, it can be set in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_.
+
 
 :ref:`Web GIS <ngcom_description>` interface allows to `edit <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html>`_ geometries on the map and feature attribute values, add description and `attachments <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments>`_ (photos etc) to features of Vector layers and `PostGIS layers <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#postgis>`_.
 
@@ -29,11 +42,6 @@ On this tab you can:
 * |button_plus_layer| Add a new field;
 * Delete a field by pressing the |attr_delete_symbol| symbol at the end of the row;
 * Edit a field. Click on a table row to open the properties of the field. 
-
-
-
-
-
 
 .. figure:: _static/vector_layer_field_list_en.png
    :name: ngweb_admin_layers_attr

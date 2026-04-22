@@ -63,10 +63,17 @@ If input data layer contains fields named id (ID) or geom (GEOM), they will be r
 
 .. _ngw_process_create_vector_layer:
 
-Creation process
-^^^^^^^^^^^^^^^^
+Create layer from file
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. hint::
+
+   **Don't have the data?**
+
+   `Access geodata <https://data.nextgis.com/en/>`_ for any place on Earth on NextGIS Data 
+
 Navigate to the resource group (folder) in which to create a vector layer.
-Press **Create resource** button and select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer`).
+Click **Create resource** button and select **Vector layer** (see :numref:`ngweb_admin_layers_create_vector_layer`).
 
 .. figure:: _static/ngweb_create_vector_layer_en.png
    :name: ngweb_admin_layers_create_vector_layer
@@ -100,16 +107,6 @@ It will be displayed in the admin interface. The "Key" field is optional.
    Vector layer name
 
 
-On the "Settings" tab you can enable feature versioning. It allows the layer to be edited directly `in QGIS via NextGIS Connect <https://docs.nextgis.com/docs_ngcom/source/ngqgis_connect.html#ngcom-ngqgis-connect-data-edit>`_ by multiple users at once.
-
-.. figure:: _static/create_vector_layer_vers_en.png
-   :name: create_vector_layer_vers_pic
-   :align: center
-   :width: 16cm
-
-   Vector layer settings
-
-If you want all vector layers added to your Web GIS to be versioned by default, it can be set in the `Control panel <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_.
 
 Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
