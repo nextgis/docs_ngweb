@@ -140,7 +140,9 @@ You can also create more complicated filters. Click on the funnel icon |button_f
 
 For example, there are several roads named "Adams Street" in the Boston area, and we need to filter out the bigger ones (OSM tag "highway=tertiary") and only inspect the smaller ones. Add two conditions: 1) NAME is Equal to "Adams Street"; 2) HIGHWAY is Not Equal to "tertiary". Select "ALL" in the top left corner, that means that both conditions should be satisfied.
 
-.. figure:: _static/feature_rule_filter_en.png
+You can select a value from the dropdown list or start typing to find the one you need.
+
+.. figure:: _static/feature_rule_filter_en_2.png
    :name: feature_rule_filter_pic
    :align: center
    :width: 16cm
