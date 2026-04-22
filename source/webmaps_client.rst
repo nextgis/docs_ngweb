@@ -13,7 +13,7 @@ To view the Web Map press |button_open_web_map| next to its name in the resource
    :width: 8mm
    :alt: magnifying glass on map
  
-.. figure:: _static/webmap_client_eng_3.png
+.. figure:: _static/webmap_client_eng_4.png
    :name: webmap_client
    :align: center
    :width: 19cm
@@ -24,10 +24,11 @@ Numbers indicate:
 
 * 1 – map;
 * 2 – map `panels <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-panels>`_;
-* 3 - `layer tree <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
-* 4 – `dropdown list of basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
-* 5 and 6 - `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
-*  7 - `status bar <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
+* 3 - open `Web Map settings <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#web-map-layers>`_;
+* 4 - `layer tree <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
+* 5 – `dropdown list of basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
+* 6 and 7 - `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
+*  8 - `status bar <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
 
 
 .. _ngw_webmaps_client_scale:
@@ -429,6 +430,10 @@ If there are multiple features (for example a point and a line going through it)
 
 To clear selection, click on |button_maptool_clear| in the bottom left corner. When no feature is selected, this button looks like this: |panel_ident_small|.
 
+.. |button_maptool_clear| image:: _static/button_maptool_clear.png
+   :width: 6mm
+   :alt: X
+
 To configure how far from the clicks the features can be to be identified and what parameters are displayed in the panel go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
 
 You can turn off identification for a particular layer in the layer menu. Also, you can disable identification for individual layers and modify their order in the `Web Map settings <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-layers>`_.
@@ -505,16 +510,42 @@ When the feature table is opened on the Web Map, you can filter features by area
 Basemap
 ----------
 
-To change a basemap use the dropdown list (see :numref:`webmap_client`). By default there are the following basemaps:
+To change a basemap use the dropdown list (see :numref:`webmap_client`). By default you can select:
 
-* None
 * OpenStreetMap
+* None - disable the basemap so that a white background is shown instead.
 
-Basemap is a map image that is shared by thrid-party services in the Internet. Users can not influence their content. 
-You can disable the basemap so that a white background is shown instead. If the Internet access is expected to be poor or if the Web GIS is deployed in local network without access to the Internet, it is possible to work without a basemap adding base data as WebGIS layers.
+You can add other basemaps, see the instructions in `Adding resources <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#creating-basemap>`_.
 
-You can add other basemaps, see the instructions in `Adding resources <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-basemap>`_.
+Usually a basemap is shared by thrid-party services in the Internet. Users can not influence their content. 
 
-.. note:: 
-   If the Web Map is supposed to work without Internet access, edit the file with `basemap settings <https://github.com/nextgis/nextgisweb/blob/3/nextgisweb/webmap/basemaps.json>`_ and delete records about Google basemaps.
+If the Internet access is expected to be poor or if the Web GIS is deployed in local network without access to the Internet, you can add base data as Web GIS layers (for example, a `Tileset <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-tile-set>`_) or deploy `NextGIS GeoServices <https://docs.nextgis.com/docs_geoserv_prem/source/intro.html>`_ to host your own basemaps.
 
+
+
+
+
+.. _getintouch:
+
+Contact Web GIS owner
+--------------------------
+
+User viewing a publicly available Web Map can send a message to the Web Map administrator. 
+
+.. figure:: _static/webmap_getintouch_en.png
+   :name: webmap_getintouch_pic
+   :width: 20cm
+   :align: center
+
+   Get in touch with Web GIS owner
+
+Clicking this icon redirects to the account page (you have to log in with your `NextGIS ID <https://docs.nextgis.com/docs_ngcom/source/create.html>`_). Fill the message form:
+
+.. figure:: _static/webmap_owner_contact_en.png
+   :name: webmap_owner_contact_pic
+   :width: 20cm
+   :align: center
+
+   Message form
+
+The Web GIS administrator will receive your message and email address so that they can reply by email.
