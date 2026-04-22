@@ -6,9 +6,6 @@
 Collector projects
 ======================================
 
-.. note::
-    You can use described functionality in Web GIS created in nextgis.com_ service on `Premium plan <https://nextgis.com/pricing-base/>`_
-
 To set up data collection:
 
 1. Add users that are going to collect data to the `list of data collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_;
