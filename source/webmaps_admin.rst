@@ -527,6 +527,25 @@ A Web Map URL displayed in the viewer may be shared with other users because it 
 .. warning::  
    After a map is deleted, its URL will no longer be available.
 
+.. _ngw_webmap_update:
+
+Open Web Map settings
+--------------------------------------
+
+Click on "Update resource" on the resource page, in the resource list or in the Web Map viewer.
+
+.. figure:: _static/webmap_open_settings_en.png
+   :name: webmap_open_settings_pic
+   :align: center
+   :width: 20cm
+
+   Opening Web Map settings from the map itself
+
+If you open the settings from the map viewer, a new tab is opened.
+
+To view the changes in the layers without refreshing the whole page, select "Reset layers" in the Layers panel menu. Layers are updated to the newly saved settings without losing the current extend of the map.
+
+Web Map settings are available for the user who have `modify permission <https://docs.nextgis.com/docs_ngcom/source/permissions.html#>`_ for the corresponding resource.
 
 
 .. _ngw_webmap_optimize:
