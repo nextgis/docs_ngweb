@@ -21,9 +21,6 @@ Custom Spacial Reference Systems
 ----------------------------------
 
 .. note::
-    Custom SRS functionality is available on `Premium <https://nextgis.com/pricing-base/>`_ and while using the product `On-premise <https://nextgis.com/pricing/>`_.
-
-.. note::
     Only users with administrative permissions can add and modify SRS.
     
 If needed, you can import additional SRS from the catalog or create your own.
