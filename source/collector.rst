@@ -62,60 +62,6 @@ However you can control the access of different users to each individual project
 
 Now you can created the neccessary resources for data collection.
 
-.. _collector_create_form:
-
-Form for data collection
-------------------------
-
-Data collected by field workers is stored in a vector layer.
-
-Create `an empty vector layer with fitting geometry <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ or `upload a vector file <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_.
-
-For a vector layer you can create a data collection form as a child resource. It provides a user-freindly interface viewed in the Collector app.
-
-Open the resource page of the layer, click **Create resource** and select "Form".
-
-.. figure:: _static/ngweb_create_form_en.png
-   :name: ngweb_create_form_pic
-   :align: center
-   :width: 20cm
-
-   Selecting "Form" resource type
-
-In the opened window on the Form tab you have two options:
-
-* build a form;  
-* upload a NGFP file.
-
-To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
-
-.. figure:: _static/form_build_en.png
-   :name: form_build_pic
-   :align: center
-   :width: 20cm
-
-   Building a form online. Properties of the "Text box" element are displayed
-
-If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
-
-If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
-
-You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
-
-Click **Create** to finish the process. Next you need to create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
-
-Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
-
-.. figure:: _static/form_upload_en_2.png
-   :name: form_upload_pic
-   :align: center
-   :width: 20cm
-
-   Uploading form file
-
-You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
-
-After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
 
 
 
@@ -133,7 +79,6 @@ Before creating a Collector project make sure you've completed the preparation:
 
 1. Added users who are going to gather data to the `List of collectors in the Control panel <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-add-members>`_;
 2. `Created <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_ or `uploaded <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_ vector layers and (optionally) added `forms <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_ for them.
-3. You can also create a `basemap <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_, if data collectors need to view a map while working.
 
 
 .. _project_wizard:
@@ -256,6 +201,9 @@ Click on the group name to navigate to that group, There, you'll find three reso
 
    Resource group with Collector project, Basemap and Web Map
 
+For editable layers without forms added to the project forms are created. You can edit them by clicking "Edit".
+
+
 If you're an experienced user and with to fine-tune the project as you're creating it, you can use the standard resource creation dialog.
 
 .. _project_manually:
@@ -329,5 +277,63 @@ Click **Create**.
 As a result a Collector project (data collection project) will be created.
 
 You can have unlimited number of projects in your Web GIS. In each of them you can restrain or allow access for a particular set of users from the data collection participants list.
+
+.. _collector_create_form:
+
+Form for data collection
+------------------------
+
+Data collected by field workers is stored in a vector layer. For a vector layer you can create a data collection form as a child resource. It provides a user-freindly interface viewed in the Collector app. Forms are automatically created to editable vector layers added to a Collector project.
+
+To create a new form:
+
+* `upload a vector file <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-process-create-vector-layer>`_
+* or create `an empty vector layer with fitting geometry <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-create-empty-vector-layer>`_.
+
+
+Open the resource page of the layer, click **Create resource** and select "Form".
+
+.. figure:: _static/ngweb_create_form_en.png
+   :name: ngweb_create_form_pic
+   :align: center
+   :width: 20cm
+
+   Selecting "Form" resource type
+
+In the opened window on the Form tab you have two options:
+
+* build a form;  
+* upload a NGFP file.
+
+To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
+
+.. figure:: _static/form_build_en.png
+   :name: form_build_pic
+   :align: center
+   :width: 20cm
+
+   Building a form online. Properties of the "Text box" element are displayed
+
+If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
+
+If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
+
+You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
+
+Click **Create** to finish the process. Next you need to create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
+
+Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
+
+.. figure:: _static/form_upload_en_2.png
+   :name: form_upload_pic
+   :align: center
+   :width: 20cm
+
+   Uploading form file
+
+You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
+
+After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+
 
 .. seealso:: Seems confusing? Check out our tutorial `Collect Spatial Data in the Field <https://docs.nextgis.com/docs_howto/source/tutorial_collect.html>`_ that guides you through the whole process step-by-step.
