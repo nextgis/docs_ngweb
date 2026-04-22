@@ -138,7 +138,7 @@ In the top right corner you'll find the search bar. Enter any text in it. The ta
 
 You can also create more complicated filters. Click on the funnel icon |button_filter| next to the search bar and add filter conditions. You can use logical operators AND (select "ALL") and OR (select "ANY"). 
 
-For example, there are several roads named "Adams Street" in the Boston area, and we need to filter out the bigger ones (OSM tag "highway=tertiary" and "highway=tertiary_link") and only inspect the smaller ones. Add two conditions: 1) NAME is Equal to "Adams Street"; 2) HIGHWAY is Not In The List "tertiary", "tertiary_link". Select "ALL" in the top left corner, that means that both conditions should be satisfied.
+For example, there are several roads named "Adams Street" in the Boston area, and we need to filter out the bigger ones (OSM tag "highway=tertiary" and "highway=tertiary_link") and only inspect the smaller ones. Add two conditions: 1) NAME is Equal to "Adams Street"; 2) HIGHWAY is Not In List "tertiary", "tertiary_link". Select "ALL" in the top left corner, that means that both conditions should be satisfied.
 
 You can select a value from the dropdown list or start typing to find the one you need.
 
