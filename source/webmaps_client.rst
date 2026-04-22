@@ -2,7 +2,7 @@
 
 .. _ngw_webmaps_client:
 
-A viewer for Web Maps
+Web Map viewer
 =============================
 
 A special web application for viewing Web Maps is included in NextGIS Web (see :numref:`webmap_client`).
