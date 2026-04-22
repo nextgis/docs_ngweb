@@ -203,15 +203,15 @@ Switch to the "WMS layer" tab set up the following parameters:
 * WMS connection that was created earlier.
 * MIME-type from the dropdown list.
 * Select the required layers from the list by clicking the underlined names. You can select several layers.
-* Remote SRS - if the server supports serveral SRS, you can pick one from a dropdown list. SRS absent from your Web GIS are displayed in grey. `How to add SRS to Web GIS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#custom-spacial-reference-systems>`_. You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response.
+* Remote SRS - if the server supports serveral SRS, you can pick one from a dropdown list. SRS absent from your Web GIS are displayed in grey. Click **Add to Web GIS** to add the SRS and use it. `More on additional SRS <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html#custom-spacial-reference-systems>`_. You can check if this coordinate system is available for a particular layer by making a ``GetCapabilites`` request to a server and examining the response.
 * Vendor parameters - optional
 
-.. figure:: _static/create_wms_layer_parameters_en_2.png
+.. figure:: _static/create_wms_layer_parameters_en_3.png
    :name: ngweb_admin_layers_create_wms_layer_parameters
    :align: center
    :width: 16cm
 
-   WMS layer parameters tab
+   WMS layer parameters tab. You can add the missing SRS
 
 .. figure:: _static/create_wms_layer_select_res_en.png
    :name: create_wms_layer_select resource
