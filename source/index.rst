@@ -65,6 +65,7 @@ NextGIS Web
 * `Управление пользователями <https://docs.nextgis.ru/docs_ngweb/source/users.html>`_
 * `Система прав <https://docs.nextgis.ru/docs_ngweb/source/permissions.html>`_
 * `Системы координат <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html>`_
+* `Главная страница <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-homepage>`_
 * `Cross-origin resource sharing (CORS) <https://docs.nextgis.ru/docs_ngweb/source/cors.html>`_
 * `Информация о системе <https://docs.nextgis.ru/docs_ngweb/source/infowebgis.html>`_
 * `Метрики и аналитика <https://docs.nextgis.ru/docs_ngweb/source/analytics.html>`_
