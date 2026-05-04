@@ -1,7 +1,9 @@
 Gallery
 ========
 
-Gallery is a special type of resource that allows to create an overview or a navigation page for the resources of your Web GIS and external links. You can `use the gallery as the main page of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#ngw-homepage>`_ instead of the standard resource list.
+You can `use a gallery as the main page of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#ngw-homepage>`_ instead of the standard resource list.
+
+Gallery is a special type of resource that allows to create an overview or a navigation page for the resources of your Web GIS and external links. You can have multiple galleries in your Web GIS.
 
 .. figure:: _static/ngw_gallery_en.png
    :name: ngw_gallery_pic
