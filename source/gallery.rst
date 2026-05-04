@@ -171,3 +171,6 @@ You can also add description and metadata on the corresponding tabs. Gallery des
 Click **Create** to finish the process. After the gallery is successfully created you are redirected to its resource page. Click |button_open_gallery| **Open** to view the gallery.
 
 You can select a gallery as the `homepage of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#ngw-homepage>`_.
+
+.. |button_open_gallery| image:: _static/button_open_gallery.png
+   :width: 6mm
