@@ -98,6 +98,26 @@ After the QML file is uploaded click **Create**. After the style is created, its
     
 You can `replace <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom-edit>`_ the QML file of a style.
 
+.. _ngw_qgis_style_copy:
+
+Copy style from existing resource
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can use a style that is added to another layer in your Web GIS. Select **Copy from resource** from the dropdown menu.
+
+Click on the "Source" field and select the style you want to copy.
+
+.. figure:: _static/style_from_resource_en.png
+   :name: style_from_resource_ru
+   :align: center
+   :width: 16cm
+
+   Creating style by replicating an existing style resource
+
+Click **Create** to finish.
+
+A new style is created, identical to the source style.
+
 .. _ngw_qgis_style_svg:
 
 SVG markers
