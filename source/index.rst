@@ -59,6 +59,7 @@ NextGIS Web
 * `Manage users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_
 * `Permissions <https://docs.nextgis.com/docs_ngweb/source/permissions.html>`_
 * `Spacial reference systems <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_
+* `Homepage <https://docs.nextgis.com/docs_ngweb/source/look.html#ngw-homepage>`_
 * `Cross-origin resource sharing (CORS) <https://docs.nextgis.com/docs_ngweb/source/cors.html>`_
 * `System information <https://docs.nextgis.com/docs_ngweb/source/infowebgis.html>`_
 * `Metrics and analytics <https://docs.nextgis.com/docs_ngweb/source/analytics.html>`_
