@@ -43,7 +43,7 @@ On this page you can check the current subscription plan of the Web GIS owner an
 
 Below that is a list of platform features and limits available on the `current subscription plan <https://nextgis.com/pricing-base/>`_.
 
-* Number of maps and layers that can be created on the current plan (for Premium there's no limit);
+* Number of layers that can be created on the current plan (15 on Free, you can increase this number by `switching to Premium <https://my.nextgis.com/subscription/>`_ );
 * Storage limit	- used and overall available storage in GiB;
 * User limit	- number of users added to the Web GIS and max number available (the limit `can be increased <https://nextgis.com/pricing-base/#users>`_);
 * Use on other websites (CORS)	- yes/no;

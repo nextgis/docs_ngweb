@@ -9,8 +9,7 @@ Add layers
 
 Raster and vector geodata are uploaded to :ref:`Web GIS <ngcom_description>` by creating `Raster layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-layer>`_, `Vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#vector-layer-from-file>`_ and `Tileset <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-tile-set>`_ resources.
 
-.. note:: 
-	The size limit for uploaded files depends on the selected plan. For **Premium** - 50 GiB, for **Free** - 5 GiB and **Mini** - 10 GiB. 
+The size limit for uploaded files depends on the `selected plan <https://nextgis.com/pricing-base/>`_. For **Premium** - 50 GiB, for **Free** - 5 GiB and **Mini** - 10 GiB. On Free you can create up to 15 layers, if you need more, you can `upgrade to Premium <https://my.nextgis.com/subscription/>`_ in your NextGIS ID account or `deploy NextGIS Web on-premise <https://nextgis.com/pricing/>`_.
 
 If you have an external S3 storage, you can use it to store your rasters by creating a `Raster layer storage <https://docs.nextgis.ru/docs_ngweb/source/layers.html#raster-storage>`_ resource.
 
