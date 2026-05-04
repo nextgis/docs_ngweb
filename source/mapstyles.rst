@@ -15,7 +15,7 @@
 * `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_;
 * `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе;
 * `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_;
-* создав копию уже существующего ресурса стиля.
+* `создав копию уже существующего ресурса стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_.
 
 Для растрового слоя можно создать стиль:
 
@@ -163,6 +163,27 @@
    Созданный ресурс QGIS стиля
     
 Загруженный файл QML стиля можно :ref:`заменить <ngw_qgis_style_custom_edit>`.
+
+.. _ngw_qgis_style_copy:
+
+Копирование стиля из другого слоя
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Вы можете использовать стиль, уже созданный в Веб ГИС для другого слоя. Для этого выберите в выпадающем меню **Скопировать из ресурса**.
+
+Нажмите на поле "Источник" и выберите нужный ресурс стиля.
+
+.. figure:: _static/style_from_resource_ru.png
+   :name: style_from_resource_ru
+   :align: center
+   :width: 16cm
+
+   Создание стиля путём копирования существующего
+
+Нажмите **Создать**.
+
+Будет создан стиль, полностью повторяющий выбранный. 
+
 
 .. _ngw_qgis_style_svg:
 
