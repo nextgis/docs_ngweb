@@ -12,6 +12,19 @@
 
    Галерея
 
+Посмотрите, как это работает, в нашем видео:
+
+.. raw:: html
+
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/c9768eb6e37f7f76c10806b5ee74e482/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+
+Посмотреть видео на `rutube <https://rutube.ru/video/c9768eb6e37f7f76c10806b5ee74e482/>`_.
+
+.. _create:
+
+Как создать галерею
+--------------------
+
 Перейдите в группу ресурсов (папку), в которой хотите создать галерею.
 Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Галерея**. 
 
