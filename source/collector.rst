@@ -317,7 +317,12 @@ If your layer already has attributes, you can select the corresponding field for
 
 You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
 
-Click **Create** to finish the process. Next you need to create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_.
+Click **Create** to finish the process. 
+
+Next you can:
+
+* create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_;
+* or `add the layer to NextGIS Mobile <https://docs.nextgis.com/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, the form will be available for editing data in the app.
 
 Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
 
