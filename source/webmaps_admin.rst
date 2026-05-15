@@ -291,13 +291,7 @@
 По умолчанию веб-карта создаётся с подложкой OpenStreetMap. Если нужно получить карту без подложки, 
 создайте новую подложку, добавьте её к веб-карте и отключите флажок "По умолчанию".
 
-Посмотрите, как это работает, в нашем видео:
 
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://rutube.ru/play/embed/57ace793b43f9c145be6924b98f174c2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-Смотреть на `youtube <https://youtu.be/yFYByTiybMU>`__, `rutube <https://rutube.ru/video/57ace793b43f9c145be6924b98f174c2/>`__.
 
 .. _ngw_layer_as_basemap:
 
