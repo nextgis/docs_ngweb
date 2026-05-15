@@ -532,7 +532,11 @@ A Web Map URL displayed in the viewer may be shared with other users because it 
 Open Web Map settings
 --------------------------------------
 
-Click on "Update resource" on the resource page, in the resource list or in the Web Map viewer.
+Click on |button_edit| "Update resource" on the resource page, in the resource list or in the Web Map viewer.
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+
 
 .. figure:: _static/webmap_open_settings_en.png
    :name: webmap_open_settings_pic
@@ -541,7 +545,12 @@ Click on "Update resource" on the resource page, in the resource list or in the 
 
    Opening Web Map settings from the map itself
 
-If you open the settings from the map viewer, a new tab is opened.
+If you open the settings from the map viewer, they are displayed in a pop-up window.
+
+.. figure:: _static/webmap_settings_on_map_en.png
+   :name: webmap_settings_on_map_en
+   :align: center
+   :width: 20cm
 
 To view the changes in the layers without refreshing the whole page, select "Reset layers" in the Layers panel menu. Layers are updated to the newly saved settings without losing the current extend of the map.
 
