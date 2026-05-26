@@ -118,6 +118,7 @@ NextGIS Web
    ngw_srs
    collector
    data_collection_on_premise
+   form_elements
    trackers
    cadaster
    cors
