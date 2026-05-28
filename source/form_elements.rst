@@ -9,8 +9,8 @@
 
 .. todo:: Наведите курсор на элемент чтобы увидеть его описание во всплывающем сообщении.
 
-.. todo:: _static/fb_form_elements_ru.png
-   :name: fb_form_elements_pic
+.. todo:: _static/form_form_elements_ru.png
+   :name: form_form_elements_pic
    :align: center
    :width: 20cm
 
@@ -60,8 +60,8 @@
 
 Добавляет пустое пространство для создания отступов между элементами формы.
 
-.. todo:: _static/fb_with_voids_ru.png
-   :name: fb_with_voids_pic
+.. todo:: _static/form_with_voids_ru.png
+   :name: form_with_voids_pic
    :align: center
    :width: 7cm
 
@@ -82,14 +82,14 @@
 
 С помощью этой панели можно **переключаться между вкладками** внутри комплекта, а также вызвать диалог настроек вкладок.
 
-.. todo:: _static/fb_folders_current_ru.png
+.. todo:: _static/form_folders_current_ru.png
    :name: folder_current_pic
    :align: center
    :width: 20cm
 
    Поле переключения между вкладками. Текущая вкладка 1 подчеркнута голубым в форме
 
-.. todo:: _static/fb_folders_properties_ru.png
+.. todo:: _static/form_folders_properties_ru.png
    :name: folder_properties_pic
    :align: center
    :width: 20cm
@@ -109,8 +109,8 @@
 
 Чтобы добавить элемент во вкладку, перетащите его. Элемент добавится в ту вкладку, которая в настоящий момент активна (выделена синим). Следите затем, чтобы новый элемент был размещен внутри элемента блока вкладок. Границы элемента показаны красным пунктиром, если нажать на блок вкладок.
 
-.. todo:: _static/fb_folders_insideout_ru.png
-   :name: fb_folders_insideout_pic
+.. todo:: _static/form_folders_insideout_ru.png
+   :name: folders_insideout_pic
    :align: center
    :width: 10cm
 
@@ -118,8 +118,8 @@
 
 В одной форме может быть несколько блоков вкладок, а также элементы, расположенные вне вкладок.
 
-.. todo:: _static/fb_folders_example_ru.png
-   :name: fb_folders_example_pic
+.. todo:: _static/form_folders_example_ru.png
+   :name: folders_example_pic
    :align: center
    :width: 10cm
 
@@ -129,8 +129,8 @@
 
 При удалении блока вкладок будут удалены также все элементы, находящиеся внутри каждой из вкладок. Чтобы избежать случайного удаления, программа запросит подтверждение.
 
-.. todo:: _static/fb_folders_del_confirm_ru.png
-   :name: fb_folders_del_confirm_pic
+.. todo:: _static/form_folders_del_confirm_ru.png
+   :name: folders_del_confirm_pic
    :align: center
    :width: 10cm
    :alt: Диалог подтверждения удаления блока вкладок
@@ -157,8 +157,8 @@
 
 .. todo:: **Только цифры**. Через этот элемент можно будет вводить только числа.
 
-.. todo:: _static/fb_text_ru.png
-   :name: fb_text_pic
+.. todo:: _static/form_text_ru.png
+   :name: form_text_pic
    :align: center
    :width: 20cm
 
@@ -178,8 +178,8 @@
 * **Исходное значение** - если поставить галочку в этом свойстве, то по умолчанию она будет стоять в форме.
 * **Запоминать значение** - если активировать, подставляет предыдущее введённое значение при создании нового объекта.
 
-.. todo:: _static/fb_checkbox_ru.png
-   :name: fb_checkbox_pic
+.. todo:: _static/form_checkbox_ru.png
+   :name: form_checkbox_pic
    :align: center
    :width: 20cm
 
@@ -202,8 +202,8 @@
 
 
 
-.. todo:: _static/fb_datetime_ru.png
-   :name: fb_datetime_pic
+.. figure:: _static/form_datetime_ru.png
+   :name: form_datetime_pic
    :align: center
    :width: 20cm
 
@@ -224,6 +224,12 @@
 * **Поле широты** - в какое поле слоя будет сохраняться широта.
 * **Скрыть** - элемент не будет показан в форме, но координаты будут всё равно сохраняться.
 
+.. figure:: _static/form_coordinates_ru.png
+   :name: form_coordinates_pic
+   :align: center
+   :width: 20cm
+
+   Поля, в которые сохраняются координаты
 
 .. _distance:
 
@@ -249,8 +255,8 @@
 * **Количество измерений** - сколько значений сборщик данных должен внести, для того чтобы посчиталось среднее значение.
 
 
-.. todo:: _static/fb_average_ru.png
-   :name: fb_average_pic
+.. todo:: _static/form_average_ru.png
+   :name: form_average_pic
    :align: center
    :width: 20cm
 
@@ -267,6 +273,13 @@
 
 * **Макс. число фото** - максимальное число фотографий, которое можно добавить к объекту. Диапазон от 1 до 20.
 * **Комментарий** - комментарий под фотографиями.
+
+.. figure:: _static/form_photo_ru.png
+   :name: form_photo_pic
+   :align: center
+   :width: 20cm
+
+   Свойства элемента "Фото"
 
 .. _sytem:
 
@@ -296,10 +309,15 @@
 * **Свои значения** - сборщик данных может добавлять свои значения в список.
 * **Опции** - список возможных значений, нажмите **Редактировать**, чтобы ввести нужные значения.
 
+.. figure:: _static/form_combobox_ru.png
+   :name: form_combobox_pic
+   :align: center
+   :width: 20cm
 
+   Свойства элемента "Выпадающий список"
 
-.. todo:: _static/fb_edit_combobox_ru.png
-   :name: fb_edit_combobox_pic
+.. todo:: _static/form_edit_combobox_ru.png
+   :name: form_edit_combobox_pic
    :align: center
    :width: 20cm
 
@@ -333,10 +351,17 @@
 * **Вторая надпись** - текст над правой частью списка.
 * **Опции** - список возможных значений, нажмите **Редактировать**, чтобы ввести нужные значения.
 
-.. todo:: _static/fb_edit_split_cb_ru.png
-   :name: fb_edit_split_cb_pic
+.. figure:: _static/form_split_combobox_ru.png
+   :name: form_split_combobox_pic
    :align: center
    :width: 20cm
+
+   Свойства элемента "Сдвоенный список"
+
+.. figure:: _static/form_edit_split_cb_ru.png
+   :name: form_edit_split_cb_pic
+   :align: center
+   :width: 14cm
 
    Редактирование значений сдвоенного списка
 
@@ -366,15 +391,21 @@
 * **Запоминать значение** - если активировать, подставляет предыдущее введённое значение при создании нового объекта.
 * **Опции** - список возможных значений, нажмите **Редактировать**, чтобы ввести нужные значения.
 
-.. todo:: _static/fb_radio_edit_ru.png
-   :name: fb_radio_edit_pic
+.. figure:: _static/form_radio_ru.png
+   :name: form_radio_pic
    :align: center
    :width: 20cm
 
-   Редактирование радиогруппы
-
+   Свойства элемента "Радиогруппа"
 
 Опции вводятся в виде таблицы.
+
+.. figure:: _static/form_radio_edit_ru.png
+   :name: form_radio_edit_pic
+   :align: center
+   :width: 12cm
+
+   Редактирование радиогруппы
 
 Чтобы **добавить** новое значение, впишите в серую строку значение, которое будет записываться в слой, и значение, отображаемое в интерфейсе (они могут быть одинаковыми).
 
@@ -385,10 +416,6 @@
 * Назначить исходным значением;
 * Клонировать (создать ещё одну строку с таким же содержанием, удобно, если нужно поменять только часть значения);
 * Удалить.
-
-
-
-
 
 
 
@@ -411,16 +438,22 @@
 * **Запоминать значение** - если активировать, подставляет предыдущее введённое значение при создании нового объекта.
 * **Опции** - список возможных значений, нажмите **Редактировать**, чтобы ввести нужные значения.
 
-
-.. todo:: _static/fb_edit_dependent_cb_ru.png
-   :name: fb_edit_dependent_cb_pic
+.. figure:: _static/form_dependent_combobox_ru.png
+   :name: form_dependent_combobox_pic
    :align: center
    :width: 20cm
 
-   Редактирование зависимого списка
+   Свойства элемента "Зависимые списки"
 
 
 Опции вводятся в виде таблицы.
+
+.. figure:: _static/form_edit_dependent_cb_ru.png
+   :name: form_edit_dependent_cb_pic
+   :align: center
+   :width: 12cm
+
+   Редактирование зависимого списка
 
 Чтобы **добавить** новое значение, впишите в серую строку значение, которое будет записываться в слой, и значение, отображаемое в интерфейсе (они могут быть одинаковыми).
 
