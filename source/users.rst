@@ -163,3 +163,38 @@
 
 .. important::
    Если вы забыли пароль от NextGIS ID, воспользуйтесь `этой инструкцией <https://docs.nextgis.ru/docs_ngcom/source/faq_webgis.html#nextgis-id>`_.
+
+Как привязать NextGIS ID к существующему пользователю Веб ГИС
+-------------------------------------------------------------
+
+Если у вас был создан внутри Веб ГИС локальный аккаунт (имя пользователя + пароль, например ivanov, 12345ivanov), то чтобы привязать его к своему NextGIS нужно сделать следующее:
+
+1. `Зарегистрироваться на платформе NextGIS <https://docs.nextgis.ru/docs_ngcom/source/create.html>`_ и создать NextGIS ID.
+2. Сообщить администратору Веб ГИС имя пользователя, заданное `в профиле в личном кабинете <https://docs.nextgis.ru/docs_ngcom/source/create.html#ngcom-ngid-profile>`_. Администратор добавит вас `в команду <https://docs.nextgis.ru/docs_ngcom/source/teams.html#ngcom-team-management>`_. Зайдите в личный кабинет, авторизуйтесь и проверьте, что нужная Веб ГИС появилась `на странице команд, в которых вы участвуете <https://my.nextgis.com/teammanage/member>`_
+3. Перейдите в Веб ГИС, авторизуйтесь через свой старый аккаунт (в нашем примере это пользователь ivanov).
+4. Нажмите на инициалы или аватарку в правом верхнем углу и откройте настройки пользователя.
+
+.. figure:: _static/user_settings_open_ru.png
+   :name: user_settings_open_pic
+   :align: center
+   :width: 20cm
+
+   Переход к настройкам пользователя
+
+5. В настройках в пункте NextGIS ID нажмите кнопку "Привязать аккаунт".
+
+.. figure:: _static/bind_ngid_ru.png
+   :name: bind_ngid_pic
+   :align: center
+   :width: 20cm
+
+   Привязка NextGIS ID
+
+При успешной привязке на месте кнопки появится надпись "Аккаунт привязан" и ваш идентификатор.
+
+.. figure:: _static/ngid_bound_success_ru.png
+   :name: ngid_bound_success_pic
+   :align: center
+   :width: 20cm
+
+   NextGIS ID привязан успешно
