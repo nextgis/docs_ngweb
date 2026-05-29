@@ -164,7 +164,7 @@
 .. important::
    Если вы забыли пароль от NextGIS ID, воспользуйтесь `этой инструкцией <https://docs.nextgis.ru/docs_ngcom/source/faq_webgis.html#nextgis-id>`_.
 
-.. _bind::
+.. _bind:
 
 Как привязать NextGIS ID к существующему пользователю Веб ГИС
 -------------------------------------------------------------
