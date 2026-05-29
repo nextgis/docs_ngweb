@@ -172,7 +172,7 @@ Also there is an option to change user password using command line:
 
 If you forgot the password to your NexGIS ID, follow `this instruction <https://docs.nextgis.com/docs_ngcom/source/faq_webgis.html#i-forgot-my-account-password-nextgis-id-what-to-do>`_.
 
-.. _bind::
+.. _bind:
 
 How to bind NextGIS ID to an existing Web GIS user
 -------------------------------------------------------------
