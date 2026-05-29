@@ -171,3 +171,40 @@ Also there is an option to change user password using command line:
    The password is limited in length in the range of 5-25 characters.
 
 If you forgot the password to your NexGIS ID, follow `this instruction <https://docs.nextgis.com/docs_ngcom/source/faq_webgis.html#i-forgot-my-account-password-nextgis-id-what-to-do>`_.
+
+.. _bind::
+
+How to bind NextGIS ID to an existing Web GIS user
+-------------------------------------------------------------
+
+If you have a user created within Web GIS with a username and password (e.g. paganel, 12345paganel) you can bind it to your NextGIS ID account.
+
+1. `Create a NextGIS ID account <https://docs.nextgis.com/docs_ngcom/source/create.html>`_ 
+2. Let the Web GIS administrator know what username you have in your `NextGIS ID profile <https://docs.nextgis.com/docs_ngcom/source/create.html#ngcom-ngid-profile>`_. The administrator adds you `to the team <https://docs.nextgis.com/docs_ngcom/source/teams.html#ngcom-team-management>`_. Then go to your NextGIS ID account, log in and make sure that the Web GIS is shown in the `list of your teams <https://my.nextgis.com/teammanage/member>`_.
+3. Open Web GIS, log in using your old username and password (in our example paganel/1234paganel).
+4. Click on the initials or userpic in the top right corner and open the user settings.
+
+.. figure:: _static/user_settings_open_en.png
+   :name: user_settings_open_pic
+   :align: center
+   :width: 20cm
+
+   Opening user settings
+
+5. In the user settings click **Bind account** in the NextGIS ID field.
+
+.. figure:: _static/bind_ngid_en.png
+   :name: bind_ngid_pic
+   :align: center
+   :width: 20cm
+
+   Binding NextGIS ID account
+
+If binding is successful, the button is replaced by the words "Account bound" and your identifier.
+
+.. figure:: _static/ngid_bound_success_en.png
+   :name: ngid_bound_success_pic
+   :align: center
+   :width: 20cm
+
+   NextGIS ID bound successfully
