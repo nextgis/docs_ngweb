@@ -110,6 +110,7 @@ NextGIS Web
    permissions 
    ngw_srs
    collector
+   form_elements
    data_collection_on_premise
    trackers
    cors
