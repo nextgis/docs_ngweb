@@ -12,29 +12,9 @@
 
 Если для слоя `включено версионирование <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, внесённые изменения записываются в `историю <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
 
+Редактирование доступно для пользователей, у которых есть `право на чтение и изменение данных <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Право на изменение данных может быть установлено для всей папки, где лежат данные, или для отдельных слоёв.
 
-.. _ngw_allow_edit:
-
-Разрешить редактирование на веб-карте
---------------------------------------
-
-.. important:: По умолчанию редактирование объектов веб-карты всегда отключено. 
-
-Чтобы пользователь смог вносить изменения в слои на карте, редактирование нужно включить в настройках веб-карты. Нажмите |button_edit| рядом с названием веб-карты в списке ресурсов, чтобы открыть страницу `Изменение ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-resource>`_.
-
-
-На вкладке "Настройки" включите редактирование слоёв, выбрав соответствующую опцию в выпадающем меню:
-
-.. figure:: _static/webgis_allow_editting_ru_2.png
-   :name: webmap_allow_editting
-   :align: center
-   :width: 16cm
-
-   Включение редактирования слоёв на веб-карте
-
-Редактирование будет доступно для пользователей, у которых есть `право на чтение и изменение данных <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Право на изменение данных может быть установлено для всей папки, где лежат данные, или для отдельных слоёв.
-
-Если у пользователя недостаточно прав, он не сможет перейти в режим редактирования. `Как проверить права пользователя <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
+`Как проверить права пользователя <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
 
 .. figure:: _static/webgis_permiss_editting_ru.png
    :name: webgis_permiss_editting_pic
@@ -42,6 +22,10 @@
    :width: 18cm
 
    Для папки с данными установлен набор прав, необходимый для доступа к редактированию
+
+По умолчанию для новых создаваемых веб-карт возможность редактирования объектов на карте включена, её можно `выключить в настройках ресурса веб-карты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_. 
+
+
 
 .. _edit_mode:
 
@@ -544,3 +528,24 @@
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/62233baae1d2c10e21ad4709ecffe5cc/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Посмотреть видео на `youtube <https://youtu.be/8R4uY5CCE3w>`__, `rutube <https://rutube.ru/video/62233baae1d2c10e21ad4709ecffe5cc/>`__.
+
+.. _ngw_allow_edit:
+
+Отключить редактирование на веб-карте
+--------------------------------------
+
+По умолчанию при создании карты возможность редактировать объекты на ней включена. При желании её можно выключить.
+
+.. note:: Имейте в виду, что объекты можно редактировать и другими способами. Если вы не хотите, чтобы пользователи вносили изменения в данные, настройте для них соответствующие `права доступа <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_.
+
+Нажмите |button_edit| рядом с названием веб-карты в списке ресурсов, чтобы открыть страницу `Изменение ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-resource>`_.
+
+На вкладке "Настройки" выключите редактирование слоёв, выбрав соответствующую опцию в выпадающем меню:
+
+.. figure:: _static/webmap_no_editting_ru.png
+   :name: webmap_allow_editting
+   :align: center
+   :width: 16cm
+
+   Выключение редактирования слоёв на веб-карте
+
