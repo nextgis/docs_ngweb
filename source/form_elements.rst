@@ -34,10 +34,10 @@ Data entering elements:
 * `Average calculator <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#average>`_;
 * `Photo <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#photo>`_;
 * `System field <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#sytem>`_;
-* `Dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#combobox>`_;
-* `Dual dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#split_cb>`_;
+* `Dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dropdown>`_;
+* `Dual dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dual_dropdown>`_;
 * `Radio group <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#radio>`_;
-* `Dependent dropdowns <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dependet_cb>`_.
+* `Dependent dropdowns <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dependet_dropdown>`_.
 
 .. _label:
 
@@ -92,8 +92,8 @@ In the "Properties" section you can set the name of each tab. To add a new tab, 
    :width: 6mm
 
 
-.. figure:: _static/form_folders_en.png
-   :name: form_folders_pic
+.. figure:: _static/form_tabs_en.png
+   :name: form_tabs_pic
    :align: center
    :width: 20cm
 
@@ -108,8 +108,8 @@ Adding elements to tabs
 
 To add an element to a tab, drag it to it. The element will be added to the active tab marked in blue. Make sure that the element is within the tab set. 
 
-.. figure:: _static/form_folders_insideout_en.png
-   :name: folders_insideout_pic
+.. figure:: _static/form_tabs_insideout_en.png
+   :name: tabs_insideout_pic
    :align: center
    :width: 10cm
 
@@ -117,10 +117,10 @@ To add an element to a tab, drag it to it. The element will be added to the acti
 
 A form can have multiple tab sets as well as elements outside sets.
 
-.. figure:: _static/form_folders_example_en.png
-   :name: folders_example_pic
+.. figure:: _static/form_tabs_example_en.png
+   :name: tabs_example_pic
    :align: center
-   :width: 17cm
+   :width: 10cm
 
    Possible placement of elements and tabs
 
@@ -195,7 +195,7 @@ Properties:
 .. _coordinates:
 
 Coordinates
-----------
+-----------
 
 This element automatically saves current position of the data collector in string format.
 
@@ -217,7 +217,7 @@ Properties:
 .. _distance:
 
 Distance meter
----------
+--------------
 
 This element automatically measures distance between data collector and the entered point. To be able to calculate distance, enable geolocation.
 
@@ -234,8 +234,8 @@ Properties:
 
 .. _average:
 
-Average counter
-----------------
+Average calculator
+------------------
 
 An element which calculates the average value from some amount of entered values. For example, you can measure the trunk width of ten trees growing in the area, enter these numbers and click **Count**. The calculated average is recorded to the layer field.
 
@@ -252,12 +252,12 @@ Properties:
    :align: center
    :width: 20cm
 
-   Average counter
+   Average calculator
 
 .. _photo:
 
 Photo
-----
+-----
 
 An element which allows to take photos with the camera of the device or to add them from the gallery.
 
@@ -290,10 +290,12 @@ Properties:
    :align: center
    :width: 20cm
 
-.. _combobox:
+   Properties of the System field
+
+.. _dropdown:
 
 Dropdown
-------------------
+----------
 
 A dropdown menu to select one value from a predetermined list.
 
@@ -305,15 +307,15 @@ Properties:
 * **Allow free input** - data collector can enter text that is not in the list of options.
 * **Options** - a list of possible field values. Click **Edit** to enter the values.
 
-.. figure:: _static/form_combobox_en.png
-   :name: form_combobox_pic
+.. figure:: _static/form_dropdown_en.png
+   :name: form_dropdown_pic
    :align: center
    :width: 20cm
 
    Properties of the "Dropdown" element
 
-.. figure:: _static/form_edit_combobox_en.png
-   :name: form_edit_combobox_pic
+.. figure:: _static/form_edit_dropdown_en.png
+   :name: form_edit_dropdown_pic
    :align: center
    :width: 15cm
 
@@ -332,9 +334,9 @@ The right end of the row has the following buttons:
 * Delete.
 
 
-.. _split_cb:
+.. _dual_dropdown:
 
-Split dropdown
+Dual dropdown
 ----------------
 
 Dropdown list with predetermined items split into two parts. For instance, showing a place name in two different languages.
@@ -347,15 +349,15 @@ Properties:
 * **Second label** - text displayed above the second part of the dropdown.
 * **Options** - a list of possible field values. Click **Edit** to enter the values.
 
-.. figure:: _static/form_split_combobox_en.png
-   :name: form_split_combobox_pic
+.. figure:: _static/form_dual_dropdown_en.png
+   :name: form_split_dropdown_pic
    :align: center
    :width: 20cm
 
    Properties of the "Dual dropdown" element
 
-.. figure:: _static/form_edit_split_cb_en.png
-   :name: form_edit_split_cb_pic
+.. figure:: _static/form_edit_dual_dropdown_en.png
+   :name: form_edit_dual_dropdown_pic
    :align: center
    :width: 15cm
 
@@ -415,10 +417,10 @@ The right end of the row has the following buttons:
 
 
 
-.. _dependet_cb:
+.. _dependet_dropdown:
 
 Dependent dropdowns
-----------------
+-------------------
 
 A pair of drop-down lists with predefined items.  The item list of the secondary dropdown (bottom) depends on the items of the primary dropdown (top).
 
@@ -434,8 +436,8 @@ Properties:
 * **Remember last value** - if activated, inserts the value added for the previous feature.
 * **Options** - a list of possible field values. Click **Edit** to enter the values.
 
-.. figure:: _static/form_dependent_combobox_en.png
-   :name: form_dependent_combobox_pic
+.. figure:: _static/form_dependent_dropdown_en.png
+   :name: form_dependent_dropdown_pic
    :align: center
    :width: 20cm
 
@@ -444,8 +446,8 @@ Properties:
 
 Options are entered as a table.
 
-.. figure:: _static/form_edit_dependent_cb_en.png
-   :name: form_edit_dependent_cb_pic
+.. figure:: _static/form_edit_dependent_dropdown_en.png
+   :name: form_edit_dependent_dropdown_pic
    :align: center
    :width: 14cm
 
