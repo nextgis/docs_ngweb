@@ -237,7 +237,19 @@
 
 В результатах поиска показывается полный путь до найденных ресурсов.
 
-Также доступен поиск по метаданным, чтобы активировать его, нажмите |button_tune| рядом с кнопкой **Поиск**.
+Также доступен поиск по `метаданным <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-metadata-tab>`_ и техническому ключу ресурса. Чтобы активировать эти параметры, нажмите |button_tune| рядом с кнопкой **Поиск**.
+
+Для поиска по метаданным нажмите |button_plus_layer| и задайте пару ключ-значение. Можно добавить несколько строк метаданных.
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+
+.. figure:: _static/search_metadata_ru.png
+   :name: search_metadata_pic
+   :align: center
+   :width: 20cm
+
+   Поиск ресурсов по метаданным
 
 .. _ngw_control_panel:
 
