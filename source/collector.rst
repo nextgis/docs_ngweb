@@ -304,16 +304,32 @@ In the opened window on the Form tab you have two options:
 
 To create a new form in the online builder, drag the elements from the list on the left to the middle field. Click on the element to modify it and select the field in which this data will be stored.
 
+If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
+
+.. figure:: _static/form_select_field_en.png
+   :name: form_select_field_pic
+   :align: center
+   :width: 12cm
+
+   Selecting a field for the element
+
+Or, you can add new fields for the elements. This allows to create an empty layer, then set its structure by creating a form.
+
+.. figure:: _static/form_add_field_en.png
+   :name: form_add_field_pic
+   :align: center
+   :width: 12cm
+
+If you tick **Add absent fields to layer**, new fields for the added elements will be added to the layer.
+
+Click on the element in the central section to view and modify its properties. More on `properties of each element type <https://docs.nextgis.com/docs_ngweb/source/form_elements.html>`_.
+
 .. figure:: _static/form_build_en.png
    :name: form_build_pic
    :align: center
    :width: 20cm
 
    Building a form online. Properties of the "Text box" element are displayed
-
-If you tick **Add absent fields to layer**, fields for the added elements will be added to the layer. This allows users to create an empty layer, then set its structure by creating a form.
-
-If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
 
 You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
 
