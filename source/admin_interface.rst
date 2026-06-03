@@ -215,6 +215,44 @@ See how the search works in our video:
 
 Watch on `youtube <https://youtu.be/q6h-zL4yg0c?si=FKHlTbneOmen5O5k>`_.
 
+Advanced search with more parameters is activated by the  |button_tune| icon next to the search bar.
+
+.. |button_tune| image:: _static/button_tune.png
+   :width: 6mm
+
+In advanced search mode you can search resources by:
+
+* Resource type - select one or multiple;
+* Owner - select one or multiple;
+* Root resource;
+* Name.
+
+Pick the parameters and click **Search**.
+
+.. figure:: _static/advanced_search_en.png
+   :name: advanced_search_pic
+   :align: center
+   :width: 20cm
+
+   Advanced search: vector and raster layers created by either Administrator or Jacques Paganel inside the Example resource group that have "line" in the name, 16 resources found
+
+Search results show the full path to the resource.
+
+You can also search by `metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-metadata-tab>`_ and technical key of the resource. To activate these search parameters, click |button_tune| next to the **Search** button.
+
+To search by metadata, click |button_tune| and enter a key-value pair. You can add multiple metadata pairs.
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+
+.. figure:: _static/search_metadata_en.png
+   :name: search_metadata_pic
+   :align: center
+   :width: 20cm
+
+   Searching by metadata
+
+
 .. _ngw_control_panel:
 
 Control panel
