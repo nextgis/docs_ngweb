@@ -5,37 +5,15 @@ Edit vector features
 
 You can modify **geometries and attributes** of vector features via Web interface: 
 
-* `in the Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ 
+* `in the Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ ,
 * or on a Web Map (see below), 
-
-- as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
+* as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
 If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
 
-
-.. _ngw_allow_edit:
-
-
-Allow editing
----------------
-
-By default editing of a Web Map is disabled. To allow users to modify the layers of the map, enable editing in the Web Map settings. To find out how to open the "Update resource" dialog, see  :ref:`this chapter<ngw_update_resource>`. 
-
-You can enable or disable editing of all Web Map layers on the “Settings” tab by selecting the corresponding option in the dropdown menu (see :numref:`webmap_allow_editting`).
-
-.. figure:: _static/webgis_allow_editting_en.png
-   :name: webmap_allow_editting
-   :align: center
-   :width: 16cm
-
-   "Enable layers editing" is turned on
-
-.. note:: 
-	By default layer editing is turned off.
-	
 Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. The "Modify data" permission can be set for the entire resource group where the data is stored or for individual layers.
 
-Users who do not have "Modify data" permission won't be able to activate the edit mode. `How to check user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
+`How to check user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
 
 .. figure:: _static/webgis_permiss_editing_en.png
    :name: webgis_permiss_editing_pic
@@ -44,8 +22,7 @@ Users who do not have "Modify data" permission won't be able to activate the edi
 
    Permissions set for the Data resource group to allow editing
 
-
-
+By default, when a new Web Map is created, users can edit features directly on it. You can `disable feature editing on the map <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_ in Web Map settings.
 
 .. _edit_mode:
 
@@ -533,3 +510,27 @@ The resulting archive can be imported to add the attachments to the layer featur
    Importing attachments from ZIP archive
 
 .. to do:: See the process of importing and exporting attachments in our video:
+
+
+.. _ngw_allow_edit:
+
+
+Disable editing on the map
+---------------------------
+
+By default editing of features on a Web Map is enabled. You can disable editing in the Web Map settings on the “Settings” tab. 
+
+.. note:: There are other way to edit vector layers. If you don't want users to modify your data, configure `permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ for the resources.
+
+Click |button_edit| next to the Web Map name to enter `Update resource <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-resource>`_ dialog.
+
+On the Settings tab in the Layers editing field select **Disable** in the dropdown menu.
+
+
+.. figure:: _static/webmap_no_editting_en.png
+   :name: webmap_allow_editting
+   :align: center
+   :width: 20cm
+
+   Disabling editing on a Web Map
+
