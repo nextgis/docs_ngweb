@@ -182,29 +182,37 @@ PostGIS diagnostics
 You can check the correctness of the entered data when adding the `PostGIS Connection <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#creating-postgis-connection>`_ resource using the **Diagnostics** tool.
 To do this, you need to click on the **Diagnostics** button on the panel on the right.
 
-.. figure:: _static/diagnostics_start_en.png
+.. figure:: _static/diagnostics_start_en_2.png
    :name: diagnostics_start_en
    :align: center
-   :width: 24cm
+   :width: 20cm
+
+   Launching PostGIS diagnostics
 
 If all fields are filled in correctly when creating a connection to PostGIS - diagnostics will be successful.
 
-.. figure:: _static/diagnostics_successfully_en.png
+.. figure:: _static/diagnostics_successfully_en_2.png
    :name: diagnostics_successfully_en
    :align: center
-   :width: 24cm
+   :width: 20cm
+
+   Diagnostics successful
 
 If any of the entered data is not correct, an error message will appear.
 
-.. figure:: _static/diagnostics_fail1_en.png
+.. figure:: _static/diagnostics_fail1_en_2.png
    :name: diagnostics_fail1_en
    :align: center
-   :width: 24cm
+   :width: 20cm
 
-.. figure:: _static/diagnostics_fail2_en.png
+   Error: connection failed
+
+.. figure:: _static/diagnostics_fail2_en_2.png
    :name: diagnostics_fail2_en
    :align: center
-   :width: 24cm
+   :width: 20cm
+
+   Error: hostname resolution failed
 
 .. _ngw_postgis_troubleshooting:
 
