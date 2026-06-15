@@ -169,7 +169,7 @@ The layer is created and a new tab opens where you can add attributes (fields).
 
 Click |button_plus_layer| **Add**. A field is created. Click on it to open the properties dialog. 
 
-Select the data type for the field (numbers: INTEGER, BIGIN, REAL, BOOLEAN, text: STRING, date and/or time: DATE, TIME, DATETIME).
+Select the data type for the field (numbers: INTEGER, BIGIN, REAL, text: STRING, date and/or time: DATE, TIME, DATETIME, logical: BOOLEAN).
 
 The name of the field can also be edited.
 
