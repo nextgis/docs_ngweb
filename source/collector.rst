@@ -189,7 +189,7 @@ By default this project is displayed in the Collector mobile app as "Collector p
    :alt: pencil
    :width: 6mm
 
-Click on the group name to navigate to that group, There, you'll find three resource with default names: Collector project, Web Map with the same list of layers as the project, and a standard basemap.
+Click on the group name to navigate to that group. There, you'll find three resource with default names: Collector project, Web Map with the same list of layers as the project, and a standard basemap.
 
 .. figure:: _static/project_group_result_en.png
    :name: project_group_result_pic
@@ -198,10 +198,11 @@ Click on the group name to navigate to that group, There, you'll find three reso
 
    Resource group with Collector project, Basemap and Web Map
 
-For editable layers without forms added to the project forms are created. You can edit them by clicking "Edit".
+For all editable layers added to the project, a style and a form are created if they hadn't been added beforehand.
+You can edit them by clicking "Edit" on the resource page on in the resource list.
 
 
-If you're an experienced user and with to fine-tune the project as you're creating it, you can use the standard resource creation dialog.
+If you're an experienced user and wish to fine-tune the project as you're creating it, you can use the standard resource creation dialog.
 
 .. _project_manually:
 
