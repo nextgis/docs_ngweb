@@ -51,7 +51,7 @@
 
 Доступные элементы интерфейса отличаются в зависимости от того, авторизован ли пользователь.
 
-`Интерфейс, доступный для гостей <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#guest>`_.
+Подробнее про `интерфейс, доступный для гостей <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#guest>`_.
 
 .. _ngw_admin_login:
 
