@@ -78,7 +78,8 @@ The table contains the following columns:
    * STRING - a text of any length; 
    * DATE - date; 
    * TIME - time;
-   * DATETIME - date and time.
+   * DATETIME - date and time;
+   * BOOLEAN - logical field, possible values are "TRUE" and "FALSE".
 
 For the next three parameters a dark symbol means "on" and a light symbol means "off".
 
