@@ -66,9 +66,11 @@
 * `Проекты Collector <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_
 * `Набор тайлов <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-tile-set>`_
 * `Набор файлов <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-file-bucket>`_
+* `Форма для сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_
 * Библиотека маркеров SVG - если вы использовали такую библиотеку, рекомендуем встроить значки в стиль слоя или файл проекта, сделать это можно при помощи инструмента Toolbox `Добавление SVG в QGS/QML <https://toolbox.nextgis.com/t/embedsvg>`_
 
 
+.. _via_toolbox:
 
 Альтернативный способ выгрузки и загрузки данных при помощи инструментов Toolbox
 -----------------------------------------------------------------------------------
