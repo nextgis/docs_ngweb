@@ -48,6 +48,9 @@
 Main interface
 ==================
 
+Available controls are different `for guests <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#guest>`_ and users who are `logged in <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#authorization>`_.
+
+
 Authorization
 --------------
 
@@ -481,3 +484,26 @@ https://demo.nextgis.com/api/resource/4077/export?format=csv&srs=4326&zipped=tru
 
 You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or `with desktop app NextGIS QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
 
+.. _guest:
+
+Interface for guests
+--------------------
+
+User who is not logged in can view resources and resource groups allowed by `permissions set for Guests <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_.
+
+On the right there is **Sign in** button. Click on it to `log into the system <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#authorization>`_.
+
+To open the main menu, click |button_main_menu| in the top right corner. Tree options are available for guests:
+
+* Resource - redirects to the main resource group;
+* Help - link to the `web site page <https://nextgis.com/help/>`_ containing information about technical support, documentation etc.;
+* Contact Web GIS administrator - redirects to the account page (you have to log in with your `NextGIS ID <https://docs.nextgis.com/docs_ngcom/source/create.html>`_ or create an account). Here you can fill the message form:
+
+.. figure:: _static/webmap_owner_contact_en.png
+   :name: webmap_owner_contact_pic
+   :width: 20cm
+   :align: center
+
+   Message form
+
+The Web GIS administrator will receive your message and email address so that they can reply by email.
