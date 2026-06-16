@@ -27,7 +27,27 @@ In the opened dialog enter a display name. It will be displayed in the resource 
 
    Lookup table name
 
-Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_lookup_pic`. Add data in the “key-value” format. You can also import a pre-made lookup table from a CSV file.
+Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_lookup_pic`. Add data in the “key-value” format. 
+
+You can also import a pre-made lookup table from a CSV file. Click **Import** and select a CSV file.
+
+
+.. figure:: _static/lookup_from_csv_en.png
+   :name: lookup_from_csv_pic
+   :align: center
+   :width: 20cm
+
+   Importing lookup table from file
+
+In the import dialog you can set up:
+
+* Fields for key and value;
+* Delimiter;
+* Quote character;
+* Escape character;
+* Encoding.
+
+In the preview section you can see the resulting table and check if the parameters are set up correctly.
 
 .. figure:: _static/ngweb_creating_a_new_lookup_en.png
    :name: ngweb_creating_a_new_lookup_pic
