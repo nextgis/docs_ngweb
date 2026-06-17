@@ -355,6 +355,15 @@
 
 Нажмите **Сохранить** для завершения создания формы. 
 
+Откроется страница ресурса созданной формы, на которой доступен её предпросмотр.
+
+.. figure:: _static/form_result_ru.png
+   :name: form_result_pic
+   :align: center
+   :width: 20cm
+
+   Просмотр формы на странице ресурса
+
 Теперь можно:
 
 * перейти к созданию `проекта сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_,
