@@ -409,11 +409,16 @@ NextGIS Web может принимать многослойные наборы 
 * Тип - AWS S3
 * Адрес сервера (endpoint)
 * Бакет (bucket)
-* Ключ доступа (access_key)
-* Секретный ключ (secret_key)
 * Префикс - не обязательно
 
-.. figure:: _static/ngweb_raster_storage_settings_ru.png
+Если это хранилище с ограниченным доступом, добавьте также:
+
+* Ключ доступа (access_key)
+* Секретный ключ (secret_key)
+
+Если это публичное хранилище, то вместо этого поставьте галочку в поле "Публичный доступ":
+
+.. figure:: _static/ngweb_raster_storage_settings_ru_2.png
    :name: ngweb_raster_storage_settings_pic
    :align: center
    :width: 16cm
