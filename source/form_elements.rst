@@ -496,6 +496,8 @@
    :align: center
    :width: 20cm
 
+   Окно загрузки файла
+
 Выберите файл на устройстве. Откроется окно настройки импорта.
 
 .. figure:: _static/options_csv_preview_ru.png
