@@ -399,11 +399,16 @@ Fill in the form with the values of the corresponding variables:
 * Type - AWS S3
 * Endpoint
 * Bucket
-* Access key
-* Sercret key
 * Prefix (optional)
 
-.. figure:: _static/ngweb_raster_storage_settings_en.png
+If it's a private storage, enter also the credentials:
+
+* Access key
+* Sercret key
+
+If it's a public storage, tick "Public access" instead.
+
+.. figure:: _static/ngweb_raster_storage_settings_en_2.png
    :name: ngweb_raster_storage_settings_pic
    :align: center
    :width: 16cm
