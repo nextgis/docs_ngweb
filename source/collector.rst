@@ -336,6 +336,15 @@ You can set a display name on the Resource tab and add description and metadata 
 
 Click **Create** to finish the process. 
 
+You're redirected to the page of the form resource where you can preview the newly created form.
+
+.. figure:: _static/form_result_en.png
+   :name: form_result_pic
+   :align: center
+   :width: 17cm
+
+   Preview of the form
+
 Next you can:
 
 * create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_;
@@ -343,16 +352,12 @@ Next you can:
 
 Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
 
-.. figure:: _static/form_upload_en_2.png
-   :name: form_upload_pic
-   :align: center
-   :width: 20cm
+After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
 
-   Uploading form file
 
 You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
 
-After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+
 
 
 .. seealso:: Seems confusing? Check out our tutorial `Collect Spatial Data in the Field <https://docs.nextgis.com/docs_howto/source/tutorial_collect.html>`_ that guides you through the whole process step-by-step.

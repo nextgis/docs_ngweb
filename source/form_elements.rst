@@ -321,7 +321,7 @@ Properties:
 
    Editing a list
 
-Options are entered as a table.
+Options are entered as a table. You can eter them manually or `import from CSV <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#import-csv>`_.
 
 To **add an option** type in the value that is stored in the layer attribute and the label displayed in the form dropdown (can be the same as the value).
 
@@ -363,7 +363,7 @@ Properties:
 
    Modifying items in a dual dropdown
 
-Options are entered as a table.
+Options are entered as a table. You can eter them manually or `import from CSV <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#import-csv>`_.
 
 To **add an option** type in the value that is stored in the layer attribute and two labels displayed in the form dropdown.
 
@@ -396,7 +396,7 @@ Properties:
 
    Properties of the "Radiogroup" element
 
-Options are entered as a table.
+Options are entered as a table. You can eter them manually or `import from CSV <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#import-csv>`_.
 
 .. figure:: _static/form_radio_edit_en.png
    :name: form_radio_edit_pic
@@ -444,7 +444,7 @@ Properties:
    Properties of the "Dependent dropdowns" element
 
 
-Options are entered as a table.
+Options are entered as a table. You can eter them manually or `import from CSV <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#import-csv>`_.
 
 .. figure:: _static/form_edit_dependent_dropdown_en.png
    :name: form_edit_dependent_dropdown_pic
@@ -464,6 +464,75 @@ The right end of the row has the following buttons:
 * Delete.
 
 
+.. _import_csv:
+
+Import options from CSV
+---------------------------
+
+If you need to add a long list of options to an element that allows picking one from a pre-set list (i.e. `Dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#combobox>`_; `Dual dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#split_cb>`_; `Radio group <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#radio>`_; `Dependent dropdowns <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dependet_cb>`_.), you can import it from a CSV file.
+
+Select the element, in the Properties panel click **Edit** next to the Options field. 
+
+.. figure:: _static/options_edit_open_en.png
+   :name: options_edit_open_pic
+   :align: center
+   :width: 20cm
+
+   Options editing in the element properties
+
+A dialog for options editing is opened. Click **Import**.
+
+
+.. figure:: _static/options_edit_import_en.png
+   :name: options_edit_import_pic
+   :align: center
+   :width: 20cm
+
+   Importing options from file
+
+In the next dialog, upload a CSV file from your device.
+
+.. figure:: _static/options_edit_upload_en.png
+   :name: options_edit_upload_pic
+   :align: center
+   :width: 20cm
+
+   Selecting a file 
+   
+Import settings dialog opens.
+
+.. figure:: _static/options_csv_preview_en.png
+   :name: options_csv_preview_pic
+   :align: center
+   :width: 20cm
+
+   CSV import settings
+
+Select the table columns for:
+
+* Value - what is recorded in the layer attribute;
+* Label - what is displayed in the interface;
+* Initial - column where the row that is to be used as the initial value is marked.
+
+You can also set up:
+
+* Delimiter;
+* Quote character;
+* Escape character;
+* Encoding.
+
+Once you're satisfied with the result, click **Import**.
+
+.. figure:: _static/options_imported_en.png
+   :name: options_imported_pic
+   :align: center
+   :width: 20cm
+
+   Imported list of options
+
+After the import you can pick the initial value, add more rows manually or delete some and rearrange the list. The options set up in this dialog can be exported as CSV.
+
+Click **Done** to complete the editing.
 
 
 
