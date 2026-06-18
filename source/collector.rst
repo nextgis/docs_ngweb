@@ -360,7 +360,7 @@
 .. figure:: _static/form_result_ru.png
    :name: form_result_pic
    :align: center
-   :width: 20cm
+   :width: 17cm
 
    Просмотр формы на странице ресурса
 
