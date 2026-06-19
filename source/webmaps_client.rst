@@ -242,8 +242,8 @@
 
 
 * |button_opacity| Настроить его непрозрачность при помощи ползунка.
-* Открыть |button_table| **Таблицу объектов** на карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
-* |button_edit_black| **Редактировать** - активирует режим редактирования, который позволяет вносить изменения в выбранный слой. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку с дискетой на карте.
+* |button_table| **Таблица объектов** - открывает на карте `таблицу объектов векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
+* |button_edit_black| **Редактировать** - активирует режим редактирования, который позволяет `изменять объекты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_ выбранного слоя. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку |button_maptool_save| на карте.
 * |button_filter| **Фильтр**  позволяет отображать на карте только те объекты слоя, которые отвечают заданным условиям (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-filter>`_).
 * |button_article| **Описание** - если у слоя добаввлено описание, оно открывается в соответствующей панели.
 * |button_close| **Удалить слой** с карты (чтобы вернуть слой, нажмите **Восстановить** в меню дерева слоёв).
@@ -647,4 +647,8 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
 
 .. |button_save_blue| image:: _static/button_save_blue.png
    :width: 6mm
-   :alt: дискета
+   :alt: дискета на синем фоне
+
+.. |button_maptool_save| image:: _static/button_maptool_save.png
+   :width: 6mm
+   :alt: дискета на белом фоне
