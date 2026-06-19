@@ -11,9 +11,7 @@
 
 Откроется страница просмотра карты: 
 
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 8mm
-   :alt: карта с лупой
+
  
 .. figure:: _static/webmap_client_rus_6.png
    :name: ngweb_webmap_client
@@ -49,8 +47,7 @@
 
 Также вы можете отобразить на карте своё текущее местоположение, нажав на кнопку |button_my_location|. Посмотрите, как это работает, в видео:
 
-.. |button_my_location| image:: _static/button_my_location.png
-   :width: 6mm
+
 
 
 .. raw:: html
@@ -77,16 +74,7 @@
 * |panel_print| `Печать <https://docs.nextgis.ru/docs_ngweb/source/print.html>`_  открывает окно подготовки к печати. 
 * |panel_trackers| `Трекеры <https://docs.nextgis.ru/docs_ngweb/source/trackers.html#tracking-web-map>`_
 
-.. |panel_layers| image:: _static/panel_layers.png
-.. |panel_ident| image:: _static/panel_ident.png
-.. |panel_search| image:: _static/panel_search.png
-.. |panel_annot| image:: _static/panel_annot.png
-.. |panel_info| image:: _static/panel_info.png
-.. |panel_bookmarks| image:: _static/panel_bookmarks.png
-.. |panel_cadaster| image:: _static/panel_cadaster.png
-.. |panel_share| image:: _static/panel_share.png
-.. |panel_print| image:: _static/panel_print.png
-.. |panel_trackers| image:: _static/panel_trackers.png
+
 
 Ниже их функционал описывается подробнее.
 
@@ -104,12 +92,7 @@
 * |button_home| вернуться к начальному масштабу карты;
 * |button_my_location| показать местоположение устройства.
 
-.. |button_zoom| image:: _static/button_zoom.png
-   :width: 5mm
 
-.. |button_home| image:: _static/button_home.png
-   :width: 6mm
-   :alt: домик
 
 
 Слева внизу:
@@ -123,32 +106,7 @@
 * |button_swipe_off| `Шторка <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-swipe>`_
 * |button_extent_coord| `Показ координат/охвата <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-coord-extent>`_
 
-.. |button_zoom_in| image:: _static/button_zoom_in.png
-   :width: 6mm
-   :alt: лупа с плюсом
 
-.. |button_zoom_out| image:: _static/button_zoom_out.png
-   :width: 6mm
-   :alt: лупа с минусом
-
-.. |button_measure_distance| image:: _static/button_measure_distance.png
-   :width: 6mm
-   :alt: линейка
-
-.. |button_measure_area_map| image:: _static/button_measure_area_map.png
-   :width: 6mm
-   :alt: угольник
-
-.. |button_swipe_off| image:: _static/button_swipe_off.png
-   :width: 6mm
-   :alt: прямоугольник, рассечённый по вертикали
-
-.. |button_extent_coord| image:: _static/button_extent_coord.png
-   :width: 6mm
-
-.. |button_maptool_clear| image:: _static/button_maptool_clear.png
-   :width: 6mm
-   :alt: X
 
 .. _ngw_webmaps_client_tools_measure:
 
@@ -182,8 +140,7 @@
 
 Шторка делает прозрачной ту область выбранного слоя/группы слоёв на карте, которая находится с одной стороны от неё (см. :numref:`ngweb_webmap_swyped`).
 
-.. |button_swipe| image:: _static/button_swipe.png
-   :width: 8mm
+
 
 Выберите слой щелчком в дереве слоёв (он будет подсвечен голубым цветом) и нажмите |button_swipe_off| в нижней части карты (см. :numref:`ngweb_webmap_choose_layer`). 
    
@@ -237,6 +194,7 @@
 Легенда в дереве слоёв
 ------------------------
 
+
 В панели |panel_layers_small| **дерево слоёв** находится список всех стилей слоёв, добавленных на веб-карту. 
 
 .. |panel_layers_small| image:: _static/panel_layers.png
@@ -246,19 +204,23 @@
 
 Также слои можно **перетаскивать** внутри дерева, меняя порядок их отображения. При перезагрузке страницы отображение слоёв будет сброшено к изначальному.
 
+Чтобы убрать слой из легенды и с карты, нажмите |button_close| в меню слоя.
+
 При нажатии на три точки рядом с заголовком панели откроется меню, с помощью которого можно:
 
-* Увеличить до всех слоёв - все объекты всех добавленных слоёв попадут в охват отображаемой карты;
-* Скрыть все слои;
-* Восстановить исходное состояние (не перезагружая страницу и не теряя текущий охват карты).
+* |button_extent_all| Увеличить до всех слоёв - все объекты всех добавленных слоёв попадут в охват отображаемой карты;
+* |button_visibility_off| Скрыть все слои;
+* |button_restore| Восстановить исходное состояние (не перезагружая страницу и не теряя текущий охват карты);
+* |button_plus_layer| Добавить слои.
 
-.. figure:: _static/webmap_layers_panel_menu_ru.png
+.. figure:: _static/webmap_layers_panel_menu_ru_2.png
    :name: webmap_layers_panel_menu_pic
    :align: center
    :width: 20cm
 
    Меню панели слоёв
 
+Если вы хотите, чтобы текущее состояние дерева слоёв стало видом карты по умолчанию, нажмите |button_save_blue| в левом нижнем углу.
 
 Возможности панели слоёв также представлены в видео:
 
@@ -274,35 +236,30 @@
 Меню слоя
 -----------
 
-В выпадающем меню слоя можно настроить его непрозрачность при помощи ползунка.
 
-При выборе пункта **Таблица объектов** под картой появляется таблица объектов выбранного слоя. 
 
-Пункт **Редактировать** позволяет начать вносить изменения в выбранный слой. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__).
+Чтобы вызвать меню слоя, нажмите на три точки рядом с его названием. Доступны следующие операции:
 
-**Фильтр**  позволяет отображать на карте только те объекты слоя, которые отвечают заданным условиям (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-filter>`_).
 
-При выборе пункта **Описание** отображается описание выбранного слоя, которое вводится при создании или редактировании слоя. 
-
-При выборе пункта **Увеличить до слоя** происходит масштабирование карты таким образом, чтобы выбранный слой занимал всю видимую площадь карты. 
+* |button_opacity| Настроить его непрозрачность при помощи ползунка.
+* Открыть |button_table| **Таблицу объектов** на карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
+* |button_edit_black| **Редактировать** - активирует режим редактирования, который позволяет вносить изменения в выбранный слой. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку с дискетой на карте.
+* |button_filter| **Фильтр**  позволяет отображать на карте только те объекты слоя, которые отвечают заданным условиям (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-filter>`_).
+* |button_article| **Описание** - если у слоя добаввлено описание, оно открывается в соответствующей панели.
+* |button_close| **Удалить слой** с карты (чтобы вернуть слой, нажмите **Восстановить** в меню дерева слоёв).
+* |button_extent_all| **Увеличить до слоя** - происходит масштабирование карты таким образом, чтобы выбранный слой занимал всю видимую площадь карты. 
+* |button_palette| **Редактировать ресурс стиля** - открывается во всплывающем окне, `подробнее о настройках стилей <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
+* |button_gear| **Редактировать ресурс слоя** - открывается во всплывающем окне,  подробнее о настройках ресурса `векторного <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ слоя.
+* |button_tune| **Свойства слоя** - позволяет настроить работу слоя на конкретной веб-карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_. 
 
 Флажок **Идентифицируемый** означает, что при клике на объекты слоя информация о них отображается в `панели идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_. Если его отключить, то объекты этого слоя будут игнорироваться инструментом идентификаци.
 
-.. figure:: _static/ngweb_webmap_layer_menu_ru_2.png
+.. figure:: _static/ngweb_webmap_layer_menu_ru_3.png
    :name: ngweb_webmap_layer_menu_pic
    :align: center
    :width: 20cm
    
    Меню слоя на веб-карте
-
-При выделении в таблице отдельной записи происходит переход к соответствующей геометрии на карте, данная геометрия будет подсвечена на карте (см. :numref:`ngweb_webmap_attribute_table`). Для выбранного объекта можно открыть окно с его свойствами, редактировать его или удалить. При нажатии на кнопку **"Перейти"** карта масштабируется таким образом, чтобы выбранный объект оказался в центре (см. :numref:`ngweb_webmap_attribute_table`). В окне просмотра атрибутов можно выполнять поиск по текущим атрибутам. По мере ввода, содержимое окна фильтруется и остаются только записи, которые удовлетворяют критериям поиска. Также можно осуществлять `фильтрацию объектов, входящих в заданную область <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
- 
-.. figure:: _static/ngweb_webmap_attribute_table_rus_3.png
-   :name: ngweb_webmap_attribute_table
-   :align: center
-   :width: 20cm
-   
-   Таблица объектов слоя на веб-карте
 
 .. _ngw_webmaps_client_filter:
 
@@ -572,3 +529,122 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
    Форма отправки сообщения
 
 Владелец Веб ГИС получит сообщение с указанием адреса электронной почты, на который сможет вам ответить.
+
+
+.. |panel_layers| image:: _static/panel_layers.png
+.. |panel_ident| image:: _static/panel_ident.png
+.. |panel_search| image:: _static/panel_search.png
+.. |panel_annot| image:: _static/panel_annot.png
+.. |panel_info| image:: _static/panel_info.png
+.. |panel_bookmarks| image:: _static/panel_bookmarks.png
+.. |panel_cadaster| image:: _static/panel_cadaster.png
+.. |panel_share| image:: _static/panel_share.png
+.. |panel_print| image:: _static/panel_print.png
+.. |panel_trackers| image:: _static/panel_trackers.png
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 8mm
+   :alt: карта с лупой
+
+.. |button_extent_all| image:: _static/button_extent_all.png
+   :width: 6mm
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+   :alt: +
+
+.. |button_restore| image:: _static/button_restore.png
+   :width: 6mm
+   :alt: стрелка по кругу назад
+
+.. |button_visibility_off| image:: _static/button_visibility_off.png
+   :width: 6mm
+   :alt: зачеркнутый глаз
+
+.. |button_my_location| image:: _static/button_my_location.png
+   :width: 6mm
+
+.. |button_zoom| image:: _static/button_zoom.png
+   :width: 5mm
+
+.. |button_home| image:: _static/button_home.png
+   :width: 6mm
+   :alt: домик
+
+.. |button_swipe| image:: _static/button_swipe.png
+   :width: 8mm
+
+.. |button_zoom_in| image:: _static/button_zoom_in.png
+   :width: 6mm
+   :alt: лупа с плюсом
+
+.. |button_zoom_out| image:: _static/button_zoom_out.png
+   :width: 6mm
+   :alt: лупа с минусом
+
+.. |button_measure_distance| image:: _static/button_measure_distance.png
+   :width: 6mm
+   :alt: линейка
+
+.. |button_measure_area_map| image:: _static/button_measure_area_map.png
+   :width: 6mm
+   :alt: угольник
+
+.. |button_swipe_off| image:: _static/button_swipe_off.png
+   :width: 6mm
+   :alt: прямоугольник, рассечённый по вертикали
+
+.. |button_extent_coord| image:: _static/button_extent_coord.png
+   :width: 6mm
+
+.. |button_maptool_clear| image:: _static/button_maptool_clear.png
+   :width: 6mm
+   :alt: X
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: таблица
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_filter| image:: _static/button_filter.png
+   :width: 6mm
+   :alt: воронка
+
+.. |button_opacity| image:: _static/button_opacity.png
+   :width: 6mm
+   :alt: капля
+
+.. |button_gear| image:: _static/button_gear.png
+   :width: 6mm
+   :alt: шестерёнка
+
+.. |button_palette| image:: _static/button_palette.png
+   :width: 6mm
+   :alt: палитра
+
+.. |button_close| image:: _static/button_close.png
+   :width: 6mm
+   :alt: Х
+
+.. |button_article| image:: _static/button_article.png
+   :width: 6mm
+   :alt: прямоугольник со строчками
+
+.. |button_edit_black| image:: _static/button_edit_black.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_table| image:: _static/button_table.png
+   :width: 6mm
+   :alt: таблица
+
+.. |button_tune| image:: _static/button_tune.png
+   :width: 6mm
+   :alt: линии с засечками
+
+.. |button_save_blue| image:: _static/button_save_blue.png
+   :width: 6mm
+   :alt: дискета
