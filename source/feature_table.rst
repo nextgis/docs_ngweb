@@ -43,9 +43,7 @@ Feature table on a Web Map
 
 There is another way to open Feature table. |button_open_web_map| open a Web Map that has the layer in question added to it.
 
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: map and magnifying glass
+
 
 .. figure:: _static/webmap_open_from_group_en.png
    :name: webmap_open_from_group_pic
@@ -77,48 +75,18 @@ All tools of the Feature table are available, as well as some map navigation too
 #. |button_zoom_to_filtered| Zoom to filtered features
 #. |button_filter_area| `Filter features by area <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_
 
+Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. 
 
+In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#filter-layer-features-on-the-web-map-by-area>`_).
+ 
 
+.. figure:: _static/ngweb_webmap_attribute_table_eng_3.png
+   :name: ngweb_webmap_attribute_table
+   :align: center
+   :width: 20cm
+   
+   Feature table of the selected layer on a Web Map
 
-.. |button_open_resource| image:: _static/button_open_resource.png
-   :width: 6mm
-   :alt: square with arrow
-
-.. |button_plus_layer| image:: _static/button_plus_layer.png
-   :width: 6mm
-   :alt: +
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: pencil
-
-.. |button_refresh_single| image:: _static/button_refresh_single.png
-   :width: 6mm
-   :alt: circular arrow
-
-.. |button_filter| image:: _static/button_filter.png
-   :width: 6mm
-   :alt: funnel
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: table
-
-.. |button_go_to| image:: _static/button_go_to.png
-   :width: 6mm
-   :alt: frame with dot
-
-.. |button_zoom_to_filtered| image:: _static/button_zoom_to_filtered.png
-   :width: 6mm
-   :alt: inward arrows
-
-.. |button_filter_area| image:: _static/button_filter_area.png
-   :width: 6mm
-   :alt: dash frame
-
-.. |button_delete| image:: _static/button_delete.png
-   :width: 6mm
-   :alt: trash can
 
 .. _table_search_filter:
 
@@ -361,3 +329,47 @@ Click |button_refresh_single| to refresh the table so that it includes the lates
 
 
 
+
+.. |button_open_resource| image:: _static/button_open_resource.png
+   :width: 6mm
+   :alt: square with arrow
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+   :alt: +
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_refresh_single| image:: _static/button_refresh_single.png
+   :width: 6mm
+   :alt: circular arrow
+
+.. |button_filter| image:: _static/button_filter.png
+   :width: 6mm
+   :alt: funnel
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_go_to| image:: _static/button_go_to.png
+   :width: 6mm
+   :alt: frame with dot
+
+.. |button_zoom_to_filtered| image:: _static/button_zoom_to_filtered.png
+   :width: 6mm
+   :alt: inward arrows
+
+.. |button_filter_area| image:: _static/button_filter_area.png
+   :width: 6mm
+   :alt: dash frame
+
+.. |button_delete| image:: _static/button_delete.png
+   :width: 6mm
+   :alt: trash can
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: map and magnifying glass

@@ -9,9 +9,7 @@ A special web application for viewing Web Maps is included in NextGIS Web (see :
 
 To view the Web Map press |button_open_web_map| next to its name in the resource list or open the resource page and select **Display** in the Actions panel on the right. The following page will open:
 
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 8mm
-   :alt: magnifying glass on map
+
  
 .. figure:: _static/webmap_client_eng_4.png
    :name: webmap_client
@@ -47,10 +45,6 @@ There are some options to work with map:
 
 To view your current location on the map, press |button_my_location|. See how it works in our video:
 
-.. |button_my_location| image:: _static/button_my_location.png
-   :width: 6mm
-
-
 .. raw:: html
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/HVvuDMX1pEo?si=u4ALUrxkaUHGzqcB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -74,15 +68,7 @@ On the left side of the workspace are the functional panels:
 * |panel_print| `Print <https://docs.nextgis.com/docs_ngweb/source/print.html>`_ 
 * |panel_trackers| `Trackers <https://docs.nextgis.com/docs_ngcom/source/tracking.html>`_
 
-.. |panel_layers| image:: _static/panel_layers.png
-.. |panel_ident| image:: _static/panel_ident.png
-.. |panel_search| image:: _static/panel_search.png
-.. |panel_annot| image:: _static/panel_annot.png
-.. |panel_info| image:: _static/panel_info.png
-.. |panel_bookmarks| image:: _static/panel_bookmarks.png
-.. |panel_share| image:: _static/panel_share.png
-.. |panel_print| image:: _static/panel_print.png
-.. |panel_trackers| image:: _static/panel_trackers.png
+
 
 .. _ngw_webmaps_client_tools:
 
@@ -97,13 +83,6 @@ Top left:
 * |button_home| back to initial extent;
 * |button_my_location| show my location.
 
-.. |button_zoom| image:: _static/button_zoom.png
-   :width: 5mm
-
-.. |button_home| image:: _static/button_home.png
-   :width: 6mm
-
-
 Bottom left:
 
 * |panel_ident_small| `Identify <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_
@@ -113,24 +92,6 @@ Bottom left:
 * |button_measure_area_map| `Measure area <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#measuring-tools>`_
 * |button_swipe_off| `Swipe <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-swipe>`_
 * |button_extent_coord| `Show cursor coordinates/extent <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#show-extent-or-cursor-coordinates>`_
-
-.. |button_zoom_in| image:: _static/button_zoom_in.png
-   :width: 6mm
-
-.. |button_zoom_out| image:: _static/button_zoom_out.png
-   :width: 6mm
-
-.. |button_measure_distance| image:: _static/button_measure_distance.png
-   :width: 6mm
-
-.. |button_measure_area_map| image:: _static/button_measure_area_map.png
-   :width: 6mm
-
-.. |button_swipe_off| image:: _static/button_swipe_off.png
-   :width: 6mm
-
-.. |button_extent_coord| image:: _static/button_extent_coord.png
-   :width: 6mm
 
 See detailed descriptions below.
 
@@ -219,9 +180,6 @@ Share
 
 In the |panel_share_intext| "Share" panel you can:
 
-.. |panel_share_intext| image:: _static/panel_share.png
-   :width: 6mm
-
 * copy a link to the Web Map (the link includes zoom level and layer visibility);
 * add the visible fragment of the Web Map to `favorites <https://docs.nextgis.com/docs_ngweb/source/favorites.html#ngw-favorites-wm-fragment>`_;
 * configure and copy the code for embedding the Web Map to a Web site.
@@ -287,30 +245,29 @@ Legend in the layers tree
 
 The **Layer tree** panel |panel_layers_small| contains a list of all layer styles added to the Web Map.
 
-.. |panel_layers_small| image:: _static/panel_layers.png
-   :width: 5mm
-
-
 The panel allows to:
 
-* Disable/Enable layer visibility. You can also hide parts of a layer by selecting items in the Web Map lengend. It's helpful for big projects where one layer may contain a variety of features grouped by value of an attribute.
+* Disable/Enable layer visibility by ticking the checkbox on the left. You can also hide parts of a layer by selecting items in the Web Map lengend. It's helpful for big projects where one layer may contain a variety of features grouped by value of an attribute.
 
 * Change the order of the layers by dragging them within the layer tree. Refresh the page to restore the original order.
 
 Click on the three dots next to the panel title to open the menu. In this menu you can:
 
-* Zoom to all layers;
-* Hide all layers;
-* Reset layers to the initial visibility setting without reloading the page.
+* |button_extent_all| Zoom to all layers;
+* |button_visibility_off| Hide all layers;
+* |button_restore| Reset layers to the initial visibility setting without reloading the page,
+* |button_plus_layer| Add layers.
 
-.. figure:: _static/webmap_layers_panel_menu_en.png
+.. figure:: _static/webmap_layers_panel_menu_en_2.png
    :name: webmap_layers_panel_menu_pic
    :align: center
    :width: 20cm
 
    Layer panel menu
 
-How to `configure the legend <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+If you want the current state of the map legend to be the default for this Web Map, click |button_save_blue| in the bottom left corner.
+
+More on how to `configure the legend <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
 
 Functionality of the layer panel is presented in our video:
 
@@ -325,24 +282,25 @@ Watch on `youtube <https://youtu.be/4Pd5AKtoR2g?si=0lMooDE3ZzpO0xxz>`__.
 Layer menu
 ------------
 
-To change the transparency of the layer use the slider in the dropdown menu of the layer.
+Click on the three dots to the right of the layer name to open its menu. The following options are available:
 
-.. figure:: _static/ngweb_webmap_layer_menu_en_2.png
+.. figure:: _static/ngweb_webmap_layer_menu_en_3.png
    :name: ngweb_webmap_layer_menu_pic
    :align: center
    :width: 19cm
    
    Layer menu on the Web Map
 
-After a click on **Feature table** option you will see feature table of the selected layer under the map. 
-
-Choose **Edit** to modify the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_).
-
-**Filter** allows to display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
-
-Using **Description** option you can view the description of the selected layer, added during creation or editing of the layer. 
-
-**Zoom to layer** option allows you to zoom a map so that the selected layer takes up all the visible map area.
+* |button_opacity| To change the transparency of the layer use the slider.
+* |button_table| **Feature table** - opens the layer's `feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_ on the map. 
+* |button_edit_black| **Edit** - activates the ability to to modify the features of the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_) or click |button_maptool_save| on the map.
+* |button_filter| **Filter** - display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
+* |button_article| **Description** - view the description of the selected layer, if it has one.
+* |button_close| Remove layer from the legend (to reset it, click |button_restore| Reset layers in the panel menu).
+* |button_extent_all| **Zoom to layer** - sets the map extent so that all features of the select area are in it.
+* |button_palette| **Edit style resource**, opens in a pop-up window, `more on style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_.
+* |button_gear| **Open layer resource**, opens in a pop-up window, more on `vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html>`_.
+* |button_tune| **Layer properties** on this particular Web Map (`more about layes on a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_).
 
 When the **Identifiable** flag is on, a click on the map opens the `Identify panel <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ with the information about the layer feature. Untick it to have the layer ignored by the identification.
 
@@ -354,15 +312,7 @@ See how it works in our video:
 
 Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
 
-Select a row in feature table to navigate to the feature on a map, it will be highlighted (see :numref:`ngweb_webmap_attribute_table`). For the selected feature you can open a window with its properties, edit it or delete it. **"Go to"** button allows you to zoom a map to display the selected feature on the whole visible map area (see :numref:`ngweb_webmap_attribute_table`). In feature table tab you have an option to dynamically filter records. When user types a text the contents of the window are filtered leaving only the records that match the search text. Filter by area option is also available (`more on how to use it <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#filter-layer-features-on-the-web-map-by-area>`_).
- 
 
-.. figure:: _static/ngweb_webmap_attribute_table_eng_3.png
-   :name: ngweb_webmap_attribute_table
-   :align: center
-   :width: 20cm
-   
-   Feature table of the selected layer on a Web Map
    
 .. _ngw_webmaps_client_filter:
 
@@ -394,8 +344,7 @@ You can also filter the features within a `selected area <https://docs.nextgis.c
 Feature identification
 -----------------------
 
-.. |panel_ident_small| image:: _static/panel_ident.png
-   :width: 5mm
+
 
 To get information about features on the Web Map activate the |panel_ident_small| identify panel. Click anywhere on the map to get info on vector features and raster pixels.
 
@@ -430,9 +379,7 @@ If there are multiple features (for example a point and a line going through it)
 
 To clear selection, click on |button_maptool_clear| in the bottom left corner. When no feature is selected, this button looks like this: |panel_ident_small|.
 
-.. |button_maptool_clear| image:: _static/button_maptool_clear.png
-   :width: 6mm
-   :alt: X
+
 
 To configure how far from the clicks the features can be to be identified and what parameters are displayed in the panel go to the `Control panel <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#ngw-contr-panel-webmap-ident>`_.
 
@@ -549,3 +496,131 @@ Clicking this icon redirects to the account page (you have to log in with your `
    Message form
 
 The Web GIS administrator will receive your message and email address so that they can reply by email.
+
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 8mm
+   :alt: magnifying glass on map
+
+.. |button_my_location| image:: _static/button_my_location.png
+   :width: 6mm
+
+.. |button_zoom| image:: _static/button_zoom.png
+   :width: 5mm
+
+.. |button_home| image:: _static/button_home.png
+   :width: 6mm
+
+.. |button_zoom_in| image:: _static/button_zoom_in.png
+   :width: 6mm
+   :alt: magnifying glass +
+
+.. |button_zoom_out| image:: _static/button_zoom_out.png
+   :width: 6mm
+   :alt: magnifying glass -
+
+.. |button_measure_distance| image:: _static/button_measure_distance.png
+   :width: 6mm
+   :alt: ruler
+
+.. |button_measure_area_map| image:: _static/button_measure_area_map.png
+   :width: 6mm
+   :alt: drafting triangle
+
+.. |button_swipe_off| image:: _static/button_swipe_off.png
+   :width: 6mm
+   :alt: rectangle with vertical line
+
+.. |button_extent_coord| image:: _static/button_extent_coord.png
+   :width: 6mm
+
+.. |button_maptool_clear| image:: _static/button_maptool_clear.png
+   :width: 6mm
+   :alt: X
+
+.. |panel_layers| image:: _static/panel_layers.png
+.. |panel_ident| image:: _static/panel_ident.png
+.. |panel_search| image:: _static/panel_search.png
+.. |panel_annot| image:: _static/panel_annot.png
+.. |panel_info| image:: _static/panel_info.png
+.. |panel_bookmarks| image:: _static/panel_bookmarks.png
+.. |panel_share| image:: _static/panel_share.png
+.. |panel_print| image:: _static/panel_print.png
+.. |panel_trackers| image:: _static/panel_trackers.png
+
+.. |panel_share_intext| image:: _static/panel_share.png
+   :width: 6mm
+
+.. |panel_layers_small| image:: _static/panel_layers.png
+   :width: 5mm
+
+.. |panel_ident_small| image:: _static/panel_ident.png
+   :width: 5mm
+
+.. |button_restore| image:: _static/button_restore.png
+   :width: 6mm
+   :alt: arrow counterclockwise
+
+.. |button_visibility_off| image:: _static/button_visibility_off.png
+   :width: 6mm
+   :alt: crossed out eye
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_filter| image:: _static/button_filter.png
+   :width: 6mm
+   :alt: funnel
+
+.. |button_opacity| image:: _static/button_opacity.png
+   :width: 6mm
+   :alt: drop
+
+.. |button_gear| image:: _static/button_gear.png
+   :width: 6mm
+   :alt: gear
+
+.. |button_palette| image:: _static/button_palette.png
+   :width: 6mm
+   :alt: palette
+
+.. |button_close| image:: _static/button_close.png
+   :width: 6mm
+   :alt: Х
+
+.. |button_article| image:: _static/button_article.png
+   :width: 6mm
+   :alt: lined rectangle
+
+.. |button_edit_black| image:: _static/button_edit_black.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_table| image:: _static/button_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_tune| image:: _static/button_tune.png
+   :width: 6mm
+   :alt: three lines with handles
+
+.. |button_save_blue| image:: _static/button_save_blue.png
+   :width: 6mm
+   :alt: floppy disk on blue
+
+.. |button_maptool_save| image:: _static/button_maptool_save.png
+   :width: 6mm
+   :alt: floppy disk on white
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+   :alt: table
+
+.. |button_extent_all| image:: _static/button_extent_all.png
+   :width: 6mm
+   :alt: table

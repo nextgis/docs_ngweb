@@ -113,6 +113,11 @@ You can add multiple styles at once. The layers containing selected styles are m
 
 You don't need to go the style list of the layer to select the style. Press the |button_pick_first| button to the right of the layer name to auto-select the first style.
 
+.. _wm_layer_set:
+
+Properties of Web Map layers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Layers of a particular map have several settings, see :numref:`admin_webmap_create_layers`.
 
 .. figure:: _static/webmap_layer_settings_en.png
