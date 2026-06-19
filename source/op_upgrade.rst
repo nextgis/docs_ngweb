@@ -65,7 +65,15 @@
 Обновление до версии 3.2.x с версии 3.1.x
 -----------------------------------------
 
-Дополнительные шаги не требуются, выполните стандартные шаги обновления.
+На шаге 6 для Extended Edition (в том числе Whitelabel), в связи с изменениями в работе проектов Collector, перед выполнением команды `docker compose run --rm app nextgisweb maintenance` необходимо запустить сервис `chub` командой `docker compose up -d chub`. Таким образом, команды, выполняемые на шаге 6, будут выглядеть следующим образом:
+
+.. code:: bash
+
+   $ cd /srv/ngwdocker
+   $ docker compose run --rm app nextgisweb migration upgrade --no-dry-run
+   $ docker compose up -d chub
+   $ docker compose run --rm app nextgisweb maintenance
+
 
 Обновление до версии 3.1.x с версии 3.0.x
 -----------------------------------------
