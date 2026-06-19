@@ -59,7 +59,14 @@ If you don't have Internet access, contact NextGIS support team to get image arc
 Upgrade to 3.2.x from 3.1.x
 -----------------------------------------
 
-No additional steps needed, proceed with the standard steps to update.
+Step 6 for Extended Edition (including Whitelabel) requires starting the `chub` service with `docker compose up -d chub` before running `docker compose run --rm app nextgisweb maintenance`. The commands for step 6 are as follows:
+
+.. code:: bash
+
+   $ cd /srv/ngwdocker
+   $ docker compose run --rm app nextgisweb migration upgrade --no-dry-run
+   $ docker compose up -d chub
+   $ docker compose run --rm app nextgisweb maintenance
 
 Upgrade to 3.1.x from 3.0.x
 -----------------------------------------
