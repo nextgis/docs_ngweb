@@ -54,7 +54,7 @@ HTTPS-сертификаты корпоративного УЦ
 
 .. code:: yaml
 
-   - { type: bind, source: ca-certificates.crt, target: /etc/ssl/certs/ca-certificates.crt }
+   - { type: bind, source: ./ca-certificates.crt, target: /etc/ssl/certs/ca-certificates.crt }
 
 Например, для NextGIS Web у вас должно получиться следующее:
 
@@ -68,7 +68,7 @@ HTTPS-сертификаты корпоративного УЦ
          - { type: volume, source: config_app, target: /opt/ngw/config/app }
          - { type: volume, source: secret, target: /opt/ngw/secret }
          - { type: volume, source: backup, target: /opt/ngw/backup }
-         - { type: bind, source: ca-certificates.crt, target: /etc/ssl/certs/ca-certificates.crt }
+         - { type: bind, source: ./ca-certificates.crt, target: /etc/ssl/certs/ca-certificates.crt }
    # ...
 
 **Шаг 7.** Перезапустите контейнеры для применения изменений. Для этого выполните команду:
