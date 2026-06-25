@@ -367,7 +367,7 @@
 Теперь можно:
 
 * перейти к созданию `проекта сбора данных <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_,
-* или `добавить слой в NextGIS Mobile <https://docs.nextgis.ru/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, форма подтянется автоматически.
+* или `добавить слой в NextGIS Mobile <https://docs.nextgis.ru/docs_ngmobile/source/ngw_load.html>`_, форма подтянется автоматически.
 
 Созданную форму можно **редактировать**. Для этого нажмите иконку карандаша рядом с ней или зайдите на страницу ресурса и нажмите **Изменить**. Если форма была загружена из файла, на вкладке выберите в выпадающем списке "Редактировать форму".
 
