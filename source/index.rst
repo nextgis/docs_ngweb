@@ -30,6 +30,7 @@ NextGIS Web
 * `Подложки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-create-basemap>`_
 * `Экспорт <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_
 * `Вложения <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-attachments>`_
+* `Работа с кадастровыми данными <https://docs.nextgis.ru/docs_ngweb/source/cadaster.html>`_
 
 **Веб-карты**
 
