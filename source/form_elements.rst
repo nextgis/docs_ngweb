@@ -463,12 +463,12 @@
 * Клонировать (создать ещё одну строку с таким же содержанием, удобно, если нужно поменять только часть значения);
 * Удалить.
 
-.. _import_csv:
+.. _import_options:
 
-Импорт опций из файла CSV
----------------------------
+Импорт опций
+-------------
 
-Если вам нужно добавить много опций в одно из полей с выбором значения (`Выпадающий список <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#combobox>`_; `Сдвоенный список <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#split_cb>`_; `Радиогруппа <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#radio>`_; `Зависимые списки <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#dependet_cb>`_), можно импортировать их из файла CSV.
+Если вам нужно добавить много опций в одно из полей с выбором значения (`Выпадающий список <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#combobox>`_; `Сдвоенный список <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#split_cb>`_; `Радиогруппа <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#radio>`_; `Зависимые списки <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html#dependet_cb>`_), можно импортировать их из файла CSV или ранее созданного `ресурса Справочника <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_.
 
 Выберите элемент, нажмите в разделе "Опции" кнопку **Редактировать**. 
 
@@ -482,14 +482,21 @@
 Откроется диалог добавления опций. Нажмите **Импорт**.
 
 
-.. figure:: _static/options_edit_import_ru.png
+.. figure:: _static/options_edit_import_ru_2.png
    :name: options_edit_import_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   Переход к импорту опций из файла
+   Переход к импорту опций
 
-Откроется окно загрузки файла.
+Здесь можно выбрать, откуда загружать опции для поля: из файла в формате CSV или из ранее созданного ресурса Справочник.
+
+.. _import_csv:
+
+Импорт из файла CSV
+~~~~~~~~~~~~~~~~~~~
+
+В диалоге редактирования опций элемента выберите Импорт - Из файла. Откроется окно загрузки файла.
 
 .. figure:: _static/options_edit_upload_ru.png
    :name: options_edit_upload_pic
@@ -500,7 +507,7 @@
 
 Выберите файл на устройстве. Откроется окно настройки импорта.
 
-.. figure:: _static/options_csv_preview_ru.png
+.. figure:: _static/options_csv_preview_ru_2.png
    :name: options_csv_preview_pic
    :align: center
    :width: 20cm
@@ -511,7 +518,7 @@
 
 * Значение - то, что будет записываться в слой;
 * Надпись - то, что будет видно в интерфейсе;
-* Исходное значение - колонка таблицы, в которой стоит метка, какую строку использовать в качестве исходного значения.
+* Исходное значение - (необязательно) колонка таблицы, в которой стоит метка, какую строку использовать в качестве исходного значения.
 
 Также можно настроить:
 
@@ -534,5 +541,31 @@
 Нажмите **Готово**, чтобы завершить редактирование опций.
 
 
+.. _import_lookup:
+
+Импорт из справочника
+~~~~~~~~~~~~~~~~~~~~~
+
+Если в Веб ГИС нужный список уже загружен в виде ресурса справочника, можно подключить этот ресурс. В окне редактирования опций выберите Импорт - Из справочника. Откроется окно выбора ресурса.
+
+.. figure:: _static/options_lookup_select_ru.png
+   :name: options_lookup_select_pic
+   :align: center
+   :width: 20cm
+
+   Окно выбора справочника
+
+Кликните по нужному справочнику и нажмите **Выбрать отмеченное**. 
+
+.. figure:: _static/options_imported_lookup_ru.png
+   :name: options_imported_lookup_pic
+   :align: center
+   :width: 16cm
+
+   Импортированный список опций
+
+После этого вы можете выставить нужное исходное значение, добавить строки, поменять их местами, удалить ненужные. Настроенные опции можно экспортировать в виде таблицы CSV.
+
+Нажмите **Готово**, чтобы завершить редактирование опций.
 
 
