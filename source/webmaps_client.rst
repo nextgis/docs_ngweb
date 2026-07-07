@@ -26,7 +26,7 @@ Numbers indicate:
 * 4 - `layer tree <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-layers>`_ with layer menu buttons;
 * 5 – `dropdown list of basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-basemap>`_; 
 * 6 and 7 - `map tools <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools>`_;
-*  8 - `status bar <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
+* 8 - `status bar <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-scale>`_ and copyright.
 
 
 .. _ngw_webmaps_client_scale:

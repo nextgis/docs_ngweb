@@ -557,6 +557,14 @@ To view the changes in the layers without refreshing the whole page, select "Res
 
 Web Map settings are available for the user who have `modify permission <https://docs.nextgis.com/docs_ngcom/source/permissions.html#>`_ for the corresponding resource.
 
+See how to modify settings from the Web Map viewer in our video:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/JxNa3ydAvVw?si=dL68PcTkyDpAfqoX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch on `youtube <https://youtu.be/IZHborRY5xA?si=xjTIUyEDGEXfF0DQ>`_.
+
 
 .. _ngw_webmap_optimize:
 
