@@ -17,22 +17,12 @@ To create a lookup table navigate to the group, where you want to create it (roo
 
    Selecting "Lookup table" resource type
    
-In the opened dialog enter a display name. It will be displayed in the resource list and the Web Map layer tree. “Keyname” field is optional.
-
-
-.. figure:: _static/ngweb_admin_layers_create_lookup_eng_3.png
-   :name: ngweb_admin_layers_create_lookup
-   :align: center
-   :width: 20cm
-
-   Lookup table name
-
-Switch from "Resource" tab to the "Lookup table" tab, which is presented on :numref:`ngweb_creating_a_new_lookup_pic`. Add data in the “key-value” format. 
+In the opened dialog add data in the “value-label” format. 
 
 You can also import a pre-made lookup table from a CSV file. Click **Import** and select a CSV file.
 
 
-.. figure:: _static/lookup_from_csv_en.png
+.. figure:: _static/lookup_from_csv_en_2.png
    :name: lookup_from_csv_pic
    :align: center
    :width: 20cm
@@ -41,7 +31,7 @@ You can also import a pre-made lookup table from a CSV file. Click **Import** an
 
 In the import dialog you can set up:
 
-* Fields for key and value;
+* Fields for value and label;
 * Delimiter;
 * Quote character;
 * Escape character;
@@ -49,22 +39,32 @@ In the import dialog you can set up:
 
 In the preview section you can see the resulting table and check if the parameters are set up correctly.
 
-.. figure:: _static/ngweb_creating_a_new_lookup_en.png
+.. figure:: _static/lookup_sort_en.png
    :name: ngweb_creating_a_new_lookup_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
 
-   Lookup table contents
+   Lookup table contents sorted by label, custom mode activated to allow manual sorting
 
 The entries can be sorted in a variety of ways:
 
-* By key, ascending (lower to higher);
-* By key, descending (higher to lower);
-* By value, ascending;
-* By value, descending;
+* By value, ascending (lower to higher);
+* By value, descending (higher to lower);
+* By label, ascending;
+* By label, descending;
 * Custom - drag the six dot icon on the left (:numref:`ngweb_creating_a_new_lookup_pic`) to move the entry.
 
-Numbers with separators are treated like decimals, i.e. "1.12" is before "1.7". If you need to fix it, sort by key first, then switch to "Custom" and move the entries to the correct position.
+Numbers with separators are treated like decimals, i.e. "1.12" is before "1.7". If you need to fix it, sort by value first, then switch to "Custom" and move the entries to the correct position.
+
+On the "Resource" tab you can enter a display name. It will be displayed in the resource list and the Web Map layer tree. “Keyname” field is optional.
+
+
+.. figure:: _static/create_lookup_en.png
+   :name: ngweb_admin_layers_create_lookup
+   :align: center
+   :width: 20cm
+
+   Lookup table name
 
 You can also add resource description and metadata on the corresponding tabs.
 Metadata is used in external apps working with `API <https://docs.nextgis.com/docs_ngweb_dev/doc/developer/toc.html>`_.
@@ -73,7 +73,7 @@ Metadata is used in external apps working with `API <https://docs.nextgis.com/do
 Then click **Save**. 
 The window will then look as on :numref:`ngweb_new_resource_lookup_pic`
 
-.. figure:: _static/ngweb_lookup_result_en.png
+.. figure:: _static/ngweb_lookup_result_en_2.png
    :name: ngweb_new_resource_lookup_pic
    :align: center
    :width: 20cm
@@ -85,13 +85,13 @@ The resource update dialog will open.
 Switch to "Lookup table" tab where you can change the table's contents:  
 
 
-* add a new key-value pair
-* change a current key-value pair
-* delete a key-value pair
+* add a new value-label pair
+* change a current value-label pair
+* delete a value-label pair
 
 A lookup table can be exported to a CSV file. It comes in handy if you want to use to create a `data collection form <https://docs.nextgis.com/docs_formbuilder/source/controls.html#fb-edit-combobox-pic>`_.
 
-You can also link a connect a lookup table `to a vector layer field <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_, This way while editing the layer you can choose attribute values from the list.
+You can also link a connect a lookup table `to a vector layer field <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_, This way while editing the layer you can choose attribute labels from the list.
 
 
 See how to work with lookup tables in our video:

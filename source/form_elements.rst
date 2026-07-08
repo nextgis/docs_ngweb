@@ -463,11 +463,10 @@ The right end of the row has the following buttons:
 * Clone - makes a copy of the row, it's handy if you only need to modify a part of the value;
 * Delete.
 
+.. _import_options:
 
-.. _import_csv:
-
-Import options from CSV
----------------------------
+Import options
+--------------
 
 If you need to add a long list of options to an element that allows picking one from a pre-set list (i.e. `Dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#combobox>`_; `Dual dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#split_cb>`_; `Radio group <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#radio>`_; `Dependent dropdowns <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dependet_cb>`_.), you can import it from a CSV file.
 
@@ -483,14 +482,19 @@ Select the element, in the Properties panel click **Edit** next to the Options f
 A dialog for options editing is opened. Click **Import**.
 
 
-.. figure:: _static/options_edit_import_en.png
+.. figure:: _static/options_edit_import_en_2.png
    :name: options_edit_import_pic
    :align: center
-   :width: 20cm
+   :width: 15cm
 
-   Importing options from file
+   Selecting import source
 
-In the next dialog, upload a CSV file from your device.
+.. _import_csv:
+
+Import options from CSV
+---------------------------
+
+In the options editing dialog select Import - From file. In the next dialog, upload a CSV file from your device.
 
 .. figure:: _static/options_edit_upload_en.png
    :name: options_edit_upload_pic
@@ -501,7 +505,7 @@ In the next dialog, upload a CSV file from your device.
    
 Import settings dialog opens.
 
-.. figure:: _static/options_csv_preview_en.png
+.. figure:: _static/options_csv_preview_en_2.png
    :name: options_csv_preview_pic
    :align: center
    :width: 20cm
@@ -535,5 +539,29 @@ After the import you can pick the initial value, add more rows manually or delet
 Click **Done** to complete the editing.
 
 
+.. _import_lookup:
 
+Import from Lookup table
+~~~~~~~~~~~~~~~~~~~~~~~~
 
+If the list you need is already uploaded to your Web GIS as a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#lookup-table>`_, you can use it for the form element options. In the options editing dialog select Import - From lookup table. A resource picker appears.
+
+.. figure:: _static/options_lookup_select_en.png
+   :name: options_lookup_select_pic
+   :align: center
+   :width: 18cm
+
+   Selecting a lookup table
+
+Tick the lookup table and click **Pick selected**.
+
+.. figure:: _static/options_imported_lookup_en.png
+   :name: options_imported_lookup_pic
+   :align: center
+   :width: 16cm
+
+   Imported list of options
+
+After the import you can pick the initial value, add more rows manually or delete some and rearrange the list. The options set up in this dialog can be exported as CSV.
+
+Click **Done** to complete the editing.
