@@ -107,12 +107,12 @@ On the editing page you can modify properties of the user and **disable** the us
    
    Disabling the user
 
-If the user is disabled, settings concerning groups, resource ownership and permissions stay intact and can be reactivated after the user is re-added to the team.
+If the user is disabled, settings concerning groups, resource ownership and permissions stay intact and can be reactivated after the user is re-added to the team. This also preserves all information on the user's acivity in versioned resources.
 
-If you need to **delete a user permanently**, click the "Delete" icon in the user list and confirm the action in the pop-up window. Alternatively, you can open the editing page and click **Delete**.
+In most cases, disabling a user is enough, however, you can **delete a user permanently**. Click the "Delete" icon in the user list and confirm the action in the pop-up window. Alternatively, you can open the editing page and click **Delete**.
 
-If the user is the owner of Web GIS resources, a warning appears: *Validation error.
-User is referenced with resources*. Click on **Technical information** to see ID of the resources owned by the user. Delete these resources or `change their owner <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_ to delete the user.
+If the user is the owner of Web GIS resources or edited a versioned vector layer, a warning appears: *Validation error.
+User is referenced with resources*. Click on **Technical information** to see ID of the resources owned by the user. To delete the user, first you need to `change the owner <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_ of resources and disable versioning for the layers the user edited. Keep in mind, that it destroyes all recorded version information for that layer. So we recommend disabling users instead, unless strictly necessary.
 
 
 .. _bind:
