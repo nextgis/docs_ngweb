@@ -134,3 +134,8 @@ Upgrade to 2.6.x from 2.5.x
 -----------------------------------------
 
 No additional steps needed, proceed with the standard steps to update.
+
+Upgrade to 2.5.x from earlier versions
+------------------------------------------------
+
+Depending on the version you are upgrading from, additional steps may be required. Please contact NextGIS support for recommendations on upgrading to version 2.5.x. Attach the current version of the file ``docker-compose.yaml`` from your server to the support request.
