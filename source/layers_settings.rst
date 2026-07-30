@@ -41,7 +41,7 @@
 
 * |button_plus_layer| Добавить новое поле
 * |attr_delete_symbol| Удалить поле, нажав на крестик в конце строки
-* Редактировать поле. Кликните на строку таблицы, чтобы открыть форму редактирования.
+* Редактировать поле - кликните на строку таблицы, чтобы открыть форму редактирования.
 
 .. |button_plus_layer| image:: _static/button_plus_layer.png
    :width: 6mm
@@ -49,7 +49,7 @@
 .. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
    :width: 6mm
 
-.. figure:: _static/vector_fields_ru_2.png
+.. figure:: _static/vector_fields_ru_3.png
    :name: ngweb_admin_layers_attr
    :align: center
    :width: 16cm
@@ -62,10 +62,10 @@
 * Ключ - техническое название поля, должно содержать только простую латиницу
 
 
-.. figure:: _static/key_field_name_ru_2.png
+.. figure:: _static/key_field_name_ru_3.png
    :name: key_field_name_pic
    :align: center
-   :width: 20cm    
+   :width: 16cm    
 
    Диалог редактирования атрибутивного поля. Наименование поля с верхним индексом и его ключ выделены
 
@@ -94,6 +94,7 @@
 
 * |attr_table_symbol| Таблица объектов - если снять этот флажок, поле не будет отображаться в таблице объектов и панели идентификации.
 * |attr_text_search_symbol| Текстовый поиск - можно отключить поиск по значениям этого атрибута.
+* **!** Обязательное поле - если включить эту опцию, то при создании или редактировании объекта это поле обязательно нужно будет заполнить.
 * |attr_label_symbol| Атрибут наименование - значение из этого поля будет использоваться как название объекта при `поиске <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ и добавлении в `закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
 .. note:: Если вы хотите задать поле, значение которого будет использоваться в качестве подписи объекта на карте, это можно сделать через `настройки стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_.
