@@ -9,12 +9,12 @@
 
 Чтобы изменить настройки слоя, перейдите к группе, где он находится (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.5) и нажмите на значок карандаша напротив нужного слоя. При этом откроется окно `изменения ресурса <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html>`_.
 
- Помимо стандартных для всех типов ресурсов настроек (родитель, описание, метаданные, права доступа) здесь можно 
+Помимо стандартных для всех типов ресурсов настроек (родитель, описание, метаданные, права доступа) здесь можно 
  
- * `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
- * `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
- * изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
- * включать и выключать версионирование слоя
+* `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
+* `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
+* изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
+* включать и выключать версионирование слоя
 
 Версионирование позволяетт нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
 
