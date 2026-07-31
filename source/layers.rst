@@ -20,7 +20,7 @@ See other data requirements for `raster <https://docs.nextgis.com/docs_ngweb/sou
 
 .. _ngw_create_vector_layer:
 
-Vector layer from file
+Vector layer
 -----------------------
 
 In NextGIS Web you can create vector layers based on variours `formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#input-data-requirements>`_, use `PostGIS connection <https://docs.nextgis.com/docs_ngweb/source/postgis_details.html#vector-layer-from-postgis>`_ or create an `empty vector layer <https://docs.nextgis.com/docs_ngweb/source/layers.html#empty-vector-layer>`_ that has attribute structure but no features.
@@ -28,7 +28,7 @@ In NextGIS Web you can create vector layers based on variours `formats <https://
 .. _ngw_vector_data_requirements:
 
 Input data requirements
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Source files could be in the following formats: 
 
@@ -63,7 +63,7 @@ If input data layer contains fields named id (ID) or geom (GEOM), they will be r
 .. _ngw_process_create_vector_layer:
 
 Create layer from file
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. hint::
 
@@ -271,7 +271,7 @@ Raster images in NextGIS Web should be loaded using the "Raster Layer" special r
 .. _ngw_raster_requirements:
 
 Requirements for uploaded files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Data must be georeferenced and have valid reference system description in GeoTIFF tags.
 
@@ -285,7 +285,7 @@ Supported format:
 .. _ngw_process_create_raster_layer:
 
 Creation process
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 To add a raster layer navigate to a group where you want to create it. Press **Create resource** button and select  **Raster layer** (see :numref:`ngweb_admin_layers_create_raster_layer`). 
 
@@ -344,7 +344,7 @@ To complete click the **Create** button.
 .. _ngw_raster_volume:
 
 Uploading big rasters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Satellite images of high resulution and other rasters may be very large. The file size is not representative because data is compressed. The actual data size may be much bigger. To make sure that raster data is quickly rendered on a Web Map and services work fast raser files must be converted before uploading them o Web GIS.
 
@@ -362,7 +362,7 @@ There is no time limit for uploading raster files.
 .. _ngw_raster_alpha:
 
 Raster layer with transparency (clip or alpha channel)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Most of utilities do not create an alpha channel and only add a NoData value. 
 To transform NoData value to an alpha channel use the command line utility 
@@ -377,7 +377,7 @@ To transform NoData value to an alpha channel use the command line utility
 .. _ngw_raster_index:
 
 Uploading indexed color rasters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Indexed Color raster files are uploaded just like the RGB raster files. If the file is not in GeoTIFF format, you can convert it as follows:
 
