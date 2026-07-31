@@ -175,6 +175,19 @@ Affects paths for the displayed resource, parameters etc.
 	}
 
 
+.. _ngw_css_selection:
+
+Change selection color
+~~~~~~~~~~~~~~~~~~~~~~
+
+By default, the selected feature is highlighted in yellow.
+
+.. code-block:: css
+
+   :root {
+      --ngw-webmap-selection-color: red;   
+   }
+
 .. _ngw_res_export:
 
 Hide resource export
