@@ -393,10 +393,10 @@ On the Tile cache tab you can enable cache, allow using tiles in non-tile reques
 
 * Create QGIS raster style using **Create resource** button. In the dropdown menu you can select:
 
-   * Style from file - select a QML or SLD file. 
-   * User-defined style - pick three channels, the values of these channels will be used to calculate a color in RGB model. You can set up min and max values for each channel;
-   * Default style - allows to add a default QGIS style to a layer that already has styles;
-   * Copy from resource - select a QGIS style of another raster layer to copy it.
+  * Style from file - select a QML or SLD file. 
+  * User-defined style - pick three channels, the values of these channels will be used to calculate a color in RGB model. You can set up min and max values for each channel;
+  * Default style - allows to add a default QGIS style to a layer that already has styles;
+  * Copy from resource - select a QGIS style of another raster layer to copy it.
 
 .. figure:: _static/ngweb_copy_raster_style_en.png
    :name: ngweb_copy_raster_style_pic

@@ -1467,16 +1467,16 @@ Labels
 * LABELCACHE [on|off] - specifies whether labels should be drawn as the features for this layer are drawn, or whether they should be cached and drawn after all layers have been drawn. Default is on. Label overlap removal, auto placement etc... are only available when the label cache is active.
 * <position>ur</position> - label offset direction.
 
-   * ur - ↗ up and right (recommended).
-   * ul - ↖
-   * uc - ↑
-   * cl - ←
-   * cc - centered
-   * cr - →
-   * ll - ↙
-   * lc - ↓
-   * lr - ↘
-   * auto
+  * ur - ↗ up and right (recommended).
+  * ul - ↖
+  * uc - ↑
+  * cl - ←
+  * cc - centered
+  * cr - →
+  * ll - ↙
+  * lc - ↓
+  * lr - ↘
+  * auto
 
 
 

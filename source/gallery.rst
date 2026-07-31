@@ -60,9 +60,9 @@ Resource
 * Resource: name of the resource and link to its page;
 * Action: what happens when you click on the item in the gallery. Variable options – depend on resource type:
 
-    * **Go to resource** - for all types;
-    * **Update resource** - for all types;
-    * **Display resource** - for Web Maps and resource galleries.
+   * **Go to resource** - for all types;
+   * **Update resource** - for all types;
+   * **Display resource** - for Web Maps and resource galleries.
 
 * Cover: image used as background on the item card instead of the standard resource type icon. Max 5.0 MiB. Recommended ratio: 3:2 for grid, 5:4 for list.
 * Description displayed when hovering over the item or to the right of the cover in the list. Formatting is supported.
@@ -100,11 +100,11 @@ Group
 * Description;
 * Layout:
 
-    * Grid
-    * List
-    * Rows
-    * Columns
-    * Masonry
+   * Grid
+   * List
+   * Rows
+   * Columns
+   * Masonry
 
 If you don't set a layout here, the default layout selected on the Settings tab is applied. Initially it's grid.
 

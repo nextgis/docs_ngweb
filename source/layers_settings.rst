@@ -43,7 +43,7 @@ On this tab you can:
 * Delete a field by pressing the |attr_delete_symbol| symbol at the end of the row;
 * Edit a field. Click on a table row to open the properties of the field. 
 
-.. figure:: _static/vector_layer_field_list_en.png
+.. figure:: _static/vector_layer_field_list_en_3.png
    :name: ngweb_admin_layers_attr
    :align: center
    :width: 16cm
@@ -56,7 +56,7 @@ The table contains the following columns:
 * Keyname - technical name of the attribute, can be comprised only of plain latin symbols;
 
 
-.. figure:: _static/key_field_name_en.png
+.. figure:: _static/key_field_name_en_2.png
    :name: key_field_name_pic
    :align: center
    :width: 16cm    
@@ -72,14 +72,14 @@ The table contains the following columns:
 
 * Type - defines what data can be stored in the fiels:
 
-   * INTEGER - numbers between -2147483647 and 2147483647, no decimals;
-   * BIGINT - long numbers without decimals, between -9223372036854775807 and 9223372036854775807;
-   * REAL - floating-point numbers, e.g. 44.4444;
-   * STRING - a text of any length; 
-   * DATE - date; 
-   * TIME - time;
-   * DATETIME - date and time;
-   * BOOLEAN - logical field, possible values are "TRUE" and "FALSE".
+  * INTEGER - numbers between -2147483647 and 2147483647, no decimals;
+  * BIGINT - long numbers without decimals, between -9223372036854775807 and 9223372036854775807;
+  * REAL - floating-point numbers, e.g. 44.4444;
+  * STRING - a text of any length; 
+  * DATE - date; 
+  * TIME - time;
+  * DATETIME - date and time;
+  * BOOLEAN - logical field, possible values are "TRUE" and "FALSE".
 
 For the next three parameters a dark symbol means "on" and a light symbol means "off".
 
@@ -103,6 +103,7 @@ For the next three parameters a dark symbol means "on" and a light symbol means 
 
 * |attr_table_symbol| Feature table - the attribute is displayed in the identification window.
 * |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
+* **!** Required - this field needs to be filled in if someone creates or edits a feature.
 * |attr_label_symbol| Label attribute - value from this fielsd is used as feature name for `search results <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `identification <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ and `bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
 .. note:: To modify the labels visisble on the map itself, use `style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_
@@ -178,7 +179,7 @@ Click on the pencil icon next to the layer.
 
 In the "Vector layer" tab select the action from the dropdown menu.
 
-.. figure:: _static/ngw_update_vector_file_options_en.png
+.. figure:: _static/ngw_update_vector_file_options_en_2.png
    :name: ngw_update_vector_file_options_pic
    :align: center
    :width: 15cm
@@ -187,7 +188,7 @@ In the "Vector layer" tab select the action from the dropdown menu.
 
 You can delete all the features. This will result in an empty layer of the same structure that you can add new features to. To do so, select "Delete all features from layer", tick to confirm and press **Save**.
 
-.. figure:: _static/ngw_update_vector_file_clear_en.png
+.. figure:: _static/ngw_update_vector_file_clear_en_2.png
    :name: ngw_update_vector_file_clear_pic
    :align: center
    :width: 15cm
@@ -196,7 +197,7 @@ You can delete all the features. This will result in an empty layer of the same 
 
 You can replace all the features by uploading a previously prepared file. Select "Replace layer features from file". Open the file or drag and drop it into the frame. 
 
-.. figure:: _static/ngw_update_vector_file_replace_en.png
+.. figure:: _static/ngw_update_vector_file_replace_en_2.png
    :name: ngw_update_vector_file_replace_pic
    :align: center
    :width: 15cm
@@ -210,3 +211,22 @@ If you replace the file, not only the features, but the structure of the attribu
 .. note::
 
    You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
+
+.. _ngw_vector_change_geom::
+
+Change layer geometry
+----------------------
+
+You can change the geometry of an existing vector layer without replacing the data, but within limits. Modifications that you can make:
+
+* allow complex geometries (i.e. point layer becomes multipoint);
+* allow Z coordinate.
+
+.. figure:: _static/ngw_update_vector_geometry_en.png
+   :name: ngw_update_vector_geometry_pic
+   :align: center
+   :width: 15cm
+
+   Changing geometry of a point layer
+
+If you need to change the geometry significantly (split polygons into lines, for example) but keep the resource ID, use the `replace features from file <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ option instead.
