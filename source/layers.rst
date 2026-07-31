@@ -87,7 +87,7 @@ The upload dialog indicates the maximum file size allowed on your subscription p
 
 Below it is proposed to define advanced options for creating a vector layer. Depending on the quality of the data you can define how to handle geometry errors when uploading a file, select the type of geometry, the presence/absence of multigeometries, Z-coordinates and the source of the FID (FID field, determine automatically or indicate from a particular field). `More about advanced options <https://docs.nextgis.com/docs_ngweb/source/vect_layer_upload_params.html>`_.
 
-.. figure:: _static/ngweb_create_vector_layer_upload_en_2.png
+.. figure:: _static/ngw_create_vector_layer_upload_en.png
    :name: ngweb_admin_layers_create_vector_layer_upload
    :align: center
    :width: 16cm
@@ -98,14 +98,12 @@ Below it is proposed to define advanced options for creating a vector layer. Dep
 In the "Resource" tab enter the name of the vector layer (:numref:`ngweb_admin_layers_create_vector_layer_resourse_name`).
 It will be displayed in the admin interface. The "Key" field is optional.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_resourse_name_eng_3.png
+.. figure:: _static/ngw_vector_layer_resourse_name_en.png
    :name: ngweb_admin_layers_create_vector_layer_resourse_name
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Vector layer name
-
-
 
 Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_. 
 
@@ -113,15 +111,10 @@ After uploading the file and specifying the parameters, click the **Create** but
 
 Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a `form or data collection <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_.
 
-
-
-
-
-
 .. _ngw_create_empty_vector_layer:
 
 Empty vector layer
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Creating an empty vector layer allows you to start a data base in your WebGIS without using a desktop app. 
 
@@ -137,7 +130,7 @@ Click **Create resource** button and select  **Vector layer**.
 
 In the opened window use the dropdown menu to select "Create empty layer". In the field below select geometry type for the layer. By default, a point layer will be created.
 
-.. figure:: _static/ngweb_admin_layers_create_vector_layer_blank_en.png
+.. figure:: _static/ngw_create_vector_layer_blank_en.png
    :name: ngweb_admin_layers_create_vector_layer_blank_pic
    :align: center
    :width: 15cm
@@ -146,21 +139,9 @@ In the opened window use the dropdown menu to select "Create empty layer". In th
 
 **Points, lines and polygons** are supported. For any of these geometry types you can select an option with **multigeometries** and/or **Z-coordinate**.
 
+On the Fields tab add the necessary fields (attributes).
 
-On the "Resource" tab enter the name of the vector layer. It will be displayed in the resource list. By default the resource type is used as its display name.
-
-Next, click on the three dots next to the **Create** button and select **Create and edit**.
-
-.. figure:: _static/create_and_edit_vector_layer_en.png
-   :name: create_and_edit_vector_layer_pic
-   :align: center
-   :width: 16cm
-
-   Opening the resource update page immediately after creating the resource
-
-The layer is created and a new tab opens where you can add attributes (fields).
-
-.. figure:: _static/empty_vector_layer_fields_en.png
+.. figure:: _static/empty_vector_layer_fields_en_2.png
    :name: empty_vector_layer_fields_pic
    :align: center
    :width: 16cm
@@ -171,9 +152,9 @@ Click |button_plus_layer| **Add**. A field is created. Click on it to open the p
 
 Select the data type for the field (numbers: INTEGER, BIGIN, REAL, text: STRING, date and/or time: DATE, TIME, DATETIME, logical: BOOLEAN).
 
-The name of the field can also be edited.
+You can also change the display name of the field and other settings (`more on field parameters <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).
 
-.. figure:: _static/vector_layer_field_settings_en.png
+.. figure:: _static/vector_layer_field_settings_en_2.png
    :name: vector_layer_field_settings_pic
    :align: center
    :width: 16cm
@@ -182,16 +163,17 @@ The name of the field can also be edited.
 
 Click |button_hide_details| **Hide detaild** to return to the list of fields.
 
-.. figure:: _static/vector_layer_field_list_en.png
+.. figure:: _static/vector_layer_field_list_en_2.png
    :name: vector_layer_field_list_pic
    :align: center
    :width: 16cm
 
    Field list
 
-When all the necessary fields are added, click **Save**.
 
-Later you can `edit the fields <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
+On the "Resource" tab enter the name of the vector layer. It will be displayed in the resource list. By default the resource type is used as its display name.
+
+Click **Create**.
 
 .. |button_plus_layer| image:: _static/button_plus_layer.png
    :width: 6mm
@@ -203,6 +185,78 @@ Later you can `edit the fields <https://docs.nextgis.com/docs_ngweb/source/layer
 Now you can create a `style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_.
 
 To add features to the newly created layer you can use the `editing toolbar <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html>`_.
+
+.. _ngw_copy_vector:
+
+Copy layer
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can duplicate an existing layer within your Web GIS. It can be handy if you want to:
+
+* modify the data leaving the original dataset intact;
+* create a layer of the same structure.
+
+Navigate to the resource group (folder) in which to create a vector layer.
+Click **Create resource** button and select  **Vector layer**. 
+
+.. figure:: _static/ngweb_create_vector_layer_en.png
+   :name: ngw_create_vector_copy_pic
+   :align: center
+   :width: 20cm
+
+   Selecting "Vector layer" resource type
+ 
+On the Vector layer tab select **Copy features from layer**.
+
+Click on the Source layer field and select the layer you want to copy: tick it and click **Pick selected**.
+
+.. figure:: _static/ngw_vector_copy_select_en.png
+   :name: ngw_vector_copy_select_pic
+   :align: center
+   :width: 20cm
+
+   Selecting layer to be copied
+
+On the Resource tab you can set a name for the new layer.
+
+Click **Create**. After the layer is create, its resource page opens.
+
+Next you can create a new style for the layer or `copy the style of the source layer <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_. To copy a data collection form, export it as a file, then `create a new form within the layer using this file <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_.
+
+.. _ngw_no_geometry_vector:
+
+Layer without geometry
+~~~~~~~~~~~~~~~~~~~~~~
+
+You can upload a table to Web GIS as a layer with no geometry.
+
+Navigate to the resource group (folder) in which to add a table.
+Click **Create resource** button and select  **Vector layer**. 
+
+.. figure:: _static/ngweb_create_vector_layer_en.png
+   :name: ngw_create_vector_no_geom_pic
+   :align: center
+   :width: 20cm
+
+   Selecting "Vector layer" resource type
+ 
+On the Vector layer tab upload the table file.
+
+.. figure:: _static/ngw_vector_no_geom_upload_en.png
+   :name: ngw_vector_no_geom_upload_pic
+   :align: center
+   :width: 16cm
+
+   Upload window
+
+On the Resource page set the name for the table and click **Create**. The table is added to the resource tree as a vector layer with no geometry.
+
+.. figure:: _static/ngw_vector_no_geom_result_en.png
+   :name: ngw_vector_no_geom_result_pic
+   :align: center
+   :width: 20cm
+
+   Table uploaded as vector layer with no geometry
 
 
 
