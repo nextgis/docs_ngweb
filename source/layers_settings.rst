@@ -212,7 +212,7 @@ If you replace the file, not only the features, but the structure of the attribu
 
    You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
 
-.. _ngw_vector_change_geom::
+.. _ngw_vector_change_geom:
 
 Change layer geometry
 ----------------------
