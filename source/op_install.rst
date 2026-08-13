@@ -89,7 +89,7 @@ At the start of the ``docker-compose.yaml`` file you'll find a section called  `
 
 Keep in mind that ``COLLECTOR_HUB_URL`` and ``TRACKER_HUB_URL`` variables are used only in the Extended edition. If they are not present, you don't have to add them. Variables ``NEXTGISID_INSTANCE_NGID`` and ``NEXTGISID_ADMINISTRATOR_NGID`` are pre-filled in the docker-compose.yaml file provided by NextGIS. After making all the edits save the file and close the text editor.
 
-If the software is deployed to a server without Internet access, at this stage you need to upload all the necessary Docker images to your server. Contact NextGIS support team to get image archives, upload them to the server, then run the command to load the images from the archives: 
+If the software is deployed to a server without Internet access, at this stage you need to upload all the necessary Docker images to your server. Generate a single-file image archive using the tool `NextGIS Container Registry export <https://toolbox.nextgis.com/t/ngcr_export>`_, upload them to the server, then run the command to load the images from the archives: 
 
 .. code:: bash
 

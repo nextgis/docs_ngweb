@@ -35,7 +35,7 @@ To update from one version to another follow these steps:
    $ cd /srv/ngwdocker
    $ docker compose pull
 
-If you don't have Internet access, contact NextGIS support team to get image archives, upload them to the server, then run the command to load the images from the archives:
+If you don't have Internet access, generate a single-file image archive using the tool `NextGIS Container Registry export <https://toolbox.nextgis.com/t/ngcr_export>`_, upload them to the server, then run the command to load the images from the archives:
 
 .. code:: bash
 
