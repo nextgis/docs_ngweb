@@ -483,6 +483,8 @@ Click |button_toggle_basemap| to draw a custom bounding box on a map.
 
 Also you can enter the four coordinates manually.
 
+After the Web Map is created, you can pick an extent in display mode and `set it as initial or constraining <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-webmap-update>`_.
+
 
 .. _ngw_map_bookmarks:
 
@@ -578,6 +580,15 @@ If you open the settings from the map viewer, they are displayed in a pop-up win
    :width: 20cm
 
 To view the changes in the layers without refreshing the whole page, select "Reset layers" in the Layers panel menu. Layers are updated to the newly saved settings without losing the current extend of the map.
+
+When editing Web Map settings from the display screen, you can set the current extent as initial or constraining extent of the Web Map.
+
+.. figure:: _static/ngw_extent_from_current_en.png
+   :name: ngw_extent_from_current_pic
+   :align: center
+   :width: 18cm
+
+   Setting up current Web Map extent as initial
 
 Web Map settings are available for the user who have `modify permission <https://docs.nextgis.com/docs_ngcom/source/permissions.html#>`_ for the corresponding resource.
 
