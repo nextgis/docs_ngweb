@@ -256,9 +256,10 @@ Click on the three dots next to the panel title to open the menu. In this menu y
 * |button_extent_all| Zoom to all layers;
 * |button_visibility_off| Hide all layers;
 * |button_restore| Reset layers to the initial visibility setting without reloading the page,
-* |button_plus_layer| Add layers.
+* |button_plus_layer| Add layers;
+* |button_plus_layer| Add group - creates a new group in the layer tree. To add layer to the group, drag and drop it.
 
-.. figure:: _static/webmap_layers_panel_menu_en_2.png
+.. figure:: _static/webmap_layers_panel_menu_en_3.png
    :name: webmap_layers_panel_menu_pic
    :align: center
    :width: 20cm
@@ -284,25 +285,24 @@ Layer menu
 
 Click on the three dots to the right of the layer name to open its menu. The following options are available:
 
-.. figure:: _static/ngweb_webmap_layer_menu_en_3.png
+.. figure:: _static/ngweb_webmap_layer_menu_en_4.png
    :name: ngweb_webmap_layer_menu_pic
    :align: center
    :width: 19cm
    
    Layer menu on the Web Map
 
-* |button_opacity| To change the transparency of the layer use the slider.
-* |button_table| **Feature table** - opens the layer's `feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_ on the map. 
-* |button_edit_black| **Edit** - activates the ability to to modify the features of the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_) or click |button_maptool_save| on the map.
-* |button_filter| **Filter** - display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
-* |button_article| **Description** - view the description of the selected layer, if it has one.
-* |button_close| Remove layer from the legend (to reset it, click |button_restore| Reset layers in the panel menu).
 * |button_extent_all| **Zoom to layer** - sets the map extent so that all features of the select area are in it.
-* |button_palette| **Edit style resource**, opens in a pop-up window, `more on style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_.
-* |button_gear| **Open layer resource**, opens in a pop-up window, more on `vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html>`_.
-* |button_tune| **Layer properties** on this particular Web Map (`more about layes on a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_).
-
-When the **Identifiable** flag is on, a click on the map opens the `Identify panel <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ with the information about the layer feature. Untick it to have the layer ignored by the identification.
+* |button_filter| **Filter** - display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
+* |button_table| **Feature table** - opens the layer's `feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_ on the map. 
+* |button_edit_black| **Edit on map** - activates the ability to to modify the features of the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_) or click |button_maptool_save| on the map.
+* |button_tune| **Properties** - how the layer behaves on this particular Web Map (`more about layes on a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_).
+* |button_article| **Description** - view the description of the selected layer, if it has one.
+* |button_close| **Remove layer** from the legend (to reset it, click |button_restore| Reset layers in the panel menu).
+* |button_palette| **Edit style**, opens in a pop-up window, `more on style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html>`_.
+* |button_gear| **Edit layer**, opens the layer resource settings in a pop-up window, more on `vector layer settings <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html>`_.
+* **Identifiable** flag - when it is on, a click on the map opens the `Identify panel <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ with the information about the layer feature. Untick it to have the layer ignored by the identification.
+* |button_opacity| To change the transparency of the layer use the slider.
 
 See how it works in our video:
 
@@ -319,7 +319,7 @@ Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
 Filter
 ------
 
-For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient.
+For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient. `More on how filter conditions work <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#table-search-filter>`_.
 
 .. figure:: _static/web_map_filter_add_en.png
    :name: web_map_filter_add_pic
