@@ -236,7 +236,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Нажмите кнопку **Создать ресурс** и выберите из списка **Подложка веб-карт** (:numref:`ngweb_admin_create_basemap`).
-В открывшемся окне введите название ресурса, которое будет отображаться в административном интерфейсе (:numref:`ngweb_admin_basemap_name`).
 
 .. figure:: _static/ngweb_create_basemap_ru.png
    :name: ngweb_admin_create_basemap
@@ -244,28 +243,8 @@
    :width: 20cm
 
    Выбор типа ресурса "Подложка веб-карты"
-   
-   
-.. figure:: _static/ngweb_admin_basemap_name_rus_3.png
-   :name: ngweb_admin_basemap_name
-   :align: center
-   :width: 20cm
 
-   Наименование подложки веб-карты
-   
-   
-На соответствующих вкладках можно добавить "Описание" и "Метаданные" ресурса (:numref:`ngweb_admin_basemap_desc`).
-Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
-
-.. figure:: _static/ngweb_admin_basemap_desc_rus_3.png
-   :name: ngweb_admin_basemap_desc
-   :align: center
-   :width: 20cm
-
-   Описание подложки веб-карты
-   
-
-На вкладке "Подложка веб-карты" задается URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
+В открывшемся окне задайте URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
 
 * Найти нужный сервис в строке поиска. Остальные поля будут заполнены автоматически.
 * Ввести адрес вручную. 
@@ -280,6 +259,18 @@
    :width: 16cm
 
    Параметры подложки веб-карты
+
+На вкладке "Ресурс" можно ввести название, которое будет отображаться в списке ресурсов Веб ГИС (:numref:`ngweb_admin_basemap_name`).
+
+.. figure:: _static/ngw_basemap_name_ru.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 14cm
+
+   Наименование подложки веб-карты
+
+На соответствующих вкладках можно добавить `"Описание" и "Метаданные" <https://docs.nextgis.ru/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_ ресурса.
+Как правило, метаданные используются для разработки сторонних приложений с помощью `API <https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html>`_.
 
 .. hint:: Не хотите зависеть от доступности внешних сервисов?
 
@@ -296,7 +287,7 @@
 .. figure:: _static/webmap_basemap_additional_ru.png
    :name: webmap_basemap_additional_ru
    :align: center
-   :width: 16cm
+   :width: 14cm
 
    Переход к дополнительным настройкам веб-карты
 
@@ -305,7 +296,7 @@
 .. figure:: _static/webmap_basemap_nobase_ru.png
    :name: webmap_basemap_nobase_ru
    :align: center
-   :width: 16cm
+   :width: 14cm
 
    Дополнительные настройки веб-карты
 
@@ -511,6 +502,8 @@
 
 Также можно ввести координаты вручную.
 
+После того, как веб-карта создана, вы можете также подобрать подходящий охват в режиме просмотра веб-карты и `установить его <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-webmap-update>`_ в качестве начального или ограничивающего.
+
 
 Посмотреть, как настраивается и работает начальный и ограничивающий охват карты, можно в нашем видео:
 
@@ -649,6 +642,16 @@
 Чтобы увидеть изменения в слоях без перезагрузки страницы, в меню дерева слоёв нажмите "Восстановить исходное состояние". Настройки слоёв обновятся в соответствии с внесёнными изменениями, но охват карты не изменится.
 
 Изменение веб-карты доступно пользователям, у которых есть `право на изменение <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#>`_ соответствующего ресурса.
+
+При редактировании настроек из режима просмотра карты можно задать начальный или ограничивающий охват карты по текущему охвату. Для этого на вкладке "Настройки" нажмите стрелочку вниз и выберите **Использовать текущий охват карты**.
+
+.. figure:: _static/ngw_extent_from_current_ru.png
+   :name: ngw_extent_from_current_pic
+   :align: center
+   :width: 20cm
+
+   Установка текущего охвата карты в качестве начального
+
 
 .. _ngw_webmap_optimize:
 
