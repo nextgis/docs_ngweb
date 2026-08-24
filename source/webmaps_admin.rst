@@ -196,7 +196,7 @@ Press **Save** to save the changes.
 Basemaps
 --------
 
-"Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" (see :numref:`admin_webmap_basemaps`). 
+"Basemaps" tab allows to add and remove basemaps using corresponding buttons "Add" and "Remove" or `disable basemaps <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-no-base>`_ altogether. 
 
 .. figure:: _static/admin_webmap_basemaps_eng_3.png
    :name: admin_webmap_basemaps
@@ -204,6 +204,8 @@ Basemaps
    :width: 16cm
 
    “Basemaps” tab
+
+For each basemap, you can set up a custom name different from the name of the resource.
 
 If “Default basemap” is checked, this basemap will be visible when the Web Map is opened.
 
@@ -259,15 +261,37 @@ The basemap will be previewed below. Press |button_toggle_basemap| **Toggle base
 
    Basemap settings
 
+.. hint:: 
+
+  Want to be independent of the basemap provider?
+
+  Deploy your own self-hosted basemap with `NextGIS GeoServices <https://nextgis.com/nextgis-geoservices/>`_!
 
 .. _ngw_map_no_base:
 
 Web Map with no basemap
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap: 
-create a new basemap and add it to your Web Map. Then turn this newly created basemap off.
+By default a Web Map is created with OpenStreetMap basemap. If you need a map without a basemap, on the Basemap tab go to **Additional settings**.
 
+
+.. figure:: _static/webmap_basemap_additional_en.png
+   :name: webmap_basemap_additional_ru
+   :align: center
+   :width: 14cm
+
+   Basemap settings for Web Map
+
+In the Additional settings section tick **Disable basemaps**.
+
+.. figure:: _static/webmap_basemap_nobase_en.png
+   :name: webmap_basemap_nobase_ru
+   :align: center
+   :width: 14cm
+
+   Basemaps disabled
+
+In this section you can also set up the background color. By default it's white. This color is visible if you have no basemap or your basemap has transparancy.
 
 
 .. _ngcom_layer_as_basemap:
