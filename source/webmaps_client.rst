@@ -211,9 +211,10 @@
 * |button_extent_all| Увеличить до всех слоёв - все объекты всех добавленных слоёв попадут в охват отображаемой карты;
 * |button_visibility_off| Скрыть все слои;
 * |button_restore| Восстановить исходное состояние (не перезагружая страницу и не теряя текущий охват карты);
-* |button_plus_layer| Добавить слои.
+* |button_plus_layer| Добавить слои;
+* |button_plus_layer| Добавить группу - добавляет новую группу в дерево слоёв. Чтобы добавить слой в группу, перетащите его на её название.
 
-.. figure:: _static/webmap_layers_panel_menu_ru_2.png
+.. figure:: _static/webmap_layers_panel_menu_ru_3.png
    :name: webmap_layers_panel_menu_pic
    :align: center
    :width: 20cm
@@ -236,25 +237,21 @@
 Меню слоя
 -----------
 
-
-
 Чтобы вызвать меню слоя, нажмите на три точки рядом с его названием. Доступны следующие операции:
 
-
-* |button_opacity| Настроить его непрозрачность при помощи ползунка.
-* |button_table| **Таблица объектов** - открывает на карте `таблицу объектов векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
-* |button_edit_black| **Редактировать** - активирует режим редактирования, который позволяет `изменять объекты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_ выбранного слоя. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку |button_maptool_save| на карте.
+* |button_extent_all| **Увеличить до слоя** - происходит масштабирование карты таким образом, чтобы выбранный слой занимал всю видимую площадь карты. 
 * |button_filter| **Фильтр**  позволяет отображать на карте только те объекты слоя, которые отвечают заданным условиям (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-filter>`_).
+* |button_table| **Таблица объектов** - открывает на карте `таблицу объектов векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
+* |button_edit_black| **Редактировать на карте** - активирует режим редактирования, который позволяет `изменять объекты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_ выбранного слоя. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку |button_maptool_save| на карте.
+* |button_tune| **Свойства** - позволяет настроить работу слоя на конкретной веб-карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_.
 * |button_article| **Описание** - если у слоя добаввлено описание, оно открывается в соответствующей панели.
 * |button_close| **Удалить слой** с карты (чтобы вернуть слой, нажмите **Восстановить** в меню дерева слоёв).
-* |button_extent_all| **Увеличить до слоя** - происходит масштабирование карты таким образом, чтобы выбранный слой занимал всю видимую площадь карты. 
-* |button_palette| **Редактировать ресурс стиля** - открывается во всплывающем окне, `подробнее о настройках стилей <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
-* |button_gear| **Редактировать ресурс слоя** - открывается во всплывающем окне,  подробнее о настройках ресурса `векторного <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ слоя.
-* |button_tune| **Свойства слоя** - позволяет настроить работу слоя на конкретной веб-карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_. 
+* |button_palette| **Редактировать стиль** - открывается во всплывающем окне, `подробнее о настройках стилей <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html>`_
+* |button_gear| **Редактировать слой** - настройки ресурса слоя, открываются во всплывающем окне,  подробнее о настройках ресурса `векторного <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html>`_ слоя.
+* Флажок **Идентифицируемый** означает, что при клике на объекты слоя информация о них отображается в `панели идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_. Если его отключить, то объекты этого слоя будут игнорироваться инструментом идентификаци.
+* |button_opacity| Настроить его непрозрачность при помощи ползунка.
 
-Флажок **Идентифицируемый** означает, что при клике на объекты слоя информация о них отображается в `панели идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_. Если его отключить, то объекты этого слоя будут игнорироваться инструментом идентификаци.
-
-.. figure:: _static/ngweb_webmap_layer_menu_ru_3.png
+.. figure:: _static/ngweb_webmap_layer_menu_ru_4.png
    :name: ngweb_webmap_layer_menu_pic
    :align: center
    :width: 20cm
@@ -266,7 +263,7 @@
 Фильтр объектов слоя
 ------------------------------
 
-Для каждого слоя можно задать фильтр. В меню слоя выберите **Фильтрация**. Во всплывающем окне добавьте одно или несколько условий. Если условий несколько, можно настроить, должны ли выполняться все или достаточно любого одного. 
+Для каждого слоя можно задать фильтр. В меню слоя выберите **Фильтр**. Во всплывающем окне добавьте одно или несколько условий. Если условий несколько, можно настроить, должны ли выполняться все или достаточно одного любого. `Подробнее об условиях поиска <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#table-search-filter>`_.
 
 .. figure:: _static/web_map_filter_add_ru.png
    :name: web_map_filter_add_pic
