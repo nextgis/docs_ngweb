@@ -5,7 +5,13 @@ Upgrade
 
 The version number for NextGIS Web On-Premise contains three parts in ``A.B.C`` pattern, where ``A.B`` is the main version number and ``C`` is a patch version. Upgrades between main versions must be performed step by step, without skipping a version. So if your current version is ``2.8.0`` and you wish to update to ``3.0.0``, you need to update to ``2.9.0`` first, and only then to ``3.0.0``. If there are patch versions (e.g. ``2.8.1``, ``2.8.2`` and so on), update to the latest patch version of the main version.
 
-The Administrator can check what the current version of NextGIS Web On-Premise is by viewing the System information section of the Control panel. Also it is present in the ``docker-compose.yaml`` file in the image names (``services.<service_name>.image``). 
+The Administrator can check what the current version of NextGIS Web On-Premise is by viewing the System information section of the Control panel. Also it is present in the ``docker-compose.yaml`` file in the image names (``services.app.image``).
+
+.. admonition:: Changing editions and enabling Whitelabel
+
+   When upgrading from Standard edition to Extended edition, as well as when adding the Whitelabel option, you must first upgrade to the latest version of the current edition, and then upgrade to the new edition.
+
+   The steps described below also apply when switching from one edition to another, only **step 4** differs where changes are made to ``docker-compose.yaml``. You need to contact NextGIS support to get the current ``docker-compose.yaml`` file with the necessary changes. Don't forget to attach the current ``docker-compose.yaml`` file from your server to your request so that NextGIS specialists can make the necessary changes.
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
