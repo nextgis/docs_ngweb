@@ -4,7 +4,7 @@ Additional information
 Examples of docker-compose.yaml
 --------------------------------------
 
-Standard Edition 3.2.0
+Standard Edition 3.3.0
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: yaml
@@ -21,7 +21,7 @@ Standard Edition 3.2.0
 
    services:
      app:
-       image: cr.nextgis.com/nextgisweb/std/app:3.2.0
+       image: cr.nextgis.com/nextgisweb/std/app:3.3.0
        volumes:
          - { type: volume, source: data_app, target: /opt/ngw/data/app }
          - { type: volume, source: config_app, target: /opt/ngw/config/app }
@@ -36,7 +36,7 @@ Standard Edition 3.2.0
          NEXTGISWEB__CORE__LOCALE__DEFAULT: "en"
 
      postgres:
-       image: cr.nextgis.com/nextgisweb/std/postgres:3.2.0
+       image: cr.nextgis.com/nextgisweb/std/postgres:3.3.0
        volumes:
          - { type: volume, source: data_postgres, target: /opt/ngw/data/postgres }
          - { type: volume, source: config_postgres, target: /opt/ngw/config/postgres }
@@ -44,7 +44,7 @@ Standard Edition 3.2.0
        restart: unless-stopped
 
      archivist:
-       image: cr.nextgis.com/nextgisweb/std/archivist:3.2.0
+       image: cr.nextgis.com/nextgisweb/std/archivist:3.3.0
        volumes:
          - { type: volume, source: data_app, target: /opt/ngw/data/app }
          - { type: volume, source: data_postgres, target: /opt/ngw/data/postgres }
@@ -57,7 +57,7 @@ Standard Edition 3.2.0
        restart: unless-stopped
 
      ngid:
-       image: cr.nextgis.com/nextgisweb/std/ngid:3.2.0
+       image: cr.nextgis.com/nextgisweb/std/ngid:3.3.0
        volumes:
          - { type: volume, source: data_ngid, target: /opt/ngid/data/ngid }
          - { type: volume, source: config_ngid, target: /opt/ngid/config/ngid }
@@ -80,7 +80,7 @@ Standard Edition 3.2.0
      secret: {}
      backup: {}
 
-Extended Edition 3.2.0
+Extended Edition 3.3.0
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: yaml
@@ -99,7 +99,7 @@ Extended Edition 3.2.0
 
    services:
      app:
-       image: cr.nextgis.com/nextgisweb/ext/app:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/app:3.3.0
        volumes:
          - { type: volume, source: data_app, target: /opt/ngw/data/app }
          - { type: volume, source: config_app, target: /opt/ngw/config/app }
@@ -114,7 +114,7 @@ Extended Edition 3.2.0
          NEXTGISWEB__CORE__LOCALE__DEFAULT: "en"
 
      postgres:
-       image: cr.nextgis.com/nextgisweb/ext/postgres:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/postgres:3.3.0
        volumes:
          - { type: volume, source: data_postgres, target: /opt/ngw/data/postgres }
          - { type: volume, source: config_postgres, target: /opt/ngw/config/postgres }
@@ -122,7 +122,7 @@ Extended Edition 3.2.0
        restart: unless-stopped
 
      archivist:
-       image: cr.nextgis.com/nextgisweb/ext/archivist:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/archivist:3.3.0
        volumes:
          - { type: volume, source: data_app, target: /opt/ngw/data/app }
          - { type: volume, source: data_postgres, target: /opt/ngw/data/postgres }
@@ -135,7 +135,7 @@ Extended Edition 3.2.0
        restart: unless-stopped
 
      ngid:
-       image: cr.nextgis.com/nextgisweb/ext/ngid:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/ngid:3.3.0
        volumes:
          - { type: volume, source: data_ngid, target: /opt/ngid/data/ngid }
          - { type: volume, source: config_ngid, target: /opt/ngid/config/ngid }
@@ -149,7 +149,7 @@ Extended Edition 3.2.0
            eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9....
 
      chub:
-       image: cr.nextgis.com/nextgisweb/ext/chub:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/chub:3.3.0
        volumes:
          - { type: volume, source: secret, target: /opt/chub/secret }
        depends_on: [postgres]
@@ -160,7 +160,7 @@ Extended Edition 3.2.0
          <<: *shared
 
      thub:
-       image: cr.nextgis.com/nextgisweb/ext/thub:3.2.0
+       image: cr.nextgis.com/nextgisweb/ext/thub:3.3.0
        volumes:
          - { type: volume, source: secret, target: /opt/thub/secret }
        depends_on: [postgres]
