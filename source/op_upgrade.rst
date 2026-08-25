@@ -121,14 +121,16 @@ After creating a backup (step 3) you need to update PostGIS by running the comma
    $ docker compose up -d postgres
    $ docker compose exec postgres psql -U postgres nextgisweb
 
-In the interactive PostgreSQL console run the following command (``nextgisweb=#`` is the console's welcome message, it's entered automatically 
-and you don't have to add it, only the commands that follow):
+In the interactive PostgreSQL console run the following command (``nextgisweb=#`` is the command prompt, it's entered automatically and you don't have to add it, only the commands that follow):
 
 .. code:: sql
 
    nextgisweb=# ALTER USER nextgisweb SUPERUSER;
    nextgisweb=# SET SESSION AUTHORIZATION nextgisweb;
+   nextgisweb=# ALTER EXTENSION postgis UPDATE;
    nextgisweb=# SELECT postgis_extensions_upgrade();
+   nextgisweb=# SELECT postgis_extensions_upgrade();
+   nextgisweb=# DROP EXTENSION postgis_raster;
    nextgisweb=# ALTER USER nextgisweb NOSUPERUSER;
    nextgisweb=# \q
 
