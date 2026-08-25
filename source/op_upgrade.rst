@@ -33,8 +33,7 @@
    $ cd /srv/ngwdocker
    $ cp docker-compose.yaml docker-compose-A.B.C.yaml
 
-**Шаг 4.** Обновите файл ``docker-compose.yaml``, заменив в нем упоминания текущей версии в именах образов
-(``services.<имя_сервиса>.image``) на новую версию, на которую вы выполняете обновление.
+**Шаг 4.** Обновите файл ``docker-compose.yaml``, заменив в нем упоминания текущей версии в именах образов (``services.<имя_сервиса>.image``) на новую версию, на которую вы выполняете обновление.
 
 **Шаг 5.** Загрузите новые образы Docker на сервер: в случае наличия доступа к Интернету выполните команду:
 
@@ -124,15 +123,16 @@
    $ docker compose up -d postgres
    $ docker compose exec postgres psql -U postgres nextgisweb
 
-В интерактивной консоли PostgreSQL выполните команды (``nextgisweb=#`` -
-это приглашение консоли PostgreSQL, оно выводится автоматически и
-вводить его не нужно, только команды после него):
+В интерактивной консоли PostgreSQL выполните команды (``nextgisweb=#`` - это приглашение консоли PostgreSQL, оно выводится автоматически и вводить его не нужно, только команды после него):
 
 .. code:: sql
 
    nextgisweb=# ALTER USER nextgisweb SUPERUSER;
    nextgisweb=# SET SESSION AUTHORIZATION nextgisweb;
+   nextgisweb=# ALTER EXTENSION postgis UPDATE;
    nextgisweb=# SELECT postgis_extensions_upgrade();
+   nextgisweb=# SELECT postgis_extensions_upgrade();
+   nextgisweb=# DROP EXTENSION postgis_raster;
    nextgisweb=# ALTER USER nextgisweb NOSUPERUSER;
    nextgisweb=# \q
 
