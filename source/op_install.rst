@@ -4,7 +4,7 @@ Installation
 Before installation make sure that you've contacted NextGIS company and obtained:
 
 - File ``docker-compose.yaml`` - see Additional information for examples, but they don't contain all the necessary parameters.
-- Access to NextGIS Container Registry (if installation is done using Internet access) or archived Docker images (if installation is done without Internet).
+- Login and password for access to NextGIS Container Registry.
 
 .. note:: NextGIS team can perform the installation remotely, if you provide remote access that fits the `requirements <https://docs.nextgis.com/docs_ngweb/source/remote.html>`_.
 
@@ -89,7 +89,7 @@ At the start of the ``docker-compose.yaml`` file you'll find a section called  `
 
 Keep in mind that ``COLLECTOR_HUB_URL`` and ``TRACKER_HUB_URL`` variables are used only in the Extended edition. If they are not present, you don't have to add them. Variables ``NEXTGISID_INSTANCE_NGID`` and ``NEXTGISID_ADMINISTRATOR_NGID`` are pre-filled in the docker-compose.yaml file provided by NextGIS. After making all the edits save the file and close the text editor.
 
-If the software is deployed to a server without Internet access, at this stage you need to upload all the necessary Docker images to your server. Generate a single-file image archive using the tool `NextGIS Container Registry export <https://toolbox.nextgis.com/t/ngcr_export>`_, upload them to the server, then run the command to load the images from the archives: 
+If you are installing without Internet access, at this stage you need to import all required Docker images to the server. Generate an archive of the images using the `NextGIS Container Registry image export <https://toolbox.nextgis.com/t/ngcr_export>`_ tool. You can check the distribution version used in the ``docker-compose.yaml`` file under ``services.app.image``; for example, the value ``cr.nextgis.com/nextgisweb/std/app:3.3.0`` corresponds to version ``3.3.0``. You can run the export tool using any NextGIS ID account, including the free plan, but when running the tool you will need to provide your login and password for access to NextGIS Container Registry. Download the image archive to your local computer, then transfer it to the server and run the command to load images from the archive:
 
 .. code:: bash
 

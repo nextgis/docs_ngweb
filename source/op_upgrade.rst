@@ -9,6 +9,13 @@ The Administrator can check what the current version of NextGIS Web On-Premise i
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
+If you are upgrading with Internet access, to obtain the images you must authenticate to the NextGIS Container Registry using the login (example) and password (sesame) provided by NextGIS during the initial installation:
+
+.. code:: bash
+
+   $ docker login cr.nextgis.com -u example -p sesame
+   Login Succeeded
+
 To update from one version to another follow these steps:
 
 **Step 1.** Review the actions and requirements listed below for the specific version:
@@ -35,7 +42,7 @@ To update from one version to another follow these steps:
    $ cd /srv/ngwdocker
    $ docker compose pull
 
-If you don't have Internet access, generate a single-file image archive using the tool `NextGIS Container Registry export <https://toolbox.nextgis.com/t/ngcr_export>`_, upload them to the server, then run the command to load the images from the archives:
+If you are upgrading without Internet access, at this stage you need to import the Docker images of the new version to the server. Generate an archive of the images using the `NextGIS Container Registry image export <https://toolbox.nextgis.com/t/ngcr_export>`_ tool. You can run the export tool using any NextGIS ID account, including the free plan, but when running the tool you will need to provide your login and password for access to the NextGIS Container Registry. Download the image archive to your local computer, then transfer it to the server and run the command to load images from the archive:
 
 .. code:: bash
 
