@@ -460,7 +460,7 @@ Export settings
 The parameters of the export are:
 
 * **Data format** - GeoPackage as the default, select one of supported formats from the dropdown menu;
-* **Spacial reference system** - in addition to standard coordinate systems Longitude-Latitude (EPSG: 4326) and Mercator (EPSG: 3857) you can select custom coordinate systems created earlier (how to add custom SRS see `this page <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_);
+* **Spacial reference system** - in addition to standard coordinate systems Longitude-Latitude (EPSG: 4326) and Mercator (EPSG: 3857) you can select custom coordinate systems created earlier (how to add custom SRS see `this page <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_). Note that KML, KMZ and GPX formats can only be exported in EPSG: 4326;
 * **Encoding** - UTF-8, Windows-1251, or Windows-1252;
 * **FID field** is used for setting a field name to be added to a exported data where the object identifiers will be placed (the default is “ngw_id”).;
 * You can choose to **Use field display names instead of keynames** Keynames are technical and use only plain Latin symbols.  Display names can be in any language, usually they are seen as column headers or field labels in a form (for more details see `this section <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).;
