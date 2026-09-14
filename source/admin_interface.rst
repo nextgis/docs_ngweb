@@ -287,7 +287,7 @@
 * Включить `версионирование по умолчанию <https://docs.nextgis.ru/docs_ngweb/source/version.html#vers-ngw-default>`_
 * `Настроить веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html>`_
 * `Управлять системами координат <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html#ngw-srs>`_
-* Персонализировать элементы интерфейса при помощи `модуля White Label <https://docs.nextgis.ru/docs_ngweb/source/label.html>`_ (для Веб ГИС, развёрнутой на своём сервере)
+* Персонализировать элементы интерфейса при помощи `модуля White Label <https://docs.nextgis.ru/docs_ngweb/source/label.html>`_ 
 
 Ряд настроек доступен только для пользователей плана `Premium <http://nextgis.ru/nextgis-com/plans>`_ .
 
