@@ -53,7 +53,7 @@ Edit mode on a Web Map
 * |button_maptool_move| `Move <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-move-objects>`_ an entire feature;
 * |button_maptool_attrib| `Edit attribute values <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attributes>`_;
 * |button_maptool_delete| `Delete <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-delete-objects>`_;
-* |button_maptool_snap| Snapping: blue = enabled, white = disabled;
+* |button_maptool_snap| Snapping (blue = enabled, white = disabled), click on the icon to set up snapping to edges, vertices and/or intersections, when all is unticked, snapping is off;
 * |button_maptool_save| Stop editing and leave Edit mode;
 * |button_maptool_undo| Undo the last action.
 
@@ -152,7 +152,7 @@ To finish creating geometry, press **Enter**, click twice on the last vertex or 
 
 If you accidentally click on a wrong place, press **Backspace** to delete the last vertex and place it elsewhere.
 
-Snapping is enabled by default for lines and polygons. To disable it, click |button_maptool_snap|.
+Snapping is enabled by default for lines and polygons. To disable it, click |button_maptool_snap| and untick all the options.
 
 .. note:: If you need to create a polygon with a hole, first draw the outer ring and complete feature creation, then use |button_maptool_hole| tool to `cut the hole <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#webmap-hole>`_.
 
@@ -225,7 +225,7 @@ Edit vertices
 
 Editable features are highlighted.
 
-3. Click on a vertex and drag it to a new position by holding the left mouse button. Snapping is active by default. To disable it, click |button_maptool_snap|.
+3. Click on a vertex and drag it to a new position by holding the left mouse button. Snapping is active by default. To disable it, click |button_maptool_snap| and untick all the options.
 
 .. figure:: _static/webgis_edit_vertices_en.png
    :name: webgis_edit_vertices_pic
