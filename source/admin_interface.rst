@@ -297,7 +297,7 @@ Control panel allows to execute the following actions:
 * Set up `Feature versioning by default <https://docs.nextgis.com/docs_ngweb/source/version.html#vers-ngw-default>`_
 * `Customize Web Maps <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html>`_
 * `Add spacial reference systems <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_
-* `Customize UI elements with White Label module (on-premise only) <https://docs.nextgis.com/docs_ngweb/source/label.html>`_
+* `Customize UI elements with White Label module <https://docs.nextgis.com/docs_ngweb/source/label.html>`_
 
 For more information about creation of user groups and users and granting 
 permissions see `this section <https://docs.nextgis.com/docs_ngweb/source/users.html`_.
