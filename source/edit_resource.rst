@@ -144,9 +144,9 @@ Delete resource
 
 Web GIS allows to delete uploaded data through deleting of the corresponding resources. 
 
-In the group page press the cross icon opposite the resource.
+In the group page open the context menu of the resource and select |button_delete|**Delete**.
 
-.. figure:: _static/ngw_delete_resource_from_group_en.png
+.. figure:: _static/ngw_delete_resource_from_group_en_2.png
    :name: ngw_delete_resource_from_group_pic
    :align: center
    :width: 20cm
@@ -155,14 +155,14 @@ In the group page press the cross icon opposite the resource.
 
 A pop-up window for confirmation will appear. Click **Delete** to confirm.
 
-.. figure:: _static/ngw_delete_from_group_confirmation_en.png
+.. figure:: _static/ngw_del_res_from_group_confirm_en.png
    :name: ngw_del_res_from_group_confirm_pic
    :align: center
    :width: 20cm
    
    Confirmation to delete a resource
 
-Alternatively, open the resource page and then select "Delete" in the actions pane (see :numref:`ngw_window_update_delete_resource`). 
+Alternatively, open the resource page and then select |button_delete| **Delete** in the actions pane. 
 
 .. figure:: _static/ngw_window_update_delete_resource_2.png
    :name: ngw_window_update_delete_resource
@@ -173,7 +173,7 @@ Alternatively, open the resource page and then select "Delete" in the actions pa
    
 In the opened "Delete resource" window you need to tick "Confirm deletion of the resource" and press **Delete** button. 
 
-.. figure:: _static/ngw_delete_from_page_confirmation_en.png
+.. figure:: _static/ngw_delete_res_confirm_en.png
    :name: ngw_delete_from_group_confirmation_pic
    :align: center
    :width: 20cm
@@ -184,23 +184,15 @@ If the resource was deleted successfully, the information about it disappear fro
 
 When a resource is deleted, all its subresources also get deleted. Before confirming deletion you'll see a warning about the number of resources of each type that are about to be deleted:
 
-.. figure:: _static/ngw_delete_subres_warning_group_en.png
+.. figure:: _static/ngw_delete_subres_warning_group_en_2.png
    :name: ngw_delete_subres_warning_group_pic
    :align: center
    :width: 14cm
 
    Warning when deleting a resource group
 
-If you selected "Delete" action from the resource page and not from the resource list, the name of the selected resource will be in the path above.
 
-.. figure:: _static/ngw_delete_subres_warning_layer_en.png
-   :name: ngw_delete_subres_warning_layer_pic
-   :align: center
-   :width: 16cm
-
-   Warning when deleting a layer
-
-You can also delete resources in your Web GIS `from QGIS using NextGIS Connect plugin <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
+.. hint:: You can also delete resources in your Web GIS `from QGIS using NextGIS Connect plugin <https://docs.nextgis.com/docs_ngconnect/source/manage.html#connect-resource-delete>`_.
 
 .. _ngw_delete_resource_multi:
 
