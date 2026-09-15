@@ -152,12 +152,12 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 Это можно сделать несколькими способами:
 
-Находясь в родительском ресурсе, в списке дочерних напротив целевого слоя выбрать иконку |button_delete| (см. :numref:`ngw_delete_resource_from_group_pic`)
+Находясь в родительском ресурсе, в списке дочерних выбрать иконку |button_delete| в контекстном меню ресурса.
 
 .. |button_delete| image:: _static/button_delete.png
    :width: 6mm
 
-.. figure:: _static/ngw_delete_resource_from_group_ru.png
+.. figure:: _static/ngw_delete_resource_from_group_ru_2.png
    :name: ngw_delete_resource_from_group_pic
    :align: center
    :width: 20cm
@@ -166,7 +166,7 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 Затем подтвердить операцию во всплывающем окне.
 
-.. figure:: _static/ngw_deletion_resource_from_group_ru.png
+.. figure:: _static/ngw_del_res_from_group_confirm_ru.png
    :name: ngw_deletion_resource_from_group_pic
    :align: center
    :width: 20cm
@@ -175,18 +175,18 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 Или
 
-Перейти внутрь ресурса, который вы хотите удалить и нажать кнопку "Удалить" в блоке операций справа (см. :numref:`ngw_window_update_delete_resource`).
+Перейти внутрь ресурса, который вы хотите удалить и нажать кнопку |button_delete| **Удалить** в блоке операций справа.
 
-.. figure:: _static/ngw_window_update_delete_resource_rus_2.png
+.. figure:: _static/ngw_delete_resource_ru.png
    :name: ngw_window_update_delete_resource
    :align: center
    :width: 20cm
 
    Выбор действия "Удалить" на странице ресурса
 
-Затем подтвердить операцию в открывшемся окне (см. :numref:`ngw_deletion_resource`), поставив галочку и нажав на синюю кнопку "Удалить".
+Затем подтвердить операцию в открывшемся окне, нажав на красную кнопку "Удалить".
 
-.. figure:: _static/ngw_deletion_resource_rus_2.png
+.. figure:: _static/ngw_delete_res_confirm_ru.png
    :name: ngw_deletion_resource
    :align: center
    :width: 20cm
@@ -197,21 +197,14 @@ NextGIS Web позволяет удалять созданные ресурсы.
 
 При удалении ресурса также удаляются все его дочерние ресурсы (содержимое группы, стили слоя). В процессе удаления появится предупреждение с указанием типов и количества удаляемых ресурсов:
 
-.. figure:: _static/ngw_delete_subres_warning_group_ru.png
+.. figure:: _static/ngw_delete_subres_warning_group_ru_2.png
    :name: ngw_delete_subres_warning_group_pic
    :align: center
    :width: 14cm
 
    Предупреждение при удалении группы ресурсов
 
-Если удаление происходит со страницы ресурса, то имя основного выбранного для удаления ресура видно в строке пути.
 
-.. figure:: _static/ngw_delete_subres_warning_layer_ru.png
-   :name: ngw_delete_subres_warning_layer_pic
-   :align: center
-   :width: 16cm
-
-   Предупреждение при удалении слоя
 
 .. _ngw_delete_resource_multi:
 
