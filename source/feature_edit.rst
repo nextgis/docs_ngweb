@@ -372,6 +372,8 @@
 
    Вкладка "Описание"
 
+.. seealso:: `Экспорт и импорт описаний <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-manage-descriptions>`_
+
 .. note:: Если вы открыли окно редактирования атрибутов из таблицы объектов на отдельной странице, то также будет доступна вкладка изменения геометрии объекта. Если вы открыли редактирование атрибутов из просмотра веб-карты, то для изменения геометрии нужно активировать `режим редактирования <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#edit-mode>`_.
 
 
@@ -528,6 +530,42 @@
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/62233baae1d2c10e21ad4709ecffe5cc/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Посмотреть видео на `youtube <https://youtu.be/8R4uY5CCE3w>`__, `rutube <https://rutube.ru/video/62233baae1d2c10e21ad4709ecffe5cc/>`__.
+
+.. _ngw_manage_descriptions:
+
+Экспорт и импорт описаний объектов
+-----------------------------------
+
+Описания объектов не сохраняются в файл при экспорте объектов слоя или копировании объектов. Если вы хотите, например, создать копию слоя, сохранив описания объектов, их можно экспортировать и перенести отдельно.
+
+.. figure:: _static/ngw_manage_descriptions_ru.png
+   :name: ngw_manage_descriptions_pic
+   :align: center
+   :width: 20cm
+
+   Переход к управлению вложениями
+
+Доступно две вкладки - экспорт и импорт. Экспорт позволяет сохранить вложения в виде ZIP-архива. 
+
+.. figure:: _static/ngw_descriptions_export_ru.png
+   :name: ngw_descriptions_export_pic
+   :align: center
+   :width: 20cm
+
+   Экспорт описаний
+
+Полученный архив содержит по одному HTML файлу для каждого объекта, названному по идентификатору объекта. Форматирование описания сохраняется.
+
+Чтобы загрузить сохранённые описания, в целевом слое также нажмите **Управление описаниями**, перейдите на вкладку "Импорт" и загрузите ZIP-архив. 
+
+.. figure:: _static/ngw_descriptions_import_ru.png
+   :name: ngw_descriptions_import_pic
+   :align: center
+   :width: 20cm
+
+   Импорт описаний из архива
+
+Если у объектов слоя уже есть описания, и вы хотите заменить их на новые, отметьте **Удалить существующие описания**.
 
 .. _ngw_allow_edit:
 
