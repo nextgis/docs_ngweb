@@ -131,7 +131,7 @@ Layers of a particular map have several settings, see :numref:`admin_webmap_crea
 
 When the **Identifiable** flag is on, a click on the map opens the `Identify panel <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ with the information about the layer feature. Untick it to have the layer ignored by the identification.
 
-The “Transparency” field sets the layer transparency on a map between 0% (opaque) and 100% (completely transparent). 
+The "Opacity" field sets the layer transparency on a map between 0% (completely transparent) and 100% (opaque). 
 
 We recommend setting the "Adapter" field to "Image" (a single image for the entire map), unless there are some special requirements. Alternatively, you can choose “Tiles” (images of 256 x 256 pixels).
 
