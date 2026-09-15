@@ -175,7 +175,7 @@
 Нажмите на поле "Источник" и выберите нужный ресурс стиля.
 
 .. figure:: _static/style_from_resource_ru.png
-   :name: style_from_resource_ru
+   :name: style_from_resource_pic
    :align: center
    :width: 16cm
 
@@ -193,7 +193,7 @@
 В NextGIS Web есть возможность создать стиль, просто описав его словами. Для этого нажмите на кнопку **Сгенерировать с AI**. В открывшемся окне опишите простыми словами нужный стиль и нажмите **Сгенерировать**.
 
 .. figure:: _static/style_generate_ai_ru.png
-   :name: style_from_resource_ru
+   :name: style_generate_ai_pic
    :align: center
    :width: 20cm
 
@@ -202,9 +202,9 @@
 Будет создан QML-файл с соответствующими параметрами.
 
 .. figure:: _static/style_generate_ai_result_ru.png
-   :name: style_from_resource_ru
+   :name: style_generate_ai_result_pic
    :align: center
-   :width: 20cm
+   :width: 14cm
 
    Сгенерированный векторный стиль QGIS для точечного слоя
 
