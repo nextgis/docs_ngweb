@@ -389,8 +389,7 @@ Files in the following formats can be viewed directly in the web client:
 
 Other types of files can be added as attachments, but won't be viewed in the interface.
 
-After a click on a photo preview a lightbox window is open (a  
-javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
+After a click on a photo preview a lightbox window is open (a javascript powered window in browser). Photo size is adjusted to fit the window.  Photos have descriptions and user can navigate through them using left and right arrow keys on the keyboard (see :numref:`webmap_identification_photo_lightbox`).
 
 .. figure:: _static/webmap_ident_photo_lightbox_2.png
    :name: webmap_identification_photo_lightbox
@@ -401,15 +400,23 @@ javascript powered window in browser). Photo size is adjusted to fit the window.
 
 You can zoom in and out, turn the image or save it to your device.
 
-To navigate within the panorama, use the mouse. Hold down the left mouse button to rotate the camera. Use the wheel to zoom in and out. Panorama mode can be disabled by clicking on the blue round button in the upper right corner.
+To navigate within the panorama, use the mouse. Hold down the left mouse button to rotate the camera. Use the wheel to zoom in and out. Panorama mode can be disabled by clicking |button_panorama_toggle|.
 
-.. figure:: _static/panorama_opened_en.png
+.. figure:: _static/panorama_opened_en_2.png
    :name: panorama_opened_pic
    :align: center
    :width: 18cm
 
    Panorama opened from Web Map
 
+You can also navigate between connected panoramas. If you have a tour in Garden Gnome Package (.ggpkg) format exported by Pano2VR you can `convert it to a set of panoramas with navigation points <https://toolbox.nextgis.com/t/pano2vr?from-docs=1>`_. Red dots mark the points where you can move to the ajasent panorama. 
+
+.. figure:: _static/panorama_connected_en.png
+   :name: panorama_connected_pic
+   :align: center
+   :width: 20cm
+
+   Navigation between connected panoramas
 
 .. _ngw_add_photos:
 
@@ -437,7 +444,7 @@ Enter titles for the attachments and press **Save**.
 After uploading you can see previews of photos and panoramas on the "Attachments" tab of the identify window (see :numref:`attach_tab_pic`).
 
 .. note:: 
-   By default attachments could be added by any user but there is an option      to limit number of users who can upload photos (see      `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
+   By default attachments could be added by any user but there is an option to limit number of users who can upload photos (see `Managing access rights <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_).
 
 You can edit file names and descriptions of the added attachments. To delete an attachment, press the cross icon to its right. If you've made an error during editing, press **Reset**, all modifications will be cancelled.   
 
@@ -572,3 +579,5 @@ On the Settings tab in the Layers editing field select **Disable** in the dropdo
 
    Disabling editing on a Web Map
 
+.. |button_panorama_toggle| image:: _static/button_panorama_toggle.png
+   :width: 6mm
