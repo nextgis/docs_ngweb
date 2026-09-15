@@ -16,7 +16,7 @@
 * `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе;
 * `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_;
 * `создав копию уже существующего ресурса стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_;
-* сгенерировав стиль с помощью ИИ.
+* `сгенерировав стиль с помощью ИИ <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-ai>`_.
 
 Для растрового слоя можно создать стиль:
 
