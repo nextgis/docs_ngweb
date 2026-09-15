@@ -279,7 +279,7 @@ NextGIS Web может принимать многослойные наборы 
 * :term:`GeoTIFF` или ZIP-архив с таким файлом;
 * геопривязанный JPEG или PNG в виде ZIP-архива, который включает само изображение и файл привязки \*.aux.xml.
 
-.. hint: Где взять данные?
+.. hint:: Где взять данные?
 
    `Данные рельефа <https://data.nextgis.com/ru/region/custom/dem/https://data.nextgis.com/ru/?from-docs>`_, `ландшафты <https://data.nextgis.com/ru/region/custom/landcover/https://data.nextgis.com/ru/?from-docs>`_ и `спутниковые снимки <https://data.nextgis.com/ru/region/custom/sat/https://data.nextgis.com/ru/?from-docs>`_ на NextGIS Data
 
