@@ -15,7 +15,8 @@
 * `из файла  <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#qgis>`_;
 * `пользовательский <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_, задав параметры стиля в интерфейсе;
 * `строковым представлением MapServer <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#mapserver>`_;
-* `создав копию уже существующего ресурса стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_.
+* `создав копию уже существующего ресурса стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_;
+* сгенерировав стиль с помощью ИИ.
 
 Для растрового слоя можно создать стиль:
 
@@ -184,6 +185,30 @@
 
 Будет создан стиль, полностью повторяющий выбранный. 
 
+.. _ngw_qgis_style_ai:
+
+Создание стиля с помощью ИИ
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+В NextGIS Web есть возможность создать стиль, просто описав его словами. Для этого нажмите на кнопку **Сгенерировать с AI**. В открывшемся окне опишите простыми словами нужный стиль и нажмите **Сгенерировать**.
+
+.. figure:: _static/style_generate_ai_ru.png
+   :name: style_from_resource_ru
+   :align: center
+   :width: 20cm
+
+   Описание стиля для генерации искусственным интеллектом
+
+Будет создан QML-файл с соответствующими параметрами.
+
+.. figure:: _static/style_generate_ai_result_ru.png
+   :name: style_from_resource_ru
+   :align: center
+   :width: 20cm
+
+   Сгенерированный векторный стиль QGIS для точечного слоя
+
+Этот стиль можно при необходимости `редактировать в QGIS и синхронизировать изменения с Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_ с помощью модуля NextGIS Connect.
 
 .. _ngw_qgis_style_svg:
 
