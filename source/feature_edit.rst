@@ -358,6 +358,8 @@ Add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.htm
 
    Description tab
 
+.. seealso:: `Export and import descriptions <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-manage-descriptions>`_
+
 .. note:: If you opened the feature attributes dialog from the Feature table on a separate page, you can edit the feature's geometry in the fourth tab. If you opened the edit dialog from a Web Map, to edit the geometry activate `Edit mode <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_.
 
 
@@ -511,6 +513,42 @@ The resulting archive can be imported to add the attachments to the layer featur
 
 .. to do:: See the process of importing and exporting attachments in our video:
 
+.. _ngw_manage_descriptions:
+
+Export and import feature descriptions
+--------------------------------------
+
+Feature descriptions are not included in the data file while exporting the layer features or copying them to another layer. So if you want to copy the descriptions too, you can export them separately.
+
+.. figure:: _static/ngw_manage_descriptions_en.png
+   :name: ngw_manage_descriptions_pic
+   :align: center
+   :width: 20cm
+
+   Managing descriptions
+
+Two tabs are available: export and import. On the Export tab you can download the descriptions af all layer's features as a ZIP archive. 
+
+.. figure:: _static/ngw_descriptions_export_en.png
+   :name: ngw_descriptions_export_pic
+   :align: center
+   :width: 20cm
+
+   Exporting descriptions
+
+The archive contains one HTML per layer feature, with the feature ID used as the file name. The text formatting is preserved.
+
+To upload the saved descriptions, open the target layer, to to **Manage descriptions**, open the "Import" tab and upload the ZIP-archive. 
+
+.. figure:: _static/ngw_descriptions_import_en.png
+   :name: ngw_descriptions_import_pic
+   :align: center
+   :width: 20cm
+
+   Importing descriptions from ZIP archive
+
+If the layer features already have descriptions and you want to replace them, tick **Delete existing descriptions**.
+
 
 .. _ngw_allow_edit:
 
@@ -520,7 +558,7 @@ Disable editing on the map
 
 By default editing of features on a Web Map is enabled. You can disable editing in the Web Map settings on the “Settings” tab. 
 
-.. note:: There are other way to edit vector layers. If you don't want users to modify your data, configure `permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ for the resources.
+.. note:: There are other way to edit vector layers. If you don't want users to modify your data, configure `permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for the resources.
 
 Click |button_edit| next to the Web Map name to enter `Update resource <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-resource>`_ dialog.
 

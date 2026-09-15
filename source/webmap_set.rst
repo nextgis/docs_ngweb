@@ -92,7 +92,7 @@ The following parameters can be set up:
 * "Limit by Web Map initial extent" - the search will be performed within the extent set in the Web Map settings
 * "Provider" - defines the geocoder used for address search. OpenStreetMap by default, can be changed to Yandex.Maps
 * "Limit search results to countries" - while using OSM, if a country code is specified (de, fr, gb etc), the search results will only include matches from the selected country's territory
-* "Yandex.Maps API Geocoder Key" - when Yandex.Maps is selected as provider, this is the field to enter the API key. Users obtain the keys independently by signing up on https://developer.tech.yandex.ru.
+* "Yandex.Maps API Geocoder Key" - when Yandex.Maps is selected as provider, this is the field to enter the API key. Users obtain the keys independently by signing up on https://developer.tech.yandex.com.
 
 
 .. figure:: _static/adress_search_yandex_API_en.png
@@ -141,7 +141,7 @@ To select a provider, go to control panel and open `Web Map settings <https://do
    
    Selecting address search provider
 
-To use Yandex.Maps enter your API key in the field on the right. API keys can be obtained by users signed up on https://developer.tech.yandex.ru.
+To use Yandex.Maps enter your API key in the field on the right. API keys can be obtained by users signed up on https://developer.tech.yandex.com.
 
 .. figure:: _static/adress_search_yandex_API_en.png
    :name: adress_search_yandex_API_key_pic

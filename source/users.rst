@@ -8,7 +8,7 @@ Keep in mind, that the user would only see the resources if corresponding `permi
 * "Authenticated" or "Everyone";
 * a user group that has `"new users" flag ticked <https://docs.nextgis.com/docs_ngweb/source/users.html#ngweb-admin-controlpanel-usergroup-create-pic>`_.
 
-After adding a user to your team, you can include them in a `group <https://docs.nextgis.com/docs_ngweb/source/users.html#ngw-create-group>`_ or `set up permissions <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_ for that particular user.
+After adding a user to your team, you can include them in a `group <https://docs.nextgis.com/docs_ngweb/source/users.html#ngw-create-group>`_ or `set up permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for that particular user.
 
 .. _ngw_create_group:
 
