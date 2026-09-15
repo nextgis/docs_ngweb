@@ -14,7 +14,8 @@ For a Vector layer, you can:
 * `upload a file <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis-style-from-file>`_;
 * `set up custom style parameters <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#custom-qgis-style>`_ in the web interface;
 * `enter in string form using MapServer tags <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#mapserver-style>`_;
-* copy an existing style.
+* `copy an existing style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-copy>`_;
+* `generate a style with AI <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-ai>`_.
 
 For a Raster layer, you can:
 
@@ -117,6 +118,31 @@ Click on the "Source" field and select the style you want to copy.
 Click **Create** to finish.
 
 A new style is created, identical to the source style.
+
+.. _ngw_qgis_style_ai:
+
+Generate a style with AI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In NextGIS Web you can generate a style by simply describing it. Click on the  **Generate with AI** button. In the opened window describe the style in simple words and click **Generate**.
+
+.. figure:: _static/style_generate_ai_en.png
+   :name: style_generate_ai_pic
+   :align: center
+   :width: 20cm
+
+   AI prompt for style generation
+
+A QML file with the corresponding parameters is created.
+
+.. figure:: _static/style_generate_ai_result_en.png
+   :name: style_generate_ai_result_pic
+   :align: center
+   :width: 16cm
+
+   Generated QGIS style for a line layer
+
+Later you can `edit the style in QGIS and sync the changes with your Web GIS <https://docs.nextgis.com/docs_ngconnect/source/edit.html#connect-style-overwrite>`_ via NextGIS Connect plugin.
 
 .. _ngw_qgis_style_svg:
 
