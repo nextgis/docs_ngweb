@@ -6,7 +6,7 @@
 -  Файл ``docker-compose.yaml`` - примеры для ознакомления приведены в `приложениях <https://docs.nextgis.ru/docs_ngweb/source/op_additional.html>`_, однако они не содержат всех необходимых параметров.
 -  Логин и пароль для доступа к NextGIS Container Registry.
 
-.. note:: Установка может быть произведена сотрудниками NextGIS при наличии удаленного доступа, `подробнее о том, что именно понадобится <https://docs.nextgis.ru/docs_ngweb/source/remote.html>`_.
+.. note:: Установка может быть произведена сотрудниками NextGIS при наличии удаленного доступа, `подробнее о том, что именно понадобится <https://docs.nextgis.ru/docs_onpremise/source/remote.html>`_.
 
 .. _endpoints:
 
