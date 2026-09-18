@@ -11,5 +11,4 @@ NextGIS Web on-premise
    op_setup
    op_additional
    sysadmin_updates
-   op_logs
    op_ca
