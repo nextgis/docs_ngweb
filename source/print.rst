@@ -49,7 +49,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/fa80fa8d4b9d7f23408ef69ec2d6f081/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/56UD8q_jrCo>`_, `rutube <https://rutube.ru/video/fa80fa8d4b9d7f23408ef69ec2d6f081/>`_.
+Посмотреть видео на `YouTube <https://youtu.be/56UD8q_jrCo>`_, `RuTube <https://rutube.ru/video/fa80fa8d4b9d7f23408ef69ec2d6f081/>`_.
 
 Также можно поделиться подготовленной для печати картой со всеми параметрами, для этого нажмите на значок |button_share|. Ссылка будет скопирована в буфер обмена. Перейдя по ней, можно сразу напечатать карту в нужном виде.
 

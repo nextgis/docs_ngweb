@@ -26,7 +26,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/abfd6750a23b013af6221caa6b7a6863/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/yd34OMKEED4>`_, `rutube <https://rutube.ru/video/abfd6750a23b013af6221caa6b7a6863/>`_.
+Посмотреть видео на `YouTube <https://youtu.be/yd34OMKEED4>`_, `RuTube <https://rutube.ru/video/abfd6750a23b013af6221caa6b7a6863/>`_.
 
 Ниже более подробно описываются этапы создания веб-карты и доступные настройки.
 
@@ -151,7 +151,7 @@
 
 В поле "Адаптер" рекомендуется выставить значение "Изображения" (отрисовка в виде единой картинки на всю карту), если нет каких-либо особых требований. Также в этом поле можно выбрать значение "Тайлы" (изображения размером 256 x 256 пикселов). 
 
-.. tip:: Адаптер "Тайлы" используется, например, для того чтобы корректно отображались объекты, пересекающие 180 меридиан. Посмотреть видео на `rutube <https://rutube.ru/video/8c7d98d7332b1483d731eb70645ca3f2/>`__.
+.. tip:: Адаптер "Тайлы" используется, например, для того чтобы корректно отображались объекты, пересекающие 180 меридиан. Посмотреть видео на `RuTube <https://rutube.ru/video/8c7d98d7332b1483d731eb70645ca3f2/>`__.
 
 Можно также указать диапазон масштабов, в которых будет отбражаться слой, при помощи полей "Мин. масштаб" и "Макс. масштаб". Минимальный масштаб соответствует более мелкомасштабному отображению, а максимальный - более крупномасштабному. Например, для отображения слоя в диапазоне от 1 : 250 000 до 1 : 5 000, первое значение должно соответствовать минимальному масштабу, а второе - максимальному.  Минимальный и максимальный масштаб можно указывать в стиле слоя и в настройках слоя.
    
@@ -447,7 +447,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/b13377cbe4f79b985ebbda2469295438/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть на `youtube <https://youtu.be/AToQmohz6QQ>`__, `rutube <https://rutube.ru/video/b13377cbe4f79b985ebbda2469295438/>`__.
+Посмотреть на `YouTube <https://youtu.be/AToQmohz6QQ>`__, `RuTube <https://rutube.ru/video/b13377cbe4f79b985ebbda2469295438/>`__.
 
 .. _ngw_map_extent:
 
@@ -509,7 +509,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/62a7266ee8bc054f85b675e74314644b/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/KkihLvSYWmc>`__, `rutube <https://rutube.ru/video/62a7266ee8bc054f85b675e74314644b/>`__.
+Посмотреть видео на `YouTube <https://youtu.be/KkihLvSYWmc>`__, `RuTube <https://rutube.ru/video/62a7266ee8bc054f85b675e74314644b/>`__.
 
 .. _ngw_map_bookmarks:
 

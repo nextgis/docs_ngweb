@@ -92,4 +92,4 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/1b72a769481275d5b95fc3e481e8cf3e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/sCWNxPsduJM>`_, `rutube <https://rutube.ru/video/1b72a769481275d5b95fc3e481e8cf3e/>`_.
+Смотреть на `YouTube <https://youtu.be/sCWNxPsduJM>`_, `RuTube <https://rutube.ru/video/1b72a769481275d5b95fc3e481e8cf3e/>`_.

@@ -32,7 +32,7 @@ NextGIS Web позволяет создавать копию уже сущест
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/fc87a9fbec0747a3355567031f40e349/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/in3X4vxv1wA>`_, `rutube <https://rutube.ru/video/fc87a9fbec0747a3355567031f40e349/>`_.
+Посмотреть видео на `YouTube <https://youtu.be/in3X4vxv1wA>`_, `RuTube <https://rutube.ru/video/fc87a9fbec0747a3355567031f40e349/>`_.
 
 Если вы хотите создать копию **в другой папке**, нажмите на иконку с лупой в правом конце поля “Группа ресурсов”, подробнее см. ниже.
 

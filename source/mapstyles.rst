@@ -25,7 +25,7 @@
 * пользовательский - задав настройки каналов в интерфейсе;
 * создав копию другого ресурса стиля.
 
-Примеры стилей можно посмотреть в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_. Посмотреть видео о ней можно на `youtube <https://youtu.be/QE0koNP1i6c>`_, `rutube <https://rutube.ru/video/40ce27f141592df374ae3bb90b2f4f45/>`_.
+Примеры стилей можно посмотреть в нашей `Галерее картографических стилей <https://nextgis.ru/map-styles/>`_. Посмотреть видео о ней можно на `YouTube <https://youtu.be/QE0koNP1i6c>`_, `RuTube <https://rutube.ru/video/40ce27f141592df374ae3bb90b2f4f45/>`_.
 
 .. figure:: _static/style_gallery_1_ru.png
    :name: styles_gallery_pic
@@ -134,7 +134,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e6b097a20efa3882b27907096490393e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/LGXQSGfqr4M>`__, `rutube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`__.
+Смотреть на `YouTube <https://youtu.be/LGXQSGfqr4M>`__, `RuTube <https://rutube.ru/video/e6b097a20efa3882b27907096490393e/>`__.
 
 Созданный стиль QGIS можно **редактировать**.
 
@@ -223,7 +223,7 @@ SVG-маркеры
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/c6375a06276f864079b8f5bfc2e7dba9/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/xr388FHr7l4>`__, `rutube <https://rutube.ru/video/c6375a06276f864079b8f5bfc2e7dba9/?r=wd>`__.
+Посмотреть видео на `YouTube <https://youtu.be/xr388FHr7l4>`__, `RuTube <https://rutube.ru/video/c6375a06276f864079b8f5bfc2e7dba9/?r=wd>`__.
 
 2. Разместить файл в интернете и поставить его URL в качестве пути к значку SVG.
 

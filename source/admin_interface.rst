@@ -445,7 +445,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/90d560f23df007b4d4b376eb0100d260/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/cGKK5crJCKo>`_, `rutube <https://rutube.ru/video/90d560f23df007b4d4b376eb0100d260/>`_.
+Посмотреть видео на `YouTube <https://youtu.be/cGKK5crJCKo>`_, `RuTube <https://rutube.ru/video/90d560f23df007b4d4b376eb0100d260/>`_.
 
 .. _ngw_vector_export_settings:
 
@@ -472,7 +472,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/3c2ff0e798f391f91cc8e4c1dc01a701/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/7dvCIbl_psc>`__, `rutube <https://rutube.ru/video/3c2ff0e798f391f91cc8e4c1dc01a701/>`__.
+Посмотреть видео на `YouTube <https://youtu.be/7dvCIbl_psc>`__, `RuTube <https://rutube.ru/video/3c2ff0e798f391f91cc8e4c1dc01a701/>`__.
 
 * Опция **Ограничить охватом** позволяет экспортировать не все объекты слоя, а только те, которые находятся в нужной области. Охват задается в градусах.
 * **Текстовый фильтр** выбирает для экспорта только те объекты, которые содержат заднное ключевое слово. Поиск производится по всем полям, для которых не отключен `полнотекстовый поиск <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, так же как в таблице атрибутов.

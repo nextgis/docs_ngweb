@@ -54,7 +54,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/1243c460657d47068a053714497dd390/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/YLoUFO8ZywI>`_, `rutube <https://rutube.ru/video/1243c460657d47068a053714497dd390/>`_.
+Посмотреть видео на `YouTube <https://youtu.be/YLoUFO8ZywI>`_, `RuTube <https://rutube.ru/video/1243c460657d47068a053714497dd390/>`_.
 
 .. _ngw_webmaps_client_panels:
 
@@ -229,7 +229,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/e13ac386c9c16068f5110c938dd17683/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/ZJJeJLO2KR4>`__, `rutube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`__. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
+Смотреть на `YouTube <https://youtu.be/ZJJeJLO2KR4>`__, `RuTube <https://rutube.ru/video/e13ac386c9c16068f5110c938dd17683/>`__. Как `настроить легенду <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-legend>`_.
 
 
 .. _ngw_webmaps_client_layer_menu:
@@ -263,7 +263,7 @@
 Фильтр объектов слоя
 ------------------------------
 
-Для каждого слоя можно задать фильтр. В меню слоя выберите **Фильтр**. Во всплывающем окне добавьте одно или несколько условий. Если условий несколько, можно настроить, должны ли выполняться все или достаточно одного любого. `Подробнее об условиях поиска <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#table-search-filter>`_.
+Для каждого слоя можно задать фильтр. В меню слоя выберите **Фильтр**. Во всплывающем окне добавьте одно или несколько условий. Если условий несколько, можно настроить, должны ли выполняться все или достаточно одного любого. Также условия фильтра можно сгенерировать при помощи ИИ. `Подробнее о настройке фильтра <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#table-search-filter>`_.
 
 .. figure:: _static/web_map_filter_add_ru.png
    :name: web_map_filter_add_pic
@@ -281,7 +281,17 @@
 
    Отфильтрованные объекты: озёра площадью более 5000 квадратных километров
 
+Посмотрите пример работы с ИИ-фильтрами в видео:
+
+.. raw:: html
+
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/562aca8291c8a639d368441be9fe58fa/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+
+Посмотреть видео на `RuTube <https://rutube.ru/video/562aca8291c8a639d368441be9fe58fa/>`_.
+
 Также можно отфильтровать объекты `по выбранной области карты <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
+
+
 
 
 
@@ -369,7 +379,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/6c2f59f025c88d7c533bf34bef3d3f17/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/_isl86FjG6U>`__, `rutube <https://rutube.ru/video/6c2f59f025c88d7c533bf34bef3d3f17/>`__.
+Посмотреть видео на `YouTube <https://youtu.be/_isl86FjG6U>`__, `RuTube <https://rutube.ru/video/6c2f59f025c88d7c533bf34bef3d3f17/>`__.
 
 .. _ngw_webmaps_search_coord:
 
@@ -398,7 +408,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/81464ac6a48a81bb05c74bcb9f11c875/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/7nfXFrCSru0>`__, `rutube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`__.
+Смотреть на `YouTube <https://youtu.be/7nfXFrCSru0>`__, `RuTube <https://rutube.ru/video/81464ac6a48a81bb05c74bcb9f11c875/>`__.
 
 
 Также при открытии таблицы объектов слоя доступна `фильтрация по области <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.

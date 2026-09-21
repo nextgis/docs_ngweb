@@ -469,7 +469,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/9f0d58e1850b6740b1823763da6dfc97/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть на `youtube <https://youtu.be/MMPhQeLXZDQ>`_, `rutube <https://rutube.ru/video/9f0d58e1850b6740b1823763da6dfc97/>`_.
+Посмотреть на `YouTube <https://youtu.be/MMPhQeLXZDQ>`_, `RuTube <https://rutube.ru/video/9f0d58e1850b6740b1823763da6dfc97/>`_.
 
 .. _ngw_attachments_panoramas:
 
@@ -493,7 +493,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/d1f08ddae9780ce93246f8e81748d4c4/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть на `youtube <https://youtu.be/X5c2Wy1CItw>`__, `rutube <https://rutube.ru/video/d1f08ddae9780ce93246f8e81748d4c4/>`__.
+Посмотреть на `YouTube <https://youtu.be/X5c2Wy1CItw>`__, `RuTube <https://rutube.ru/video/d1f08ddae9780ce93246f8e81748d4c4/>`__.
 
 
 .. _ngw_attachments_imp_exp:
@@ -537,7 +537,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/62233baae1d2c10e21ad4709ecffe5cc/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть видео на `youtube <https://youtu.be/8R4uY5CCE3w>`__, `rutube <https://rutube.ru/video/62233baae1d2c10e21ad4709ecffe5cc/>`__.
+Посмотреть видео на `YouTube <https://youtu.be/8R4uY5CCE3w>`__, `RuTube <https://rutube.ru/video/62233baae1d2c10e21ad4709ecffe5cc/>`__.
 
 .. _ngw_manage_descriptions:
 

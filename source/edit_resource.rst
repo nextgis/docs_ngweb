@@ -141,7 +141,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/c1d589500b2e996bc2fe4cd120674f86/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/KuAwCMw1ACc>`_, `rutube <https://rutube.ru/video/c1d589500b2e996bc2fe4cd120674f86/>`_.
+Смотреть на `YouTube <https://youtu.be/KuAwCMw1ACc>`_, `RuTube <https://rutube.ru/video/c1d589500b2e996bc2fe4cd120674f86/>`_.
 
 .. _ngw_delete_resource:
 

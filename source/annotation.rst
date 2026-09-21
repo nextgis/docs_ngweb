@@ -14,7 +14,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/d7b664edcceeed8d81a2f60223b0bf9e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/_miyBdgj3yU>`_, `rutube <https://rutube.ru/video/d7b664edcceeed8d81a2f60223b0bf9e/>`_.
+Смотреть на `YouTube <https://youtu.be/_miyBdgj3yU>`_, `RuTube <https://rutube.ru/video/d7b664edcceeed8d81a2f60223b0bf9e/>`_.
 
 Ниже подробно рассматривается, что представляют из себя аннотации, как их добавлять и редактировать, а также настраивать их видимость на карте.
 

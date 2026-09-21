@@ -103,7 +103,7 @@ NextGIS Web позволяет добавить дополнительные ш�
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/13cdd69bad40d9590d54d96a4030928e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Посмотреть на `youtube <https://youtu.be/adS8Oi3Xtfg>`_, `rutube <https://rutube.ru/video/13cdd69bad40d9590d54d96a4030928e/>`_.
+Посмотреть на `YouTube <https://youtu.be/adS8Oi3Xtfg>`_, `RuTube <https://rutube.ru/video/13cdd69bad40d9590d54d96a4030928e/>`_.
 
 .. _ngw_fonts_del:
 

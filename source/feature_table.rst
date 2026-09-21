@@ -163,6 +163,31 @@ NextGIS Web позволяет управлять базой геоданных 
 
    Отфильтрованные записи
 
+Фильтры можно генерировать при помощи искусственного интеллекта. Для этого опишите простыми словами необходимый запрос, например, "все дома в Светлогорске ниже 3 этажей".
+
+.. figure:: _static/feature_rule_filter_ai_ru.png
+   :name: feature_rule_filter_ai_pic
+   :align: center
+   :width: 16cm
+
+   Генерация условий фильтра с помощью ИИ
+
+.. figure:: _static/feature_rule_filter_ai_result_ru.png
+   :name: feature_rule_filter_ai_result_pic
+   :align: center
+   :width: 16cm
+
+   Результат фильтра
+
+Посмотрите пример работы с ИИ-фильтрами в видео:
+
+.. raw:: html
+
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/562aca8291c8a639d368441be9fe58fa/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+
+Посмотреть видео на `RuTube <https://rutube.ru/video/562aca8291c8a639d368441be9fe58fa/>`_.
+
+Более подробно о работе с ИИ-фильтрами рассказывается в нашем вебинаре. Посмотреть видео на `RuTube <https://rutube.ru/video/1aa1799f57ea99ce860d133334428c47/>`_.
 
 .. _ngw_feature_table_filter_area:
 
@@ -209,7 +234,7 @@ NextGIS Web позволяет управлять базой геоданных 
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/ccf892bf5f763632c7fd77498a642eb8/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/F039ufZM_RU>`_, `rutube <https://rutube.ru/video/ccf892bf5f763632c7fd77498a642eb8/>`_.
+Смотреть на `YouTube <https://youtu.be/F039ufZM_RU>`_, `RuTube <https://rutube.ru/video/ccf892bf5f763632c7fd77498a642eb8/>`_.
 
 
 

@@ -43,7 +43,7 @@
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/5302afb00e3af93dbd9adccf848d84db/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/LcGco1nclM8>`_, `rutube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
+Смотреть на `YouTube <https://youtu.be/LcGco1nclM8>`_, `RuTube <https://rutube.ru/video/5302afb00e3af93dbd9adccf848d84db/>`_.
 
 Если нужно загрузить данные в другом формате, вы можете использовать `NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/resources.html>`_.
 
@@ -434,7 +434,7 @@ NextGIS Web может принимать многослойные наборы 
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/824fbfb5c0d10a2977e3e828f6c4fd9a/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-Смотреть на `youtube <https://youtu.be/5ccduELAk3Y>`__, `rutube <https://rutube.ru/video/824fbfb5c0d10a2977e3e828f6c4fd9a/>`__.
+Смотреть на `YouTube <https://youtu.be/5ccduELAk3Y>`__, `RuTube <https://rutube.ru/video/824fbfb5c0d10a2977e3e828f6c4fd9a/>`__.
 
 Набор тайлов вы можете:
 
