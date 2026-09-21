@@ -287,7 +287,7 @@
 
    <iframe width="720" height="405" src="https://rutube.ru/play/embed/562aca8291c8a639d368441be9fe58fa/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
 
-Посмотреть видео на `RuTube <https://rutube.ru/video/562aca8291c8a639d368441be9fe58fa/>`_.
+Посмотреть видео на `RuTube <https://rutube.ru/video/562aca8291c8a639d368441be9fe58fa/>`_, `YouTube <https://youtu.be/0WHPCp5-RbA?si=4b0hAYBgscN3aN0S>`_.
 
 Также можно отфильтровать объекты `по выбранной области карты <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_.
 

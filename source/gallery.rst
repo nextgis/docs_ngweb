@@ -18,7 +18,7 @@
 
    <iframe width="720" height="405" src="https://rutube.ru/play/embed/c9768eb6e37f7f76c10806b5ee74e482/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
 
-Посмотреть видео на `RuTube <https://rutube.ru/video/c9768eb6e37f7f76c10806b5ee74e482/>`_.
+Посмотреть видео на `RuTube <https://rutube.ru/video/c9768eb6e37f7f76c10806b5ee74e482/>`_, `YouTube <https://youtu.be/KoIjERzqQQ0?si=DbGY5qfK430yX5o1>`_.
 
 .. _create:
 
