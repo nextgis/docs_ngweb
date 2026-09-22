@@ -187,7 +187,7 @@ NextGIS Web позволяет управлять базой геоданных 
 
 Посмотреть видео на `RuTube <https://rutube.ru/video/562aca8291c8a639d368441be9fe58fa/>`_, `YouTube <https://youtu.be/0WHPCp5-RbA?si=4b0hAYBgscN3aN0S>`_.
 
-Более подробно о работе с ИИ-фильтрами рассказывается в нашем вебинаре. Посмотреть его можно на `RuTube <https://rutube.ru/video/1aa1799f57ea99ce860d133334428c47/>`_, `YouTube <>`_.
+Более подробно о работе с ИИ-фильтрами рассказывается в нашем вебинаре. Посмотреть его можно на `RuTube <https://rutube.ru/video/1aa1799f57ea99ce860d133334428c47/>`_.
 
 .. _ngw_feature_table_filter_area:
 
