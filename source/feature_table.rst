@@ -131,6 +131,21 @@ You can select a value from the dropdown list or start typing to find the one yo
 
    Filtered entries
 
+You can also generate a filter using AI. Enter a prompt and click **Generate with AI**.
+
+.. figure:: _static/feature_rule_filter_ai_en.png
+   :name: feature_rule_filter_ai_pic
+   :align: center
+   :width: 14cm
+
+   Generating a filter with AI
+
+.. figure:: _static/feature_rule_filter_ai_result_en.png
+   :name: feature_rule_filter_ai_result_pic
+   :align: center
+   :width: 16cm
+
+   Filtered entires
 
 .. _ngw_feature_table_filter_area:
 

@@ -319,7 +319,7 @@ Watch on `youtube <https://youtu.be/M4cThWxdaZg?si=8sohojUzoB8oovvY>`__.
 Filter
 ------
 
-For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient. `More on how filter conditions work <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#table-search-filter>`_.
+For any vector layer you can add a filter. Select **Filter** in the layer menu. In the pop-up window add one or several conditions. If you add multiple conditions, you can select if all of them must be satisfied at once or any one of them is sufficient. You can also generate a filter with AI. `More on how filters work <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#table-search-filter>`_.
 
 .. figure:: _static/web_map_filter_add_en.png
    :name: web_map_filter_add_pic
