@@ -32,6 +32,8 @@ If your IT infrastructure allows for it, it is recommended to set up a reverse p
 
 The reverse proxy is set up by the client's IT department, it is not a responsibility of NextGIS company. The required parameters are cited below using Nginx as example.
 
+Please note that all services must be hosted on separate subdomains or use different ports. In other words, the same domain cannot be used for multiple services by separating them by path, for example, ``https://nextgis.example.com/ngw/`` for NextGIS Web and ``https://nextgis.example.com/ngid/`` for NextGIS ID.
+
 Contact your IT department to choose addresses you wish to use and note them in the table below, you'll need them later. Additionally, the table contains examples of names for environment variables of each endpoint.
 
 ===================== ===================== ========
