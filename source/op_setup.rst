@@ -14,6 +14,21 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Configuring the LLM provider
+----------------------------
+
+AI tools in NextGIS Web, such as generating filters for the feature table in natural language, work on the BYOK (Bring Your Own Key) principle. This means that to use these features, you need to provide your own access key to the OpenAI-compatible API of the LLM provider.
+
+You can specify the connection parameters and the model used in ``docker-compose.yaml`` in the ``services.app.environment`` section using the following environment variables:
+
+.. code::
+
+   NEXTGISWEB__LLM_CORE__BASE_URL: "https://api.openai.com/v1"
+   NEXTGISWEB__LLM_CORE__API_KEY: "<API key>"
+   NEXTGISWEB__LLM_CORE__MODEL: "gpt-4o-mini"
+
+After making changes, you need to restart the stack with the command ``docker compose up -d`` to apply the new settings. After that, AI tools will be available in the NextGIS Web interface.
+
 .. _move_server:
 
 Migrating to another server
