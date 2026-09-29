@@ -24,6 +24,20 @@
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Настройка LLM-провайдера
+------------------------
+
+AI-инструменты в NextGIS Web, например генерация фильтров для таблицы объектов на естественном языке, работают по принципу BYOK (Bring Your Own Key). Это означает, что для использования этих функций необходимо предоставить собственный ключ доступа к OpenAI-совместимому API LLM-провайдера.
+
+Параметры подключения и используемую модель можно указать в ``docker-compose.yaml`` в секции ``services.app.environment`` с помощью следующих переменных окружения:
+
+.. code::
+
+   NEXTGISWEB__LLM_CORE__BASE_URL: "https://api.openai.com/v1"
+   NEXTGISWEB__LLM_CORE__API_KEY: "<API key>"
+   NEXTGISWEB__LLM_CORE__MODEL: "gpt-4o-mini"
+
+После внесения изменений необходимо перезапустить стек командой ``docker compose up -d`` для применения новых настроек. После этого AI-инструменты будут доступны в интерфейсе NextGIS Web.
 
 .. _journal:
 
