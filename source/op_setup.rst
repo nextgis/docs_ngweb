@@ -16,6 +16,24 @@
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Включение растровых мозаик
+--------------------------
+
+Компонент растровых мозаик позволяет работать с набором растров как с единым ресурсом и формировать на их основе единое покрытие. Поскольку компонент экспериментальный, по умолчанию он отключен: в будущих версиях его функциональность может измениться, а сам компонент — быть удален. Для его включения необходимо задать переменную окружения в секции ``services.app.environment`` файла ``docker-compose.yaml``:
+
+.. code:: yaml
+
+   NEXTGISWEB__ENVIRONMENT__COMPONENT__RASTER_MOSAIC: "true"
+
+После этого остановить стек, применить миграции и запустить стек снова:
+
+.. code:: bash
+
+   $ cd /srv/ngwdocker
+   $ docker compose down
+   $ docker compose run --rm app nextgisweb migration upgrade --no-dry-run
+   $ docker compose up -d
+
 Настройка LLM-провайдера
 ------------------------
 
@@ -23,7 +41,7 @@ AI-инструменты в NextGIS Web, например генерация ф
 
 Параметры подключения и используемую модель можно указать в ``docker-compose.yaml`` в секции ``services.app.environment`` с помощью следующих переменных окружения:
 
-.. code::
+.. code:: yaml
 
    NEXTGISWEB__LLM_CORE__BASE_URL: "https://api.openai.com/v1"
    NEXTGISWEB__LLM_CORE__API_KEY: "<API key>"
