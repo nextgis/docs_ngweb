@@ -3,7 +3,7 @@ Configure
 
 .. important:: All steps in this section must be performed by the ``root`` user. If you use ``sudo`` to avoid mixing up the commands, we recommend first running ``sudo -i`` to get a fully functional root user session.
 
-Change endpoints
+Changing endpoints
 ------------------
 
 Changing endpoints may be required if the the name of the DNS server where the system is deployed changes, or if you change the settings of the reverse proxy. To modify the endpoints edit the file ``docker-compose.yaml``, you can find it in ``/srv/ngwdocker`` in the ``x-shared`` section. Then restart the stack.
@@ -14,6 +14,24 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Enabling raster mosaics
+-----------------------
+
+The raster mosaic component lets you work with a set of rasters as a single resource and create a single coverage from them. Since the component is experimental, it is disabled by default: its functionality may change in future versions, and the component itself may be removed. To enable it, set the following environment variable in the ``services.app.environment`` section of ``docker-compose.yaml``:
+
+.. code:: yaml
+
+   NEXTGISWEB__ENVIRONMENT__COMPONENT__RASTER_MOSAIC: "true"
+
+Then stop the stack, apply the migrations, and start the stack again:
+
+.. code:: bash
+
+   $ cd /srv/ngwdocker
+   $ docker compose down
+   $ docker compose run --rm app nextgisweb migration upgrade --no-dry-run
+   $ docker compose up -d
+
 Configuring the LLM provider
 ----------------------------
 
@@ -21,7 +39,7 @@ AI tools in NextGIS Web, such as generating filters for the feature table in nat
 
 You can specify the connection parameters and the model used in ``docker-compose.yaml`` in the ``services.app.environment`` section using the following environment variables:
 
-.. code::
+.. code:: yaml
 
    NEXTGISWEB__LLM_CORE__BASE_URL: "https://api.openai.com/v1"
    NEXTGISWEB__LLM_CORE__API_KEY: "<API key>"
