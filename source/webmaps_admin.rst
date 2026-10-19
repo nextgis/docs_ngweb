@@ -242,16 +242,18 @@
 
    Выбор типа ресурса "Подложка веб-карты"
 
-В открывшемся окне задайте URL-адрес TMS сервиса (:numref:`ngweb_admin_basemap_param`). Есть два пути для его указания:
+Есть два пути создания подложки:
 
 * Найти нужный сервис в строке поиска. Остальные поля будут заполнены автоматически.
 * Ввести адрес вручную. 
+
+Для создания подложек подходят TMS-сервисы и сервисы векторных тайлов. В качестве подложки также можно использовать `слой или карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-layer-as-basemap>`_ из вашей Веб ГИС.
 
 Внизу отображается превью подложки. Его можно сравнить со стандартной подложкой OpenStreetMap, нажав на кнопку |button_toggle_basemap| и двигая ползунок прозрачности.
 
 .. |button_toggle_basemap| image:: _static/button_toggle_basemap.png
 
-.. figure:: _static/create_basemap_settings_ru_2.png
+.. figure:: _static/create_basemap_settings_ru_3.png
    :name: ngweb_admin_basemap_param
    :align: center
    :width: 16cm
