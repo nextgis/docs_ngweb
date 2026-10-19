@@ -21,7 +21,7 @@ NextGIS Web позволяет управлять базой геоданных 
 #. `Создать новую запись <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-create>`_ (новый объект)
 #. `Редактировать запись <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-edit>`_ 
 #. `Удалить запись <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-delete>`_
-#. `Показать общее количество объектов слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
+#. `Показать общее количество объектов слоя и агрегацию <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
 #. `Искать по значениям атрибутов и фильтровать таблицу по выражению <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#table-search-filter>`_
 #. Сохранить в файл (доступен расширенный и `быстрый экспорт <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-export>`_)
 #. `Обновить таблицу <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
@@ -378,7 +378,14 @@ NextGIS Web позволяет управлять базой геоданных 
 Другие инструменты таблицы объектов
 -----------------------------------
 
-Нажмите кнопку с # хэштегом, чтобы увидеть текущее количество объектов слоя.
+Нажмите кнопку с # хэштегом, чтобы увидеть текущее количество объектов слоя. Если для числового поля включено `отображение агрегации <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#field-param>`_, появится также дополнительная строка.
+
+.. figure:: _static/feature_table_count_ru.png
+   :name: feature_table_count_pic
+   :align: center
+   :width: 16cm
+
+   Количество объектов и отображаемая агрегация
 
 Нажмите |button_refresh_single|, чтобы обновить таблицу объектов, если в неё были внесены изменения в другом месте.
 

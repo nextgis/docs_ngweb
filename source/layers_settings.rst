@@ -56,13 +56,16 @@
 
    Вкладка "Поля"
 
-Параметры полей:
+.. _field_param:
+
+Параметры полей
+~~~~~~~~~~~~~~~
 
 * Наименование атрибутивного поля - псевдоним для отображения вместо технического ключа поля в окне идентификации.
 * Ключ - техническое название поля, должно содержать только простую латиницу
 
 
-.. figure:: _static/key_field_name_ru_3.png
+.. figure:: _static/key_field_name_ru_4.png
    :name: key_field_name_pic
    :align: center
    :width: 16cm    
@@ -98,6 +101,29 @@
 * |attr_label_symbol| Атрибут наименование - значение из этого поля будет использоваться как название объекта при `поиске <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ и добавлении в `закладки <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
 .. note:: Если вы хотите задать поле, значение которого будет использоваться в качестве подписи объекта на карте, это можно сделать через `настройки стиля <https://docs.nextgis.ru/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_.
+
+Также **для числового поля** можно включить отображение статистики. Для этого выберите один из вариантов в параметре "Отображаемая агрегация":
+
+* нет
+* сумма - будет отображаться сумма всех значений в колонке;
+* мин - будет отображаться минимальное значение этого атрибута среди объектов слоя;
+* макс - будет отображаться максимальное значение этого атрибута среди объектов слоя.
+
+.. figure:: _static/ngw_attr_aggr_ru.png
+   :name: ngw_attr_aggr_pic
+   :align: center
+   :width: 16cm
+
+.. admonition:: Как посмотреть агрегацию в таблице объектов?
+
+  Нажмите **#**, появится дополнительная строка с выбранной агрегацией.
+
+.. figure:: _static/feature_table_count_ru.png
+   :name: feature_table_count_pic
+   :align: center
+   :width: 16cm
+
+   Количество объектов и отображаемая агрегация
 
 .. |attr_label_symbol| image:: _static/attr_label_symbol.png
    :width: 6mm
