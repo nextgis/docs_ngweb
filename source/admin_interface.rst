@@ -262,10 +262,10 @@
 
 В панель управления NextGIS Web можно попасть через основное меню, которое вызывается кнопкой |button_main_menu| в правом верхнем углу (см. :numref:`ngweb_main_page_administrative_interface_pic`, п.1). Панель управления представлена на :numref:`ngweb_control_panel`.
 
-.. figure:: _static/ngweb_control_panel_new_ru_2.png
+.. figure:: _static/ngweb_control_panel_ru.png
    :name: ngweb_control_panel
    :align: center
-   :width: 8cm
+   :width: 16cm
 
    Панель управления
 
