@@ -237,12 +237,22 @@
 Меню слоя
 -----------
 
-Чтобы вызвать меню слоя, нажмите на три точки рядом с его названием. Доступны следующие операции:
+Чтобы вызвать меню слоя, нажмите на три точки рядом с его названием. 
+
+.. figure:: _static/ngweb_webmap_layer_menu_ru_5.png
+   :name: ngweb_webmap_layer_menu_pic
+   :align: center
+   :width: 20cm
+   
+   Меню слоя на веб-карте
+
+Доступны следующие операции:
 
 * |button_extent_all| **Увеличить до слоя** - происходит масштабирование карты таким образом, чтобы выбранный слой занимал всю видимую площадь карты. 
 * |button_filter| **Фильтр**  позволяет отображать на карте только те объекты слоя, которые отвечают заданным условиям (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-filter>`_).
 * |button_table| **Таблица объектов** - открывает на карте `таблицу объектов векторного слоя <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_. 
 * |button_edit_black| **Редактировать на карте** - активирует режим редактирования, который позволяет `изменять объекты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`_ выбранного слоя. Для завершения изменений нужно снова открыть то же меню и выбрать **Завершить редактирование** (`подробнее <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html>`__) или нажать на кнопку |button_maptool_save| на карте.
+* |button_download| **Экспорт** - сохранение объектов слоя в файл, `подробнее о настройках экспорта <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_. `Как спрятать эту кнопку из меню слоя? <https://docs.nextgis.ru/docs_ngweb/source/look.html#ngw-res-export>`_
 * |button_tune| **Свойства** - позволяет настроить работу слоя на конкретной веб-карте, `подробнее <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_.
 * |button_article| **Описание** - если у слоя добаввлено описание, оно открывается в соответствующей панели.
 * |button_close| **Удалить слой** с карты (чтобы вернуть слой, нажмите **Восстановить** в меню дерева слоёв).
@@ -251,12 +261,7 @@
 * Флажок **Идентифицируемый** означает, что при клике на объекты слоя информация о них отображается в `панели идентификации <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_. Если его отключить, то объекты этого слоя будут игнорироваться инструментом идентификаци.
 * |button_opacity| Настроить его непрозрачность при помощи ползунка.
 
-.. figure:: _static/ngweb_webmap_layer_menu_ru_4.png
-   :name: ngweb_webmap_layer_menu_pic
-   :align: center
-   :width: 20cm
-   
-   Меню слоя на веб-карте
+
 
 .. _ngw_webmaps_client_filter:
 
@@ -659,3 +664,7 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
 .. |button_maptool_save| image:: _static/button_maptool_save.png
    :width: 6mm
    :alt: дискета на белом фоне
+
+.. |button_download| image:: _static/button_download.png
+   :width: 6mm
+   :alt: стрелка вниз в ящик

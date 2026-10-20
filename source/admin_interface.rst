@@ -24,7 +24,7 @@
    :width: 6mm
    :alt: скрепка
 
-.. |button_export| image:: _static/button_export.png
+.. |button_download| image:: _static/button_download.png
    :width: 6mm
    :alt: стрелка вниз
 
@@ -321,7 +321,7 @@
 * |button_open_gallery| перейти к галерее;
 * |button_open_feature_table| открыть таблицу атрибутов (для векторных слоёв);
 * |button_attachments| управление вложениями (для векторных слоёв);
-* |button_export| сохранить объекты векторного слоя в файл.
+* |button_download| сохранить объекты векторного слоя в файл.
 
 Три точки в заголовке таблицы вызывают меню списка ресурсов.
 
@@ -394,58 +394,55 @@
 
 Экспорт векторных данных
 -------------------------
-  
-Веб ГИС позволяет экспортировать данные в следующие форматы:
 
-* :term:`GeoPackage`
-* :term:`GeoJSON`
-* :term:`CSV`
-* CSV для Microsoft Excel
-* :term:`ESRI Shapefile`
-* :term:`AutoCAD DXF`
-* :term:`Mapinfo TAB`
-* :term:`MapInfo MIF/MID`
-* :term:`KML`
-* :term:`KMZ`
-* :term:`GPX`
+Кнопку экспорта данных |button_download| вы найдёте:
 
-При экспорте в некоторые форматы создаются дополнительные файлы, например CSVT (описание полей) и PRJ (описание проекции) для CSV, CPG (кодовая страница) для ESRI Shapefile.
+* в меню слоя в списке ресурсов;
+* на странице ресурса слоя в правом меню;
+* в `таблице объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ ;
+* в `меню слоя на веб-карте <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngweb-webmap-layer-menu-pic>`_.
 
-.. note:: 
-	Поддерживается экспорт геометрий и атрибутов объектов. Описания, метаданные и изображения объектов вышеописанным способом не экспортируются, но могут быть :ref:`переданы по NextGIS API <ngcom_ngapi>`.
-
-Для того, чтобы экспортировать данные, нажмите |button_export| в меню ресурса или откройте страницу ресурса и Выберите пункт **Сохранить как** на панели справа.
-
-.. figure:: _static/ngw_data_export_from_list_ru.png
+.. figure:: _static/ngw_data_export_from_list_ru_2.png
    :name: ngw_data_export_from_list_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Экспорт из списка ресурсов
 
-.. figure:: _static/ngw_data_export_from_page_ru.png
+.. figure:: _static/ngw_data_export_from_page_ru_2.png
    :name: ngw_data_export_from_page_pic
    :align: center
-   :width: 20cm
+   :width: 18cm
 
    Экспорт со страницы слоя
 
-Нажмите **Сохранить**, чтобы скачать файл себе на устройство.
+Откроется страница настройки экспорта.
 
-.. figure:: _static/ngw_data_export_set_ru.png
+Нажмите **Экспорт**, чтобы скачать файл себе на устройство.
+
+.. figure:: _static/ngw_data_export_set_ru_2.png
    :name: ngw_data_export_set_en
    :align: center
-   :width: 20cm
+   :width: 16cm
 
-   Настройки экспорта
+   Страница экспорта данных
 
 По умолчанию экспорт будет произведён в формат GeoPackage в кодировке UTF-8 с включением всех полей. `Подробнее о настройках экспорта <https://docs.nextgis.ru/docs_ngweb/source/admin_interface.html#ngw-vector-export-settings>`_ ниже.
+
+.. note:: Таким способом экспортируются геометрии и атрибуты объектов. Отдельно можно также:
+  
+  * `Выгрузить вложения <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-attachments-imp-exp>`_
+  * `Выгрузить описания <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-manage-descriptions>`_
+
+  Описания, метаданные и вложения объектов также могут быть :ref:`переданы по NextGIS API <ngcom_ngapi>`.
 
 .. raw:: html
 
    <iframe width="560" height="315" src="https://rutube.ru/play/embed/90d560f23df007b4d4b376eb0100d260/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Посмотреть видео на `YouTube <https://youtu.be/cGKK5crJCKo>`_, `RuTube <https://rutube.ru/video/90d560f23df007b4d4b376eb0100d260/>`_.
+
+Также можно выполнить экспорт объектов слоя (всех или некоторых) `с помощью настольного приложения NextGIS QGIS <https://docs.nextgis.ru/docs_ngconnect/source/export.html>`_.
 
 .. _ngw_vector_export_settings:
 
@@ -454,17 +451,30 @@
 
 При экспорте векторного слоя можно настроить следующие параметры:
 
-* **Формат** - по умолчанию GeoPackage, в выпадающем меню можно выбрать другой поддерживаемый формат;
+* **Формат** - по умолчанию GeoPackage, в выпадающем меню можно выбрать другой поддерживаемый формат:
+
+  * :term:`GeoPackage`
+  * :term:`GeoJSON`
+  * :term:`CSV`
+  * CSV для Microsoft Excel
+  * :term:`ESRI Shapefile`
+  * :term:`AutoCAD DXF`
+  * :term:`Mapinfo TAB`
+  * :term:`MapInfo MIF/MID`
+  * :term:`KML`
+  * :term:`KMZ`
+  * :term:`GPX`
+
 * **Система координат** - помимо стандартных вариантов Широта-Долгота (EPSG: 4326) и Меркатор (EPSG: 3857) есть возможность выбрать другие системы координат, добавленные ранее (о том, как добавить настраиваемые системы координат см. в `этом разделе <https://docs.nextgis.ru/docs_ngweb/source/ngw_srs.html>`_). Экспорт в форматы KML, KMZ и GPX производится только в EPSG: 4326;
 * **Кодировки** можно выбрать для выходного файла одну из кодировок: UTF-8, Windows-1251, Windows-1252;
 * Настройка **Поле FID** предназначена для задания имени атрибутивного поля, которое будет создано в экспортируемом слое и в которое будут помещены идентификаторы объектов в системе (по умолчанию «ngw_id»).
 * Далее можно включить опцию **Использовать наименования полей вместо ключей**. Ключ - техническое обозначение поля, в котором используется только латиница без дополнительных символов. Наименование может быть на любом языке, обычно оно отображается как подпись колонки или поля в форме (см. `подробнее <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).
 * **Поля** таблицы данных, которые будут включены в файл при экспорте. По умолчанию все поля добавлены. Для того, чтобы удалить лишние, можно нажать на крестик рядом с соответствующим ключом или снять галочку в выпадающем меню. Чтобы снова добавить поле, отметьте его в выпадающем меню.
 
-.. figure:: _static/export_fields_ru_2.png
+.. figure:: _static/export_fields_ru_3.png
    :name: export_fields_pic
    :align: center
-   :width: 20cm    
+   :width: 16cm    
 
    Выбор полей
 
@@ -480,11 +490,11 @@
 * При экспорте в такие форматы, как ESRI Shapefile или MapInfo TAB, в результате создаётся **ZIP-архив** с нужными файлами. Для однофайловых форматов (например, GeoJSON) создание архива является опциональным. 
 
 Для разработчиков все параметры экспорта доступны через HTTP :term:`API`.
-Например, такой запрос выдаст данные слоя в формате CSV, системе координат EPSG:4326, кодировке UTF-8:
+Например, такой запрос выдаст данные слоя в формате CSV, системе координат EPSG:4326, кодировке UTF-8::
 
-https://demo.nextgis.ru/api/resource/4077/export?format=CSV&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8
+  https://demo.nextgis.ru/api/resource/4077/export?format=CSV&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8
 
-Также можно выполнить экспорт объектов слоя (всех или некоторых) через `таблицу объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ и  `с помощью настольного приложения NextGIS QGIS <https://docs.nextgis.ru/docs_ngconnect/source/export.html>`_.
+
 
 
 .. _guest:
