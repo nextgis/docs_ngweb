@@ -333,7 +333,7 @@
 
 * вкладка "Атрибуты" (см. :numref:`ngweb_tab_attributes`)
 
-.. figure:: _static/ngweb_tab_attributes_rus_2.png
+.. figure:: _static/ngweb_tab_attributes_ru.png
    :name: ngweb_tab_attributes
    :align: center
    :width: 20cm
@@ -347,6 +347,15 @@
 Дату также можно ввести вручную или выбрать в календаре - чтобы вызвать его, нажмите иконку в правом конце поля.
 
 К текстовым полям можно подключить `Справочник <https://docs.nextgis.ru/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_, тогда значение будет выбираться из выпадающего списка.
+
+Можно также создать `пользовательскую форму <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_ для ввода атрибутов, с расширенными настройками. Она будет отображаться в отдельной вкладке.
+
+.. figure:: _static/ngweb_tab_form_ru.png
+   :name: ngweb_tab_form_pic
+   :align: center
+   :width: 20cm
+
+   Пользовательская форма ввода атрибутов
 
 * вкладка "Вложения" (`подробнее о работе с вложениями <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-attachments>`_);
 
