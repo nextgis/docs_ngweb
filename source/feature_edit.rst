@@ -68,57 +68,6 @@
 
 Объекты слоя, доступные для редактирования, подсвечиваются цветным контуром. Можно редактировать одновременно несколько слоёв, каждый будет подсвечен своим цветом.
 
-.. |button_maptool_add| image:: _static/button_maptool_add.png
-   :width: 6mm
-   :alt: плюс в кружочке
-
-.. |button_maptool_edit| image:: _static/button_maptool_edit.png
-   :width: 6mm
-   :alt: карандаш
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: карандаш
-
-.. |button_maptool_move| image:: _static/button_maptool_move.png
-   :width: 6mm
-   :alt: стрелки из центра
-
-.. |button_maptool_attrib| image:: _static/button_maptool_attrib.png
-   :width: 6mm
-   :alt: три полоски
-
-.. |button_maptool_delete| image:: _static/button_maptool_delete.png
-   :width: 6mm
-   :alt: мусорная корзина
-
-.. |button_maptool_save| image:: _static/button_maptool_save.png
-   :width: 6mm
-   :alt: дискета
-
-.. |button_maptool_undo| image:: _static/button_maptool_undo.png
-   :width: 6mm
-   :alt: загибающаяся стрелка
-
-.. |button_maptool_hole| image:: _static/button_maptool_hole.png
-   :width: 6mm
-   :alt: ножницы
-
-.. |button_maptool_snap| image:: _static/button_maptool_snap.png
-   :width: 6mm
-   :alt: рамка с точкой в центре
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: таблица
-
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: карта с лупой
-
-.. |button_maptool_confirm| image:: _static/button_maptool_confirm.png
-   :width: 6mm
-   :alt: галочка
 
 .. _ngw_create_objects:
 
@@ -134,7 +83,7 @@
 
    Кнопка "Создать объекты" на панели инструментов для редактирования и значок при курсоре мыши
 
-2. Возле курсора мыши появится цветной кружок, с помощью которого можно добавлять новые объекты. Щелкните в том месте карты, где необходимо создать новый объект. 
+2. Возле курсора мыши появится цветной кружок, с помощью которого можно добавлять новые объекты. Щелкните в том месте карты, где необходимо создать новый объект. Также можно `ввести координаты вручную <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-create-coords>`_.
 
 3. Откроется окно ввода значений атрибутов объекта. 
 
@@ -153,7 +102,7 @@
 
 Чтобы завершить создание объекта, щелкните дважды по последней введённой точке, нажмите клавишу Enter или кнопку |button_maptool_confirm|. Завершить создание полигона также можно, кликнув по его начальной точке. 
 
-Если вы ошиблись, чтобы удалить последнюю вершину нажмите Backspace.
+Если вы ошиблись, чтобы удалить последнюю вершину нажмите :guilabel:`Backspace`.
 
 При создании узлов будет работать прилипание. Чтобы отключить его, нажмите |button_maptool_snap| и снимите все галочки.
 
@@ -169,6 +118,51 @@
 
    Диалоговое окно завершения редактирования
 
+
+.. _ngw_create_coords:
+
+Создание объекта вводом координат
+----------------------------------
+
+Нажмите кнопку |button_keyboard| и введите координаты точки через пробел. Так же, как и в поиске, будет предложено две возможных интерпретации чисел: долгота-широта или широта-долгота.
+
+.. figure:: _static/webmap_create_coord_select_ru.png
+   :name: webmap_create_coord_select_pic
+   :align: center
+   :width: 20cm
+
+   Ввод координат точки
+
+После выбора нужного варианта точка появится на карте. Если распололжение правильное, подтвердите ввод, нажав **Ок**.
+
+.. figure:: _static/webmap_create_coord_confirm_ru.png
+   :name: webmap_create_coord_confirm_pic
+   :align: center
+   :width: 20cm
+
+   Подтверждение добавления точки
+
+Откроется окно ввода атрибутов.
+
+При создании линии или полигона по координатам нажатие кнопки **Ок** добавляет вершину и очищает окно ввода. 
+
+.. figure:: _static/webmap_create_coord_poly_ru.png
+   :name: webmap_create_coord_poly_pic
+   :align: center
+   :width: 20cm
+
+   Подтверждение координат для следующей вершины полигона
+
+После ввода последней точки нажмите кнопку |button_maptool_confirm| или клавишу :guilabel:`Enter` на клавиатуре, чтобы перейти к вводу атрибутов.
+
+.. figure:: _static/webmap_create_coord_poly_result_ru.png
+   :name: webmap_create_coord_poly_result_pic
+   :align: center
+   :width: 20cm
+
+   Добавленный полигон
+
+Чтобы сохранить изменения в слое, нажмите |button_maptool_save| или выйдите из режима редактирования, подтвердив изменения.
 
 .. _ngw_delete_objects:
 
@@ -595,5 +589,62 @@
 
    Выключение редактирования слоёв на веб-карте
 
+
+.. |button_maptool_add| image:: _static/button_maptool_add.png
+   :width: 6mm
+   :alt: плюс в кружочке
+
+.. |button_maptool_edit| image:: _static/button_maptool_edit.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_maptool_move| image:: _static/button_maptool_move.png
+   :width: 6mm
+   :alt: стрелки из центра
+
+.. |button_maptool_attrib| image:: _static/button_maptool_attrib.png
+   :width: 6mm
+   :alt: три полоски
+
+.. |button_maptool_delete| image:: _static/button_maptool_delete.png
+   :width: 6mm
+   :alt: мусорная корзина
+
+.. |button_maptool_save| image:: _static/button_maptool_save.png
+   :width: 6mm
+   :alt: дискета
+
+.. |button_maptool_undo| image:: _static/button_maptool_undo.png
+   :width: 6mm
+   :alt: загибающаяся стрелка
+
+.. |button_maptool_hole| image:: _static/button_maptool_hole.png
+   :width: 6mm
+   :alt: ножницы
+
+.. |button_maptool_snap| image:: _static/button_maptool_snap.png
+   :width: 6mm
+   :alt: рамка с точкой в центре
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: таблица
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: карта с лупой
+
+.. |button_maptool_confirm| image:: _static/button_maptool_confirm.png
+   :width: 6mm
+   :alt: галочка
+
 .. |button_panorama_toggle| image:: _static/button_panorama_toggle.png
    :width: 6mm
+
+.. |button_keyboard| image:: _static/button_keyboard.png
+   :width: 6mm
+   :alt: клавиатура
