@@ -13,51 +13,7 @@ To set up data collection:
 3. Create and configure `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#project-wizard>`_.
 
 
-.. _ngw_collector_add_members:
 
-List of collectors
--------------------------------
-
-In the Collector Projects section of the Control Panel, you can manage the list of `data collectors <https://docs.nextgis.com/docs_ngcom/source/collector.html>`_. Each participant must have a `NextGIS ID account <https://docs.nextgis.com/docs_ngcom/source/create.html#how-to-create-account-nextgis-id>`_. 
-
-
-.. figure:: _static/ngc-stages-004_eng_2.png
-   :name: list_of_collectors_empty_pic
-   :align: center
-   :width: 20cm
-
-   List of collectors
-
-To add a team participant to the Web GIS press "Create" button.
-It will redirect you to the "Create new collector" page. Make sure to type in full email address that serves as NextGIS ID login. 
-
-.. note::
-    We recommend filling up the field "Description" with the name and the surname of the team participant in order to have data about all NextGIS Collector users in one place. 
-    You can always find the participant you need with a search tool in a table of Collector users, which is quite suitable when there are a lot of participants. 
- 
-
-.. figure:: _static/ngc-stages-005_eng_2.png
-   :name: create_collector_pic
-   :align: center
-   :width: 20cm
-
-   Creating a new data collection participant
-
-
-As a result of this stage all data collection team participants will be registered in your Web GIS.
-
-.. figure:: _static/ngc-stages-006_eng_2.png
-   :name: list_of_collectors_pic
-   :align: center
-   :width: 20cm
-
-   An example of a filled list of collectors
-
-Users with a registration in your Web GIS can access data collection projects from your Web GIS and begin data collection after they installed the `NextGIS Collector <https://play.google.com/store/apps/details?id=com.nextgis.collector>`_ mobile app and successfully sign in there. 
-
-However you can control the access of different users to each individual project. 
-
-Now you can created the neccessary resources for data collection.
 
 
 
@@ -69,8 +25,8 @@ Data collection project
 
 Data collection project is a resource in your Web GIS, it is a set of layers for editing. 
 In NextGIS Web a data collection project resource is called "Collector Project".
-Data collection project allows a data collection team participant to edit its layers. 
-Web GIS owner can restrain access to the project for separate participants. 
+Data collection project allows a collector to edit its layers. 
+Web GIS owner can restrain access to the project for particular collectors. 
 
 Before creating a Collector project make sure you've completed the preparation:
 
@@ -274,14 +230,63 @@ Click **Create**.
 
 As a result a Collector project (data collection project) will be created.
 
-You can have unlimited number of projects in your Web GIS. In each of them you can restrain or allow access for a particular set of users from the data collection participants list.
+You can have unlimited number of projects in your Web GIS. In each of them you can restrain or allow access for a particular set of collectors from the list.
+
+
+.. _ngw_collector_add_members:
+
+List of collectors
+---------------------
+
+In the Collectors section of the Control Panel, you can manage the list of `data collectors <https://docs.nextgis.com/docs_ngcom/source/collector.html>`_. 
+
+.. note:: Not to be confused with Web GIS users. `Add the user to your team <https://docs.nextgis.com/docs_ngcom/source/teams.html#ngcom-team-management>`_ to grant access to view and/or edit resources of your Web GIS. 
+
+In the collector list you can sort and search by NextGIS ID or description.
+
+.. figure:: _static/list_of_collectors_en.png
+   :name: list_of_collectors_pic
+   :align: center
+   :width: 20cm
+
+   List of collectors
+
+On this page you can:
+
+* Change the display name (= description) of a collector;
+* Add new collector;
+* Delete collector from the list (if you just need to remove collector from a project, untick them in the project settings instead).
+
+
+To add a new collector click **Create**.
+In the pop-up window enter NextGIS ID email of the user and a description.
+
+.. note::
+    We recommend entering the user's full name to the "Description" field in order to have data about all NextGIS Collector users in one place. 
+ 
+
+.. figure:: _static/create_collector_en.png
+   :name: create_collector_pic
+   :align: center
+   :width: 12cm
+
+   Adding a new collector
+
+.. note:: If you need more Collectors, `upgrade to Premium <https://my.nextgis.com/subscription/update>`_ subscription plan or `deploy NextGIS Extended <https://nextgis.com/pricing/#ngwextended>`_ on your own server.
+
+You can control which of the collectors are included in individual Collector projects. It is manage in the `project settings <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngc-list-collectors-pic>`_.
+
+To join a project, collector must install `NextGIS Collector <https://play.google.com/store/apps/details?id=com.nextgis.collector>`_ mobile app and sign in with NextGIS ID. 
+
 
 .. _collector_create_form:
 
 Form for data collection
 ------------------------
 
-Data collected by field workers is stored in a vector layer. For a vector layer you can create a data collection form as a child resource. It provides a user-freindly interface viewed in the Collector app. Forms are automatically created to editable vector layers added to a Collector project.
+For a vector layer you can create a custom form. It provides a user-freindly interface for entering and editing attribute values. 
+
+When you create a Collector project using the `set up wizard <https://docs.nextgis.ru/docs_ngweb/source/collector.html#project-wizard>`_, forms are automatically created for all included layers.
 
 To create a new form:
 
@@ -345,19 +350,33 @@ You're redirected to the page of the form resource where you can preview the new
 
    Preview of the form
 
-Next you can:
+Where you can use the form:
 
-* create a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_;
-* or `add the layer to NextGIS Mobile <https://docs.nextgis.com/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, the form will be available for editing data in the app.
+* mobile app NextGIS Mobile, when you `add a layer <https://docs.nextgis.com/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, the form will be available for editing data in the app; 
+* in a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_ in NextGIS Collector app;
+* while editing features `on a Web Map <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngweb-tab-form-pic>`_.
+
+To use a form on the Web Map, activate the checkbox on the Settings tab of the form.
+
+.. figure:: _static/form_webmap_en.png
+   :name: form_webmap_pic
+   :align: center
+   :width: 16cm
+
+   Enabling form for use on Web Maps
+
 
 Form can be **edited**. Press the pencil icon next to it or open the resource page and click **Edit**. If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
 
-After a form is modified, select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
-
-
 You can have **multiple** forms for one layer. Include different forms in different Collector projects or add several forms for one layer in one project. 
 
+After a form is modified:
 
+* in NextGIS Collector select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer.
+* in NextGIS Mobile delete the layer and add it again.
+* on a Web Map exit the Edit mode and enter it again.
+
+After that the modified form will be available.
 
 
 .. seealso:: Seems confusing? Check out our tutorial `Collect Spatial Data in the Field <https://docs.nextgis.com/docs_howto/source/tutorial_collect.html>`_ that guides you through the whole process step-by-step.

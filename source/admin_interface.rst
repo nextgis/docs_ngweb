@@ -1,47 +1,4 @@
 
-.. |button_main_menu| image:: _static/button_main_menu.png
-   :width: 8mm
-   :alt: three lines
-
-.. |button_delete| image:: _static/button_delete.png
-   :width: 6mm
-   :alt: trash can
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: pencil
-
-.. |button_json| image:: _static/button_json.png
-   :width: 6mm
-   :alt: curly brackets
-
-.. |button_key| image:: _static/button_key.png
-   :width: 6mm
-   :alt: key
-
-.. |button_attachments| image:: _static/button_attachments.png
-   :width: 6mm
-   :alt: paper clip
-
-.. |button_export| image:: _static/button_export.png
-   :width: 6mm
-   :alt: down arrow
-
-.. |button_open_gallery| image:: _static/button_open_gallery.png
-   :width: 6mm
-   :alt: tree frames
-
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: magnifying glass on map
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: table
-
-.. |button_preview| image:: _static/button_preview.png
-   :width: 6mm
-   :alt: eye
 
 .. _ngw_admin_interface:
 
@@ -266,16 +223,16 @@ Watch on `youtube <https://youtu.be/RGFhdQHjXjE?si=1quN_6Q2VOet8XK7>`_.
 .. _ngw_control_panel:
 
 Control panel
---------------------------------
+---------------
 
 NextGIS Web Control panel is available through the main menu. Press the |button_main_menu| button in the top right corner (see item 1 in :numref:`admin_index_pic`) and select "Control panel".
 
 Control panel has several sections, see :numref:`admin_control_panel`.
 
-.. figure:: _static/admin_control_panel_eng_3.png
+.. figure:: _static/ngw_control_panel_en.png
    :name: admin_control_panel
    :align: center
-   :width: 7cm
+   :width: 16cm
 
    Control panel
 
@@ -284,7 +241,7 @@ Control panel allows to execute the following actions:
 * `Manage NextGIS Web groups and users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_
 * `Display information about the system and storage <https://docs.nextgis.com/docs_ngweb/source/infowebgis.html>`_
 * Access cadaster services
-* `Add participants of Collector projects <https://docs.nextgis.com/docs_ngweb/source/collector.html>`_
+* `Manage lis of Collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html>`_
 * `Set the name of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#web-gis-name>`_
 * `Configure CORS <https://docs.nextgis.com/docs_ngweb/source/cors.html>`_
 * `Manage custom fonts <https://docs.nextgis.com/docs_ngweb/source/look.html#font-management>`_
@@ -331,7 +288,7 @@ Other actions can be available depending on the resource type, including:
 * |button_open_gallery| view resource gallery;
 * |button_open_feature_table| open feature table (for vector layers);
 * |button_attachments| manage attachments (for vector layers);
-* |button_export| save features of the vector layer as a file, etc.
+* |button_download| save features of the vector layer as a file, etc.
 
 Press three dots in the right corner of the table title to open the resource list menu.
 
@@ -405,52 +362,52 @@ Authorized users can `edit features <https://docs.nextgis.com/docs_ngweb/source/
 Data export
 -----------------
   
-Web GIS allows to export data from Vector layers and PostGIS layer in the following formats:
+The Export button |button_download| is available:
 
-* :term:`GeoPackage`
-* :term:`CSV` and CSV for Microsoft Excel
-* :term:`ESRI Shapefile`
-* :term:`AutoCAD DXF`
-* :term:`Mapinfo TAB`
-* :term:`MapInfo MIF/MID`
-* :term:`GeoJSON`
-* :term:`KML`
-* :term:`KMZ`
-* :term:`GPX`
+* in the layer menu from the resource list;
+* on the layer resource page;
+* in the layer `feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_;
+* in the `layer menu on a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngweb-webmap-layer-menu-pic>`_.
 
-Depending on the format, additional file components are exported making further use of the exported data more convenient. For example CSVT (field structure description) and PRJ (coordinate system description) are added to CSV and CPG (codepage) to ESRI Shapefile.
-
-.. note:: 
-	Geometry and attributes are supported for export. Features' descriptions, metadata and images can't be exported in the described way but can be requested using :ref:`NextGIS API <ngcom_ngapi>`.
-
-To export data, click |button_export| **Save as** in the resource menu or, if you are on the layer's resource page, select "Save as" in the Features pane on the right.
-
-.. figure:: _static/ngw_data_export_from_list_en.png
+.. figure:: _static/ngw_data_export_from_list_en_2.png
    :name: ngw_data_export_from_list_pic
    :align: center
    :width: 20cm
    
-   Selecting "Save as" action to export data
+   Selecting "Export" action
 
-.. figure:: _static/ngweb_data_export_eng_3.png
+.. figure:: _static/ngw_data_export_from_page_en.png
    :name: ngweb_data_export
    :align: center
    :width: 20cm
    
-   Selecting "Save as" action on the layer page
+   Selecting "Export" action on the layer page
 
-On the next page you can configure the export file. By default data is exported to a GeoPackage file using UTF-8 encoding with all fields included. `Learn more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#export-settings>`_ about export settings.
+On the next page you can configure the export file.
+Click **Save** to save the file to your device.
 
-.. figure:: _static/ngw_data_export_set_en.png
+
+.. figure:: _static/ngw_data_export_set_en_2.png
    :name: ngw_data_export_set_en
    :align: center
    :width: 20cm
 
    Data export settings
 
+By default data is exported to a GeoPackage file using UTF-8 encoding with all fields included. `Learn more <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#export-settings>`_ about export settings.
 
+.. note:: 
+	This way exports only geometry and attributes. 
+  
+You can also export:
+  
+* `feature descriptions <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-manage-descriptions>`_;
+* `attached photos and other files <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments-imp-exp>`_.
+  
+Features' descriptions, metadata and images can't be exported in the described way but can be requested using :ref:`NextGIS API <ngcom_ngapi>`.
 
-Click **Save** to save the file to your device.
+You can also export data from vector layers using `NextGIS connect plugin for desktop app QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
+
 
 .. _ngw_vector_export_settings:
 
@@ -459,14 +416,26 @@ Export settings
 
 The parameters of the export are:
 
-* **Data format** - GeoPackage as the default, select one of supported formats from the dropdown menu;
+* **Data format** - GeoPackage as the default, select one of supported formats from the dropdown menu:
+
+  * :term:`GeoPackage`
+  * :term:`CSV` and CSV for Microsoft Excel
+  * :term:`ESRI Shapefile`
+  * :term:`AutoCAD DXF`
+  * :term:`Mapinfo TAB`
+  * :term:`MapInfo MIF/MID`
+  * :term:`GeoJSON`
+  * :term:`KML`
+  * :term:`KMZ`
+  * :term:`GPX`
+
 * **Spacial reference system** - in addition to standard coordinate systems Longitude-Latitude (EPSG: 4326) and Mercator (EPSG: 3857) you can select custom coordinate systems created earlier (how to add custom SRS see `this page <https://docs.nextgis.com/docs_ngweb/source/ngw_srs.html>`_). Note that KML, KMZ and GPX formats can only be exported in EPSG: 4326;
 * **Encoding** - UTF-8, Windows-1251, or Windows-1252;
 * **FID field** is used for setting a field name to be added to a exported data where the object identifiers will be placed (the default is “ngw_id”).;
 * You can choose to **Use field display names instead of keynames** Keynames are technical and use only plain Latin symbols.  Display names can be in any language, usually they are seen as column headers or field labels in a form (for more details see `this section <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_).;
 * **Fields** - By default, all are selected. To remove a field, click on the cross by its name or untick it in the drop-down menu. To add a field again, tick it in the drop-down menu;
 
-.. figure:: _static/export_fields_en_2.png
+.. figure:: _static/export_fields_en_3.png
    :name: export_fields_pic
    :align: center
    :width: 20cm    
@@ -485,11 +454,11 @@ Watch on `youtube <https://youtu.be/Hukt3lD-JyQ?si=c8Cbut245FWU7LMQ>`__.
 * If you need to have the file archived, select *ZIP archive*. Output in ESRI Shapefile or MapInfo TAB results in a Zip archive with necessary files. For single-file formats (like GeoJSON or CSV) creation of Zip archive is optional.
 
 All export options are available through HTTP API.
-For example, this query will get you data in CSV format, EPSG:4326, UTF-8 encoding, zipped:
+For example, this query will get you data in CSV format, EPSG:4326, UTF-8 encoding, zipped::
 
-https://demo.nextgis.com/api/resource/4077/export?format=csv&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8 
+  https://demo.nextgis.com/api/resource/4077/export?format=csv&srs=4326&zipped=true&fid=ngw_id&encoding=UTF-8 
 
-You can also export data from Vector layers using `feature table on the Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ or `with desktop app NextGIS QGIS <https://docs.nextgis.com/docs_ngconnect/source/export.html>`_.
+
 
 .. _guest:
 
@@ -514,3 +483,49 @@ To open the main menu, click |button_main_menu| in the top right corner. Tree op
    Message form
 
 The Web GIS administrator will receive your message and email address so that they can reply by email.
+
+
+
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 8mm
+   :alt: three lines
+
+.. |button_delete| image:: _static/button_delete.png
+   :width: 6mm
+   :alt: trash can
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_json| image:: _static/button_json.png
+   :width: 6mm
+   :alt: curly brackets
+
+.. |button_key| image:: _static/button_key.png
+   :width: 6mm
+   :alt: key
+
+.. |button_attachments| image:: _static/button_attachments.png
+   :width: 6mm
+   :alt: paper clip
+
+.. |button_download| image:: _static/button_download.png
+   :width: 6mm
+   :alt: down arrow
+
+.. |button_open_gallery| image:: _static/button_open_gallery.png
+   :width: 6mm
+   :alt: tree frames
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: magnifying glass on map
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_preview| image:: _static/button_preview.png
+   :width: 6mm
+   :alt: eye
