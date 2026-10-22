@@ -3,14 +3,12 @@
 .. _ngw_webmaps_client:
 
 Web Map viewer
-=============================
+=================
 
 A special web application for viewing Web Maps is included in NextGIS Web (see :numref:`webmap_client`).
 
 To view the Web Map press |button_open_web_map| next to its name in the resource list or open the resource page and select **Display** in the Actions panel on the right. The following page will open:
 
-
- 
 .. figure:: _static/webmap_client_eng_4.png
    :name: webmap_client
    :align: center
@@ -98,7 +96,7 @@ See detailed descriptions below.
 .. _ngw_webmaps_client_tools_measure:
 
 Measuring tools
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Map tools allow to measure distance (straight or segmented line) and area. Activate the tool and draw a line by clicking on the map. Double-click to finish line creation. You can draw multiple measuring lines on a map and compare results. To delete one of the measurement lines, press X on the measurement results lable. To clear selection, press the tool button again.
 
@@ -285,7 +283,7 @@ Layer menu
 
 Click on the three dots to the right of the layer name to open its menu. The following options are available:
 
-.. figure:: _static/ngweb_webmap_layer_menu_en_4.png
+.. figure:: _static/ngweb_webmap_layer_menu_en_5.png
    :name: ngweb_webmap_layer_menu_pic
    :align: center
    :width: 19cm
@@ -296,6 +294,7 @@ Click on the three dots to the right of the layer name to open its menu. The fol
 * |button_filter| **Filter** - display only the features fitting `set conditions <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#filter>`_.
 * |button_table| **Feature table** - opens the layer's `feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#ngw-feature-table-webmap>`_ on the map. 
 * |button_edit_black| **Edit on map** - activates the ability to to modify the features of the selected layer. To complete the process, open the dropdown menu again and select **Stop editing** (`read more here <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#edit-mode>`_) or click |button_maptool_save| on the map.
+* |button_download| **Export** - save layer to a file, `learn more on export settings <https://docs.nextgis.com/docs_ngweb/source/admin_interface.html#ngw-vector-export>`_ (`How to hide this option from the menu <https://docs.nextgis.com/docs_ngweb/source/look.html#ngw-res-export>`_)
 * |button_tune| **Properties** - how the layer behaves on this particular Web Map (`more about layes on a Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#admin-webmap-create-layers>`_).
 * |button_article| **Description** - view the description of the selected layer, if it has one.
 * |button_close| **Remove layer** from the legend (to reset it, click |button_restore| Reset layers in the panel menu).
@@ -409,15 +408,50 @@ Search
 3. Address database (OpenStreetMap or Yandex.Maps, depending on `address search settings <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#address-search>`_). 
 
 Results are shown as user inputs text and are sorted in this order: points on the map matching the coordinates, then feature numbers for attribute search and finally full addresses.
-After a click on a search result map changes extent to show selected feature.
 
-.. figure:: _static/webmap_search_results_en.png
+In the list of results you'll see the fid of the feature or the `label attribute <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngweb-admin-layers-attr>`_ if it is set. Hover over the result to view the attribute containing the search words.
+
+
+
+.. figure:: _static/webmap_search_results_en_2.png
    :name: webmap_search_results_pic
    :align: center
    :width: 20cm
 
-   Feature selected in search results is displayed on the map
+   Search results for "logan": found in the "Name" label attribute as well as in "Address: Street name" attribute
 
+Click on a search result to view the feature. The entire list of search results remains available, you can switch between them.
+
+To view the attributes of the feature click on the blue cursor icon next to the search result. 
+
+.. figure:: _static/webmap_search_results_logan_en.png
+   :name: webmap_search_results_fish_pic
+   :align: center
+   :width: 20cm
+
+   Feature viewed on the map, the highlighted button opens attributes
+
+.. figure:: _static/webmap_search_results_logan_attr_en.png
+   :name: webmap_search_results_fish_attr_pic
+   :align: center
+   :width: 20cm
+
+   Attributes of the selected feature
+
+Click on |button_tune| on the search panel to open search settings.
+
+.. figure:: _static/webmap_search_settings_en.png
+   :name: webmap_search_settings_pic
+   :align: center
+   :width: 20cm
+
+   Search settings
+
+You can configure the following parameters:
+
+* Which layers to search: all, visible or particular layer;
+* Disable search by coordinates and/or address database;
+* Map behaviour when selecting a search result: zoom to the feature or just pan.
 
 .. _ngw_webmaps_search_coord:
 
@@ -624,3 +658,7 @@ The Web GIS administrator will receive your message and email address so that th
 .. |button_extent_all| image:: _static/button_extent_all.png
    :width: 6mm
    :alt: table
+
+.. |button_download| image:: _static/button_download.png
+   :width: 6mm
+   :alt: down arrow to tray
