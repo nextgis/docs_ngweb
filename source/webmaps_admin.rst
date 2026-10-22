@@ -3,7 +3,7 @@
 
 .. _ngw_webmaps_admin:
 
-Adding Web Maps
+Web Maps
 ============================
 
 There could be several Web Maps in NextGIS Web. For example one map is for work, another is for public access and third is for testing of layer styles.
@@ -20,7 +20,7 @@ To view Web Map in browser, press |button_open_web_map| next to its name in the 
 
 .. _ngw_map_create:
     
-Creating a Web Map
+Create a Web Map
 ---------------------
 
 First upload the data to your Web GIS as `layers <https://docs.nextgis.com/docs_ngweb/source/layers.html>`_.
@@ -213,11 +213,11 @@ If “Default basemap” is checked, this basemap will be visible when the Web M
 
 .. _ngw_create_basemap:
 
-Creating Basemap
-~~~~~~~~~~~~~~~~~~~
+Create Basemap
+~~~~~~~~~~~~~~~~
 
-Press **Create resource** button and select **Basemap** (:numref:`ngweb_admin_create_basemap`).
-In the opened window enter the name of the resource that will be displayed in the administrator interface (:numref:`ngweb_admin_basemap_name`).
+Press **Create resource** button and select **Basemap**.
+
 
 .. figure:: _static/ngweb_create_basemap_en.png
    :name: ngweb_admin_create_basemap
@@ -225,41 +225,33 @@ In the opened window enter the name of the resource that will be displayed in th
    :width: 20cm
 
    Selection of "Basemap" resource type
-   
-   
-.. figure:: _static/ngweb_admin_basemap_name_eng_3.png
-   :name: ngweb_admin_basemap_name
-   :align: center
-   :width: 20cm
 
-   Basemap name
-   
-   
-The "Description" and "Metadata" of the resource are configured on the corresponding tabs (:numref:`ngweb_admin_basemap_desc`). On the “Description” tab you can add any text describing the content.
+There are two ways to create a basemap:
 
-.. figure:: _static/ngweb_admin_basemap_desc_eng_3.png
-   :name: ngweb_admin_basemap_desc
-   :align: center
-   :width: 20cm
-
-   Basemap description
-   
-
-In the “Basemap” tab you must enter the URL-address of the TMS service (:numref:`ngweb_admin_basemap_param`). There are two ways to do so:
-
-* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected,  other fields will be filled in automatically.
+* Use the search bar to find a map in the `QuickMapServices catalog <https://qms.nextgis.com/>`_. After a map is selected, other fields will be filled in automatically.
 * Enter the address manually. 
+
+You can use any TMS service or vector tile service as a basemap.
 
 The basemap will be previewed below. Press |button_toggle_basemap| **Toggle basemap** and move the opacity slider to compare it to the standard OSM basemap.
 
-
-
-.. figure:: _static/create_basemap_settings_en_3.png
+.. figure:: _static/create_basemap_settings_en_4.png
    :name: ngweb_admin_basemap_param
    :align: center
-   :width: 16cm
+   :width: 18cm
 
    Basemap settings
+
+You can also enter a custom name that will be displayed in the resource list.
+
+.. figure:: _static/ngw_basemap_name_en.png
+   :name: ngweb_admin_basemap_name
+   :align: center
+   :width: 15cm
+
+   Basemap name
+  
+The `"Description" and "Metadata" <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html#ngw-update-info-metada>`_ of the resource are configured on the corresponding tabs.
 
 .. hint:: 
 
