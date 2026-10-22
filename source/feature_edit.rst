@@ -65,58 +65,6 @@ Below you can find detailed description of these operations.
 
 Features available for editing are highlighed. You can edit multiple layers at once, each is highlighted with a different color.
 
-.. |button_maptool_add| image:: _static/button_maptool_add.png
-   :width: 6mm
-   :alt: + in a circle
-
-.. |button_maptool_edit| image:: _static/button_maptool_edit.png
-   :width: 6mm
-   :alt: pencil
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: pencil
-
-.. |button_maptool_move| image:: _static/button_maptool_move.png
-   :width: 6mm
-   :alt: outward arrows
-
-.. |button_maptool_attrib| image:: _static/button_maptool_attrib.png
-   :width: 6mm
-   :alt: three lines
-
-.. |button_maptool_delete| image:: _static/button_maptool_delete.png
-   :width: 6mm
-   :alt: trash can
-
-.. |button_maptool_save| image:: _static/button_maptool_save.png
-   :width: 6mm
-   :alt: floppy disc
-
-.. |button_maptool_undo| image:: _static/button_maptool_undo.png
-   :width: 6mm
-   :alt: U-shaped arrow
-
-.. |button_maptool_hole| image:: _static/button_maptool_hole.png
-   :width: 6mm
-   :alt: scissors
-
-.. |button_maptool_snap| image:: _static/button_maptool_snap.png
-   :width: 6mm
-   :alt: frame with a dot
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: table
-
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: map and magnifying glass
-
-.. |button_maptool_confirm| image:: _static/button_maptool_confirm.png
-   :width: 6mm
-   :alt: tick
-
 .. _ngw_create_objects:
 
 Create a new feature (point, line, polygon)
@@ -131,7 +79,7 @@ Create a new feature (point, line, polygon)
 
    "Create feature" button on the toolbar and the mark by the mouse pointer
 
-2. A colored circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. 
+2. A colored circle will appear nearby a mouse pointer, with it you can add new features. Click on the map to create a new feature. Alternatively, you can `enter coordinates from the keyboard <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-create-coords>`_.
 
 3. A dialog opens where you can add attribute values. 
 
@@ -148,9 +96,9 @@ You can enter multiple features one after the other.
 
 When creating a line, click on the map to indicate its start and end points. While creating a polygon each new click on the map adds a new vertex. 
 
-To finish creating geometry, press **Enter**, click twice on the last vertex or click |button_maptool_confirm|. To finish a polygon you can also click on its starting point. 
+To finish creating geometry, press :guilabel:`Enter`, click twice on the last vertex or click |button_maptool_confirm|. To finish a polygon you can also click on its starting point. 
 
-If you accidentally click on a wrong place, press **Backspace** to delete the last vertex and place it elsewhere.
+If you accidentally click on a wrong place, press :guilabel:`Backspace` to delete the last vertex and place it elsewhere.
 
 Snapping is enabled by default for lines and polygons. To disable it, click |button_maptool_snap| and untick all the options.
 
@@ -166,6 +114,48 @@ In the opened dialog select **"Save"** to save changes, "Don't save" to discard 
 
    Dialog for finishing the edits
 
+.. _ngw_create_coords:
+
+Add feature by entering coordinates
+-----------------------------------
+
+Click |button_keyboard| button next to the "+" maptool and enter the two coordinates separated by a space. As in the search bar, you'll get two possible interpretations: latitude-longitude or longitude-latitude.
+
+.. figure:: _static/webmap_create_coord_select_en.png
+   :name: webmap_create_coord_select_pic
+   :align: center
+   :width: 20cm
+
+   Entering point coordinates
+
+After one of the options is selected, the point appears on the map. If the position is correct, click **Ok** to proceed to enetring attributes.
+
+.. figure:: _static/webmap_create_coord_confirm_en.png
+   :name: webmap_create_coord_confirm_pic
+   :align: center
+   :width: 20cm
+
+   Confirming point coordinates
+
+When creating a line or polygon click **Ok** to confirm a vertex. The coordinates field is cleard and you can enter the coordinates for the next vertex.
+
+.. figure:: _static/webmap_create_coord_poly_en.png
+   :name: webmap_create_coord_poly_pic
+   :align: center
+   :width: 20cm
+
+   Confirming coordinates for polygon vertex
+
+After the last vertex is entered click |button_maptool_confirm| or press :guilabel:`Enter` on the keyboard to proceed to entering attributes.
+
+.. figure:: _static/webmap_create_coord_poly_result_en.png
+   :name: webmap_create_coord_poly_result_pic
+   :align: center
+   :width: 20cm
+
+   Newly created polygon
+
+To save the changes made to the layer click |button_maptool_save| or exit the Edit mode |button_edit| in the layer menu and confirm changes.
 
 .. _ngw_delete_objects:
 
@@ -299,18 +289,18 @@ If you are in the Web Map |button_open_web_map| display mode.
 
 * From the Feature table:
 
-   - In the layer's context menu select "Feature table" and then follow the steps described above.
+  - In the layer's context menu select "Feature table" and then follow the steps described above.
   
 * In the Edit mode:
 
-   - In the layer's context menu select "Edit". 
-   - In the toolbar on the map select |button_maptool_attrib|.
-   - Click on the feature on the map.
+  - In the layer's context menu select "Edit". 
+  - In the toolbar on the map select |button_maptool_attrib|.
+  - Click on the feature on the map.
 
 * From the Identify panel:
 
-   - Click on the feature on the map. 
-   - In the Identify panel click on the "Edit" symbol (see :numref:`ngweb_editing_when_viewing_map`).
+  - Click on the feature on the map. 
+  - In the Identify panel click on the "Edit" symbol (see :numref:`ngweb_editing_when_viewing_map`).
 
 .. figure:: _static/editing_when_viewing_map_open_en.png
    :name: ngweb_editing_when_viewing_map
@@ -325,10 +315,10 @@ Editing dialog has the following tabs:
 
 * "Attributes" tab:
 
-.. figure:: _static/ngweb_tab_attributes_eng_2.png
+.. figure:: _static/ngweb_tab_attributes_en.png
    :name: ngweb_tab_attributes
    :align: center
-   :width: 14cm
+   :width: 20cm
  
    Attributes tab
 
@@ -339,6 +329,15 @@ Numbers can be typed in or modified with arrows that appear on the right end of 
 Dates also can be typed in or selected in the calender. To open the calender click the icon on the right end of the field.
 
 Add a `Lookup table <https://docs.nextgis.com/docs_ngweb/source/create_other.html#ngw-create-lookup-table>`_ to a field to be able to pick a value from a dropdown list.
+
+You can also add a configurable `custom form <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_ for entering and editing attributes. An added form is available on a separate tab.
+
+.. figure:: _static/ngweb_tab_form_en.png
+   :name: ngweb_tab_form_pic
+   :align: center
+   :width: 20cm
+
+   Custom attribute entering form
 
 * "Attachments" tab (`more on managing attachments <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments>`_);
 
@@ -581,3 +580,60 @@ On the Settings tab in the Layers editing field select **Disable** in the dropdo
 
 .. |button_panorama_toggle| image:: _static/button_panorama_toggle.png
    :width: 6mm
+
+
+.. |button_maptool_add| image:: _static/button_maptool_add.png
+   :width: 6mm
+   :alt: + in a circle
+
+.. |button_maptool_edit| image:: _static/button_maptool_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_maptool_move| image:: _static/button_maptool_move.png
+   :width: 6mm
+   :alt: outward arrows
+
+.. |button_maptool_attrib| image:: _static/button_maptool_attrib.png
+   :width: 6mm
+   :alt: three lines
+
+.. |button_maptool_delete| image:: _static/button_maptool_delete.png
+   :width: 6mm
+   :alt: trash can
+
+.. |button_maptool_save| image:: _static/button_maptool_save.png
+   :width: 6mm
+   :alt: floppy disc
+
+.. |button_maptool_undo| image:: _static/button_maptool_undo.png
+   :width: 6mm
+   :alt: U-shaped arrow
+
+.. |button_maptool_hole| image:: _static/button_maptool_hole.png
+   :width: 6mm
+   :alt: scissors
+
+.. |button_maptool_snap| image:: _static/button_maptool_snap.png
+   :width: 6mm
+   :alt: frame with a dot
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: table
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: map and magnifying glass
+
+.. |button_maptool_confirm| image:: _static/button_maptool_confirm.png
+   :width: 6mm
+   :alt: tick
+
+.. |button_keyboard| image:: _static/button_keyboard.png
+   :width: 6mm
+   :alt: keyboard
