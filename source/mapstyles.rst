@@ -257,7 +257,7 @@ If you want to create a simple custom style, select "User-defined style" in the 
 * Marker size and stroke width. Enter a number or use the arrows in the field;
 * Fill color and stroke color and their opacity (by using sliders and eyedropper or entering values in HEX, HSB or RGB format);
 * The style of the line / polygon outline: solid, dotted, dashed, dash-dotted;
-* Labels (tick this option to view its settings): size, color and field selection.
+* Labels (tick this option to view its settings): size, color and field selection. If a label hides the marker, you can add offset: X shifts the label to the right, Y - down.
 
 
 .. figure:: _static/QGIS_style_custom_en_2.png
