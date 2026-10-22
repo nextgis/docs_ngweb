@@ -21,7 +21,7 @@ Feature table allows to perform the following operations with the selected entry
 #. `Create new entry <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-create>`_ (new feature)
 #. `Edit entry <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-edit>`_ 
 #. `Delete entry <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-delete>`_
-#. `Show the total feature count <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
+#. `Show the total feature count and aggregation <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
 #. `Search and filter by attribute values <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#table-search-filter>`_
 #. Save as a file (choose between advanced and `quick export <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-export>`_)
 #. `Refresh the table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html#feature-table-other-tools>`_
@@ -336,7 +336,14 @@ The first change logged is the time the versioning is enabled.
 Other tools
 -----------------------------------
 
-Click on the # hashtag button to see the current feature count.
+Click on the # hashtag button to see the current feature count. If `aggregation is enabled <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#field-param>`_ for a numeric field, it's displayed in an additional row.
+
+.. figure:: _static/feature_table_count_en.png
+   :name: feature_table_count_pic
+   :align: center
+   :width: 16cm
+
+   Feature cound and aggregated numbers
 
 Click |button_refresh_single| to refresh the table so that it includes the latest changes made elsewhere.
 

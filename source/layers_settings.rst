@@ -50,13 +50,18 @@ On this tab you can:
 
    "Fields" tab
 
+.. _field_param:
+
+Field parameters
+-----------------
+
 The table contains the following columns:
 
 * Display name that is used in the identification window instead of the keyname;
 * Keyname - technical name of the attribute, can be comprised only of plain latin symbols;
 
 
-.. figure:: _static/key_field_name_en_2.png
+.. figure:: _static/key_field_name_en_3.png
    :name: key_field_name_pic
    :align: center
    :width: 16cm    
@@ -83,30 +88,38 @@ The table contains the following columns:
 
 For the next three parameters a dark symbol means "on" and a light symbol means "off".
 
-.. |attr_label_symbol| image:: _static/attr_label_symbol.png
-   :width: 6mm
-.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
-   :width: 6mm
-.. |attr_table_symbol| image:: _static/attr_table_symbol.png
-   :width: 6mm
-
-.. |button_plus_layer| image:: _static/button_plus_layer.png
-   :width: 6mm
-   :alt: +
-
-.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
-   :width: 6mm
-   :alt: X
-
-.. |button_hide_details| image:: _static/button_hide_details.png
-   :width: 6mm
-
 * |attr_table_symbol| Feature table - the attribute is displayed in the identification window.
 * |attr_text_search_symbol| Text search - you can disable text search in the values of the attribute.
 * **!** Required - this field needs to be filled in if someone creates or edits a feature.
 * |attr_label_symbol| Label attribute - value from this fielsd is used as feature name for `search results <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-search>`_, `identification <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-ident>`_ and `bookmarks <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_.
 
 .. note:: To modify the labels visisble on the map itself, use `style settings <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#ngw-qgis-style-custom>`_
+
+For a numerical field you can also add aggregation of one of the following types:
+
+* none;
+* sum;
+* minimal value;
+* maximal value.
+
+.. figure:: _static/ngw_attr_aggr_en.png
+   :name: ngw_attr_aggr_pic
+   :align: center
+   :width: 16cm
+
+   Aggregation enabled
+
+.. admonition:: How to view aggregation in the Feature table?
+
+  Click on the hashtag **#** symbol. A new row appears displaying the aggregation results.
+
+.. figure:: _static/feature_table_count_en.png
+   :name: feature_table_count_pic
+   :align: center
+   :width: 16cm
+
+   Feature count and aggregation
+
 
 You can also `add a Lookup table <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_. It allows to select values of the attribute when you add or edit features. 
 
@@ -230,3 +243,22 @@ You can change the geometry of an existing vector layer without replacing the da
    Changing geometry of a point layer
 
 If you need to change the geometry significantly (split polygons into lines, for example) but keep the resource ID, use the `replace features from file <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_ option instead.
+
+
+.. |attr_label_symbol| image:: _static/attr_label_symbol.png
+   :width: 6mm
+.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
+   :width: 6mm
+.. |attr_table_symbol| image:: _static/attr_table_symbol.png
+   :width: 6mm
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+   :alt: +
+
+.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
+   :width: 6mm
+   :alt: X
+
+.. |button_hide_details| image:: _static/button_hide_details.png
+   :width: 6mm
