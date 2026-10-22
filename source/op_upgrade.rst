@@ -69,13 +69,21 @@ If you are upgrading without Internet access, at this stage you need to import t
    $ cd /srv/ngwdocker
    $ docker compose up -d
 
-Upgrade to 3.3.x from 3.2.x
------------------------------------------
+
+Upgrade to 3.4.x from 3.3.x
+---------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
+
+Upgrade to 3.3.x from 3.2.x
+---------------------------
+
+No additional steps needed, proceed with the standard steps to update.
+
+
 Upgrade to 3.2.x from 3.1.x
------------------------------------------
+---------------------------
 
 Step 6 for Extended Edition (including Whitelabel) requires starting the ``chub`` service with ``docker compose up -d chub`` before running ``docker compose run --rm app nextgisweb maintenance``. The commands for step 6 are as follows:
 
@@ -86,8 +94,9 @@ Step 6 for Extended Edition (including Whitelabel) requires starting the ``chub`
    $ docker compose up -d chub
    $ docker compose run --rm app nextgisweb maintenance
 
+
 Upgrade to 3.1.x from 3.0.x
------------------------------------------
+---------------------------
 
 In version 3.1.0, the system requirements have changed. Ensure that your system meets the requirements listed below:
 
@@ -110,13 +119,15 @@ If the result is empty (0 rows, as in the example), you can continue with the up
 
 If it's not empty, you must not continue. Contact NextGIS support instead. It may happen if the initial installation had the version below 1.7.0 (released in August 2021).
 
+
 Upgrade to 3.0.x from 2.9.x
------------------------------------------
+---------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
+
 Upgrade to 2.9.x from 2.8.x
------------------------------------------
+---------------------------
 
 After creating a backup (step 3) you need to update PostGIS by running the commands cited below. As a result an interactive PostgreSQL console opens inside the container of the NextGIS Web database:
 
@@ -140,22 +151,26 @@ In the interactive PostgreSQL console run the following command (``nextgisweb=#`
    nextgisweb=# ALTER USER nextgisweb NOSUPERUSER;
    nextgisweb=# \q
 
+
 Upgrade to 2.8.x from 2.7.x
------------------------------------------
+---------------------------
 
 No additional steps needed, proceed with the standard steps to update.
+
 
 Upgrade to 2.7.x from 2.6.x
------------------------------------------
+---------------------------
 
 No additional steps needed, proceed with the standard steps to update.
+
 
 Upgrade to 2.6.x from 2.5.x
------------------------------------------
+---------------------------
 
 No additional steps needed, proceed with the standard steps to update.
 
+
 Upgrade to 2.5.x from earlier versions
-------------------------------------------------
+--------------------------------------
 
 Depending on the version you are upgrading from, additional steps may be required. Please contact NextGIS support for recommendations on upgrading to version 2.5.x. Attach the current version of the file ``docker-compose.yaml`` from your server to the support request.

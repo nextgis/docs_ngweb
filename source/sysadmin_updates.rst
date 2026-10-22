@@ -1,11 +1,33 @@
-
-
 .. _sysadmin_tasks:
     
 Changelog
 ==========
 
 This section describes the latest changes to the software.
+
+**3.4.0 released on 22 Oct 2026**
+
+* Support for vector tile basemaps.
+* Improved web map search panel.
+* Group-level visibility control for web map layers.
+* Aggregate calculations for numeric fields in feature tables.
+* Feature editing with FormBuilder forms in the UI.
+* Coordinate input for geometry creation on web maps.
+* Support for navigation between panoramas using interactive markers.
+* AI-powered generation of QML styles.
+* Feature description import and export via UI.
+* Сonfigurable web map background color and option to disable basemaps.
+* Format-specific default coordinate systems for feature export.
+* Reorganized web map layer context menu.
+* Improved snapping controls for feature editing on web maps.
+* Clearer highlighting of identified raster pixels on web maps.
+* Improved transaction handling for external PostGIS layers.
+* More detailed error messages for external services.
+* Better support for right-to-left (RTL) layouts.
+* Support for rendering of QGIS styles using JSON field values.
+* Improved bulk deletion of resources in the UI.
+* Enhanced string comparison in feature filters.
+* Upgraded dependencies: React 19.3, MobX 7, and Psycopg 3.
 
 
 **3.3.0 released on 27 Jul 2026**
