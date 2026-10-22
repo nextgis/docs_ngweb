@@ -241,7 +241,7 @@ Control panel allows to execute the following actions:
 * `Manage NextGIS Web groups and users <https://docs.nextgis.com/docs_ngweb/source/users.html>`_
 * `Display information about the system and storage <https://docs.nextgis.com/docs_ngweb/source/infowebgis.html>`_
 * Access cadaster services
-* `Manage lis of Collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html>`_
+* `Manage list of Collectors <https://docs.nextgis.com/docs_ngweb/source/collector.html>`_
 * `Set the name of your Web GIS <https://docs.nextgis.com/docs_ngweb/source/look.html#web-gis-name>`_
 * `Configure CORS <https://docs.nextgis.com/docs_ngweb/source/cors.html>`_
 * `Manage custom fonts <https://docs.nextgis.com/docs_ngweb/source/look.html#font-management>`_

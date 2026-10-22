@@ -286,7 +286,7 @@ Form for data collection
 
 For a vector layer you can create a custom form. It provides a user-freindly interface for entering and editing attribute values. 
 
-When you create a Collector project using the `set up wizard <https://docs.nextgis.ru/docs_ngweb/source/collector.html#project-wizard>`_, forms are automatically created for all included layers.
+When you create a Collector project using the `set up wizard <https://docs.nextgis.com/docs_ngweb/source/collector.html#project-wizard>`_, forms are automatically created for all included layers.
 
 To create a new form:
 
@@ -354,7 +354,7 @@ Where you can use the form:
 
 * mobile app NextGIS Mobile, when you `add a layer <https://docs.nextgis.com/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, the form will be available for editing data in the app; 
 * in a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_ in NextGIS Collector app;
-* while editing features `on a Web Map <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngweb-tab-form-pic>`_.
+* while editing features `on a Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngweb-tab-form-pic>`_.
 
 To use a form on the Web Map, activate the checkbox on the Settings tab of the form.
 
