@@ -50,10 +50,10 @@ NextGIS Web
 
 **Сбор геоданных**
 
-* `Участники <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_
+* `Форма <https://docs.nextgis.ru/docs_ngweb/source/form_elements.html>`_
 * `Организация на своём сервере <https://docs.nextgis.ru/docs_ngweb/source/data_collection_on_premise.html>`_
-* `Проект <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_
-* `Форма <https://docs.nextgis.ru/docs_ngweb/source/collector.html#collector-create-form>`_
+* `Проект Collector <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-create-project>`_
+* `Управление сборщиками <https://docs.nextgis.ru/docs_ngweb/source/collector.html#ngw-collector-add-members>`_
 
 **Мониторинг движущихся объектов (трекинг)**
 
