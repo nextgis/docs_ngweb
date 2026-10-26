@@ -174,6 +174,44 @@ After a layer is created, you need to set a label attribute to display labels. N
 
 If the structure of the database changes (column names, column types, number of columns, table names etc.), you need to update the attribute definitions in the layer properties. Select "Update" in the actions pane and then on the "PostGIS layer" tab change "Attribute definitions" to "Reload" and click **Save**.
 
+
+.. _postgis_userinfo:
+
+User context
+-------------
+
+NextGIS Web can pass the following parameters:
+``nextgisweb.user_id, nextgisweb.user_keyname, nextgisweb.user_oauth_subject, nextgisweb.user_display_name``.
+
+To enable this functionality, check "Pass user context" in PostGIS Connection settings.
+
+.. figure:: _static/update_postgis_connection_userinfo_en.png
+   :name: update_postgis_connection_userinfo_pic
+   :align: center
+   :width: 15cm
+
+   Turning on user context in PostGIS settings
+
+On the PostgreSQL side, use ``current_setting`` with the name of the parameter, if it was passed in the current connection. The value is available only within this connection.
+
+Example: in PostgreSQL database there is a table named "parcels" and we'd like to know who modifies it. Here's how to do it:
+
+.. code-block::
+
+  ALTER TABLE parcels ADD COLUMN IF NOT EXISTS modified_by text;
+
+  CREATE OR REPLACE FUNCTION ngw_stamp_modified_by() RETURNS trigger
+  LANGUAGE plpgsql AS $$
+  BEGIN
+      NEW.modified_by := nullif(current_setting('nextgisweb.user_keyname', true), '');
+      RETURN NEW;
+  END;
+  $$;
+
+  CREATE TRIGGER trg_modified_by
+  BEFORE INSERT OR UPDATE ON parcels
+  FOR EACH ROW EXECUTE FUNCTION ngw_stamp_modified_by();
+
 .. _ngw_postgis_diagnostics:
 
 PostGIS diagnostics
