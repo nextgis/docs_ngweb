@@ -14,6 +14,27 @@ Changing endpoints may be required if the the name of the DNS server where the s
    $ nano docker-compose.yaml
    $ docker compose up -d
 
+Storage usage accounting
+------------------------
+
+Unlike the cloud version of NextGIS Web, storage usage accounting is disabled by default in the on-premise version. To enable it, set the following environment variable in the ``services.app.environment`` section of the ``docker-compose.yaml`` file:
+
+.. code:: yaml
+
+   NEXTGISWEB__CORE__STORAGE__ENABLED: "true"
+
+After modifying ``docker-compose.yaml``, restart the stack to apply the new settings, then estimate the storage usage:
+
+.. code:: bash
+
+   $ cd /srv/ngwdocker
+   $ docker compose up -d
+   $ docker compose run --rm app nextgisweb storage estimate
+
+Storage usage information will then be available in the NextGIS Web interface.
+
+Note that the reported value is an estimate of the data volume, not the actual disk space used. Actual disk usage is typically somewhat higher due to overhead.
+
 Enabling raster mosaics
 -----------------------
 
