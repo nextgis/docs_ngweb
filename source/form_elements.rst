@@ -1,11 +1,20 @@
 .. _form:
 
-Form elements
-==============
+Form for data collection
+------------------------
 
-In the form editing interface on the left there is a toolbar that contains all the elements that can be added to a form. 
+For vector layers and PostGIS layers you can create custom forms. Forms provide a user-freindly interface for entering and editing attribute values. 
 
-.. todo::  Hover over an element to see tooltip with its description.
+Open the resource page of the layer, click **Create resource** and select "Form".
+
+.. figure:: _static/ngweb_create_form_en.png
+   :name: ngweb_create_form_pic
+   :align: center
+   :width: 20cm
+
+   Selecting "Form" resource type
+
+Drag the elements from the list on the left to the middle field representing the device screen.
 
 .. figure:: _static/form_elements_en.png
    :name: form_form_elements_pic
@@ -14,9 +23,86 @@ In the form editing interface on the left there is a toolbar that contains all t
 
    Elements panel
 
-To create a new form in the online builder, drag the elements from the list on the left to the middle field representing the device screen. 
+Below you'll find detailed descriptions of all possible form elements.
 
-You'll find detailed descriptions of all the elements below. 
+For each element you need to set a layer field where the data is stored. Add a field of the corresponding type or select an existing one.
+
+.. figure:: _static/form_add_field_en.png
+   :name: form_add_field_pic
+   :align: center
+   :width: 12cm
+
+   Adding new field
+
+Click on the element in the central section to view and modify its properties. More on `properties of each element type <https://docs.nextgis.com/docs_ngweb/source/form_elements.html>`_.
+
+.. figure:: _static/form_build_en.png
+   :name: form_build_pic
+   :align: center
+   :width: 20cm
+
+   Building a form online. Properties of the "Text box" element are displayed
+
+You can set a display name on the Resource tab and add description and metadata on the corresponding tabs.
+
+Click **Create** to finish the process. 
+
+After the form is created, browser redirects you to the preview of the newly created form.
+
+.. figure:: _static/form_result_en.png
+   :name: form_result_pic
+   :align: center
+   :width: 14cm
+
+   Preview of the form
+
+**Where you can use the form**:
+
+* in mobile app NextGIS Mobile: when you `add a layer <https://docs.nextgis.com/docs_ngmobile/source/ngw_integration.html#ngmobile-add-layer-webgis>`_, the form will be available for editing data in the app; 
+* in a `data collection project <https://docs.nextgis.com/docs_ngweb/source/collector.html#ngw-collector-create-project>`_ in NextGIS Collector app;
+* while editing features `on a Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngweb-tab-form-pic>`_.
+
+To use a form on the Web Map, activate the checkbox on the Settings tab of the form.
+
+.. figure:: _static/form_webmap_en.png
+   :name: form_webmap_pic
+   :align: center
+   :width: 16cm
+
+   Enabling form for use on Web Maps
+
+.. hint:: If your layer already has attributes, you can select the corresponding field for each element as you add it to the layout.
+
+.. figure:: _static/form_select_field_en.png
+   :name: form_select_field_pic
+   :align: center
+   :width: 12cm
+
+   Selecting a field for the element
+
+.. _form_edit:
+
+Edit form
+---------
+
+Click on the pencil icon next to the form or open the resource page and select **Edit** in the action panel on the right. 
+
+.. note:: If the form was uploaded from a file, on the Form tab select Design form from the dropdown menu.
+
+You can delete or modify elements or add new ones. To add the new fields to the layer structure, check the option **Add absent fields to layer**.
+
+After a form is modified:
+
+* in NextGIS Mobile delete the layer and add it again;
+* in NextGIS Collector select "Change project" and re-join the project. The new form will be uploaded, allowing you to continue collecting data to the same layer;
+* on a Web Map exit the Edit mode and enter it again.
+
+After that the modified form will be available.
+
+Form elements
+==============
+
+.. todo::  Hover over an element to see tooltip with its description.
 
 Form design elements:
 
