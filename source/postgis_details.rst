@@ -206,6 +206,43 @@ PostGIS
    :width: 20cm
 
 
+Контекст пользователя во внешнем PostGIS
+----------------------------------------
+
+NextGIS Web может передавать следующие параметры: ``nextgisweb.user_id, nextgisweb.user_keyname, nextgisweb.user_oauth_subject, nextgisweb.user_display_name``.
+
+Включить эту функцию можно в настройках соединения PostGIS.
+
+.. figure:: _static/update_postgis_connection_userinfo_ru.png
+   :name: update_postgis_connection_userinfo_pic
+   :align: center
+   :width: 15cm
+
+   Включение передачи контекста пользователя
+
+На стороне PostgreSQL вызов ``current_setting`` с именем переданного параметра вернёт значение этого параметра, если оно было установлено в рамках текущего соединения. Значение видно только в этом соединении — другие его не увидят. 
+
+Пример: пусть в нашей внешней базе данных PostgreSQL есть таблица parcels и мы хотим знать, кто вносит в неё изменения. Это можно сделать так:
+
+.. code-block::
+
+  ALTER TABLE parcels ADD COLUMN IF NOT EXISTS modified_by text;
+
+  CREATE OR REPLACE FUNCTION ngw_stamp_modified_by() RETURNS trigger
+  LANGUAGE plpgsql AS $$
+  BEGIN
+      NEW.modified_by := nullif(current_setting('nextgisweb.user_keyname', true), '');
+      RETURN NEW;
+  END;
+  $$;
+
+  CREATE TRIGGER trg_modified_by
+  BEFORE INSERT OR UPDATE ON parcels
+  FOR EACH ROW EXECUTE FUNCTION ngw_stamp_modified_by();
+
+
+
+
 .. _ngw_create_postgis_problems:
 
 Возможные проблемы со слоями PostGIS
