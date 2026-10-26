@@ -100,7 +100,7 @@ After a form is modified:
 After that the modified form will be available.
 
 Form elements
-==============
+-------------
 
 .. todo::  Hover over an element to see tooltip with its description.
 
@@ -128,7 +128,7 @@ Data entering elements:
 .. _label:
 
 Label
--------
+~~~~~
 
 This element allows you to add text to the form interface: field names, instructions on entering data etc.
 
@@ -148,7 +148,7 @@ Label is not linked to any field of the layer.
 .. _spacer:
 
 Spacer
-------------
+~~~~~~
 
 Spacer allows you to add blank spaces between parts of the form.
 
@@ -164,7 +164,7 @@ Spacer allows you to add blank spaces between parts of the form.
 .. _tabs:
 
 Tabs
--------
+~~~~
 
 Tabs are used to group other elements. You can add multiple tab sets to a form and manage the number of tabs in each of them.
 
@@ -190,7 +190,7 @@ The current tab is underlined in blue.
 .. _add_to_tab:
 
 Adding elements to tabs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 To add an element to a tab, drag it to it. The element will be added to the active tab marked in blue. Make sure that the element is within the tab set. 
 
@@ -215,7 +215,7 @@ Elements placed in the tab that is not currently active are hidden. To edit them
 .. _text:
 
 Text edit
---------------
+~~~~~~~~~
 
 An element for entering simple text or numbers.
 
@@ -236,7 +236,7 @@ Properties:
 .. _checkbox:
 
 Checkbox
-------------
+~~~~~~~~~~
 
 An element which allows user to pick from two values: true or false.
 
@@ -258,7 +258,7 @@ Properties:
 .. _datetime:
 
 Date and time
-------------
+~~~~~~~~~~~~~
 
 This elements allows to enter date, time or date+time.
 
@@ -281,7 +281,7 @@ Properties:
 .. _coordinates:
 
 Coordinates
------------
+~~~~~~~~~~~
 
 This element automatically saves current position of the data collector in string format.
 
@@ -303,7 +303,7 @@ Properties:
 .. _distance:
 
 Distance meter
---------------
+~~~~~~~~~~~~~~
 
 This element automatically measures distance between data collector and the entered point. To be able to calculate distance, enable geolocation.
 
@@ -321,7 +321,7 @@ Properties:
 .. _average:
 
 Average calculator
-------------------
+~~~~~~~~~~~~~~~~~~
 
 An element which calculates the average value from some amount of entered values. For example, you can measure the trunk width of ten trees growing in the area, enter these numbers and click **Count**. The calculated average is recorded to the layer field.
 
@@ -343,7 +343,7 @@ Properties:
 .. _photo:
 
 Photo
------
+~~~~~
 
 An element which allows to take photos with the camera of the device or to add them from the gallery.
 
@@ -362,7 +362,7 @@ Properties:
 .. _sytem:
 
 System field
---------------
+~~~~~~~~~~~~
 
 This element allows to automatically record the NextGIS ID or username of the user editing the layer.
 
@@ -381,7 +381,7 @@ Properties:
 .. _dropdown:
 
 Dropdown
-----------
+~~~~~~~~~
 
 A dropdown menu to select one value from a predetermined list.
 
@@ -423,7 +423,7 @@ The right end of the row has the following buttons:
 .. _dual_dropdown:
 
 Dual dropdown
-----------------
+~~~~~~~~~~~~~
 
 Dropdown list with predetermined items split into two parts. For instance, showing a place name in two different languages.
 
@@ -465,7 +465,7 @@ The right end of the row has the following buttons:
 .. _radio:
 
 Radio group
------------
+~~~~~~~~~~~~
 
 A list of predetermined values (data collector chooses only one item from the list). You can see all the options of the radiogroup, unlike the dropdown that you need to click to view the list.
 
@@ -506,7 +506,7 @@ The right end of the row has the following buttons:
 .. _dependet_dropdown:
 
 Dependent dropdowns
--------------------
+~~~~~~~~~~~~~~~~~~~~
 
 A pair of drop-down lists with predefined items.  The item list of the secondary dropdown (bottom) depends on the items of the primary dropdown (top).
 
@@ -552,7 +552,7 @@ The right end of the row has the following buttons:
 .. _import_options:
 
 Import options
---------------
+~~~~~~~~~~~~~~
 
 If you need to add a long list of options to an element that allows picking one from a pre-set list (i.e. `Dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#combobox>`_; `Dual dropdown <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#split_cb>`_; `Radio group <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#radio>`_; `Dependent dropdowns <https://docs.nextgis.com/docs_ngweb/source/form_elements.html#dependet_cb>`_.), you can import it from a CSV file.
 
@@ -578,7 +578,7 @@ A dialog for options editing is opened. Click **Import**.
 .. _import_csv:
 
 Import options from CSV
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the options editing dialog select Import - From file. In the next dialog, upload a CSV file from your device.
 
