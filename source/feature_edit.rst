@@ -3,26 +3,18 @@
 Edit vector features
 ====================
 
-You can modify **geometries and attributes** of vector features via Web interface: 
+You can modify **geometries and attributes** of vector features: 
 
-* `in the Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ ,
-* or on a Web Map (see below), 
-* as well as `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
+* on a Web Map (see below);
+* `in the Feature table <https://docs.nextgis.com/docs_ngweb/source/feature_table.html>`_ ;
+* `in QGIS desktop app <https://docs.nextgis.com/docs_ngconnect/source/edit.html>`_.
 
-If you enable `feature versioning <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
-
-Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. The "Modify data" permission can be set for the entire resource group where the data is stored or for individual layers.
-
-`How to check user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
-
-.. figure:: _static/webgis_permiss_editing_en.png
-   :name: webgis_permiss_editing_pic
-   :align: center
-   :width: 16cm
-
-   Permissions set for the Data resource group to allow editing
+Editing is available for users who have permissions to `read and modify data <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_. You can 
+`check user permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_ on the layer page.
 
 By default, when a new Web Map is created, users can edit features directly on it. You can `disable feature editing on the map <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_ in Web Map settings.
+
+For layers with feature versioning enabled all the edits are recorded in the `layer history <https://docs.nextgis.com/docs_ngweb/source/version.html#nextgis-web>`_.
 
 .. _edit_mode:
 
