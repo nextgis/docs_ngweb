@@ -5,26 +5,15 @@
 
 Вы можете редактировать **геометрии и атрибуты** объектов в Векторных слоях через веб-интерфейс: 
 
-* `в таблице объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_ 
-* или на веб-карте (подробнее описано ниже), 
+* на веб-карте (подробнее описано ниже);
+* `в таблице объектов <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html>`_;
+* `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_.
 
-- а также `с помощью настольного приложения QGIS <https://docs.nextgis.ru/docs_ngconnect/source/edit.html>`_.
-
-Если для слоя `включено версионирование <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#create-vector-layer-vers-pic>`_, внесённые изменения записываются в `историю <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
-
-Редактирование доступно для пользователей, у которых есть `право на чтение и изменение данных <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Право на изменение данных может быть установлено для всей папки, где лежат данные, или для отдельных слоёв.
-
-`Как проверить права пользователя <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_.
-
-.. figure:: _static/webgis_permiss_editting_ru.png
-   :name: webgis_permiss_editting_pic
-   :align: center
-   :width: 18cm
-
-   Для папки с данными установлен набор прав, необходимый для доступа к редактированию
+Редактирование доступно для пользователей, у которых есть `право на чтение и изменение данных <https://docs.nextgis.ru/docs_ngcom/source/permissions.html>`_. Вы можете `проверить права пользователя <https://docs.nextgis.ru/docs_ngcom/source/permissions.html#ngcom-permissions-view>`_ на странице слоя.
 
 По умолчанию для новых создаваемых веб-карт возможность редактирования объектов на карте включена, её можно `выключить в настройках ресурса веб-карты <https://docs.nextgis.ru/docs_ngweb/source/feature_edit.html#ngw-allow-edit>`_. 
 
+Для слоёв с включённым версионированием внесённые изменения записываются в `историю слоя <https://docs.nextgis.ru/docs_ngweb/source/version.html#nextgis-web>`_.
 
 
 .. _edit_mode:
