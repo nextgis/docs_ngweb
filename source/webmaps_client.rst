@@ -89,6 +89,7 @@ Bottom left:
 * |button_measure_distance| `Measure distance <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#measuring-tools>`_
 * |button_measure_area_map| `Measure area <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#measuring-tools>`_
 * |button_swipe_off| `Swipe <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-swipe>`_
+* |button_maptool_panorama| `Panoramas <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#view-panoramas>`_
 * |button_extent_coord| `Show cursor coordinates/extent <https://docs.nextgis.com/docs_ngweb/source/webmaps_client.html#show-extent-or-cursor-coordinates>`_
 
 See detailed descriptions below.
@@ -532,6 +533,22 @@ Clicking this icon redirects to the account page (you have to log in with your `
 The Web GIS administrator will receive your message and email address so that they can reply by email.
 
 
+.. _view_panoramas:
+
+View integrated panoramas
+-------------------------
+
+If Google streetview `is added to your Web GIS <https://docs.nextgis.com/docs_ngweb/source/webmap_set.html#panoramas-global>`_, you can view the panoramas on any Web Map.
+
+Activate panoramas by clicking |button_maptool_panorama|. Click on the point on the map for which you want to see the streetview. A panel opens displaying the panoramic view of the place.
+
+.. figure:: _static/webmap_panor_global_view_en.png
+   :name: webmap_panor_global_view_pic
+   :width: 20cm
+   :align: center
+
+   Google panoramas on a Web Map. 1 - button that activates panoramas, 2 - selected point and its view angle, 3 - new viewpoint selection.
+
 .. |button_open_web_map| image:: _static/button_open_web_map.png
    :width: 8mm
    :alt: magnifying glass on map
@@ -662,3 +679,7 @@ The Web GIS administrator will receive your message and email address so that th
 .. |button_download| image:: _static/button_download.png
    :width: 6mm
    :alt: down arrow to tray
+
+.. |button_maptool_panorama| image:: _static/button_maptool_panorama.png
+   :width: 6mm
+   :alt: circle crossed by a band
