@@ -174,3 +174,20 @@ While using OSM, you can also limit the search to a particular country. In the f
    
    Search limited to the territory of France
 
+.. _panoramas_global:
+
+Integrate panoramas
+-------------------
+
+You can integrate Google streetview to your Web GIS and use it on Web Maps.
+
+In the "Search panorama" section click **Add** and enter your API key.
+
+.. figure:: _static/control_webmap_panoramas_en.png
+   :name: control_webmap_panoramas_pic
+   :align: center
+   :width: 10cm
+
+   Enabling Google Street View for Web Maps
+
+.. seealso:: `Add your own panoramas <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html#ngw-attachments>`_ to vector layer features.
