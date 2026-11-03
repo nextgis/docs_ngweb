@@ -315,10 +315,10 @@ In the "Settings" tab you can modify several parameters:
 * select `bookmark <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#bookmarks>`_ resource;
 * set visibility of panels and feature identification elements.
 
-.. figure:: _static/admin_webmap_settings_tab_en_3.png
+.. figure:: _static/webmap_settings_tab_en.png
    :name: admin_webmap_settings_tab_pic
    :align: center
-   :width: 16cm
+   :width: 20cm
    
    "Settings" tab
 
