@@ -104,6 +104,7 @@
 * |button_measure_distance| `Измерение расстояния <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-measure>`_
 * |button_measure_area_map| `Измерение площади <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-measure>`_
 * |button_swipe_off| `Шторка <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-swipe>`_
+* |button_maptool_panorama| `Панорамы <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#view-panoramas>`_
 * |button_extent_coord| `Показ координат/охвата <https://docs.nextgis.ru/docs_ngweb/source/webmaps_client.html#ngw-webmaps-client-tools-coord-extent>`_
 
 
