@@ -581,6 +581,22 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
 
 Владелец Веб ГИС получит сообщение с указанием адреса электронной почты, на который сможет вам ответить.
 
+.. _view_panoramas:
+
+Просмотр интегрированных панорам
+---------------------------------
+
+Если в Веб ГИС `подключён сервис панорам <https://docs.nextgis.ru/docs_ngweb/source/webmap_set.html#panoramas-global>`_, их можно просматривать на веб-карте.
+
+Активируйте режим панорам, нажав на |button_maptool_panorama|. Щелкните по точке на карте, панораму из которой хотите увидеть. Откроется панель просмотра панорам.
+
+.. figure:: _static/webmap_panor_global_view_ru.png
+   :name: webmap_panor_global_view_pic
+   :width: 20cm
+   :align: center
+
+   Просмотр панорамы. Цифрами отмечены: 1 - включение режима панорам, 2 - текущая точка и направление панорамы, 3 - выбор новой точки для панорамы
+
 
 .. |panel_layers| image:: _static/panel_layers.png
 .. |panel_ident| image:: _static/panel_ident.png
@@ -707,3 +723,7 @@ https://demo.nextgis.ru/resource/6211/display?panel=layers&hl_lid=6209&hl_attr=n
 .. |button_download| image:: _static/button_download.png
    :width: 6mm
    :alt: стрелка вниз в ящик
+
+.. |button_maptool_panorama| image:: _static/button_maptool_panorama.png
+   :width: 6mm
+   :alt: круг с полосой
