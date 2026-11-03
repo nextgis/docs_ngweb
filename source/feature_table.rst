@@ -41,11 +41,7 @@ NextGIS Web позволяет управлять базой геоданных 
 Таблица объектов на веб-карте
 --------------------------------
 
-Формирование таблицы объектов можно выполнить другим способом: |button_open_web_map| откройте веб-карту, на которую добавлен слой.
-
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: карта с лупой
+Таблица объектов также доступна при просмотре веб-карты. Нажмите |button_open_web_map|, чтобы открыть веб-карту, на которую добавлен слой.
 
 .. figure:: _static/webmap_open_simple_ru.png
    :name: webmap_open_simple_pic
@@ -54,8 +50,7 @@ NextGIS Web позволяет управлять базой геоданных 
 
    Операция открытия веб-карты из группы ресурсов
 
- 
-Выделите нужный слой карты в дереве слоев, после чего в меню слоя выберите "Таблица объектов" :numref:`ngweb_admin_map_and_tree_layers_pic`:
+Выделите нужный слой карты в дереве слоев, после чего в меню слоя выберите "Таблица объектов":
 
 .. figure:: _static/map_and_tree_layers_rus_3.png
    :name: ngweb_admin_map_and_tree_layers_pic
@@ -81,44 +76,16 @@ NextGIS Web позволяет управлять базой геоданных 
 #. |button_zoom_to_filtered| Приблизить к найденным объектам (в охват карты будут включены все объекты, видимые в таблице атрибутов)
 #. |button_filter_area| `Отфильтровать объекты по местности <https://docs.nextgis.ru/docs_ngweb/source/feature_table.html#ngw-feature-table-filter-area>`_
 
+Если на карту добавлена таблица без геометрии, её также можно посмотреть через открытие таблицы атрибутов.
+
+.. figure:: _static/ngw_nogeom_on_webmap_ru.png
+   :name: ngw_nogeom_on_webmap_pic
+   :align: center
+   :width: 20cm
+
+   Просмотр вспомогательной таблицы на веб-карте
 
 
-
-.. |button_open_resource| image:: _static/button_open_resource.png
-   :width: 6mm
-   :alt: квадрат со стрелочкой
-
-.. |button_plus_layer| image:: _static/button_plus_layer.png
-   :width: 6mm
-   :alt: +
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: карандаш
-
-.. |button_refresh_single| image:: _static/button_refresh_single.png
-   :width: 6mm
-   :alt: круговая стрелка
-
-.. |button_filter| image:: _static/button_filter.png
-   :width: 6mm
-   :alt: воронка
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: таблица
-
-.. |button_go_to| image:: _static/button_go_to.png
-   :width: 6mm
-   :alt: рамка с точкой
-
-.. |button_zoom_to_filtered| image:: _static/button_zoom_to_filtered.png
-   :width: 6mm
-   :alt: стрелки, направленные в центр
-
-.. |button_filter_area| image:: _static/button_filter_area.png
-   :width: 6mm
-   :alt: пунктирная рамка
 
 .. _table_search_filter:
 
@@ -393,3 +360,42 @@ NextGIS Web позволяет управлять базой геоданных 
 
 
 
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: карта с лупой
+
+.. |button_open_resource| image:: _static/button_open_resource.png
+   :width: 6mm
+   :alt: квадрат со стрелочкой
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+   :alt: +
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_refresh_single| image:: _static/button_refresh_single.png
+   :width: 6mm
+   :alt: круговая стрелка
+
+.. |button_filter| image:: _static/button_filter.png
+   :width: 6mm
+   :alt: воронка
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: таблица
+
+.. |button_go_to| image:: _static/button_go_to.png
+   :width: 6mm
+   :alt: рамка с точкой
+
+.. |button_zoom_to_filtered| image:: _static/button_zoom_to_filtered.png
+   :width: 6mm
+   :alt: стрелки, направленные в центр
+
+.. |button_filter_area| image:: _static/button_filter_area.png
+   :width: 6mm
+   :alt: пунктирная рамка
