@@ -258,7 +258,7 @@ On the Resource page set the name for the table and click **Create**. The table 
 
    Table uploaded as vector layer with no geometry
 
-
+You can add vector layer with no geometry to a Web Map. To do so, create a default QGIS style for it.
 
 
 .. _ngw_create_raster_layer:
