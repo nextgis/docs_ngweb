@@ -87,6 +87,14 @@ In feature table tab you have an option to dynamically filter records. When user
    
    Feature table of the selected layer on a Web Map
 
+If you have a table without geometry added to the Web Map, you can also view it using the Feature table.
+
+.. figure:: _static/ngw_nogeom_on_webmap_en.png
+   :name: ngw_nogeom_on_webmap_pic
+   :align: center
+   :width: 20cm
+
+   Table without geometry displayed on the map
 
 .. _table_search_filter:
 
