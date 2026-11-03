@@ -330,7 +330,7 @@
 * выбрать ресурс `закладок <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-bookmarks>`_;
 * `установить видимость <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html#ngw-map-additional>`_ панелей и элементов идентификации объектов.
 
-.. figure:: _static/admin_webmap_settings_tab_ru_4.png
+.. figure:: _static/webmap_settings_tab_ru.png
    :name: admin_webmap_settings_tab_pic
    :align: center
    :width: 20cm
