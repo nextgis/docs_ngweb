@@ -344,16 +344,16 @@ Visibility settings of the legend can be modified at various levels, allowing cu
 
 Legend visibility for a particular layer is set in the Layer tab of the Web Map settings.
 
-.. figure:: _static/ngw_legend_map_layers_en.png
+.. figure:: _static/ngw_legend_map_layers_en_2.png
    :name: ngw_legend_map_layers_pic
    :align: center
-   :width: 20cm
+   :width: 16cm
 
    Setting legend visibility for particular layers
 
 Legend visibility for a Web Map is set in its Settings tab.
 
-.. figure:: _static/ngw_legend_map_settings_en_2.png
+.. figure:: _static/ngw_legend_map_settings_en_3.png
    :name: ngw_legend_map_settings_pic
    :align: center
    :width: 16cm
@@ -372,7 +372,11 @@ You can also set default legend visibility for the Web GIS: Control panel – We
 
 Options for legend visibility are:
 
-* Expand – the legend is displayed in the layer tree. If the style has multiple marker types or colors, a full list will be shown. To collapse the list click on the ^ symbol next to the layer menu.
+* Default – the higher level setting is used. For the layers that have "default" selected for legend visibility, the setting of the Web Map will be used. If the Web Map also has "default" selected, the visibility setting selected for the Web GIS is applied.
+
+* Expanded – the legend is displayed in the layer tree. If the style has multiple marker types or colors, a full list will be shown. To collapse the list click on the ^ symbol next to the layer menu.
+* Collapsed – the legend is displayed, but the list of the map symbols for a specific layer is collapsed when the map is opened. To expand it, click on a table symbol next to the layer menu.
+* Disabled – the legend is not displayed in the layer tree.
 
 .. figure:: _static/ngw_legend_full_view_en.png
    :name: ngw_legend_full_view_pic
@@ -381,8 +385,6 @@ Options for legend visibility are:
    
    Expanded legend on a Web Map
 
-* Collapse – the legend is displayed, but the list of the map symbols for a specific layer is collapsed when the map is opened. To expand it, click on a table symbol next to the layer menu.
-
 .. figure:: _static/ngw_legend_min_view_en.png
    :name: ngw_legend_min_view_pic
    :align: center
@@ -390,16 +392,12 @@ Options for legend visibility are:
    
    Collapsed legend on a Web Map
 
-* Disable – the legend is not displayed in the layer tree.
-
 .. figure:: _static/ngw_legend_disabled_en.png
    :name: ngw_legend_disabled_pic
    :align: center
    :width: 20cm
    
    Legend disabled. Only the names of the layers are displayed
-
-* Default – the higher level setting is used. For the layers that have "default" selected for legend visibility, the setting of the Web Map will be used. If the Web Map also has "default" selected, the visibility setting selected for the Web GIS is applied.
 
 .. figure:: _static/ngw_legend_mixed_en.png
    :name: ngw_legend_mixed_pic

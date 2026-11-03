@@ -50,19 +50,19 @@ How to enable Web Map annotations?
 
 You can enable creation of annotations and set the display options in the Settings tab of the "Create resource" or "Update resource" windows for the Web Map (see :ref:`Update resource <ngw_update_resource>`). By default the annotation tool is inactive.
 
-.. figure:: _static/ann_settings_en.png
+.. figure:: _static/ann_settings_en_2.png
    :name: ann_settings
    :align: center
-   :width: 15cm
+   :width: 20cm
 
-   Settings tab of a Web Map for managing annotations (annotations are enabled and are shown on a Web Map when it opens)
+   Settings tab of a Web Map for managing annotations
 
 The options are:
 
-
-- *Hide by default* - annotations are hidden;
-- *Show without messages* - the annotation symbols are visible on the Web Map when it opens;
-- *Show with messages* - both symbols and text are shown on the Web Map.
+* **Disabled** - no annotations panel on the Web Map;
+* **Hidden by default** - annotations are hidden;
+* **Markers without messages** - the annotation symbols are visible on the Web Map when it opens, but not their text;
+* **Messages and markers** - both symbols and text are shown on the Web Map.
 
 .. _ngw_annotation_panel:
 
