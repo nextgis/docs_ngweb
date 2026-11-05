@@ -109,7 +109,12 @@ Also you can add `Description and metadata <https://docs.nextgis.com/docs_ngweb/
 
 After uploading the file and specifying the parameters, click the **Create** button.
 
-Then you can `create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. You can also create a `form or data collection <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_.
+**What next?**
+
+* `Create a style <https://docs.nextgis.com/docs_ngweb/source/mapstyles.html#qgis>`_ that will later visualize the data layer on a `Web Map <https://docs.nextgis.com/docs_ngweb/source/webmaps_admin.html#ngw-map-create>`_. 
+* Create a `custom form <https://docs.nextgis.com/docs_ngweb/source/collector.html#collector-create-form>`_ for easier input.
+* `Edit data on Web Map <https://docs.nextgis.com/docs_ngweb/source/feature_edit.html>`_
+* `Add features from file <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-vector-add-from-file>`_.
 
 .. _ngw_create_empty_vector_layer:
 

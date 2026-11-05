@@ -11,6 +11,7 @@ To modify layer settings, open the group containing the layer (see :numref:`admi
 It opens the `Update resource <https://docs.nextgis.com/docs_ngweb/source/edit_resource.html>`_ page. On this page you can edit the settings standard for all types of resources (parent, description, metadata, access permission) and specific for vector layers: 
 
 * `delete or replace all the features <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_;
+* `add features from a file <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-vector-add-from-file>`_
 *  edit `fields and their aliases <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_;
 * `enable editing <https://docs.nextgis.com/docs_ngweb/source/.feature_edit.html#ngw-allow-edit>`_ for vector features and annotations on the map; 
 * enable and disable feature versioning.
@@ -192,7 +193,7 @@ Click on the pencil icon next to the layer.
 
 In the "Vector layer" tab select the action from the dropdown menu.
 
-.. figure:: _static/ngw_update_vector_file_options_en_2.png
+.. figure:: _static/ngw_update_vector_file_options_en_3.png
    :name: ngw_update_vector_file_options_pic
    :align: center
    :width: 15cm
@@ -201,7 +202,7 @@ In the "Vector layer" tab select the action from the dropdown menu.
 
 You can delete all the features. This will result in an empty layer of the same structure that you can add new features to. To do so, select "Delete all features from layer", tick to confirm and press **Save**.
 
-.. figure:: _static/ngw_update_vector_file_clear_en_2.png
+.. figure:: _static/ngw_update_vector_file_clear_en_3.png
    :name: ngw_update_vector_file_clear_pic
    :align: center
    :width: 15cm
@@ -210,7 +211,7 @@ You can delete all the features. This will result in an empty layer of the same 
 
 You can replace all the features by uploading a previously prepared file. Select "Replace layer features from file". Open the file or drag and drop it into the frame. 
 
-.. figure:: _static/ngw_update_vector_file_replace_en_2.png
+.. figure:: _static/ngw_update_vector_file_replace_en_3.png
    :name: ngw_update_vector_file_replace_pic
    :align: center
    :width: 15cm
@@ -225,6 +226,24 @@ If you replace the file, not only the features, but the structure of the attribu
 
    You can use any type of geometry to replace the existing file. Keep in mind that if the geometry type changes, all styles connected with the layer may stop working, because they do not contain markers for other geometry types.
 
+.. _ngw_vector_add_from_file:
+
+Add features from file
+----------------------
+
+You can add features from a file to an existing vector layer in your Web GIS. Enter Update mode, go to the Vector layer tab and select **Add features from file**. 
+
+.. figure:: _static/ngw_update_vector_file_add_en.png
+   :name: ngw_update_vector_file_add_pic
+   :align: center
+   :width: 15cm
+
+   Adding features to Web GIS layer from a file
+
+Select on your device a file in one of the `supported formats <https://docs.nextgis.com/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_. 
+
+Attributes are matched automatically. Values for the matched attributes are added to the layer. Unmatched attributes are skipped. You can add the missing attributes on the `Fields tab <https://docs.nextgis.com/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
+
 .. _ngw_vector_change_geom:
 
 Change layer geometry
@@ -235,7 +254,7 @@ You can change the geometry of an existing vector layer without replacing the da
 * allow complex geometries (i.e. point layer becomes multipoint);
 * allow Z coordinate.
 
-.. figure:: _static/ngw_update_vector_geometry_en.png
+.. figure:: _static/ngw_update_vector_geometry_en_2.png
    :name: ngw_update_vector_geometry_pic
    :align: center
    :width: 15cm
