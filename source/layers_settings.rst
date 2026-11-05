@@ -13,10 +13,11 @@
  
 * `очистить слой <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
 * `заменить файл данных на новый <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-file-replace>`_, 
+* `дополнить слой объектами из файла <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-vector-add-from-file>`_
 * изменить `набор и псевдонимы полей <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_, 
-* включать и выключать версионирование слоя
+* включать и выключать версионирование слоя.
 
-Версионирование позволяетт нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
+Версионирование позволяет нескольким пользователям редактировать синхронизируемый слой в настольном приложении QGIS `при помощи NextGIS Connect <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#>`_.
 
 .. figure:: _static/create_vector_layer_vers_ru.png
    :name: create_vector_layer_vers_pic
@@ -201,7 +202,7 @@
 
 Нажмите на значок карандаша напротив выбранного слоя. Во вкладке "Векторный слой" выберите необходимое действие в выпадающем меню.
 
-.. figure:: _static/ngw_update_vector_file_options_ru_2.png
+.. figure:: _static/ngw_update_vector_file_options_ru_3.png
    :name: ngw_update_vector_file_options_pic
    :align: center
    :width: 15cm
@@ -210,7 +211,7 @@
 
 Вы можете удалить все объекты, оставив пустой слой со структурой для дальнейшего наполнения. Для этого выберите "Удалить все объекты из слоя", поставьте флажок для подтверждения удаления и нажмите **Сохранить**.
 
-.. figure:: _static/ngw_update_vector_file_clear_ru_2.png
+.. figure:: _static/ngw_update_vector_file_clear_ru_3.png
    :name: ngw_update_vector_file_clear_pic
    :align: center
    :width: 15cm
@@ -219,7 +220,7 @@
 
 Можно заменить все объекты другими, использовав заранее подготовленный файл. Для этого выберите "Заменить объекты слоя из файла". Откройте нужный файл или перетащите его в пунктирную рамку. 
 
-.. figure:: _static/ngw_update_vector_file_replace_ru_2.png
+.. figure:: _static/ngw_update_vector_file_replace_ru_3.png
    :name: ngw_update_vector_file_replace_pic
    :align: center
    :width: 15cm
@@ -233,6 +234,24 @@
 .. note:
    При перезаписи можно выбрать файл с другим типом геометрии. При этом скорее всего перестанут работать все связанные с векторным слоем стили, поскольку в них задано отображение данных другой геометрии.
 
+.. _ngw_vector_add_from_file:
+
+Добавление объектов из файла
+-----------------------------
+
+К существующему векторному слою можно добавить объекты из файла. Перейдите в режим изменения ресурса, зайдите на вкладку "Векторный слой" и выберите **Добавить объекты из файла**.
+
+.. figure:: _static/ngw_update_vector_file_add_ru.png
+   :name: ngw_update_vector_file_add_pic
+   :align: center
+   :width: 15cm
+
+   Добавление объектов в слой из файла
+
+Выберите на устройстве файл. Поддерживаются те же `форматы <https://docs.nextgis.ru/docs_ngweb/source/layers.html#ngw-vector-data-requirements>`_, что и при создании слоя.
+
+Колонки таблицы атрибутов будут сопоставлены автоматически, данные из совпадающих колонок будут записаны в слой. Если в файле присутствуют колонки, которых нет в слое Веб ГИС, они будут проигнорированы. Добавить колонки с соответствующими наименованиями можно на вкладке `Поля <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#ngw-attributes-edit>`_.
+
 .. _ngw_vector_change_geom:
 
 Изменение геометрии слоя
@@ -243,7 +262,7 @@
 * разрешить составные геометрии (например, точки превратятся в мультиточки);
 * разрешить Z-координату.
 
-.. figure:: _static/ngw_update_vector_geometry_ru.png
+.. figure:: _static/ngw_update_vector_geometry_ru_2.png
    :name: ngw_update_vector_geometry_pic
    :align: center
    :width: 15cm
