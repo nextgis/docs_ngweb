@@ -1,49 +1,3 @@
-
-
-.. |button_main_menu| image:: _static/button_main_menu.png
-   :width: 8mm
-   :alt: три горизонтальные синие полоски
-
-.. |button_delete| image:: _static/button_delete.png
-   :width: 6mm
-   :alt: мусорная корзина
-
-.. |button_edit| image:: _static/button_edit.png
-   :width: 6mm
-   :alt: карандаш
-
-.. |button_json| image:: _static/button_json.png
-   :width: 6mm
-   :alt: фигурные скобки
-
-.. |button_key| image:: _static/button_key.png
-   :width: 6mm
-   :alt: ключ
-
-.. |button_attachments| image:: _static/button_attachments.png
-   :width: 6mm
-   :alt: скрепка
-
-.. |button_download| image:: _static/button_download.png
-   :width: 6mm
-   :alt: стрелка вниз
-
-.. |button_open_web_map| image:: _static/button_open_web_map.png
-   :width: 6mm
-   :alt: карта с лупой
-
-.. |button_open_gallery| image:: _static/button_open_gallery.png
-   :width: 6mm
-   :alt: три рамки
-
-.. |button_open_feature_table| image:: _static/button_open_feature_table.png
-   :width: 6mm
-   :alt: табличка
-
-.. |button_preview| image:: _static/button_preview.png
-   :width: 6mm
-   :alt: глаз в рамке
-
 .. _ngw_admin_interface:
 
 Основные элементы интерфейса
@@ -220,8 +174,9 @@
 
 Помимо названия ресурса, можно искать также по другим параметрам, для этого нажмите иконку |button_tune|.
 
-.. |button_tune| image:: _static/button_tune.png
-   :width: 6mm
+.. hint:: Нажмите |button_tune| средней кнопкой мыши (колёсиком), чтобы открыть расширенный поиск в новой вкладке.
+
+
 
 На странице расширенного поиска можно искать ресурсы по следующим параметрам:
 
@@ -520,3 +475,50 @@
    Форма отправки сообщения
 
 Владелец Веб ГИС получит сообщение с указанием адреса электронной почты, на который сможет вам ответить.
+
+.. |button_tune| image:: _static/button_tune.png
+   :width: 6mm
+
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 8mm
+   :alt: три горизонтальные синие полоски
+
+.. |button_delete| image:: _static/button_delete.png
+   :width: 6mm
+   :alt: мусорная корзина
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: карандаш
+
+.. |button_json| image:: _static/button_json.png
+   :width: 6mm
+   :alt: фигурные скобки
+
+.. |button_key| image:: _static/button_key.png
+   :width: 6mm
+   :alt: ключ
+
+.. |button_attachments| image:: _static/button_attachments.png
+   :width: 6mm
+   :alt: скрепка
+
+.. |button_download| image:: _static/button_download.png
+   :width: 6mm
+   :alt: стрелка вниз
+
+.. |button_open_web_map| image:: _static/button_open_web_map.png
+   :width: 6mm
+   :alt: карта с лупой
+
+.. |button_open_gallery| image:: _static/button_open_gallery.png
+   :width: 6mm
+   :alt: три рамки
+
+.. |button_open_feature_table| image:: _static/button_open_feature_table.png
+   :width: 6mm
+   :alt: табличка
+
+.. |button_preview| image:: _static/button_preview.png
+   :width: 6mm
+   :alt: глаз в рамке
