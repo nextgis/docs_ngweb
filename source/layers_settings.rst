@@ -48,11 +48,7 @@
 
 После внесения изменений нажмите **Сохранить**.
 
-.. |button_plus_layer| image:: _static/button_plus_layer.png
-   :width: 6mm
 
-.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
-   :width: 6mm
 
 .. figure:: _static/vector_fields_ru_3.png
    :name: ngweb_admin_layers_attr
@@ -119,6 +115,8 @@
    :align: center
    :width: 16cm
 
+   Настройки агрегированной статистики
+
 .. admonition:: Как посмотреть агрегацию в таблице объектов?
 
   Нажмите **#**, появится дополнительная строка с выбранной агрегацией.
@@ -130,14 +128,7 @@
 
    Количество объектов и отображаемая агрегация
 
-.. |attr_label_symbol| image:: _static/attr_label_symbol.png
-   :width: 6mm
 
-.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
-   :width: 6mm
-
-.. |attr_table_symbol| image:: _static/attr_table_symbol.png
-   :width: 6mm
 
 При редактировании атрибута также можно `подключить справочник <https://docs.nextgis.ru/docs_ngweb/source/layers_settings.html#lookup-add-to-field>`_, из которого будут браться значения атрибута при добавлении или редактировании объектов. 
 
@@ -270,3 +261,18 @@
    Изменение геометрии точечного слоя
 
 Если требуется более серьёзное изменение геометрии, например, разбиение полигонов на линии, воспользуйтесь опцией замены объектов из файла.
+
+.. |attr_label_symbol| image:: _static/attr_label_symbol.png
+   :width: 6mm
+
+.. |attr_text_search_symbol| image:: _static/attr_text_search_symbol.png
+   :width: 6mm
+
+.. |attr_table_symbol| image:: _static/attr_table_symbol.png
+   :width: 6mm
+
+.. |button_plus_layer| image:: _static/button_plus_layer.png
+   :width: 6mm
+
+.. |attr_delete_symbol| image:: _static/attr_delete_symbol.png
+   :width: 6mm
