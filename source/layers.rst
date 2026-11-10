@@ -395,11 +395,6 @@ NextGIS Web может принимать многослойные наборы 
 
     gdal_translate yaroslavl.map  yaroslavl.tif
 
-
-
-
-
-
 .. _ngw_tile_set:
 
 Набор тайлов
@@ -446,6 +441,47 @@ NextGIS Web может принимать многослойные наборы 
 * добавить на `веб-карту <https://docs.nextgis.ru/docs_ngweb/source/webmaps_admin.html>`_,
 * подключить во внешнее приложение, используя `ссылку TMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#ngw-tms-service>`_ в разделе "Внешний доступ",
 * опубликовать в составе `сервиса WMS <https://docs.nextgis.ru/docs_ngweb/source/services.html#wms>`_.
+
+.. _point_cloud:
+
+Слой облака точек
+-----------------
+
+Перейдите в группу ресурсов (папку), в которой необходимо создать слой.
+Нажмите кнопку **Создать ресурс** и выберите во всплывающем окне тип ресурса **Слой облака точек**.
+
+.. figure:: _static/ngweb_create_point_cloud_ru.png
+   :name: ngweb_create_point_cloud_pic
+   :align: center
+   :width: 20cm
+
+   Выбор типа ресурса "Слой облака точек"
+ 
+На открывшейся вкладке "Слой облака точек" необходимо загрузить файл геоданных в формате Cloud Optimized Point Cloud (COPC) с форматами точек 6, 7 и 8 (имя файла будет заканчиваться на ``.copc.laz``).
+
+.. figure:: _static/ngw_create_point_cloud_upload_ru.png
+   :name: ngw_create_point_cloud_upload_pic
+   :align: center
+   :width: 16cm
+
+   Окно загрузки файла облака точек
+
+.. tip:: Если ваш файл облака точек не оптимизирован, вы можете его подготовить в QGIS при помощи инструмента "Создать COPC"
+
+На вкладке "Ресурс" можно задать пользовательское наименование для слоя, которое будет отображаться в списке ресурсов.
+
+Для завершения нажмите **Создать**.
+
+На странице слоя облака точек можно посмотреть его превью.
+
+.. figure:: _static/ngw_point_cloud_preview_ru.png
+   :name: ngw_point_cloud_preview_pic
+   :align: center
+   :width: 16cm
+
+   Превью облака точек
+
+Также здесь можно скопировать автоматически сгенерированную ссылку для внешнего доступа.
 
 .. _raster_storage:
 
