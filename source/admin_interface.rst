@@ -177,8 +177,7 @@ Watch on `youtube <https://youtu.be/q6h-zL4yg0c?si=FKHlTbneOmen5O5k>`_.
 
 Advanced search with more parameters is activated by the  |button_tune| icon next to the search bar.
 
-.. |button_tune| image:: _static/button_tune.png
-   :width: 6mm
+.. hint:: Click on |button_tune| with the scroll wheel to open the advanced search page in a new tab.
 
 In advanced search mode you can search resources by:
 
@@ -529,3 +528,6 @@ The Web GIS administrator will receive your message and email address so that th
 .. |button_preview| image:: _static/button_preview.png
    :width: 6mm
    :alt: eye
+
+.. |button_tune| image:: _static/button_tune.png
+   :width: 6mm

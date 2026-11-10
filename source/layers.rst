@@ -313,7 +313,7 @@ If you plan to use this raster in QGIS directly from your Web GIS, tick the Uplo
 
    Uploading raster file  
 
-If you have an external S3 storage for your rasters, select a previously created `Raster layer storage <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-storage>`_:
+If you have an external storage for your rasters, select a previously created `Raster layer storage <https://docs.nextgis.com/docs_ngweb/source/layers.html#raster-storage>`_:
 
 .. figure:: _static/ngweb_raster_select_storage_en.png
    :name: ngweb_raster_select_storage_pic
@@ -442,7 +442,11 @@ After creating a Tileset you can:
 Raster layer storage
 -------------------------
 
-If you want to use an external storage for your raster layers, you can connect it to your Web GIS.
+If you want to use an external storage for your raster layers, you can connect it to your Web GIS. Supported storage types are:
+
+* AWS S3;
+* Google Cloud Storage;
+* HTTP (for example, Dropbox) - read-only.
 
 Go to the resource group where you want to create the connection, click **Create resource** and select **Raster layer storage**.
 
@@ -455,7 +459,7 @@ Go to the resource group where you want to create the connection, click **Create
 
 Fill in the form with the values of the corresponding variables:
 
-* Type - AWS S3
+* Type
 * Endpoint
 * Bucket
 * Prefix (optional)
