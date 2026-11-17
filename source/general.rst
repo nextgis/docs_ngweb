@@ -131,4 +131,4 @@ Microsoft Internet Explorer browser is not suppoted.
 
 .. warning:: NextGIS Web would probably work with other versions, but this is not garanteed.
 
-Technical requirements for on-premise installations are listed `here <https://docs.nextgis.com/docs_ngweb_dev/doc/admin/install.html#system-requirements>`_.
+Technical requirements for on-premise installations are listed `here <https://docs.nextgis.com/docs_ngweb/source/op_sys_req.html>`_.
