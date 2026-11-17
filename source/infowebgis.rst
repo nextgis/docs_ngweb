@@ -150,7 +150,7 @@
    Этот раздел доступен только для Веб ГИС, развёрнутых `на своём сервере <https://nextgis.ru/pricing/?utm_source=nextgis&utm_medium=products&utm_campaign=nextgis-web&utm_content=ru#ngw>`_.
 
 В данном разделе можно посмотреть список имеющихся резервных копий NextGIS Web, а также скачать любую из них.
-Процесс создания бэкапов и восстановления для разработчиков описан `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/backup_restore.html>`_. 
+Процесс создания бэкапов и восстановления для разработчиков описан `здесь <https://docs.nextgis.ru/docs_ngweb/source/op_backup.html>`_. 
 
 
 .. _ngw_audit:

@@ -170,4 +170,4 @@ NextGIS Web обладает следующими основными возмо�
 .. warning::
    Работа с другими версиями основного ПО возможна, но не гарантирована.
 
-Технические требования для установки на своём сервере см. `здесь <https://docs.nextgis.ru/docs_ngweb_dev/doc/admin/install.html#system-requirements>`_.
+Технические требования для установки на своём сервере см. `здесь <https://docs.nextgis.ru/docs_ngweb/source/op_sys_req.html>`_.
