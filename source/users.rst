@@ -188,6 +188,47 @@ Then click **"Create"**.
 You can set up `access permissions <https://docs.nextgis.com/docs_ngcom/source/permissions.html>`_ for particular users and groups of users.
 
 
+.. _ngw_auth_link:
+
+Authorization link
+-------------------
+
+For local users the administrator can set up an authorization link. By following this link, this user is automatically logged in to access Web GIS.
+
+Go to |button_main_menu| :menuselection:`Main menu --> Control panel --> Users`, select the user for whom you want to set up an a-link and click  |button_edit|. User settings page is opened.
+
+In the Authorization link section select **Assign new** and click **Save**.
+
+.. figure:: _static/ngw_alink_create_en.png
+   :name: ngw_alink_create_pic
+   :align: center
+   :width: 20cm
+
+   Enabling authorization link
+
+After saving the link is generated. Open the user page again and copy the link by clicking |button_copy|.
+
+.. figure:: _static/ngw_alink_copy_en.png
+   :name: ngw_alink_copy_pic
+   :align: center
+   :width: 20cm
+
+   Copying authorization link
+
+Now you can send this link to the user. After clicking on it, the user is redirected to the Web GIS main page, automatically logged in.
+
+.. figure:: _static/ngw_alink_visited_en.png
+   :name: ngw_alink_visited_pic
+   :align: center
+   :width: 20cm
+
+   User logged in
+
+You also can:
+
+* Assign new authorization link and disable the old one;
+* Turn off authorization via link.
+
 .. _ngw_change_password:
 
 Update local user password
@@ -215,3 +256,15 @@ Also there is an option to change user password using command line:
    The password is limited in length in the range of 5-25 characters.
 
 If you forgot the password to your NexGIS ID, follow `this instruction <https://docs.nextgis.com/docs_ngcom/source/faq_webgis.html#i-forgot-my-account-password-nextgis-id-what-to-do>`_.
+
+.. |button_main_menu| image:: _static/button_main_menu.png
+   :width: 8mm
+   :alt: three horizontal lines
+
+.. |button_edit| image:: _static/button_edit.png
+   :width: 6mm
+   :alt: pencil
+
+.. |button_copy| image:: _static/button_copy.png
+   :width: 5mm
+   :alt: stacked rectangles
