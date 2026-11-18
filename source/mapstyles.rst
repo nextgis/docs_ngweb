@@ -210,6 +210,12 @@
 
 Этот стиль можно при необходимости `редактировать в QGIS и синхронизировать изменения с Веб ГИС <https://docs.nextgis.ru/docs_ngconnect/source/edit.html#connect-style-overwrite>`_ с помощью модуля NextGIS Connect.
 
+.. raw:: html
+
+   <iframe width="720" height="405" src="https://rutube.ru/play/embed/b86c1fa4621d5fbc658783107b4cbd24/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+
+Посмотреть видео на `RuTube <https://rutube.ru/video/b86c1fa4621d5fbc658783107b4cbd24/>`_, `YouTube <https://youtu.be/57ZqThp_sf4?si=cP0DDirmF2lW9l4a>`_.
+
 .. _ngw_qgis_style_svg:
 
 SVG-маркеры
